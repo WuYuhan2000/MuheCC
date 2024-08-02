@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/coremedia/jangaroo-tools",
+	"sha1": "c3b4d70410f2acd2a7d6f3ef9fbcd2a156fe9f30",
+	"url": "https://github.com/coremedia/jangaroo-tools/commit/c3b4d70410f2acd2a7d6f3ef9fbcd2a156fe9f30",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable typeName : String in method public analyze(parentNode Node, context AnalyzeContext) : void from class net.jangaroo.jooc.ImportDirective",
+	"leftSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/ImportDirective.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/ImportDirective.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "typeName : String"
+}, {
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/ImportDirective.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method private shouldWrite() : boolean from class net.jangaroo.jooc.JsWriter",
+	"leftSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/JsWriter.java",
+		"startLine": 155,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private shouldWrite() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/JsWriter.java",
+		"startLine": 157,
+		"endLine": 171,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private shouldWrite() : boolean"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "a82c6167163a27223548b1aa6b8cc1b720c33073",
+	"url": "https://github.com/kiegroup/drools/commit/a82c6167163a27223548b1aa6b8cc1b720c33073",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private identifier : String from class org.drools.command.runtime.GetGlobalCommand",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/GetGlobalCommand.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private identifier : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/GetGlobalCommand.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private identifier : String"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/GetGlobalCommand.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setIdentifier(identifier String) : void"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private identifier : String from class org.drools.command.runtime.SetGlobalCommand",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/SetGlobalCommand.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private identifier : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/SetGlobalCommand.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private identifier : String"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/command/runtime/SetGlobalCommand.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setIdentifier(identifier String) : void"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.AbortWorkItemConverter moved to org.drools.runtime.help.impl.XStreamXML.AbortWorkItemConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 819,
+		"endLine": 846,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.AbortWorkItemConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 732,
+		"endLine": 759,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.AbortWorkItemConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.BatchExecutionResultConverter moved to org.drools.runtime.help.impl.XStreamXML.BatchExecutionResultConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 848,
+		"endLine": 942,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.BatchExecutionResultConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 761,
+		"endLine": 854,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.BatchExecutionResultConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.CompleteWorkItemConverter moved to org.drools.runtime.help.impl.XStreamXML.CompleteWorkItemConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 764,
+		"endLine": 817,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.CompleteWorkItemConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 677,
+		"endLine": 730,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.CompleteWorkItemConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.FactHandleConverter moved to org.drools.runtime.help.impl.XStreamXML.FactHandleConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 227,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.FactHandleConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 134,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.FactHandleConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.FireAllRulesConverter moved to org.drools.runtime.help.impl.XStreamXML.FireAllRulesConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 559,
+		"endLine": 595,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.FireAllRulesConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 472,
+		"endLine": 508,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.FireAllRulesConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetGlobalConverter moved to org.drools.runtime.help.impl.XStreamXML.GetGlobalConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 485,
+		"endLine": 522,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetGlobalConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 398,
+		"endLine": 435,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.GetGlobalConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetObjectConverter moved to org.drools.runtime.help.impl.XStreamXML.GetObjectConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 446,
+		"endLine": 483,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetObjectConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 359,
+		"endLine": 396,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.GetObjectConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetObjectsConverter moved to org.drools.runtime.help.impl.XStreamXML.GetObjectsConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 524,
+		"endLine": 557,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.GetObjectsConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 437,
+		"endLine": 470,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.GetObjectsConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.InsertConverter moved to org.drools.runtime.help.impl.XStreamXML.InsertConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 176,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.InsertConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 83,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.InsertConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.InsertElementsConverter moved to org.drools.runtime.help.impl.XStreamXML.InsertElementsConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 331,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.InsertElementsConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 244,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.InsertElementsConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.ModifyConverter moved to org.drools.runtime.help.impl.XStreamXML.ModifyConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 250,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.ModifyConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 163,
+		"endLine": 211,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.ModifyConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.QueryConverter moved to org.drools.runtime.help.impl.XStreamXML.QueryConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 597,
+		"endLine": 648,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.QueryConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 510,
+		"endLine": 561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.QueryConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.QueryResultsConverter moved to org.drools.runtime.help.impl.XStreamXML.QueryResultsConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 944,
+		"endLine": 1051,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.QueryResultsConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 856,
+		"endLine": 963,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.QueryResultsConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.RetractConverter moved to org.drools.runtime.help.impl.XStreamXML.RetractConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 300,
+		"endLine": 329,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.RetractConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 213,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.RetractConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.SetGlobalConverter moved to org.drools.runtime.help.impl.XStreamXML.SetGlobalConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 391,
+		"endLine": 444,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.SetGlobalConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 304,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.SetGlobalConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.SignalEventConverter moved to org.drools.runtime.help.impl.XStreamXML.SignalEventConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 705,
+		"endLine": 762,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.SignalEventConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 618,
+		"endLine": 675,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.SignalEventConverter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.StartProcessConvert moved to org.drools.runtime.help.impl.XStreamXML.StartProcessConvert",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/BatchExecutionHelperProviderImpl.java",
+		"startLine": 650,
+		"endLine": 703,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.drools.runtime.help.impl.BatchExecutionHelperProviderImpl.StartProcessConvert"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/runtime/help/impl/XStreamXML.java",
+		"startLine": 563,
+		"endLine": 616,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.drools.runtime.help.impl.XStreamXML.StartProcessConvert"
+}]
+}
+]
+}]
+}

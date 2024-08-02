@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "23f836454d9c5a495111b068f45d6aa89a2a724a",
+	"url": "https://github.com/apache/hbase/commit/23f836454d9c5a495111b068f45d6aa89a2a724a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lock : ReentrantReadWriteLock to lock : HLocking in class org.apache.hadoop.hbase.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HRegion.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 40,
+		"endColumn": 75,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lock : ReentrantReadWriteLock"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HRegion.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 26,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lock : HLocking"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type lock : ReentrantReadWriteLock to lock : HLocking in class org.apache.hadoop.hbase.HStore",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HStore.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 40,
+		"endColumn": 75,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lock : ReentrantReadWriteLock"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HStore.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 26,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "lock : HLocking"
+}]
+}
+]
+}]
+}

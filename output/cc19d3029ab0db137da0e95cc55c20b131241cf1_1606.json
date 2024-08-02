@@ -1,0 +1,174 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jhy/jsoup",
+	"sha1": "cc19d3029ab0db137da0e95cc55c20b131241cf1",
+	"url": "https://github.com/jhy/jsoup/commit/cc19d3029ab0db137da0e95cc55c20b131241cf1",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type textNode : TextNode to node : Node in method public hasSameValue(o Object) : boolean from class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 18,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "textNode : TextNode"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "node : Node"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public equals(o Object) : boolean from class org.jsoup.nodes.TextNode to public hasSameValue(o Object) : boolean from class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 176,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public equals(o Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 588,
+		"endLine": 601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public hasSameValue(o Object) : boolean"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public equals(o Object) : boolean from class org.jsoup.nodes.TextNode",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 176,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public equals(o Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 588,
+		"endLine": 601,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public hasSameValue(o Object) : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testHashAndEquals() : void renamed to public testHashAndEqualsAndValue() : void in class org.jsoup.nodes.ElementTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jsoup/nodes/ElementTest.java",
+		"startLine": 800,
+		"endLine": 847,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testHashAndEquals() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jsoup/nodes/ElementTest.java",
+		"startLine": 800,
+		"endLine": 849,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testHashAndEqualsAndValue() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable textNode : TextNode to node : Node in method public hasSameValue(o Object) : boolean from class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 18,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "textNode : TextNode"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/TextNode.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "node : Node"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 599,
+		"endLine": 599,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1431 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "e1ab934e5d80c32b63db7569f76b12375fe2a6f7",
+	"url": "https://github.com/apache/hbase/commit/e1ab934e5d80c32b63db7569f76b12375fe2a6f7",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public batchUpdate(regionName byte[], b BatchUpdate, lockId long) : void from class org.apache.hadoop.hbase.ipc.HRegionInterface",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 121,
+		"endLine": 129,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public batchUpdate(regionName byte[], b BatchUpdate) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 122,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public batchUpdate(regionName byte[], b BatchUpdate, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public batchUpdate(regionName byte[], b BatchUpdate, lockId long) : void from class org.apache.hadoop.hbase.regionserver.HRegionServer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1128,
+		"endLine": 1145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public batchUpdate(regionName byte[], b BatchUpdate) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1131,
+		"endLine": 1131,
+		"startColumn": 68,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1130,
+		"endLine": 1147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public batchUpdate(regionName byte[], b BatchUpdate, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteAll(regionName byte[], row byte[], column byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.ipc.HRegionInterface",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 131,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], column byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 134,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], column byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteAll(regionName byte[], row byte[], column byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.regionserver.HRegionServer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1276,
+		"endLine": 1282,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], column byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1280,
+		"endLine": 1280,
+		"startColumn": 51,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1278,
+		"endLine": 1284,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], column byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteAll(regionName byte[], row byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.ipc.HRegionInterface",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 145,
+		"endLine": 155,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 7,
+		"endColumn": 18,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 149,
+		"endLine": 161,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteAll(regionName byte[], row byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.regionserver.HRegionServer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1284,
+		"endLine": 1290,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1288,
+		"endLine": 1288,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1286,
+		"endLine": 1292,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(regionName byte[], row byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.ipc.HRegionInterface",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 157,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 163,
+		"endLine": 175,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long, lockId long) : void from class org.apache.hadoop.hbase.regionserver.HRegionServer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1292,
+		"endLine": 1296,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1296,
+		"endLine": 1296,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1294,
+		"endLine": 1300,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteFamily(regionName byte[], row byte[], family byte[], timestamp long, lockId long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public getRow(regionName byte[], row byte[], columns byte[][], ts long, lockId long) : RowResult from class org.apache.hadoop.hbase.ipc.HRegionInterface",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 109,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRow(regionName byte[], row byte[], columns byte[][], ts long) : RowResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 44,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HRegionInterface.java",
+		"startLine": 109,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getRow(regionName byte[], row byte[], columns byte[][], ts long, lockId long) : RowResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockId : long in method public getRow(regionName byte[], row byte[], columns byte[][], ts long, lockId long) : RowResult from class org.apache.hadoop.hbase.regionserver.HRegionServer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1049,
+		"endLine": 1073,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRow(regionName byte[], row byte[], columns byte[][], ts long) : RowResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1052,
+		"endLine": 1052,
+		"startColumn": 45,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockId : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1050,
+		"endLine": 1075,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getRow(regionName byte[], row byte[], columns byte[][], ts long, lockId long) : RowResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockid : Integer in method public batchUpdate(b BatchUpdate, lockid Integer) : void from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1346,
+		"endLine": 1413,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public batchUpdate(b BatchUpdate) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1350,
+		"endLine": 1350,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockid : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1346,
+		"endLine": 1414,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public batchUpdate(b BatchUpdate, lockid Integer) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockid : Integer in method public deleteAll(row byte[], column byte[], ts long, lockid Integer) : void from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1456,
+		"endLine": 1473,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1466,
+		"endLine": 1466,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockid : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1457,
+		"endLine": 1476,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long, lockid Integer) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockid : Integer in method public deleteAll(row byte[], ts long, lockid Integer) : void from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1475,
+		"endLine": 1498,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteAll(row byte[], ts long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1486,
+		"endLine": 1486,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockid : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1478,
+		"endLine": 1503,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteAll(row byte[], ts long, lockid Integer) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockid : Integer in method public deleteFamily(row byte[], family byte[], timestamp long, lockid Integer) : void from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1500,
+		"endLine": 1527,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public deleteFamily(row byte[], family byte[], timestamp long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1516,
+		"endLine": 1516,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockid : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1505,
+		"endLine": 1534,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public deleteFamily(row byte[], family byte[], timestamp long, lockid Integer) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lockid : Integer in method public getFull(row byte[], columns Set<byte[]>, ts long, lockid Integer) : Map<byte[],Cell> from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1156,
+		"endLine": 1220,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFull(row byte[], columns Set<byte[]>, ts long) : Map<byte[],Cell>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1173,
+		"endLine": 1173,
+		"startColumn": 50,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lockid : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1156,
+		"endLine": 1220,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getFull(row byte[], columns Set<byte[]>, ts long, lockid Integer) : Map<byte[],Cell>"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getLock(lockid Integer, row byte[]) : Integer extracted from public batchUpdate(b BatchUpdate) : void in class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1346,
+		"endLine": 1413,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public batchUpdate(b BatchUpdate) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1366,
+		"endLine": 1366,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1803,
+		"endLine": 1821,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getLock(lockid Integer, row byte[]) : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1811,
+		"endLine": 1811,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1346,
+		"endLine": 1414,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public batchUpdate(b BatchUpdate, lockid Integer) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1367,
+		"endLine": 1367,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getLock(lockid,row)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1816,
+		"endLine": 1816,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1820,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1814,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1814,
+		"endLine": 1819,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getLock(lockid Integer, row byte[]) : Integer extracted from public deleteAll(row byte[], column byte[], ts long) : void in class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1456,
+		"endLine": 1473,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1467,
+		"endLine": 1467,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1803,
+		"endLine": 1821,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getLock(lockid Integer, row byte[]) : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1811,
+		"endLine": 1811,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1457,
+		"endLine": 1476,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long, lockid Integer) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1470,
+		"endLine": 1470,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getLock(lockid,row)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1816,
+		"endLine": 1816,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1820,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1814,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1814,
+		"endLine": 1819,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getLock(lockid Integer, row byte[]) : Integer extracted from public deleteAll(row byte[], ts long) : void in class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1475,
+		"endLine": 1498,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public deleteAll(row byte[], ts long) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1484,
+		"endLine": 1484,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1803,
+		"endLine": 1821,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getLock(lockid Integer, row byte[]) : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1811,
+		"endLine": 1811,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1478,
+		"endLine": 1503,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public deleteAll(row byte[], ts long, lockid Integer) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1489,
+		"endLine": 1489,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getLock(lockid,row)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1816,
+		"endLine": 1816,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1820,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1814,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1814,
+		"endLine": 1819,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getLock(lockid Integer, row byte[]) : Integer extracted from public deleteFamily(row byte[], family byte[], timestamp long) : void in class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1500,
+		"endLine": 1527,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public deleteFamily(row byte[], family byte[], timestamp long) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1512,
+		"endLine": 1512,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1803,
+		"endLine": 1821,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getLock(lockid Integer, row byte[]) : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1811,
+		"endLine": 1811,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1505,
+		"endLine": 1534,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public deleteFamily(row byte[], family byte[], timestamp long, lockid Integer) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1519,
+		"endLine": 1519,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getLock(lockid,row)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1816,
+		"endLine": 1816,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1820,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1814,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1814,
+		"endLine": 1819,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getLock(lockid Integer, row byte[]) : Integer extracted from public getFull(row byte[], columns Set<byte[]>, ts long) : Map<byte[],Cell> in class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1156,
+		"endLine": 1220,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getFull(row byte[], columns Set<byte[]>, ts long) : Map<byte[],Cell>"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1182,
+		"endLine": 1182,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1803,
+		"endLine": 1821,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getLock(lockid Integer, row byte[]) : Integer"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1811,
+		"endLine": 1811,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1156,
+		"endLine": 1220,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getFull(row byte[], columns Set<byte[]>, ts long, lockid Integer) : Map<byte[],Cell>"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1182,
+		"endLine": 1182,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getLock(lockid,row)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1816,
+		"endLine": 1816,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1820,
+		"endLine": 1820,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1814,
+		"startColumn": 24,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1815,
+		"endLine": 1817,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1814,
+		"endLine": 1819,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1812,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public deleteAll(row byte[], column byte[], ts long, rl RowLock) : void extracted from public deleteAll(row byte[], column byte[], ts long) : void in class org.apache.hadoop.hbase.client.HTable",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1097,
+		"endLine": 1121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1117,
+		"endLine": 1117,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1111,
+		"endLine": 1112,
+		"startColumn": 15,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1114,
+		"endLine": 1115,
+		"startColumn": 15,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1110,
+		"endLine": 1116,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1110,
+		"endLine": 1113,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1113,
+		"endLine": 1116,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1107,
+		"endLine": 1120,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1109,
+		"endLine": 1118,
+		"startColumn": 52,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1131,
+		"endLine": 1162,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long, rl RowLock) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1158,
+		"endLine": 1158,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1152,
+		"endLine": 1153,
+		"startColumn": 15,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1155,
+		"endLine": 1156,
+		"startColumn": 15,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1151,
+		"endLine": 1157,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1151,
+		"endLine": 1154,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1154,
+		"endLine": 1157,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1144,
+		"endLine": 1161,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1146,
+		"endLine": 1159,
+		"startColumn": 52,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1118,
+		"endLine": 1129,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public deleteAll(row byte[], column byte[], ts long) : void"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1128,
+		"endLine": 1128,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "deleteAll(row,column,ts,null)"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1147,
+		"endLine": 1147,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1149,
+		"endLine": 1149,
+		"startColumn": 15,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1148,
+		"endLine": 1150,
+		"startColumn": 28,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/client/HTable.java",
+		"startLine": 1148,
+		"endLine": 1150,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

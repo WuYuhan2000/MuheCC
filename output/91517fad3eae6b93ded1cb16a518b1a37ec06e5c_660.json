@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "91517fad3eae6b93ded1cb16a518b1a37ec06e5c",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/91517fad3eae6b93ded1cb16a518b1a37ec06e5c",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if((product.getName() == null) && (product.getName().length() == 0)) to if((product.getName() == null) || (product.getName().length() == 0)) in method public formatUserAgent(products List<Product>) : String from class com.noelios.restlet.Engine",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/Engine.java",
+		"startLine": 584,
+		"endLine": 588,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if((product.getName() == null) && (product.getName().length() == 0))"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/Engine.java",
+		"startLine": 576,
+		"endLine": 604,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public formatUserAgent(products List<Product>) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/Engine.java",
+		"startLine": 584,
+		"endLine": 588,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if((product.getName() == null) || (product.getName().length() == 0))"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/Engine.java",
+		"startLine": 576,
+		"endLine": 604,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public formatUserAgent(products List<Product>) : String"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "ac61b13a7c8284dea58ca4d2a046a44d317ced00",
+	"url": "https://github.com/spring-projects/spring-framework/commit/ac61b13a7c8284dea58ca4d2a046a44d317ced00",
+	"refactorings": [{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter annotationType : String in method public getAllAnnotationAttributes(element AnnotatedElement, annotationType String) : MultiValueMap<String,Object> from class org.springframework.core.annotation.AnnotatedElementUtils",
+	"leftSideLocations": [{
+		"filePath": "spring-core/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "annotationType : String"
+}, {
+		"filePath": "spring-core/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java",
+		"startLine": 120,
+		"endLine": 123,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAllAnnotationAttributes(element AnnotatedElement, annotationType String) : MultiValueMap<String,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-core/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 99,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "annotationType : String"
+}, {
+		"filePath": "spring-core/src/main/java/org/springframework/core/annotation/AnnotatedElementUtils.java",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public getAllAnnotationAttributes(element AnnotatedElement, annotationType String) : MultiValueMap<String,Object>"
+}]
+}
+]
+}]
+}

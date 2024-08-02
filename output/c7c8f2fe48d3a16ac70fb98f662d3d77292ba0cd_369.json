@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "c7c8f2fe48d3a16ac70fb98f662d3d77292ba0cd",
+	"url": "https://github.com/apache/hadoop/commit/c7c8f2fe48d3a16ac70fb98f662d3d77292ba0cd",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable historyPath : String in method public getSimulatedJobConf(simulatedJobID JobID, tmpJHFolder File) : JobConf from class org.apache.hadoop.mapred.gridmix.test.system.GridmixJobVerification",
+	"leftSideLocations": [{
+		"filePath": "mapreduce/src/contrib/gridmix/src/test/system/org/apache/hadoop/mapred/gridmix/test/system/GridmixJobVerification.java",
+		"startLine": 319,
+		"endLine": 320,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "mapreduce/src/contrib/gridmix/src/test/system/org/apache/hadoop/mapred/gridmix/test/system/GridmixJobVerification.java",
+		"startLine": 319,
+		"endLine": 320,
+		"startColumn": 14,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "historyPath : String"
+}, {
+		"filePath": "mapreduce/src/contrib/gridmix/src/test/system/org/apache/hadoop/mapred/gridmix/test/system/GridmixJobVerification.java",
+		"startLine": 321,
+		"endLine": 322,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "d7d4a1410bffb969850bb17ba0d48b02ad542136",
+	"url": "https://github.com/apache/camel/commit/d7d4a1410bffb969850bb17ba0d48b02ad542136",
+	"refactorings": [{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type TransformerException to IOException in method public convertToStreamCache(source StreamSource) : StreamCache from class org.apache.camel.converter.stream.StreamCacheConverter",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 73,
+		"endColumn": 93,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "TransformerException"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public convertToStreamCache(source StreamSource) : StreamCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 73,
+		"endColumn": 84,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public convertToStreamCache(source StreamSource) : StreamCache"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type TransformerException in method public convertToStreamCache(source BytesSource) : StreamCache from class org.apache.camel.converter.stream.StreamCacheConverter",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 72,
+		"endColumn": 92,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "TransformerException"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 58,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public convertToStreamCache(source BytesSource) : StreamCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 58,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public convertToStreamCache(source BytesSource) : StreamCache"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type TransformerException in method public convertToStreamCache(source StringSource) : StreamCache from class org.apache.camel.converter.stream.StreamCacheConverter",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 73,
+		"endColumn": 93,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "TransformerException"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 52,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public convertToStreamCache(source StringSource) : StreamCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/converter/stream/StreamCacheConverter.java",
+		"startLine": 52,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public convertToStreamCache(source StringSource) : StreamCache"
+}]
+}
+]
+}]
+}

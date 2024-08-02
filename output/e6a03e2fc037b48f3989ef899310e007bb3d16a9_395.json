@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "e6a03e2fc037b48f3989ef899310e007bb3d16a9",
+	"url": "https://github.com/apache/hadoop/commit/e6a03e2fc037b48f3989ef899310e007bb3d16a9",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type appStateData : ApplicationStateDataPBImpl to appStateData : ApplicationStateData in method protected storeApplicationStateInternal(appId ApplicationId, appStateData ApplicationStateData) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "appStateData : ApplicationStateDataPBImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "appStateData : ApplicationStateData"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type appStateData : ApplicationStateDataPBImpl to appStateData : ApplicationStateData in method protected updateApplicationStateInternal(appId ApplicationId, appStateData ApplicationStateData) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "appStateData : ApplicationStateDataPBImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "appStateData : ApplicationStateData"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type attemptStateData : ApplicationAttemptStateDataPBImpl to attemptStateData : ApplicationAttemptStateData in method protected storeApplicationAttemptStateInternal(attemptId ApplicationAttemptId, attemptStateData ApplicationAttemptStateData) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "attemptStateData : ApplicationAttemptStateDataPBImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "attemptStateData : ApplicationAttemptStateData"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type attemptStateData : ApplicationAttemptStateDataPBImpl to attemptStateData : ApplicationAttemptStateData in method protected updateApplicationAttemptStateInternal(attemptId ApplicationAttemptId, attemptStateData ApplicationAttemptStateData) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "attemptStateData : ApplicationAttemptStateDataPBImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "attemptStateData : ApplicationAttemptStateData"
+}]
+}
+]
+}]
+}

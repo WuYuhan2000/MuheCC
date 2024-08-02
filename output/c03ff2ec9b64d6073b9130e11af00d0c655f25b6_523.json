@@ -1,0 +1,408 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "c03ff2ec9b64d6073b9130e11af00d0c655f25b6",
+	"url": "https://github.com/kiegroup/drools/commit/c03ff2ec9b64d6073b9130e11af00d0c655f25b6",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public filterFileInKBase(kieBase KieBaseModel, fileName String) : boolean from class org.drools.compiler.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 328,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package filterFileInKBase(kieBase KieBaseModel, fileName String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 328,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public filterFileInKBase(kieBase KieBaseModel, fileName String) : boolean"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public addFile(ckbuilder CompositeKnowledgeBuilder, kieModule InternalKieModule, fileName String) : boolean extracted from private addFiles(ckbuilder CompositeKnowledgeBuilder, kieBaseModel KieBaseModel, kieModule InternalKieModule) : void in class org.drools.compiler.kie.builder.impl.AbstractKieModule",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 202,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private addFiles(ckbuilder CompositeKnowledgeBuilder, kieBaseModel KieBaseModel, kieModule InternalKieModule) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 214,
+		"endLine": 215,
+		"startColumn": 21,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 217,
+		"endLine": 219,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 213,
+		"endLine": 220,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 213,
+		"endLine": 216,
+		"startColumn": 37,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 216,
+		"endLine": 220,
+		"startColumn": 24,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 208,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public addFile(ckbuilder CompositeKnowledgeBuilder, kieModule InternalKieModule, fileName String) : boolean"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 215,
+		"endLine": 216,
+		"startColumn": 17,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 218,
+		"endLine": 220,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 214,
+		"endLine": 221,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 214,
+		"endLine": 217,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 217,
+		"endLine": 221,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 189,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private addFiles(ckbuilder CompositeKnowledgeBuilder, kieBaseModel KieBaseModel, kieModule InternalKieModule) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 30,
+		"endColumn": 71,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addFile(ckbuilder,kieModule,fileName)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 213,
+		"endLine": 223,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 213,
+		"endLine": 223,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public getResource(fileName String) : Resource extracted from private addFiles(ckbuilder CompositeKnowledgeBuilder, kieBaseModel KieBaseModel, kieModule InternalKieModule) : void in class org.drools.compiler.kie.builder.impl.AbstractKieModule",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 202,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private addFiles(ckbuilder CompositeKnowledgeBuilder, kieBaseModel KieBaseModel, kieModule InternalKieModule) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 227,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getResource(fileName String) : Resource"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 208,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addFile(ckbuilder CompositeKnowledgeBuilder, kieModule InternalKieModule, fileName String) : boolean"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 29,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "kieModule.getResource(fileName)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/AbstractKieModule.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter releaseId : ReleaseId to newReleaseId : ReleaseId in method public updateToVersion(newReleaseId ReleaseId) : void from class org.drools.compiler.kie.builder.impl.KieContainerImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "releaseId : ReleaseId"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "newReleaseId : ReleaseId"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable kProject : KieProject to newKM : InternalKieModule in method public updateToVersion(newReleaseId ReleaseId) : void from class org.drools.compiler.kie.builder.impl.KieContainerImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 34,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "kProject : KieProject"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 27,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "newKM : InternalKieModule"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

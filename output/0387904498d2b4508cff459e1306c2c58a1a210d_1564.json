@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "0387904498d2b4508cff459e1306c2c58a1a210d",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/0387904498d2b4508cff459e1306c2c58a1a210d",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private isPrefixedWith(prefix String) : boolean extracted from private isReferencedFromBody() : boolean in class org.jboss.arquillian.graphene.findby.ByJQueryImpl",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private isReferencedFromBody() : boolean"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 91,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isPrefixedWith(prefix String) : boolean"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 151,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private isReferencedFromRootOfDocument() : boolean"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isPrefixedWith(\"html\")"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 42,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isPrefixedWith(\"body\")"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 68,
+		"endColumn": 90,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isPrefixedWith(\"head\")"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private isReferencedFromBody() : boolean renamed to private isReferencedFromRootOfDocument() : boolean in class org.jboss.arquillian.graphene.findby.ByJQueryImpl",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isReferencedFromBody() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/findby/ByJQueryImpl.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private isReferencedFromRootOfDocument() : boolean"
+}]
+}
+]
+}]
+}

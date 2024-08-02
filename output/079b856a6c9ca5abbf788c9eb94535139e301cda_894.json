@@ -1,0 +1,264 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "079b856a6c9ca5abbf788c9eb94535139e301cda",
+	"url": "https://github.com/spring-projects/spring-framework/commit/079b856a6c9ca5abbf788c9eb94535139e301cda",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class org.springframework.ui.message.DefaultMessageResolver.MessageSourceResolvableAccessor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 119,
+		"endLine": 152,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.ui.message.DefaultMessageResolver.MessageSourceResolvableAccessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 119,
+		"endLine": 151,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.springframework.ui.message.DefaultMessageResolver.MessageSourceResolvableAccessor"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class org.springframework.ui.message.DefaultMessageResolver.TextMessage",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 98,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.ui.message.DefaultMessageResolver.TextMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 98,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.springframework.ui.message.DefaultMessageResolver.TextMessage"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class org.springframework.ui.message.MessageBuilder.ResolvableArgumentValue",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 138,
+		"endLine": 162,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.ui.message.MessageBuilder.ResolvableArgumentValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 142,
+		"endLine": 166,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.springframework.ui.message.MessageBuilder.ResolvableArgumentValue"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Class[] to Class<?>[] in method public getSpecificTargetClasses() : Class<?>[] from class org.springframework.ui.message.DefaultMessageResolver.MessageSourceResolvableAccessor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Class[]"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 148,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSpecificTargetClasses() : Class[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 10,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Class<?>[]"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 147,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getSpecificTargetClasses() : Class<?>[]"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public write(context EvaluationContext, target Object, name String, newValue Object) : void from class org.springframework.ui.message.DefaultMessageResolver.MessageSourceResolvableAccessor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 143,
+		"endLine": 146,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(context EvaluationContext, target Object, name String, newValue Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/DefaultMessageResolver.java",
+		"startLine": 143,
+		"endLine": 145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public write(context EvaluationContext, target Object, name String, newValue Object) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute value : Object to code : Object in class org.springframework.ui.message.MessageBuilder.ResolvableArgumentValue",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "value : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "code : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter value : Object to code : Object in method public ResolvableArgumentValue(code Object) from class org.springframework.ui.message.MessageBuilder.ResolvableArgumentValue",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 4,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "code : Object"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter value : Object to code : Object in method public resolvableArg(name String, code Object) : MessageBuilder from class org.springframework.ui.message.MessageBuilder",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 51,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 51,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "code : Object"
+}, {
+		"filePath": "org.springframework.context/src/main/java/org/springframework/ui/message/MessageBuilder.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

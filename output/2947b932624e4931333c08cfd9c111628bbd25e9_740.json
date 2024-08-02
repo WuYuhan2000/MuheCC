@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "2947b932624e4931333c08cfd9c111628bbd25e9",
+	"url": "https://github.com/orientechnologies/orientdb/commit/2947b932624e4931333c08cfd9c111628bbd25e9",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type aquery : OSQLQuery<?> to aquery : OCommandRequestText in method public command(iCommand OCommandRequestText) : Object from class com.orientechnologies.orient.client.remote.OStorageRemote",
+	"leftSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 362,
+		"endLine": 362,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "aquery : OSQLQuery<?>"
+}, {
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 382,
+		"endLine": 388,
+		"startColumn": 8,
+		"endColumn": 9,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 31,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "aquery : OCommandRequestText"
+}, {
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 381,
+		"endLine": 387,
+		"startColumn": 8,
+		"endColumn": 9,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

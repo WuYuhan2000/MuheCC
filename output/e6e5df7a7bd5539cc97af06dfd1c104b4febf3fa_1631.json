@@ -1,0 +1,510 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/heroku/heroku.jar",
+	"sha1": "e6e5df7a7bd5539cc97af06dfd1c104b4febf3fa",
+	"url": "https://github.com/heroku/heroku.jar/commit/e6e5df7a7bd5539cc97af06dfd1c104b4febf3fa",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type data : String to data : Map<String,String> in class com.heroku.api.command.JsonMapResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "data : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 39,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "data : Map<String,String>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type command : HerokuCommand to command : Command in method public executeCommand(command Command) : CommandResponse from class com.heroku.api.connection.BasicAuthConnection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuBasicAuthConnection.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 32,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "command : HerokuCommand"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/BasicAuthConnection.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 43,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "command : Command"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type command : HerokuCommand to command : Command in method public executeCommand(command Command) : CommandResponse from class com.heroku.api.connection.Connection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuConnection.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "command : HerokuCommand"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/Connection.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "command : Command"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type data : String to data : byte[] in method public JsonMapResponse(data byte[], success boolean) from class com.heroku.api.command.JsonMapResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 40,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : String"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "data : byte[]"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HerokuConnection to Connection in method package getConnection() : Connection from class com.heroku.api.ConnectionTestModule",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/com/heroku/api/ConnectionTestModule.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HerokuConnection"
+}, {
+		"filePath": "src/test/java/com/heroku/api/ConnectionTestModule.java",
+		"startLine": 22,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getConnection() : HerokuConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/com/heroku/api/ConnectionTestModule.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Connection"
+}, {
+		"filePath": "src/test/java/com/heroku/api/ConnectionTestModule.java",
+		"startLine": 22,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package getConnection() : Connection"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Object to String in method public get(key String) : String from class com.heroku.api.command.EmptyResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandJsonMapResponse.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandJsonMapResponse.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(key String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/EmptyResponse.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/EmptyResponse.java",
+		"startLine": 20,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public get(key String) : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Object to String in method public get(key String) : String from class com.heroku.api.command.JsonMapResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(key String) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public get(key String) : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to CommandResponse in method public executeCommand(command Command) : CommandResponse from class com.heroku.api.connection.BasicAuthConnection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuBasicAuthConnection.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuBasicAuthConnection.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public executeCommand(command HerokuCommand) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/BasicAuthConnection.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CommandResponse"
+}, {
+		"filePath": "src/main/java/com/heroku/api/connection/BasicAuthConnection.java",
+		"startLine": 39,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public executeCommand(command Command) : CommandResponse"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to CommandResponse in method public executeCommand(command Command) : CommandResponse from class com.heroku.api.connection.Connection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuConnection.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuConnection.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public executeCommand(command HerokuCommand) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/Connection.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "CommandResponse"
+}, {
+		"filePath": "src/main/java/com/heroku/api/connection/Connection.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public executeCommand(command Command) : CommandResponse"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.heroku.api.command.HerokuRequestKey moved to com.heroku.api.HerokuRequestKey",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuRequestKey.java",
+		"startLine": 3,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.command.HerokuRequestKey"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/HerokuRequestKey.java",
+		"startLine": 3,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.heroku.api.HerokuRequestKey"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.heroku.api.connection.HerokuAPIException moved to com.heroku.api.exception.HerokuAPIException",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuAPIException.java",
+		"startLine": 3,
+		"endLine": 20,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.connection.HerokuAPIException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/exception/HerokuAPIException.java",
+		"startLine": 3,
+		"endLine": 20,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.heroku.api.exception.HerokuAPIException"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter data : byte[] in method public HerokuCommandJsonMapResponse(data byte[], success boolean) from class com.heroku.api.command.HerokuCommandJsonMapResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandJsonMapResponse.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 41,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "data : byte[]"
+}, {
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandJsonMapResponse.java",
+		"startLine": 19,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public HerokuCommandJsonMapResponse(data byte[], success boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/EmptyResponse.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public EmptyResponse(success boolean)"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.heroku.api.command.HerokuCommandJsonMapResponse renamed to com.heroku.api.command.EmptyResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandJsonMapResponse.java",
+		"startLine": 9,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.command.HerokuCommandJsonMapResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/EmptyResponse.java",
+		"startLine": 3,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.heroku.api.command.EmptyResponse"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.heroku.api.command.HerokuCommandStringResponse renamed to com.heroku.api.command.JsonMapResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/HerokuCommandStringResponse.java",
+		"startLine": 3,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.command.HerokuCommandStringResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/command/JsonMapResponse.java",
+		"startLine": 11,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.heroku.api.command.JsonMapResponse"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.heroku.api.connection.HerokuBasicAuthConnection renamed to com.heroku.api.connection.BasicAuthConnection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuBasicAuthConnection.java",
+		"startLine": 19,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.connection.HerokuBasicAuthConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/BasicAuthConnection.java",
+		"startLine": 20,
+		"endLine": 114,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.heroku.api.connection.BasicAuthConnection"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.heroku.api.connection.HerokuConnection renamed to com.heroku.api.connection.Connection",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/HerokuConnection.java",
+		"startLine": 10,
+		"endLine": 22,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.heroku.api.connection.HerokuConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/heroku/api/connection/Connection.java",
+		"startLine": 10,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.heroku.api.connection.Connection"
+}]
+}
+]
+}]
+}

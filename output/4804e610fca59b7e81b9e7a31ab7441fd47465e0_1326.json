@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "4804e610fca59b7e81b9e7a31ab7441fd47465e0",
+	"url": "https://github.com/apache/deltaspike/commit/4804e610fca59b7e81b9e7a31ab7441fd47465e0",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to Object in method public setAttribute(name String, value Object) : Object from class org.apache.deltaspike.core.spi.AttributeAware",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/AttributeAware.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/AttributeAware.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setAttribute(name String, value Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/AttributeAware.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/AttributeAware.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public setAttribute(name String, value Object) : Object"
+}]
+}
+]
+}]
+}

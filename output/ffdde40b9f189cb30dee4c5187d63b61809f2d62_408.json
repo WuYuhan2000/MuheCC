@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "ffdde40b9f189cb30dee4c5187d63b61809f2d62",
+	"url": "https://github.com/apache/hadoop/commit/ffdde40b9f189cb30dee4c5187d63b61809f2d62",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected rpcMetrics : RpcMetrics from class org.apache.hadoop.ipc.Server",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/ipc/Server.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected rpcMetrics : RpcMetrics"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/ipc/Server.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected rpcMetrics : RpcMetrics"
+}, {
+		"filePath": "src/java/org/apache/hadoop/ipc/Server.java",
+		"startLine": 225,
+		"endLine": 227,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getRpcMetrics() : RpcMetrics"
+}]
+}
+]
+}]
+}

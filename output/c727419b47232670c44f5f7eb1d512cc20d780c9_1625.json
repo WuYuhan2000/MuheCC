@@ -1,0 +1,144 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arrayexpress/annotare2",
+	"sha1": "c727419b47232670c44f5f7eb1d512cc20d780c9",
+	"url": "https://github.com/arrayexpress/annotare2/commit/c727419b47232670c44f5f7eb1d512cc20d780c9",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter fileRef : FileRef in method public getProtocols(fileRef FileRef, subjectType ProtocolSubjectType) : Set<Protocol> from class uk.ac.ebi.fg.annotare2.submission.model.ExperimentProfile",
+	"leftSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 560,
+		"endLine": 568,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProtocols(type ProtocolSubjectType) : Set<Protocol>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 558,
+		"endLine": 558,
+		"startColumn": 39,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "fileRef : FileRef"
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 558,
+		"endLine": 568,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getProtocols(fileRef FileRef, subjectType ProtocolSubjectType) : Set<Protocol>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter type : ProtocolSubjectType to subjectType : ProtocolSubjectType in method public getProtocols(fileRef FileRef, subjectType ProtocolSubjectType) : Set<Protocol> from class uk.ac.ebi.fg.annotare2.submission.model.ExperimentProfile",
+	"leftSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 560,
+		"endLine": 560,
+		"startColumn": 39,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "type : ProtocolSubjectType"
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 561,
+		"endLine": 561,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 558,
+		"endLine": 558,
+		"startColumn": 56,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "subjectType : ProtocolSubjectType"
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 559,
+		"endLine": 559,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable protocolsByType : Collection<Protocol> to fileProtocols : Collection<Protocol> in method public getProtocols(fileRef FileRef, subjectType ProtocolSubjectType) : Set<Protocol> from class uk.ac.ebi.fg.annotare2.submission.model.ExperimentProfile",
+	"leftSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 561,
+		"endLine": 561,
+		"startColumn": 30,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "protocolsByType : Collection<Protocol>"
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 561,
+		"endLine": 561,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 563,
+		"endLine": 566,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 559,
+		"endLine": 559,
+		"startColumn": 30,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "fileProtocols : Collection<Protocol>"
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 559,
+		"endLine": 559,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "app/om/src/main/java/uk/ac/ebi/fg/annotare2/submission/model/ExperimentProfile.java",
+		"startLine": 562,
+		"endLine": 566,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

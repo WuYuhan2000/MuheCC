@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "903ee0d0a6f1254e054a8413575b059f77d3899d",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/903ee0d0a6f1254e054a8413575b059f77d3899d",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Post(\"xml|json:json|html\") to @Post(\"form|html:form|html\") in method public store2(entity String) : String from class org.restlet.test.resource.MyResource8",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Post(\"xml|json:json|html\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public store1(entity String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Post(\"form|html:form|html\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public store2(entity String) : String"
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Post(\"xml|json:xml\") to @Post(\"xml|json:xml|json\") in method public store1(entity String) : String from class org.restlet.test.resource.MyResource8",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Post(\"xml|json:xml\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeForm(entity String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Post(\"xml|json:xml|json\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public store1(entity String) : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public store1(entity String) : String renamed to public store2(entity String) : String in class org.restlet.test.resource.MyResource8",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public store1(entity String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public store2(entity String) : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeForm(entity String) : String renamed to public store1(entity String) : String in class org.restlet.test.resource.MyResource8",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeForm(entity String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/resource/MyResource8.java",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public store1(entity String) : String"
+}]
+}
+]
+}]
+}

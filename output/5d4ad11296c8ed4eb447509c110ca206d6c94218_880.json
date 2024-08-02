@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "5d4ad11296c8ed4eb447509c110ca206d6c94218",
+	"url": "https://github.com/apache/camel/commit/5d4ad11296c8ed4eb447509c110ca206d6c94218",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable now : Date in method protected sendTimerExchange() : void from class org.apache.camel.component.timer.TimerConsumer",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/timer/TimerConsumer.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/timer/TimerConsumer.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 14,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "now : Date"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/timer/TimerConsumer.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

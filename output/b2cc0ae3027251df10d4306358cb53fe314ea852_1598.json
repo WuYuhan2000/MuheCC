@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/belaban/jgroups",
+	"sha1": "b2cc0ae3027251df10d4306358cb53fe314ea852",
+	"url": "https://github.com/belaban/jgroups/commit/b2cc0ae3027251df10d4306358cb53fe314ea852",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method protected _sendStabilityMessage(stability_digest Digest, view_id ViewId) : void extracted from public run() : void in class org.jgroups.protocols.pbcast.STABLE.StabilitySendTask & moved to class org.jgroups.protocols.pbcast.STABLE",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 829,
+		"endLine": 848,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 832,
+		"endLine": 832,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 838,
+		"endLine": 840,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 841,
+		"endLine": 841,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 842,
+		"endLine": 842,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 843,
+		"endLine": 843,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 846,
+		"endLine": 846,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 831,
+		"endLine": 831,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 830,
+		"endLine": 833,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 837,
+		"endLine": 847,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 845,
+		"endLine": 847,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 830,
+		"endLine": 833,
+		"startColumn": 27,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 718,
+		"endLine": 737,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected _sendStabilityMessage(stability_digest Digest, view_id ViewId) : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 721,
+		"endLine": 721,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 727,
+		"endLine": 729,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 730,
+		"endLine": 730,
+		"startColumn": 13,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 731,
+		"endLine": 731,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 732,
+		"endLine": 732,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 735,
+		"endLine": 735,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 720,
+		"endLine": 720,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 719,
+		"endLine": 722,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 726,
+		"endLine": 736,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 734,
+		"endLine": 736,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 719,
+		"endLine": 722,
+		"startColumn": 23,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 847,
+		"endLine": 849,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/pbcast/STABLE.java",
+		"startLine": 848,
+		"endLine": 848,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "_sendStabilityMessage(stability_digest,view_id)"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public testPickRandomElement() : void from class org.jgroups.tests.UtilTest",
+	"leftSideLocations": [{
+		"filePath": "tests/junit-functional/org/jgroups/tests/UtilTest.java",
+		"startLine": 815,
+		"endLine": 826,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testPickRandomElement() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/junit-functional/org/jgroups/tests/UtilTest.java",
+		"startLine": 835,
+		"endLine": 844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public testPickRandomElement() : void"
+}]
+}
+]
+}]
+}

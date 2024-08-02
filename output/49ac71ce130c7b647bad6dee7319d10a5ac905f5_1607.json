@@ -1,0 +1,615 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/lmco/eurekastreams",
+	"sha1": "49ac71ce130c7b647bad6dee7319d10a5ac905f5",
+	"url": "https://github.com/lmco/eurekastreams/commit/49ac71ce130c7b647bad6dee7319d10a5ac905f5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter inFilter : Filter in method public Source(inEntityType EntityType, inUniqueId String, inDisplayName String, inParent Source, inFilter Filter) from class org.eurekastreams.web.client.ui.common.notification.dialog.Source",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 45,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Source(inEntityType EntityType, inUniqueId String, inDisplayName String, inParent Source)"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 36,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "inFilter : Filter"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 64,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public Source(inEntityType EntityType, inUniqueId String, inDisplayName String, inParent Source, inFilter Filter)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type widget : HasText to widget : Label in class org.eurekastreams.web.client.ui.common.notification.dialog.Source",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "widget : HasText"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "widget : Label"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type widget : HasText to widget : Label in class org.eurekastreams.web.client.ui.common.notification.dialog.SourceTest",
+	"leftSideLocations": [{
+		"filePath": "web/src/test/java/org/eurekastreams/web/client/ui/common/notification/dialog/SourceTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 27,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "widget : HasText"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/test/java/org/eurekastreams/web/client/ui/common/notification/dialog/SourceTest.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "widget : Label"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class org.eurekastreams.web.client.ui.common.notification.dialog.Source.Filter",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 491,
+		"endLine": 504,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent.Filter"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 28,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.Source.Filter"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type filter : Filter to filter : Source.Filter in method private displayNotifications(filter Source.Filter, showRead boolean) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 465,
+		"endLine": 465,
+		"startColumn": 39,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filter : Filter"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 474,
+		"endLine": 479,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 39,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "filter : Source.Filter"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 331,
+		"endLine": 336,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inWidget : HasText to inWidget : Label in method public setWidget(inWidget Label) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.Source",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inWidget : HasText"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inWidget : Label"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HasText to Label in method public getWidget() : Label from class org.eurekastreams.web.client.ui.common.notification.dialog.Source",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HasText"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWidget() : HasText"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 12,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Label"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getWidget() : Label"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private selectSource(newSource Source) : void extracted from private addSourceFilter(source Source, indent boolean, filter Filter) : void in class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 416,
+		"endLine": 455,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private addSourceFilter(source Source, indent boolean, filter Filter) : void"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 21,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 17,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 298,
+		"endLine": 311,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private selectSource(newSource Source) : void"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 265,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private addSourceFilter(source Source, indent boolean) : void"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "selectSource(source)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable currentUserAccountId : String in method private storeReceivedNotifications(list List<InAppNotificationDTO>) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 16,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "currentUserAccountId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 252,
+		"endLine": 253,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable streamSource : Source in method private storeReceivedNotifications(list List<InAppNotificationDTO>) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 16,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "streamSource : Source"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [currentFilterWidget : Widget, currentFilter : Filter] to currentSource : Source in class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 20,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "currentFilterWidget : Widget"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "currentFilter : Filter"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "currentSource : Source"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private SOURCE_SORTER : Comparator<Source> from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent to private SOURCE_SORTER : Comparator<Source> from class org.eurekastreams.web.client.ui.common.notification.dialog.SourceListBuilder",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 45,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private SOURCE_SORTER : Comparator<Source>"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/SourceListBuilder.java",
+		"startLine": 67,
+		"endLine": 73,
+		"startColumn": 45,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private SOURCE_SORTER : Comparator<Source>"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent.Filter moved to org.eurekastreams.web.client.ui.common.notification.dialog.Source.Filter",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 491,
+		"endLine": 504,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent.Filter"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/Source.java",
+		"startLine": 28,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.Source.Filter"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent.SpecificSourceFilter moved to org.eurekastreams.web.client.ui.common.notification.dialog.SourceListBuilder.SpecificSourceFilter",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 506,
+		"endLine": 536,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent.SpecificSourceFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/SourceListBuilder.java",
+		"startLine": 34,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eurekastreams.web.client.ui.common.notification.dialog.SourceListBuilder.SpecificSourceFilter"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private sourceIndex : Map<String,Source> from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 39,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private sourceIndex : Map<String,Source>"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private sourceIndex : Map<String,Source>"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter filter : Filter in method private addSourceFilter(source Source, indent boolean, filter Filter) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 77,
+		"endColumn": 96,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "filter : Filter"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 416,
+		"endLine": 455,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addSourceFilter(source Source, indent boolean, filter Filter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 265,
+		"endLine": 296,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private addSourceFilter(source Source, indent boolean) : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute parent : Source to currentSource : Source in method private storeReceivedNotifications(list List<InAppNotificationDTO>) : void from class org.eurekastreams.web.client.ui.common.notification.dialog.NotificationsDialogContent",
+	"leftSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parent : Source"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "currentSource : Source"
+}, {
+		"filePath": "web/src/main/java/org/eurekastreams/web/client/ui/common/notification/dialog/NotificationsDialogContent.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

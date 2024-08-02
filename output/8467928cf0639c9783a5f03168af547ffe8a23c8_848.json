@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "8467928cf0639c9783a5f03168af547ffe8a23c8",
+	"url": "https://github.com/apache/camel/commit/8467928cf0639c9783a5f03168af547ffe8a23c8",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected getImage(name String) : Image from class org.apache.camel.component.cxf.mtom.CxfMtomConsumerTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-cxf/src/test/java/org/apache/camel/component/cxf/mtom/CxfMtomConsumerTest.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getImage(name String) : Image"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-cxf/src/test/java/org/apache/camel/component/cxf/mtom/CxfMtomConsumerTest.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected getImage(name String) : Image"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testInvokingServiceFromCXFClient() : void renamed to public testInvokingService() : void in class org.apache.camel.component.cxf.mtom.CxfMtomConsumerTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-cxf/src/test/java/org/apache/camel/component/cxf/mtom/CxfMtomConsumerTest.java",
+		"startLine": 90,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testInvokingServiceFromCXFClient() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-cxf/src/test/java/org/apache/camel/component/cxf/mtom/CxfMtomConsumerTest.java",
+		"startLine": 90,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testInvokingService() : void"
+}]
+}
+]
+}]
+}

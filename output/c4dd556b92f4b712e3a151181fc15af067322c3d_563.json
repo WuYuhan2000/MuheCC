@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "c4dd556b92f4b712e3a151181fc15af067322c3d",
+	"url": "https://github.com/JetBrains/kotlin/commit/c4dd556b92f4b712e3a151181fc15af067322c3d",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type prevLeaf : LeafPsiElement to prevLeaf : PsiElement in method private getExclExclElement(editor Editor, file PsiFile) : PsiElement from class org.jetbrains.jet.plugin.quickfix.ExclExclCallFix",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 28,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "prevLeaf : LeafPsiElement"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 24,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "prevLeaf : PsiElement"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ExclExclCallFix.java",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

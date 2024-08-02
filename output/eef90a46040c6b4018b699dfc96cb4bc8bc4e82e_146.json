@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "eef90a46040c6b4018b699dfc96cb4bc8bc4e82e",
+	"url": "https://github.com/apache/hbase/commit/eef90a46040c6b4018b699dfc96cb4bc8bc4e82e",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public deleteClosingOrClosedNode(region HRegionInfo) : void from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2127,
+		"endLine": 2149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private deleteClosingOrClosedNode(region HRegionInfo) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2127,
+		"endLine": 2153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public deleteClosingOrClosedNode(region HRegionInfo) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private processServerShutdownHandler(ct CatalogTracker, am AssignmentManager) : void extracted from public testShutdownHandler() : void in class org.apache.hadoop.hbase.master.TestAssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 382,
+		"endLine": 446,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testShutdownHandler() : void"
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 7,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 7,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 414,
+		"endLine": 416,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 419,
+		"endLine": 421,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 436,
+		"endLine": 437,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 479,
+		"endLine": 519,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private processServerShutdownHandler(ct CatalogTracker, am AssignmentManager) : void"
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 483,
+		"endLine": 483,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 493,
+		"endLine": 495,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 498,
+		"endLine": 500,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 504,
+		"endLine": 504,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 505,
+		"endLine": 505,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 509,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 514,
+		"endLine": 514,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 515,
+		"endLine": 516,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 491,
+		"endLine": 491,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 385,
+		"endLine": 412,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testShutdownHandler() : void"
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestAssignmentManager.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 7,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "processServerShutdownHandler(ct,am)"
+}]
+}
+]
+}]
+}

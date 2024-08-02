@@ -1,0 +1,114 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/hunterhacker/jdom",
+	"sha1": "d2111faa385e670d577f9fd05d378481aceb336a",
+	"url": "https://github.com/hunterhacker/jdom/commit/d2111faa385e670d577f9fd05d378481aceb336a",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier protected to public in class org.jdom2.output.FormatStack",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/AbstractXMLOutputProcessor.java",
+		"startLine": 139,
+		"endLine": 451,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jdom2.output.AbstractXMLOutputProcessor.FormatStack"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/FormatStack.java",
+		"startLine": 7,
+		"endLine": 327,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.jdom2.output.FormatStack"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable dtype : DocType in method private process(factory JDOMFactory, stream XMLStreamReader) : Document from class org.jdom2.input.StAXStreamBuilder",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/input/StAXStreamBuilder.java",
+		"startLine": 147,
+		"endLine": 148,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "dtype : DocType"
+}, {
+		"filePath": "core/src/java/org/jdom2/input/StAXStreamBuilder.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/input/StAXStreamBuilder.java",
+		"startLine": 145,
+		"endLine": 146,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jdom2.output.AbstractXMLOutputProcessor.FormatStack moved to org.jdom2.output.FormatStack",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/AbstractXMLOutputProcessor.java",
+		"startLine": 139,
+		"endLine": 451,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jdom2.output.AbstractXMLOutputProcessor.FormatStack"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/FormatStack.java",
+		"startLine": 7,
+		"endLine": 327,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jdom2.output.FormatStack"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class org.jdom2.output.AbstractXMLOutputProcessor.FormatStack",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/AbstractXMLOutputProcessor.java",
+		"startLine": 139,
+		"endLine": 451,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jdom2.output.AbstractXMLOutputProcessor.FormatStack"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom2/output/FormatStack.java",
+		"startLine": 7,
+		"endLine": 327,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.jdom2.output.FormatStack"
+}]
+}
+]
+}]
+}

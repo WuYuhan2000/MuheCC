@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/internetarchive/heritrix3",
+	"sha1": "580391e0a7dd3b3036aeb13f6ed205ac8df6d55a",
+	"url": "https://github.com/internetarchive/heritrix3/commit/580391e0a7dd3b3036aeb13f6ed205ac8df6d55a",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected abstract addCookieImpl(cookie Cookie) : void from class org.archive.modules.fetcher.AbstractCookieStore",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract addCookie(cookie Cookie) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected abstract addCookieImpl(cookie Cookie) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract addCookie(cookie Cookie) : void from class org.archive.modules.fetcher.AbstractCookieStore",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract addCookie(cookie Cookie) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 288,
+		"endLine": 300,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public addCookie(cookie Cookie) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public abstract addCookie(cookie Cookie) : void renamed to protected abstract addCookieImpl(cookie Cookie) : void in class org.archive.modules.fetcher.AbstractCookieStore",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract addCookie(cookie Cookie) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/AbstractCookieStore.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract addCookieImpl(cookie Cookie) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public addCookie(cookie Cookie) : void renamed to public addCookieImpl(cookie Cookie) : void in class org.archive.modules.fetcher.BdbCookieStore",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/BdbCookieStore.java",
+		"startLine": 138,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addCookie(cookie Cookie) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/BdbCookieStore.java",
+		"startLine": 138,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public addCookieImpl(cookie Cookie) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public addCookie(cookie Cookie) : void renamed to public addCookieImpl(cookie Cookie) : void in class org.archive.modules.fetcher.SimpleCookieStore",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/SimpleCookieStore.java",
+		"startLine": 75,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addCookie(cookie Cookie) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/fetcher/SimpleCookieStore.java",
+		"startLine": 75,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public addCookieImpl(cookie Cookie) : void"
+}]
+}
+]
+}]
+}

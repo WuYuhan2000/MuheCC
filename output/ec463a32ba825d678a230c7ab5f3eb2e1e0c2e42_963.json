@@ -1,0 +1,354 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "ec463a32ba825d678a230c7ab5f3eb2e1e0c2e42",
+	"url": "https://github.com/spring-projects/spring-framework/commit/ec463a32ba825d678a230c7ab5f3eb2e1e0c2e42",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private containsSqlScriptDelimiters(script String, delim char) : boolean from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 171,
+		"endLine": 188,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package containsSqlScriptDelimiters(script String, delim char) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 149,
+		"endLine": 166,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private containsSqlScriptDelimiters(script String, delim char) : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private readScript(lineNumberReader LineNumberReader) : String from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 150,
+		"endLine": 169,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package readScript(lineNumberReader LineNumberReader) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 128,
+		"endLine": 147,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private readScript(lineNumberReader LineNumberReader) : String"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to private in method private splitSqlScript(script String, delim char, statements List<String>) : void from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 190,
+		"endLine": 218,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package splitSqlScript(script String, delim char, statements List<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 168,
+		"endLine": 196,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private splitSqlScript(script String, delim char, statements List<String>) : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private createDatabaseSchema(template JdbcTemplate) : void inlined to public populate(template JdbcTemplate) : void in class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private createDatabaseSchema(template JdbcTemplate) : void"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 75,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public populate(template JdbcTemplate) : void"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "createDatabaseSchema(template)"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 65,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public populate(template JdbcTemplate) : void"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 4,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type DataAccessException in method package executeSqlScript(jdbcTemplate JdbcTemplate, resource EncodedResource, continueOnError boolean) : void from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 62,
+		"endColumn": 81,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "DataAccessException"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 92,
+		"endLine": 146,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package executeSqlScript(jdbcTemplate JdbcTemplate, resource EncodedResource, continueOnError boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 73,
+		"endLine": 124,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "package executeSqlScript(template JdbcTemplate, resource EncodedResource, continueOnError boolean) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public schema(sqlResource String) : EmbeddedDatabaseBuilder renamed to public script(sqlResource String) : EmbeddedDatabaseBuilder in class org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseBuilder.java",
+		"startLine": 73,
+		"endLine": 82,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public schema(sqlResource String) : EmbeddedDatabaseBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseBuilder.java",
+		"startLine": 70,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public script(sqlResource String) : EmbeddedDatabaseBuilder"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setSchemaLocation(schemaLocation Resource) : void renamed to public addScript(script Resource) : void in class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 52,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setSchemaLocation(schemaLocation Resource) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 50,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public addScript(script Resource) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testBuildNoSuchSchema() : void renamed to public testBuildNoSuchScript() : void in class org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilderTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/test/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseBuilderTests.java",
+		"startLine": 31,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testBuildNoSuchSchema() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/test/java/org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseBuilderTests.java",
+		"startLine": 31,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testBuildNoSuchScript() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter jdbcTemplate : JdbcTemplate to template : JdbcTemplate in method package executeSqlScript(template JdbcTemplate, resource EncodedResource, continueOnError boolean) : void from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 31,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jdbcTemplate : JdbcTemplate"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 6,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "template : JdbcTemplate"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 6,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter schemaLocation : Resource to script : Resource in method public addScript(script Resource) : void from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 32,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "schemaLocation : Resource"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "script : Resource"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable schemaLocation : Resource to script : Resource in method public populate(template JdbcTemplate) : void from class org.springframework.jdbc.datasource.embedded.ResourceDatabasePopulator",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 19,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "schemaLocation : Resource"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 8,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "script : Resource"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/embedded/ResourceDatabasePopulator.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 4,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

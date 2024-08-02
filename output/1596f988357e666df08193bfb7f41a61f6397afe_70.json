@@ -1,0 +1,540 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "1596f988357e666df08193bfb7f41a61f6397afe",
+	"url": "https://github.com/apache/hbase/commit/1596f988357e666df08193bfb7f41a61f6397afe",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type Exception in method public main(args String[]) : void from class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 119,
+		"endLine": 145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public main(args String[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 49,
+		"endColumn": 58,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public main(args String[]) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type dfs : DistributedFileSystem to fs : FileSystem in method public doSmokeTest(fs FileSystem, path Path, codec String) : void from class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 29,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dfs : DistributedFileSystem"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fs : FileSystem"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 106,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public doSmokeTest(fs FileSystem, path Path, codec String) : void extracted from public main(args String[]) : void in class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 119,
+		"endLine": 145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 104,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public doSmokeTest(fs FileSystem, path Path, codec String) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 106,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "doSmokeTest(fs,path,args[1])"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 119,
+		"endLine": 120,
+		"startColumn": 7,
+		"endColumn": 54,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 14,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method protected openConnection(urlString String) : DistributedFileSystem inlined to public main(args String[]) : void in class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 99,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "protected openConnection(urlString String) : DistributedFileSystem"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 119,
+		"endLine": 145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "openConnection(args[0])"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public main(args String[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable dfs : DistributedFileSystem to fs : FileSystem in method public doSmokeTest(fs FileSystem, path Path, codec String) : void from class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 29,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dfs : DistributedFileSystem"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fs : FileSystem"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 106,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dfsConf : Configuration to conf : Configuration in method public main(args String[]) : void from class org.apache.hadoop.hbase.util.CompressionTest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 19,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dfsConf : Configuration"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 19,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/CompressionTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

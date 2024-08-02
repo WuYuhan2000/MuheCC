@@ -1,0 +1,321 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dustin/java-memcached-client",
+	"sha1": "98ca257ae6255edb10a2f75c4a3f26240baee2b3",
+	"url": "https://github.com/dustin/java-memcached-client/commit/98ca257ae6255edb10a2f75c4a3f26240baee2b3",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public delete(key String, cas long) : OperationFuture<Boolean> extracted from public delete(key String) : OperationFuture<Boolean> in class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1980,
+		"endLine": 2008,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public delete(key String) : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1989,
+		"endLine": 1989,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1990,
+		"endLine": 1991,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2005,
+		"endLine": 2005,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2006,
+		"endLine": 2006,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2007,
+		"endLine": 2007,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1994,
+		"endLine": 1994,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1998,
+		"endLine": 1998,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2002,
+		"endLine": 2002,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1992,
+		"endLine": 2004,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1993,
+		"endLine": 1995,
+		"startColumn": 53,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1997,
+		"endLine": 1999,
+		"startColumn": 37,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2001,
+		"endLine": 2003,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1992,
+		"endLine": 2030,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public delete(key String, cas long) : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2002,
+		"endLine": 2002,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2003,
+		"endLine": 2004,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2027,
+		"endLine": 2027,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2028,
+		"endLine": 2028,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2029,
+		"endLine": 2029,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2008,
+		"endLine": 2008,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2012,
+		"endLine": 2012,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2016,
+		"endLine": 2016,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2006,
+		"endLine": 2018,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2007,
+		"endLine": 2009,
+		"startColumn": 53,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2011,
+		"endLine": 2013,
+		"startColumn": 37,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2015,
+		"endLine": 2017,
+		"startColumn": 30,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1980,
+		"endLine": 1990,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public delete(key String) : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1989,
+		"endLine": 1989,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "delete(key,(long)0)"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2020,
+		"endLine": 2020,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2022,
+		"endLine": 2022,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2024,
+		"endLine": 2024,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2021,
+		"endLine": 2023,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2023,
+		"endLine": 2025,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 2021,
+		"endLine": 2025,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

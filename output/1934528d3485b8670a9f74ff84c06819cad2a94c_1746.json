@@ -1,0 +1,606 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/griddynamics/jagger",
+	"sha1": "1934528d3485b8670a9f74ff84c06819cad2a94c",
+	"url": "https://github.com/griddynamics/jagger/commit/1934528d3485b8670a9f74ff84c06819cad2a94c",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private sessionId : String from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 12,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package sessionId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private sessionId : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private testGroup : CompositeTask from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package tasks : List<WorkloadTask>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private testGroup : CompositeTask"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type tasks : List<WorkloadTask> to testGroup : CompositeTask in class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "tasks : List<WorkloadTask>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "testGroup : CompositeTask"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type decisionMakerInfo : DecisionMakerInfo to decisionMakerInfo : TestGroupDecisionMakerInfo in method public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 27,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "decisionMakerInfo : DecisionMakerInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 31,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "decisionMakerInfo : TestGroupDecisionMakerInfo"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type decisionMakerInfo : DecisionMakerInfo to decisionMakerInfo : TestGroupDecisionMakerInfo in method public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener.Composer",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 38,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "decisionMakerInfo : DecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 42,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "decisionMakerInfo : TestGroupDecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type tasks : List<WorkloadTask> to testGroup : CompositeTask in method public setTestGroup(testGroup CompositeTask) : void from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tasks : List<WorkloadTask>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "testGroup : CompositeTask"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Decision in method public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 9,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 64,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onDecisionMaking(decisionMakerInfo DecisionMakerInfo) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Decision"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to Decision in method public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener.Composer",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 33,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onDecisionMaking(decisionMakerInfo DecisionMakerInfo) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Decision"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 36,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public onDecisionMaking(decisionMakerInfo TestGroupDecisionMakerInfo) : Decision"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type decisionMakerInfo : DecisionMakerInfo to testGroupDecisionMakerInfo : TestGroupDecisionMakerInfo in method public onTaskDistributionCompleted(sessionId String, taskId String, task Task) : void from class com.griddynamics.jagger.master.DecisionMakerDistributionListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 31,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "decisionMakerInfo : DecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 141,
+		"endLine": 142,
+		"startColumn": 40,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "testGroupDecisionMakerInfo : TestGroupDecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.griddynamics.jagger.engine.e1.sessioncomparation.DecisionMakerInfo moved and renamed to com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 7,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.sessioncomparation.DecisionMakerInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 8,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.griddynamics.jagger.engine.e1.sessioncomparation.TestGroupDecisionMakerListener moved to com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/TestGroupDecisionMakerListener.java",
+		"startLine": 8,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.sessioncomparation.TestGroupDecisionMakerListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerListener.java",
+		"startLine": 11,
+		"endLine": 57,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerListener"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter databaseService : DatabaseService in method public DecisionMakerDistributionListener(nodeContext NodeContext, databaseService DatabaseService) from class com.griddynamics.jagger.master.DecisionMakerDistributionListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 71,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "databaseService : DatabaseService"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DecisionMakerDistributionListener(nodeContext NodeContext, databaseService DatabaseService)"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public DecisionMakerDistributionListener(nodeContext NodeContext)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute tasks : List<WorkloadTask> to testGroup : CompositeTask in class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "tasks : List<WorkloadTask>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 27,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "testGroup : CompositeTask"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setTasks(tasks List<WorkloadTask>) : void renamed to public setTestGroup(testGroup CompositeTask) : void in class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setTasks(tasks List<WorkloadTask>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setTestGroup(testGroup CompositeTask) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter tasks : List<WorkloadTask> to testGroup : CompositeTask in method public setTestGroup(testGroup CompositeTask) : void from class com.griddynamics.jagger.engine.e1.collector.testgroup.TestGroupDecisionMakerInfo",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tasks : List<WorkloadTask>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/sessioncomparation/DecisionMakerInfo.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "testGroup : CompositeTask"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/collector/testgroup/TestGroupDecisionMakerInfo.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable children : List<WorkloadTask> to workloadTasks : List<WorkloadTask> in method public onTaskDistributionCompleted(sessionId String, taskId String, task Task) : void from class com.griddynamics.jagger.master.DecisionMakerDistributionListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 32,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "children : List<WorkloadTask>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 32,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "workloadTasks : List<WorkloadTask>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable decisionMakerInfo : DecisionMakerInfo to testGroupDecisionMakerInfo : TestGroupDecisionMakerInfo in method public onTaskDistributionCompleted(sessionId String, taskId String, task Task) : void from class com.griddynamics.jagger.master.DecisionMakerDistributionListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 31,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "decisionMakerInfo : DecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 141,
+		"endLine": 142,
+		"startColumn": 40,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "testGroupDecisionMakerInfo : TestGroupDecisionMakerInfo"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

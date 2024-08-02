@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "426b094ec7683cd482b87ff7fe102a005ff1dac3",
+	"url": "https://github.com/apache/deltaspike/commit/426b094ec7683cd482b87ff7fe102a005ff1dac3",
+	"refactorings": [{
+	"type": "Move Method",
+	"description": "Move Method public activateWindowContext(windowId String) : void from class org.apache.deltaspike.core.spi.scope.window.WindowContextManager to public activateWindowContext(windowId String) : void from class org.apache.deltaspike.core.spi.scope.window.WindowContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContextManager.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public activateWindowContext(windowId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public activateWindowContext(windowId String) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public closeAllWindowContexts() : void from class org.apache.deltaspike.core.spi.scope.window.WindowContextManager to public closeAllWindowContexts() : void from class org.apache.deltaspike.core.spi.scope.window.WindowContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContextManager.java",
+		"startLine": 64,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public closeAllWindowContexts() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public closeAllWindowContexts() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public closeCurrentWindowContext() : boolean from class org.apache.deltaspike.core.spi.scope.window.WindowContextManager to public closeCurrentWindowContext() : boolean from class org.apache.deltaspike.core.spi.scope.window.WindowContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContextManager.java",
+		"startLine": 57,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public closeCurrentWindowContext() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 52,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public closeCurrentWindowContext() : boolean"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getCurrentWindowId() : String from class org.apache.deltaspike.core.spi.scope.window.WindowContextManager to public getCurrentWindowId() : String from class org.apache.deltaspike.core.spi.scope.window.WindowContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContextManager.java",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentWindowId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 40,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getCurrentWindowId() : String"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "6d11a551dcf9bb2ed2bd10530b1fbaf6f6380804",
+	"url": "https://github.com/ReactiveX/RxJava/commit/6d11a551dcf9bb2ed2bd10530b1fbaf6f6380804",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressWarnings(\"rawtypes\") in class rx.subjects.SubjectSubscriptionManager.State",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 144,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "rx.subjects.SubjectSubscriptionManager.State"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 142,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "rx.subjects.SubjectSubscriptionManager.State"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type observers : SubjectObserver<Object>[] to observers : SubjectObserver[] in class rx.subjects.SubjectSubscriptionManager.State",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 41,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "observers : SubjectObserver<Object>[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "observers : SubjectObserver[]"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @SuppressWarnings(\"rawtypes\") in attribute package EMPTY_O : SubjectObserver[] from class rx.subjects.SubjectSubscriptionManager.State",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 33,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package EMPTY_O : SubjectObserver[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/subjects/SubjectSubscriptionManager.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 33,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "package EMPTY_O : SubjectObserver[]"
+}]
+}
+]
+}]
+}

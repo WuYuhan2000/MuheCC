@@ -1,0 +1,480 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/adangel/pmd",
+	"sha1": "b767617542a2403051a0f884d18462e60bf45e04",
+	"url": "https://github.com/adangel/pmd/commit/b767617542a2403051a0f884d18462e60bf45e04",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter theImagePath : String in method public TextColumnDescriptor(theLabel String, theAlignment int, theWidth int, theAccessor RuleFieldAccessor, resizableFlag boolean, theImagePath String) from class net.sourceforge.pmd.eclipse.ui.preferences.br.TextColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/TextColumnDescriptor.java",
+		"startLine": 48,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TextColumnDescriptor(theLabel String, theAlignment int, theWidth int, theAccessor RuleFieldAccessor, resizableFlag boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/TextColumnDescriptor.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 133,
+		"endColumn": 152,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "theImagePath : String"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/TextColumnDescriptor.java",
+		"startLine": 49,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TextColumnDescriptor(theLabel String, theAlignment int, theWidth int, theAccessor RuleFieldAccessor, resizableFlag boolean, theImagePath String)"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected preferences : IPreferences from class net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private preferences : IPreferences"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected preferences : IPreferences"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public NEW_PREFERENCE_LOCATION : String from class net.sourceforge.pmd.eclipse.runtime.preferences.impl.PreferencesManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/preferences/impl/PreferencesManagerImpl.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 33,
+		"endColumn": 160,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NEW_PREFERENCE_LOCATION : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/preferences/impl/PreferencesManagerImpl.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 32,
+		"endColumn": 159,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public NEW_PREFERENCE_LOCATION : String"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected getMessage(key String) : String from class net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getMessage(key String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 61,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected getMessage(key String) : String"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private filteredRuleSet(properties IProjectProperties) : RuleSet extracted from private processResource(resource IResource) : void in class net.sourceforge.pmd.eclipse.runtime.cmd.ReviewCodeCmd",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 286,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private processResource(resource IResource) : void"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 368,
+		"endLine": 378,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private filteredRuleSet(properties IProjectProperties) : RuleSet"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 10,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 289,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private processResource(resource IResource) : void"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "filteredRuleSet(properties)"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 10,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 10,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 10,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private filteredRuleSet(properties IProjectProperties) : RuleSet extracted from private processResourceDelta() : void in class net.sourceforge.pmd.eclipse.runtime.cmd.ReviewCodeCmd",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 359,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private processResourceDelta() : void"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 368,
+		"endLine": 378,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private filteredRuleSet(properties IProjectProperties) : RuleSet"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 10,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 380,
+		"endLine": 412,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private processResourceDelta() : void"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "filteredRuleSet(properties)"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 10,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 10,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 10,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/runtime/cmd/ReviewCodeCmd.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 10,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage from classes [net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage]",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 19,
+		"endLine": 115,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 21,
+		"endLine": 132,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 10,
+		"endLine": 70,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable fhProvider : IFileHistoryProvider in method public authorNameFor(resource IResource) : String from class net.sourceforge.pmd.eclipse.ui.model.RepositoryUtil",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/model/RepositoryUtil.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 7,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/model/RepositoryUtil.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 28,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "fhProvider : IFileHistoryProvider"
+}, {
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/model/RepositoryUtil.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 7,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private preferences : IPreferences from class net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage to protected preferences : IPreferences from class net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private preferences : IPreferences"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected preferences : IPreferences"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private getMessage(key String) : String from class net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage to protected getMessage(key String) : String from class net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getMessage(key String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 61,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected getMessage(key String) : String"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public init(workbench IWorkbench) : void from class net.sourceforge.pmd.eclipse.ui.preferences.CPDPreferencePage to public init(workbench IWorkbench) : void from class net.sourceforge.pmd.eclipse.ui.preferences.br.AbstractPMDPreferencePage",
+	"leftSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/CPDPreferencePage.java",
+		"startLine": 32,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(workbench IWorkbench) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd-eclipse-plugin/plugins/net.sourceforge.pmd.eclipse.plugin/src/net/sourceforge/pmd/eclipse/ui/preferences/br/AbstractPMDPreferencePage.java",
+		"startLine": 41,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public init(workbench IWorkbench) : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,306 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "4ef78b5acd5df2a2d96930392fcc729858354a61",
+	"url": "https://github.com/aeshell/aesh/commit/4ef78b5acd5df2a2d96930392fcc729858354a61",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private line : StringBuilder from class org.jboss.jreadline.console.Buffer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Buffer.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private line : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Buffer.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private line : StringBuilder"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Buffer.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "protected setLine(line StringBuilder) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public Console(in InputStream, out Writer, terminal Terminal, mode EditMode) extracted from public Console(in InputStream, out Writer, terminal Terminal) in class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 57,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Console(in InputStream, out Writer, terminal Terminal)"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 65,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Console(in InputStream, out Writer, terminal Terminal, mode EditMode)"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 61,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Console(in InputStream, out Writer, terminal Terminal)"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(in,out,terminal,null)"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter terminal : Terminal to term : Terminal in method private setTerminal(term Terminal) : void from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "terminal : Terminal"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 30,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "term : Terminal"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

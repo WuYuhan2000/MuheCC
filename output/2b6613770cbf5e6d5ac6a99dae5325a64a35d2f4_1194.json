@@ -1,0 +1,651 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/tapiji/tapiji",
+	"sha1": "2b6613770cbf5e6d5ac6a99dae5325a64a35d2f4",
+	"url": "https://github.com/tapiji/tapiji/commit/2b6613770cbf5e6d5ac6a99dae5325a64a35d2f4",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type candidate : IPluginModelBase to project : IProject in method public getFragments(hostProject IProject) : List<IProject> from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "candidate : IPluginModelBase"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "project : IProject"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fragments : ArrayList<IProject> to fragmentIds : List<IProject> in method public getFragments(hostProject IProject) : List<IProject> from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 23,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fragments : ArrayList<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fragmentIds : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 6,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private getFragmentsAsWorkspaceProjects(hostProject IProject, fragmentModels ArrayList<IPluginModelBase>) : ArrayList<IProject> inlined to public getFragments(hostProject IProject) : List<IProject> in class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 216,
+		"endLine": 222,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private getFragmentsAsWorkspaceProjects(hostProject IProject, fragmentModels ArrayList<IPluginModelBase>) : ArrayList<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 3,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 116,
+		"endLine": 152,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public getFragments(hostProject IProject) : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 35,
+		"endColumn": 95,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "getFragmentsAsWorkspaceProjects(hostProject,fragmentModels)"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 144,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public getFragments(hostProject IProject) : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 6,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private getPluginProjects(fragmentModels List<IPluginModelBase>, projects IProject[]) : ArrayList<IProject> inlined to public getFragments(hostProject IProject) : List<IProject> in class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 224,
+		"endLine": 235,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private getPluginProjects(fragmentModels List<IPluginModelBase>, projects IProject[]) : ArrayList<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 216,
+		"endLine": 222,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private getFragmentsAsWorkspaceProjects(hostProject IProject, fragmentModels ArrayList<IPluginModelBase>) : ArrayList<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 35,
+		"endColumn": 78,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "getPluginProjects(fragmentModels,projects)"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 4,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 41,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 226,
+		"endLine": 232,
+		"startColumn": 37,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 226,
+		"endLine": 232,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 144,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public getFragments(hostProject IProject) : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 6,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable candidate : IPluginModelBase to project : IProject in method public getFragments(hostProject IProject) : List<IProject> from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "candidate : IPluginModelBase"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "project : IProject"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable fragmentProjects : List<IProject> to fragmentIds : List<IProject> in method public lookupFragment(pluginProject IProject) : IProject[] from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 18,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fragmentProjects : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "fragmentIds : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 6,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable fragments : ArrayList<IProject> to fragmentIds : List<IProject> in method public getFragments(hostProject IProject) : List<IProject> from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 23,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fragments : ArrayList<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "fragmentIds : List<IProject>"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 6,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hostId : String to pluginId : String in method public getFragments(hostProject IProject) : List<IProject> from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hostId : String"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "pluginId : String"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 6,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hostPluginId : String to pluginId : String in method public lookupFragment(pluginProject IProject) : IProject[] from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 10,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hostPluginId : String"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 10,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "pluginId : String"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 111,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable workspaceProjects : IProject[] to projects : IProject[] in method public lookupFragment(pluginProject IProject) : IProject[] from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 14,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "workspaceProjects : IProject[]"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 80,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 17,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "projects : IProject[]"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 6,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 120,
+		"endLine": 127,
+		"startColumn": 6,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(!project.isOpen() || getFragmentId(project,hostPluginId) == null) to [if(getFragmentId(project,pluginId) == null), if(!project.isOpen())] in method public lookupFragment(pluginProject IProject) : IProject[] from class org.eclipse.babel.core.util.PDEUtils",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 81,
+		"endLine": 84,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!project.isOpen() || getFragmentId(project,hostPluginId) == null)"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 57,
+		"endLine": 93,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public lookupFragment(pluginProject IProject) : IProject[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(getFragmentId(project,pluginId) == null)"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 122,
+		"endLine": 123,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(!project.isOpen())"
+}, {
+		"filePath": "org.eclipse.babel.core/src/org/eclipse/babel/core/util/PDEUtils.java",
+		"startLine": 100,
+		"endLine": 131,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public lookupFragment(pluginProject IProject) : IProject[]"
+}]
+}
+]
+}]
+}

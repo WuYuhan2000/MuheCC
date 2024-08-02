@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "319e34aa1743781b453df5df51f03183b123560a",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/319e34aa1743781b453df5df51f03183b123560a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type clientResource : ClientResource to clientResource : SipClientResource in class org.restlet.example.ext.sip.UacClientResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.example/src/org/restlet/example/ext/sip/UacClientResource.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "clientResource : ClientResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.example/src/org/restlet/example/ext/sip/UacClientResource.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 31,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "clientResource : SipClientResource"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public setResponseCallId(callId String) : void from class org.restlet.ext.sip.SipServerResource to public setCallId(callId String) : void from class org.restlet.ext.sip.SipClientResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipServerResource.java",
+		"startLine": 117,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setResponseCallId(callId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipClientResource.java",
+		"startLine": 568,
+		"endLine": 576,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setCallId(callId String) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public init(context Context, request Request, response Response) : void from class org.restlet.resource.UniformResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/UniformResource.java",
+		"startLine": 596,
+		"endLine": 618,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(context Context, request Request, response Response) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/UniformResource.java",
+		"startLine": 596,
+		"endLine": 618,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public init(context Context, request Request, response Response) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getCallSequence() : String renamed to public getCommandSequence() : String in class org.restlet.ext.sip.SipServerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipServerResource.java",
+		"startLine": 44,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCallSequence() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipServerResource.java",
+		"startLine": 54,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCommandSequence() : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getRequestCallId() : String renamed to public getCallId() : String in class org.restlet.ext.sip.SipServerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipServerResource.java",
+		"startLine": 67,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRequestCallId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.sip/src/org/restlet/ext/sip/SipServerResource.java",
+		"startLine": 45,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCallId() : String"
+}]
+}
+]
+}]
+}

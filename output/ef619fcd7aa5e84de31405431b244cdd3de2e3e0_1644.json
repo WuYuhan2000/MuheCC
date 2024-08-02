@@ -1,0 +1,150 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/adangel/pmd",
+	"sha1": "ef619fcd7aa5e84de31405431b244cdd3de2e3e0",
+	"url": "https://github.com/adangel/pmd/commit/ef619fcd7aa5e84de31405431b244cdd3de2e3e0",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type j : Iterator to l : int in method public visit(node ASTVariableDeclaratorId, data Object) : Object from class net.sourceforge.pmd.rules.AbstractPoorMethodCall",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "j : Iterator"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 30,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "l : int"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 25,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass net.sourceforge.pmd.rules.AbstractPoorMethodCall from classes [net.sourceforge.pmd.rules.strings.UseIndexOfChar]",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 14,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "net.sourceforge.pmd.rules.strings.UseIndexOfChar"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 5,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "net.sourceforge.pmd.rules.strings.UseIndexOfChar"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 14,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "net.sourceforge.pmd.rules.AbstractPoorMethodCall"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public visit(node ASTVariableDeclaratorId, data Object) : Object from class net.sourceforge.pmd.rules.strings.UseIndexOfChar to public visit(node ASTVariableDeclaratorId, data Object) : Object from class net.sourceforge.pmd.rules.AbstractPoorMethodCall",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 15,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public visit(node ASTVariableDeclaratorId, data Object) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 84,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public visit(node ASTVariableDeclaratorId, data Object) : Object"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable j : Iterator to l : int in method public visit(node ASTVariableDeclaratorId, data Object) : Object from class net.sourceforge.pmd.rules.AbstractPoorMethodCall",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "j : Iterator"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/strings/UseIndexOfChar.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 30,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "l : int"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/AbstractPoorMethodCall.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 25,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1902 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/griddynamics/jagger",
+	"sha1": "fb92acb390d3b42ae6224127cd9de576b1488cd1",
+	"url": "https://github.com/griddynamics/jagger/commit/fb92acb390d3b42ae6224127cd9de576b1488cd1",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type timeStamp : Long to time : Double in class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "timeStamp : Long"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "time : Double"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type taskDataDtos : Collection<TaskDataDto> to taskIds : Set<Long> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "taskDataDtos : Collection<TaskDataDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "taskIds : Set<Long>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type taskDataDtos : Collection<TaskDataDto> to taskIds : Set<Long> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1166,
+		"endLine": 1166,
+		"startColumn": 68,
+		"endColumn": 104,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "taskDataDtos : Collection<TaskDataDto>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1190,
+		"endLine": 1190,
+		"startColumn": 9,
+		"endColumn": 136,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1188,
+		"endLine": 1188,
+		"startColumn": 9,
+		"endColumn": 145,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1232,
+		"endLine": 1232,
+		"startColumn": 69,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "taskIds : Set<Long>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1250,
+		"endLine": 1250,
+		"startColumn": 9,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1269,
+		"endLine": 1269,
+		"startColumn": 9,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type timeStamp : Long to time : Double in method public setTime(time Double) : void from class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "timeStamp : Long"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "time : Double"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<MetricValueEntity> to List<MetricPlotPointEntity> in method public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity> from class com.griddynamics.jagger.engine.e1.services.DataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<MetricValueEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricValueEntity>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<MetricPlotPointEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 126,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<MetricValueEntity> to List<MetricPlotPointEntity> in method public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity> from class com.griddynamics.jagger.engine.e1.services.DefaultDataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 12,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<MetricValueEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 339,
+		"endLine": 342,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricValueEntity>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<MetricPlotPointEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 322,
+		"endLine": 327,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<MetricValueEntity> to List<MetricPlotPointEntity> in method public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity> from class com.griddynamics.jagger.engine.e1.services.EmptyDataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<MetricValueEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 98,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricValueEntity>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<MetricPlotPointEntity>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 110,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metric MetricEntity) : List<MetricPlotPointEntity>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Long to Double in method public getTime() : Double from class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Long"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTimeStamp() : Long"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Double"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 8,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getTime() : Double"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<MetricEntity,List<MetricValueEntity>> to Map<MetricEntity,List<MetricPlotPointEntity>> in method public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>> from class com.griddynamics.jagger.engine.e1.services.DataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<MetricEntity,List<MetricValueEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 92,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricValueEntity>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<MetricEntity,List<MetricPlotPointEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DataService.java",
+		"startLine": 136,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 96,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<MetricEntity,List<MetricValueEntity>> to Map<MetricEntity,List<MetricPlotPointEntity>> in method public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>> from class com.griddynamics.jagger.engine.e1.services.DefaultDataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<MetricEntity,List<MetricValueEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 344,
+		"endLine": 347,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricValueEntity>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 12,
+		"endColumn": 58,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<MetricEntity,List<MetricPlotPointEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/DefaultDataService.java",
+		"startLine": 329,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<MetricEntity,List<MetricValueEntity>> to Map<MetricEntity,List<MetricPlotPointEntity>> in method public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>> from class com.griddynamics.jagger.engine.e1.services.EmptyDataService",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<MetricEntity,List<MetricValueEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 103,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricValueEntity>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 12,
+		"endColumn": 58,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<MetricEntity,List<MetricPlotPointEntity>>"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/EmptyDataService.java",
+		"startLine": 116,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricPlotData(metrics Set<MetricEntity>) : Map<MetricEntity,List<MetricPlotPointEntity>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<TaskDataDto,Map<String,TestInfoDto>> to Map<Long,Map<String,TestInfoDto>> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<TaskDataDto,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 123,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<Long,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 105,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<TaskDataDto,Map<String,TestInfoDto>> to Map<Long,Map<String,TestInfoDto>> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1166,
+		"endLine": 1166,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<TaskDataDto,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1165,
+		"endLine": 1215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1232,
+		"endLine": 1232,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<Long,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1231,
+		"endLine": 1272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type resultMap : Map<TaskDataDto,Map<String,TestInfoDto>> to resultMap : Map<Long,Map<String,TestInfoDto>> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1190,
+		"endLine": 1190,
+		"startColumn": 52,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resultMap : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1214,
+		"endLine": 1214,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1202,
+		"endLine": 1202,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1208,
+		"endLine": 1208,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1201,
+		"endLine": 1203,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1250,
+		"endLine": 1250,
+		"startColumn": 45,
+		"endColumn": 116,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "resultMap : Map<Long,Map<String,TestInfoDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1271,
+		"endLine": 1271,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1260,
+		"endLine": 1260,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1266,
+		"endLine": 1266,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1259,
+		"endLine": 1261,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public getPlotDataByMetricNameDto(metricNames Set<MetricNameDto>) : Map<MetricNameDto,List<PlotDatasetDto>> extracted from public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto> in class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 233,
+		"endLine": 327,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 25,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 25,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 25,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 25,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 25,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 25,
+		"endColumn": 164,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 263,
+		"endLine": 264,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 9,
+		"endColumn": 152,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 274,
+		"endLine": 280,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 21,
+		"endColumn": 99,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 9,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 242,
+		"endLine": 265,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 273,
+		"endLine": 281,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 286,
+		"endLine": 288,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 285,
+		"endLine": 292,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 289,
+		"endLine": 292,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 296,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 298,
+		"endLine": 301,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 241,
+		"endLine": 266,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 273,
+		"endLine": 281,
+		"startColumn": 67,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 286,
+		"endLine": 288,
+		"startColumn": 91,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 298,
+		"endLine": 301,
+		"startColumn": 82,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 241,
+		"endLine": 266,
+		"startColumn": 83,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 277,
+		"endLine": 279,
+		"startColumn": 95,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 285,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getPlotDataByMetricNameDto(metricNames Set<MetricNameDto>) : Map<MetricNameDto,List<PlotDatasetDto>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 21,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 21,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 21,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 21,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 21,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 21,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 17,
+		"endColumn": 25,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 21,
+		"endColumn": 160,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 318,
+		"endLine": 319,
+		"startColumn": 21,
+		"endColumn": 75,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 9,
+		"endColumn": 152,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 328,
+		"endLine": 334,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 21,
+		"endColumn": 99,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 9,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 341,
+		"endLine": 341,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 297,
+		"endLine": 320,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 327,
+		"endLine": 335,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 340,
+		"endLine": 342,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 339,
+		"endLine": 346,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 343,
+		"endLine": 346,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 350,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 288,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 296,
+		"endLine": 321,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 327,
+		"endLine": 335,
+		"startColumn": 67,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 340,
+		"endLine": 342,
+		"startColumn": 91,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 288,
+		"endLine": 290,
+		"startColumn": 36,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 296,
+		"endLine": 321,
+		"startColumn": 57,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 331,
+		"endLine": 333,
+		"startColumn": 95,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 233,
+		"endLine": 283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPlotDataByMetricNode(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 61,
+		"endColumn": 105,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getPlotDataByMetricNameDto(metricNameDtoSet)"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 110,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 9,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 350,
+		"endLine": 352,
+		"startColumn": 74,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute timeStamp : Long to time : Double in class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "timeStamp : Long"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "time : Double"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.griddynamics.jagger.engine.e1.services.data.service.MetricValueEntity renamed to com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 3,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.services.data.service.MetricValueEntity"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 4,
+		"endLine": 23,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getMetrics(metricNames List<MetricNameDto>) : List<MetricDto> renamed to public getSummaryByMetricNameDto(metricNames List<MetricNameDto>) : List<MetricDto> in class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetrics(metricNames List<MetricNameDto>) : List<MetricDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSummaryByMetricNameDto(metricNames List<MetricNameDto>) : List<MetricDto>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getMetrics(metricNames List<MetricNameDto>) : List<MetricDto> renamed to public getSummaryByMetricNameDto(metricNames List<MetricNameDto>) : List<MetricDto> in class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 373,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetrics(metricNames List<MetricNameDto>) : List<MetricDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 403,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSummaryByMetricNameDto(metricNames List<MetricNameDto>) : List<MetricDto>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto> renamed to public getPlotDataByMetricNode(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto> in class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 103,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 115,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getPlotDataByMetricNode(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto> renamed to public getPlotDataByMetricNode(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto> in class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 233,
+		"endLine": 327,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPlotData(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 233,
+		"endLine": 283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getPlotDataByMetricNode(plots Set<MetricNode>) : Map<MetricNode,PlotSeriesDto>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>> renamed to public getTestInfoByTaskDataDto(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>> in class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 123,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 135,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTestInfoByTaskDataDto(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>> renamed to public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> in class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 123,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 105,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>> renamed to public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> in class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1165,
+		"endLine": 1215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestInfos(taskDataDtos Collection<TaskDataDto>) : Map<TaskDataDto,Map<String,TestInfoDto>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1231,
+		"endLine": 1272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getTimeStamp() : Long renamed to public getTime() : Double in class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 14,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTimeStamp() : Long"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 8,
+		"endLine": 10,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTime() : Double"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setTimeStamp(timeStamp Long) : void renamed to public setTime(time Double) : void in class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 18,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setTimeStamp(timeStamp Long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setTime(time Double) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter taskDataDtos : Collection<TaskDataDto> to taskIds : Set<Long> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseService",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "taskDataDtos : Collection<TaskDataDto>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseService.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 62,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "taskIds : Set<Long>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter taskDataDtos : Collection<TaskDataDto> to taskIds : Set<Long> in method public getTestInfoByTaskIds(taskIds Set<Long>) : Map<Long,Map<String,TestInfoDto>> from class com.griddynamics.jagger.dbapi.DatabaseServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1166,
+		"endLine": 1166,
+		"startColumn": 68,
+		"endColumn": 104,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "taskDataDtos : Collection<TaskDataDto>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1190,
+		"endLine": 1190,
+		"startColumn": 9,
+		"endColumn": 136,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1188,
+		"endLine": 1188,
+		"startColumn": 9,
+		"endColumn": 145,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1232,
+		"endLine": 1232,
+		"startColumn": 69,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "taskIds : Set<Long>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1250,
+		"endLine": 1250,
+		"startColumn": 9,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/DatabaseServiceImpl.java",
+		"startLine": 1269,
+		"endLine": 1269,
+		"startColumn": 9,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter timeStamp : Long to time : Double in method public setTime(time Double) : void from class com.griddynamics.jagger.engine.e1.services.data.service.MetricPlotPointEntity",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 30,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "timeStamp : Long"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricValueEntity.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "time : Double"
+}, {
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/engine/e1/services/data/service/MetricPlotPointEntity.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

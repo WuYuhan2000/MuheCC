@@ -1,0 +1,195 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "ac93bc54a2c1a7b17d3a0b57fc9a24ec9d334c78",
+	"url": "https://github.com/apache/deltaspike/commit/ac93bc54a2c1a7b17d3a0b57fc9a24ec9d334c78",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @PreDestroy in method public destroyBeans() : void from class org.apache.deltaspike.core.impl.scope.window.WindowBeanHolder",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 88,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowBeanHolder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@PreDestroy"
+}, {
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowBeanHolder.java",
+		"startLine": 93,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public destroyBeans() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public destroyAllActive(storage ContextualStorage) : void from class org.apache.deltaspike.core.util.context.AbstractContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/util/context/AbstractContext.java",
+		"startLine": 156,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destroyAllActive(storage ContextualStorage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/util/context/AbstractContext.java",
+		"startLine": 156,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public destroyAllActive(storage ContextualStorage) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public destroy() : void from class org.apache.deltaspike.core.impl.scope.window.WindowContextImpl to public destroyBeans() : void from class org.apache.deltaspike.core.impl.scope.window.WindowBeanHolder",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 88,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowBeanHolder.java",
+		"startLine": 93,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public destroyBeans() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public destroy() : void from class org.apache.deltaspike.core.impl.scope.window.WindowContextImpl",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 88,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowBeanHolder.java",
+		"startLine": 93,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public destroyBeans() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method public destroy() : void from class org.apache.deltaspike.core.impl.scope.window.WindowContextImpl",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 88,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destroy() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowBeanHolder.java",
+		"startLine": 93,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public destroyBeans() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public activateWindowContext(windowId String) : void renamed to public activateWindow(windowId String) : void in class org.apache.deltaspike.core.impl.scope.window.WindowContextImpl",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 58,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public activateWindowContext(windowId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/WindowContextImpl.java",
+		"startLine": 73,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public activateWindow(windowId String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public activateWindowContext(windowId String) : void renamed to public activateWindow(windowId String) : void in class org.apache.deltaspike.core.spi.scope.window.WindowContext",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public activateWindowContext(windowId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/spi/scope/window/WindowContext.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public activateWindow(windowId String) : void"
+}]
+}
+]
+}]
+}

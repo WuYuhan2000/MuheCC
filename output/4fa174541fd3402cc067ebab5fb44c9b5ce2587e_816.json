@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "4fa174541fd3402cc067ebab5fb44c9b5ce2587e",
+	"url": "https://github.com/apache/camel/commit/4fa174541fd3402cc067ebab5fb44c9b5ce2587e",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type SchedulerException in method public addJob(job JobDetail, trigger Trigger) : void from class org.apache.camel.component.quartz.QuartzComponent",
+	"leftSideLocations": [{
+		"filePath": "components/camel-quartz/src/main/java/org/apache/camel/component/quartz/QuartzComponent.java",
+		"startLine": 189,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addJob(job JobDetail, trigger Trigger) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-quartz/src/main/java/org/apache/camel/component/quartz/QuartzComponent.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 63,
+		"endColumn": 81,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "SchedulerException"
+}, {
+		"filePath": "components/camel-quartz/src/main/java/org/apache/camel/component/quartz/QuartzComponent.java",
+		"startLine": 189,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public addJob(job JobDetail, trigger Trigger) : void"
+}]
+}
+]
+}]
+}

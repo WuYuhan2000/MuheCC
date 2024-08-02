@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "b9feaa999969e0c81ce4a84e10db110c37a97535",
+	"url": "https://github.com/elastic/elasticsearch/commit/b9feaa999969e0c81ce4a84e10db110c37a97535",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable c : TestCluster in method public accquireCluster() : TestCluster from class org.elasticsearch.test.integration.ClusterManager",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "c : TestCluster"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter generation : int in method public TestCluster(generation int) from class org.elasticsearch.test.integration.TestCluster",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/TestCluster.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "generation : int"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/integration/TestCluster.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TestCluster(generation int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/TestCluster.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public TestCluster()"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter toRelease : TestCluster in method public releaseCluster(toRelease TestCluster) : void from class org.elasticsearch.test.integration.ClusterManager",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 52,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "toRelease : TestCluster"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 48,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public releaseCluster(toRelease TestCluster) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/integration/ClusterManager.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public releaseCluster() : void"
+}]
+}
+]
+}]
+}

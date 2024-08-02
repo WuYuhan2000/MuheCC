@@ -1,0 +1,1428 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "c6cf7489853d603bb1a77ad699b3068cb4779bbf",
+	"url": "https://github.com/apache/hadoop/commit/c6cf7489853d603bb1a77ad699b3068cb4779bbf",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 579,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 578,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.MemoryRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type latestSequenceNumber : int to isUpdate : boolean in method private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 551,
+		"endLine": 551,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "latestSequenceNumber : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "isUpdate : boolean"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private storeOrUpdateRMDT(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void extracted from public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.MemoryRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 156,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 159,
+		"endLine": 160,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 7,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 7,
+		"endColumn": 15,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 158,
+		"endLine": 163,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 158,
+		"endLine": 163,
+		"startColumn": 48,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private storeOrUpdateRMDT(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 154,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 157,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 7,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 7,
+		"endColumn": 15,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 164,
+		"endLine": 165,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 167,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 156,
+		"endLine": 161,
+		"startColumn": 48,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "storeOrUpdateRMDT(rmDTIdentifier,renewDate,true)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 163,
+		"endLine": 166,
+		"startColumn": 19,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 163,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 548,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 579,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 578,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.MemoryRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method private addStoreOrUpdateOps(opList ArrayList<Op>, rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 752,
+		"endLine": 752,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 750,
+		"endLine": 785,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addStoreOrUpdateOps(opList ArrayList<Op>, rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 747,
+		"endLine": 781,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private addStoreOrUpdateOps(opList ArrayList<Op>, rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method private storeOrUpdateRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 481,
+		"endLine": 481,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 479,
+		"endLine": 510,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private storeOrUpdateRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 475,
+		"endLine": 507,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private storeOrUpdateRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 689,
+		"endLine": 689,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 682,
+		"endLine": 689,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 679,
+		"endLine": 686,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected abstract storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 689,
+		"endLine": 689,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 682,
+		"endLine": 689,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 714,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected abstract updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 725,
+		"endLine": 725,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 718,
+		"endLine": 725,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 714,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 703,
+		"endLine": 703,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 700,
+		"endLine": 708,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 700,
+		"endLine": 707,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 471,
+		"endLine": 477,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 468,
+		"endLine": 473,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 732,
+		"endLine": 732,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 729,
+		"endLine": 748,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 728,
+		"endLine": 745,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method protected updateRMDelegationTokenAndSequenceNumberInternal(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 584,
+		"endLine": 584,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 581,
+		"endLine": 587,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 587,
+		"endLine": 592,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(tokenId RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public RMStateStoreRMDTEvent(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, type RMStateStoreEventType) from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreRMDTEvent",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStoreRMDTEvent.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStoreRMDTEvent.java",
+		"startLine": 32,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RMStateStoreRMDTEvent(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, type RMStateStoreEventType)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStoreRMDTEvent.java",
+		"startLine": 31,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RMStateStoreRMDTEvent(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, type RMStateStoreEventType)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public storeRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 677,
+		"endLine": 677,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 671,
+		"endLine": 680,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 669,
+		"endLine": 677,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public storeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public storeRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 454,
+		"endLine": 460,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 452,
+		"endLine": 457,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public storeRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.MemoryRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter latestSequenceNumber : int in method public updateRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 713,
+		"endLine": 713,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "latestSequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 707,
+		"endLine": 716,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public updateRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 704,
+		"endLine": 712,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public updateRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter sequenceNumber : int in method public removeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, sequenceNumber int) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 695,
+		"endLine": 695,
+		"startColumn": 51,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "sequenceNumber : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 691,
+		"endLine": 698,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, sequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 688,
+		"endLine": 695,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public removeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private storeOrUpdateRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void renamed to private storeOrUpdateRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 479,
+		"endLine": 510,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private storeOrUpdateRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int, isUpdate boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 475,
+		"endLine": 507,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private storeOrUpdateRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected abstract storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 682,
+		"endLine": 689,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 679,
+		"endLine": 686,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 682,
+		"endLine": 689,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 714,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected abstract updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 718,
+		"endLine": 725,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 714,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected abstract updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 700,
+		"endLine": 708,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 700,
+		"endLine": 707,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 579,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 578,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 471,
+		"endLine": 477,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 468,
+		"endLine": 473,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.ZKRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 729,
+		"endLine": 748,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/ZKRMStateStore.java",
+		"startLine": 728,
+		"endLine": 745,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected updateRMDelegationTokenAndSequenceNumberInternal(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(tokenId RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 581,
+		"endLine": 587,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateRMDelegationTokenAndSequenceNumberInternal(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 587,
+		"endLine": 592,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(tokenId RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to public storeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 671,
+		"endLine": 680,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 669,
+		"endLine": 677,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public storeRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to public storeRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.FileSystemRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 454,
+		"endLine": 460,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(identifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/FileSystemRMStateStore.java",
+		"startLine": 452,
+		"endLine": 457,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public storeRMDelegationTokenState(identifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.MemoryRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 152,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/MemoryRMStateStore.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 92,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected updateRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to public storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.NullRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRMDelegationTokenAndSequenceNumberState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/NullRMStateStore.java",
+		"startLine": 79,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public storeRMDelegationTokenState(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public updateRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void renamed to public updateRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void in class org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 707,
+		"endLine": 716,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public updateRMDelegationTokenAndSequenceNumber(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStore.java",
+		"startLine": 704,
+		"endLine": 712,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public updateRMDelegationToken(rmDTIdentifier RMDelegationTokenIdentifier, renewDate Long) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter latestSequenceNumber : int to isUpdate : boolean in method private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 551,
+		"endLine": 551,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "latestSequenceNumber : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "isUpdate : boolean"
+}]
+},
+{
+	"type": "Try With Resources",
+	"description": "Try With Resources try(DataOutputStream ds=new DataOutputStream(bs)) in method private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.LeveldbRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 557,
+		"endLine": 561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "original try block",
+		"codeElement": "try"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 579,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected storeRMDelegationTokenAndSequenceNumberState(tokenId RMDelegationTokenIdentifier, renewDate Long, latestSequenceNumber int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 562,
+		"endLine": 564,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "try-with-resources block",
+		"codeElement": "try(DataOutputStream ds=new DataOutputStream(bs))"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/LeveldbRMStateStore.java",
+		"startLine": 548,
+		"endLine": 578,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with try-with-resources",
+		"codeElement": "private storeOrUpdateRMDT(tokenId RMDelegationTokenIdentifier, renewDate Long, isUpdate boolean) : void"
+}]
+}
+]
+}]
+}

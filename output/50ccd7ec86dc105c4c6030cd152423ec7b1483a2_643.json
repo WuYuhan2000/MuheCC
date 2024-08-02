@@ -1,0 +1,255 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "50ccd7ec86dc105c4c6030cd152423ec7b1483a2",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/50ccd7ec86dc105c4c6030cd152423ec7b1483a2",
+	"refactorings": [{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type IndexOutOfBoundsException to NoSuchElementException in method public getFirstElement(coll Collection<A>) : A from class org.restlet.ext.jaxrs.internal.util.Util",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 20,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "IndexOutOfBoundsException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 382,
+		"endLine": 399,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFirstElement(coll Collection<A>) : A"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 20,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "NoSuchElementException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 368,
+		"endLine": 388,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getFirstElement(coll Collection<A>) : A"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type IndexOutOfBoundsException to NoSuchElementException in method public getFirstElement(coll Iterable<A>) : A from class org.restlet.ext.jaxrs.internal.util.Util",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 20,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "IndexOutOfBoundsException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 401,
+		"endLine": 415,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFirstElement(coll Iterable<A>) : A"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 20,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "NoSuchElementException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 390,
+		"endLine": 407,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getFirstElement(coll Iterable<A>) : A"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter defaultValue : DefaultValue in method package getPathParamValue(paramClass Class<?>, paramGenericType Type, pathParam PathParam, leaveEncoded boolean, defaultValue DefaultValue, callContext CallContext) : Object from class org.restlet.ext.jaxrs.internal.wrappers.WrapperUtil",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 1003,
+		"endLine": 1003,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "defaultValue : DefaultValue"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 989,
+		"endLine": 1018,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getPathParamValue(paramClass Class<?>, paramGenericType Type, pathParam PathParam, leaveEncoded boolean, defaultValue DefaultValue, callContext CallContext) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 1009,
+		"endLine": 1039,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package getPathParamValue(paramClass Class<?>, paramGenericType Type, pathParam PathParam, leaveEncoded boolean, callContext CallContext) : Object"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type IndexOutOfBoundsException in method public getFirstElementOrNull(coll Iterable<A>) : A from class org.restlet.ext.jaxrs.internal.util.Util",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 20,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "IndexOutOfBoundsException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 434,
+		"endLine": 460,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFirstElementOrNull(coll Iterable<A>) : A"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/util/Util.java",
+		"startLine": 429,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public getFirstElementOrNull(coll Iterable<A>) : A"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter paramType : Class<?> to representationType : Class<?> in method private createConcreteRepresentationInstance(representationType Class<?>, entity Representation, logger Logger) : Object from class org.restlet.ext.jaxrs.internal.wrappers.WrapperUtil",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "paramType : Class<?>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 456,
+		"endLine": 457,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 465,
+		"endLine": 466,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 450,
+		"endLine": 451,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 463,
+		"endLine": 463,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "representationType : Class<?>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 471,
+		"endLine": 472,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 480,
+		"endLine": 481,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_1.0/src/org/restlet/ext/jaxrs/internal/wrappers/WrapperUtil.java",
+		"startLine": 465,
+		"endLine": 466,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

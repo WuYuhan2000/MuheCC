@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "b8291d673e065fdc24d82aca9e1e4e110e8d81c2",
+	"url": "https://github.com/apache/hbase/commit/b8291d673e065fdc24d82aca9e1e4e110e8d81c2",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method protected chore() : void from class org.apache.hadoop.hbase.Leases.LeaseMonitor",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/Leases.java",
+		"startLine": 218,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected chore() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/Leases.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/Leases.java",
+		"startLine": 224,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected chore() : void"
+}]
+},
+{
+	"type": "Remove Variable Annotation",
+	"description": "Remove Variable Annotation @SuppressWarnings(\"unused\") in variable meta : HTable in method private startAndWriteData() : void from class org.apache.hadoop.hbase.TestLogRolling",
+	"leftSideLocations": [{
+		"filePath": "src/test/org/apache/hadoop/hbase/TestLogRolling.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "src/test/org/apache/hadoop/hbase/TestLogRolling.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 12,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "meta : HTable"
+}, {
+		"filePath": "src/test/org/apache/hadoop/hbase/TestLogRolling.java",
+		"startLine": 120,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private startAndWriteData() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/org/apache/hadoop/hbase/TestLogRolling.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 12,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "meta : HTable"
+}, {
+		"filePath": "src/test/org/apache/hadoop/hbase/TestLogRolling.java",
+		"startLine": 120,
+		"endLine": 166,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "private startAndWriteData() : void"
+}]
+}
+]
+}]
+}

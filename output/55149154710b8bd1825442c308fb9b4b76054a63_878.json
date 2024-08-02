@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "55149154710b8bd1825442c308fb9b4b76054a63",
+	"url": "https://github.com/apache/camel/commit/55149154710b8bd1825442c308fb9b4b76054a63",
+	"refactorings": [{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public getHeaderFilterStrategy() : HeaderFilterStrategy moved from class org.apache.camel.component.jhc.JhcComponent to class org.apache.camel.component.jhc.JhcEndpoint & inlined to public getHeaderFilterStrategy() : HeaderFilterStrategy",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcComponent.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public getHeaderFilterStrategy() : HeaderFilterStrategy"
+}, {
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcComponent.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcEndpoint.java",
+		"startLine": 104,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public getHeaderFilterStrategy() : HeaderFilterStrategy"
+}, {
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcEndpoint.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 89,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "((HeaderFilterStrategyAware)getComponent()).getHeaderFilterStrategy()"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcEndpoint.java",
+		"startLine": 108,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public getHeaderFilterStrategy() : HeaderFilterStrategy"
+}, {
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcEndpoint.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private headerFilterStrategy : HeaderFilterStrategy from class org.apache.camel.component.jhc.JhcComponent to private headerFilterStrategy : HeaderFilterStrategy from class org.apache.camel.component.jhc.JhcEndpoint",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcComponent.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private headerFilterStrategy : HeaderFilterStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jhc/src/main/java/org/apache/camel/component/jhc/JhcEndpoint.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private headerFilterStrategy : HeaderFilterStrategy"
+}]
+}
+]
+}]
+}

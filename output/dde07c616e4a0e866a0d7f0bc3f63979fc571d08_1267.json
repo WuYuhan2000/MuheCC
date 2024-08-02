@@ -1,0 +1,771 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "dde07c616e4a0e866a0d7f0bc3f63979fc571d08",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/dde07c616e4a0e866a0d7f0bc3f63979fc571d08",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter item : IReviewItemSet in method private createSubSection(review IReview, item IReviewItemSet) : void from class org.eclipse.mylyn.internal.gerrit.ui.editor.ReviewSection",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 54,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "item : IReviewItemSet"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 138,
+		"endLine": 177,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 54,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "item : IReviewItemSet"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 165,
+		"endLine": 219,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable subSection : Section in method private createSubSection(review IReview, item IReviewItemSet) : void from class org.eclipse.mylyn.internal.gerrit.ui.editor.ReviewSection",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 11,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "subSection : Section"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 138,
+		"endLine": 177,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "subSection : Section"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 165,
+		"endLine": 219,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private location : AbstractWebLocation from class org.eclipse.mylyn.internal.gerrit.core.client.GerritHttpClient",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private location : AbstractWebLocation"
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private location : AbstractWebLocation"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 81,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getLocation() : AbstractWebLocation"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package createSubSectionContents(review IReview, item IReviewItemSet, subSection Section) : void extracted from private createSubSection(review IReview, item IReviewItemSet) : void in class org.eclipse.mylyn.internal.gerrit.ui.editor.ReviewSection",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 138,
+		"endLine": 177,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 4,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 151,
+		"endLine": 163,
+		"startColumn": 4,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 6,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 4,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 4,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 166,
+		"endLine": 174,
+		"startColumn": 4,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 6,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 6,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 6,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 6,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 6,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 4,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 152,
+		"endLine": 154,
+		"startColumn": 79,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 27,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 160,
+		"endLine": 162,
+		"startColumn": 54,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 167,
+		"endLine": 173,
+		"startColumn": 39,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 221,
+		"endLine": 248,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package createSubSectionContents(review IReview, item IReviewItemSet, subSection Section) : void"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 223,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 3,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 238,
+		"endLine": 246,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 224,
+		"endLine": 226,
+		"startColumn": 78,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 228,
+		"endLine": 230,
+		"startColumn": 26,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 232,
+		"endLine": 234,
+		"startColumn": 53,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 239,
+		"endLine": 245,
+		"startColumn": 38,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 165,
+		"endLine": 219,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createSubSection(review IReview, item IReviewItemSet) : void"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 4,
+		"endColumn": 54,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createSubSectionContents(review,item,subSection)"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package initializeUpdateJob() : void extracted from protected createContent(toolkit FormToolkit, parent Composite) : Control in class org.eclipse.mylyn.internal.gerrit.ui.editor.ReviewSection",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 179,
+		"endLine": 188,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected createContent(toolkit FormToolkit, parent Composite) : Control"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 266,
+		"endLine": 285,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package initializeUpdateJob() : void"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 250,
+		"endLine": 264,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected createContent(toolkit FormToolkit, parent Composite) : Control"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "initializeUpdateJob()"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 267,
+		"endLine": 268,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 269,
+		"endLine": 282,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package requestCredentials(monitor IProgressMonitor, authenticationType AuthenticationType) : void extracted from private needsReauthentication(code int, monitor IProgressMonitor) : boolean in class org.eclipse.mylyn.internal.gerrit.core.client.GerritHttpClient",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 271,
+		"endLine": 289,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private needsReauthentication(code int, monitor IProgressMonitor) : boolean"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 4,
+		"endColumn": 37,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 3,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 281,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 283,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 294,
+		"endLine": 303,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package requestCredentials(monitor IProgressMonitor, authenticationType AuthenticationType) : void"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 4,
+		"endColumn": 37,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 3,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 296,
+		"endLine": 300,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 298,
+		"endLine": 300,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 280,
+		"endLine": 292,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private needsReauthentication(code int, monitor IProgressMonitor) : boolean"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.core/src/org/eclipse/mylyn/internal/gerrit/core/client/GerritHttpClient.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "requestCredentials(monitor,authenticationType)"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable job : GetReviewJob to job : GetReviewJob in method package initializeUpdateJob() : void from class org.eclipse.mylyn.internal.gerrit.ui.editor.ReviewSection",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 23,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "job : GetReviewJob"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 267,
+		"endLine": 268,
+		"startColumn": 16,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "job : GetReviewJob"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/editor/ReviewSection.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

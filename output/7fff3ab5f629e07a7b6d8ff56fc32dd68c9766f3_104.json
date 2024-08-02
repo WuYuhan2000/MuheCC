@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "7fff3ab5f629e07a7b6d8ff56fc32dd68c9766f3",
+	"url": "https://github.com/apache/hbase/commit/7fff3ab5f629e07a7b6d8ff56fc32dd68c9766f3",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable bytes : byte[] in method protected scanRegion(region MetaRegion) : void from class org.apache.hadoop.hbase.HMaster.BaseScanner",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HMaster.java",
+		"startLine": 238,
+		"endLine": 239,
+		"startColumn": 11,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/HMaster.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 19,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "bytes : byte[]"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/HMaster.java",
+		"startLine": 243,
+		"endLine": 244,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/agorava/agorava-core",
+	"sha1": "c681d992e2faa5fe72494d96afa466dd8d7fc329",
+	"url": "https://github.com/agorava/agorava-core/commit/c681d992e2faa5fe72494d96afa466dd8d7fc329",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public isUrl(url String) : boolean from class org.agorava.api.service.Preconditions",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-api/src/main/java/org/agorava/api/service/Preconditions.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isUrl(url String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-api/src/main/java/org/agorava/api/service/Preconditions.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public isUrl(url String) : boolean"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type os : ServletOutputStream to internalCallBack : String in method protected renderResponse(req HttpServletRequest, resp HttpServletResponse) : void from class org.agorava.servlet.OAuthCallbackServlet",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 29,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "os : ServletOutputStream"
+}, {
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 16,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "internalCallBack : String"
+}, {
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable os : ServletOutputStream to internalCallBack : String in method protected renderResponse(req HttpServletRequest, resp HttpServletResponse) : void from class org.agorava.servlet.OAuthCallbackServlet",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 29,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "os : ServletOutputStream"
+}, {
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 16,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "internalCallBack : String"
+}, {
+		"filePath": "agorava-core-impl/src/main/java/org/agorava/servlet/OAuthCallbackServlet.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

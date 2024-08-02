@@ -1,0 +1,1332 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/griddynamics/jagger",
+	"sha1": "e4f90dae4475d245a05eeb43e48e1c6c8f7c53f2",
+	"url": "https://github.com/griddynamics/jagger/commit/e4f90dae4475d245a05eeb43e48e1c6c8f7c53f2",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected disabled : boolean from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private disabled : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected disabled : boolean"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type metricGroupNodeList : List<MetricGroupNode> to metricGroupNodeList : List<MetricGroupNode<M>> in class com.griddynamics.jagger.dbapi.model.MetricGroupNode",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "metricGroupNodeList : List<MetricGroupNode>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 38,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "metricGroupNodeList : List<MetricGroupNode<M>>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected setStateToSubTree(item M, state CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 134,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkSubTree(item AbstractIdentifyNode, state CheckState) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 107,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected setStateToSubTree(item M, state CheckState) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected checkParent(item M) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 142,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkParent(item AbstractIdentifyNode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 120,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected checkParent(item M) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type item : AbstractIdentifyNode to item : M in method protected checkParent(item M) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "item : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 32,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type item : AbstractIdentifyNode to item : M in method protected setStateToSubTree(item M, state CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 31,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "item : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 136,
+		"endLine": 139,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 135,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 38,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 114,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 113,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type metricGroupNodeList : List<MetricGroupNode> to metricGroupNodeList : List<MetricGroupNode<M>> in method public setMetricGroupNodeList(metricGroupNodeList List<MetricGroupNode<M>>) : void from class com.griddynamics.jagger.dbapi.model.MetricGroupNode",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 40,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "metricGroupNodeList : List<MetricGroupNode>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 40,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "metricGroupNodeList : List<MetricGroupNode<M>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type model : AbstractIdentifyNode to model : M in method protected calculateIconStyle(model M) : ImageResource from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 48,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "model : AbstractIdentifyNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 48,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "model : M"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type model : AbstractIdentifyNode to model : M in method public isChosen(model M) : boolean from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 29,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "model : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 29,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "model : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type result : AbstractIdentifyNode to result : RootNode in method private createControlTree(result RootNode) : ControlTree<String> from class com.griddynamics.jagger.webclient.client.trends.Trends.SessionSelectChangeHandler",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1157,
+		"endLine": 1157,
+		"startColumn": 51,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "result : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1168,
+		"endLine": 1170,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1525,
+		"endLine": 1525,
+		"startColumn": 55,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : RootNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1531,
+		"endLine": 1533,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<MetricGroupNode> to List<MetricGroupNode<M>> in method public getMetricGroupNodeList() : List<MetricGroupNode<M>> from class com.griddynamics.jagger.dbapi.model.MetricGroupNode",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<MetricGroupNode>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetricGroupNodeList() : List<MetricGroupNode>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<MetricGroupNode<M>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMetricGroupNodeList() : List<MetricGroupNode<M>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type abstractIdentifyNode : AbstractIdentifyNode to model : M in method public setCheckState(elementId String, checkState CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 30,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "abstractIdentifyNode : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "model : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ch : AbstractIdentifyNode to ch : M in method protected checkParent(item M) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 14,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ch : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ch : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 132,
+		"endLine": 136,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type child : AbstractIdentifyNode to child : M in method protected setStateToSubTree(item M, state CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 18,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "child : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "child : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type childResult : MetricGroupNode to childResult : MetricGroupNode<M> in method public filter(parentId String, metricNodeList List<M>) : MetricGroupNode<M> from class com.griddynamics.jagger.dbapi.model.rules.TreeViewGroupRule",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "childResult : MetricGroupNode"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 36,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "childResult : MetricGroupNode<M>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type legendTree : ControlTree to legendTree : LegendTree in method private renderPlots(panel PlotsPanel, plotSeriesDtoList List<PlotIntegratedDto>, id String, yMinimum double, isMetric boolean) : void from class com.griddynamics.jagger.webclient.client.trends.Trends",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1130,
+		"endLine": 1130,
+		"startColumn": 25,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "legendTree : ControlTree"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1132,
+		"endLine": 1132,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1069,
+		"endLine": 1069,
+		"startColumn": 24,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "legendTree : LegendTree"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1117,
+		"endLine": 1117,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type metricGroupNode : MetricGroupNode to metricGroupNode : MetricGroupNode<M> in method public getMetrics() : List<M> from class com.griddynamics.jagger.dbapi.model.MetricGroupNode",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "metricGroupNode : MetricGroupNode"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 18,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "metricGroupNode : MetricGroupNode<M>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/MetricGroupNode.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type metricGroupNodeListFromChildren : List<MetricGroupNode> to metricGroupNodeListFromChildren : List<MetricGroupNode<M>> in method public filter(parentId String, metricNodeList List<M>) : MetricGroupNode<M> from class com.griddynamics.jagger.dbapi.model.rules.TreeViewGroupRule",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 31,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "metricGroupNodeListFromChildren : List<MetricGroupNode>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 17,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 34,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "metricGroupNodeListFromChildren : List<MetricGroupNode<M>>"
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 17,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/model/rules/TreeViewGroupRule.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type parent : AbstractIdentifyNode to parent : M in method protected checkParent(item M) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 30,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parent : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 148,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 11,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 131,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass com.griddynamics.jagger.webclient.client.components.AbstractTree from classes [com.griddynamics.jagger.webclient.client.components.ControlTree]",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 20,
+		"endLine": 326,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "com.griddynamics.jagger.webclient.client.components.ControlTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 16,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "com.griddynamics.jagger.webclient.client.components.ControlTree"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 12,
+		"endLine": 230,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "com.griddynamics.jagger.webclient.client.components.AbstractTree"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private checkSubTree(item AbstractIdentifyNode, state CheckState) : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to protected setStateToSubTree(item M, state CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 134,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkSubTree(item AbstractIdentifyNode, state CheckState) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 107,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setStateToSubTree(item M, state CheckState) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode) : void from class com.griddynamics.jagger.webclient.client.trends.Trends to private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode) : void from class com.griddynamics.jagger.webclient.client.trends.Trends.SessionSelectChangeHandler",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1179,
+		"endLine": 1185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1538,
+		"endLine": 1544,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode, parent AbstractIdentifyNode) : void from class com.griddynamics.jagger.webclient.client.trends.Trends to private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode, parent AbstractIdentifyNode) : void from class com.griddynamics.jagger.webclient.client.trends.Trends.SessionSelectChangeHandler",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1187,
+		"endLine": 1199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode, parent AbstractIdentifyNode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1546,
+		"endLine": 1558,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private addToStore(store TreeStore<AbstractIdentifyNode>, node AbstractIdentifyNode, parent AbstractIdentifyNode) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private createControlTree(result AbstractIdentifyNode) : ControlTree<String> from class com.griddynamics.jagger.webclient.client.trends.Trends to private createControlTree(result RootNode) : ControlTree<String> from class com.griddynamics.jagger.webclient.client.trends.Trends.SessionSelectChangeHandler",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1157,
+		"endLine": 1177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createControlTree(result AbstractIdentifyNode) : ControlTree<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/trends/Trends.java",
+		"startLine": 1525,
+		"endLine": 1536,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private createControlTree(result RootNode) : ControlTree<String>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private disabled : boolean from class com.griddynamics.jagger.webclient.client.components.ControlTree to protected disabled : boolean from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private disabled : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected disabled : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected calculateIconStyle(model AbstractIdentifyNode) : ImageResource from class com.griddynamics.jagger.webclient.client.components.ControlTree to protected calculateIconStyle(model M) : ImageResource from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 183,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected calculateIconStyle(model AbstractIdentifyNode) : ImageResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 168,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected calculateIconStyle(model M) : ImageResource"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public checkParent(item AbstractIdentifyNode) : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to protected checkParent(item M) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 142,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkParent(item AbstractIdentifyNode) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 120,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected checkParent(item M) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public clearStore() : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public clearStore() : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 211,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearStore() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 199,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public clearStore() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public disable() : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public disable() : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 188,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public disable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 176,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public disable() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public enable() : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public enable() : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 197,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public enable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 185,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public enable() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public enableTree() : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public enableTree() : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 206,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public enableTree() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 194,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public enableTree() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isChosen(model AbstractIdentifyNode) : boolean from class com.griddynamics.jagger.webclient.client.components.ControlTree to public isChosen(model M) : boolean from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 296,
+		"endLine": 304,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isChosen(model AbstractIdentifyNode) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 203,
+		"endLine": 211,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isChosen(model M) : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isDisabled() : boolean from class com.griddynamics.jagger.webclient.client.components.ControlTree to public isDisabled() : boolean from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 50,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isDisabled() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isDisabled() : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setCheckState(elementId String, checkState CheckState) : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public setCheckState(elementId String, checkState CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 321,
+		"endLine": 325,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setCheckState(elementId String, checkState CheckState) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 213,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setCheckState(elementId String, checkState CheckState) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setDisabled(disabled boolean) : void from class com.griddynamics.jagger.webclient.client.components.ControlTree to public setDisabled(disabled boolean) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 54,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDisabled(disabled boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setDisabled(disabled boolean) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable abstractIdentifyNode : AbstractIdentifyNode to model : M in method public setCheckState(elementId String, checkState CheckState) : void from class com.griddynamics.jagger.webclient.client.components.AbstractTree",
+	"leftSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 30,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "abstractIdentifyNode : AbstractIdentifyNode"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/ControlTree.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "model : M"
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "webclient/src/main/java/com/griddynamics/jagger/webclient/client/components/AbstractTree.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

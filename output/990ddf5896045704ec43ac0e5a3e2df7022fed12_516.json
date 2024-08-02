@@ -1,0 +1,417 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "990ddf5896045704ec43ac0e5a3e2df7022fed12",
+	"url": "https://github.com/kiegroup/drools/commit/990ddf5896045704ec43ac0e5a3e2df7022fed12",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected visitWork(work Work, xmlDump StringBuffer, includeMeta boolean) : void from class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 60,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private visitWork(work Work, xmlDump StringBuffer, includeMeta boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 68,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected visitWork(work Work, xmlDump StringBuffer, includeMeta boolean) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected visitInMappings(inMappings Map<String,String>, xmlDump StringBuffer) : void extracted from public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void in class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 74,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 50,
+		"endLine": 57,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected visitInMappings(inMappings Map<String,String>, xmlDump StringBuffer) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 74,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "visitInMappings(workItemNode.getInMappings(),xmlDump)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected visitOutMappings(outMappings Map<String,String>, xmlDump StringBuffer) : void extracted from public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void in class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 51,
+		"endLine": 56,
+		"startColumn": 76,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected visitOutMappings(outMappings Map<String,String>, xmlDump StringBuffer) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 76,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "visitOutMappings(workItemNode.getOutMappings(),xmlDump)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected visitParameters(workItemNode WorkItemNode, xmlDump StringBuffer) : void extracted from public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void in class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected visitParameters(workItemNode WorkItemNode, xmlDump StringBuffer) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 6,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 47,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 32,
+		"endLine": 42,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "visitParameters(workItemNode,xmlDump)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable inMappings : Map<String,String> in method public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void from class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "inMappings : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable outMappings : Map<String,String> in method public writeNode(node Node, xmlDump StringBuffer, includeMeta boolean) : void from class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "outMappings : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable inMappings : Map<String,String> to inMappings : Map<String,String> in method protected visitInMappings(inMappings Map<String,String>, xmlDump StringBuffer) : void from class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "inMappings : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 33,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "inMappings : Map<String,String>"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable outMappings : Map<String,String> to outMappings : Map<String,String> in method protected visitOutMappings(outMappings Map<String,String>, xmlDump StringBuffer) : void from class org.drools.xml.processes.WorkItemNodeHandler",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "outMappings : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/xml/processes/WorkItemNodeHandler.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 34,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "outMappings : Map<String,String>"
+}]
+}
+]
+}]
+}

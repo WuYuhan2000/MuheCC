@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "d104b26a38fc5379dd01a2a61d865c4dc871cb55",
+	"url": "https://github.com/apache/hbase/commit/d104b26a38fc5379dd01a2a61d865c4dc871cb55",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private isInSafeMode(dfs DistributedFileSystem) : boolean extracted from public waitOnSafeMode(conf Configuration, wait long) : void in class org.apache.hadoop.hbase.util.FSUtils",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 612,
+		"endLine": 633,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public waitOnSafeMode(conf Configuration, wait long) : void"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 625,
+		"endLine": 625,
+		"startColumn": 12,
+		"endColumn": 100,
+		"codeElementType": "WHILE_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 242,
+		"endLine": 265,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private isInSafeMode(dfs DistributedFileSystem) : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 261,
+		"endLine": 262,
+		"startColumn": 7,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 637,
+		"endLine": 658,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public waitOnSafeMode(conf Configuration, wait long) : void"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isInSafeMode(dfs)"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 253,
+		"endLine": 254,
+		"startColumn": 7,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 255,
+		"endLine": 256,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 37,
+		"endColumn": 59,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 252,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/util/FSUtils.java",
+		"startLine": 257,
+		"endLine": 263,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

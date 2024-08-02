@@ -1,0 +1,1041 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "b80889a2bb165ebb732b7d9f18d8aeb00656704e",
+	"url": "https://github.com/aeshell/aesh/commit/b80889a2bb165ebb732b7d9f18d8aeb00656704e",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdErr : OutputStream in method private setTerminal(term Terminal, in InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, out OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 83,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdErr : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdErr : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 61,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdErr : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdErr : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.TestTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 31,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 68,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdErr : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 31,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdErr : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 36,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 68,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdErr : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 37,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdOut : OutputStream in method private setTerminal(term Terminal, in InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, out OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 62,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdOut : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdOut : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 40,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdOut : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stdOut : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 36,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 47,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stdOut : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 37,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to ConsoleOutput in method public read(prompt String) : ConsoleOutput from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 236,
+		"endLine": 247,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public read(prompt String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 12,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConsoleOutput"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 264,
+		"endLine": 275,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public read(prompt String) : ConsoleOutput"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to ConsoleOutput in method public read(prompt String, mask Character) : ConsoleOutput from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 249,
+		"endLine": 291,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public read(prompt String, mask Character) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 12,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConsoleOutput"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 277,
+		"endLine": 324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public read(prompt String, mask Character) : ConsoleOutput"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to void in method public processOperation(operation Operation) : void from class .Example.main.test.new ConsoleCommand",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Example.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 58,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public processOperation(operation Operation) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Example.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 56,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public processOperation(operation Operation) : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type line : String to line : ConsoleOutput in method public main(args String[]) : void from class Example",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/Example.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 16,
+		"endColumn": 20,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "line : String"
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 17,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 121,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 144,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 140,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 124,
+		"endLine": 127,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 128,
+		"endLine": 132,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 133,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 135,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 146,
+		"endLine": 149,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/Example.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "line : ConsoleOutput"
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 124,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 151,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 147,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 131,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 140,
+		"endLine": 141,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/Example.java",
+		"startLine": 153,
+		"endLine": 156,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter out : OutputStream in method private setTerminal(term Terminal, in InputStream, out OutputStream) : void from class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 62,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "out : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, out OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private setTerminal(term Terminal, in InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter outputStream : OutputStream in method public init(inputStream InputStream, outputStream OutputStream) : void from class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 40,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "outputStream : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 30,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter outputStream : OutputStream in method public init(inputStream InputStream, outputStream OutputStream) : void from class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 47,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "outputStream : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 36,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(inputStream InputStream, outputStream OutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 37,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute writer : Writer to stdOut : Writer in class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "writer : Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "stdOut : Writer"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public pushToConsole(input String) : void renamed to public pushToStdErr(input String) : void in class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 159,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public pushToConsole(input String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 198,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public pushToStdErr(input String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public pushToConsole(input char[]) : void renamed to public pushToStdErr(input char[]) : void in class org.jboss.jreadline.console.Console",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 171,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public pushToConsole(input char[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/console/Console.java",
+		"startLine": 204,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public pushToStdErr(input char[]) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out String) : void renamed to public writeToStdOut(out String) : void in class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 46,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out String) : void renamed to public writeToStdOut(out String) : void in class org.jboss.jreadline.terminal.TestTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 53,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out String) : void renamed to public writeToStdOut(out String) : void in class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 74,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 77,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char) : void renamed to public writeToStdOut(out char) : void in class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 62,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char) : void renamed to public writeToStdOut(out char) : void in class org.jboss.jreadline.terminal.TestTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 69,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char) : void renamed to public writeToStdOut(out char) : void in class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 90,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 93,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char[]) : void renamed to public writeToStdOut(out char[]) : void in class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 54,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 55,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char[]) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char[]) : void renamed to public writeToStdOut(out char[]) : void in class org.jboss.jreadline.terminal.TestTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 61,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 61,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char[]) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(out char[]) : void renamed to public writeToStdOut(out char[]) : void in class org.jboss.jreadline.terminal.WindowsTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 82,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(out char[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/WindowsTerminal.java",
+		"startLine": 85,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public writeToStdOut(out char[]) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter outputStream : OutputStream to stdOut : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.Terminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 40,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "outputStream : OutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/Terminal.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 40,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "stdOut : OutputStream"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter outputStream : OutputStream to stdOut : OutputStream in method public init(inputStream InputStream, stdOut OutputStream, stdErr OutputStream) : void from class org.jboss.jreadline.terminal.TestTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 47,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "outputStream : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 47,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "stdOut : OutputStream"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/terminal/TestTerminal.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

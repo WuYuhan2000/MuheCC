@@ -1,0 +1,1242 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "de8f0efe60233436431930447d7672f2a1dc8878",
+	"url": "https://github.com/apache/hadoop/commit/de8f0efe60233436431930447d7672f2a1dc8878",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter dirsHandler : LocalDirsHandlerService in method public ContainerLaunch(configuration Configuration, dispatcher Dispatcher, exec ContainerExecutor, app Application, container Container, dirsHandler LocalDirsHandlerService) from class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 91,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ContainerLaunch(configuration Configuration, dispatcher Dispatcher, exec ContainerExecutor, app Application, container Container)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dirsHandler : LocalDirsHandlerService"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 93,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ContainerLaunch(configuration Configuration, dispatcher Dispatcher, exec ContainerExecutor, app Application, container Container, dirsHandler LocalDirsHandlerService)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter dirsHandler : LocalDirsHandlerService in method public NMWebApp(resourceView ResourceView, aclsManager ApplicationACLsManager, dirsHandler LocalDirsHandlerService) from class org.apache.hadoop.yarn.server.nodemanager.webapp.WebServer.NMWebApp",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 85,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NMWebApp(resourceView ResourceView, aclsManager ApplicationACLsManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dirsHandler : LocalDirsHandlerService"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 88,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public NMWebApp(resourceView ResourceView, aclsManager ApplicationACLsManager, dirsHandler LocalDirsHandlerService)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter dirsHandler : LocalDirsHandlerService in method public NonAggregatingLogHandlerWithMockExecutor(dispatcher Dispatcher, delService DeletionService, dirsHandler LocalDirsHandlerService) from class org.apache.hadoop.yarn.server.nodemanager.containermanager.loghandler.TestNonAggregatingLogHandler.NonAggregatingLogHandlerWithMockExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/loghandler/TestNonAggregatingLogHandler.java",
+		"startLine": 184,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NonAggregatingLogHandlerWithMockExecutor(dispatcher Dispatcher, delService DeletionService)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/loghandler/TestNonAggregatingLogHandler.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 37,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dirsHandler : LocalDirsHandlerService"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/loghandler/TestNonAggregatingLogHandler.java",
+		"startLine": 192,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public NonAggregatingLogHandlerWithMockExecutor(dispatcher Dispatcher, delService DeletionService, dirsHandler LocalDirsHandlerService)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter dirsHandler : LocalDirsHandlerService in method public WebServer(nmContext Context, resourceView ResourceView, aclsManager ApplicationACLsManager, dirsHandler LocalDirsHandlerService) from class org.apache.hadoop.yarn.server.nodemanager.webapp.WebServer",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 44,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WebServer(nmContext Context, resourceView ResourceView, aclsManager ApplicationACLsManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "dirsHandler : LocalDirsHandlerService"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/webapp/WebServer.java",
+		"startLine": 45,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public WebServer(nmContext Context, resourceView ResourceView, aclsManager ApplicationACLsManager, dirsHandler LocalDirsHandlerService)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter logDirs : List<String> in method public launchContainer(container Container, nmPrivateContainerScriptPath Path, nmPrivateTokensPath Path, userName String, appId String, containerWorkDir Path, localDirs List<String>, logDirs List<String>) : int from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 104,
+		"endLine": 199,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public launchContainer(container Container, nmPrivateContainerScriptPath Path, nmPrivateTokensPath Path, userName String, appId String, containerWorkDir Path) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 105,
+		"endLine": 197,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public launchContainer(container Container, nmPrivateContainerScriptPath Path, nmPrivateTokensPath Path, userName String, appId String, containerWorkDir Path, localDirs List<String>, logDirs List<String>) : int"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter logDirs : List<String> in method public startLocalizer(nmPrivateContainerTokensPath Path, nmAddr InetSocketAddress, user String, appId String, locId String, localDirs List<String>, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 77,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public startLocalizer(nmPrivateContainerTokensPath Path, nmAddr InetSocketAddress, user String, appId String, locId String, localDirs List<Path>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 77,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public startLocalizer(nmPrivateContainerTokensPath Path, nmAddr InetSocketAddress, user String, appId String, locId String, localDirs List<String>, logDirs List<String>) : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type rootLogDirs : String[] to rootLogDirs : List<String> in class org.apache.hadoop.yarn.logaggregation.AggregatedLogFormat.LogValue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "rootLogDirs : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 32,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "rootLogDirs : List<String>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localDirs : List<Path> to localDirs : List<String> in method private createAppDirs(localDirs List<String>, user String, appId String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : List<Path>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 410,
+		"endLine": 419,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 30,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 409,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localDirs : List<Path> to localDirs : List<String> in method private createUserCacheDirs(localDirs List<String>, user String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 36,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : List<Path>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 369,
+		"endLine": 386,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 367,
+		"endLine": 385,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localDirs : List<Path> to localDirs : List<String> in method private createUserLocalDirs(localDirs List<String>, user String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 331,
+		"endLine": 331,
+		"startColumn": 36,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : List<Path>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 335,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 36,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 333,
+		"endLine": 342,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localDirs : List<Path> to localDirs : List<String> in method private getFirstApplicationDir(localDirs List<String>, user String, appId String) : Path from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 39,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : List<Path>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 39,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type localDirs : List<Path> to localDirs : List<String> in method public startLocalizer(nmPrivateContainerTokensPath Path, nmAddr InetSocketAddress, user String, appId String, locId String, localDirs List<String>, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : List<Path>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type rootLogDirs : String[] to rootLogDirs : List<String> in method public LogValue(rootLogDirs List<String>, containerId ContainerId) from class org.apache.hadoop.yarn.logaggregation.AggregatedLogFormat.LogValue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "rootLogDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "rootLogDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogFormat.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localDir : Path to localDir : String in method private createAppDirs(localDirs List<String>, user String, appId String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDir : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDir : String"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localDir : Path to localDir : String in method private createUserCacheDirs(localDirs List<String>, user String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDir : Path"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDir : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localDir : Path to localDir : String in method private createUserLocalDirs(localDirs List<String>, user String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "localDir : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDir : String"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 336,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type localDirs : String[] to localDirs : List<String> in method public call() : Integer from class org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 184,
+		"endLine": 186,
+		"startColumn": 18,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "localDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 188,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 20,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/containermanager/launcher/ContainerLaunch.java",
+		"startLine": 192,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rootLogDirs : String[] to logDirs : List<String> in method private createAppLogDirs(appId String, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 432,
+		"endLine": 434,
+		"startColumn": 14,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rootLogDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 438,
+		"endLine": 448,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 429,
+		"endLine": 429,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 434,
+		"endLine": 444,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rootLogDirs : String[] to logDirs : List<String> in method private createContainerLogDirs(appId String, containerId String, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 460,
+		"endLine": 462,
+		"startColumn": 14,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rootLogDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 466,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 459,
+		"endLine": 471,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sLocalDirs : String[] to localDirs : List<String> in method public launchContainer(container Container, nmPrivateContainerScriptPath Path, nmPrivateTokensPath Path, userName String, appId String, containerWorkDir Path, localDirs List<String>, logDirs List<String>) : int from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 118,
+		"endLine": 120,
+		"startColumn": 14,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sLocalDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 121,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 119,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable destPath : Path in method public testDirDownload() : void from class org.apache.hadoop.yarn.util.TestFSDownload",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 256,
+		"endLine": 258,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 257,
+		"endLine": 258,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "destPath : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 259,
+		"endLine": 261,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable destPath : Path in method public testDownload() : void from class org.apache.hadoop.yarn.util.TestFSDownload",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 153,
+		"endLine": 155,
+		"startColumn": 7,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 152,
+		"endLine": 153,
+		"startColumn": 12,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "destPath : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 154,
+		"endLine": 156,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable files : FileContext in method public setup() : void from class org.apache.hadoop.yarn.server.nodemanager.TestLinuxContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 104,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "files : FileContext"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable localDirPath : Path in method private createUserCacheDirs(localDirs List<String>, user String) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 379,
+		"endLine": 379,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 12,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "localDirPath : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable p : Path in method public testDirDownload() : void from class org.apache.hadoop.yarn.util.TestFSDownload",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 253,
+		"endLine": 254,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 12,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "p : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable p : Path in method public testDownload() : void from class org.apache.hadoop.yarn.util.TestFSDownload",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 150,
+		"endLine": 151,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "p : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/util/TestFSDownload.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable workSpacePath : Path in method public setup() : void from class org.apache.hadoop.yarn.server.nodemanager.TestLinuxContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 104,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 10,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "workSpacePath : Path"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/test/java/org/apache/hadoop/yarn/server/nodemanager/TestLinuxContainerExecutor.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable rootLogDirs : String[] to logDirs : List<String> in method private createAppLogDirs(appId String, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 432,
+		"endLine": 434,
+		"startColumn": 14,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rootLogDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 438,
+		"endLine": 448,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 429,
+		"endLine": 429,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 434,
+		"endLine": 444,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable rootLogDirs : String[] to logDirs : List<String> in method private createContainerLogDirs(appId String, containerId String, logDirs List<String>) : void from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 460,
+		"endLine": 462,
+		"startColumn": 14,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rootLogDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 466,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 7,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "logDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 459,
+		"endLine": 471,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable sLocalDirs : String[] to localDirs : List<String> in method public launchContainer(container Container, nmPrivateContainerScriptPath Path, nmPrivateTokensPath Path, userName String, appId String, containerWorkDir Path, localDirs List<String>, logDirs List<String>) : int from class org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 118,
+		"endLine": 120,
+		"startColumn": 14,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sLocalDirs : String[]"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 121,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "localDirs : List<String>"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/java/org/apache/hadoop/yarn/server/nodemanager/DefaultContainerExecutor.java",
+		"startLine": 119,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,660 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/jhy/jsoup",
+	"sha1": "785d41a37f6c311084ebf2d23e83f4ceb4bb94ed",
+	"url": "https://github.com/jhy/jsoup/commit/785d41a37f6c311084ebf2d23e83f4ceb4bb94ed",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public after(html String) : Element from class org.jsoup.nodes.Element",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 318,
+		"endLine": 327,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public after(html String) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 319,
+		"endLine": 329,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public after(html String) : Element"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public before(html String) : Element from class org.jsoup.nodes.Element",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 307,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public before(html String) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 307,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public before(html String) : Element"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public wrap(html String) : Element from class org.jsoup.nodes.Element",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 346,
+		"endLine": 373,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public wrap(html String) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 340,
+		"endLine": 349,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public wrap(html String) : Element"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public after(html String) : Node extracted from public after(html String) : Element in class org.jsoup.nodes.Element & moved to class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 318,
+		"endLine": 327,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public after(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 247,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public after(html String) : Node"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 319,
+		"endLine": 329,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public after(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "SUPER_METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "super.after(html)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public before(html String) : Node extracted from public before(html String) : Element in class org.jsoup.nodes.Element & moved to class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 307,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public before(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 236,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public before(html String) : Node"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 307,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public before(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "SUPER_METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "super.before(html)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public wrap(html String) : Node extracted from public wrap(html String) : Element in class org.jsoup.nodes.Element & moved to class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 346,
+		"endLine": 373,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public wrap(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 362,
+		"endLine": 362,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 357,
+		"endLine": 358,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 366,
+		"endLine": 370,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 365,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 366,
+		"endLine": 370,
+		"startColumn": 59,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 365,
+		"endLine": 371,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 266,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public wrap(html String) : Node"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 17,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 277,
+		"endLine": 278,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 286,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 285,
+		"endLine": 291,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 286,
+		"endLine": 290,
+		"startColumn": 59,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 285,
+		"endLine": 291,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 340,
+		"endLine": 349,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public wrap(html String) : Element"
+}, {
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "SUPER_METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "super.wrap(html)"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private addSiblingHtml(index int, html String) : void from class org.jsoup.nodes.Element to private addSiblingHtml(index int, html String) : void from class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 329,
+		"endLine": 335,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addSiblingHtml(index int, html String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 258,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private addSiblingHtml(index int, html String) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private getDeepChild(el Element) : Element from class org.jsoup.nodes.Element to private getDeepChild(el Element) : Element from class org.jsoup.nodes.Node",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Element.java",
+		"startLine": 375,
+		"endLine": 381,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getDeepChild(el Element) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jsoup/nodes/Node.java",
+		"startLine": 295,
+		"endLine": 301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private getDeepChild(el Element) : Element"
+}]
+}
+]
+}]
+}

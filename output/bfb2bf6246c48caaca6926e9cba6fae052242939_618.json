@@ -1,0 +1,357 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "bfb2bf6246c48caaca6926e9cba6fae052242939",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/bfb2bf6246c48caaca6926e9cba6fae052242939",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter annotations : Annotation[] in method public getBestWriter(determinedResponseMediaType MediaType, annotations Annotation[], accMediaTypes SortedMetadata<MediaType>) : MessageBodyWriter from class org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyWriterSubSet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 74,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBestWriter(determinedResponseMediaType MediaType, accMediaTypes SortedMetadata<MediaType>) : MessageBodyWriter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 52,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "annotations : Annotation[]"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 95,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getBestWriter(determinedResponseMediaType MediaType, annotations Annotation[], accMediaTypes SortedMetadata<MediaType>) : MessageBodyWriter"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter entityClass : Class<?> in method private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 795,
+		"endLine": 849,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private determineMediaType(resourceMethod ResourceMethod, mbws MessageBodyWriterSubSet) : MediaType"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 814,
+		"endLine": 814,
+		"startColumn": 44,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "entityClass : Class<?>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 789,
+		"endLine": 859,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter genericReturnType : Type in method private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 795,
+		"endLine": 849,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private determineMediaType(resourceMethod ResourceMethod, mbws MessageBodyWriterSubSet) : MediaType"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 815,
+		"endLine": 815,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "genericReturnType : Type"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 789,
+		"endLine": 859,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter genericType : Type in method package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>, type Class<?>, genericType Type) from class org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyWriterSubSet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "genericType : Type"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 72,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>, type Class<?>, genericType Type)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter jaxRsResponseMediaType : MediaType in method private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 795,
+		"endLine": 849,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private determineMediaType(resourceMethod ResourceMethod, mbws MessageBodyWriterSubSet) : MediaType"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 813,
+		"endLine": 813,
+		"startColumn": 42,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "jaxRsResponseMediaType : MediaType"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 789,
+		"endLine": 859,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter type : Class<?> in method package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>, type Class<?>, genericType Type) from class org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyWriterSubSet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 59,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "type : Class<?>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyWriterSubSet.java",
+		"startLine": 72,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package MessageBodyWriterSubSet(mbws List<MessageBodyWriter>, type Class<?>, genericType Type)"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable httpResponseHeaders : MultivaluedMap<String,Object> in method private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 775,
+		"endLine": 776,
+		"startColumn": 40,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "httpResponseHeaders : MultivaluedMap<String,Object>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 691,
+		"endLine": 793,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 757,
+		"endLine": 758,
+		"startColumn": 46,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "httpResponseHeaders : MultivaluedMap<String,Object>"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 690,
+		"endLine": 787,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable mbws : MessageBodyWriterSubSet in method private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 758,
+		"endLine": 758,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mbws : MessageBodyWriterSubSet"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 691,
+		"endLine": 793,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 766,
+		"endLine": 766,
+		"startColumn": 43,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "mbws : MessageBodyWriterSubSet"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 690,
+		"endLine": 787,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable response : Response in method private convertToRepresentation(entity Object, resourceMethod ResourceMethod, jaxRsResponseMediaType MediaType, jaxRsRespHeaders MultivaluedMap<String,Object>, accMediaTypes SortedMetadata<MediaType>) : Representation from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 774,
+		"endLine": 774,
+		"startColumn": 24,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "response : Response"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 775,
+		"endLine": 776,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 757,
+		"endLine": 758,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter mbws : MessageBodyWriterSubSet in method private determineMediaType(resourceMethod ResourceMethod, mbws MessageBodyWriterSubSet) : MediaType from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 809,
+		"endLine": 809,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "mbws : MessageBodyWriterSubSet"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 795,
+		"endLine": 849,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private determineMediaType(resourceMethod ResourceMethod, mbws MessageBodyWriterSubSet) : MediaType"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.11/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 789,
+		"endLine": 859,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private determineMediaType(jaxRsResponseMediaType MediaType, resourceMethod ResourceMethod, entityClass Class<?>, genericReturnType Type) : MediaType"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "2b47c1528690b6413060401b254c79a9dc89ce85",
+	"url": "https://github.com/apache/hbase/commit/2b47c1528690b6413060401b254c79a9dc89ce85",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter conf : HBaseConfiguration in method package StoreFile(fs FileSystem, p Path, conf HBaseConfiguration) from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 92,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreFile(fs FileSystem, p Path)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 48,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "conf : HBaseConfiguration"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 102,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package StoreFile(fs FileSystem, p Path, conf HBaseConfiguration)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter bloomfilter : boolean to filter : boolean in method public getWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KeyComparator, filter boolean) : HFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bloomfilter : boolean"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 383,
+		"endLine": 385,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 37,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "filter : boolean"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 412,
+		"endLine": 414,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

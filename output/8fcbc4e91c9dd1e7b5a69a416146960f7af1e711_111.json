@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "8fcbc4e91c9dd1e7b5a69a416146960f7af1e711",
+	"url": "https://github.com/apache/hbase/commit/8fcbc4e91c9dd1e7b5a69a416146960f7af1e711",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public recoverFileLease(fs FileSystem, p Path, conf Configuration) : void from class org.apache.hadoop.hbase.util.FSMapRUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/FSMapRUtils.java",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public recoverFileLease(fs FileSystem, p Path, conf Configuration) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/FSMapRUtils.java",
+		"startLine": 35,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public recoverFileLease(fs FileSystem, p Path, conf Configuration) : void"
+}]
+}
+]
+}]
+}

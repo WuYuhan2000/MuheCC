@@ -1,0 +1,174 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "c2f8ee105b99622ad6f3f0c9cee3448cc5b869c7",
+	"url": "https://github.com/elastic/elasticsearch/commit/c2f8ee105b99622ad6f3f0c9cee3448cc5b869c7",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public isCached(filter Filter) : boolean from class org.elasticsearch.common.lucene.search.CachedFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 131,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.elasticsearch.common.lucene.search.CachedFilter from class org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 51,
+		"endLine": 262,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 131,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 52,
+		"endLine": 258,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 24,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.elasticsearch.common.lucene.search.CachedFilter"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.elasticsearch.common.lucene.search.CachedFilter from classes [org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache.FilterCacheFilterWrapper]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 136,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache.FilterCacheFilterWrapper"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 132,
+		"endLine": 190,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache.FilterCacheFilterWrapper"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 24,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.elasticsearch.common.lucene.search.CachedFilter"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public isCached(filter Filter) : boolean from class org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache to public isCached(filter Filter) : boolean from class org.elasticsearch.common.lucene.search.CachedFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 131,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public isCached(filter Filter) : boolean from class org.elasticsearch.index.cache.filter.weighted.WeightedFilterCache",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/cache/filter/weighted/WeightedFilterCache.java",
+		"startLine": 131,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/common/lucene/search/CachedFilter.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public isCached(filter Filter) : boolean"
+}]
+}
+]
+}]
+}

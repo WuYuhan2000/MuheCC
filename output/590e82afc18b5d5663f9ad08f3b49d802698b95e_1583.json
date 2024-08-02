@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "590e82afc18b5d5663f9ad08f3b49d802698b95e",
+	"url": "https://github.com/aeshell/aesh/commit/590e82afc18b5d5663f9ad08f3b49d802698b95e",
+	"refactorings": [{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Option to @Option(description = \"set foo\") in attribute private foo : String from class AeshExample.Child1",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Option"
+}, {
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 24,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private foo : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 497,
+		"endLine": 497,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Option(description = \"set foo\")"
+}, {
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 24,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "private foo : String"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @GroupCommandDefinition(name = \"group\", description = \"\", groupCommands = {Child1.class,Child2.class}) to @GroupCommandDefinition(name = \"group\", description = \"This is a group command\", groupCommands = {Child1.class,Child2.class}) in class AeshExample.GroupCommand",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 5,
+		"endColumn": 108,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@GroupCommandDefinition(name = \"group\", description = \"\", groupCommands = {Child1.class,Child2.class})"
+}, {
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 477,
+		"endLine": 484,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "AeshExample.GroupCommand"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 477,
+		"endLine": 478,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@GroupCommandDefinition(name = \"group\", description = \"This is a group command\", groupCommands = {Child1.class,Child2.class})"
+}, {
+		"filePath": "src/main/java/AeshExample.java",
+		"startLine": 477,
+		"endLine": 492,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "AeshExample.GroupCommand"
+}]
+}
+]
+}]
+}

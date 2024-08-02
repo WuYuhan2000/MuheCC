@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "1c52b6551b63053b261f4ac821093a8a203de596",
+	"url": "https://github.com/apache/hadoop/commit/1c52b6551b63053b261f4ac821093a8a203de596",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute FS_NODE_LABELS_STORE_URI : String to FS_NODE_LABELS_STORE_ROOT_DIR : String in class org.apache.hadoop.yarn.conf.YarnConfiguration",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/conf/YarnConfiguration.java",
+		"startLine": 1461,
+		"endLine": 1462,
+		"startColumn": 30,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "FS_NODE_LABELS_STORE_URI : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/conf/YarnConfiguration.java",
+		"startLine": 1468,
+		"endLine": 1469,
+		"startColumn": 30,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "FS_NODE_LABELS_STORE_ROOT_DIR : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute rootDirPath : Path to fsWorkingPath : Path in class org.apache.hadoop.yarn.nodelabels.FileSystemNodeLabelsStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/nodelabels/FileSystemNodeLabelsStore.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 8,
+		"endColumn": 19,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "rootDirPath : Path"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/nodelabels/FileSystemNodeLabelsStore.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 8,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "fsWorkingPath : Path"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.hadoop.yarn.server.resourcemanager.nodelabels.DummyRMNodeLabelsManager renamed to org.apache.hadoop.yarn.server.resourcemanager.nodelabels.MemoryRMNodeLabelsManager",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/nodelabels/DummyRMNodeLabelsManager.java",
+		"startLine": 31,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.nodelabels.DummyRMNodeLabelsManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/nodelabels/MemoryRMNodeLabelsManager.java",
+		"startLine": 30,
+		"endLine": 82,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.nodelabels.MemoryRMNodeLabelsManager"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,297 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hama",
+	"sha1": "fa6c7e82d706d9e733fd2dac0164f3fcbde86d05",
+	"url": "https://github.com/apache/hama/commit/fa6c7e82d706d9e733fd2dac0164f3fcbde86d05",
+	"refactorings": [{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"rawtypes\") in attribute private vertexId : WritableComparable from class org.apache.hama.graph.GraphJobMessage",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private vertexId : Writable"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "private vertexId : WritableComparable"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type vertexId : Writable to vertexId : WritableComparable in class org.apache.hama.graph.GraphJobMessage",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 20,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "vertexId : Writable"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "vertexId : WritableComparable"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type messages : Iterator<Text> to messages : Iterable<Text> in method public compute(messages Iterable<Text>) : void from class org.apache.hama.examples.MindistSearch.MindistSearchVertex",
+	"leftSideLocations": [{
+		"filePath": "examples/src/main/java/org/apache/hama/examples/MindistSearch.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "messages : Iterator<Text>"
+}, {
+		"filePath": "examples/src/main/java/org/apache/hama/examples/MindistSearch.java",
+		"startLine": 69,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "examples/src/main/java/org/apache/hama/examples/MindistSearch.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "messages : Iterable<Text>"
+}, {
+		"filePath": "examples/src/main/java/org/apache/hama/examples/MindistSearch.java",
+		"startLine": 68,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type vertexId : Writable to vertexId : WritableComparable<?> in method public GraphJobMessage(vertexId WritableComparable<?>, vertexValue Writable) from class org.apache.hama.graph.GraphJobMessage",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "vertexId : Writable"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 26,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "vertexId : WritableComparable<?>"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private cost : EDGE_VALUE_TYPE from class org.apache.hama.graph.Edge",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private cost : EDGE_VALUE_TYPE"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private cost : EDGE_VALUE_TYPE"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getCost() : EDGE_VALUE_TYPE"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "package setCost(cost EDGE_VALUE_TYPE) : void"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private destinationVertexID : VERTEX_ID from class org.apache.hama.graph.Edge",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private destinationVertexID : VERTEX_ID"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private destinationVertexID : VERTEX_ID"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "package setDestinationVertexID(destinationVertexID VERTEX_ID) : void"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private cost : EDGE_VALUE_TYPE from class org.apache.hama.graph.Edge",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 33,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private cost : EDGE_VALUE_TYPE"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private cost : EDGE_VALUE_TYPE"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private destinationVertexID : VERTEX_ID from class org.apache.hama.graph.Edge",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private destinationVertexID : VERTEX_ID"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Edge.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private destinationVertexID : VERTEX_ID"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute vertices_size : IntWritable to verticesSize : IntWritable in class org.apache.hama.graph.GraphJobMessage",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "vertices_size : IntWritable"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobMessage.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "verticesSize : IntWritable"
+}]
+}
+]
+}]
+}

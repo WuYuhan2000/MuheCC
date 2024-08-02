@@ -1,0 +1,153 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "8507d724657e71365720d430c737670c962c528f",
+	"url": "https://github.com/apache/hadoop/commit/8507d724657e71365720d430c737670c962c528f",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 196,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 48,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 196,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 48,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue to public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 196,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 48,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public computeMaxActiveApplications(clusterResource Resource, maxAMResourcePercent float, absoluteCapacity float) : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue to public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueueUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/LeafQueue.java",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueueUtils.java",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public computeMaxActiveApplicationsPerUser(maxActiveApplications int, userLimit int, userLimitFactor float) : int"
+}]
+}
+]
+}]
+}

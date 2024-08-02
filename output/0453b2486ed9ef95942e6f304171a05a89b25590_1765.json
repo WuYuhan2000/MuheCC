@@ -1,0 +1,261 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/isa-tools/isacreator",
+	"sha1": "0453b2486ed9ef95942e6f304171a05a89b25590",
+	"url": "https://github.com/isa-tools/isacreator/commit/0453b2486ed9ef95942e6f304171a05a89b25590",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type currentAssay : String to content : ContentAdaptor in class org.isatools.isacreator.ontologiser.ui.OntologiserUI",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "currentAssay : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 28,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "content : ContentAdaptor"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type currentAssay : String to content : ContentAdaptor in method public OntologiserUI(isacreatorEnvironment ISAcreator, content ContentAdaptor) from class org.isatools.isacreator.ontologiser.ui.OntologiserUI",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 60,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentAssay : String"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 60,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "content : ContentAdaptor"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.isatools.isacreator.spreadsheet.utils.SpreadsheetUtils moved to org.isatools.isacreator.apiutils.SpreadsheetUtils",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/spreadsheet/utils/SpreadsheetUtils.java",
+		"startLine": 47,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.isatools.isacreator.spreadsheet.utils.SpreadsheetUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/apiutils/SpreadsheetUtils.java",
+		"startLine": 49,
+		"endLine": 214,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.isatools.isacreator.apiutils.SpreadsheetUtils"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute currentAssay : String to content : ContentAdaptor in class org.isatools.isacreator.ontologiser.ui.OntologiserUI",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "currentAssay : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 28,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "content : ContentAdaptor"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter currentAssay : String to content : ContentAdaptor in method public OntologiserUI(isacreatorEnvironment ISAcreator, content ContentAdaptor) from class org.isatools.isacreator.ontologiser.ui.OntologiserUI",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 60,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentAssay : String"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 60,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "content : ContentAdaptor"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserUI.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable exporters : JMenu to sampleTracking : JMenu in method private createMenuBar() : Container from class org.isatools.isacreator.gui.ISAcreator",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 15,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "exporters : JMenu"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 494,
+		"endLine": 499,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 509,
+		"endLine": 509,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 511,
+		"endLine": 511,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 496,
+		"endLine": 496,
+		"startColumn": 15,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "sampleTracking : JMenu"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 496,
+		"endLine": 496,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 497,
+		"endLine": 502,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 518,
+		"endLine": 518,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/gui/ISAcreator.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

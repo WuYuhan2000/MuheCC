@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "2c653b7fb8844ba81fbfc55e9b76827e01969763",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/2c653b7fb8844ba81fbfc55e9b76827e01969763",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter repositoryModel : IRepositoryModel in method public ReviewDataManager(store ReviewDataStore, taskDataManager ITaskDataManager, repositoryModel IRepositoryModel) from class org.eclipse.mylyn.reviews.core.ReviewDataManager",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ReviewDataManager(store ReviewDataStore)"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 38,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "repositoryModel : IRepositoryModel"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 20,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ReviewDataManager(store ReviewDataStore, taskDataManager ITaskDataManager, repositoryModel IRepositoryModel)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter taskDataManager : ITaskDataManager in method public ReviewDataManager(store ReviewDataStore, taskDataManager ITaskDataManager, repositoryModel IRepositoryModel) from class org.eclipse.mylyn.reviews.core.ReviewDataManager",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ReviewDataManager(store ReviewDataStore)"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "taskDataManager : ITaskDataManager"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 20,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ReviewDataManager(store ReviewDataStore, taskDataManager ITaskDataManager, repositoryModel IRepositoryModel)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable reviews : List<Review> in method private loadFromDiskAddCache(task ITask) : ReviewData from class org.eclipse.mylyn.reviews.core.ReviewDataManager",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 66,
+		"endLine": 67,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "reviews : List<Review>"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewDataManager.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

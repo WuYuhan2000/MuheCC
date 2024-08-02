@@ -1,0 +1,687 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "69c6e80acd16d0073400d78bd0e52caf44ef8f40",
+	"url": "https://github.com/ReactiveX/RxJava/commit/69c6e80acd16d0073400d78bd0e52caf44ef8f40",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type f : Action1<T0> to f : Action1<? super T0> in method public fromAction(f Action1<? super T0>) : FuncN<Void> from class rx.util.functions.Functions",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 47,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "f : Action1<T0>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 47,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "f : Action1<? super T0>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type f : Action2<T0,T1> to f : Action2<? super T0,? super T1> in method public fromAction(f Action2<? super T0,? super T1>) : FuncN<Void> from class rx.util.functions.Functions",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 51,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "f : Action2<T0,T1>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 51,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "f : Action2<? super T0,? super T1>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type f : Action3<T0,T1,T2> to f : Action3<? super T0,? super T1,? super T2> in method public fromAction(f Action3<? super T0,? super T1,? super T2>) : FuncN<Void> from class rx.util.functions.Functions",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 55,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "f : Action3<T0,T1,T2>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 55,
+		"endColumn": 106,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "f : Action3<? super T0,? super T1,? super T2>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/util/functions/Functions.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onError : Action1<Throwable> to onError : Action1<? super Throwable> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 60,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onError : Action1<Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 289,
+		"endLine": 291,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 68,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onError : Action1<? super Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 289,
+		"endLine": 291,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onError : Action1<Throwable> to onError : Action1<? super Throwable> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, onComplete Action0) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 60,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onError : Action1<Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 327,
+		"endLine": 329,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 68,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onError : Action1<? super Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 327,
+		"endLine": 329,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onError : Action1<Throwable> to onError : Action1<? super Throwable> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, onComplete Action0, scheduler Scheduler) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 60,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onError : Action1<Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 68,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onError : Action1<? super Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onError : Action1<Throwable> to onError : Action1<? super Throwable> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, scheduler Scheduler) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 60,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onError : Action1<Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 68,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onError : Action1<? super Throwable>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public forEach(onNext Action1<? super T>) : void from class rx.observables.BlockingObservable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/BlockingObservable.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/BlockingObservable.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/BlockingObservable.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 25,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/BlockingObservable.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 251,
+		"endLine": 253,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 251,
+		"endLine": 253,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 286,
+		"endLine": 288,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 286,
+		"endLine": 288,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, onComplete Action0) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 324,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 324,
+		"endLine": 326,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, onComplete Action0, scheduler Scheduler) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>, onError Action1<? super Throwable>, scheduler Scheduler) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onNext : Action1<T> to onNext : Action1<? super T> in method public subscribe(onNext Action1<? super T>, scheduler Scheduler) : Subscription from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onNext : Action1<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "onNext : Action1<? super T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "43b5767f6213784c7e4cdfce2bebadd87108b33f",
+	"url": "https://github.com/apache/hbase/commit/43b5767f6213784c7e4cdfce2bebadd87108b33f",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter callTimeout : int in method public callWithoutRetries(callable RetryingCallable<MultiResponse>, callTimeout int) : MultiResponse from class org.apache.hadoop.hbase.client.TestAsyncProcess.MyAsyncProcess.createCaller.new RpcRetryingCaller<MultiResponse>",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/test/java/org/apache/hadoop/hbase/client/TestAsyncProcess.java",
+		"startLine": 151,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public callWithoutRetries(callable RetryingCallable<MultiResponse>) : MultiResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/test/java/org/apache/hadoop/hbase/client/TestAsyncProcess.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 49,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "callTimeout : int"
+}, {
+		"filePath": "hbase-client/src/test/java/org/apache/hadoop/hbase/client/TestAsyncProcess.java",
+		"startLine": 151,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public callWithoutRetries(callable RetryingCallable<MultiResponse>, callTimeout int) : MultiResponse"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter callTimeout : int in method public callWithoutRetries(callable RetryingCallable<T>, callTimeout int) : T from class org.apache.hadoop.hbase.client.RpcRetryingCaller",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 170,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public callWithoutRetries(callable RetryingCallable<T>) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 61,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "callTimeout : int"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 151,
+		"endLine": 177,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public callWithoutRetries(callable RetryingCallable<T>, callTimeout int) : T"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected scannerTimeout : int from class org.apache.hadoop.hbase.client.ClientScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientScanner.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private scannerTimeout : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientScanner.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 25,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected scannerTimeout : int"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = \"IS2_INCONSISTENT_SYNC\", justification = \"na\") in class org.apache.hadoop.hbase.client.RpcRetryingCaller",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 47,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 60,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@edu.umd.cs.findbugs.annotations.SuppressWarnings(value = \"IS2_INCONSISTENT_SYNC\", justification = \"na\")"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 41,
+		"endLine": 228,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.client.RpcRetryingCaller"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 41,
+		"endLine": 209,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.apache.hadoop.hbase.client.RpcRetryingCaller"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @edu.umd.cs.findbugs.annotations.SuppressWarnings(value = \"SWL_SLEEP_WITH_LOCK_HELD\", justification = \"na\") in method public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T from class org.apache.hadoop.hbase.client.RpcRetryingCaller",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 111,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 65,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@edu.umd.cs.findbugs.annotations.SuppressWarnings(value = \"SWL_SLEEP_WITH_LOCK_HELD\", justification = \"na\")"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 103,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 89,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T from class org.apache.hadoop.hbase.client.RpcRetryingCaller",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 103,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/RpcRetryingCaller.java",
+		"startLine": 89,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public callWithRetries(callable RetryingCallable<T>, callTimeout int) : T"
+}]
+}
+]
+}]
+}

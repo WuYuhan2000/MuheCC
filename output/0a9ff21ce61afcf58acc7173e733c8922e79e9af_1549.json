@@ -1,0 +1,291 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "0a9ff21ce61afcf58acc7173e733c8922e79e9af",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/0a9ff21ce61afcf58acc7173e733c8922e79e9af",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private attributeLocator : AttributeLocator from class org.jboss.test.selenium.waiting.retrievers.AttributeRetriever",
+	"leftSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/waiting/retrievers/AttributeRetriever.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 22,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package attributeLocator : AttributeLocator"
+}],
+	"rightSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/waiting/retrievers/AttributeRetriever.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 30,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private attributeLocator : AttributeLocator"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private point : Point from class org.jboss.test.selenium.actions.Drag",
+	"leftSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 11,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package point : Point"
+}],
+	"rightSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private point : Point"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.jboss.test.selenium.framework.DefaultTypedSelenium renamed to org.jboss.test.selenium.framework.TypedSeleniumImpl",
+	"leftSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/framework/DefaultTypedSelenium.java",
+		"startLine": 61,
+		"endLine": 693,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.test.selenium.framework.DefaultTypedSelenium"
+}],
+	"rightSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/framework/TypedSeleniumImpl.java",
+		"startLine": 62,
+		"endLine": 694,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.jboss.test.selenium.framework.TypedSeleniumImpl"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute selenium : AjaxSelenium to selenium : AjaxSelenium in method private executePhase(phase Phase) : void from class org.jboss.test.selenium.actions.Drag",
+	"leftSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 22,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "selenium : AjaxSelenium"
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 21,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 26,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "selenium : AjaxSelenium"
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 21,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute selenium : AjaxSelenium to selenium : AjaxSelenium in method public Drag(itemToDrag ElementLocator, dropTarget ElementLocator) from class org.jboss.test.selenium.actions.Drag",
+	"leftSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 22,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "selenium : AjaxSelenium"
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 26,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "selenium : AjaxSelenium"
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "library/src/main/java/org/jboss/test/selenium/actions/Drag.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

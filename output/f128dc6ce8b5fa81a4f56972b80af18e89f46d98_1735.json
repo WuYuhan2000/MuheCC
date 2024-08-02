@@ -1,0 +1,396 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/frontlinesms-credit/plugin-paymentview",
+	"sha1": "f128dc6ce8b5fa81a4f56972b80af18e89f46d98",
+	"url": "https://github.com/frontlinesms-credit/plugin-paymentview/commit/f128dc6ce8b5fa81a4f56972b80af18e89f46d98",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter message : FrontlineMessage in method protected processBalance(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "message : FrontlineMessage"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 2,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstract processBalance(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 32,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "message : FrontlineMessage"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 253,
+		"endLine": 261,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected processBalance(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected eventBus : EventBus from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private eventBus : EventBus"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected eventBus : EventBus"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected processBalance(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 2,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstract processBalance(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 253,
+		"endLine": 261,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected processBalance(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package performBalanceEnquiryFraudCheck(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 58,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private performBalanceEnquiryFraudCheck(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 263,
+		"endLine": 275,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package performBalanceEnquiryFraudCheck(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable eventBus : EventBus in method public create() : void from class org.creditsms.plugins.paymentview.ui.handler.tabsettings.dialogs.steps.createnewsettings.EnterPinDialog",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/dialogs/steps/createnewsettings/EnterPinDialog.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/dialogs/steps/createnewsettings/EnterPinDialog.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 12,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "eventBus : EventBus"
+}, {
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/dialogs/steps/createnewsettings/EnterPinDialog.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!(notification instanceof BalanceEventNotification)) to if(notification instanceof BalanceEventNotification) in method public run() : void from class org.creditsms.plugins.paymentview.ui.handler.tabsettings.SettingsTabHandler.notify.execute.new FrontlineUiUpateJob",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/SettingsTabHandler.java",
+		"startLine": 85,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!(notification instanceof BalanceEventNotification))"
+}, {
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/SettingsTabHandler.java",
+		"startLine": 84,
+		"endLine": 91,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/SettingsTabHandler.java",
+		"startLine": 89,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(notification instanceof BalanceEventNotification)"
+}, {
+		"filePath": "src/main/java/org/creditsms/plugins/paymentview/ui/handler/tabsettings/SettingsTabHandler.java",
+		"startLine": 88,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public run() : void"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private BALANCE_ENQUIRY_CHARGE : int from class net.frontlinesms.payment.safaricom.MpesaPersonalService to private BALANCE_ENQUIRY_CHARGE : int from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private BALANCE_ENQUIRY_CHARGE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private BALANCE_ENQUIRY_CHARGE : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private BD_BALANCE_ENQUIRY_CHARGE : BigDecimal from class net.frontlinesms.payment.safaricom.MpesaPersonalService to private BD_BALANCE_ENQUIRY_CHARGE : BigDecimal from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 34,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private BD_BALANCE_ENQUIRY_CHARGE : BigDecimal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 34,
+		"endColumn": 100,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private BD_BALANCE_ENQUIRY_CHARGE : BigDecimal"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private performBalanceEnquiryFraudCheck(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPersonalService to package performBalanceEnquiryFraudCheck(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 58,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private performBalanceEnquiryFraudCheck(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 263,
+		"endLine": 275,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "package performBalanceEnquiryFraudCheck(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected processBalance(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPersonalService to protected processBalance(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 48,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected processBalance(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 253,
+		"endLine": 261,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected processBalance(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method package abstract processBalance(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 2,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package abstract processBalance(message FrontlineMessage) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 253,
+		"endLine": 261,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "protected processBalance(message FrontlineMessage) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable expectedBalance : BigDecimal to actualBalance : BigDecimal in method package performBalanceEnquiryFraudCheck(message FrontlineMessage) : void from class net.frontlinesms.payment.safaricom.MpesaPaymentService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 14,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "expectedBalance : BigDecimal"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPersonalService.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 14,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "actualBalance : BigDecimal"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/net/frontlinesms/payment/safaricom/MpesaPaymentService.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 3,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

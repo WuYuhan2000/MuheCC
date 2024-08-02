@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "1e6f2e79b9e0162f8a111acbe7f2876d0d8eeebe",
+	"url": "https://github.com/spring-projects/spring-framework/commit/1e6f2e79b9e0162f8a111acbe7f2876d0d8eeebe",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable xmlObject : SQLXML in method public getXmlAsSource(rs ResultSet, columnIndex int, sourceClass Class<? extends Source>) : Source from class org.springframework.jdbc.support.xml.Jdbc4SqlXmlHandler",
+	"leftSideLocations": [{
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 99,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "xmlObject : SQLXML"
+}, {
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable xmlObject : SQLXML in method public getXmlAsSource(rs ResultSet, columnName String, sourceClass Class<? extends Source>) : Source from class org.springframework.jdbc.support.xml.Jdbc4SqlXmlHandler",
+	"leftSideLocations": [{
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 98,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 10,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "xmlObject : SQLXML"
+}, {
+		"filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/xml/Jdbc4SqlXmlHandler.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

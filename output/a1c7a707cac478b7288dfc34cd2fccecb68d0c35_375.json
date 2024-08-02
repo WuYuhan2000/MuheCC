@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "a1c7a707cac478b7288dfc34cd2fccecb68d0c35",
+	"url": "https://github.com/apache/hadoop/commit/a1c7a707cac478b7288dfc34cd2fccecb68d0c35",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private conf : YarnConfiguration from class org.apache.hadoop.yarn.applications.distributedshell.TestDistributedShell",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/test/java/org/apache/hadoop/yarn/applications/distributedshell/TestDistributedShell.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 27,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected conf : Configuration"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/test/java/org/apache/hadoop/yarn/applications/distributedshell/TestDistributedShell.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private conf : YarnConfiguration"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type conf : Configuration to conf : YarnConfiguration in class org.apache.hadoop.yarn.applications.distributedshell.TestDistributedShell",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/test/java/org/apache/hadoop/yarn/applications/distributedshell/TestDistributedShell.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 27,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "conf : Configuration"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/test/java/org/apache/hadoop/yarn/applications/distributedshell/TestDistributedShell.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "conf : YarnConfiguration"
+}]
+}
+]
+}]
+}

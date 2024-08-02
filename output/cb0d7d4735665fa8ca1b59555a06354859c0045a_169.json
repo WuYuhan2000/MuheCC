@@ -1,0 +1,1533 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "cb0d7d4735665fa8ca1b59555a06354859c0045a",
+	"url": "https://github.com/elastic/elasticsearch/commit/cb0d7d4735665fa8ca1b59555a06354859c0045a",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter ip_version : StackType in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 58,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "ip_version : StackType"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter timerService : TimerService in method public TransportService(settings Settings, transport Transport, threadPool ThreadPool, timerService TimerService) from class org.elasticsearch.transport.TransportService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 63,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TransportService(settings Settings, transport Transport, threadPool ThreadPool)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 100,
+		"endColumn": 125,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "timerService : TimerService"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 70,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TransportService(settings Settings, transport Transport, threadPool ThreadPool, timerService TimerService)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter timerService : TimerService in method public TransportService(transport Transport, threadPool ThreadPool, timerService TimerService) from class org.elasticsearch.transport.TransportService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public TransportService(transport Transport, threadPool ThreadPool)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 73,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "timerService : TimerService"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 66,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public TransportService(transport Transport, threadPool ThreadPool, timerService TimerService)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type clientHandlers : NonBlockingHashMapLong<TransportResponseHandler> to clientHandlers : NonBlockingHashMapLong<RequestHolder> in class org.elasticsearch.transport.TransportService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 60,
+		"endColumn": 131,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "clientHandlers : NonBlockingHashMapLong<TransportResponseHandler>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 49,
+		"endColumn": 109,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "clientHandlers : NonBlockingHashMapLong<RequestHolder>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to InetAddress in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 19,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "InetAddress"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type [UnknownHostException, IOException] to SocketException in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 102,
+		"endColumn": 122,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "UnknownHostException"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 124,
+		"endColumn": 135,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 87,
+		"endColumn": 102,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "SocketException"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type channels : ArrayList<Channel> to channels : List<Channel> in method public connectToNode(node DiscoveryNode) : void from class org.elasticsearch.transport.netty.NettyTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 36,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "channels : ArrayList<Channel>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 21,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 17,
+		"endColumn": 122,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 463,
+		"endLine": 468,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 421,
+		"endLine": 423,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 31,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "channels : List<Channel>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 25,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 21,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 17,
+		"endColumn": 122,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 426,
+		"endLine": 431,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 412,
+		"endLine": 414,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type niEnum : Enumeration<NetworkInterface> to intfs : Enumeration in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 47,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "niEnum : Enumeration<NetworkInterface>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 98,
+		"endLine": 121,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "intfs : Enumeration"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 147,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public BytesStreamInput(buf byte[], position int, count int) extracted from public BytesStreamInput(buf byte[]) in class org.elasticsearch.util.io.stream.BytesStreamInput",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public BytesStreamInput(buf byte[])"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public BytesStreamInput(buf byte[], position int, count int)"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public BytesStreamInput(buf byte[])"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/stream/BytesStreamInput.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(buf,0,buf.length)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public sendRequest(node DiscoveryNode, action String, message Streamable, timeout TimeValue, handler TransportResponseHandler<T>) : void extracted from public sendRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : void in class org.elasticsearch.transport.TransportService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 152,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public sendRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : void"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 169,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 21,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 155,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 163,
+		"endLine": 165,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 162,
+		"endLine": 166,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 158,
+		"endLine": 174,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 163,
+		"endLine": 165,
+		"startColumn": 61,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 162,
+		"endLine": 166,
+		"startColumn": 40,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 170,
+		"endLine": 172,
+		"startColumn": 45,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 150,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public sendRequest(node DiscoveryNode, action String, message Streamable, timeout TimeValue, handler TransportResponseHandler<T>) : void"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 21,
+		"endColumn": 57,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 171,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 21,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 153,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 164,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 160,
+		"endLine": 176,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 61,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 164,
+		"endLine": 168,
+		"startColumn": 40,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 172,
+		"endLine": 174,
+		"startColumn": 45,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 145,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public sendRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : void"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "sendRequest(node,action,message,null,handler)"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 155,
+		"endLine": 157,
+		"startColumn": 34,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 155,
+		"endLine": 157,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public submitRequest(node DiscoveryNode, action String, message Streamable, timeout TimeValue, handler TransportResponseHandler<T>) : TransportFuture<T> extracted from public submitRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : TransportFuture<T> in class org.elasticsearch.transport.TransportService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 145,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public submitRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : TransportFuture<T>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 138,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public submitRequest(node DiscoveryNode, action String, message Streamable, timeout TimeValue, handler TransportResponseHandler<T>) : TransportFuture<T>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public submitRequest(node DiscoveryNode, action String, message Streamable, handler TransportResponseHandler<T>) : TransportFuture<T>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 16,
+		"endColumn": 67,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "submitRequest(node,action,message,null,handler)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable address : InetAddress in method public resolvePublishHostAddress(publishHost String, settings Settings) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 21,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "address : InetAddress"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable publishAddressX : InetAddress in method protected doStart() : void from class org.elasticsearch.http.netty.NettyHttpServerTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 25,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "publishAddressX : InetAddress"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 17,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable publishAddressX : InetAddress in method protected doStart() : void from class org.elasticsearch.memcached.netty.NettyMemcachedServerTransport",
+	"leftSideLocations": [{
+		"filePath": "plugins/memcached/src/main/java/org/elasticsearch/memcached/netty/NettyMemcachedServerTransport.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 25,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "publishAddressX : InetAddress"
+}, {
+		"filePath": "plugins/memcached/src/main/java/org/elasticsearch/memcached/netty/NettyMemcachedServerTransport.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 17,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/memcached/src/main/java/org/elasticsearch/memcached/netty/NettyMemcachedServerTransport.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable publishAddressX : InetAddress in method protected doStart() : void from class org.elasticsearch.transport.netty.NettyTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 25,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "publishAddressX : InetAddress"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 17,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable resolvedHost : String in method public resolveInetAddress(host String, defaultValue1 String, defaultValue2 String) : InetAddress from class org.elasticsearch.util.io.HostResolver",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 16,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "resolvedHost : String"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 65,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 99,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter defaultValue1 : String in method public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String from class org.elasticsearch.util.io.HostResolver",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 51,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "defaultValue1 : String"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter defaultValue2 : String in method public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String from class org.elasticsearch.util.io.HostResolver",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 73,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "defaultValue2 : String"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter host : String in method public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String from class org.elasticsearch.util.io.HostResolver",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 38,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "host : String"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.elasticsearch.util.io.HostResolver renamed to org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 31,
+		"endLine": 141,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.util.io.HostResolver"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 31,
+		"endLine": 286,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.elasticsearch.util.io.NetworkUtils"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String renamed to public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress in class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 71,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveHost(host String, defaultValue1 String, defaultValue2 String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 138,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable channel1 : Channel to channel : Channel in method public connectToNode(node DiscoveryNode) : void from class org.elasticsearch.transport.netty.NettyTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "channel1 : Channel"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 33,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 421,
+		"endLine": 423,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 30,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "channel : Channel"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 29,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 412,
+		"endLine": 414,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable channelFuture : ChannelFuture to connectFuture : ChannelFuture in method public connectToNode(node DiscoveryNode) : void from class org.elasticsearch.transport.netty.NettyTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 39,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "channelFuture : ChannelFuture"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 428,
+		"endLine": 428,
+		"startColumn": 25,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 33,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 25,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 429,
+		"endLine": 448,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 22,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "connectFuture : ChannelFuture"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 21,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 25,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 25,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/netty/NettyTransport.java",
+		"startLine": 418,
+		"endLine": 424,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ni : NetworkInterface to intf : NetworkInterface in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 38,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ni : NetworkInterface"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 30,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "intf : NetworkInterface"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable niEnum : Enumeration<NetworkInterface> to intfs : Enumeration in method public getFirstNonLoopbackAddress(ip_version StackType) : InetAddress from class org.elasticsearch.util.io.NetworkUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 47,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "niEnum : Enumeration<NetworkInterface>"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/HostResolver.java",
+		"startLine": 98,
+		"endLine": 121,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "intfs : Enumeration"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/util/io/NetworkUtils.java",
+		"startLine": 147,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Anonymous With Class",
+	"description": "Replace Anonymous With Class org.elasticsearch.transport.TransportService.doStart.transportServiceAdapter.new TransportServiceAdapter with org.elasticsearch.transport.TransportService.Adapter",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 71,
+		"endLine": 91,
+		"startColumn": 73,
+		"endColumn": 10,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "org.elasticsearch.transport.TransportService.1"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/transport/TransportService.java",
+		"startLine": 198,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "added type declaration",
+		"codeElement": "org.elasticsearch.transport.TransportService.Adapter"
+}]
+}
+]
+}]
+}

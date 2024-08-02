@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "635b24fec892a394fba1eb9154a3c6888020f419",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/635b24fec892a394fba1eb9154a3c6888020f419",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter arg1 : Request in method public handle(target String, arg1 Request, servletRequest HttpServletRequest, servletResponse HttpServletResponse) : void from class org.restlet.ext.jetty.JettyHandler",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 95,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handle(target String, request HttpServletRequest, response HttpServletResponse, dispatch int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "arg1 : Request"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 95,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public handle(target String, arg1 Request, servletRequest HttpServletRequest, servletResponse HttpServletResponse) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter dispatch : int in method public handle(target String, request HttpServletRequest, response HttpServletResponse, dispatch int) : void from class org.restlet.ext.jetty.JettyHandler",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "dispatch : int"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 95,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handle(target String, request HttpServletRequest, response HttpServletResponse, dispatch int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 95,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public handle(target String, arg1 Request, servletRequest HttpServletRequest, servletResponse HttpServletResponse) : void"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable btp : QueuedThreadPool in method protected getWrappedServer() : Server from class org.restlet.ext.jetty.JettyServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 36,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "btp : QueuedThreadPool"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 372,
+		"endLine": 396,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getWrappedServer() : Server"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 30,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "btp : QueuedThreadPool"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 368,
+		"endLine": 391,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected getWrappedServer() : Server"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getLowThreads() : int renamed to public getRequestHeaderSize() : int in class org.restlet.ext.jetty.JettyServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 300,
+		"endLine": 310,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLowThreads() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyServerHelper.java",
+		"startLine": 318,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getRequestHeaderSize() : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter request : HttpServletRequest to servletRequest : HttpServletRequest in method public handle(target String, arg1 Request, servletRequest HttpServletRequest, servletResponse HttpServletResponse) : void from class org.restlet.ext.jetty.JettyHandler",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 39,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "request : HttpServletRequest"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 111,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "servletRequest : HttpServletRequest"
+}, {
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 112,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter response : HttpServletResponse to servletResponse : HttpServletResponse in method public handle(target String, arg1 Request, servletRequest HttpServletRequest, servletResponse HttpServletResponse) : void from class org.restlet.ext.jetty.JettyHandler",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "response : HttpServletResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jetty/src/org/restlet/ext/jetty/JettyHandler.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "servletResponse : HttpServletResponse"
+}]
+}
+]
+}]
+}

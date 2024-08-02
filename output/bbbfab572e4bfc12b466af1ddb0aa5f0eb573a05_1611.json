@@ -1,0 +1,489 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/nitorcreations/robotframework-eclipseide",
+	"sha1": "bbbfab572e4bfc12b466af1ddb0aa5f0eb573a05",
+	"url": "https://github.com/nitorcreations/robotframework-eclipseide/commit/bbbfab572e4bfc12b466af1ddb0aa5f0eb573a05",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter proposalSets2 : List<RobotCompletionProposalSet> in method public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 63,
+		"endColumn": 109,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "proposalSets2 : List<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter relevantProposalsFilter : IRelevantProposalsFilter in method public RobotContentAssistant2(proposalGeneratorFactory IProposalGeneratorFactory, attemptGenerator IAttemptGenerator, variableReplacementRegionCalculator IVariableReplacementRegionCalculator, relevantProposalsFilter IRelevantProposalsFilter) from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 51,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RobotContentAssistant2(proposalGeneratorFactory IProposalGeneratorFactory, attemptGenerator IAttemptGenerator, variableReplacementRegionCalculator IVariableReplacementRegionCalculator)"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 197,
+		"endColumn": 245,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "relevantProposalsFilter : IRelevantProposalsFilter"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public RobotContentAssistant2(proposalGeneratorFactory IProposalGeneratorFactory, attemptGenerator IAttemptGenerator, variableReplacementRegionCalculator IVariableReplacementRegionCalculator, relevantProposalsFilter IRelevantProposalsFilter)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type proposalSets : PriorityDeque<RobotCompletionProposalSet> to proposalSets : List<RobotCompletionProposalSet> in method private generateProposalsForArgument(file IFile, argument ParsedString, documentOffset int, lines List<RobotLine>, lineNo int, robotLine RobotLine) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 51,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "proposalSets : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 42,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "proposalSets : List<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 126,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 40,
+		"endLine": 231,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 155,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createProposalSets() : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 184,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private removeEmptyProposalSets(proposalSets PriorityDeque<RobotCompletionProposalSet>) : void"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NOT_PRIORITY_PROPOSAL_MASK : int"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 30,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NOT_BASED_ON_INPUT_MASK : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 36,
+		"endLine": 187,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 29,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 66,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createProposalSets() : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 55,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private removeEmptyProposalSets(proposalSets Collection<RobotCompletionProposalSet>) : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private NOT_PRIORITY_PROPOSAL_MASK : int"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private NOT_BASED_ON_INPUT_MASK : int"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter proposalSets : PriorityDeque<RobotCompletionProposalSet> to proposalSets : PriorityDeque<RobotCompletionProposalSet> in method public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 64,
+		"endColumn": 118,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "proposalSets : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 178,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 51,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "proposalSets : PriorityDeque<RobotCompletionProposalSet>"
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private NOT_BASED_ON_INPUT_MASK : int from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2 to private NOT_BASED_ON_INPUT_MASK : int from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 30,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NOT_BASED_ON_INPUT_MASK : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 30,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private NOT_BASED_ON_INPUT_MASK : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private NOT_PRIORITY_PROPOSAL_MASK : int from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2 to private NOT_PRIORITY_PROPOSAL_MASK : int from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NOT_PRIORITY_PROPOSAL_MASK : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private NOT_PRIORITY_PROPOSAL_MASK : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private createProposalSets() : PriorityDeque<RobotCompletionProposalSet> from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2 to private createProposalSets() : PriorityDeque<RobotCompletionProposalSet> from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 155,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createProposalSets() : PriorityDeque<RobotCompletionProposalSet>"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 66,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private createProposalSets() : PriorityDeque<RobotCompletionProposalSet>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.RobotContentAssistant2 to public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[] from class com.nitorcreations.robotframework.eclipseide.internal.assistant.proposalgenerator.RelevantProposalsFilter",
+	"leftSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/RobotContentAssistant2.java",
+		"startLine": 164,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractMostRelevantProposals(proposalSets PriorityDeque<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugin/src/main/java/com/nitorcreations/robotframework/eclipseide/internal/assistant/proposalgenerator/RelevantProposalsFilter.java",
+		"startLine": 34,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public extractMostRelevantProposals(proposalSets2 List<RobotCompletionProposalSet>) : ICompletionProposal[]"
+}]
+}
+]
+}]
+}

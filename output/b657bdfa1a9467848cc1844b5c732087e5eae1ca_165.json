@@ -1,0 +1,276 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "b657bdfa1a9467848cc1844b5c732087e5eae1ca",
+	"url": "https://github.com/elastic/elasticsearch/commit/b657bdfa1a9467848cc1844b5c732087e5eae1ca",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter aliases : Collection<AliasMetaData> in method private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void from class org.elasticsearch.indices.cluster.IndicesClusterStateService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 453,
+		"endLine": 473,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processAlias(index String, alias String, filter CompressedString, indexAliasesService IndexAliasesService) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 47,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "aliases : Collection<AliasMetaData>"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 454,
+		"endLine": 479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter alias : String to alias : String in method private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void from class org.elasticsearch.indices.cluster.IndicesClusterStateService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 45,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "alias : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 21,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 464,
+		"endLine": 464,
+		"startColumn": 25,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 461,
+		"endLine": 467,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 455,
+		"endLine": 468,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "alias : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 25,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 29,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 17,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 466,
+		"endLine": 472,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 460,
+		"endLine": 473,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter filter : CompressedString to filter : CompressedString in method private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void from class org.elasticsearch.indices.cluster.IndicesClusterStateService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 59,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filter : CompressedString"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 21,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 464,
+		"endLine": 464,
+		"startColumn": 25,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 461,
+		"endLine": 467,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 30,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "filter : CompressedString"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 25,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 29,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 17,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 466,
+		"endLine": 472,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private processAlias(index String, alias String, filter CompressedString, indexAliasesService IndexAliasesService) : void renamed to private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void in class org.elasticsearch.indices.cluster.IndicesClusterStateService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 453,
+		"endLine": 473,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processAlias(index String, alias String, filter CompressedString, indexAliasesService IndexAliasesService) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 454,
+		"endLine": 479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private processAliases(index String, aliases Collection<AliasMetaData>, indexAliasesService IndexAliasesService) : void"
+}]
+}
+]
+}]
+}

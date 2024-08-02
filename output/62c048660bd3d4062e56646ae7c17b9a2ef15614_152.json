@@ -1,0 +1,519 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "62c048660bd3d4062e56646ae7c17b9a2ef15614",
+	"url": "https://github.com/apache/hbase/commit/62c048660bd3d4062e56646ae7c17b9a2ef15614",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter addSerializationTag : boolean in method private createVisibilityTags(visibilityLabelsExp String, addSerializationTag boolean) : List<Tag> from class org.apache.hadoop.hbase.security.visibility.VisibilityController",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 855,
+		"endLine": 882,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createVisibilityTags(visibilityLabelsExp String) : List<Tag>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 911,
+		"endLine": 911,
+		"startColumn": 70,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "addSerializationTag : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 911,
+		"endLine": 948,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private createVisibilityTags(visibilityLabelsExp String, addSerializationTag boolean) : List<Tag>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected deleteBuffer : byte[] from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private deleteBuffer : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected deleteBuffer : byte[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected deleteLength : int from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private deleteLength : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected deleteLength : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected deleteOffset : int from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private deleteOffset : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected deleteOffset : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected deleteTimestamp : long from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private deleteTimestamp : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 18,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected deleteTimestamp : long"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected deleteType : byte from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private deleteType : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 18,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected deleteType : byte"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected familyStamp : long from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private familyStamp : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected familyStamp : long"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected familyVersionStamps : SortedSet<Long> from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 27,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private familyVersionStamps : SortedSet<Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 29,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected familyVersionStamps : SortedSet<Long>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected hasFamilyStamp : boolean from class org.apache.hadoop.hbase.regionserver.ScanDeleteTracker",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 19,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hasFamilyStamp : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanDeleteTracker.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected hasFamilyStamp : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public get(get Get, withCoprocessor boolean) : List<Cell> from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 4762,
+		"endLine": 4800,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private get(get Get, withCoprocessor boolean) : List<Cell>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 4762,
+		"endLine": 4800,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public get(get Get, withCoprocessor boolean) : List<Cell>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private createVisibilityTags(visibilityLabelsExp String) : List<Tag> from class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 74,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createVisibilityTags(visibilityLabelsExp String) : List<Tag>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 76,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private createVisibilityTags(visibilityLabelsExp String) : List<Tag>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dos : DataOutputStream to labelOrdinals : List<Integer> in method private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void from class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dos : DataOutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "labelOrdinals : List<Integer>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dos : DataOutputStream to labelOrdinals : List<Integer> in method private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void from class org.apache.hadoop.hbase.security.visibility.VisibilityController",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 884,
+		"endLine": 884,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dos : DataOutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 958,
+		"endLine": 958,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "labelOrdinals : List<Integer>"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type BadTsvLineException to InvalidLabelException in method private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void from class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "BadTsvLineException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 107,
+		"endLine": 137,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private writeLabelOrdinalsToStream(node ExpressionNode, dos DataOutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "InvalidLabelException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type BadTsvLineException to [ParseException, InvalidLabelException] in method private createVisibilityTags(visibilityLabelsExp String) : List<Tag> from class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "BadTsvLineException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 74,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createVisibilityTags(visibilityLabelsExp String) : List<Tag>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "ParseException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "InvalidLabelException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 76,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "private createVisibilityTags(visibilityLabelsExp String) : List<Tag>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private writeLabelOrdinalsToStream(node ExpressionNode, dos DataOutputStream) : void renamed to private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void in class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 107,
+		"endLine": 137,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private writeLabelOrdinalsToStream(node ExpressionNode, dos DataOutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private writeLabelOrdinalsToStream(node ExpressionNode, dos DataOutputStream) : void renamed to private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void in class org.apache.hadoop.hbase.security.visibility.VisibilityController",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 884,
+		"endLine": 914,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private writeLabelOrdinalsToStream(node ExpressionNode, dos DataOutputStream) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 958,
+		"endLine": 988,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter dos : DataOutputStream to labelOrdinals : List<Integer> in method private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void from class org.apache.hadoop.hbase.mapreduce.LabelExpander",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dos : DataOutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/LabelExpander.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "labelOrdinals : List<Integer>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter dos : DataOutputStream to labelOrdinals : List<Integer> in method private getLabelOrdinals(node ExpressionNode, labelOrdinals List<Integer>) : void from class org.apache.hadoop.hbase.security.visibility.VisibilityController",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 884,
+		"endLine": 884,
+		"startColumn": 64,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dos : DataOutputStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/security/visibility/VisibilityController.java",
+		"startLine": 958,
+		"endLine": 958,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "labelOrdinals : List<Integer>"
+}]
+}
+]
+}]
+}

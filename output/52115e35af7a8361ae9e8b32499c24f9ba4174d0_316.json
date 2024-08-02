@@ -1,0 +1,414 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "52115e35af7a8361ae9e8b32499c24f9ba4174d0",
+	"url": "https://github.com/JetBrains/intellij-community/commit/52115e35af7a8361ae9e8b32499c24f9ba4174d0",
+	"refactorings": [{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @NotNull in attribute private myProject : Project from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private myProject : Project"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "private myProject : Project"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier abstract in class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 11,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jetbrains.jps.incremental.CompileScope"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 10,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "org.jetbrains.jps.incremental.CompileScope"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @NotNull in method public getProject() : Project from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProject() : Project"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getProject() : Project"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public getProject() : Project from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProject() : Project"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public getProject() : Project"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public isAffected(chunk ModuleChunk) : boolean from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isAffected(chunk ModuleChunk) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 29,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public isAffected(chunk ModuleChunk) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter paths : Collection<String> in method public startBuild(projectPath String, modules Set<String>, paths Collection<String>, params BuildParameters, msgHandler MessageHandler, cs BuildCanceledStatus) : void from class org.jetbrains.jps.server.ServerState",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/server/ServerState.java",
+		"startLine": 99,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public startBuild(projectPath String, modules Set<String>, params BuildParameters, msgHandler MessageHandler, cs BuildCanceledStatus) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/server/ServerState.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 67,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "paths : Collection<String>"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/server/ServerState.java",
+		"startLine": 100,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public startBuild(projectPath String, modules Set<String>, paths Collection<String>, params BuildParameters, msgHandler MessageHandler, cs BuildCanceledStatus) : void"
+}]
+},
+{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @NotNull in parameter project : Project in method protected CompileScope(project Project) from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "project : Project"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CompileScope(project Project)"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 26,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "project : Project"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "protected CompileScope(project Project)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected CompileScope(project Project) from class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public CompileScope(project Project)"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected CompileScope(project Project)"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public CompileScope(project Project, modules Collection<Module>) inlined to protected CompileScope(project Project) in class org.jetbrains.jps.incremental.CompileScope",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 24,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public CompileScope(project Project, modules Collection<Module>)"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public CompileScope(project Project)"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "this(project,project.getModules().values())"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 19,
+		"endLine": 21,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "protected CompileScope(project Project)"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/CompileScope.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter modules : List<String> in method public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture from class org.jetbrains.jps.client.Client",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 61,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "modules : List<String>"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 89,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public sendRebuildRequest(projectId String, handler JpsServerResponseHandler) : RequestFuture"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter rebuild : boolean in method public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture from class org.jetbrains.jps.client.Client",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 83,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "rebuild : boolean"
+}, {
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 89,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public sendRebuildRequest(projectId String, handler JpsServerResponseHandler) : RequestFuture"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture renamed to public sendRebuildRequest(projectId String, handler JpsServerResponseHandler) : RequestFuture in class org.jetbrains.jps.client.Client",
+	"leftSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 89,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sendCompileRequest(projectId String, modules List<String>, rebuild boolean, handler JpsServerResponseHandler) : RequestFuture"
+}],
+	"rightSideLocations": [{
+		"filePath": "jps/jps-builders/src/org/jetbrains/jps/client/Client.java",
+		"startLine": 98,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public sendRebuildRequest(projectId String, handler JpsServerResponseHandler) : RequestFuture"
+}]
+}
+]
+}]
+}

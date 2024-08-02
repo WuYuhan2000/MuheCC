@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "f95ec3f5bf12bee07c90943cff3b135e6a7e7a8b",
+	"url": "https://github.com/apache/hadoop/commit/f95ec3f5bf12bee07c90943cff3b135e6a7e7a8b",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable clazz : Class in method public getClassByName(name String) : Class<?> from class org.apache.hadoop.conf.Configuration",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/conf/Configuration.java",
+		"startLine": 1032,
+		"endLine": 1032,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/conf/Configuration.java",
+		"startLine": 1046,
+		"endLine": 1046,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "clazz : Class"
+}, {
+		"filePath": "src/java/org/apache/hadoop/conf/Configuration.java",
+		"startLine": 1055,
+		"endLine": 1055,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

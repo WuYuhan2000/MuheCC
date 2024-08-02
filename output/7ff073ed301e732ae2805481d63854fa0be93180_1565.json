@@ -1,0 +1,333 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "7ff073ed301e732ae2805481d63854fa0be93180",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/7ff073ed301e732ae2805481d63854fa0be93180",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to List<Integer> in method private getIndexOfParameterWithAnnotation(annotation Class<? extends Annotation>, method Method) : List<Integer> from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 128,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getIndexOfParameterWithAnnotation(annotation Class<? extends Annotation>, method Method) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<Integer>"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 139,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private getIndexOfParameterWithAnnotation(annotation Class<? extends Annotation>, method Method) : List<Integer>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type indexOfInitialPage : int to indicesOfInitialPage : List<Integer> in method public resolve(method Method) : Object[] from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "indexOfInitialPage : int"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 23,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "indicesOfInitialPage : List<Integer>"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type result : int to results : List<Integer> in method private getIndexOfParameterWithAnnotation(annotation Class<? extends Annotation>, method Method) : List<Integer> from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : int"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 23,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "results : List<Integer>"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable indexOfInitialPage : int to indicesOfInitialPage : List<Integer> in method public resolve(method Method) : Object[] from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "indexOfInitialPage : int"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 23,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "indicesOfInitialPage : List<Integer>"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable result : Object[] to results : Object[] in method public resolve(method Method) : Object[] from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 18,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : Object[]"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 18,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "results : Object[]"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable result : int to results : List<Integer> in method private getIndexOfParameterWithAnnotation(annotation Class<? extends Annotation>, method Method) : List<Integer> from class org.jboss.arquillian.graphene.location.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : int"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 23,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "results : List<Integer>"
+}, {
+		"filePath": "impl/src/main/java/org/jboss/arquillian/graphene/location/LocationEnricher.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

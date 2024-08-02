@@ -1,0 +1,267 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "5f00dc61b87eb4af734446d3a7b1c8928cf57e5d",
+	"url": "https://github.com/apache/camel/commit/5f00dc61b87eb4af734446d3a7b1c8928cf57e5d",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter routeContext : RouteContext in method public DefaultRoute(routeContext RouteContext, endpoint Endpoint) from class org.apache.camel.impl.DefaultRoute",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DefaultRoute(endpoint Endpoint)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "routeContext : RouteContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public DefaultRoute(routeContext RouteContext, endpoint Endpoint)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter routeContext : RouteContext in method public DefaultRoute(routeContext RouteContext, endpoint Endpoint, services Service...) from class org.apache.camel.impl.DefaultRoute",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 45,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DefaultRoute(endpoint Endpoint, services Service...)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "routeContext : RouteContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultRoute.java",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public DefaultRoute(routeContext RouteContext, endpoint Endpoint, services Service...)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter routeContext : RouteContext in method public EventDrivenConsumerRoute(routeContext RouteContext, endpoint Endpoint, processor Processor) from class org.apache.camel.impl.EventDrivenConsumerRoute",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/EventDrivenConsumerRoute.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EventDrivenConsumerRoute(endpoint Endpoint, processor Processor)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/EventDrivenConsumerRoute.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "routeContext : RouteContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/EventDrivenConsumerRoute.java",
+		"startLine": 38,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public EventDrivenConsumerRoute(routeContext RouteContext, endpoint Endpoint, processor Processor)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type routes : Collection<Route> to routes : List<Route> in class org.apache.camel.impl.RouteService",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "routes : Collection<Route>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 31,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "routes : List<Route>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type routes : Collection<Route> to routes : List<Route> in method public RouteService(camelContext DefaultCamelContext, routeDefinition RouteDefinition, routeContexts List<RouteContext>, routes List<Route>) from class org.apache.camel.impl.RouteService",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 126,
+		"endColumn": 150,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "routes : Collection<Route>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 126,
+		"endColumn": 144,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "routes : List<Route>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type routes : Collection<Route> to routes : List<Route> in method public startRoute(route RouteDefinition) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 594,
+		"endLine": 594,
+		"startColumn": 27,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "routes : Collection<Route>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 595,
+		"endLine": 595,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 596,
+		"endLine": 596,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 594,
+		"endLine": 594,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "routes : List<Route>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 595,
+		"endLine": 595,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 596,
+		"endLine": 596,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected pattern : ExchangePattern from class org.apache.camel.processor.SendProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/SendProcessor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected pattern : ExchangePattern"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/SendProcessor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected pattern : ExchangePattern"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/SendProcessor.java",
+		"startLine": 105,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getPattern() : ExchangePattern"
+}]
+}
+]
+}]
+}

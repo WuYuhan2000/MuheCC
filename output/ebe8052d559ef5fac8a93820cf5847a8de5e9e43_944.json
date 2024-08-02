@@ -1,0 +1,363 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "ebe8052d559ef5fac8a93820cf5847a8de5e9e43",
+	"url": "https://github.com/spring-projects/spring-framework/commit/ebe8052d559ef5fac8a93820cf5847a8de5e9e43",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public arrayOfListOfString : List<String>[] from class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package arrayOfListOfString : List<String>[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 24,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public arrayOfListOfString : List<String>[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public intArray : int[] from class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 8,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package intArray : int[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public intArray : int[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public listOfString : List<String> from class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 15,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package listOfString : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public listOfString : List<String>"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable nested : MethodParameter in method public forElementType(elementType Class<?>) : TypeDescriptor from class org.springframework.core.convert.TypeDescriptor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 4,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 20,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "nested : MethodParameter"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 4,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public arrayTypeDescriptors() : void renamed to public arrayTypeDescriptor() : void in class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 50,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public arrayTypeDescriptors() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 81,
+		"endLine": 87,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public arrayTypeDescriptor() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public buildingArrayTypeDescriptors() : void renamed to public buildingArrayTypeDescriptor() : void in class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public buildingArrayTypeDescriptors() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 89,
+		"endLine": 94,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public buildingArrayTypeDescriptor() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public complexTypeDescriptors() : void renamed to public complexTypeDescriptor() : void in class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 65,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public complexTypeDescriptors() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 96,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public complexTypeDescriptor() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public listDescriptors() : void renamed to public listDescriptor() : void in class org.springframework.core.convert.TypeDescriptorTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 40,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public listDescriptors() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/test/java/org/springframework/core/convert/TypeDescriptorTests.java",
+		"startLine": 51,
+		"endLine": 59,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public listDescriptor() : void"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional return (isMap() && this.type != null ? GenericCollectionTypeResolver.getMapValueType((Class<? extends Map>)this.type) : null); to [return null;, if(this.type != null && isMap())] in method private resolveMapValueType() : Class<?> from class org.springframework.core.convert.TypeDescriptor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 534,
+		"endLine": 534,
+		"startColumn": 3,
+		"endColumn": 130,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return (isMap() && this.type != null ? GenericCollectionTypeResolver.getMapValueType((Class<? extends Map>)this.type) : null);\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 520,
+		"endLine": 535,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveMapValueType() : Class<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 554,
+		"endLine": 554,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "return null;\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 551,
+		"endLine": 553,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(this.type != null && isMap())"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 537,
+		"endLine": 555,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private resolveMapValueType() : Class<?>"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional return (this.type != null && isMap() ? GenericCollectionTypeResolver.getMapKeyType((Class<? extends Map>)this.type) : null); to [return null;, if(this.type != null && isMap())] in method private resolveMapKeyType() : Class<?> from class org.springframework.core.convert.TypeDescriptor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 3,
+		"endColumn": 128,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return (this.type != null && isMap() ? GenericCollectionTypeResolver.getMapKeyType((Class<? extends Map>)this.type) : null);\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 503,
+		"endLine": 518,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveMapKeyType() : Class<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 534,
+		"endLine": 534,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "return null;\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 531,
+		"endLine": 533,
+		"startColumn": 8,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(this.type != null && isMap())"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 517,
+		"endLine": 535,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private resolveMapKeyType() : Class<?>"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional return (this.type != null ? GenericCollectionTypeResolver.getCollectionType((Class<? extends Collection>)this.type) : null); to [return null;, if(this.type != null)] in method private resolveCollectionElementType() : Class<?> from class org.springframework.core.convert.TypeDescriptor",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 9,
+		"endColumn": 134,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return (this.type != null ? GenericCollectionTypeResolver.getCollectionType((Class<? extends Collection>)this.type) : null);\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 486,
+		"endLine": 501,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveCollectionElementType() : Class<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 514,
+		"endLine": 514,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "return null;\n"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 511,
+		"endLine": 513,
+		"startColumn": 14,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(this.type != null)"
+}, {
+		"filePath": "org.springframework.core/src/main/java/org/springframework/core/convert/TypeDescriptor.java",
+		"startLine": 497,
+		"endLine": 515,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private resolveCollectionElementType() : Class<?>"
+}]
+}
+]
+}]
+}

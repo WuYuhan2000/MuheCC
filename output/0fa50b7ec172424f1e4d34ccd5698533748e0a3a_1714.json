@@ -1,0 +1,1620 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dustin/java-memcached-client",
+	"sha1": "0fa50b7ec172424f1e4d34ccd5698533748e0a3a",
+	"url": "https://github.com/dustin/java-memcached-client/commit/0fa50b7ec172424f1e4d34ccd5698533748e0a3a",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter s : OperationStatus in method public set(d Future<T>, s OperationStatus) : void from class net.spy.memcached.internal.GetFuture",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/internal/GetFuture.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public set(d Future<T>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/internal/GetFuture.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "s : OperationStatus"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/internal/GetFuture.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public set(d Future<T>, s OperationStatus) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter s : OperationStatus in method public set(o T, s OperationStatus) : void from class net.spy.memcached.internal.OperationFuture",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/internal/OperationFuture.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public set(o T) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/internal/OperationFuture.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "s : OperationStatus"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/internal/OperationFuture.java",
+		"startLine": 105,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public set(o T, s OperationStatus) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method private asyncCat(catType ConcatenationType, cas long, key String, value T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 456,
+		"endLine": 474,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private asyncCat(catType ConcatenationType, cas long, key String, value T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 456,
+		"endLine": 474,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private asyncCat(catType ConcatenationType, cas long, key String, value T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method private asyncStore(storeType StoreType, key String, exp int, value Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 451,
+		"endLine": 454,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private asyncStore(storeType StoreType, key String, exp int, value Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 451,
+		"endLine": 454,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private asyncStore(storeType StoreType, key String, exp int, value Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method private asyncStore(storeType StoreType, key String, exp int, value T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 432,
+		"endLine": 449,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private asyncStore(storeType StoreType, key String, exp int, value T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 432,
+		"endLine": 449,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private asyncStore(storeType StoreType, key String, exp int, value T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public add(key String, exp int, o Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 796,
+		"endLine": 796,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 765,
+		"endLine": 798,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public add(key String, exp int, o Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 796,
+		"endLine": 796,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 765,
+		"endLine": 798,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public add(key String, exp int, o Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public add(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 761,
+		"endLine": 761,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 729,
+		"endLine": 763,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public add(key String, exp int, o T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 761,
+		"endLine": 761,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 729,
+		"endLine": 763,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public add(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public append(cas long, key String, val Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 534,
+		"endLine": 534,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 520,
+		"endLine": 536,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public append(cas long, key String, val Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 534,
+		"endLine": 534,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 520,
+		"endLine": 536,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public append(cas long, key String, val Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public append(cas long, key String, val T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 553,
+		"endLine": 553,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 538,
+		"endLine": 556,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public append(cas long, key String, val T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 553,
+		"endLine": 553,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 538,
+		"endLine": 556,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public append(cas long, key String, val T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public delete(key String) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1852,
+		"endLine": 1852,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1844,
+		"endLine": 1867,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public delete(key String) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1854,
+		"endLine": 1854,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1846,
+		"endLine": 1869,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public delete(key String) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public delete(key String, hold int) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1840,
+		"endLine": 1840,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1820,
+		"endLine": 1842,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public delete(key String, hold int) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1842,
+		"endLine": 1842,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1822,
+		"endLine": 1844,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public delete(key String, hold int) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public flush() : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1930,
+		"endLine": 1930,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1924,
+		"endLine": 1932,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public flush() : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1939,
+		"endLine": 1939,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1933,
+		"endLine": 1941,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public flush() : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public flush(delay int) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1876,
+		"endLine": 1876,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1869,
+		"endLine": 1922,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public flush(delay int) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1878,
+		"endLine": 1878,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1871,
+		"endLine": 1931,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public flush(delay int) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public prepend(cas long, key String, val Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 558,
+		"endLine": 573,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public prepend(cas long, key String, val Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 558,
+		"endLine": 573,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public prepend(cas long, key String, val Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public prepend(cas long, key String, val T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 575,
+		"endLine": 593,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public prepend(cas long, key String, val T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 575,
+		"endLine": 593,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public prepend(cas long, key String, val T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public replace(key String, exp int, o Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 940,
+		"endLine": 940,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 909,
+		"endLine": 942,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public replace(key String, exp int, o Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 940,
+		"endLine": 940,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 909,
+		"endLine": 942,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public replace(key String, exp int, o Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public replace(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 904,
+		"endLine": 904,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 871,
+		"endLine": 907,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public replace(key String, exp int, o T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 904,
+		"endLine": 904,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 871,
+		"endLine": 907,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public replace(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public set(key String, exp int, o Object) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 867,
+		"endLine": 867,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 836,
+		"endLine": 869,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public set(key String, exp int, o Object) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 867,
+		"endLine": 867,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 836,
+		"endLine": 869,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public set(key String, exp int, o Object) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public set(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 832,
+		"endLine": 832,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 800,
+		"endLine": 834,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public set(key String, exp int, o T, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 832,
+		"endLine": 832,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 800,
+		"endLine": 834,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public set(key String, exp int, o T, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public touch(key String, exp int) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 476,
+		"endLine": 489,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public touch(key String, exp int) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 476,
+		"endLine": 489,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public touch(key String, exp int) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Boolean> to OperationFuture<Boolean> in method public touch(key String, exp int, tc Transcoder<T>) : OperationFuture<Boolean> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 491,
+		"endLine": 518,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public touch(key String, exp int, tc Transcoder<T>) : Future<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 502,
+		"endLine": 502,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Boolean>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 491,
+		"endLine": 518,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public touch(key String, exp int, tc Transcoder<T>) : OperationFuture<Boolean>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<Object>> to OperationFuture<CASValue<Object>> in method public asyncGetAndLock(key String, exp int) : OperationFuture<CASValue<Object>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1208,
+		"endLine": 1208,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1197,
+		"endLine": 1210,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGetAndLock(key String, exp int) : Future<CASValue<Object>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1208,
+		"endLine": 1208,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1197,
+		"endLine": 1210,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGetAndLock(key String, exp int) : OperationFuture<CASValue<Object>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<Object>> to OperationFuture<CASValue<Object>> in method public asyncGetAndTouch(key String, exp int) : OperationFuture<CASValue<Object>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1370,
+		"endLine": 1370,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1361,
+		"endLine": 1372,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGetAndTouch(key String, exp int) : Future<CASValue<Object>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1372,
+		"endLine": 1372,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1363,
+		"endLine": 1374,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGetAndTouch(key String, exp int) : OperationFuture<CASValue<Object>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<Object>> to OperationFuture<CASValue<Object>> in method public asyncGets(key String) : OperationFuture<CASValue<Object>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1037,
+		"endLine": 1037,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1028,
+		"endLine": 1039,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGets(key String) : Future<CASValue<Object>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1037,
+		"endLine": 1037,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<Object>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1028,
+		"endLine": 1039,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGets(key String) : OperationFuture<CASValue<Object>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<T>> to OperationFuture<CASValue<T>> in method public asyncGetAndLock(key String, exp int, tc Transcoder<T>) : OperationFuture<CASValue<T>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1171,
+		"endLine": 1171,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1160,
+		"endLine": 1195,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGetAndLock(key String, exp int, tc Transcoder<T>) : Future<CASValue<T>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1171,
+		"endLine": 1171,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1160,
+		"endLine": 1195,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGetAndLock(key String, exp int, tc Transcoder<T>) : OperationFuture<CASValue<T>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<T>> to OperationFuture<CASValue<T>> in method public asyncGetAndTouch(key String, exp int, tc Transcoder<T>) : OperationFuture<CASValue<T>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1384,
+		"endLine": 1384,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1374,
+		"endLine": 1407,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGetAndTouch(key String, exp int, tc Transcoder<T>) : Future<CASValue<T>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1386,
+		"endLine": 1386,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1376,
+		"endLine": 1409,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGetAndTouch(key String, exp int, tc Transcoder<T>) : OperationFuture<CASValue<T>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<CASValue<T>> to OperationFuture<CASValue<T>> in method public asyncGets(key String, tc Transcoder<T>) : OperationFuture<CASValue<T>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1001,
+		"endLine": 1001,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 991,
+		"endLine": 1026,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGets(key String, tc Transcoder<T>) : Future<CASValue<T>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1001,
+		"endLine": 1001,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<CASValue<T>>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 991,
+		"endLine": 1026,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGets(key String, tc Transcoder<T>) : OperationFuture<CASValue<T>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Long> to OperationFuture<Long> in method private asyncMutate(m Mutator, key String, by int, def long, exp int) : OperationFuture<Long> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1742,
+		"endLine": 1742,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1742,
+		"endLine": 1758,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private asyncMutate(m Mutator, key String, by int, def long, exp int) : Future<Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1744,
+		"endLine": 1744,
+		"startColumn": 10,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1744,
+		"endLine": 1760,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private asyncMutate(m Mutator, key String, by int, def long, exp int) : OperationFuture<Long>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Long> to OperationFuture<Long> in method public asyncDecr(key String, by int) : OperationFuture<Long> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1784,
+		"endLine": 1784,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1774,
+		"endLine": 1786,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncDecr(key String, by int) : Future<Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1786,
+		"endLine": 1786,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1776,
+		"endLine": 1788,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncDecr(key String, by int) : OperationFuture<Long>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Long> to OperationFuture<Long> in method public asyncIncr(key String, by int) : OperationFuture<Long> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1770,
+		"endLine": 1770,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1760,
+		"endLine": 1772,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncIncr(key String, by int) : Future<Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1772,
+		"endLine": 1772,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "OperationFuture<Long>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1762,
+		"endLine": 1774,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncIncr(key String, by int) : OperationFuture<Long>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<Object> to GetFuture<Object> in method public asyncGet(key String) : GetFuture<Object> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 987,
+		"endLine": 987,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<Object>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 978,
+		"endLine": 989,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGet(key String) : Future<Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 987,
+		"endLine": 987,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "GetFuture<Object>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 978,
+		"endLine": 989,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGet(key String) : GetFuture<Object>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Future<T> to GetFuture<T> in method public asyncGet(key String, tc Transcoder<T>) : GetFuture<T> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 954,
+		"endLine": 954,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Future<T>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 944,
+		"endLine": 976,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public asyncGet(key String, tc Transcoder<T>) : Future<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 954,
+		"endLine": 954,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "GetFuture<T>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 944,
+		"endLine": 976,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public asyncGet(key String, tc Transcoder<T>) : GetFuture<T>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : RuntimeException to e : Exception in method public testSyncGetTimeouts() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 601,
+		"endLine": 601,
+		"startColumn": 11,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : RuntimeException"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 622,
+		"endLine": 622,
+		"startColumn": 11,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : Exception"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type gf : Future<Object> to gf : GetFuture<Object> in method public testABunchOfCancelledOperations() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 745,
+		"endLine": 745,
+		"startColumn": 18,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "gf : Future<Object>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 750,
+		"endLine": 750,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 767,
+		"endLine": 767,
+		"startColumn": 21,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "gf : GetFuture<Object>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 773,
+		"endLine": 773,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sf : Future<Boolean> to sf : OperationFuture<Boolean> in method public testABunchOfCancelledOperations() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 744,
+		"endLine": 744,
+		"startColumn": 19,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sf : Future<Boolean>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 749,
+		"endLine": 749,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 766,
+		"endLine": 766,
+		"startColumn": 28,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "sf : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 771,
+		"endLine": 771,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type vals : Future<Map<String,String>> to vals : BulkFuture<Map<String,String>> in method public testAsyncGetBulkVarargWithTranscoder() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 401,
+		"endLine": 402,
+		"startColumn": 31,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "vals : Future<Map<String,String>>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 416,
+		"endLine": 417,
+		"startColumn": 35,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "vals : BulkFuture<Map<String,String>>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable op : OperationFuture<Boolean> in method public testAppend() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 804,
+		"endLine": 804,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 828,
+		"endLine": 828,
+		"startColumn": 28,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "op : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 829,
+		"endLine": 829,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable op : OperationFuture<Boolean> in method public testPrepend() : void from class net.spy.memcached.ProtocolBaseCase",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 811,
+		"endLine": 811,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 837,
+		"endLine": 837,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "op : OperationFuture<Boolean>"
+}, {
+		"filePath": "src/test/java/net/spy/memcached/ProtocolBaseCase.java",
+		"startLine": 838,
+		"endLine": 838,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable rv : BulkGetFuture<T> in method public asyncGetBulk(keys Collection<String>, tc_iter Iterator<Transcoder<T>>) : BulkFuture<Map<String,T>> from class net.spy.memcached.MemcachedClient",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1303,
+		"endLine": 1303,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1271,
+		"endLine": 1271,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "rv : BulkGetFuture<T>"
+}, {
+		"filePath": "src/main/java/net/spy/memcached/MemcachedClient.java",
+		"startLine": 1305,
+		"endLine": 1305,
+		"startColumn": 3,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

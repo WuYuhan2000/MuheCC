@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "c00c4d3881ddd790a2dae2686bd64df40102332c",
+	"url": "https://github.com/JetBrains/kotlin/commit/c00c4d3881ddd790a2dae2686bd64df40102332c",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable accessibleClasses : Collection<PsiClass> in method private getJavaClasses(typeName String, project Project, scope GlobalSearchScope) : Collection<FqName> from class org.jetbrains.jet.plugin.quickfix.ImportClassAndFunFix",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 168,
+		"endLine": 175,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 171,
+		"endLine": 177,
+		"startColumn": 30,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "accessibleClasses : Collection<PsiClass>"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 179,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable qualifiedName : String in method public apply(javaClass PsiClass) : FqName from class org.jetbrains.jet.plugin.quickfix.ImportClassAndFunFix.getJavaClasses.transform.new Function<PsiClass,FqName>",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 24,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "qualifiedName : String"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/quickfix/ImportClassAndFunFix.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

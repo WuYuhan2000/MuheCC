@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "e17f046915cce47bd95b4b8f4b197c8fb3d76481",
+	"url": "https://github.com/JetBrains/intellij-community/commit/e17f046915cce47bd95b4b8f4b197c8fb3d76481",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter systemId : String in method public getFile(publicId String, systemId String) : VirtualFile from class com.intellij.xml.actions.ValidateXmlActionHandler",
+	"leftSideLocations": [{
+		"filePath": "xml/impl/src/com/intellij/xml/actions/ValidateXmlActionHandler.java",
+		"startLine": 86,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getFile(publicId String) : VirtualFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "xml/impl/src/com/intellij/xml/actions/ValidateXmlActionHandler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "systemId : String"
+}, {
+		"filePath": "xml/impl/src/com/intellij/xml/actions/ValidateXmlActionHandler.java",
+		"startLine": 86,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getFile(publicId String, systemId String) : VirtualFile"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getFile(publicId String, systemId String) : VirtualFile from class com.intellij.xml.actions.ValidateXmlActionHandler",
+	"leftSideLocations": [{
+		"filePath": "xml/impl/src/com/intellij/xml/actions/ValidateXmlActionHandler.java",
+		"startLine": 86,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getFile(publicId String) : VirtualFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "xml/impl/src/com/intellij/xml/actions/ValidateXmlActionHandler.java",
+		"startLine": 86,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getFile(publicId String, systemId String) : VirtualFile"
+}]
+}
+]
+}]
+}

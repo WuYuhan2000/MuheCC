@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "ca849f196990eec942468efaef3719f829c265eb",
+	"url": "https://github.com/orientechnologies/orientdb/commit/ca849f196990eec942468efaef3719f829c265eb",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute private status : STATUS from class com.orientechnologies.orient.server.handler.distributed.ODistributedServerNode",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/distributed/ODistributedServerNode.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 35,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private status : STATUS"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/distributed/ODistributedServerNode.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 40,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private status : STATUS"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter iMode : String in method public shareDatabase(iDatabaseName String, iDatabaseUserName String, iDatabaseUserPassword String, iRemoteName String, iMode String) : OServerAdmin from class com.orientechnologies.orient.client.remote.OServerAdmin",
+	"leftSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OServerAdmin.java",
+		"startLine": 119,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public shareDatabase(iDatabaseName String, iDatabaseUserName String, iDatabaseUserPassword String, iRemoteName String) : OServerAdmin"
+}],
+	"rightSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OServerAdmin.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "iMode : String"
+}, {
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OServerAdmin.java",
+		"startLine": 119,
+		"endLine": 141,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public shareDatabase(iDatabaseName String, iDatabaseUserName String, iDatabaseUserPassword String, iRemoteName String, iMode String) : OServerAdmin"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iRequestType : byte to iRequestType : Object in method public onAfterClientRequest(iConnection OClientConnection, iRequestType Object) : void from class com.orientechnologies.orient.server.handler.OServerHandler",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/OServerHandler.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 66,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iRequestType : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/OServerHandler.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iRequestType : Object"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iRequestType : byte to iRequestType : Object in method public onBeforeClientRequest(iConnection OClientConnection, iRequestType Object) : void from class com.orientechnologies.orient.server.handler.OServerHandler",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/OServerHandler.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 67,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iRequestType : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/OServerHandler.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 67,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iRequestType : Object"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [networkAddress : String, networkPort : int] to id : String in class com.orientechnologies.orient.server.handler.distributed.ODistributedServerNode",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/distributed/ODistributedServerNode.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 35,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "networkAddress : String"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/distributed/ODistributedServerNode.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 33,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "networkPort : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/handler/distributed/ODistributedServerNode.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 35,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "id : String"
+}]
+}
+]
+}]
+}

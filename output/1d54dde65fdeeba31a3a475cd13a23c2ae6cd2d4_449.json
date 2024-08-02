@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "1d54dde65fdeeba31a3a475cd13a23c2ae6cd2d4",
+	"url": "https://github.com/kiegroup/drools/commit/1d54dde65fdeeba31a3a475cd13a23c2ae6cd2d4",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type arrayClassName : String to arrayClassName : StringBuffer in method public resolveType(className String) : Class from class org.codehaus.jfdi.interpreter.ClassTypeResolver",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/codehaus/jfdi/interpreter/ClassTypeResolver.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 20,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "arrayClassName : String"
+}, {
+		"filePath": "drools-core/src/main/java/org/codehaus/jfdi/interpreter/ClassTypeResolver.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/codehaus/jfdi/interpreter/ClassTypeResolver.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 22,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "arrayClassName : StringBuffer"
+}, {
+		"filePath": "drools-core/src/main/java/org/codehaus/jfdi/interpreter/ClassTypeResolver.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

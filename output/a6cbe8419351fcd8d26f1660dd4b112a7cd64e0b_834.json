@@ -1,0 +1,999 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "a6cbe8419351fcd8d26f1660dd4b112a7cd64e0b",
+	"url": "https://github.com/apache/camel/commit/a6cbe8419351fcd8d26f1660dd4b112a7cd64e0b",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type destination : Endpoint<E> to destination : Endpoint in class org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "destination : Endpoint<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 22,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "destination : Endpoint"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type predicate : Predicate<E> to predicate : Predicate<Exchange> in class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "predicate : Predicate<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "predicate : Predicate<Exchange>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type processor : Processor<E> to processor : Processor in class org.apache.camel.Route",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "processor : Processor<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "processor : Processor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type processor : Processor<E> to processor : Processor in class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "processor : Processor<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "processor : Processor"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type receivedExchange : FileExchange to receivedExchange : Exchange in class org.apache.camel.component.file.FileRouteTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "receivedExchange : FileExchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "receivedExchange : Exchange"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type e : FileExchange to e : Exchange in method public process(e Exchange) : void from class org.apache.camel.component.file.FileRouteTest.createRouteBuilder.new RouteBuilder.configure.process.new Processor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 41,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : FileExchange"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : Exchange"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 25,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/component/file/FileRouteTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type endpoint : Endpoint<E> to endpoint : Endpoint in method public ToBuilder(parent FromBuilder, endpoint Endpoint) from class org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "endpoint : Endpoint<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 42,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "endpoint : Endpoint"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type exchange : E to exchange : Exchange in method public process(exchange Exchange) : void from class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 25,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "exchange : E"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 25,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "exchange : Exchange"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 39,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type exchange : MailExchange to exchange : Exchange in method public process(exchange Exchange) : void from class org.apache.camel.component.mail.MailProducer",
+	"leftSideLocations": [{
+		"filePath": "camel-mail/src/main/java/org/apache/camel/component/mail/MailProducer.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "exchange : MailExchange"
+}, {
+		"filePath": "camel-mail/src/main/java/org/apache/camel/component/mail/MailProducer.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-mail/src/main/java/org/apache/camel/component/mail/MailProducer.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "exchange : Exchange"
+}, {
+		"filePath": "camel-mail/src/main/java/org/apache/camel/component/mail/MailProducer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parent : FromBuilder<E> to parent : FromBuilder in method public ToBuilder(parent FromBuilder, endpoint Endpoint) from class org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parent : FromBuilder<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 22,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : FromBuilder"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type predicate : Predicate<E> to predicate : Predicate<Exchange> in method public FilterProcessor(predicate Predicate<Exchange>, processor Processor) from class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "predicate : Predicate<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "predicate : Predicate<Exchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<CxfExchange> to processor : Processor in method public createConsumer(processor Processor) : Consumer<CxfExchange> from class org.apache.camel.component.cxf.CxfEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-cxf/src/main/java/org/apache/camel/component/cxf/CxfEndpoint.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 49,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<CxfExchange>"
+}, {
+		"filePath": "camel-cxf/src/main/java/org/apache/camel/component/cxf/CxfEndpoint.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-cxf/src/main/java/org/apache/camel/component/cxf/CxfEndpoint.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 49,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-cxf/src/main/java/org/apache/camel/component/cxf/CxfEndpoint.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<E> to processor : Processor in method public FilterProcessor(predicate Predicate<Exchange>, processor Processor) from class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 52,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 59,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<E> to processor : Processor in method public Route(endpoint Endpoint<E>, processor Processor) from class org.apache.camel.Route",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 37,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<E> to processor : Processor in method public setProcessor(processor Processor) : void from class org.apache.camel.Route",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 27,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<Exchange> to processor : Processor in method public ProcessorEndpointConsumer(endpoint ProcessorEndpoint, processor Processor) from class org.apache.camel.component.processor.ProcessorEndpointConsumer",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/processor/ProcessorEndpointConsumer.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 66,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<Exchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/processor/ProcessorEndpointConsumer.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/processor/ProcessorEndpointConsumer.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 66,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/processor/ProcessorEndpointConsumer.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<PojoExchange> to processor : Processor in method public TimerConsumer(endpoint TimerEndpoint, processor Processor) from class org.apache.camel.component.pojo.timer.TimerConsumer",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/timer/TimerConsumer.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 47,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<PojoExchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/timer/TimerConsumer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/timer/TimerConsumer.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 47,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/component/pojo/timer/TimerConsumer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type processor : Processor<PojoExchange> to processor : Processor in method public createConsumer(processor Processor) : Consumer<PojoExchange> from class org.apache.camel.component.rmi.RmiEndpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-rmi/src/main/java/org/apache/camel/component/rmi/RmiEndpoint.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 47,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<PojoExchange>"
+}, {
+		"filePath": "camel-rmi/src/main/java/org/apache/camel/component/rmi/RmiEndpoint.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-rmi/src/main/java/org/apache/camel/component/rmi/RmiEndpoint.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 47,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-rmi/src/main/java/org/apache/camel/component/rmi/RmiEndpoint.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Predicate<E> to Predicate<Exchange> in method public getPredicate() : Predicate<Exchange> from class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Predicate<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPredicate() : Predicate<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Predicate<Exchange>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getPredicate() : Predicate<Exchange>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Processor<E> to Processor in method public createProcessor() : Processor from class org.apache.camel.builder.ToBuilder",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createProcessor() : Processor<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 12,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/builder/ToBuilder.java",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createProcessor() : Processor"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Processor<E> to Processor in method public getProcessor() : Processor from class org.apache.camel.Route",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 54,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProcessor() : Processor<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/Route.java",
+		"startLine": 54,
+		"endLine": 56,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getProcessor() : Processor"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Processor<E> to Processor in method public getProcessor() : Processor from class org.apache.camel.processor.FilterProcessor",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Processor<E>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProcessor() : Processor<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 12,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/FilterProcessor.java",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getProcessor() : Processor"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type processor : Processor<Exchange> to processor : Processor in method protected createRouteBuilder() : RouteBuilder from class org.apache.camel.processor.DeadLetterChannelTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/DeadLetterChannelTest.java",
+		"startLine": 73,
+		"endLine": 84,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<Exchange>"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/DeadLetterChannelTest.java",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/DeadLetterChannelTest.java",
+		"startLine": 73,
+		"endLine": 84,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/DeadLetterChannelTest.java",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type processor : Processor<Exchange> to processor : Processor in method protected createRouteBuilder() : RouteBuilder from class org.apache.camel.processor.PipelineTest",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 56,
+		"endLine": 67,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "processor : Processor<Exchange>"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 56,
+		"endLine": 67,
+		"startColumn": 25,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/PipelineTest.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

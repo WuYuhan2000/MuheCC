@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "21760a8b6b030233d4a82d8026bc9910e0a93ea5",
+	"url": "https://github.com/spring-projects/spring-framework/commit/21760a8b6b030233d4a82d8026bc9910e0a93ea5",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type codeList : List<String> to codeList : Set<String> in method public resolveMessageCodes(errorCode String, objectName String, field String, fieldType Class<?>) : String[] from class org.springframework.validation.DefaultMessageCodesResolver",
+	"leftSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 16,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "codeList : List<String>"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 15,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "codeList : Set<String>"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private addCode(codeList Collection<String>, errorCode String, objectName String, field String) : void extracted from public resolveMessageCodes(errorCode String, objectName String, field String, fieldType Class<?>) : String[] in class org.springframework.validation.DefaultMessageCodesResolver",
+	"leftSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 114,
+		"endLine": 142,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public resolveMessageCodes(errorCode String, objectName String, field String, fieldType Class<?>) : String[]"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 4,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 165,
+		"endLine": 168,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private addCode(codeList Collection<String>, errorCode String, objectName String, field String) : void"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 133,
+		"endLine": 157,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public resolveMessageCodes(errorCode String, objectName String, field String, fieldType Class<?>) : String[]"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addCode(codeList,errorCode,null,fieldType.getName())"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addCode(codeList,errorCode,null,null)"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/validation/DefaultMessageCodesResolver.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 3,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

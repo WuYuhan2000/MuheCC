@@ -1,0 +1,3045 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipsesource/tabris",
+	"sha1": "59673312da6263719881b427abca92e010b693d5",
+	"url": "https://github.com/eclipsesource/tabris/commit/59673312da6263719881b427abca92e010b693d5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter properties : JsonObject in method private handleDrawings(control Canvas, properties JsonObject) : void from class com.eclipsesource.tabris.internal.ClientCanvasOperator",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/ClientCanvasOperator.java",
+		"startLine": 50,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private handleDrawings(control Canvas) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/ClientCanvasOperator.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 54,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "properties : JsonObject"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/ClientCanvasOperator.java",
+		"startLine": 48,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private handleDrawings(control Canvas, properties JsonObject) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter properties : JsonObject in method private handlePlaybackMode(widget Widget, properties JsonObject) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 61,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private readPlaybackMode(widget Widget) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 53,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "properties : JsonObject"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 107,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private handlePlaybackMode(widget Widget, properties JsonObject) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter properties : JsonObject in method private handlePresentationMode(widget Widget, properties JsonObject) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private readPresentationMode(widget Widget) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 57,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "properties : JsonObject"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 124,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private handlePresentationMode(widget Widget, properties JsonObject) : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.TabrisClientInstallerTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/TabrisClientInstallerTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/TabrisClientInstallerTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ClientCanvasLCATest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientCanvasLCATest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientCanvasLCATest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ClientCanvasOperatorTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientCanvasOperatorTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientCanvasOperatorTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.DataWhitelistTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/DataWhitelistTest.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/DataWhitelistTest.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.GCOperationDispatcherTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/GCOperationDispatcherTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/GCOperationDispatcherTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.GeolocationImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/GeolocationImplTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/GeolocationImplTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.TabrisSWTClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ZIndexStackLayoutTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ZIndexStackLayoutTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ZIndexStackLayoutTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.ActionDescriptorTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/ActionDescriptorTest.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/ActionDescriptorTest.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.PageFlowTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/PageFlowTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/PageFlowTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.RemoteActionTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteActionTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteActionTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.RemoteSearchActionTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteSearchActionTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteSearchActionTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.RemoteUITest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteUITest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/RemoteUITest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.internal.ui.web.WebPageTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.AbstractPageTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/AbstractPageTest.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/AbstractPageTest.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.ActionConfigurationTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/ActionConfigurationTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/ActionConfigurationTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.PageConfigurationTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/PageConfigurationTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/PageConfigurationTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.TabrisUIEntryPointTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/TabrisUIEntryPointTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/TabrisUIEntryPointTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.TabrisUIEntrypointFactoryTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/TabrisUIEntrypointFactoryTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/TabrisUIEntrypointFactoryTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.ui.UIConfigurationTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/UIConfigurationTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/ui/UIConfigurationTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.widgets.ScrollingCompositeTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/ScrollingCompositeTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/ScrollingCompositeTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.widgets.enhancement.TextReplacementDataTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.widgets.swipe.SwipeCommunicationTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/swipe/SwipeCommunicationTest.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/swipe/SwipeCommunicationTest.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type environment : RWTEnvironment to environment : TabrisEnvironment in class com.eclipsesource.tabris.widgets.swipe.SwipeTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/swipe/SwipeTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "environment : RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/swipe/SwipeTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "environment : TabrisEnvironment"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to TabrisRequest in method public newRequest() : TabrisRequest from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/RWTEnvironment.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/RWTEnvironment.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public runProcessAction() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 107,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public newRequest() : TabrisRequest"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testAcceptForAndroid() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testAcceptForIOS() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testAcceptForSWT() : void from class com.eclipsesource.tabris.internal.TabrisSWTClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetLocaleReadsLocaleFromRequest() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetLocalesReadsLocalesFromRequest() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetPlatformIsAndroid() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetPlatformIsIOS() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetPlatformIsSWT() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testGetPlatformIsWebByDefault() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testRespectsSystemPropertyForVersionCheck() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testReturnsSaveLocalesCopy() : void from class com.eclipsesource.tabris.internal.ClientDeviceImplTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ClientDeviceImplTest.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSets412ForIncompatibleVersion() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsErrorHeadAttribute() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsNoServerIdAsHeaderForWeb() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsServerIdAsHeaderForAndroid() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsServerIdAsHeaderForAndroidOnlyIfSet() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsServerIdAsHeaderForIOS() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testSetsServerIdAsHeaderForIOSOnlyIfSet() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testUsesAndroidTheme() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testUsesIOS6Theme() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testUsesIOSTheme() : void from class com.eclipsesource.tabris.internal.TabrisClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : TestRequest to request : TabrisRequest in method public testUsesSWTTheme() : void from class com.eclipsesource.tabris.internal.TabrisSWTClientProviderTest",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : TestRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TabrisRequest"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public resetThemes() : void extracted from private registerTheme(themeId String) : void in class com.eclipsesource.tabris.internal.TabrisClientProviderTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 139,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private registerTheme(themeId String) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public resetThemes() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 138,
+		"endLine": 152,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private registerTheme(themeId String) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisClientProviderTest.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.resetThemes()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public resetThemes() : void extracted from private registerTheme(themeId String) : void in class com.eclipsesource.tabris.internal.TabrisSWTClientProviderTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 89,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private registerTheme(themeId String) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public resetThemes() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 88,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private registerTheme(themeId String) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/TabrisSWTClientProviderTest.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.resetThemes()"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testCreatesNoRemoteObjectWithWebClient() : void in class com.eclipsesource.tabris.widgets.enhancement.TextReplacementDataTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 64,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testCreatesNoRemoteObjectWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 60,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testCreatesNoRemoteObjectWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(mock(WebClient.class))"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testDoesNotSetTextReplacementWithWebClient() : void in class com.eclipsesource.tabris.widgets.enhancement.TextDecoratorTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextDecoratorTest.java",
+		"startLine": 154,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testDoesNotSetTextReplacementWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextDecoratorTest.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextDecoratorTest.java",
+		"startLine": 149,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testDoesNotSetTextReplacementWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextDecoratorTest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(mock(WebClient.class))"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testHasNullIdWithWebClient() : void in class com.eclipsesource.tabris.widgets.enhancement.TextReplacementDataTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 84,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testHasNullIdWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testHasNullIdWithWebClient() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/widgets/enhancement/TextReplacementDataTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(mock(WebClient.class))"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testPageActivated_rendersTitle() : void in class com.eclipsesource.tabris.internal.ui.web.WebPageTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 149,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testPageActivated_rendersTitle() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 148,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testPageActivated_rendersTitle() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(webClient)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testSetTitleUpdatesUi() : void in class com.eclipsesource.tabris.internal.ui.web.WebPageTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 137,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testSetTitleUpdatesUi() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 136,
+		"endLine": 146,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testSetTitleUpdatesUi() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(webClient)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setClient(client Client) : void extracted from public testSetTitle_rendersTitle() : void in class com.eclipsesource.tabris.internal.ui.web.WebPageTest & moved to class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 125,
+		"endLine": 135,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testSetTitle_rendersTitle() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setClient(client Client) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 124,
+		"endLine": 134,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testSetTitle_rendersTitle() : void"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "environment.setClient(webClient)"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 48,
+		"endLine": 144,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.eclipsesource.tabris.internal.VideoLifeCycleAdapter"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 90,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 48,
+		"endLine": 153,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "com.eclipsesource.tabris.internal.VideoLifeCycleAdapter"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 90,
+		"endLine": 140,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void"
+}, {
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 132,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.eclipsesource.tabris.test.RWTEnvironment moved and renamed to com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/RWTEnvironment.java",
+		"startLine": 27,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.RWTEnvironment"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 35,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.util.TabrisEnvironment"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.eclipsesource.tabris.test.TabrisTestUtil moved and renamed to com.eclipsesource.tabris.test.util.internal.RemoteObjectHelper",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/TabrisTestUtil.java",
+		"startLine": 28,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.TabrisTestUtil"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/internal/RemoteObjectHelper.java",
+		"startLine": 29,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.util.internal.RemoteObjectHelper"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private readPlaybackMode(widget Widget) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter to private handlePlaybackMode(widget Widget, properties JsonObject) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 61,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private readPlaybackMode(widget Widget) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 107,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private handlePlaybackMode(widget Widget, properties JsonObject) : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private readPresentationMode(widget Widget) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter to private handlePresentationMode(widget Widget, properties JsonObject) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private readPresentationMode(widget Widget) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 124,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private handlePresentationMode(widget Widget, properties JsonObject) : void"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.eclipsesource.tabris.test.ControlLCATestUtil moved to com.eclipsesource.tabris.test.util.ControlLCATestUtil",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/ControlLCATestUtil.java",
+		"startLine": 28,
+		"endLine": 196,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.ControlLCATestUtil"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/ControlLCATestUtil.java",
+		"startLine": 28,
+		"endLine": 196,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.util.ControlLCATestUtil"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class com.eclipsesource.tabris.test.TabrisTestUtil.TestRemoteObject moved to com.eclipsesource.tabris.test.util.TestRemoteObject",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/TabrisTestUtil.java",
+		"startLine": 55,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.TabrisTestUtil.TestRemoteObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TestRemoteObject.java",
+		"startLine": 18,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "com.eclipsesource.tabris.test.util.TestRemoteObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter to private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private notifyListenersAboutPlaybackModeChange(newMode Playback, video Video) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter to private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void from class com.eclipsesource.tabris.internal.VideoLifeCycleAdapter.VideoOperationHandler",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 90,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris/src/com/eclipsesource/tabris/internal/VideoLifeCycleAdapter.java",
+		"startLine": 132,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private notifyListenersAboutPresentationModeChange(newMode Presentation, video Video) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable webClient : WebClient to client : Client in method public setClient(client Client) : void from class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 15,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "webClient : WebClient"
+}, {
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/internal/ui/web/WebPageTest.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "client : Client"
+}, {
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class com.eclipsesource.tabris.test.TabrisTestUtil.TestRemoteObject",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/TabrisTestUtil.java",
+		"startLine": 55,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.eclipsesource.tabris.test.TabrisTestUtil.TestRemoteObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TestRemoteObject.java",
+		"startLine": 18,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "com.eclipsesource.tabris.test.util.TestRemoteObject"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public runProcessAction() : void renamed to public newRequest() : TabrisRequest in class com.eclipsesource.tabris.test.util.TabrisEnvironment",
+	"leftSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test/src/com/eclipsesource/tabris/test/RWTEnvironment.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public runProcessAction() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.eclipsesource.tabris.test.util/src/com/eclipsesource/tabris/test/util/TabrisEnvironment.java",
+		"startLine": 107,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public newRequest() : TabrisRequest"
+}]
+}
+]
+}]
+}

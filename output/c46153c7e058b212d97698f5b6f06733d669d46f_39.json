@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "c46153c7e058b212d97698f5b6f06733d669d46f",
+	"url": "https://github.com/ReactiveX/RxJava/commit/c46153c7e058b212d97698f5b6f06733d669d46f",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter action : Action0 in method public schedule(action Action0) : Subscription from class rx.ios.schedulers.HandlerThreadScheduler.InnerHandlerThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 38,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action0 : Action0"
+}, {
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 69,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public schedule(action0 Action0) : Subscription"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "action : Action0"
+}, {
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 72,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public schedule(action Action0) : Subscription"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type innerSubscription : BooleanSubscription to innerSubscription : CompositeSubscription in class rx.ios.schedulers.HandlerThreadScheduler.InnerHandlerThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 37,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "innerSubscription : BooleanSubscription"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 39,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "innerSubscription : CompositeSubscription"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter action0 : Action0 to action : Action0 in method public schedule(action Action0) : Subscription from class rx.ios.schedulers.HandlerThreadScheduler.InnerHandlerThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 38,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "action0 : Action0"
+}, {
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "action : Action0"
+}, {
+		"filePath": "rxjava-contrib/rxjava-ios/src/main/java/rx/ios/schedulers/HandlerThreadScheduler.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

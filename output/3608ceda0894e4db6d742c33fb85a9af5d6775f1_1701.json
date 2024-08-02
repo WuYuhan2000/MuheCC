@@ -1,0 +1,171 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cyberfox/jbidwatcher",
+	"sha1": "3608ceda0894e4db6d742c33fb85a9af5d6775f1",
+	"url": "https://github.com/cyberfox/jbidwatcher/commit/3608ceda0894e4db6d742c33fb85a9af5d6775f1",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public isDirty() : boolean from class com.jbidwatcher.util.HashBacked",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/HashBacked.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected isDirty() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/HashBacked.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public isDirty() : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public setBacking(r Record) : void from class com.jbidwatcher.util.HashBacked",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/HashBacked.java",
+		"startLine": 228,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected setBacking(r Record) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/HashBacked.java",
+		"startLine": 228,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setBacking(r Record) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getRealDatabase() : Table extracted from protected getDatabase() : Table in class com.jbidwatcher.auction.AuctionEntry",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1752,
+		"endLine": 1757,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected getDatabase() : Table"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1754,
+		"endLine": 1754,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1756,
+		"endLine": 1756,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1753,
+		"endLine": 1755,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1753,
+		"endLine": 1755,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1757,
+		"endLine": 1762,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getRealDatabase() : Table"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1759,
+		"endLine": 1759,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1761,
+		"endLine": 1761,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1758,
+		"endLine": 1760,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1758,
+		"endLine": 1760,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1753,
+		"endLine": 1755,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected getDatabase() : Table"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/AuctionEntry.java",
+		"startLine": 1754,
+		"endLine": 1754,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getRealDatabase()"
+}]
+}
+]
+}]
+}

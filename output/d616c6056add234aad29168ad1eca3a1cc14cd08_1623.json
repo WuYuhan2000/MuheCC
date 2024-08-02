@@ -1,0 +1,1146 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/mina",
+	"sha1": "d616c6056add234aad29168ad1eca3a1cc14cd08",
+	"url": "https://github.com/apache/mina/commit/d616c6056add234aad29168ad1eca3a1cc14cd08",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method protected finishSessionInitialization(session IoSession, future IoFuture, sessionInitializer IoSessionInitializer) : void from class org.apache.mina.common.AbstractIoService",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 706,
+		"endLine": 749,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected finishSessionInitialization(session IoSession, future T, ioSessionInitializer IoSessionInitializer<T>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 707,
+		"endLine": 707,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 707,
+		"endLine": 752,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected finishSessionInitialization(session IoSession, future IoFuture, sessionInitializer IoSessionInitializer) : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in class org.apache.mina.common.AbstractPollingIoConnector.ConnectionRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 59,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 69,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : IoSessionInitializer<ConnectFuture> to callback : IoSessionInitializer<? extends ConnectFuture> in method public ConnectionRequest(handle H, callback IoSessionInitializer<? extends ConnectFuture>) from class org.apache.mina.common.AbstractPollingIoConnector.ConnectionRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 44,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 44,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractPollingIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 67,
+		"endColumn": 111,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type future : T to future : IoFuture in method protected finishSessionInitialization(session IoSession, future IoFuture, sessionInitializer IoSessionInitializer) : void from class org.apache.mina.common.AbstractIoService",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 706,
+		"endLine": 706,
+		"startColumn": 94,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "future : T"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 741,
+		"endLine": 741,
+		"startColumn": 13,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 748,
+		"endLine": 748,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 745,
+		"endLine": 745,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 739,
+		"endLine": 742,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 709,
+		"endLine": 709,
+		"startColumn": 32,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "future : IoFuture"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 744,
+		"endLine": 744,
+		"startColumn": 13,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 751,
+		"endLine": 751,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 748,
+		"endLine": 748,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 742,
+		"endLine": 745,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected abstract connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.transport.serial.SerialConnector",
+	"leftSideLocations": [{
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 25,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.transport.vmpipe.VmPipeConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 39,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 39,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 56,
+		"endColumn": 112,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 56,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 27,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 27,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ioSessionInitializer : IoSessionInitializer<T> to sessionInitializer : IoSessionInitializer in method protected finishSessionInitialization(session IoSession, future IoFuture, sessionInitializer IoSessionInitializer) : void from class org.apache.mina.common.AbstractIoService",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 706,
+		"endLine": 706,
+		"startColumn": 104,
+		"endColumn": 148,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<T>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 745,
+		"endLine": 745,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 744,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 709,
+		"endLine": 709,
+		"startColumn": 49,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 748,
+		"endLine": 748,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 747,
+		"endLine": 749,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type IoSessionInitializer<ConnectFuture> to IoSessionInitializer<? extends ConnectFuture> in method public getSessionInitializer() : IoSessionInitializer<? extends ConnectFuture> from class org.apache.mina.common.AbstractPollingIoConnector.ConnectionRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 16,
+		"endColumn": 51,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 370,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSessionCallback() : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 16,
+		"endColumn": 61,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 371,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getSessionInitializer() : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in class org.apache.mina.common.AbstractPollingIoConnector.ConnectionRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 59,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 69,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getSessionCallback() : IoSessionInitializer<ConnectFuture> renamed to public getSessionInitializer() : IoSessionInitializer<? extends ConnectFuture> in class org.apache.mina.common.AbstractPollingIoConnector.ConnectionRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 370,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSessionCallback() : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 371,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSessionInitializer() : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter callback : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractPollingIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 67,
+		"endColumn": 111,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractPollingIoConnector.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter callback : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected abstract connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.transport.serial.SerialConnector",
+	"leftSideLocations": [{
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 25,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "transport-serial/src/main/java/org/apache/mina/transport/serial/SerialConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method protected connect0(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.transport.vmpipe.VmPipeConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 39,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 39,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, localAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 41,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 41,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(remoteAddress SocketAddress, sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 56,
+		"endColumn": 112,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 56,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.AbstractIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 34,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<ConnectFuture> to sessionInitializer : IoSessionInitializer<? extends ConnectFuture> in method public connect(sessionInitializer IoSessionInitializer<? extends ConnectFuture>) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 27,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<ConnectFuture>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 27,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer<? extends ConnectFuture>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ioSessionInitializer : IoSessionInitializer<T> to sessionInitializer : IoSessionInitializer in method protected finishSessionInitialization(session IoSession, future IoFuture, sessionInitializer IoSessionInitializer) : void from class org.apache.mina.common.AbstractIoService",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 706,
+		"endLine": 706,
+		"startColumn": 104,
+		"endColumn": 148,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ioSessionInitializer : IoSessionInitializer<T>"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 745,
+		"endLine": 745,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 744,
+		"endLine": 746,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 709,
+		"endLine": 709,
+		"startColumn": 49,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionInitializer : IoSessionInitializer"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 748,
+		"endLine": 748,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/AbstractIoService.java",
+		"startLine": 747,
+		"endLine": 749,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

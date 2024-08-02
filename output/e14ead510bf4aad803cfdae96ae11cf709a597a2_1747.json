@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/griddynamics/jagger",
+	"sha1": "e14ead510bf4aad803cfdae96ae11cf709a597a2",
+	"url": "https://github.com/griddynamics/jagger/commit/e14ead510bf4aad803cfdae96ae11cf709a597a2",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public DecisionMakerDistributionListener(nodeContext NodeContext) renamed to public setNodeContext(nodeContext NodeContext) : void in class com.griddynamics.jagger.master.DecisionMakerDistributionListener",
+	"leftSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 29,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DecisionMakerDistributionListener(nodeContext NodeContext)"
+}],
+	"rightSideLocations": [{
+		"filePath": "chassis/core/src/main/java/com/griddynamics/jagger/master/DecisionMakerDistributionListener.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setNodeContext(nodeContext NodeContext) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getTestsInTestGroup(taskIds Set<Long>) : Multimap<Long,Long> renamed to public getTestGroupIdsByTestIds(taskIds Set<Long>) : Multimap<Long,Long> in class com.griddynamics.jagger.dbapi.util.FetchUtil",
+	"leftSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/util/FetchUtil.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTestsInTestGroup(taskIds Set<Long>) : Multimap<Long,Long>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dbapi/src/main/java/com/griddynamics/jagger/dbapi/util/FetchUtil.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTestGroupIdsByTestIds(taskIds Set<Long>) : Multimap<Long,Long>"
+}]
+}
+]
+}]
+}

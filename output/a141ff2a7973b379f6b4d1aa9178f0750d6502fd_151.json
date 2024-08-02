@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "a141ff2a7973b379f6b4d1aa9178f0750d6502fd",
+	"url": "https://github.com/apache/hbase/commit/a141ff2a7973b379f6b4d1aa9178f0750d6502fd",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected HBaseHandler() from class org.apache.hadoop.hbase.thrift.ThriftServer.HBaseHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/thrift/ThriftServer.java",
+		"startLine": 194,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package HBaseHandler()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/thrift/ThriftServer.java",
+		"startLine": 194,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected HBaseHandler()"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected HBaseHandler(c Configuration) from class org.apache.hadoop.hbase.thrift.ThriftServer.HBaseHandler",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/thrift/ThriftServer.java",
+		"startLine": 203,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package HBaseHandler(c Configuration)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/thrift/ThriftServer.java",
+		"startLine": 203,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected HBaseHandler(c Configuration)"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "62c8bfade88dc4b72a07c4a0d6f6633e5d0fcdad",
+	"url": "https://github.com/orientechnologies/orientdb/commit/62c8bfade88dc4b72a07c4a0d6f6633e5d0fcdad",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type doc : ORecord to doc : ORecord<?> in method private getValidPositions(clusterId int) : List<OClusterPosition> from class com.orientechnologies.orient.test.database.auto.SQLInsertTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/SQLInsertTest.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "doc : ORecord"
+}, {
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/SQLInsertTest.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 7,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/SQLInsertTest.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "doc : ORecord<?>"
+}, {
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/SQLInsertTest.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 7,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

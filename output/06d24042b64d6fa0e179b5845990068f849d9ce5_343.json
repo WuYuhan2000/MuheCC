@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "06d24042b64d6fa0e179b5845990068f849d9ce5",
+	"url": "https://github.com/apache/hadoop/commit/06d24042b64d6fa0e179b5845990068f849d9ce5",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class org.apache.hadoop.yarn.server.resourcemanager.recovery.TestRMStateStore.TestFSRMStateStoreTester moved to org.apache.hadoop.yarn.server.resourcemanager.recovery.TestFSRMStateStore.TestFSRMStateStoreTester",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/TestRMStateStore.java",
+		"startLine": 175,
+		"endLine": 215,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.recovery.TestRMStateStore.TestFSRMStateStoreTester"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/TestFSRMStateStore.java",
+		"startLine": 42,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.recovery.TestFSRMStateStore.TestFSRMStateStoreTester"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testFSRMStateStore() : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.TestRMStateStore to public testFSRMStateStore() : void from class org.apache.hadoop.yarn.server.resourcemanager.recovery.TestFSRMStateStore",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/TestRMStateStore.java",
+		"startLine": 126,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testFSRMStateStore() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/TestFSRMStateStore.java",
+		"startLine": 86,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testFSRMStateStore() : void"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.apache.hadoop.yarn.server.resourcemanager.recovery.TestRMStateStore renamed to org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreTestBase",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/TestRMStateStore.java",
+		"startLine": 78,
+		"endLine": 431,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.recovery.TestRMStateStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/recovery/RMStateStoreTestBase.java",
+		"startLine": 79,
+		"endLine": 334,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.apache.hadoop.yarn.server.resourcemanager.recovery.RMStateStoreTestBase"
+}]
+}
+]
+}]
+}

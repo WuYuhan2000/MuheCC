@@ -1,0 +1,420 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "83fb0a1ee1d16ecb4339c7c822ebfcc21430be7f",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/83fb0a1ee1d16ecb4339c7c822ebfcc21430be7f",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Deprecated in method public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T from class org.jboss.arquillian.graphene.proxy.GrapheneProxy",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 88,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 94,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter additionalInterfaces : Class<?>... in method public getProxyForDriver(webDriverImplClass Class<T>, additionalInterfaces Class<?>...) : T from class org.jboss.arquillian.graphene.context.GrapheneContext",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 119,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProxyForDriver(webDriverImplClass Class<T>) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 90,
+		"endColumn": 122,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "additionalInterfaces : Class<?>..."
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 150,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getProxyForDriver(webDriverImplClass Class<T>, additionalInterfaces Class<?>...) : T"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter proxy : Object in method public invoke(proxy Object, method Method, args Object[]) : Object from class org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "proxy : Object"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 80,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public invoke(proxy Object, method Method, args Object[]) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 26,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "proxy : Object"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 80,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public invoke(proxy Object, method Method, args Object[]) : Object"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 35,
+		"endLine": 230,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 35,
+		"endLine": 245,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public forFuture(future FutureTarget) : GrapheneProxyHandler from class org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package forFuture(future FutureTarget) : GrapheneProxyHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 68,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public forFuture(future FutureTarget) : GrapheneProxyHandler"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public forTarget(target Object) : GrapheneProxyHandler from class org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 56,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package forTarget(target Object) : GrapheneProxyHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 56,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public forTarget(target Object) : GrapheneProxyHandler"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public getProxyForHandler(handler GrapheneProxyHandler, baseType Class<?>, additionalInterfaces Class<?>...) : T extracted from public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T in class org.jboss.arquillian.graphene.proxy.GrapheneProxy",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 88,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getProxyForHandler(handler GrapheneProxyHandler, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 94,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 16,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getProxyForHandler(handler,baseType,additionalInterfaces)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable futureTargetProxy : Object in method public lookup(resource ArquillianResource, qualifiers Annotation...) : Object from class org.jboss.arquillian.graphene.enricher.SeleniumResourceProvider.IndirectProvider",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "futureTargetProxy : Object"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptor : Interceptor in method public lookup(resource ArquillianResource, qualifiers Annotation...) : Object from class org.jboss.arquillian.graphene.enricher.SeleniumResourceProvider.IndirectProvider",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 159,
+		"endLine": 179,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 160,
+		"endLine": 180,
+		"startColumn": 25,
+		"endColumn": 14,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptor : Interceptor"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/SeleniumResourceProvider.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable newProxy : Object in method public invoke() : Object from class org.jboss.arquillian.graphene.proxy.GrapheneProxyHandler.invoke.invocationContext.new InvocationContext",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 28,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "newProxy : Object"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxyHandler.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder graphene-webdriver/graphene-webdriver-ftest to graphene-webdriver/graphene-webdriver-impl",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public getTarget() : Object from class org.jboss.arquillian.graphene.context.GrapheneContext.TARGET.new FutureTarget",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 160,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTarget() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/context/GrapheneContext.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getTarget() : Object"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T from class org.jboss.arquillian.graphene.proxy.GrapheneProxy",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 88,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/GrapheneProxy.java",
+		"startLine": 94,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getProxyForFutureTarget(futureTarget FutureTarget, baseType Class<?>, additionalInterfaces Class<?>...) : T"
+}]
+}
+]
+}]
+}

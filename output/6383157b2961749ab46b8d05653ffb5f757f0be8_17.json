@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "6383157b2961749ab46b8d05653ffb5f757f0be8",
+	"url": "https://github.com/ReactiveX/RxJava/commit/6383157b2961749ab46b8d05653ffb5f757f0be8",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type subscription : SingleAssignmentSubscription to subscription : SafeObservableSubscription in class rx.joins.JoinObserver1",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/joins/JoinObserver1.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 48,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "subscription : SingleAssignmentSubscription"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/joins/JoinObserver1.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 46,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "subscription : SafeObservableSubscription"
+}]
+}
+]
+}]
+}

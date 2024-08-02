@@ -1,0 +1,357 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/belaban/jgroups",
+	"sha1": "35c5faa642a497729746e958d1c3d84e4234270c",
+	"url": "https://github.com/belaban/jgroups/commit/35c5faa642a497729746e958d1c3d84e4234270c",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type srv_sock : ServerSocketChannel to srv_sock : ServerSocket in class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "srv_sock : ServerSocketChannel"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "srv_sock : ServerSocket"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type s : Socket to s : SocketChannel in method package Connection(s SocketChannel, peer_addr Address) from class org.jgroups.blocks.ConnectionTable1_4.Connection",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 621,
+		"endLine": 621,
+		"startColumn": 14,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "s : Socket"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 623,
+		"endLine": 623,
+		"startColumn": 4,
+		"endColumn": 13,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 526,
+		"endLine": 526,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "s : SocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 4,
+		"endColumn": 14,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ServerSocketChannel to ServerSocket in method package createServerSocket(start_port int) : ServerSocket from class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 2,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ServerSocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 489,
+		"endLine": 522,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package createServerSocket(start_port int) : ServerSocketChannel"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ServerSocket"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 467,
+		"endLine": 490,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package createServerSocket(start_port int) : ServerSocket"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type tmp : ServerSocketChannel to tmp : ServerSocket in method public stop() : void from class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 23,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tmp : ServerSocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 22,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "tmp : ServerSocket"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private selector : Selector from class org.jgroups.blocks.ConnectionTable1_4.ReceiverThread to private selector : Selector from class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 560,
+		"endLine": 560,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private selector : Selector"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 19,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private selector : Selector"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable incomingChannel : SocketChannel to client_sock_ch : SocketChannel in method public run() : void from class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 20,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "incomingChannel : SocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 6,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 395,
+		"endLine": 395,
+		"startColumn": 6,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 344,
+		"endLine": 345,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "client_sock_ch : SocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 344,
+		"endLine": 345,
+		"startColumn": 8,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 8,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute ret : ServerSocketChannel to srv_sock_ch : ServerSocketChannel in method package createServerSocket(start_port int) : ServerSocket from class org.jgroups.blocks.ConnectionTable1_4",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 23,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ret : ServerSocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 493,
+		"endLine": 493,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 6,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 502,
+		"endLine": 504,
+		"startColumn": 6,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 3,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "srv_sock_ch : ServerSocketChannel"
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 5,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/blocks/ConnectionTable1_4.java",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

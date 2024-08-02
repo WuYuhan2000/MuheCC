@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "b02e6dc996d3985a8a136f290c4a8810ce05aaab",
+	"url": "https://github.com/elastic/elasticsearch/commit/b02e6dc996d3985a8a136f290c4a8810ce05aaab",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute plugin : boolean to plugins : boolean in class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "plugin : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 21,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "plugins : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public plugin() : boolean renamed to public plugins() : boolean in class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 216,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public plugin() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 216,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public plugins() : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public plugin(plugin boolean) : NodesInfoRequest renamed to public plugins(plugins boolean) : NodesInfoRequest in class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 206,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public plugin(plugin boolean) : NodesInfoRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 206,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public plugins(plugins boolean) : NodesInfoRequest"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setPlugin(plugin boolean) : NodesInfoRequestBuilder renamed to public setPlugins(plugins boolean) : NodesInfoRequestBuilder in class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequestBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 116,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setPlugin(plugin boolean) : NodesInfoRequestBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 116,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setPlugins(plugins boolean) : NodesInfoRequestBuilder"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter plugin : boolean to plugins : boolean in method public plugins(plugins boolean) : NodesInfoRequest from class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 36,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "plugin : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 37,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "plugins : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequest.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter plugin : boolean to plugins : boolean in method public setPlugins(plugins boolean) : NodesInfoRequestBuilder from class org.elasticsearch.action.admin.cluster.node.info.NodesInfoRequestBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 46,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "plugin : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 47,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "plugins : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/node/info/NodesInfoRequestBuilder.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

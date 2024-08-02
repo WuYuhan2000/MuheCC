@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "e680208e4b24b1f5ea9522e04526ae572bb3b6e3",
+	"url": "https://github.com/orientechnologies/orientdb/commit/e680208e4b24b1f5ea9522e04526ae572bb3b6e3",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute convertToRecord : boolean to autoConvert2Object : boolean in class com.orientechnologies.orient.core.db.object.OLazyObjectIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/object/OLazyObjectIterator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "convertToRecord : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/object/OLazyObjectIterator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 34,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "autoConvert2Object : boolean"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute convertToRecord : boolean to autoConvert2Record : boolean in class com.orientechnologies.orient.core.db.record.OLazyRecordIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/record/OLazyRecordIterator.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 37,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "convertToRecord : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/record/OLazyRecordIterator.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "autoConvert2Record : boolean"
+}]
+}
+]
+}]
+}

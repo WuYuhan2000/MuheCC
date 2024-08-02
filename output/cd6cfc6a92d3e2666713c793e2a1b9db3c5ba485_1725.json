@@ -1,0 +1,570 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse/vert.x",
+	"sha1": "cd6cfc6a92d3e2666713c793e2a1b9db3c5ba485",
+	"url": "https://github.com/eclipse/vert.x/commit/cd6cfc6a92d3e2666713c793e2a1b9db3c5ba485",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter isolatedClasses : List<String> in method public IsolatingClassLoader(urls URL[], parent ClassLoader, isolatedClasses List<String>) from class io.vertx.core.impl.IsolatingClassLoader",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/IsolatingClassLoader.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IsolatingClassLoader(urls URL[], parent ClassLoader)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/IsolatingClassLoader.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 63,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isolatedClasses : List<String>"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/IsolatingClassLoader.java",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public IsolatingClassLoader(urls URL[], parent ClassLoader, isolatedClasses List<String>)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type redeploy : boolean to isolatedClasses : List<String> in class io.vertx.core.DeploymentOptions",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "redeploy : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "isolatedClasses : List<String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type icl : IsolatingClassLoader to icl : ClassLoader in method public main(sargs String[]) : void from class io.vertx.core.Starter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 28,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "icl : IsolatingClassLoader"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 19,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "icl : ClassLoader"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type redeploy : boolean to cp : String in method private runVerticle(main String, args Args) : void from class io.vertx.core.Starter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "redeploy : boolean"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "cp : String"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public setRedeploy(redeploy boolean) : DeploymentOptions moved from class io.vertx.core.DeploymentOptions to class io.vertx.core.Starter & inlined to private runVerticle(main String, args Args) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 296,
+		"endLine": 299,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public setRedeploy(redeploy boolean) : DeploymentOptions"
+}, {
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 282,
+		"endLine": 353,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private runVerticle(main String, args Args) : void"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 5,
+		"endColumn": 112,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "deploymentOptions.setConfig(conf).setWorker(worker).setHa(ha).setInstances(instances).setRedeploy(redeploy)"
+}, {
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 277,
+		"endLine": 352,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private runVerticle(main String, args Args) : void"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 7,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter parentContext : ContextImpl in method private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions, redeployer Redeployer, parentContext ContextImpl) from class io.vertx.core.impl.DeploymentManager.DeploymentImpl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 516,
+		"endLine": 516,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "parentContext : ContextImpl"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 515,
+		"endLine": 522,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions, redeployer Redeployer, parentContext ContextImpl)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 446,
+		"endLine": 450,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter redeployer : Redeployer in method private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions, redeployer Redeployer, parentContext ContextImpl) from class io.vertx.core.impl.DeploymentManager.DeploymentImpl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 515,
+		"endLine": 515,
+		"startColumn": 103,
+		"endColumn": 124,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "redeployer : Redeployer"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 515,
+		"endLine": 522,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions, redeployer Redeployer, parentContext ContextImpl)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 446,
+		"endLine": 450,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private DeploymentImpl(deploymentID String, verticleIdentifier String, options DeploymentOptions)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter redeployer : Redeployer in method private doDeploy(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, completionHandler Handler<AsyncResult<String>>, tccl ClassLoader, redeployer Redeployer, verticles Verticle...) : void from class io.vertx.core.impl.DeploymentManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 43,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "redeployer : Redeployer"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 443,
+		"endLine": 489,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doDeploy(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, completionHandler Handler<AsyncResult<String>>, tccl ClassLoader, redeployer Redeployer, verticles Verticle...) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 379,
+		"endLine": 424,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doDeploy(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, completionHandler Handler<AsyncResult<String>>, tccl ClassLoader, verticles Verticle...) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter redeployer : Redeployer in method private doDeployVerticle(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, redeployer Redeployer, completionHandler Handler<AsyncResult<String>>) : void from class io.vertx.core.impl.DeploymentManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 33,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "redeployer : Redeployer"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 119,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doDeployVerticle(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, redeployer Redeployer, completionHandler Handler<AsyncResult<String>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 94,
+		"endLine": 104,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doDeployVerticle(identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, completionHandler Handler<AsyncResult<String>>) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter redeployer : Redeployer in method private doDeployVerticle(iter Iterator<VerticleFactory>, prevErr Throwable, identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, redeployer Redeployer, completionHandler Handler<AsyncResult<String>>) : void from class io.vertx.core.impl.DeploymentManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 33,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "redeployer : Redeployer"
+}, {
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 132,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doDeployVerticle(iter Iterator<VerticleFactory>, prevErr Throwable, identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, redeployer Redeployer, completionHandler Handler<AsyncResult<String>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/impl/DeploymentManager.java",
+		"startLine": 106,
+		"endLine": 166,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doDeployVerticle(iter Iterator<VerticleFactory>, prevErr Throwable, identifier String, deploymentID String, options DeploymentOptions, parentContext ContextImpl, callingContext ContextImpl, cl ClassLoader, completionHandler Handler<AsyncResult<String>>) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute redeploy : boolean to isolatedClasses : List<String> in class io.vertx.core.DeploymentOptions",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 19,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "redeploy : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/DeploymentOptions.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 24,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "isolatedClasses : List<String>"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class io.vertx.test.core.RedeployVerticle renamed to io.vertx.test.core.ExtraCPVerticle",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/io/vertx/test/core/RedeployVerticle.java",
+		"startLine": 21,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "io.vertx.test.core.RedeployVerticle"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/io/vertx/test/core/ExtraCPVerticle.java",
+		"startLine": 23,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "io.vertx.test.core.ExtraCPVerticle"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable redeploy : boolean to cp : String in method private runVerticle(main String, args Args) : void from class io.vertx.core.Starter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "redeploy : boolean"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "cp : String"
+}, {
+		"filePath": "src/main/java/io/vertx/core/Starter.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable basePath : String to basePath : String in method public setUp() : void from class io.vertx.test.core.IsolatingClassLoaderTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 18,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "basePath : String"
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 12,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "basePath : String"
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/io/vertx/test/core/IsolatingClassLoaderTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

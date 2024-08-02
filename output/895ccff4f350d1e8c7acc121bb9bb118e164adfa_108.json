@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "895ccff4f350d1e8c7acc121bb9bb118e164adfa",
+	"url": "https://github.com/apache/hbase/commit/895ccff4f350d1e8c7acc121bb9bb118e164adfa",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type regionThreads : List<LocalHBaseCluster.RegionServerThread> to regionThreads : List<JVMClusterUtil.RegionServerThread> in method private flushRegionServer() : void from class org.apache.hadoop.hbase.regionserver.transactional.TestTHLogRecovery",
+	"leftSideLocations": [{
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 144,
+		"endLine": 145,
+		"startColumn": 48,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "regionThreads : List<LocalHBaseCluster.RegionServerThread>"
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 163,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 149,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 145,
+		"endLine": 146,
+		"startColumn": 45,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "regionThreads : List<JVMClusterUtil.RegionServerThread>"
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 164,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 150,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type regionThreads : List<LocalHBaseCluster.RegionServerThread> to regionThreads : List<JVMClusterUtil.RegionServerThread> in method private stopOrAbortRegionServer(abort boolean) : void from class org.apache.hadoop.hbase.regionserver.transactional.TestTHLogRecovery",
+	"leftSideLocations": [{
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 174,
+		"endLine": 175,
+		"startColumn": 48,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "regionThreads : List<LocalHBaseCluster.RegionServerThread>"
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 7,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 178,
+		"endLine": 188,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 175,
+		"endLine": 176,
+		"startColumn": 45,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "regionThreads : List<JVMClusterUtil.RegionServerThread>"
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 7,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "contrib/transactional/src/test/java/org/apache/hadoop/hbase/regionserver/transactional/TestTHLogRecovery.java",
+		"startLine": 179,
+		"endLine": 189,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

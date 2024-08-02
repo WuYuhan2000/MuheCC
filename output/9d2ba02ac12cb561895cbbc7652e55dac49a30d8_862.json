@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "9d2ba02ac12cb561895cbbc7652e55dac49a30d8",
+	"url": "https://github.com/apache/camel/commit/9d2ba02ac12cb561895cbbc7652e55dac49a30d8",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public stopRoute(key String) : void from class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 736,
+		"endLine": 744,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected stopRouteService(key String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 466,
+		"endLine": 474,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public stopRoute(key String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected stopRouteService(key String) : void renamed to public stopRoute(key String) : void in class org.apache.camel.impl.DefaultCamelContext",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 736,
+		"endLine": 744,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected stopRouteService(key String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultCamelContext.java",
+		"startLine": 466,
+		"endLine": 474,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public stopRoute(key String) : void"
+}]
+}
+]
+}]
+}

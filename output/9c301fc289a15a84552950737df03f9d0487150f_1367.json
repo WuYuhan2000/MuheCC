@@ -1,0 +1,198 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "9c301fc289a15a84552950737df03f9d0487150f",
+	"url": "https://github.com/apache/deltaspike/commit/9c301fc289a15a84552950737df03f9d0487150f",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private filterConfigValue(key String, value String) : String extracted from public getPropertyValue(key String) : String in class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 116,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPropertyValue(key String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 443,
+		"endLine": 454,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private filterConfigValue(key String, value String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 153,
+		"endLine": 182,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPropertyValue(key String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 24,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "filterConfigValue(key,value)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 445,
+		"endLine": 445,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 450,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 449,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable filteredValue : String in method private filterConfigValue(key String, value String) : String from class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "filteredValue : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(value != null && !result.contains(value)) to [if(!result.contains(value)), if(value != null)] in method public getAllPropertyValues(key String) : List<String> from class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 278,
+		"endLine": 281,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(value != null && !result.contains(value))"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 258,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAllPropertyValues(key String) : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 318,
+		"endLine": 321,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(!result.contains(value))"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 315,
+		"endLine": 322,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(value != null)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 295,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public getAllPropertyValues(key String) : List<String>"
+}]
+}
+]
+}]
+}

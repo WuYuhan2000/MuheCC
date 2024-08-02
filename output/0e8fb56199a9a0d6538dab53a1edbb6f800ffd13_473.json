@@ -1,0 +1,204 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "0e8fb56199a9a0d6538dab53a1edbb6f800ffd13",
+	"url": "https://github.com/kiegroup/drools/commit/0e8fb56199a9a0d6538dab53a1edbb6f800ffd13",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private createListener(beanCreator BeanCreator, fallbackBeanCreator BeanCreator, cl ClassLoader, listenerModel ListenerModel) : Object extracted from private wireListnersAndWIHs(beanCreator BeanCreator, model KieSessionModel, kSession KieSession) : void in class org.drools.compiler.kie.util.CDIHelper",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 41,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private wireListnersAndWIHs(beanCreator BeanCreator, model KieSessionModel, kSession KieSession) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 17,
+		"endColumn": 115,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 21,
+		"endColumn": 127,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 21,
+		"endColumn": 106,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 47,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 19,
+		"endColumn": 18,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 49,
+		"endLine": 56,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 106,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createListener(beanCreator BeanCreator, fallbackBeanCreator BeanCreator, cl ClassLoader, listenerModel ListenerModel) : Object"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 111,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 17,
+		"endColumn": 123,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 108,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 111,
+		"endLine": 115,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 113,
+		"endLine": 115,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 110,
+		"endLine": 117,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 41,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private wireListnersAndWIHs(beanCreator BeanCreator, model KieSessionModel, kSession KieSession) : void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 31,
+		"endColumn": 100,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createListener(beanCreator,fallbackBeanCreator,cl,listenerModel)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/kie/util/CDIHelper.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

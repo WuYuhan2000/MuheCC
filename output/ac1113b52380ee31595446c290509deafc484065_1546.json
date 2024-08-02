@@ -1,0 +1,291 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/agorava/agorava-core",
+	"sha1": "ac1113b52380ee31595446c290509deafc484065",
+	"url": "https://github.com/agorava/agorava-core/commit/ac1113b52380ee31595446c290509deafc484065",
+	"refactorings": [{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @ConfigProperty(name = \"cookie.life\", defaultValue = \"-1\") to @ConfigProperty(name = AgoravaConstants.RESOLVER_COOKIE_LIFE_PARAM, defaultValue = \"-1\") in attribute package cookielife : Integer from class org.agorava.cdi.InCookieProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@ConfigProperty(name = \"cookie.life\", defaultValue = \"-1\")"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package cookielife : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 93,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@ConfigProperty(name = AgoravaConstants.RESOLVER_COOKIE_LIFE_PARAM, defaultValue = \"-1\")"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "package cookielife : Integer"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Exclude(onExpression = \"producerScope,cookie\", interpretedBy = DifferentOrNull.class) to @Exclude(onExpression = InApplicationProducer.RESOLVER + \",cookie\", interpretedBy = DifferentOrNull.class) in class org.agorava.cdi.InCookieProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 0,
+		"endColumn": 87,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Exclude(onExpression = \"producerScope,cookie\", interpretedBy = DifferentOrNull.class)"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 36,
+		"endLine": 97,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.agorava.cdi.InCookieProducer"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 107,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Exclude(onExpression = InApplicationProducer.RESOLVER + \",cookie\", interpretedBy = DifferentOrNull.class)"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 37,
+		"endLine": 96,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.agorava.cdi.InCookieProducer"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Exclude(onExpression = \"producerScope,session\", interpretedBy = DifferentOrNull.class) to @Exclude(onExpression = InApplicationProducer.RESOLVER + \",session\", interpretedBy = DifferentOrNull.class) in class org.agorava.cdi.InSessionProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 88,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Exclude(onExpression = \"producerScope,session\", interpretedBy = DifferentOrNull.class)"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 30,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.agorava.cdi.InSessionProducer"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 108,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Exclude(onExpression = InApplicationProducer.RESOLVER + \",session\", interpretedBy = DifferentOrNull.class)"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 30,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.agorava.cdi.InSessionProducer"
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Named to @Named(\"currentRepo\") in method public getCurrentRepository() : UserSessionRepository from class org.agorava.cdi.InCookieProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Named"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 71,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentRepo() : UserSessionRepository"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Named(\"currentRepo\")"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 70,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public getCurrentRepository() : UserSessionRepository"
+}]
+},
+{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Named to @Named(\"currentRepo\") in method public getCurrentRepository() : UserSessionRepository from class org.agorava.cdi.InSessionProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Named"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentRepo() : UserSessionRepository"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Named(\"currentRepo\")"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public getCurrentRepository() : UserSessionRepository"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute INTERN_CALLBACK_PARAM_NAME : String to INTERN_CALLBACK_PARAM : String in class org.agorava.AgoravaConstants",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-api/src/main/java/org/agorava/AgoravaConstants.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 12,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "INTERN_CALLBACK_PARAM_NAME : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-api/src/main/java/org/agorava/AgoravaConstants.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "INTERN_CALLBACK_PARAM : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getCurrentRepo() : UserSessionRepository renamed to public getCurrentRepository() : UserSessionRepository in class org.agorava.cdi.InCookieProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 71,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentRepo() : UserSessionRepository"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InCookieProducer.java",
+		"startLine": 70,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCurrentRepository() : UserSessionRepository"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getCurrentRepo() : UserSessionRepository renamed to public getCurrentRepository() : UserSessionRepository in class org.agorava.cdi.InSessionProducer",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentRepo() : UserSessionRepository"
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/InSessionProducer.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getCurrentRepository() : UserSessionRepository"
+}]
+}
+]
+}]
+}

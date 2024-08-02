@@ -1,0 +1,120 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "d585683650c8e2664b86ccc0aeef080d3b417d1d",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/d585683650c8e2664b86ccc0aeef080d3b417d1d",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable parameterTypes : Class<?>[] in method private doHandle(annotationInfo AnnotationInfo, variant Variant) : Representation from class org.restlet.resource.ServerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 454,
+		"endLine": 477,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 20,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "parameterTypes : Class<?>[]"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 387,
+		"endLine": 410,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable param : Class<?> to parameterType : Class<?> in method private doHandle(annotationInfo AnnotationInfo, variant Variant) : Representation from class org.restlet.resource.ServerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 22,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "param : Class<?>"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 460,
+		"endLine": 461,
+		"startColumn": 33,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 455,
+		"endLine": 476,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 454,
+		"endLine": 477,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parameterType : Class<?>"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 394,
+		"endLine": 395,
+		"startColumn": 33,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 388,
+		"endLine": 409,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/ServerResource.java",
+		"startLine": 387,
+		"endLine": 410,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

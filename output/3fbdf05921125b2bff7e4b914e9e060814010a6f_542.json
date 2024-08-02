@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "3fbdf05921125b2bff7e4b914e9e060814010a6f",
+	"url": "https://github.com/JetBrains/kotlin/commit/3fbdf05921125b2bff7e4b914e9e060814010a6f",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @TestMetadata(\"defaultMethodCall\") to @TestMetadata(\"defaultMethodCallViaClass\") in method public testDefaultMethodCallViaClass() : void from class org.jetbrains.kotlin.codegen.generated.BlackBoxWithJava8CodegenTestGenerated",
+	"leftSideLocations": [{
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@TestMetadata(\"defaultMethodCall\")"
+}, {
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testDefaultMethodCall() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@TestMetadata(\"defaultMethodCallViaClass\")"
+}, {
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public testDefaultMethodCallViaClass() : void"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder compiler/testData/codegen/java8/boxWithJava/defaultMethodCall to compiler/testData/codegen/java8/boxWithJava/defaultMethodCallFromTrait",
+	"leftSideLocations": [],
+	"rightSideLocations": []
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testDefaultMethodCall() : void renamed to public testDefaultMethodCallViaClass() : void in class org.jetbrains.kotlin.codegen.generated.BlackBoxWithJava8CodegenTestGenerated",
+	"leftSideLocations": [{
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testDefaultMethodCall() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/java8-tests/tests/org/jetbrains/kotlin/codegen/generated/BlackBoxWithJava8CodegenTestGenerated.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testDefaultMethodCallViaClass() : void"
+}]
+}
+]
+}]
+}

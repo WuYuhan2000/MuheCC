@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "a376c8da9d3fa0e8b600b69cdc30c9fb0d303709",
+	"url": "https://github.com/apache/hbase/commit/a376c8da9d3fa0e8b600b69cdc30c9fb0d303709",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable conf : Configuration in method public main(args String[]) : void from class org.apache.hadoop.hbase.tool.Canary",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/tool/Canary.java",
+		"startLine": 758,
+		"endLine": 758,
+		"startColumn": 5,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/tool/Canary.java",
+		"startLine": 759,
+		"endLine": 759,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/tool/Canary.java",
+		"startLine": 761,
+		"endLine": 761,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

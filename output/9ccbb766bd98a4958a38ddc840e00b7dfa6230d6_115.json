@@ -1,0 +1,210 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "9ccbb766bd98a4958a38ddc840e00b7dfa6230d6",
+	"url": "https://github.com/apache/hbase/commit/9ccbb766bd98a4958a38ddc840e00b7dfa6230d6",
+	"refactorings": [{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient from class org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 47,
+		"endLine": 379,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 228,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneNonExistentSnapshot() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 235,
+		"endLine": 241,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneSnapshot() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 243,
+		"endLine": 251,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 269,
+		"endLine": 323,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneLinksAfterDelete() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 48,
+		"endLine": 299,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 44,
+		"endLine": 269,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testCloneNonExistentSnapshot() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 153,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testCloneSnapshot() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 161,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 171,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testCloneLinksAfterDelete() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void from class org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient to private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void from class org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 243,
+		"endLine": 251,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 161,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private testCloneSnapshot(tableName byte[], snapshotName byte[], snapshotRows int) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCloneLinksAfterDelete() : void from class org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient to public testCloneLinksAfterDelete() : void from class org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 269,
+		"endLine": 323,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneLinksAfterDelete() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 171,
+		"endLine": 225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCloneLinksAfterDelete() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCloneNonExistentSnapshot() : void from class org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient to public testCloneNonExistentSnapshot() : void from class org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 228,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneNonExistentSnapshot() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCloneNonExistentSnapshot() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCloneSnapshot() : void from class org.apache.hadoop.hbase.client.TestRestoreSnapshotFromClient to public testCloneSnapshot() : void from class org.apache.hadoop.hbase.client.TestCloneSnapshotFromClient",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestRestoreSnapshotFromClient.java",
+		"startLine": 235,
+		"endLine": 241,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCloneSnapshot() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestCloneSnapshotFromClient.java",
+		"startLine": 153,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCloneSnapshot() : void"
+}]
+}
+]
+}]
+}

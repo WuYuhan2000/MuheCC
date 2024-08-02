@@ -1,0 +1,729 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "57f4f664ba0bf785e9903535a4965d786cf13062",
+	"url": "https://github.com/JetBrains/kotlin/commit/57f4f664ba0bf785e9903535a4965d786cf13062",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private generateFieldForClassObject() : void extracted from protected generateSyntheticParts() : void in class org.jetbrains.jet.codegen.ImplementationBodyCodegen",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 13,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 85,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 126,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private generateFieldForClassObject() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 13,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 128,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "generateFieldForClassObject()"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 132,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 128,
+		"endLine": 144,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private generateFieldForObjectInstance() : void extracted from protected generateSyntheticParts() : void in class org.jetbrains.jet.codegen.ImplementationBodyCodegen",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 80,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 80,
+		"endLine": 83,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 107,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private generateFieldForObjectInstance() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 108,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 108,
+		"endLine": 123,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "generateFieldForObjectInstance()"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 112,
+		"endLine": 121,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 21,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 114,
+		"endLine": 120,
+		"startColumn": 60,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private generateStaticInitializer() : void inlined to protected generateSyntheticParts() : void in class org.jetbrains.jet.codegen.ImplementationBodyCodegen",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 412,
+		"endLine": 451,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private generateStaticInitializer() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 13,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 443,
+		"endLine": 444,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 430,
+		"endLine": 436,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 437,
+		"endLine": 445,
+		"startColumn": 34,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "generateStaticInitializer()"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 419,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 13,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 428,
+		"endLine": 428,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 447,
+		"endLine": 447,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 416,
+		"endLine": 418,
+		"startColumn": 68,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 416,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 425,
+		"endLine": 429,
+		"startColumn": 27,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 425,
+		"endLine": 429,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 430,
+		"endLine": 436,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 437,
+		"endLine": 445,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 75,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "protected generateSyntheticParts() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 21,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 21,
+		"endColumn": 117,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 21,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 21,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 140,
+		"endLine": 141,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 114,
+		"endLine": 120,
+		"startColumn": 60,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/codegen/ImplementationBodyCodegen.java",
+		"startLine": 134,
+		"endLine": 142,
+		"startColumn": 60,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

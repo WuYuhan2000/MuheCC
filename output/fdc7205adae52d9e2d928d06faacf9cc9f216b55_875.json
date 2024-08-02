@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "fdc7205adae52d9e2d928d06faacf9cc9f216b55",
+	"url": "https://github.com/apache/camel/commit/fdc7205adae52d9e2d928d06faacf9cc9f216b55",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public isSecureConnection(uri String) : boolean from class org.apache.camel.component.http4.helper.HttpHelper",
+	"leftSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpComponent.java",
+		"startLine": 304,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isSecureConnection(uri String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/helper/HttpHelper.java",
+		"startLine": 270,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public isSecureConnection(uri String) : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public isSecureConnection(uri String) : boolean from class org.apache.camel.component.http4.helper.HttpHelper",
+	"leftSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpComponent.java",
+		"startLine": 304,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isSecureConnection(uri String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/helper/HttpHelper.java",
+		"startLine": 270,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public isSecureConnection(uri String) : boolean"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private isSecureConnection(uri String) : boolean from class org.apache.camel.component.http4.HttpComponent to public isSecureConnection(uri String) : boolean from class org.apache.camel.component.http4.helper.HttpHelper",
+	"leftSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpComponent.java",
+		"startLine": 304,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isSecureConnection(uri String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/helper/HttpHelper.java",
+		"startLine": 270,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public isSecureConnection(uri String) : boolean"
+}]
+}
+]
+}]
+}

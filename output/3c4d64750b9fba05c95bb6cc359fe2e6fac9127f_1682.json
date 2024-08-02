@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonborkholder/glg2d",
+	"sha1": "3c4d64750b9fba05c95bb6cc359fe2e6fac9127f",
+	"url": "https://github.com/brandonborkholder/glg2d/commit/3c4d64750b9fba05c95bb6cc359fe2e6fac9127f",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type g2dglListener : GLEventListener to g2dglListener : G2DGLEventListener in class glg2d.G2DGLCanvas",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 29,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "g2dglListener : GLEventListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "g2dglListener : G2DGLEventListener"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type GLEventListener to G2DGLEventListener in method protected createG2DListener(drawingComponent JComponent) : G2DGLEventListener from class glg2d.G2DGLCanvas",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "GLEventListener"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 149,
+		"endLine": 155,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createG2DListener(drawingComponent JComponent) : GLEventListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "G2DGLEventListener"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected createG2DListener(drawingComponent JComponent) : G2DGLEventListener"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable glDrawable : G2DGLCanvas to canvas : G2DGLCanvas in method public addDirtyRegion(c JComponent, x int, y int, w int, h int) : void from class glg2d.GLAwareRepaintManager",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/GLAwareRepaintManager.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "glDrawable : G2DGLCanvas"
+}, {
+		"filePath": "src/main/java/glg2d/GLAwareRepaintManager.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/GLAwareRepaintManager.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "canvas : G2DGLCanvas"
+}, {
+		"filePath": "src/main/java/glg2d/GLAwareRepaintManager.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

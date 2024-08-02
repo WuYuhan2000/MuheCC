@@ -1,0 +1,297 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "5824fa23d60acca2edd40f1eec0c4687199f0124",
+	"url": "https://github.com/apache/camel/commit/5824fa23d60acca2edd40f1eec0c4687199f0124",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private doGetChildServies(services List<Service>, service Service) : void from class org.apache.camel.impl.RouteService",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 97,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doGetServiesToStart(services List<Service>, service Service) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 154,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private doGetChildServies(services List<Service>, service Service) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private doGetServiesToStart(services List<Service>, service Service) : void renamed to private doGetChildServies(services List<Service>, service Service) : void in class org.apache.camel.impl.RouteService",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 97,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doGetServiesToStart(services List<Service>, service Service) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/RouteService.java",
+		"startLine": 154,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private doGetChildServies(services List<Service>, service Service) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to managedObject : Object in method public getManagedObjectName(managedObject Object, customName String, nameType Class<T>) : T from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 39,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 39,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "managedObject : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to managedObject : Object in method public isManaged(managedObject Object, name Object) : boolean from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "managedObject : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to managedObject : Object in method public manageNamedObject(managedObject Object, preferedName Object) : void from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 35,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 35,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "managedObject : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to managedObject : Object in method public manageObject(managedObject Object) : void from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 30,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "managedObject : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to managedObject : Object in method public unmanageObject(managedObject Object) : void from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 32,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "managedObject : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to name : Object in method public unmanageNamedObject(name Object) : void from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 37,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 37,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "name : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o1 : Object to name : Object in method public isManaged(managedObject Object, name Object) : boolean from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 40,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o1 : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 52,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "name : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o1 : Object to preferedName : Object in method public manageNamedObject(managedObject Object, preferedName Object) : void from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 45,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o1 : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 57,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "preferedName : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter s : String to customName : String in method public getManagedObjectName(managedObject Object, customName String, nameType Class<T>) : T from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 49,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "s : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 61,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "customName : String"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter tClass : Class<T> to nameType : Class<T> in method public getManagedObjectName(managedObject Object, customName String, nameType Class<T>) : T from class org.apache.camel.management.DefaultManagementStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 59,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "tClass : Class<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/DefaultManagementStrategy.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 80,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "nameType : Class<T>"
+}]
+}
+]
+}]
+}

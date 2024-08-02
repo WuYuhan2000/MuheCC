@@ -1,0 +1,651 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven-plugins",
+	"sha1": "c251c539b5e9aaf8b1e8f957254917c0b18e850d",
+	"url": "https://github.com/apache/maven-plugins/commit/c251c539b5e9aaf8b1e8f957254917c0b18e850d",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected jiraDatePattern : String from class org.apache.maven.plugin.jira.AbstractJiraDownloader",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/AbstractJiraDownloader.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private jiraDatePattern : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/AbstractJiraDownloader.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected jiraDatePattern : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected log : Log from class org.apache.maven.plugin.jira.AbstractJiraDownloader",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/AbstractJiraDownloader.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 17,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private log : Log"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/AbstractJiraDownloader.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected log : Log"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package parse(xmlSource InputSource) : void from class org.apache.maven.plugin.jira.JiraXML",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 103,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parse(xmlPath File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 123,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package parse(xmlSource InputSource) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type issueDownloader : JiraDownloader to issueDownloader : AbstractJiraDownloader in method private configureIssueDownloader(issueDownloader AbstractJiraDownloader) : void from class org.apache.maven.plugin.jira.JiraMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 44,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "issueDownloader : JiraDownloader"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 395,
+		"endLine": 395,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 407,
+		"endLine": 407,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 44,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "issueDownloader : AbstractJiraDownloader"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 416,
+		"endLine": 416,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 428,
+		"endLine": 428,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type xmlPath : File to xmlSource : InputSource in method package parse(xmlSource InputSource) : void from class org.apache.maven.plugin.jira.JiraXML",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 25,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "xmlPath : File"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "xmlSource : InputSource"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type attributes : Map to attributes : Map<String,String> in method public execute() : void from class org.apache.maven.plugin.changes.AbstractChangesReport",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "attributes : Map"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 180,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 33,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "attributes : Map<String,String>"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/changes/AbstractChangesReport.java",
+		"startLine": 180,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type issueDownloader : JiraDownloader to issueDownloader : AbstractJiraDownloader in method public executeReport(locale Locale) : void from class org.apache.maven.plugin.jira.JiraMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 28,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "issueDownloader : JiraDownloader"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "issueDownloader : AbstractJiraDownloader"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraMojo.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter xmlPath : File to xmlSource : InputSource in method package parse(xmlSource InputSource) : void from class org.apache.maven.plugin.jira.JiraXML",
+	"leftSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 25,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "xmlPath : File"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "xmlSource : InputSource"
+}, {
+		"filePath": "maven-changes-plugin/src/main/java/org/apache/maven/plugin/jira/JiraXML.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

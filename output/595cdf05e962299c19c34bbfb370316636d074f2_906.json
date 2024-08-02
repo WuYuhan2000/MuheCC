@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "595cdf05e962299c19c34bbfb370316636d074f2",
+	"url": "https://github.com/spring-projects/spring-framework/commit/595cdf05e962299c19c34bbfb370316636d074f2",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable cause : Throwable in method private setPropertyValue(tokens PropertyTokenHolder, pv PropertyValue) : void from class org.springframework.beans.BeanWrapperImpl",
+	"leftSideLocations": [{
+		"filePath": "spring-beans/src/main/java/org/springframework/beans/BeanWrapperImpl.java",
+		"startLine": 1182,
+		"endLine": 1182,
+		"startColumn": 6,
+		"endColumn": 88,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-beans/src/main/java/org/springframework/beans/BeanWrapperImpl.java",
+		"startLine": 1183,
+		"endLine": 1183,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "cause : Throwable"
+}, {
+		"filePath": "spring-beans/src/main/java/org/springframework/beans/BeanWrapperImpl.java",
+		"startLine": 1188,
+		"endLine": 1188,
+		"startColumn": 6,
+		"endColumn": 70,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type BeansException in method public setBeanFactory(beanFactory BeanFactory) : void from class org.springframework.scripting.groovy.GroovyScriptFactory",
+	"leftSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/scripting/groovy/GroovyScriptFactory.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 61,
+		"endColumn": 75,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "BeansException"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/scripting/groovy/GroovyScriptFactory.java",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBeanFactory(beanFactory BeanFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/scripting/groovy/GroovyScriptFactory.java",
+		"startLine": 103,
+		"endLine": 108,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public setBeanFactory(beanFactory BeanFactory) : void"
+}]
+}
+]
+}]
+}

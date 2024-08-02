@@ -1,0 +1,738 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "9a94fd278693e098837dddce222a732c1a57f532",
+	"url": "https://github.com/ReactiveX/RxJava/commit/9a94fd278693e098837dddce222a732c1a57f532",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier static in attribute private counter : AtomicLong from class rx.schedulers.CurrentThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private counter : AtomicInteger"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private counter : AtomicLong"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private enqueue(scheduler Scheduler, action DiscardableAction<?>, execTime long) : void from class rx.schedulers.CurrentThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 59,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private enqueue(action DiscardableAction<?>, execTime long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private enqueue(scheduler Scheduler, action DiscardableAction<?>, execTime long) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter scheduler : Scheduler in method private enqueue(scheduler Scheduler, action DiscardableAction<?>, execTime long) : void from class rx.schedulers.CurrentThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 59,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private enqueue(action DiscardableAction<?>, execTime long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "scheduler : Scheduler"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private enqueue(scheduler Scheduler, action DiscardableAction<?>, execTime long) : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InterruptedException in method public testMixOfDelayedAndNonDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 238,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMixOfDelayedAndNonDelayedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 63,
+		"endColumn": 83,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 211,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testMixOfDelayedAndNonDelayedActions() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InterruptedException in method public testNestedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 151,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testNestedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 44,
+		"endColumn": 64,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 101,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testNestedActions() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InterruptedException in method public testSequenceOfActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 201,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSequenceOfActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 54,
+		"endColumn": 74,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 155,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testSequenceOfActions() : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InterruptedException in method public testSequenceOfDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 216,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSequenceOfDelayedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 55,
+		"endColumn": 75,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 180,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public testSequenceOfDelayedActions() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type count : Integer to count : Long in class rx.schedulers.CurrentThreadScheduler.TimedAction",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 23,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "count : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 20,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "count : Long"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type counter : AtomicInteger to counter : AtomicLong in class rx.schedulers.CurrentThreadScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 33,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "counter : AtomicInteger"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "counter : AtomicLong"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type count : Integer to count : Long in method private TimedAction(action DiscardableAction<?>, execTime Long, count Long) from class rx.schedulers.CurrentThreadScheduler.TimedAction",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 73,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "count : Integer"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 73,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "count : Long"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CurrentThreadScheduler.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scheduler : CurrentThreadScheduler to scheduler : Scheduler in method public testMixOfDelayedAndNonDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 38,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scheduler : CurrentThreadScheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 247,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scheduler : Scheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 221,
+		"endLine": 236,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scheduler : CurrentThreadScheduler to scheduler : Scheduler in method public testNestedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 38,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scheduler : CurrentThreadScheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scheduler : Scheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scheduler : CurrentThreadScheduler to scheduler : Scheduler in method public testSequenceOfActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 38,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scheduler : CurrentThreadScheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scheduler : Scheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scheduler : CurrentThreadScheduler to scheduler : Scheduler in method public testSequenceOfDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 38,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scheduler : CurrentThreadScheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 223,
+		"endLine": 229,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scheduler : Scheduler"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 188,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public testUnSubscribeForScheduler() : void from class rx.schedulers.AbstractSchedulerTests to public testUnSubscribeForScheduler() : void from class rx.schedulers.AbstractSchedulerConcurrencyTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 101,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testUnSubscribeForScheduler() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerConcurrencyTests.java",
+		"startLine": 31,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public testUnSubscribeForScheduler() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public testMixOfDelayedAndNonDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 238,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMixOfDelayedAndNonDelayedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 211,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public testMixOfDelayedAndNonDelayedActions() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public testNestedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 151,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testNestedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 101,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public testNestedActions() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public testSequenceOfDelayedActions() : void from class rx.schedulers.AbstractSchedulerTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 216,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSequenceOfDelayedActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/schedulers/AbstractSchedulerTests.java",
+		"startLine": 180,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public testSequenceOfDelayedActions() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "cef0b916c546bf6178b493eafc1ea4adb0357e18",
+	"url": "https://github.com/ReactiveX/RxJava/commit/cef0b916c546bf6178b493eafc1ea4adb0357e18",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type queue : Queue<T> to queue : Queue<Object> in class rx.internal.operators.OperatorEagerConcatMap.EagerInnerSubscriber",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 24,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "queue : Queue<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "queue : Queue<Object>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type innerQueue : Queue<R> to innerQueue : Queue<Object> in method package drain() : void from class rx.internal.operators.OperatorEagerConcatMap.EagerOuterSubscriber",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 30,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "innerQueue : Queue<R>"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 35,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "innerQueue : Queue<Object>"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type q : Queue<T> to q : Queue<Object> in method public EagerInnerSubscriber(parent EagerOuterSubscriber<?,T>, bufferSize int) from class rx.internal.operators.OperatorEagerConcatMap.EagerInnerSubscriber",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 22,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "q : Queue<T>"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 27,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "q : Queue<Object>"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type v : R to v : Object in method package drain() : void from class rx.internal.operators.OperatorEagerConcatMap.EagerOuterSubscriber",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 27,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "v : R"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 29,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 29,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 32,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "v : Object"
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 29,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/rx/internal/operators/OperatorEagerConcatMap.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 29,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

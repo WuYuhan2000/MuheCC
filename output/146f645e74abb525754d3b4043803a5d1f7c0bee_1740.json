@@ -1,0 +1,399 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/getrailo/railo",
+	"sha1": "146f645e74abb525754d3b4043803a5d1f7c0bee",
+	"url": "https://github.com/getrailo/railo/commit/146f645e74abb525754d3b4043803a5d1f7c0bee",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private _toResource(config ConfigWeb, jarName String) : Resource extracted from private exists(config ConfigWeb, jarName String) : boolean in class railo.commons.net.JarLoader",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 99,
+		"endLine": 116,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private exists(config ConfigWeb, jarName String) : boolean"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 4,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 4,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 107,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 163,
+		"endLine": 172,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private _toResource(config ConfigWeb, jarName String) : Resource"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 3,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 4,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 166,
+		"endLine": 171,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 169,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 4,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 138,
+		"endLine": 142,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private exists(config ConfigWeb, jarName String) : boolean"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "_toResource(config,jarName)"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 4,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private toURL(engine CFMLEngine, jarName String) : URL extracted from private download(pc PageContext, jarName String, whenExists short) : Resource in class railo.commons.net.JarLoader",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 55,
+		"endLine": 89,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private download(pc PageContext, jarName String, whenExists short) : Resource"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 26,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 102,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private toURL(engine CFMLEngine, jarName String) : URL"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 26,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 60,
+		"endLine": 100,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private download(pc PageContext, jarName String, whenExists short) : Resource"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 15,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "toURL(engine,jarName)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable hostUrl : URL in method private download(pc PageContext, jarName String, whenExists short) : Resource from class railo.commons.net.JarLoader",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "hostUrl : URL"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable exists : boolean to needNewJars : boolean in method private needNewJars() : void from class railo.runtime.tag.Admin",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1884,
+		"endLine": 1884,
+		"startColumn": 14,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "exists : boolean"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1884,
+		"endLine": 1884,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1887,
+		"endLine": 1887,
+		"startColumn": 4,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1886,
+		"endLine": 1886,
+		"startColumn": 14,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "needNewJars : boolean"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1886,
+		"endLine": 1886,
+		"startColumn": 6,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/tag/Admin.java",
+		"startLine": 1889,
+		"endLine": 1889,
+		"startColumn": 4,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable jar : Resource to res : Resource in method private exists(config ConfigWeb, jarName String) : boolean from class railo.commons.net.JarLoader",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "jar : Resource"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "res : Resource"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/commons/net/JarLoader.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 6,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,453 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "c9a360e36059aa46d7090e879762d44d54fa2782",
+	"url": "https://github.com/apache/hbase/commit/c9a360e36059aa46d7090e879762d44d54fa2782",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private getResults(spec String) : Result[] extracted from public get(get Get) : Result in class org.apache.hadoop.hbase.rest.client.RemoteHTable",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 269,
+		"endLine": 304,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public get(get Get) : Result"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 7,
+		"endColumn": 16,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 7,
+		"endColumn": 16,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 7,
+		"endColumn": 16,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 11,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 7,
+		"endColumn": 15,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 295,
+		"endLine": 297,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 279,
+		"endLine": 301,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 276,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 284,
+		"endLine": 289,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 276,
+		"endLine": 302,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 336,
+		"endLine": 362,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getResults(spec String) : Result[]"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 341,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 342,
+		"endLine": 342,
+		"startColumn": 11,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 11,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 11,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 11,
+		"endColumn": 17,
+		"codeElementType": "BREAK_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SWITCH_CASE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 11,
+		"endColumn": 65,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 353,
+		"endLine": 355,
+		"startColumn": 11,
+		"endColumn": 47,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 47,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 340,
+		"endLine": 359,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 337,
+		"endLine": 360,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 345,
+		"endLine": 347,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 337,
+		"endLine": 360,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 292,
+		"endLine": 308,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public get(get Get) : Result"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getResults(spec)"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 345,
+		"endLine": 347,
+		"startColumn": 36,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public get(gets List<Get>) : Result[] from class org.apache.hadoop.hbase.rest.client.RemoteHTable",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 711,
+		"endLine": 711,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 711,
+		"endLine": 714,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public get(gets List<Get>) : Result[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/rest/client/RemoteHTable.java",
+		"startLine": 310,
+		"endLine": 334,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public get(gets List<Get>) : Result[]"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,303 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "1eac0a7cdb214d084934cbe159af7a1803486f14",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/1eac0a7cdb214d084934cbe159af7a1803486f14",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type model : IChangesetModel to model : ITaskVersionsModel in class org.eclipse.mylyn.internal.versions.tasks.ui.IncludeSubTasksAction",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/internal/IncludeSubTasksAction.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 26,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "model : IChangesetModel"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/IncludeSubTasksAction.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 29,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "model : ITaskVersionsModel"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public loadMappingProviders() : List<AbstractChangesetMappingProvider> from class org.eclipse.mylyn.internal.versions.tasks.ui.InternalExtensionPointLoader",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/TaskChangesetUtil.java",
+		"startLine": 29,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/InternalExtensionPointLoader.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type model : IChangesetModel to model : ITaskVersionsModel in method public IncludeSubTasksAction(model ITaskVersionsModel) from class org.eclipse.mylyn.internal.versions.tasks.ui.IncludeSubTasksAction",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/internal/IncludeSubTasksAction.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "model : IChangesetModel"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/internal/IncludeSubTasksAction.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/IncludeSubTasksAction.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "model : ITaskVersionsModel"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/IncludeSubTasksAction.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 3,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.eclipse.mylyn.internal.versions.tasks.ui.InternalExtensionPointLoader from class org.eclipse.mylyn.versions.tasks.ui.TaskChangesetUtil",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/TaskChangesetUtil.java",
+		"startLine": 17,
+		"endLine": 76,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.TaskChangesetUtil"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/TaskChangesetUtil.java",
+		"startLine": 29,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/TaskChangesetUtil.java",
+		"startLine": 17,
+		"endLine": 33,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.TaskChangesetUtil"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/InternalExtensionPointLoader.java",
+		"startLine": 19,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.InternalExtensionPointLoader"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/InternalExtensionPointLoader.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface org.eclipse.mylyn.versions.tasks.ui.spi.ITaskVersionsModel from classes [org.eclipse.mylyn.versions.tasks.ui.ChangesetPart.ChangesetModel]",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 163,
+		"endLine": 215,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.ChangesetPart.ChangesetModel"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 181,
+		"endLine": 232,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.ChangesetPart.ChangesetModel"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/spi/ITaskVersionsModel.java",
+		"startLine": 17,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.spi.ITaskVersionsModel"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eclipse.mylyn.versions.tasks.ui.ChangeSetPageFactory moved to org.eclipse.mylyn.internal.versions.tasks.ui.ChangeSetPageFactory",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangeSetPageFactory.java",
+		"startLine": 21,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.ChangeSetPageFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/ChangeSetPageFactory.java",
+		"startLine": 21,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.ChangeSetPageFactory"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart moved to org.eclipse.mylyn.internal.versions.tasks.ui.ChangesetPart",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 51,
+		"endLine": 216,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.ChangesetPart"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 47,
+		"endLine": 233,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.ChangesetPart"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eclipse.mylyn.versions.tasks.ui.internal.IncludeSubTasksAction moved to org.eclipse.mylyn.internal.versions.tasks.ui.IncludeSubTasksAction",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/internal/IncludeSubTasksAction.java",
+		"startLine": 17,
+		"endLine": 37,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.internal.IncludeSubTasksAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/IncludeSubTasksAction.java",
+		"startLine": 18,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.IncludeSubTasksAction"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.eclipse.mylyn.versions.tasks.ui.internal.TaskChangesetLabelProvider moved to org.eclipse.mylyn.internal.versions.tasks.ui.TaskChangesetLabelProvider",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/internal/TaskChangesetLabelProvider.java",
+		"startLine": 18,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.internal.TaskChangesetLabelProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/TaskChangesetLabelProvider.java",
+		"startLine": 18,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.eclipse.mylyn.internal.versions.tasks.ui.TaskChangesetLabelProvider"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private loadMappingProviders() : List<AbstractChangesetMappingProvider> from class org.eclipse.mylyn.versions.tasks.ui.TaskChangesetUtil to public loadMappingProviders() : List<AbstractChangesetMappingProvider> from class org.eclipse.mylyn.internal.versions.tasks.ui.InternalExtensionPointLoader",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/TaskChangesetUtil.java",
+		"startLine": 29,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/internal/versions/tasks/ui/InternalExtensionPointLoader.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public loadMappingProviders() : List<AbstractChangesetMappingProvider>"
+}]
+}
+]
+}]
+}

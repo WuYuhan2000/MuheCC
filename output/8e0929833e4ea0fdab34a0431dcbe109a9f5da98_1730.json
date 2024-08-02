@@ -1,0 +1,198 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/fenix-framework/fenix-framework",
+	"sha1": "8e0929833e4ea0fdab34a0431dcbe109a9f5da98",
+	"url": "https://github.com/fenix-framework/fenix-framework/commit/8e0929833e4ea0fdab34a0431dcbe109a9f5da98",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public cache(obj AbstractDomainObject) : AbstractDomainObject from class pt.ist.fenixframework.core.SharedIdentityMap",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 25,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public cache(obj AbstractDomainObject) : AbstractDomainObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 25,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public cache(obj AbstractDomainObject) : AbstractDomainObject"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public lookup(key Object) : AbstractDomainObject from class pt.ist.fenixframework.core.SharedIdentityMap",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 50,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public lookup(key Object) : AbstractDomainObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 51,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public lookup(key Object) : AbstractDomainObject"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type instance : FenixCache to instance : SharedIdentityMap in class pt.ist.fenixframework.core.SharedIdentityMap",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "instance : FenixCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 44,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "instance : SharedIdentityMap"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FenixCache to SharedIdentityMap in method public getCache() : SharedIdentityMap from class pt.ist.fenixframework.core.SharedIdentityMap",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 19,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FenixCache"
+}, {
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCache() : FenixCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 19,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "SharedIdentityMap"
+}, {
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getCache() : SharedIdentityMap"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface pt.ist.fenixframework.core.IdentityMap from classes [pt.ist.fenixframework.core.FenixCache]",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 10,
+		"endLine": 100,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "pt.ist.fenixframework.core.FenixCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 10,
+		"endLine": 102,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "pt.ist.fenixframework.core.SharedIdentityMap"
+}, {
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/IdentityMap.java",
+		"startLine": 3,
+		"endLine": 7,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "pt.ist.fenixframework.core.IdentityMap"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class pt.ist.fenixframework.core.FenixCache renamed to pt.ist.fenixframework.core.SharedIdentityMap",
+	"leftSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/FenixCache.java",
+		"startLine": 10,
+		"endLine": 100,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "pt.ist.fenixframework.core.FenixCache"
+}],
+	"rightSideLocations": [{
+		"filePath": "new-fenix-framework-core/src/main/java/pt/ist/fenixframework/core/SharedIdentityMap.java",
+		"startLine": 10,
+		"endLine": 102,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "pt.ist.fenixframework.core.SharedIdentityMap"
+}]
+}
+]
+}]
+}

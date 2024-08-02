@@ -1,0 +1,816 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/benoker/dockingframes",
+	"sha1": "99ce3f9040c54bac0ce93596f934aefc0eed171b",
+	"url": "https://github.com/benoker/dockingframes/commit/99ce3f9040c54bac0ce93596f934aefc0eed171b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected addDockable(component Component) : void extracted from public setDockable(dockable Dockable) : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 151,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setDockable(dockable Dockable) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 243,
+		"endLine": 253,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected addDockable(component Component) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 157,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setDockable(dockable Dockable) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addDockable(dockable.getComponent())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected addTitle(component Component) : void extracted from public setTitle(title DockTitle) : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 217,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setTitle(title DockTitle) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 273,
+		"endLine": 283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected addTitle(component Component) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 223,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setTitle(title DockTitle) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addTitle(title.getComponent())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(dockable Dockable) : Component extracted from public doLayout() : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 268,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 263,
+		"endLine": 271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(dockable Dockable) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 334,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(dockable Dockable) : Component extracted from public getMinimumSize() : Dimension in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 237,
+		"endLine": 266,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getMinimumSize() : Dimension"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 263,
+		"endLine": 271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(dockable Dockable) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 303,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getMinimumSize() : Dimension"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 14,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(dockable)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(title DockTitle) : Component extracted from public doLayout() : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 268,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 293,
+		"endLine": 301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(title DockTitle) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 334,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 35,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(title DockTitle) : Component extracted from public doLayout() : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 268,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 293,
+		"endLine": 301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(title DockTitle) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 334,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 35,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(title DockTitle) : Component extracted from public doLayout() : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 268,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 293,
+		"endLine": 301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(title DockTitle) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 334,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public doLayout() : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 35,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected getComponent(title DockTitle) : Component extracted from public getMinimumSize() : Dimension in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 237,
+		"endLine": 266,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getMinimumSize() : Dimension"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 7,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 293,
+		"endLine": 301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getComponent(title DockTitle) : Component"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 303,
+		"endLine": 332,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getMinimumSize() : Dimension"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 14,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 29,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 29,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getComponent(title)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected removeDockable(component Component) : void extracted from public setDockable(dockable Dockable) : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 151,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setDockable(dockable Dockable) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 255,
+		"endLine": 261,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected removeDockable(component Component) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 157,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setDockable(dockable Dockable) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "removeDockable(this.dockable.getComponent())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected removeTitle(component Component) : void extracted from public setTitle(title DockTitle) : void in class bibliothek.gui.dock.DockableDisplayer",
+	"leftSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 217,
+		"endLine": 235,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setTitle(title DockTitle) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 285,
+		"endLine": 291,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected removeTitle(component Component) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 223,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setTitle(title DockTitle) : void"
+}, {
+		"filePath": "dockingFrames/src/bibliothek/gui/dock/DockableDisplayer.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "removeTitle(this.title.getComponent())"
+}]
+}
+]
+}]
+}

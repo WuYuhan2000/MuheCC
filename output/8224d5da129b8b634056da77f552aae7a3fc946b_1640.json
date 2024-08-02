@@ -1,0 +1,381 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/searls/jasmine-maven-plugin",
+	"sha1": "8224d5da129b8b634056da77f552aae7a3fc946b",
+	"url": "https://github.com/searls/jasmine-maven-plugin/commit/8224d5da129b8b634056da77f552aae7a3fc946b",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type fileNamesAlreadyWrittenAsScriptTags : List<File> to fileNamesAlreadyWrittenAsScriptTags : List<String> in class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "fileNamesAlreadyWrittenAsScriptTags : List<File>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 23,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "fileNamesAlreadyWrittenAsScriptTags : List<String>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sourceFiles : List<File> to sourceFiles : List<String> in method private appendScriptTagsForFiles(sb StringBuilder, sourceFiles List<String>) : void from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 58,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sourceFiles : List<File>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 107,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 58,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sourceFiles : List<String>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 115,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<File> to List<String> in method private expandSourcesToLoadFirstRelativeToSourceDir() : List<String> from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 10,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<File>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 86,
+		"endLine": 94,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private expandSourcesToLoadFirstRelativeToSourceDir() : List<File>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<String>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 86,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private expandSourcesToLoadFirstRelativeToSourceDir() : List<String>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<File> to List<String> in method private filesForScriptsInDirectory(directory File) : List<String> from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 10,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<File>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 96,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private filesForScriptsInDirectory(directory File) : List<File>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<String>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 101,
+		"endLine": 112,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private filesForScriptsInDirectory(directory File) : List<String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type files : List<File> to files : List<String> in method private expandSourcesToLoadFirstRelativeToSourceDir() : List<String> from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 14,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "files : List<File>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "files : List<String>"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 6,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 6,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sourceFile : File to sourceFile : String in method private appendScriptTagsForFiles(sb StringBuilder, sourceFiles List<String>) : void from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 8,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sourceFile : File"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 127,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 108,
+		"endLine": 111,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 8,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sourceFile : String"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 116,
+		"endLine": 119,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable file : File in method private expandSourcesToLoadFirstRelativeToSourceDir() : List<String> from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 10,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "file : File"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 6,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type MalformedURLException in method private appendScriptTagsForFiles(sb StringBuilder, sourceFiles List<File>) : void from class searls.jasmine.runner.SpecRunnerHtmlGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 89,
+		"endColumn": 110,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "MalformedURLException"
+}, {
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private appendScriptTagsForFiles(sb StringBuilder, sourceFiles List<File>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/searls/jasmine/runner/SpecRunnerHtmlGenerator.java",
+		"startLine": 114,
+		"endLine": 121,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "private appendScriptTagsForFiles(sb StringBuilder, sourceFiles List<String>) : void"
+}]
+}
+]
+}]
+}

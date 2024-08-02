@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "12060cb9a634e3b1ae0b7d1508bedd37e3dc0394",
+	"url": "https://github.com/apache/hadoop/commit/12060cb9a634e3b1ae0b7d1508bedd37e3dc0394",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private initDummyNodeLabelsManager() : void extracted from public configure() : void in class org.apache.hadoop.yarn.client.cli.TestRMAdminCLI",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 72,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public configure() : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 127,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private initDummyNodeLabelsManager() : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 72,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public configure() : void"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "initDummyNodeLabelsManager()"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/test/java/org/apache/hadoop/yarn/client/cli/TestRMAdminCLI.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable index : int in method private buildNodeLabelsMapFromStr(args String) : Map<NodeId,Set<String>> from class org.apache.hadoop.yarn.client.cli.RMAdminCLI",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/java/org/apache/hadoop/yarn/client/cli/RMAdminCLI.java",
+		"startLine": 411,
+		"endLine": 415,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/java/org/apache/hadoop/yarn/client/cli/RMAdminCLI.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 11,
+		"endColumn": 20,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "index : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/java/org/apache/hadoop/yarn/client/cli/RMAdminCLI.java",
+		"startLine": 422,
+		"endLine": 426,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

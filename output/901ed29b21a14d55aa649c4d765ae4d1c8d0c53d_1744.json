@@ -1,0 +1,273 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/google/truth",
+	"sha1": "901ed29b21a14d55aa649c4d765ae4d1c8d0c53d",
+	"url": "https://github.com/google/truth/commit/901ed29b21a14d55aa649c4d765ae4d1c8d0c53d",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type expected : Iterable<E> to edges : ImmutableMultimap<Integer,Integer> in method private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer> from class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 605,
+		"endLine": 605,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "expected : Iterable<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 765,
+		"endLine": 765,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "edges : ImmutableMultimap<Integer,Integer>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Ordered to ImmutableBiMap<Integer,Integer> in method private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer> from class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 605,
+		"endLine": 605,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Ordered"
+}, {
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 595,
+		"endLine": 607,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private containsExactlyElementsIn(expected Iterable<E>) : Ordered"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 764,
+		"endLine": 764,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ImmutableBiMap<Integer,Integer>"
+}, {
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 756,
+		"endLine": 781,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @CanIgnoreReturnValue in method private containsExactlyElementsIn(expected Iterable<E>) : Ordered from class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 603,
+		"endLine": 603,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@CanIgnoreReturnValue"
+}, {
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 595,
+		"endLine": 607,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private containsExactlyElementsIn(expected Iterable<E>) : Ordered"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 756,
+		"endLine": 781,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method private containsExactlyElementsIn(expected Iterable<E>) : Ordered from class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 604,
+		"endLine": 604,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 595,
+		"endLine": 607,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private containsExactlyElementsIn(expected Iterable<E>) : Ordered"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 756,
+		"endLine": 781,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private containsExactlyElementsIn(expected Iterable<E>) : Ordered renamed to private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer> in class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 595,
+		"endLine": 607,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private containsExactlyElementsIn(expected Iterable<E>) : Ordered"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 756,
+		"endLine": 781,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter expected : Iterable<E> to edges : ImmutableMultimap<Integer,Integer> in method private findMaximalOneToOneMapping(edges ImmutableMultimap<Integer,Integer>) : ImmutableBiMap<Integer,Integer> from class com.google.common.truth.IterableSubject.UsingCorrespondence",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 605,
+		"endLine": 605,
+		"startColumn": 47,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "expected : Iterable<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/google/common/truth/IterableSubject.java",
+		"startLine": 765,
+		"endLine": 765,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "edges : ImmutableMultimap<Integer,Integer>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable e : ClassCastException to expected : ClassCastException in method public isOrderedWithNonComparableElementsFailure() : void from class com.google.common.truth.IterableSubjectTest",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 840,
+		"endLine": 840,
+		"startColumn": 14,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : ClassCastException"
+}, {
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 840,
+		"endLine": 841,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 840,
+		"endLine": 840,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expected : ClassCastException"
+}, {
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 840,
+		"endLine": 841,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable e : ClassCastException to expected : ClassCastException in method public isStrictlyOrderedWithNonComparableElementsFailure() : void from class com.google.common.truth.IterableSubjectTest",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 813,
+		"endLine": 813,
+		"startColumn": 14,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : ClassCastException"
+}, {
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 813,
+		"endLine": 814,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 813,
+		"endLine": 813,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expected : ClassCastException"
+}, {
+		"filePath": "core/src/test/java/com/google/common/truth/IterableSubjectTest.java",
+		"startLine": 813,
+		"endLine": 814,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

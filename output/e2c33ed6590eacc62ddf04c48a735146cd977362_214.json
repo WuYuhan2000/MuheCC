@@ -1,0 +1,87 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "e2c33ed6590eacc62ddf04c48a735146cd977362",
+	"url": "https://github.com/elastic/elasticsearch/commit/e2c33ed6590eacc62ddf04c48a735146cd977362",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type indexReader : IndexReader to indexReader : AtomicReader in method public collect(doc int) : void from class org.elasticsearch.index.search.child.ChildCollector",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "indexReader : IndexReader"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "indexReader : AtomicReader"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ChildCollector.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

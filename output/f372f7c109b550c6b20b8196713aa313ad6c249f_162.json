@@ -1,0 +1,708 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "f372f7c109b550c6b20b8196713aa313ad6c249f",
+	"url": "https://github.com/elastic/elasticsearch/commit/f372f7c109b550c6b20b8196713aa313ad6c249f",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type bottom : String to bottom : BytesRef in class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "bottom : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "bottom : BytesRef"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type values : String[] to values : BytesRef[] in class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "values : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "values : BytesRef[]"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type val2 : String to val2 : BytesRef in method public compareDocToValue(doc int, val2 BytesRef) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 43,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "val2 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 43,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "val2 : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldComparator<String> to FieldComparator<BytesRef> in method public setNextReader(context AtomicReaderContext) : FieldComparator<BytesRef> from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 12,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldComparator<String>"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 70,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setNextReader(context AtomicReaderContext) : FieldComparator<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 12,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldComparator<BytesRef>"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public setNextReader(context AtomicReaderContext) : FieldComparator<BytesRef>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to BytesRef in method public value(slot int) : BytesRef from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 130,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public value(slot int) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 12,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 144,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public value(slot int) : BytesRef"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type val1 : String to spare : BytesRef in method public compareDocToValue(doc int, val2 BytesRef) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 16,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val1 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "spare : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type val1 : String to val1 : BytesRef in method public compare(slot1 int, slot2 int) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 22,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val1 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 85,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 24,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "val1 : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 91,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type val2 : String to spare : BytesRef in method public compareBottom(doc int) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val2 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "spare : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type val2 : String to val2 : BytesRef in method public compare(slot1 int, slot2 int) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 22,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val2 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 90,
+		"endLine": 92,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 24,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "val2 : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private setSpare(doc int) : void extracted from public compareDocToValue(doc int, val2 String) : int in class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 112,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public compareDocToValue(doc int, val2 String) : int"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 119,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private setSpare(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 112,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public compareDocToValue(doc int, val2 BytesRef) : int"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setSpare(doc)"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private setSpare(doc int) : void extracted from public copy(slot int, doc int) : void in class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 119,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public copy(slot int, doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 119,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private setSpare(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 129,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public copy(slot int, doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setSpare(doc)"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute val1 : String to spare : BytesRef in method public compareDocToValue(doc int, val2 BytesRef) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 16,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val1 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "spare : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute val2 : String to spare : BytesRef in method public compareBottom(doc int) : int from class org.elasticsearch.index.fielddata.fieldcomparator.StringScriptDataComparator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "val2 : String"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "spare : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/fieldcomparator/StringScriptDataComparator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

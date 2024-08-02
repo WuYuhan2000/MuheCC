@@ -1,0 +1,471 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "382bd64cdd015fd035182785291db8122791695e",
+	"url": "https://github.com/apache/camel/commit/382bd64cdd015fd035182785291db8122791695e",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"activemq:Test.BindingQueue\") in method public myMethod(headers Map, body String) : void from class org.apache.camel.component.jms.bind.MyBean",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public myMethod(headers Map, body String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"activemq:Test.BindingQueue\")"
+}, {
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public myMethod(headers Map, body String) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:start\") in method public doSomething(body String) : void from class org.apache.camel.spring.example.MyConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomething(body String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:start\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doSomething(body String) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:start\") in method public route(body String) : String[] from class org.apache.camel.component.bean.RouterBean",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public route(body String) : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:start\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public route(body String) : String[]"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:startBeanExpression\") in method public doSomethingBeanExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingBeanExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:startBeanExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doSomethingBeanExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:startConstantExpression\") in method public doSomethingConstantExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingConstantExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:startConstantExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doSomethingConstantExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:startHeaderExpression\") in method public doSomethingHeaderExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingHeaderExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:startHeaderExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doSomethingHeaderExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Consume(uri = \"direct:startMany\") in method public doSomethingManyExpression(payload String, count int, number int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingManyExpression(payload String, count int, number int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Consume(uri = \"direct:startMany\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public doSomethingManyExpression(payload String, count int, number int) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"activemq:Test.BindingQueue\") in method public myMethod(headers Map, body String) : void from class org.apache.camel.component.jms.bind.MyBean",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"activemq:Test.BindingQueue\")"
+}, {
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public myMethod(headers Map, body String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jms/src/test/java/org/apache/camel/component/jms/bind/MyBean.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public myMethod(headers Map, body String) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:start\") in method public doSomething(body String) : void from class org.apache.camel.spring.example.MyConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:start\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomething(body String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/spring/example/MyConsumer.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doSomething(body String) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:start\") in method public route(body String) : String[] from class org.apache.camel.component.bean.RouterBean",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:start\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public route(body String) : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/RouterBean.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public route(body String) : String[]"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:startBeanExpression\") in method public doSomethingBeanExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:startBeanExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingBeanExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doSomethingBeanExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:startConstantExpression\") in method public doSomethingConstantExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:startConstantExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingConstantExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doSomethingConstantExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:startHeaderExpression\") in method public doSomethingHeaderExpression(payload String, count int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:startHeaderExpression\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingHeaderExpression(payload String, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doSomethingHeaderExpression(payload String, count int) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @MessageDriven(uri = \"direct:startMany\") in method public doSomethingManyExpression(payload String, count int, number int) : void from class org.apache.camel.component.bean.MyBeanBindingConsumer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@MessageDriven(uri = \"direct:startMany\")"
+}, {
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public doSomethingManyExpression(payload String, count int, number int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-spring/src/test/java/org/apache/camel/component/bean/MyBeanBindingConsumer.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public doSomethingManyExpression(payload String, count int, number int) : void"
+}]
+}
+]
+}]
+}

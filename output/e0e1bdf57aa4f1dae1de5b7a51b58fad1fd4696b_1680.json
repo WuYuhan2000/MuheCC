@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonborkholder/glg2d",
+	"sha1": "e0e1bdf57aa4f1dae1de5b7a51b58fad1fd4696b",
+	"url": "https://github.com/brandonborkholder/glg2d/commit/e0e1bdf57aa4f1dae1de5b7a51b58fad1fd4696b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected createG2DListener(drawingComponent JComponent) : GLEventListener extracted from public setDrawableComponent(component JComponent) : void in class glg2d.G2DGLCanvas",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 119,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setDrawableComponent(component JComponent) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 140,
+		"endLine": 146,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createG2DListener(drawingComponent JComponent) : GLEventListener"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 119,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setDrawableComponent(component JComponent) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 23,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createG2DListener(drawableComponent)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected postPaint(context GLContext) : void extracted from public display(drawable GLAutoDrawable) : void in class glg2d.G2DGLEventListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public display(drawable GLAutoDrawable) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 99,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected postPaint(context GLContext) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 49,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public display(drawable GLAutoDrawable) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "postPaint(drawable.getContext())"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected prePaint(context GLContext) : void extracted from public display(drawable GLAutoDrawable) : void in class glg2d.G2DGLEventListener",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 47,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public display(drawable GLAutoDrawable) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 57,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected prePaint(context GLContext) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 49,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public display(drawable GLAutoDrawable) : void"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "prePaint(drawable.getContext())"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLEventListener.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute drawableComponent : JComponent to drawingComponent : JComponent in method protected createG2DListener(drawingComponent JComponent) : GLEventListener from class glg2d.G2DGLCanvas",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "drawableComponent : JComponent"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 47,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "drawingComponent : JComponent"
+}, {
+		"filePath": "src/main/java/glg2d/G2DGLCanvas.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

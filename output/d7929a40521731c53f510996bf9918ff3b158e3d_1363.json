@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "d7929a40521731c53f510996bf9918ff3b158e3d",
+	"url": "https://github.com/apache/deltaspike/commit/d7929a40521731c53f510996bf9918ff3b158e3d",
+	"refactorings": [{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute map : Map<String,String> to props : Map<String,String> in method public getProperties() : Map<String,String> from class org.apache.deltaspike.test.api.config.TestConfigSource",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/test/java/org/apache/deltaspike/test/api/config/TestConfigSource.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 29,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "map : Map<String,String>"
+}, {
+		"filePath": "deltaspike/core/api/src/test/java/org/apache/deltaspike/test/api/config/TestConfigSource.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/test/java/org/apache/deltaspike/test/api/config/TestConfigSource.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 33,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "props : Map<String,String>"
+}, {
+		"filePath": "deltaspike/core/api/src/test/java/org/apache/deltaspike/test/api/config/TestConfigSource.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

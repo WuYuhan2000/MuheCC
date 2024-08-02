@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "1ffcd613de9c2fcc691b31355c635df9ffd6caca",
+	"url": "https://github.com/kiegroup/drools/commit/1ffcd613de9c2fcc691b31355c635df9ffd6caca",
+	"refactorings": [{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable builder : PackageBuilder in method public createRuleExecutionSet(ruleExecutionSetReader Reader, properties Map) : RuleExecutionSet from class org.drools.jsr94.rules.admin.LocalRuleExecutionSetProviderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 34,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : PackageBuilder"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 82,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createRuleExecutionSet(ruleExecutionSetReader Reader, properties Map) : RuleExecutionSet"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "builder : PackageBuilder"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 101,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public createRuleExecutionSet(ruleExecutionSetReader Reader, properties Map) : RuleExecutionSet"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable ruleBase : ReteooRuleBase in method package RuleExecutionSetImpl(pkg Package, properties Map) from class org.drools.jsr94.rules.admin.RuleExecutionSetImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/RuleExecutionSetImpl.java",
+		"startLine": 118,
+		"endLine": 119,
+		"startColumn": 48,
+		"endColumn": 127,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ruleBase : ReteooRuleBase"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/RuleExecutionSetImpl.java",
+		"startLine": 90,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package RuleExecutionSetImpl(pkg Package, properties Map)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/RuleExecutionSetImpl.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 42,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "ruleBase : ReteooRuleBase"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/RuleExecutionSetImpl.java",
+		"startLine": 92,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "package RuleExecutionSetImpl(pkg Package, properties Map)"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dsl : Object to dsrl : Object in method public createRuleExecutionSet(ruleExecutionSetReader Reader, properties Map) : RuleExecutionSet from class org.drools.jsr94.rules.admin.LocalRuleExecutionSetProviderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dsl : Object"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 128,
+		"endLine": 129,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 131,
+		"endLine": 132,
+		"startColumn": 25,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 127,
+		"endLine": 133,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 116,
+		"endLine": 135,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dsrl : Object"
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 166,
+		"endLine": 167,
+		"startColumn": 25,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 169,
+		"endLine": 170,
+		"startColumn": 25,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 165,
+		"endLine": 171,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-jsr94/src/main/java/org/drools/jsr94/rules/admin/LocalRuleExecutionSetProviderImpl.java",
+		"startLine": 154,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,996 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/qos-ch/logback",
+	"sha1": "f091f6e436fcef1f083c8f61de8dcdde67b11780",
+	"url": "https://github.com/qos-ch/logback/commit/f091f6e436fcef1f083c8f61de8dcdde67b11780",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type queue : BlockingQueue<E> to deque : BlockingDeque<E> in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "queue : BlockingQueue<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "deque : BlockingDeque<E>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private connectSocketAndDispatchEvents() : void from class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type oos : ObjectOutputStream to objectWriter : ObjectWriter in method private createObjectWriterForSocket() : ObjectWriter from class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 26,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "oos : ObjectOutputStream"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 18,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "objectWriter : ObjectWriter"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createObjectWriterForSocket() : ObjectWriter extracted from public run() : void in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 7,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 224,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createObjectWriterForSocket() : ObjectWriter"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 39,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createObjectWriterForSocket()"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private dispatchEvents(objectWriter ObjectWriter) : void extracted from public run() : void in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 258,
+		"endLine": 270,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private dispatchEvents(objectWriter ObjectWriter) : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 11,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "dispatchEvents(objectWriter)"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 263,
+		"endLine": 268,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 265,
+		"endLine": 268,
+		"startColumn": 9,
+		"endColumn": 8,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 259,
+		"endLine": 269,
+		"startColumn": 18,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 259,
+		"endLine": 269,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method package newBlockingQueue(queueSize int) : BlockingQueue<E> inlined to public start() : void in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 302,
+		"endLine": 318,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "package newBlockingQueue(queueSize int) : BlockingQueue<E>"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 316,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 102,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public start() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 15,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "newBlockingQueue(queueSize)"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 110,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public start() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private dispatchEvents() : void inlined to private connectSocketAndDispatchEvents() : void in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 231,
+		"endLine": 258,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private dispatchEvents() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 7,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 7,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 232,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 251,
+		"endLine": 253,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 253,
+		"endLine": 257,
+		"startColumn": 15,
+		"endColumn": 6,
+		"codeElementType": "FINALLY_BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "dispatchEvents()"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 7,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 7,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 244,
+		"endLine": 249,
+		"startColumn": 61,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 244,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 238,
+		"endLine": 250,
+		"startColumn": 20,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 238,
+		"endLine": 250,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 11,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 11,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 11,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 11,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 205,
+		"endLine": 215,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 209,
+		"endLine": 211,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 19,
+		"endColumn": 10,
+		"codeElementType": "FINALLY_BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public testDispatchEvent() : void from class ch.qos.logback.core.net.AbstractSocketAppenderTest to public dispatchesEvents() : void from class ch.qos.logback.core.net.AbstractSocketAppenderIntegrationTest",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderTest.java",
+		"startLine": 198,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testDispatchEvent() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderIntegrationTest.java",
+		"startLine": 76,
+		"endLine": 99,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public dispatchesEvents() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private instrumentedAppender : InstrumentedSocketAppender from class ch.qos.logback.core.net.AbstractSocketAppenderTest to private instrumentedAppender : InstrumentedSocketAppender from class ch.qos.logback.core.net.AbstractSocketAppenderIntegrationTest",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 38,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private instrumentedAppender : InstrumentedSocketAppender"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderIntegrationTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 38,
+		"endColumn": 126,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private instrumentedAppender : InstrumentedSocketAppender"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public run() : void from class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DELAY : int to TIMEOUT : int in class ch.qos.logback.core.net.AbstractSocketAppenderTest",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderTest.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DELAY : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/test/java/ch/qos/logback/core/net/AbstractSocketAppenderTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "TIMEOUT : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute queue : BlockingQueue<E> to deque : BlockingDeque<E> in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "queue : BlockingQueue<E>"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deque : BlockingDeque<E>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private waitForConnectorToReturnASocket() : Socket renamed to private waitForConnectorToReturnSocket() : Socket in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 221,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private waitForConnectorToReturnASocket() : Socket"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 248,
+		"endLine": 256,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private waitForConnectorToReturnSocket() : Socket"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public run() : void renamed to private connectSocketAndDispatchEvents() : void in class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 175,
+		"endLine": 198,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 191,
+		"endLine": 222,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private connectSocketAndDispatchEvents() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable oos : ObjectOutputStream to objectWriter : ObjectWriter in method private createObjectWriterForSocket() : ObjectWriter from class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 26,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "oos : ObjectOutputStream"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 18,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "objectWriter : ObjectWriter"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 5,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable serEvent : Serializable to serializableEvent : Serializable in method private dispatchEvents(objectWriter ObjectWriter) : void from class ch.qos.logback.core.net.AbstractSocketAppender",
+	"leftSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 22,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "serEvent : Serializable"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 20,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "serializableEvent : Serializable"
+}, {
+		"filePath": "logback-core/src/main/java/ch/qos/logback/core/net/AbstractSocketAppender.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

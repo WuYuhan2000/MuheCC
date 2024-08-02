@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "44a27c5cd76f44e435671c69d1d8f60c42a2b420",
+	"url": "https://github.com/apache/hbase/commit/44a27c5cd76f44e435671c69d1d8f60c42a2b420",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type stopper : Stoppable to server : Server in class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "stopper : Stoppable"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "server : Server"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type stopper : Stoppable to server : Server in method protected getReplicationSource(conf Configuration, fs FileSystem, manager ReplicationSourceManager, replicationQueues ReplicationQueues, replicationPeers ReplicationPeers, server Server, peerId String, clusterId UUID, peerConfig ReplicationPeerConfig, replicationPeer ReplicationPeer) : ReplicationSourceInterface from class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "stopper : Stoppable"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 402,
+		"endLine": 403,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "server : Server"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 416,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type stopper : Stoppable to server : Server in method public ReplicationSourceManager(replicationQueues ReplicationQueues, replicationPeers ReplicationPeers, replicationTracker ReplicationTracker, conf Configuration, server Server, fs FileSystem, logDir Path, oldLogDir Path, clusterId UUID) from class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 33,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "stopper : Stoppable"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "server : Server"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute stopper : Stoppable to server : Server in class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 27,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "stopper : Stoppable"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 24,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "server : Server"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter stopper : Stoppable to server : Server in method protected getReplicationSource(conf Configuration, fs FileSystem, manager ReplicationSourceManager, replicationQueues ReplicationQueues, replicationPeers ReplicationPeers, server Server, peerId String, clusterId UUID, peerConfig ReplicationPeerConfig, replicationPeer ReplicationPeer) : ReplicationSourceInterface from class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "stopper : Stoppable"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 402,
+		"endLine": 403,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "server : Server"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 416,
+		"endLine": 417,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter stopper : Stoppable to server : Server in method public ReplicationSourceManager(replicationQueues ReplicationQueues, replicationPeers ReplicationPeers, replicationTracker ReplicationTracker, conf Configuration, server Server, fs FileSystem, logDir Path, oldLogDir Path, clusterId UUID) from class org.apache.hadoop.hbase.replication.regionserver.ReplicationSourceManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 33,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "stopper : Stoppable"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "server : Server"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/replication/regionserver/ReplicationSourceManager.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,138 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "83d5b1e6a0280cc78625bacc2d3f7d1676c7385e",
+	"url": "https://github.com/JetBrains/kotlin/commit/83d5b1e6a0280cc78625bacc2d3f7d1676c7385e",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public getBuiltInClassByName(simpleName Name) : ClassDescriptor extracted from private getBuiltInClassByName(simpleName String) : ClassDescriptor in class org.jetbrains.jet.lang.types.lang.KotlinBuiltIns",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 336,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private getBuiltInClassByName(simpleName String) : ClassDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 9,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 127,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 336,
+		"endLine": 341,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getBuiltInClassByName(simpleName Name) : ClassDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 127,
+		"codeElementType": "ASSERT_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 343,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getBuiltInClassByName(simpleName String) : ClassDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/lang/types/lang/KotlinBuiltIns.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getBuiltInClassByName(Name.identifier(simpleName))"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public testOneVal() : void from class org.jetbrains.jet.lang.resolve.lazy.LazyResolveNamespaceComparingTestGenerated.LoadKotlin.DataClass",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/jet/lang/resolve/lazy/LazyResolveNamespaceComparingTestGenerated.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 45,
+		"endColumn": 54,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "compiler/tests/org/jetbrains/jet/lang/resolve/lazy/LazyResolveNamespaceComparingTestGenerated.java",
+		"startLine": 307,
+		"endLine": 310,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testOneVal() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/jet/lang/resolve/lazy/LazyResolveNamespaceComparingTestGenerated.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public testOneVal() : void"
+}]
+}
+]
+}]
+}

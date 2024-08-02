@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "b2107efb3355d921350058e3caaede813cc7795c",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/b2107efb3355d921350058e3caaede813cc7795c",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in class org.restlet.ext.script.internal.ExposedScriptedTextResourceContainer",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ExposedScriptedTextResourceContainer.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 55,
+		"endColumn": 116,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ExposedScriptedTextResourceContainer.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in class org.restlet.ext.script.internal.ScriptedTextStreamingRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 55,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in method public ScriptedTextStreamingRepresentation(resource ScriptedTextResource, container ExposedScriptedTextResourceContainer, embeddedScriptContext EmbeddedScriptContext, scriptContextController ScriptContextController, script EmbeddedScript, flushLines boolean) from class org.restlet.ext.script.internal.ScriptedTextStreamingRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}, {
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}, {
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in class org.restlet.ext.script.internal.ExposedScriptedTextResourceContainer",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ExposedScriptedTextResourceContainer.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 55,
+		"endColumn": 116,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ExposedScriptedTextResourceContainer.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in class org.restlet.ext.script.internal.ScriptedTextStreamingRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 55,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 41,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter scriptEngines : ConcurrentMap<String,ScriptEngine> to embeddedScriptContext : EmbeddedScriptContext in method public ScriptedTextStreamingRepresentation(resource ScriptedTextResource, container ExposedScriptedTextResourceContainer, embeddedScriptContext EmbeddedScriptContext, scriptContextController ScriptContextController, script EmbeddedScript, flushLines boolean) from class org.restlet.ext.script.internal.ScriptedTextStreamingRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scriptEngines : ConcurrentMap<String,ScriptEngine>"
+}, {
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "embeddedScriptContext : EmbeddedScriptContext"
+}, {
+		"filePath": "modules/org.restlet.ext.script/src/org/restlet/ext/script/internal/ScriptedTextStreamingRepresentation.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

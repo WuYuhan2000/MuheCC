@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "74c7d6e7ed1ec3eb4e2f20f6790d9aedb8cd01d5",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/74c7d6e7ed1ec3eb4e2f20f6790d9aedb8cd01d5",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class org.eclipse.mylyn.reviews.tasks.ui.internal.editors.ReviewSummaryTaskEditorPart.ScopeViewerFilter",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.ui/src/org/eclipse/mylyn/reviews/tasks/ui/internal/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 192,
+		"endLine": 201,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.eclipse.mylyn.reviews.tasks.ui.internal.editors.ReviewSummaryTaskEditorPart.ScopeViewerFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.ui/src/org/eclipse/mylyn/reviews/tasks/ui/internal/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 192,
+		"endLine": 201,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "org.eclipse.mylyn.reviews.tasks.ui.internal.editors.ReviewSummaryTaskEditorPart.ScopeViewerFilter"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type type : String to type : Entry<String,Counter> in method private convertScopeToDescription() : String from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewScopeNode",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 8,
+		"endColumn": 19,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "type : String"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 4,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 8,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "type : Entry<String,Counter>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewScopeNode.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 4,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

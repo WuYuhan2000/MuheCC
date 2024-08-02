@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "0ab9ab9ce7eeaeb195740d36de05daa0fe3b003c",
+	"url": "https://github.com/apache/hbase/commit/0ab9ab9ce7eeaeb195740d36de05daa0fe3b003c",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter conf : Configuration in method private parseArguments(conf Configuration, options Options, args String[]) : CommandLine from class org.apache.hadoop.hbase.thrift2.ThriftServer",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 108,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseArguments(options Options, args String[]) : CommandLine"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 45,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 110,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private parseArguments(conf Configuration, options Options, args String[]) : CommandLine"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IOException in method private parseArguments(conf Configuration, options Options, args String[]) : CommandLine from class org.apache.hadoop.hbase.thrift2.ThriftServer",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 108,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseArguments(options Options, args String[]) : CommandLine"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 30,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 110,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "private parseArguments(conf Configuration, options Options, args String[]) : CommandLine"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable genParser : GenericOptionsParser in method private parseArguments(conf Configuration, options Options, args String[]) : CommandLine from class org.apache.hadoop.hbase.thrift2.ThriftServer",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 26,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "genParser : GenericOptionsParser"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable remainingArgs : String[] in method private parseArguments(conf Configuration, options Options, args String[]) : CommandLine from class org.apache.hadoop.hbase.thrift2.ThriftServer",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 14,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "remainingArgs : String[]"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/thrift2/ThriftServer.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

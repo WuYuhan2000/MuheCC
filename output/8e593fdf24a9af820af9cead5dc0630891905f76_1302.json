@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "8e593fdf24a9af820af9cead5dc0630891905f76",
+	"url": "https://github.com/apache/deltaspike/commit/8e593fdf24a9af820af9cead5dc0630891905f76",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter category : String in method public getMessage(messageContext MessageContext, messageTemplate String, category String) : String from class org.apache.deltaspike.core.api.message.MessageResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/message/MessageResolver.java",
+		"startLine": 31,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessage(messageContext MessageContext, messageTemplate String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/message/MessageResolver.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 78,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "category : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/message/MessageResolver.java",
+		"startLine": 31,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getMessage(messageContext MessageContext, messageTemplate String, category String) : String"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter category : String in method public getMessage(messageContext MessageContext, messageTemplate String, category String) : String from class org.apache.deltaspike.test.core.api.message.TestMessageResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 38,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessage(messageContext MessageContext, messageTemplate String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 85,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "category : String"
+}, {
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 38,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getMessage(messageContext MessageContext, messageTemplate String, category String) : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable resolvedBundle : ResourceBundle to messageBundle : ResourceBundle in method public getMessage(messageContext MessageContext, messageTemplate String, category String) : String from class org.apache.deltaspike.test.core.api.message.TestMessageResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 46,
+		"endLine": 47,
+		"startColumn": 32,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resolvedBundle : ResourceBundle"
+}, {
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 46,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 46,
+		"endLine": 47,
+		"startColumn": 32,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "messageBundle : ResourceBundle"
+}, {
+		"filePath": "deltaspike/core/impl/src/test/java/org/apache/deltaspike/test/core/api/message/TestMessageResolver.java",
+		"startLine": 46,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

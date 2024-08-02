@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "e62058be691ad452be79c96d0738207d34d55ea3",
+	"url": "https://github.com/apache/deltaspike/commit/e62058be691ad452be79c96d0738207d34d55ea3",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private rollbackAllTransactions(entityManagerEntryList Set<EntityManagerEntry>) : void extracted from public execute(invocationContext InvocationContext) : Object in class org.apache.deltaspike.jpa.impl.transaction.ResourceLocalTransactionStrategy",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 71,
+		"endLine": 249,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public execute(invocationContext InvocationContext) : Object"
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 21,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 29,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 141,
+		"endLine": 143,
+		"startColumn": 33,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 133,
+		"endLine": 145,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 139,
+		"endLine": 144,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 137,
+		"endLine": 145,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 131,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 128,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 140,
+		"endLine": 144,
+		"startColumn": 29,
+		"endColumn": 30,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 132,
+		"endLine": 146,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 129,
+		"endLine": 147,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 258,
+		"endLine": 280,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private rollbackAllTransactions(entityManagerEntryList Set<EntityManagerEntry>) : void"
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 273,
+		"endLine": 275,
+		"startColumn": 25,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 265,
+		"endLine": 277,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 271,
+		"endLine": 276,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 269,
+		"endLine": 277,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 263,
+		"endLine": 278,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 260,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 272,
+		"endLine": 276,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 264,
+		"endLine": 278,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 261,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 71,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public execute(invocationContext InvocationContext) : Object"
+}, {
+		"filePath": "deltaspike/modules/jpa/impl/src/main/java/org/apache/deltaspike/jpa/impl/transaction/ResourceLocalTransactionStrategy.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 21,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "rollbackAllTransactions(entityManagerEntryList)"
+}]
+}
+]
+}]
+}

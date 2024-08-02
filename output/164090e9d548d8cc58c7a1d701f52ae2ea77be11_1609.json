@@ -1,0 +1,153 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/mitreid-connect/openid-connect-java-spring-server",
+	"sha1": "164090e9d548d8cc58c7a1d701f52ae2ea77be11",
+	"url": "https://github.com/mitreid-connect/openid-connect-java-spring-server/commit/164090e9d548d8cc58c7a1d701f52ae2ea77be11",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private invalidateString() : void extracted from public setClaim(key String, prim JsonPrimitive) : void in class org.mitre.jwt.model.ClaimSet",
+	"leftSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 103,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setClaim(key String, prim JsonPrimitive) : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 121,
+		"endLine": 123,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private invalidateString() : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 103,
+		"endLine": 119,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setClaim(key String, prim JsonPrimitive) : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "invalidateString()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private invalidateString() : void extracted from public setClaim(key String, value Object) : void in class org.mitre.jwt.model.ClaimSet",
+	"leftSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 95,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setClaim(key String, value Object) : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 121,
+		"endLine": 123,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private invalidateString() : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 95,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setClaim(key String, value Object) : void"
+}, {
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 6,
+		"endColumn": 24,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "invalidateString()"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public toString() : String renamed to public toJsonString() : String in class org.mitre.jwt.model.ClaimSet",
+	"leftSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 211,
+		"endLine": 216,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toString() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "openid-connect-common/src/main/java/org/mitre/jwt/model/ClaimSet.java",
+		"startLine": 220,
+		"endLine": 225,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public toJsonString() : String"
+}]
+}
+]
+}]
+}

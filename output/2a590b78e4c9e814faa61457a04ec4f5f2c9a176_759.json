@@ -1,0 +1,648 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "2a590b78e4c9e814faa61457a04ec4f5f2c9a176",
+	"url": "https://github.com/orientechnologies/orientdb/commit/2a590b78e4c9e814faa61457a04ec4f5f2c9a176",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected installDatabase(distrDatabase OHazelcastDistributedDatabase, databaseName String, dbPath String, iNode String, iDatabaseCompressedFile String) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 723,
+		"endLine": 751,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private installDatabase(distrDatabase OHazelcastDistributedDatabase, databaseName String, dbPath String, iNode String, iDatabaseCompressedFile String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 757,
+		"endLine": 789,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected installDatabase(distrDatabase OHazelcastDistributedDatabase, databaseName String, dbPath String, iNode String, iDatabaseCompressedFile String) : void"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void extracted from protected checkLocalNodeInConfiguration() : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastDistributedDatabase & moved to class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 501,
+		"endLine": 540,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected checkLocalNodeInConfiguration() : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 538,
+		"endLine": 538,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 739,
+		"endLine": 745,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 744,
+		"endLine": 744,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 500,
+		"endLine": 537,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected checkLocalNodeInConfiguration() : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 7,
+		"endColumn": 91,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "manager.updateCachedDatabaseConfiguration(databaseName,cfg.serialize(),true,true)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 740,
+		"endLine": 740,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 742,
+		"endLine": 744,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void extracted from protected removeNodeInConfiguration(iNode String, iForce boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastDistributedDatabase & moved to class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 542,
+		"endLine": 580,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected removeNodeInConfiguration(iNode String, iForce boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 578,
+		"endLine": 578,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 739,
+		"endLine": 745,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 744,
+		"endLine": 744,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 539,
+		"endLine": 575,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected removeNodeInConfiguration(iNode String, iForce boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 7,
+		"endColumn": 91,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "manager.updateCachedDatabaseConfiguration(databaseName,cfg.serialize(),true,true)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 740,
+		"endLine": 740,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 742,
+		"endLine": 744,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected writeDatabaseChunk(iChunkId int, chunk ODistributedDatabaseChunk, out FileOutputStream) : long extracted from protected installNewDatabases(iStartup boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 681,
+		"endLine": 681,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 747,
+		"endLine": 755,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected writeDatabaseChunk(iChunkId int, chunk ODistributedDatabaseChunk, out FileOutputStream) : long"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 752,
+		"endLine": 752,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 737,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 686,
+		"endLine": 686,
+		"startColumn": 37,
+		"endColumn": 70,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "writeDatabaseChunk(1,chunk,out)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 699,
+		"endLine": 699,
+		"startColumn": 39,
+		"endColumn": 79,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "writeDatabaseChunk(chunkNum,chunk,out)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 750,
+		"endLine": 751,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 754,
+		"endLine": 754,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected writeDatabaseChunk(iChunkId int, chunk ODistributedDatabaseChunk, out FileOutputStream) : long extracted from protected installNewDatabases(iStartup boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 694,
+		"endLine": 694,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 747,
+		"endLine": 755,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected writeDatabaseChunk(iChunkId int, chunk ODistributedDatabaseChunk, out FileOutputStream) : long"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 752,
+		"endLine": 752,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 737,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 686,
+		"endLine": 686,
+		"startColumn": 37,
+		"endColumn": 70,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "writeDatabaseChunk(1,chunk,out)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 699,
+		"endLine": 699,
+		"startColumn": 39,
+		"endColumn": 79,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "writeDatabaseChunk(chunkNum,chunk,out)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 750,
+		"endLine": 751,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 754,
+		"endLine": 754,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void extracted from protected loadDatabaseConfiguration(iDatabaseName String, file File) : ODocument in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 753,
+		"endLine": 769,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected loadDatabaseConfiguration(iDatabaseName String, file File) : ODocument"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 762,
+		"endLine": 762,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 739,
+		"endLine": 745,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean, iDeployToCluster boolean) : void"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 744,
+		"endLine": 744,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 791,
+		"endLine": 807,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected loadDatabaseConfiguration(iDatabaseName String, file File) : ODocument"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 800,
+		"endLine": 800,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "updateCachedDatabaseConfiguration(iDatabaseName,cfg,false,false)"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 740,
+		"endLine": 740,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 742,
+		"endLine": 744,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable chunk : ODistributedDatabaseChunk in method public execute(iServer OServer, iManager ODistributedServerManager, database ODatabaseDocumentTx) : Object from class com.orientechnologies.orient.server.distributed.task.ODeployDatabaseTask",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/task/ODeployDatabaseTask.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 11,
+		"endColumn": 70,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/task/ODeployDatabaseTask.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 43,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "chunk : ODistributedDatabaseChunk"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/task/ODeployDatabaseTask.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 11,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable f : File in method protected installDatabase(distrDatabase OHazelcastDistributedDatabase, databaseName String, dbPath String, iNode String, iDatabaseCompressedFile String) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 729,
+		"endLine": 729,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 763,
+		"endLine": 763,
+		"startColumn": 12,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "f : File"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 768,
+		"endLine": 768,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable doc : ODocument in method protected checkLocalNodeInConfiguration() : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastDistributedDatabase",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 536,
+		"endLine": 536,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "doc : ODocument"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 537,
+		"endLine": 537,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 535,
+		"endLine": 535,
+		"startColumn": 7,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable doc : ODocument in method protected removeNodeInConfiguration(iNode String, iForce boolean) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastDistributedDatabase",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 576,
+		"endLine": 576,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "doc : ODocument"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 577,
+		"endLine": 577,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastDistributedDatabase.java",
+		"startLine": 573,
+		"endLine": 573,
+		"startColumn": 7,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Method",
+	"description": "Merge Method [public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument) : void, protected saveDatabaseConfiguration(iDatabaseName String, cfg ODocument) : void] to public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean) : void in class com.orientechnologies.orient.server.distributed.ODistributedAbstractPlugin",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/ODistributedAbstractPlugin.java",
+		"startLine": 214,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "merged method declaration",
+		"codeElement": "public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument) : void"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/ODistributedAbstractPlugin.java",
+		"startLine": 238,
+		"endLine": 272,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "merged method declaration",
+		"codeElement": "protected saveDatabaseConfiguration(iDatabaseName String, cfg ODocument) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/distributed/ODistributedAbstractPlugin.java",
+		"startLine": 214,
+		"endLine": 260,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "new method declaration",
+		"codeElement": "public updateCachedDatabaseConfiguration(iDatabaseName String, cfg ODocument, iSaveToDisk boolean) : void"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable out : FileOutputStream in method protected installNewDatabases(iStartup boolean) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin",
+	"leftSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 44,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "out : FileOutputStream"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 721,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 36,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "out : FileOutputStream"
+}, {
+		"filePath": "distributed/src/main/java/com/orientechnologies/orient/server/hazelcast/OHazelcastPlugin.java",
+		"startLine": 617,
+		"endLine": 737,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected installNewDatabases(iStartup boolean) : void"
+}]
+}
+]
+}]
+}

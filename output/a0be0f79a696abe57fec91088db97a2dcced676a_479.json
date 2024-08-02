@@ -1,0 +1,234 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "a0be0f79a696abe57fec91088db97a2dcced676a",
+	"url": "https://github.com/kiegroup/drools/commit/a0be0f79a696abe57fec91088db97a2dcced676a",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package isKieExtension(fileName String) : boolean from class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isKieExtension(fileName String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 201,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package isKieExtension(fileName String) : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package isKieExtension(fileName String) : boolean from class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isKieExtension(fileName String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 201,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package isKieExtension(fileName String) : boolean"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ClassLoader to void in method private compileJavaClasses() : void from class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ClassLoader"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 365,
+		"endLine": 403,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private compileJavaClasses() : ClassLoader"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 362,
+		"endLine": 362,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 362,
+		"endLine": 398,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private compileJavaClasses() : void"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private RESOURCES_ROOT : String in class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 125,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 33,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private RESOURCES_ROOT : String"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 118,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute resourcesRoot : String to RESOURCES_ROOT : String in method private addKBaseFilesToTrg(kieBase KieBaseModel) : void from class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 16,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resourcesRoot : String"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 157,
+		"endLine": 159,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 33,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "RESOURCES_ROOT : String"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 155,
+		"endLine": 157,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute resourcesRoot : String to RESOURCES_ROOT : String in method private addMetaInfBuilder() : void from class org.kie.builder.impl.KieBuilderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 16,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resourcesRoot : String"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 169,
+		"endLine": 171,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 167,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 33,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "RESOURCES_ROOT : String"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieBuilderImpl.java",
+		"startLine": 164,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

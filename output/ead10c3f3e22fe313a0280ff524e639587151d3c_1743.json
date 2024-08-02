@@ -1,0 +1,165 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/gitools/gitools",
+	"sha1": "ead10c3f3e22fe313a0280ff524e639587151d3c",
+	"url": "https://github.com/gitools/gitools/commit/ead10c3f3e22fe313a0280ff524e639587151d3c",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type analysis : ClusteringAnalysis to clusterParameters : Properties in method public actionPerformed(e ActionEvent) : void from class org.gitools.ui.actions.data.ClusteringAction",
+	"leftSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/analysis/ClusteringAction.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "analysis : ClusteringAnalysis"
+}, {
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/analysis/ClusteringAction.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/data/ClusteringAction.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "clusterParameters : Properties"
+}, {
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/data/ClusteringAction.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.gitools.ui.actions.analysis.ClusteringAction moved to org.gitools.ui.actions.data.ClusteringAction",
+	"leftSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/analysis/ClusteringAction.java",
+		"startLine": 36,
+		"endLine": 92,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.gitools.ui.actions.analysis.ClusteringAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/data/ClusteringAction.java",
+		"startLine": 33,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.gitools.ui.actions.data.ClusteringAction"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getParams() : Properties from class org.gitools.analysis.clustering.ClusteringAnalysis to public getParams() : Properties from class org.gitools.ui.dialog.clustering.ClusteringDialog",
+	"leftSideLocations": [{
+		"filePath": "gitools-core/src/main/java/org/gitools/analysis/clustering/ClusteringAnalysis.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParams() : Properties"
+}],
+	"rightSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/dialog/clustering/ClusteringDialog.java",
+		"startLine": 242,
+		"endLine": 244,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getParams() : Properties"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public setParams(params Properties) : void from class org.gitools.analysis.clustering.ClusteringAnalysis to public setParams(params Properties) : void from class org.gitools.ui.dialog.clustering.ClusteringDialog",
+	"leftSideLocations": [{
+		"filePath": "gitools-core/src/main/java/org/gitools/analysis/clustering/ClusteringAnalysis.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setParams(params Properties) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/dialog/clustering/ClusteringDialog.java",
+		"startLine": 246,
+		"endLine": 248,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setParams(params Properties) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable analysis : ClusteringAnalysis to clusterParameters : Properties in method public actionPerformed(e ActionEvent) : void from class org.gitools.ui.actions.data.ClusteringAction",
+	"leftSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/analysis/ClusteringAction.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "analysis : ClusteringAnalysis"
+}, {
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/analysis/ClusteringAction.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/data/ClusteringAction.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "clusterParameters : Properties"
+}, {
+		"filePath": "gitools-ui/src/main/java/org/gitools/ui/actions/data/ClusteringAction.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

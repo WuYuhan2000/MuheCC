@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "8c475876dda2507977fd7282c37462136400daf2",
+	"url": "https://github.com/kiegroup/drools/commit/8c475876dda2507977fd7282c37462136400daf2",
+	"refactorings": [{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable stage : Stage in method public testWaltz() : void from class org.drools.integrationtests.waltz.Waltz",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/test/java/org/drools/integrationtests/waltz/Waltz.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 25,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "stage : Stage"
+}, {
+		"filePath": "drools-compiler/src/test/java/org/drools/integrationtests/waltz/Waltz.java",
+		"startLine": 46,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testWaltz() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/test/java/org/drools/integrationtests/waltz/Waltz.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "stage : Stage"
+}, {
+		"filePath": "drools-compiler/src/test/java/org/drools/integrationtests/waltz/Waltz.java",
+		"startLine": 46,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public testWaltz() : void"
+}]
+}
+]
+}]
+}

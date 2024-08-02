@@ -1,0 +1,249 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/sanity/quickml",
+	"sha1": "c875e8e95e946a84128f141afb22e449cbb1a024",
+	"url": "https://github.com/sanity/quickml/commit/c875e8e95e946a84128f141afb22e449cbb1a024",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public getOptimizedDownsampledRandomForest(trainingData List<T>, rebuildsPerValidation int, fractionOfDataForValidation double, lossFunction ClassifierLossFunction, dateTimeExtractor DateTimeExtractor, modelBuilder DownsamplingClassifierBuilder<ClassifierInstance>, config Map<String,FieldValueRecommender>) : Pair<Map<String,Object>,DownsamplingClassifier> extracted from public getOptimizedDownsampledRandomForest(trainingData List<T>, rebuildsPerValidation int, fractionOfDataForValidation double, lossFunction ClassifierLossFunction, dateTimeExtractor DateTimeExtractor, config Map<String,FieldValueRecommender>) : Pair<Map<String,Object>,DownsamplingClassifier> in class quickml.supervised.classifier.StaticBuilders",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 51,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getOptimizedDownsampledRandomForest(trainingData List<T>, rebuildsPerValidation int, fractionOfDataForValidation double, lossFunction ClassifierLossFunction, dateTimeExtractor DateTimeExtractor, config Map<String,FieldValueRecommender>) : Pair<Map<String,Object>,DownsamplingClassifier>"
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 142,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 192,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 122,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 63,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 51,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getOptimizedDownsampledRandomForest(trainingData List<T>, rebuildsPerValidation int, fractionOfDataForValidation double, lossFunction ClassifierLossFunction, dateTimeExtractor DateTimeExtractor, modelBuilder DownsamplingClassifierBuilder<ClassifierInstance>, config Map<String,FieldValueRecommender>) : Pair<Map<String,Object>,DownsamplingClassifier>"
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 142,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 192,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 122,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 135,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 64,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 80,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getOptimizedDownsampledRandomForest(trainingData List<T>, rebuildsPerValidation int, fractionOfDataForValidation double, lossFunction ClassifierLossFunction, dateTimeExtractor DateTimeExtractor, config Map<String,FieldValueRecommender>) : Pair<Map<String,Object>,DownsamplingClassifier>"
+}, {
+		"filePath": "src/main/java/quickml/supervised/classifier/StaticBuilders.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 16,
+		"endColumn": 173,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getOptimizedDownsampledRandomForest(trainingData,rebuildsPerValidation,fractionOfDataForValidation,lossFunction,dateTimeExtractor,modelBuilder,config)"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,135 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/coremedia/jangaroo-tools",
+	"sha1": "88cb6d10438fe158268c3ad3a6bed65feb95b9d9",
+	"url": "https://github.com/coremedia/jangaroo-tools/commit/88cb6d10438fe158268c3ad3a6bed65feb95b9d9",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter lParen : JooSymbol in method public AssertStatement(symAssert JooSymbol, lParen JooSymbol, expr Expr, rParen JooSymbol, symSemicolon JooSymbol) from class net.jangaroo.jooc.AssertStatement",
+	"leftSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AssertStatement(symAssert JooSymbol, expr Expr, symSemicolon JooSymbol)"
+}],
+	"rightSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 47,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lParen : JooSymbol"
+}, {
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public AssertStatement(symAssert JooSymbol, lParen JooSymbol, expr Expr, rParen JooSymbol, symSemicolon JooSymbol)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter rParen : JooSymbol in method public AssertStatement(symAssert JooSymbol, lParen JooSymbol, expr Expr, rParen JooSymbol, symSemicolon JooSymbol) from class net.jangaroo.jooc.AssertStatement",
+	"leftSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AssertStatement(symAssert JooSymbol, expr Expr, symSemicolon JooSymbol)"
+}],
+	"rightSideLocations": [{
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 76,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "rParen : JooSymbol"
+}, {
+		"filePath": "jooc/src/main/java/net/jangaroo/jooc/AssertStatement.java",
+		"startLine": 28,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public AssertStatement(symAssert JooSymbol, lParen JooSymbol, expr Expr, rParen JooSymbol, symSemicolon JooSymbol)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected jsFileName(qualifiedJooClassName String) : String extracted from protected loadClass(qualifiedJooClassName String) : void in class net.jangaroo.test.integration.JooRuntimeTestCase",
+	"leftSideLocations": [{
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 100,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected loadClass(qualifiedJooClassName String) : void"
+}, {
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 104,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected jsFileName(qualifiedJooClassName String) : String"
+}, {
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected loadClass(qualifiedJooClassName String) : void"
+}, {
+		"filePath": "jooc/src/test/java/net/jangaroo/test/integration/JooRuntimeTestCase.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 25,
+		"endColumn": 58,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "jsFileName(qualifiedJooClassName)"
+}]
+}
+]
+}]
+}

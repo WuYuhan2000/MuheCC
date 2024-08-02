@@ -1,0 +1,528 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hama",
+	"sha1": "034047b601b9069b2ddef56a8476f13f9138d5e4",
+	"url": "https://github.com/apache/hama/commit/034047b601b9069b2ddef56a8476f13f9138d5e4",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressWarnings(\"rawtypes\") in class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 290,
+		"endLine": 325,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hama.bsp.LocalBSPRunner.ThreadObserver"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 288,
+		"endLine": 288,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 288,
+		"endLine": 327,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.hama.bsp.LocalBSPRunner.ThreadObserver"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public getPos() : long from class org.apache.hama.bsp.BSPPeerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPos() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 352,
+		"endLine": 358,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getPos() : long"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public getSplitSize() : long from class org.apache.hama.bsp.BSPPeerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 344,
+		"endLine": 349,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSplitSize() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 344,
+		"endLine": 350,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getSplitSize() : long"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method public getPartitioner() : Partitioner<V,M> from class org.apache.hama.graph.Vertex",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 151,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPartitioner() : Partitioner<V,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 170,
+		"endLine": 176,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getPartitioner() : Partitioner<V,M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private numTasks : int from class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package status : JobStatus"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private numTasks : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage> from class org.apache.hama.graph.GraphJobRunnerBase",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 76,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobRunnerBase.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 78,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to package in attribute package runner : GraphJobRunner<?,?,?> from class org.apache.hama.graph.Vertex",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected runner : GraphJobRunner<V,E,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package runner : GraphJobRunner<?,?,?>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type runner : GraphJobRunner<V,E,M> to runner : GraphJobRunner<?,?,?> in class org.apache.hama.graph.Vertex",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "runner : GraphJobRunner<V,E,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "runner : GraphJobRunner<?,?,?>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type status : JobStatus to numTasks : int in class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "status : JobStatus"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "numTasks : int"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type currentJobStatus : JobStatus to numTasks : int in method public ThreadObserver(numTasks int, completionService ExecutorCompletionService<BSPPeerImpl>) from class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentJobStatus : JobStatus"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "numTasks : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : InterruptedException to e : Exception in method public run() : void from class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : InterruptedException"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 11,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 11,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public getPeer() : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage> extracted from public getPeer() : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage> in class org.apache.hama.graph.Vertex & moved to class org.apache.hama.graph.GraphJobRunnerBase",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPeer() : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobRunnerBase.java",
+		"startLine": 461,
+		"endLine": 463,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getPeer() : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobRunnerBase.java",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 163,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPeer() : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}, {
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "runner.getPeer()"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage> from class org.apache.hama.graph.Vertex to protected peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage> from class org.apache.hama.graph.GraphJobRunnerBase",
+	"leftSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/Vertex.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 76,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graph/src/main/java/org/apache/hama/graph/GraphJobRunnerBase.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 78,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected peer : BSPPeer<Writable,Writable,Writable,Writable,GraphJobMessage>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"rawtypes\") in method public run() : void from class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 298,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 301,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public run() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute status : JobStatus to numTasks : int in class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "status : JobStatus"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 23,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "numTasks : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter currentJobStatus : JobStatus to numTasks : int in method public ThreadObserver(numTasks int, completionService ExecutorCompletionService<BSPPeerImpl>) from class org.apache.hama.bsp.LocalBSPRunner.ThreadObserver",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentJobStatus : JobStatus"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 27,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "numTasks : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

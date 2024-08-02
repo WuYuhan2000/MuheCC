@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "42d5bdd3378bbd246a5ecf4a3c09f76f519e4e9b",
+	"url": "https://github.com/elastic/elasticsearch/commit/42d5bdd3378bbd246a5ecf4a3c09f76f519e4e9b",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter missingValue : Object in method protected createInnerFieldComparator(fieldName String, sortMode SortMode, missingValue Object) : IndexFieldData.XFieldComparatorSource from class org.elasticsearch.test.unit.index.search.nested.LongNestedSortingTests",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/unit/index/search/nested/LongNestedSortingTests.java",
+		"startLine": 40,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createInnerFieldComparator(fieldName String, sortMode SortMode) : IndexFieldData.XFieldComparatorSource"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/test/unit/index/search/nested/LongNestedSortingTests.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 117,
+		"endColumn": 136,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "missingValue : Object"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/test/unit/index/search/nested/LongNestedSortingTests.java",
+		"startLine": 40,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected createInnerFieldComparator(fieldName String, sortMode SortMode, missingValue Object) : IndexFieldData.XFieldComparatorSource"
+}]
+}
+]
+}]
+}

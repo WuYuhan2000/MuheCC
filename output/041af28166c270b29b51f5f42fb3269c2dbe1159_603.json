@@ -1,0 +1,297 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "041af28166c270b29b51f5f42fb3269c2dbe1159",
+	"url": "https://github.com/JetBrains/kotlin/commit/041af28166c270b29b51f5f42fb3269c2dbe1159",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Deprecated in class kotlin.jvm.internal.KotlinClass.Kind",
+	"leftSideLocations": [{
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 38,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "kotlin.jvm.internal.KotlinClass.Kind"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 39,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "kotlin.jvm.internal.KotlinClass.Kind"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Deprecated in method public kind() : Kind from class kotlin.jvm.internal.KotlinClass",
+	"leftSideLocations": [{
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "ANNOTATION_TYPE_MEMBER_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public kind() : Kind"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "core/runtime.jvm/src/kotlin/jvm/internal/KotlinClass.java",
+		"startLine": 36,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "ANNOTATION_TYPE_MEMBER_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public kind() : Kind"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter annotationFqNames : FqName... in method private doTest(code String, classFilePart String, annotationFqNames FqName...) : void from class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 152,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doTest(code String, classFilePart String, annotationName JvmClassName, expectedKind String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "annotationFqNames : FqName..."
+}, {
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 139,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private doTest(code String, classFilePart String, annotationFqNames FqName...) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable fqName : FqName in method public visitAnnotation(classId ClassId, source SourceElement) : AnnotationArgumentVisitor from class org.jetbrains.kotlin.load.kotlin.header.ReadKotlinClassHeaderAnnotationVisitor",
+	"leftSideLocations": [{
+		"filePath": "core/descriptor.loader.java/src/org/jetbrains/kotlin/load/kotlin/header/ReadKotlinClassHeaderAnnotationVisitor.java",
+		"startLine": 109,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/descriptor.loader.java/src/org/jetbrains/kotlin/load/kotlin/header/ReadKotlinClassHeaderAnnotationVisitor.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 16,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "fqName : FqName"
+}, {
+		"filePath": "core/descriptor.loader.java/src/org/jetbrains/kotlin/load/kotlin/header/ReadKotlinClassHeaderAnnotationVisitor.java",
+		"startLine": 106,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter annotationName : JvmClassName in method private doTest(code String, classFilePart String, annotationName JvmClassName, expectedKind String) : void from class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "annotationName : JvmClassName"
+}, {
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 152,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doTest(code String, classFilePart String, annotationName JvmClassName, expectedKind String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 139,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doTest(code String, classFilePart String, annotationFqNames FqName...) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter expectedKind : KotlinClass.Kind in method private doTestKotlinClass(code String, classFilePart String, expectedKind KotlinClass.Kind) : void from class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "expectedKind : KotlinClass.Kind"
+}, {
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 144,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doTestKotlinClass(code String, classFilePart String, expectedKind KotlinClass.Kind) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 135,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doTestKotlinClass(code String, classFilePart String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter expectedKind : String in method private assertAnnotatedWithKind(aClass Class<?>, annotationFqName String, expectedKind String) : void from class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "expectedKind : String"
+}, {
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 175,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assertAnnotatedWithKind(aClass Class<?>, annotationFqName String, expectedKind String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 163,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private assertAnnotatedWith(aClass Class<?>, annotationFqName String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter expectedKind : String in method private doTest(code String, classFilePart String, annotationName JvmClassName, expectedKind String) : void from class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "expectedKind : String"
+}, {
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 152,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doTest(code String, classFilePart String, annotationName JvmClassName, expectedKind String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 139,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doTest(code String, classFilePart String, annotationFqNames FqName...) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private assertAnnotatedWithKind(aClass Class<?>, annotationFqName String, expectedKind String) : void renamed to private assertAnnotatedWith(aClass Class<?>, annotationFqName String) : void in class org.jetbrains.kotlin.codegen.KotlinSyntheticClassAnnotationTest",
+	"leftSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 175,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assertAnnotatedWithKind(aClass Class<?>, annotationFqName String, expectedKind String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/tests/org/jetbrains/kotlin/codegen/KotlinSyntheticClassAnnotationTest.java",
+		"startLine": 163,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private assertAnnotatedWith(aClass Class<?>, annotationFqName String) : void"
+}]
+}
+]
+}]
+}

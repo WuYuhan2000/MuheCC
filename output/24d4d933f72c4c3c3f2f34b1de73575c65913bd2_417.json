@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "24d4d933f72c4c3c3f2f34b1de73575c65913bd2",
+	"url": "https://github.com/apache/hadoop/commit/24d4d933f72c4c3c3f2f34b1de73575c65913bd2",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type acls : Map<QueueACL,AccessControlList> to acls : Map<AccessType,AccessControlList> in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 73,
+		"endLine": 74,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "acls : Map<QueueACL,AccessControlList>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 78,
+		"endLine": 79,
+		"startColumn": 38,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "acls : Map<AccessType,AccessControlList>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type acls : Map<QueueACL,AccessControlList> to acls : Map<AccessType,AccessControlList> in method package setupQueueConfigs(clusterResource Resource, capacity float, absoluteCapacity float, maximumCapacity float, absoluteMaxCapacity float, state QueueState, acls Map<AccessType,AccessControlList>, labels Set<String>, defaultLabelExpression String, nodeLabelCapacities Map<String,Float>, maximumNodeLabelCapacities Map<String,Float>, reservationContinueLooking boolean, maxAllocation Resource) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 25,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "acls : Map<QueueACL,AccessControlList>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 25,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "acls : Map<AccessType,AccessControlList>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<QueueACL,AccessControlList> to Map<AccessType,AccessControlList> in method public getACLs() : Map<AccessType,AccessControlList> from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.AbstractCSQueue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 10,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<QueueACL,AccessControlList>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 438,
+		"endLine": 441,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getACLs() : Map<QueueACL,AccessControlList>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 10,
+		"endColumn": 44,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<AccessType,AccessControlList>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/AbstractCSQueue.java",
+		"startLine": 441,
+		"endLine": 444,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getACLs() : Map<AccessType,AccessControlList>"
+}]
+}
+]
+}]
+}

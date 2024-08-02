@@ -1,0 +1,837 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/oozie",
+	"sha1": "269a1aba8c3af6577f3af0da82b08c630f3f3548",
+	"url": "https://github.com/apache/oozie/commit/269a1aba8c3af6577f3af0da82b08c630f3f3548",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to boolean in method private checkForSuspendNode(newAction WorkflowActionBean) : boolean from class org.apache.oozie.command.wf.SignalXCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/SignalXCommand.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 13,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/SignalXCommand.java",
+		"startLine": 431,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private checkForSuspendNode(newAction WorkflowActionBean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/SignalXCommand.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/SignalXCommand.java",
+		"startLine": 470,
+		"endLine": 499,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private checkForSuspendNode(newAction WorkflowActionBean) : boolean"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected addRecordToWfJobTable(app WorkflowApp, jobStatus WorkflowJob.Status, instanceStatus WorkflowInstance.Status) : WorkflowJobBean extracted from protected addRecordToWfJobTable(jobStatus WorkflowJob.Status, instanceStatus WorkflowInstance.Status) : WorkflowJobBean in class org.apache.oozie.test.XDataTestCase",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 647,
+		"endLine": 680,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected addRecordToWfJobTable(jobStatus WorkflowJob.Status, instanceStatus WorkflowInstance.Status) : WorkflowJobBean"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 660,
+		"endLine": 660,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 661,
+		"endLine": 661,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 662,
+		"endLine": 662,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 663,
+		"endLine": 663,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 664,
+		"endLine": 664,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 666,
+		"endLine": 666,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 669,
+		"endLine": 669,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 670,
+		"endLine": 670,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 671,
+		"endLine": 671,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 672,
+		"endLine": 672,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 676,
+		"endLine": 676,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 677,
+		"endLine": 677,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 668,
+		"endLine": 678,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 674,
+		"endLine": 678,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 661,
+		"endLine": 683,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected addRecordToWfJobTable(app WorkflowApp, jobStatus WorkflowJob.Status, instanceStatus WorkflowInstance.Status) : WorkflowJobBean"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 663,
+		"endLine": 663,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 664,
+		"endLine": 664,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 665,
+		"endLine": 665,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 666,
+		"endLine": 666,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 667,
+		"endLine": 667,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 669,
+		"endLine": 669,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 672,
+		"endLine": 672,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 673,
+		"endLine": 673,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 674,
+		"endLine": 674,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 678,
+		"endLine": 678,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 680,
+		"endLine": 680,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 671,
+		"endLine": 681,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 677,
+		"endLine": 681,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 645,
+		"endLine": 659,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected addRecordToWfJobTable(jobStatus WorkflowJob.Status, instanceStatus WorkflowInstance.Status) : WorkflowJobBean"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/test/XDataTestCase.java",
+		"startLine": 658,
+		"endLine": 658,
+		"startColumn": 16,
+		"endColumn": 69,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addRecordToWfJobTable(app,jobStatus,instanceStatus)"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable sc : CoordSubmitXCommand in method public testCoordinatorActionCommands() : void from class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "sc : CoordSubmitXCommand"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable user : String in method protected execute() : Void from class org.apache.oozie.command.coord.CoordActionReadyXCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordActionReadyXCommand.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 16,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "user : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordActionReadyXCommand.java",
+		"startLine": 121,
+		"endLine": 122,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(!isLockRequired() || (lock != null) || this.inInterruptMode()) to if(!isSynchronous && isLockRequired() && !this.inInterruptMode()) in method public call() : T from class org.apache.oozie.command.XCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 266,
+		"endLine": 283,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 230,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 300,
+		"endLine": 302,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!isSynchronous && isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 231,
+		"endLine": 334,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public call() : T"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(isLockRequired() && !this.inInterruptMode()) to if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode()) in method public call() : T from class org.apache.oozie.command.XCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 254,
+		"endLine": 260,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 230,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 269,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 231,
+		"endLine": 334,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public call() : T"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(isLockRequired() && !this.inInterruptMode()) to if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode()) in method public call() : T from class org.apache.oozie.command.XCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 297,
+		"endLine": 299,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 230,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 269,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 231,
+		"endLine": 334,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public call() : T"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(isLockRequired() && !this.inInterruptMode()), if(!isLockRequired() || (lock != null) || this.inInterruptMode())] to if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode()) in method public call() : T from class org.apache.oozie.command.XCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 254,
+		"endLine": 260,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 266,
+		"endLine": 283,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 230,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 269,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 231,
+		"endLine": 334,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public call() : T"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable conf : Configuration to conf : Configuration in method private _testWorkflowJobKillCommand(conf Configuration, slas SLAService) : void from class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 23,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 46,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 595,
+		"endLine": 595,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private _testWorkflowJobCommands(conf Configuration, slas SLAService, isNew boolean) : void renamed to private _testWorkflowJobSubmitStart(conf Configuration, slas SLAService, isNew boolean) : void in class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 513,
+		"endLine": 578,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private _testWorkflowJobCommands(conf Configuration, slas SLAService, isNew boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 541,
+		"endLine": 588,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private _testWorkflowJobSubmitStart(conf Configuration, slas SLAService, isNew boolean) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getStartedActions(instance WorkflowInstance) : List<WorkflowActionBean> renamed to public getActionsToStart(instance WorkflowInstance) : List<WorkflowActionBean> in class org.apache.oozie.service.WorkflowStoreService",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/service/WorkflowStoreService.java",
+		"startLine": 80,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStartedActions(instance WorkflowInstance) : List<WorkflowActionBean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/service/WorkflowStoreService.java",
+		"startLine": 80,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getActionsToStart(instance WorkflowInstance) : List<WorkflowActionBean>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testSLASchema1BackwardCompatibility() : void renamed to public testSLASchema1BackwardCompatibilitySubmitStart() : void in class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 320,
+		"endLine": 337,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSLASchema1BackwardCompatibility() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 342,
+		"endLine": 359,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testSLASchema1BackwardCompatibilitySubmitStart() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testWorkflowJobSLANew() : void renamed to public testWorkflowJobSLANewSubmitStart() : void in class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 124,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testWorkflowJobSLANew() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 125,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testWorkflowJobSLANewSubmitStart() : void"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(isLockRequired() && !this.inInterruptMode()) to [if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode()), if(!isSynchronous && isLockRequired() && !this.inInterruptMode())] in method public call() : T from class org.apache.oozie.command.XCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 254,
+		"endLine": 260,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 230,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call() : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 269,
+		"endLine": 286,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(isSynchronous || !isLockRequired() || (lock != null) || this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 257,
+		"endLine": 263,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(!isSynchronous && isLockRequired() && !this.inInterruptMode())"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/XCommand.java",
+		"startLine": 231,
+		"endLine": 334,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public call() : T"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method public testCoordinatorActionCommands() : void to [public testCoordinatorActionCommandsSubmitAndStart() : void, private _testWorkflowJobKillCommand(conf Configuration, slas SLAService) : void] in class org.apache.oozie.sla.TestSLAEventGeneration",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 339,
+		"endLine": 424,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCoordinatorActionCommands() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 380,
+		"endLine": 452,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testCoordinatorActionCommandsSubmitAndStart() : void"
+}, {
+		"filePath": "core/src/test/java/org/apache/oozie/sla/TestSLAEventGeneration.java",
+		"startLine": 590,
+		"endLine": 609,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private _testWorkflowJobKillCommand(conf Configuration, slas SLAService) : void"
+}]
+}
+]
+}]
+}

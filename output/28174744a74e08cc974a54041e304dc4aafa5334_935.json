@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "28174744a74e08cc974a54041e304dc4aafa5334",
+	"url": "https://github.com/spring-projects/spring-framework/commit/28174744a74e08cc974a54041e304dc4aafa5334",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type isConnected : AtomicBoolean to isConnected : boolean in class org.springframework.web.messaging.stomp.support.StompRelayPubSubMessageHandler.RelaySession",
+	"leftSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 31,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "isConnected : AtomicBoolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "isConnected : boolean"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable m : M in method public forward(message M, headers StompHeaders) : void from class org.springframework.web.messaging.stomp.support.StompRelayPubSubMessageHandler.RelaySession",
+	"leftSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 7,
+		"endColumn": 109,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "m : M"
+}, {
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 6,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 7,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 6,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private isConnected : AtomicBoolean from class org.springframework.web.messaging.stomp.support.StompRelayPubSubMessageHandler.RelaySession",
+	"leftSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 31,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private isConnected : AtomicBoolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-websocket/src/main/java/org/springframework/web/messaging/stomp/support/StompRelayPubSubMessageHandler.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 19,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private isConnected : boolean"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "fc8ae4d30dee9b255f7caa7da76a9793b1cc6c25",
+	"url": "https://github.com/elastic/elasticsearch/commit/fc8ae4d30dee9b255f7caa7da76a9793b1cc6c25",
+	"refactorings": [{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute settings : Settings to nodeSettings : Settings in method public failWithMinimumMasterNodesConfigured() : void from class org.elasticsearch.discovery.DiscoveryWithNetworkFailuresTests",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/discovery/DiscoveryWithNetworkFailuresTests.java",
+		"startLine": 54,
+		"endLine": 60,
+		"startColumn": 24,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "settings : Settings"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/discovery/DiscoveryWithNetworkFailuresTests.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/discovery/DiscoveryWithNetworkFailuresTests.java",
+		"startLine": 63,
+		"endLine": 69,
+		"startColumn": 35,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "nodeSettings : Settings"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/discovery/DiscoveryWithNetworkFailuresTests.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

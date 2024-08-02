@@ -1,0 +1,867 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "8ebbd1e7b964b6c81a49c7d4c2476584c6279e06",
+	"url": "https://github.com/elastic/elasticsearch/commit/8ebbd1e7b964b6c81a49c7d4c2476584c6279e06",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute private compress : boolean from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private compress : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private compress : boolean"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute private fileChunkSize : ByteSizeValue from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute private translogOps : int from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogOps : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private translogOps : int"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute private translogSize : ByteSizeValue from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private translogSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.elasticsearch.indices.recovery.RecoverySettings from class org.elasticsearch.index.shard.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 60,
+		"endLine": 325,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoverySource"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 116,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public close() : void"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private compress : boolean"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogOps : int"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private concurrentStreams : int"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private concurrentStreamPool : ThreadPoolExecutor"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySource.java",
+		"startLine": 54,
+		"endLine": 283,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoverySource"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 35,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoverySettings"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public close() : void"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private compress : boolean"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private translogOps : int"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private concurrentStreams : int"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private concurrentStreamPool : ThreadPoolExecutor"
+}]
+},
+{
+	"type": "Merge Attribute",
+	"description": "Merge Attribute [fileChunkSize : ByteSizeValue, translogOps : int, translogSize : ByteSizeValue] to recoverySettings : RecoverySettings in class org.elasticsearch.indices.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "fileChunkSize : ByteSizeValue"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "translogOps : int"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "merged attribute declaration",
+		"codeElement": "translogSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySource.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 36,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "new attribute declaration",
+		"codeElement": "recoverySettings : RecoverySettings"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private compress : boolean from class org.elasticsearch.index.shard.recovery.RecoverySource to private compress : boolean from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private compress : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private compress : boolean"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private concurrentStreamPool : ThreadPoolExecutor from class org.elasticsearch.index.shard.recovery.RecoverySource to private concurrentStreamPool : ThreadPoolExecutor from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private concurrentStreamPool : ThreadPoolExecutor"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 38,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private concurrentStreamPool : ThreadPoolExecutor"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private concurrentStreams : int from class org.elasticsearch.index.shard.recovery.RecoverySource to private concurrentStreams : int from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private concurrentStreams : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 26,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private concurrentStreams : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private fileChunkSize : ByteSizeValue from class org.elasticsearch.index.shard.recovery.RecoverySource to private fileChunkSize : ByteSizeValue from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private translogOps : int from class org.elasticsearch.index.shard.recovery.RecoverySource to private translogOps : int from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogOps : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private translogOps : int"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private translogSize : ByteSizeValue from class org.elasticsearch.index.shard.recovery.RecoverySource to private translogSize : ByteSizeValue from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.IgnoreRecoveryException moved to org.elasticsearch.indices.recovery.IgnoreRecoveryException",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/IgnoreRecoveryException.java",
+		"startLine": 24,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.IgnoreRecoveryException"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/IgnoreRecoveryException.java",
+		"startLine": 24,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.IgnoreRecoveryException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryCleanFilesRequest moved to org.elasticsearch.indices.recovery.RecoveryCleanFilesRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryCleanFilesRequest.java",
+		"startLine": 31,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryCleanFilesRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryCleanFilesRequest.java",
+		"startLine": 31,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryCleanFilesRequest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryFailedException moved to org.elasticsearch.indices.recovery.RecoveryFailedException",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryFailedException.java",
+		"startLine": 26,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryFailedException"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryFailedException.java",
+		"startLine": 26,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryFailedException"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryFileChunkRequest moved to org.elasticsearch.indices.recovery.RecoveryFileChunkRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryFileChunkRequest.java",
+		"startLine": 30,
+		"endLine": 123,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryFileChunkRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryFileChunkRequest.java",
+		"startLine": 30,
+		"endLine": 123,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryFileChunkRequest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryFinalizeRecoveryRequest moved to org.elasticsearch.indices.recovery.RecoveryFinalizeRecoveryRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryFinalizeRecoveryRequest.java",
+		"startLine": 29,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryFinalizeRecoveryRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryFinalizeRecoveryRequest.java",
+		"startLine": 29,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryFinalizeRecoveryRequest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryPrepareForTranslogOperationsRequest moved to org.elasticsearch.indices.recovery.RecoveryPrepareForTranslogOperationsRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryPrepareForTranslogOperationsRequest.java",
+		"startLine": 29,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryPrepareForTranslogOperationsRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryPrepareForTranslogOperationsRequest.java",
+		"startLine": 29,
+		"endLine": 54,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryPrepareForTranslogOperationsRequest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryResponse moved to org.elasticsearch.indices.recovery.RecoveryResponse",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryResponse.java",
+		"startLine": 30,
+		"endLine": 114,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryResponse.java",
+		"startLine": 30,
+		"endLine": 114,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryResponse"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoverySource moved to org.elasticsearch.indices.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 60,
+		"endLine": 325,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoverySource"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySource.java",
+		"startLine": 54,
+		"endLine": 283,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoverySource"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryTarget moved to org.elasticsearch.indices.recovery.RecoveryTarget",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryTarget.java",
+		"startLine": 65,
+		"endLine": 544,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryTarget"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryTarget.java",
+		"startLine": 65,
+		"endLine": 544,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryTarget"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.RecoveryTranslogOperationsRequest moved to org.elasticsearch.indices.recovery.RecoveryTranslogOperationsRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoveryTranslogOperationsRequest.java",
+		"startLine": 33,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.RecoveryTranslogOperationsRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoveryTranslogOperationsRequest.java",
+		"startLine": 33,
+		"endLine": 73,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.RecoveryTranslogOperationsRequest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.elasticsearch.index.shard.recovery.StartRecoveryRequest moved to org.elasticsearch.indices.recovery.StartRecoveryRequest",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/StartRecoveryRequest.java",
+		"startLine": 33,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.index.shard.recovery.StartRecoveryRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/StartRecoveryRequest.java",
+		"startLine": 33,
+		"endLine": 111,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.elasticsearch.indices.recovery.StartRecoveryRequest"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public close() : void from class org.elasticsearch.index.shard.recovery.RecoverySource to public close() : void from class org.elasticsearch.indices.recovery.RecoverySettings",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 116,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public close() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 73,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public close() : void"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private compress : boolean from class org.elasticsearch.index.shard.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private compress : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private compress : boolean"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private fileChunkSize : ByteSizeValue from class org.elasticsearch.index.shard.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 36,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private fileChunkSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private translogOps : int from class org.elasticsearch.index.shard.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogOps : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private translogOps : int"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private translogSize : ByteSizeValue from class org.elasticsearch.index.shard.recovery.RecoverySource",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/index/shard/recovery/RecoverySource.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private translogSize : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/recovery/RecoverySettings.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private translogSize : ByteSizeValue"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter recoverySource : RecoverySource in method public IndicesClusterStateService(settings Settings, indicesService IndicesService, clusterService ClusterService, threadPool ThreadPool, recoveryTarget RecoveryTarget, recoverySource RecoverySource, shardStateAction ShardStateAction, nodeIndexCreatedAction NodeIndexCreatedAction, nodeIndexDeletedAction NodeIndexDeletedAction, nodeMappingCreatedAction NodeMappingCreatedAction, nodeMappingRefreshAction NodeMappingRefreshAction, nodeAliasesUpdatedAction NodeAliasesUpdatedAction) from class org.elasticsearch.indices.cluster.IndicesClusterStateService",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 101,
+		"endColumn": 130,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "recoverySource : RecoverySource"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 115,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IndicesClusterStateService(settings Settings, indicesService IndicesService, clusterService ClusterService, threadPool ThreadPool, recoveryTarget RecoveryTarget, recoverySource RecoverySource, shardStateAction ShardStateAction, nodeIndexCreatedAction NodeIndexCreatedAction, nodeIndexDeletedAction NodeIndexDeletedAction, nodeMappingCreatedAction NodeMappingCreatedAction, nodeMappingRefreshAction NodeMappingRefreshAction, nodeAliasesUpdatedAction NodeAliasesUpdatedAction)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/indices/cluster/IndicesClusterStateService.java",
+		"startLine": 112,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public IndicesClusterStateService(settings Settings, indicesService IndicesService, clusterService ClusterService, threadPool ThreadPool, recoveryTarget RecoveryTarget, shardStateAction ShardStateAction, nodeIndexCreatedAction NodeIndexCreatedAction, nodeIndexDeletedAction NodeIndexDeletedAction, nodeMappingCreatedAction NodeMappingCreatedAction, nodeMappingRefreshAction NodeMappingRefreshAction, nodeAliasesUpdatedAction NodeAliasesUpdatedAction)"
+}]
+}
+]
+}]
+}

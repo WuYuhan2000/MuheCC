@@ -1,0 +1,288 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/echo3/echo3",
+	"sha1": "f2fb6938e2c7d45eaeb0eefd6c9f9ebc3c1606f8",
+	"url": "https://github.com/echo3/echo3/commit/f2fb6938e2c7d45eaeb0eefd6c9f9ebc3c1606f8",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter size : int in method package toString(selectionModel ListSelectionModel, size int) : String from class nextapp.echo.webcontainer.sync.component.ListSelectionUtil",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 167,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSelectionString(selectionModel ListSelectionModel) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 63,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "size : int"
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 41,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package toString(selectionModel ListSelectionModel, size int) : String"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package toString(selectionModel ListSelectionModel, size int) : String from class nextapp.echo.webcontainer.sync.component.ListSelectionUtil",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 167,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSelectionString(selectionModel ListSelectionModel) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 41,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package toString(selectionModel ListSelectionModel, size int) : String"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private getSelectionString(selectionModel ListSelectionModel) : String from class nextapp.echo.webcontainer.sync.component.AbstractListComponentPeer to package toString(selectionModel ListSelectionModel, size int) : String from class nextapp.echo.webcontainer.sync.component.ListSelectionUtil",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 167,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSelectionString(selectionModel ListSelectionModel) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 41,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package toString(selectionModel ListSelectionModel, size int) : String"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method private getSelectionString(selectionModel ListSelectionModel) : String from class nextapp.echo.webcontainer.sync.component.AbstractListComponentPeer",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 167,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSelectionString(selectionModel ListSelectionModel) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 41,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package toString(selectionModel ListSelectionModel, size int) : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable max : int to maximumIndex : int in method package toString(selectionModel ListSelectionModel, size int) : String from class nextapp.echo.webcontainer.sync.component.ListSelectionUtil",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "max : int"
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 175,
+		"endLine": 184,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 170,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "maximumIndex : int"
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 67,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable min : int to minimumIndex : int in method package toString(selectionModel ListSelectionModel, size int) : String from class nextapp.echo.webcontainer.sync.component.ListSelectionUtil",
+	"leftSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "min : int"
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 175,
+		"endLine": 184,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/AbstractListComponentPeer.java",
+		"startLine": 170,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "minimumIndex : int"
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 67,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/webcontainer/java/nextapp/echo/webcontainer/sync/component/ListSelectionUtil.java",
+		"startLine": 57,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

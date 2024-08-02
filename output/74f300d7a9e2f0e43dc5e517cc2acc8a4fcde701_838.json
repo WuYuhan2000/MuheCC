@@ -1,0 +1,321 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "74f300d7a9e2f0e43dc5e517cc2acc8a4fcde701",
+	"url": "https://github.com/apache/camel/commit/74f300d7a9e2f0e43dc5e517cc2acc8a4fcde701",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected camelContext : CamelContext from class org.apache.camel.rest.resources.CamelChildResourceSupport",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private camelContext : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelChildResourceSupport.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected camelContext : CamelContext"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected template : ProducerTemplate from class org.apache.camel.rest.resources.CamelChildResourceSupport",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private template : ProducerTemplate"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelChildResourceSupport.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 38,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected template : ProducerTemplate"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.camel.rest.resources.RoutesResource from class org.apache.camel.rest.resources.CamelContextResource",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 38,
+		"endLine": 119,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.rest.resources.CamelContextResource"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 96,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 115,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRoutes() : List<RouteType>"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 38,
+		"endLine": 104,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.camel.rest.resources.CamelContextResource"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 29,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.camel.rest.resources.RoutesResource"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 37,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getRoutes() : List<RouteType>"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.camel.rest.resources.CamelChildResourceSupport from classes [org.apache.camel.rest.resources.EndpointsResource]",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 43,
+		"endLine": 140,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.rest.resources.EndpointsResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 43,
+		"endLine": 137,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.rest.resources.EndpointsResource"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelChildResourceSupport.java",
+		"startLine": 24,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.rest.resources.CamelChildResourceSupport"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getRouteDefinitions() : RoutesType from class org.apache.camel.rest.resources.CamelContextResource to public getRouteDefinitions() : RoutesType from class org.apache.camel.rest.resources.RoutesResource",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 96,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 37,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getRoutes() : List<RouteType> from class org.apache.camel.rest.resources.CamelContextResource to public getRoutes() : List<RouteType> from class org.apache.camel.rest.resources.RoutesResource",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 115,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRoutes() : List<RouteType>"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getRoutes() : List<RouteType>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private camelContext : CamelContext from class org.apache.camel.rest.resources.EndpointsResource to protected camelContext : CamelContext from class org.apache.camel.rest.resources.CamelChildResourceSupport",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private camelContext : CamelContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelChildResourceSupport.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected camelContext : CamelContext"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private template : ProducerTemplate from class org.apache.camel.rest.resources.EndpointsResource to protected template : ProducerTemplate from class org.apache.camel.rest.resources.CamelChildResourceSupport",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private template : ProducerTemplate"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelChildResourceSupport.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 38,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected template : ProducerTemplate"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @ImplicitProduces(Constants.HTML_MIME_TYPES) in class org.apache.camel.rest.resources.EndpointsResource",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 0,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@ImplicitProduces(Constants.HTML_MIME_TYPES)"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 43,
+		"endLine": 140,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.camel.rest.resources.EndpointsResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/EndpointsResource.java",
+		"startLine": 43,
+		"endLine": 137,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.apache.camel.rest.resources.EndpointsResource"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Path(\"routes\") in method public getRouteDefinitions() : RoutesType from class org.apache.camel.rest.resources.CamelContextResource",
+	"leftSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Path(\"routes\")"
+}, {
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/CamelContextResource.java",
+		"startLine": 96,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-web/src/main/java/org/apache/camel/rest/resources/RoutesResource.java",
+		"startLine": 37,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getRouteDefinitions() : RoutesType"
+}]
+}
+]
+}]
+}

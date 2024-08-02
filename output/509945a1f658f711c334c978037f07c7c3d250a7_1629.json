@@ -1,0 +1,339 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-color-theme/eclipse-color-theme",
+	"sha1": "509945a1f658f711c334c978037f07c7c3d250a7",
+	"url": "https://github.com/eclipse-color-theme/eclipse-color-theme/commit/509945a1f658f711c334c978037f07c7c3d250a7",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter map : Map<String,ColorThemeMapping> in method private parseMappings(root Element, map Map<String,ColorThemeMapping>) : void from class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 45,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseMappings(root Element) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 46,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "map : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 68,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private parseMappings(root Element, map Map<String,ColorThemeMapping>) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter map : Map<String,ColorThemeMapping> in method private parseSemanticHighlightingMappings(root Element, map Map<String,ColorThemeMapping>) : void from class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 58,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseSemanticHighlightingMappings(root Element) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 66,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "map : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 81,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private parseSemanticHighlightingMappings(root Element, map Map<String,ColorThemeMapping>) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public parseMapping(root Element) : void extracted from public parseMapping(input InputStream) : void in class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 28,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public parseMapping(input InputStream) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 43,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public parseMapping(root Element) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 28,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public parseMapping(input InputStream) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "parseMapping(document.getDocumentElement())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public parseMapping(root Element, map Map<String,ColorThemeMapping>) : void extracted from public parseMapping(input InputStream) : void in class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 28,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public parseMapping(input InputStream) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public parseMapping(root Element, map Map<String,ColorThemeMapping>) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public parseMapping(root Element, map Map<String,ColorThemeMapping>) : void"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "parseMapping(root,mappings)"
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute mappings : Map<String,ColorThemeMapping> to map : Map<String,ColorThemeMapping> in method private parseMappings(root Element, map Map<String,ColorThemeMapping>) : void from class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 44,
+		"endColumn": 95,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mappings : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 46,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "map : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute mappings : Map<String,ColorThemeMapping> to map : Map<String,ColorThemeMapping> in method private parseSemanticHighlightingMappings(root Element, map Map<String,ColorThemeMapping>) : void from class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 44,
+		"endColumn": 95,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mappings : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 21,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 66,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "map : Map<String,ColorThemeMapping>"
+}, {
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 21,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable root : Element to root : Element in method public parseMapping(root Element, map Map<String,ColorThemeMapping>) : void from class com.github.eclipsecolortheme.mapper.GenericMapper",
+	"leftSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 17,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "root : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "com.github.eclipsecolortheme/src/com/github/eclipsecolortheme/mapper/GenericMapper.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "root : Element"
+}]
+}
+]
+}]
+}

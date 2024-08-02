@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "6950c38a0436ec937797f01fba8d7d95e6d6225f",
+	"url": "https://github.com/elastic/elasticsearch/commit/6950c38a0436ec937797f01fba8d7d95e6d6225f",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter validate : boolean in method public resolveAggregator(root Aggregator, validate boolean) : Aggregator from class org.elasticsearch.search.aggregations.support.OrderPath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 58,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "validate : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 235,
+		"endLine": 255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveAggregator(root Aggregator, validate boolean) : Aggregator"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 235,
+		"endLine": 251,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public resolveAggregator(root Aggregator) : Aggregator"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter validate : boolean in method public resolveTopmostAggregator(root Aggregator, validate boolean) : Aggregator from class org.elasticsearch.search.aggregations.support.OrderPath",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 65,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "validate : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 257,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveTopmostAggregator(root Aggregator, validate boolean) : Aggregator"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/aggregations/support/OrderPath.java",
+		"startLine": 253,
+		"endLine": 265,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public resolveTopmostAggregator(root Aggregator) : Aggregator"
+}]
+}
+]
+}]
+}

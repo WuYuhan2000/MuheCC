@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "319b1c8ad41b769ff4bc5d8cb2d2eb9e3f5e9569",
+	"url": "https://github.com/orientechnologies/orientdb/commit/319b1c8ad41b769ff4bc5d8cb2d2eb9e3f5e9569",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable schemaVersion : Integer in method public fromStream() : void from class com.orientechnologies.orient.core.metadata.schema.OSchemaShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/schema/OSchemaShared.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "schemaVersion : Integer"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/schema/OSchemaShared.java",
+		"startLine": 448,
+		"endLine": 500,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fromStream() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/schema/OSchemaShared.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 19,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "schemaVersion : Integer"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/schema/OSchemaShared.java",
+		"startLine": 448,
+		"endLine": 500,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public fromStream() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable value : ODocument in method private executeBlock(iManager OComposableProcessor, iContext OCommandContext, iName String, iValue Object, iOutput ODocument, iReadOnly boolean, returnType String, returnValue Object) : Object from class com.orientechnologies.orient.core.processor.block.OExecuteBlock",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/processor/block/OExecuteBlock.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 7,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/processor/block/OExecuteBlock.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "value : ODocument"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/processor/block/OExecuteBlock.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

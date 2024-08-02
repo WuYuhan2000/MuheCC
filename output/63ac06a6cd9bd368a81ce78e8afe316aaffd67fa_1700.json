@@ -1,0 +1,375 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cyberfox/jbidwatcher",
+	"sha1": "63ac06a6cd9bd368a81ce78e8afe316aaffd67fa",
+	"url": "https://github.com/cyberfox/jbidwatcher/commit/63ac06a6cd9bd368a81ce78e8afe316aaffd67fa",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type sInstance : ThumbnailManager to sInstance : ThumbnailLoader in class com.jbidwatcher.auction.ThumbnailLoader",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 35,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "sInstance : ThumbnailManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailLoader.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "sInstance : ThumbnailLoader"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package getValidImagePath(identifier String, buf ByteBuffer) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 63,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getValidImagePath(ai AuctionInfo, buf ByteBuffer) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package getValidImagePath(identifier String, buf ByteBuffer) : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ai : AuctionInfo to identifier : String in method package getValidImagePath(identifier String, buf ByteBuffer) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 43,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ai : AuctionInfo"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "identifier : String"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type ai : AuctionInfo to identifier : String in method public getValidImagePath(identifier String) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ai : AuctionInfo"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 42,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "identifier : String"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public setThumbnail(ai AuctionInfo, b ByteBuffer) : void inlined to public messageAction(deQ Object) : void in class com.jbidwatcher.auction.ThumbnailLoader",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 38,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public setThumbnail(ai AuctionInfo, b ByteBuffer) : void"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 25,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public messageAction(deQ Object) : void"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "setThumbnail(ai,thumbnail)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailLoader.java",
+		"startLine": 21,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public messageAction(deQ Object) : void"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailLoader.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailLoader.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private getValidImagePath(ai AuctionInfo, buf ByteBuffer) : String from class com.jbidwatcher.auction.ThumbnailManager to package getValidImagePath(identifier String, buf ByteBuffer) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 63,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getValidImagePath(ai AuctionInfo, buf ByteBuffer) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 25,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "package getValidImagePath(identifier String, buf ByteBuffer) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getValidImagePath(ai AuctionInfo) : String from class com.jbidwatcher.auction.ThumbnailManager to public getValidImagePath(identifier String) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getValidImagePath(ai AuctionInfo) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 21,
+		"endLine": 23,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getValidImagePath(identifier String) : String"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.jbidwatcher.auction.ThumbnailManager renamed to com.jbidwatcher.auction.ThumbnailLoader",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 20,
+		"endLine": 109,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.jbidwatcher.auction.ThumbnailManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailLoader.java",
+		"startLine": 16,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.jbidwatcher.auction.ThumbnailLoader"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ai : AuctionInfo to identifier : String in method package getValidImagePath(identifier String, buf ByteBuffer) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 43,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ai : AuctionInfo"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "identifier : String"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ai : AuctionInfo to identifier : String in method public getValidImagePath(identifier String) : String from class com.jbidwatcher.auction.Thumbnail",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 42,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ai : AuctionInfo"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/ThumbnailManager.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 42,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "identifier : String"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/Thumbnail.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

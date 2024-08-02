@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "46349a89d9d332e1f7c9f976f65efc79ea46cd29",
+	"url": "https://github.com/apache/hbase/commit/46349a89d9d332e1f7c9f976f65efc79ea46cd29",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter archived : FileStatus[] to actual : FileStatus[] in method public assertArchiveEqualToOriginal(expected FileStatus[], actual FileStatus[], fs FileSystem) : void from class org.apache.hadoop.hbase.util.HFileArchiveTestingUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 74,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "archived : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 74,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "actual : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter archived : FileStatus[] to actual : FileStatus[] in method public assertArchiveEqualToOriginal(expected FileStatus[], actual FileStatus[], fs FileSystem, hasTimedBackup boolean) : void from class org.apache.hadoop.hbase.util.HFileArchiveTestingUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 74,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "archived : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 74,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "actual : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter previous : FileStatus[] to expected : FileStatus[] in method public assertArchiveEqualToOriginal(expected FileStatus[], actual FileStatus[], fs FileSystem) : void from class org.apache.hadoop.hbase.util.HFileArchiveTestingUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 51,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "previous : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 51,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expected : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter previous : FileStatus[] to expected : FileStatus[] in method public assertArchiveEqualToOriginal(expected FileStatus[], actual FileStatus[], fs FileSystem, hasTimedBackup boolean) : void from class org.apache.hadoop.hbase.util.HFileArchiveTestingUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 51,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "previous : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 51,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "expected : FileStatus[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/util/HFileArchiveTestingUtil.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

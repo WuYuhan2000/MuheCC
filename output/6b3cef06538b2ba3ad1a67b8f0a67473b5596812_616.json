@@ -1,0 +1,1446 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "6b3cef06538b2ba3ad1a67b8f0a67473b5596812",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/6b3cef06538b2ba3ad1a67b8f0a67473b5596812",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IllegalArgumentException in method public matrixParam(name String, value String) : UriBuilder from class org.restlet.ext.jaxrs.internal.core.JaxRsUriBuilder",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 425,
+		"endLine": 446,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matrixParam(name String, value String) : UriBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 445,
+		"endLine": 445,
+		"startColumn": 20,
+		"endColumn": 44,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IllegalArgumentException"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 424,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public matrixParam(name String, value String) : UriBuilder"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @SuppressWarnings(\"unchecked\") in attribute private tlContext : ThreadLocalizedContext from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 42,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private tlContext : ThreadLocalizedContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 42,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "private tlContext : ThreadLocalizedContext"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"unchecked\") in class org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyReader",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyReader.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 31,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyReader.java",
+		"startLine": 24,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyReader"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/wrappers/provider/MessageBodyReader.java",
+		"startLine": 24,
+		"endLine": 55,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.restlet.ext.jaxrs.internal.wrappers.provider.MessageBodyReader"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"unused\") in class org.restlet.test.jaxrs.services.resources.IllegalConstructorResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/IllegalConstructorResource.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/IllegalConstructorResource.java",
+		"startLine": 25,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.restlet.test.jaxrs.services.resources.IllegalConstructorResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/IllegalConstructorResource.java",
+		"startLine": 25,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.restlet.test.jaxrs.services.resources.IllegalConstructorResource"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"deprecation\") in method public RestletTestSuite() from class org.restlet.test.RestletTestSuite",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RestletTestSuite.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RestletTestSuite.java",
+		"startLine": 33,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RestletTestSuite()"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RestletTestSuite.java",
+		"startLine": 33,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public RestletTestSuite()"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"deprecation\") in method public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String from class com.noelios.restlet.authentication.AuthenticationHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationHelper.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationHelper.java",
+		"startLine": 133,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationHelper.java",
+		"startLine": 133,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"deprecation\") in method public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String from class com.noelios.restlet.authentication.AuthenticationUtils",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationUtils.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationUtils.java",
+		"startLine": 167,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/authentication/AuthenticationUtils.java",
+		"startLine": 167,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public format(challenge ChallengeResponse, request Request, httpHeaders Series<Parameter>) : String"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"deprecation\") in method public getAcceptableMediaTypes() : List<MediaType> from class org.restlet.ext.jaxrs.internal.core.ThreadLocalizedContext",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/ThreadLocalizedContext.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"deprecation\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/ThreadLocalizedContext.java",
+		"startLine": 138,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAcceptableMediaTypes() : List<MediaType>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/ThreadLocalizedContext.java",
+		"startLine": 138,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getAcceptableMediaTypes() : List<MediaType>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"null\") in method public testGetRandom() : void from class org.restlet.test.RouteListTestCase",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RouteListTestCase.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"null\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RouteListTestCase.java",
+		"startLine": 70,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testGetRandom() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/RouteListTestCase.java",
+		"startLine": 70,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testGetRandom() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"null\") in method public testRoutesPointToFindersForBeans() : void from class org.restlet.test.spring.BeanNameRouterTest",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/spring/BeanNameRouterTest.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"null\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/spring/BeanNameRouterTest.java",
+		"startLine": 66,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testRoutesPointToFindersForBeans() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/spring/BeanNameRouterTest.java",
+		"startLine": 66,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testRoutesPointToFindersForBeans() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method private attachWithDescriptor(router Router, targetDescriptor String, uriPattern String, defaultRoute boolean) : Route from class org.restlet.Component",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Component.java",
+		"startLine": 495,
+		"endLine": 495,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/Component.java",
+		"startLine": 481,
+		"endLine": 562,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private attachWithDescriptor(router Router, targetDescriptor String, uriPattern String, defaultRoute boolean) : Route"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Component.java",
+		"startLine": 481,
+		"endLine": 561,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private attachWithDescriptor(router Router, targetDescriptor String, uriPattern String, defaultRoute boolean) : Route"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method protected getRootResourceClass() : Class<?> from class org.restlet.test.jaxrs.services.tests.ProviderTest",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 88,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getRootResourceClass() : Class<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 88,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected getRootResourceClass() : Class<?>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public JaxbRepresentation(xmlRepresentation Representation, contextPath String) from class org.restlet.ext.jaxb.JaxbRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 390,
+		"endLine": 408,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, contextPath String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 388,
+		"endLine": 405,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, contextPath String)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public JaxbRepresentation(xmlRepresentation Representation, contextPath String, validationHandler ValidationEventHandler) from class org.restlet.ext.jaxb.JaxbRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 410,
+		"endLine": 435,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, contextPath String, validationHandler ValidationEventHandler)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 407,
+		"endLine": 431,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, contextPath String, validationHandler ValidationEventHandler)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public JaxbRepresentation(xmlRepresentation Representation, type Class<T>) from class org.restlet.ext.jaxb.JaxbRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 349,
+		"endLine": 366,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, type Class<T>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 349,
+		"endLine": 365,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, type Class<T>)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public JaxbRepresentation(xmlRepresentation Representation, type Class<T>, validationHandler ValidationEventHandler) from class org.restlet.ext.jaxb.JaxbRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 368,
+		"endLine": 388,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, type Class<T>, validationHandler ValidationEventHandler)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxb_2.1/src/org/restlet/ext/jaxb/JaxbRepresentation.java",
+		"startLine": 367,
+		"endLine": 386,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public JaxbRepresentation(xmlRepresentation Representation, type Class<T>, validationHandler ValidationEventHandler)"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public build(values Map<String,Object>) : URI from class org.restlet.ext.jaxrs.internal.core.JaxRsUriBuilder",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 187,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public build(values Map<String,Object>) : URI"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/JaxRsUriBuilder.java",
+		"startLine": 187,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public build(values Map<String,Object>) : URI"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public getResourceClasses() : Set<Class<?>> from class org.restlet.test.jaxrs.services.tests.InjectionTest.getAppConfig.appConfig.new ApplicationConfig",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/InjectionTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/InjectionTest.java",
+		"startLine": 44,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getResourceClasses() : Set<Class<?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/InjectionTest.java",
+		"startLine": 44,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getResourceClasses() : Set<Class<?>>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public handle(request Request, response Response) : void from class com.noelios.restlet.ext.xdb.XdbServletWarClientHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletWarClientHelper.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletWarClientHelper.java",
+		"startLine": 107,
+		"endLine": 205,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handle(request Request, response Response) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletWarClientHelper.java",
+		"startLine": 107,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public handle(request Request, response Response) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public start() : void from class org.restlet.ext.jaxrs.JaxRsRestlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 422,
+		"endLine": 429,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public start() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/JaxRsRestlet.java",
+		"startLine": 421,
+		"endLine": 427,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public start() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public storeRepresentation(entity Representation) : void from class com.noelios.restlet.test.ChunkedEncodingTestCase.PutTestResource",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.test/src/com/noelios/restlet/test/ChunkedEncodingTestCase.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.test/src/com/noelios/restlet/test/ChunkedEncodingTestCase.java",
+		"startLine": 77,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public storeRepresentation(entity Representation) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.test/src/com/noelios/restlet/test/ChunkedEncodingTestCase.java",
+		"startLine": 77,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public storeRepresentation(entity Representation) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method private PrincipalImpl() from class org.restlet.data.ChallengeResponse.PrincipalImpl",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/ChallengeResponse.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/ChallengeResponse.java",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private PrincipalImpl()"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/ChallengeResponse.java",
+		"startLine": 42,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private PrincipalImpl()"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method private createPerson(person Person) : int from class org.restlet.test.jaxrs.services.resources.PersonsResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/PersonsResource.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/PersonsResource.java",
+		"startLine": 62,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createPerson(person Person) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/PersonsResource.java",
+		"startLine": 62,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private createPerson(person Person) : int"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method private postAndCheckXml(subPath String) : void from class org.restlet.test.jaxrs.services.tests.ProviderTest",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 94,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private postAndCheckXml(subPath String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/tests/ProviderTest.java",
+		"startLine": 93,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private postAndCheckXml(subPath String) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method protected createSocketAddress() : SocketAddress from class com.noelios.restlet.http.StreamServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/StreamServerHelper.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/StreamServerHelper.java",
+		"startLine": 153,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createSocketAddress() : SocketAddress"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/StreamServerHelper.java",
+		"startLine": 153,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected createSocketAddress() : SocketAddress"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method protected getMailRef(identifier String) : Reference from class com.noelios.restlet.ext.javamail.TriggerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 335,
+		"endLine": 355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getMailRef(identifier String) : Reference"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 335,
+		"endLine": 354,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected getMailRef(identifier String) : Reference"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method protected getTargetChallengeResponse(resolver Resolver<String>) : ChallengeResponse from class com.noelios.restlet.ext.javamail.TriggerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 427,
+		"endLine": 452,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getTargetChallengeResponse(resolver Resolver<String>) : ChallengeResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 426,
+		"endLine": 450,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected getTargetChallengeResponse(resolver Resolver<String>) : ChallengeResponse"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method protected getTargetRef(resolver Resolver<String>) : Reference from class com.noelios.restlet.ext.javamail.TriggerResource",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 491,
+		"endLine": 512,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getTargetRef(resolver Resolver<String>) : Reference"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.javamail_1.4/src/com/noelios/restlet/ext/javamail/TriggerResource.java",
+		"startLine": 489,
+		"endLine": 509,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected getTargetRef(resolver Resolver<String>) : Reference"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public add(key K, value V) : void from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 71,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public add(key K, value V) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public add(key K, value V) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public authorize(request Request) : boolean from class org.restlet.Guard",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 208,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public authorize(request Request) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 208,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public authorize(request Request) : boolean"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public checkSecret(request Request, identifier String, secret char[]) : boolean from class org.restlet.Guard",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 251,
+		"endLine": 267,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkSecret(request Request, identifier String, secret char[]) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/Guard.java",
+		"startLine": 250,
+		"endLine": 265,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public checkSecret(request Request, identifier String, secret char[]) : boolean"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public clear() : void from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 77,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clear() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 76,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public clear() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public fullMatrix(matrix CharSequence, encode boolean) : CharSequence from class org.restlet.ext.jaxrs.internal.util.EncodeOrCheck",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 263,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fullMatrix(matrix CharSequence, encode boolean) : CharSequence"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 263,
+		"endLine": 277,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public fullMatrix(matrix CharSequence, encode boolean) : CharSequence"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public fullQuery(query CharSequence, encode boolean) : CharSequence from class org.restlet.ext.jaxrs.internal.util.EncodeOrCheck",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 280,
+		"endLine": 292,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fullQuery(query CharSequence, encode boolean) : CharSequence"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/util/EncodeOrCheck.java",
+		"startLine": 279,
+		"endLine": 290,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public fullQuery(query CharSequence, encode boolean) : CharSequence"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public getStatusCode() : int from class com.noelios.restlet.http.HttpCall",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpCall.java",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpCall.java",
+		"startLine": 312,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStatusCode() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpCall.java",
+		"startLine": 312,
+		"endLine": 320,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getStatusCode() : int"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public put(key K, value List<V>) : List<V> from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 160,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public put(key K, value List<V>) : List<V>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 158,
+		"endLine": 162,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public put(key K, value List<V>) : List<V>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public putAll(t Map<? extends K,? extends List<V>>) : void from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 167,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public putAll(t Map<? extends K,? extends List<V>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 164,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public putAll(t Map<? extends K,? extends List<V>>) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public putSingle(key K, value V) : void from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 174,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public putSingle(key K, value V) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 170,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public putSingle(key K, value V) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public remove(key Object) : List<V> from class org.restlet.ext.jaxrs.internal.core.UnmodifiableMultivaluedMap",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 180,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public remove(key Object) : List<V>"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.8/src/org/restlet/ext/jaxrs/internal/core/UnmodifiableMultivaluedMap.java",
+		"startLine": 175,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public remove(key Object) : List<V>"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public service(request HttpServletRequest, response HttpServletResponse) : void from class com.noelios.restlet.ext.xdb.XdbServletConverter",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 144,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public service(request HttpServletRequest, response HttpServletResponse) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 143,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public service(request HttpServletRequest, response HttpServletResponse) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public write(writer XmlWriter) : void from class org.restlet.resource.SaxRepresentation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/SaxRepresentation.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/resource/SaxRepresentation.java",
+		"startLine": 226,
+		"endLine": 237,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(writer XmlWriter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/resource/SaxRepresentation.java",
+		"startLine": 226,
+		"endLine": 236,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public write(writer XmlWriter) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unused\") in method public writeResponseHead(response Response) : void from class com.noelios.restlet.http.HttpServerCall",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpServerCall.java",
+		"startLine": 557,
+		"endLine": 557,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpServerCall.java",
+		"startLine": 550,
+		"endLine": 560,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public writeResponseHead(response Response) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet/src/com/noelios/restlet/http/HttpServerCall.java",
+		"startLine": 550,
+		"endLine": 559,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public writeResponseHead(response Response) : void"
+}]
+},
+{
+	"type": "Remove Variable Annotation",
+	"description": "Remove Variable Annotation @SuppressWarnings(\"unused\") in variable endPoint : int in method public XdbServletConverter(context ServletContext, target Restlet) from class com.noelios.restlet.ext.xdb.XdbServletConverter",
+	"leftSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "endPoint : int"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 105,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public XdbServletConverter(context ServletContext, target Restlet)"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "endPoint : int"
+}, {
+		"filePath": "modules/com.noelios.restlet.ext.xdb_11.1/src/com/noelios/restlet/ext/xdb/XdbServletConverter.java",
+		"startLine": 105,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public XdbServletConverter(context ServletContext, target Restlet)"
+}]
+}
+]
+}]
+}

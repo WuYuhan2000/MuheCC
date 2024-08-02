@@ -1,0 +1,579 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/belaban/jgroups",
+	"sha1": "329f08bbff00f0f8a71123c68a3200804effb045",
+	"url": "https://github.com/belaban/jgroups/commit/329f08bbff00f0f8a71123c68a3200804effb045",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected oob_thread_pool_rejection_policy : String from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package oob_thread_pool_rejection_policy : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 22,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected oob_thread_pool_rejection_policy : String"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable hdr : GMS.GmsHeader in method package sendLeaveMessage(coord Address, mbr Address) : void from class org.jgroups.protocols.pbcast.ParticipantGmsImpl",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 23,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "hdr : GMS.GmsHeader"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java",
+		"startLine": 175,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable hdr : RelayHeader in method protected sendViewOnLocalCluster(destinations List<Address>, buffer byte[]) : void from class org.jgroups.protocols.RELAY",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/RELAY.java",
+		"startLine": 507,
+		"endLine": 507,
+		"startColumn": 25,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "hdr : RelayHeader"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/RELAY.java",
+		"startLine": 504,
+		"endLine": 504,
+		"startColumn": 13,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Property(name = \"oob_thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages. Default is 500\") to @Property(name = \"oob_thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages\") in attribute protected oob_thread_pool_queue_max_size : int from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 5,
+		"endColumn": 128,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Property(name = \"oob_thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages. Default is 500\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected oob_thread_pool_queue_max_size : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 112,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Property(name = \"oob_thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 19,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "protected oob_thread_pool_queue_max_size : int"
+}]
+},
+{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Property(name = \"oob_thread_pool.rejection_policy\", description = \"Thread rejection policy. Possible values are Abort, Discard, DiscardOldest and Run. Default is Discard\") to @Property(name = \"oob_thread_pool.rejection_policy\", description = \"Thread rejection policy. Possible values are Abort, Discard, DiscardOldest and Run\") in attribute protected oob_thread_pool_rejection_policy : String from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 164,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 132,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Property(name = \"oob_thread_pool.rejection_policy\", description = \"Thread rejection policy. Possible values are Abort, Discard, DiscardOldest and Run. Default is Discard\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 12,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package oob_thread_pool_rejection_policy : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 163,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 112,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Property(name = \"oob_thread_pool.rejection_policy\", description = \"Thread rejection policy. Possible values are Abort, Discard, DiscardOldest and Run\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 22,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "protected oob_thread_pool_rejection_policy : String"
+}]
+},
+{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Property(name = \"thread_pool.enabled\", description = \"Switch for enabling thread pool for regular messages. Default true\") to @Property(name = \"thread_pool.enabled\", description = \"Switch for enabling thread pool for regular messages\") in attribute protected thread_pool_enabled : boolean from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 123,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Property(name = \"thread_pool.enabled\", description = \"Switch for enabling thread pool for regular messages. Default true\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected thread_pool_enabled : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 109,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Property(name = \"thread_pool.enabled\", description = \"Switch for enabling thread pool for regular messages\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 23,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "protected thread_pool_enabled : boolean"
+}]
+},
+{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Property(name = \"thread_pool.queue_enabled\", description = \"Use queue to enqueue incoming regular messages. Default is true\") to @Property(name = \"thread_pool.queue_enabled\", description = \"Queue to enqueue incoming regular messages\") in attribute protected thread_pool_queue_enabled : boolean from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 127,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Property(name = \"thread_pool.queue_enabled\", description = \"Use queue to enqueue incoming regular messages. Default is true\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 23,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected thread_pool_queue_enabled : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 106,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Property(name = \"thread_pool.queue_enabled\", description = \"Queue to enqueue incoming regular messages\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 23,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "protected thread_pool_queue_enabled : boolean"
+}]
+},
+{
+	"type": "Modify Attribute Annotation",
+	"description": "Modify Attribute Annotation @Property(name = \"thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages. Default is 500\") to @Property(name = \"thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages\") in attribute protected thread_pool_queue_max_size : int from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 5,
+		"endColumn": 125,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Property(name = \"thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages. Default is 500\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected thread_pool_queue_max_size : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 109,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Property(name = \"thread_pool.queue_max_size\", description = \"Maximum queue size for incoming OOB messages\")"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with modified annotation",
+		"codeElement": "protected thread_pool_queue_max_size : int"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable is_oob : boolean to internal : boolean in method protected receive(sender Address, data byte[], offset int, length int) : void from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1353,
+		"endLine": 1353,
+		"startColumn": 25,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "is_oob : boolean"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1353,
+		"endLine": 1353,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1356,
+		"endLine": 1356,
+		"startColumn": 17,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1443,
+		"endLine": 1443,
+		"startColumn": 25,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "internal : boolean"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1443,
+		"endLine": 1443,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1444,
+		"endLine": 1445,
+		"startColumn": 17,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mbs : MessageBatch[] to batches : MessageBatch[] in method public readMessageBatch(in DataInputStream, multicast boolean) : MessageBatch[] from class org.jgroups.protocols.TP",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1626,
+		"endLine": 1626,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mbs : MessageBatch[]"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1626,
+		"endLine": 1626,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1640,
+		"endLine": 1640,
+		"startColumn": 21,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1641,
+		"endLine": 1641,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1645,
+		"endLine": 1645,
+		"startColumn": 21,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1646,
+		"endLine": 1646,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1649,
+		"endLine": 1649,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1639,
+		"endLine": 1640,
+		"startColumn": 17,
+		"endColumn": 109,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1644,
+		"endLine": 1645,
+		"startColumn": 17,
+		"endColumn": 109,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1714,
+		"endLine": 1714,
+		"startColumn": 24,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "batches : MessageBatch[]"
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1714,
+		"endLine": 1714,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1728,
+		"endLine": 1728,
+		"startColumn": 21,
+		"endColumn": 118,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1734,
+		"endLine": 1734,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1738,
+		"endLine": 1738,
+		"startColumn": 21,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1739,
+		"endLine": 1739,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1742,
+		"endLine": 1742,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1727,
+		"endLine": 1728,
+		"startColumn": 17,
+		"endColumn": 118,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/TP.java",
+		"startLine": 1737,
+		"endLine": 1738,
+		"startColumn": 17,
+		"endColumn": 113,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional mode=num_oob == 0 ? Mode.REG : num_reg == 0 ? Mode.OOB : Mode.MIXED; to [mode=Mode.REG;, if(num_oob > 0 && num_internal == 0 && num_reg == 0), if(num_reg > 0 && num_oob == 0 && num_internal == 0)] in method public MessageBatch(msgs Collection<Message>) from class org.jgroups.util.MessageBatch",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "mode=num_oob == 0 ? Mode.REG : num_reg == 0 ? Mode.OOB : Mode.MIXED;\n"
+}, {
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 46,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public MessageBatch(msgs Collection<Message>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "mode=Mode.REG;\n"
+}, {
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 60,
+		"endLine": 65,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(num_oob > 0 && num_internal == 0 && num_reg == 0)"
+}, {
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 62,
+		"endLine": 65,
+		"startColumn": 14,
+		"endColumn": 29,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(num_reg > 0 && num_oob == 0 && num_internal == 0)"
+}, {
+		"filePath": "src/org/jgroups/util/MessageBatch.java",
+		"startLine": 46,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public MessageBatch(msgs Collection<Message>)"
+}]
+}
+]
+}]
+}

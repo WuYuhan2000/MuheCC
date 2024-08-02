@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "07d58c5537eb7c63194c49de7f75c79834a3f442",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/07d58c5537eb7c63194c49de7f75c79834a3f442",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type port : Integer to port : int in class org.restlet.ext.apispark.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "port : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 14,
+		"endColumn": 18,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "port : int"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type port : Integer to port : int in method public setPort(port int) : void from class org.restlet.ext.apispark.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "port : Integer"
+}, {
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "port : int"
+}, {
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Integer to int in method public getPort() : int from class org.restlet.ext.apispark.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Integer"
+}, {
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPort() : Integer"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "int"
+}, {
+		"filePath": "modules/org.restlet.ext.apispark/src/org/restlet/ext/apispark/Endpoint.java",
+		"startLine": 20,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getPort() : int"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,180 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "78930691ca6b664a07a6995c60bb8238cf7edf96",
+	"url": "https://github.com/apache/hbase/commit/78930691ca6b664a07a6995c60bb8238cf7edf96",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]> from class org.apache.hadoop.hbase.client.ClientSmallScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 163,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSmallScanCallable(localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter connection : HConnection in method package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]> from class org.apache.hadoop.hbase.client.ClientSmallScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 163,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSmallScanCallable(localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "connection : HConnection"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter sc : Scan in method package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]> from class org.apache.hadoop.hbase.client.ClientSmallScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 163,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSmallScanCallable(localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "sc : Scan"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter table : TableName in method package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]> from class org.apache.hadoop.hbase.client.ClientSmallScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 163,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSmallScanCallable(localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 46,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "table : TableName"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]> from class org.apache.hadoop.hbase.client.ClientSmallScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 163,
+		"endLine": 183,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSmallScanCallable(localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ClientSmallScanner.java",
+		"startLine": 164,
+		"endLine": 185,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package getSmallScanCallable(sc Scan, connection HConnection, table TableName, localStartKey byte[], cacheNum int) : RegionServerCallable<Result[]>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected createClosestRowBefore(row byte[]) : byte[] from class org.apache.hadoop.hbase.client.ReversedClientScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ReversedClientScanner.java",
+		"startLine": 149,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createClosestRowBefore(row byte[]) : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/ReversedClientScanner.java",
+		"startLine": 151,
+		"endLine": 171,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected createClosestRowBefore(row byte[]) : byte[]"
+}]
+}
+]
+}]
+}

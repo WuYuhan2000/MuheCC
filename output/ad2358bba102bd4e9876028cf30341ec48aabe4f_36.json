@@ -1,0 +1,351 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "ad2358bba102bd4e9876028cf30341ec48aabe4f",
+	"url": "https://github.com/ReactiveX/RxJava/commit/ad2358bba102bd4e9876028cf30341ec48aabe4f",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class rx.operators.OperationGroupBy.GroupedSubject",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 69,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "rx.operators.OperationGroupBy.GroupBy.GroupByObserver"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 122,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "rx.operators.OperationGroupBy.GroupedSubject"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable result : ConcurrentHashMap<K,Collection<V>> in method private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,Collection<V>> from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : Map<K,List<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 163,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,List<V>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 55,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "result : ConcurrentHashMap<K,Collection<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 235,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,Collection<V>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<K,List<V>> to Map<K,Collection<V>> in method private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,Collection<V>> from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 31,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<K,List<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 163,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,List<V>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<K,Collection<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 235,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,Collection<V>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type map : Map<Integer,List<String>> to map : Map<Integer,Collection<String>> in method public testEmpty() : void from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 40,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "map : Map<Integer,List<String>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 46,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "map : Map<Integer,Collection<String>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type map : Map<Integer,List<String>> to map : Map<Integer,Collection<String>> in method public testGroupBy() : void from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 40,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "map : Map<Integer,List<String>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 46,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "map : Map<Integer,Collection<String>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type result : Map<K,List<V>> to result : ConcurrentHashMap<K,Collection<V>> in method private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,Collection<V>> from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 29,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : Map<K,List<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 55,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ConcurrentHashMap<K,Collection<V>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable key : K in method private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,List<V>> from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 19,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "key : K"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 21,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable values : List<V> in method private toMap(observable Observable<GroupedObservable<K,V>>) : Map<K,List<V>> from class rx.operators.OperationGroupBy.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "values : List<V>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 29,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class rx.operators.OperationGroupBy.GroupBy.GroupByObserver moved and renamed to rx.operators.OperationGroupBy.GroupedSubject",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 69,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rx.operators.OperationGroupBy.GroupBy.GroupByObserver"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationGroupBy.java",
+		"startLine": 122,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "rx.operators.OperationGroupBy.GroupedSubject"
+}]
+}
+]
+}]
+}

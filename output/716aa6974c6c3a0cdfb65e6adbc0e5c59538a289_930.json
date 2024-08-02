@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "716aa6974c6c3a0cdfb65e6adbc0e5c59538a289",
+	"url": "https://github.com/spring-projects/spring-framework/commit/716aa6974c6c3a0cdfb65e6adbc0e5c59538a289",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type targetMethod : String to targetMethod : Method in method public checkTarget() : void from class org.springframework.scheduling.config.ScheduledTasksBeanDefinitionParserTests",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.context/src/test/java/org/springframework/scheduling/config/ScheduledTasksBeanDefinitionParserTests.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 10,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "targetMethod : String"
+}, {
+		"filePath": "org.springframework.context/src/test/java/org/springframework/scheduling/config/ScheduledTasksBeanDefinitionParserTests.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.context/src/test/java/org/springframework/scheduling/config/ScheduledTasksBeanDefinitionParserTests.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 10,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "targetMethod : Method"
+}, {
+		"filePath": "org.springframework.context/src/test/java/org/springframework/scheduling/config/ScheduledTasksBeanDefinitionParserTests.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

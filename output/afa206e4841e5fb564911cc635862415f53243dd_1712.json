@@ -1,0 +1,1056 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/duracloud/duracloud",
+	"sha1": "afa206e4841e5fb564911cc635862415f53243dd",
+	"url": "https://github.com/duracloud/duracloud/commit/afa206e4841e5fb564911cc635862415f53243dd",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter async : boolean in method public createInitialAuditLogs(async boolean) : void from class org.duracloud.audit.Auditor",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 30,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createInitialAuditLogs() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 40,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "async : boolean"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 41,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createInitialAuditLogs(async boolean) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter async : boolean in method public createInitialAuditLogs(async boolean) : void from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 68,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createInitialAuditLogs() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 40,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "async : boolean"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 72,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createInitialAuditLogs(async boolean) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter store : ContentStore in method private spaces(store ContentStore) : List<String> from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 79,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private allSpaces() : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "store : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 353,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private spaces(store ContentStore) : List<String>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type auditLogSpaceId : String to logStore : AuditLogStore in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "auditLogSpaceId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "logStore : AuditLogStore"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type contentStore : ContentStore to storeManager : ContentStoreManager in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "contentStore : ContentStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "storeManager : ContentStoreManager"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to List<String> in method public getAuditLogs(spaceId String) : List<String> from class org.duracloud.audit.Auditor",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAuditLogs(spaceId String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<String>"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/Auditor.java",
+		"startLine": 49,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getAuditLogs(spaceId String) : List<String>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to List<String> in method public getAuditLogs(spaceId String) : List<String> from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 95,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAuditLogs(spaceId String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<String>"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 370,
+		"endLine": 386,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getAuditLogs(spaceId String) : List<String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type itr : Iterator to itr : Iterator<String> in method public getAuditLogs(spaceId String) : List<String> from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 18,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "itr : Iterator"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 101,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 26,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "itr : Iterator<String>"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 376,
+		"endLine": 378,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type logs : StringBuilder to logs : List<String> in method public getAuditLogs(spaceId String) : List<String> from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "logs : StringBuilder"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 106,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 22,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "logs : List<String>"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 380,
+		"endLine": 382,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.duracloud.audit.impl.AuditLogStoreImpl from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 23,
+		"endLine": 129,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.duracloud.audit.impl.AuditorImpl"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private contentStore : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private auditLogSpaceId : String"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private auditLogPrefix : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 41,
+		"endLine": 405,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.duracloud.audit.impl.AuditorImpl"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 32,
+		"endLine": 469,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.duracloud.audit.impl.AuditLogStoreImpl"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private contentStore : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private auditLogSpaceId : String"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private auditLogPrefix : String"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getPrimaryStore() : ContentStore extracted from public initialize(storeMgr ContentStoreManager) : void in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 40,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public initialize(storeMgr ContentStoreManager) : void"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 44,
+		"endLine": 51,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 47,
+		"endLine": 51,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 394,
+		"endLine": 403,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getPrimaryStore() : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 399,
+		"endLine": 401,
+		"startColumn": 13,
+		"endColumn": 20,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 395,
+		"endLine": 402,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 398,
+		"endLine": 402,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 62,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public initialize(storeManager ContentStoreManager) : void"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 34,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getPrimaryStore()"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private auditLogPrefix : String from class org.duracloud.audit.impl.AuditorImpl to private auditLogPrefix : String from class org.duracloud.audit.impl.AuditLogStoreImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private auditLogPrefix : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 20,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private auditLogPrefix : String"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private auditLogSpaceId : String from class org.duracloud.audit.impl.AuditorImpl to private auditLogSpaceId : String from class org.duracloud.audit.impl.AuditLogStoreImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private auditLogSpaceId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private auditLogSpaceId : String"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private contentStore : ContentStore from class org.duracloud.audit.impl.AuditorImpl to private contentStore : ContentStore from class org.duracloud.audit.impl.AuditLogStoreImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private contentStore : ContentStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditLogStoreImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private contentStore : ContentStore"
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute contentStore : ContentStore to store : ContentStore in method private spaces(store ContentStore) : List<String> from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "contentStore : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "store : ContentStore"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DEST_CONTENT_ID : String to SRC_CONTENT_ID : String in class org.duracloud.storage.aop.ContentCopyMessageConverter",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessageConverter.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 35,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DEST_CONTENT_ID : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessageConverter.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SRC_CONTENT_ID : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DEST_SPACE_ID : String to SRC_SPACE_ID : String in class org.duracloud.storage.aop.ContentCopyMessageConverter",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessageConverter.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 35,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DEST_SPACE_ID : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessageConverter.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 35,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "SRC_SPACE_ID : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute auditLogSpaceId : String to logStore : AuditLogStore in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 20,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "auditLogSpaceId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "logStore : AuditLogStore"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute contentStore : ContentStore to storeManager : ContentStoreManager in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 26,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "contentStore : ContentStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "storeManager : ContentStoreManager"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute destContentId : String to srcContentId : String in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "destContentId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "srcContentId : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute destSpaceId : String to srcSpaceId : String in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "destSpaceId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "srcSpaceId : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private allSpaces() : List<String> renamed to private spaces(store ContentStore) : List<String> in class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 79,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private allSpaces() : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 353,
+		"endLine": 361,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private spaces(store ContentStore) : List<String>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getDestContentId() : String renamed to public getSrcContentId() : String in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDestContentId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSrcContentId() : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getDestSpaceId() : String renamed to public getSrcSpaceId() : String in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDestSpaceId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSrcSpaceId() : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setDestContentId(destContentId String) : void renamed to public setSrcContentId(srcContentId String) : void in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDestContentId(destContentId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 60,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setSrcContentId(srcContentId String) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setDestSpaceId(destSpaceId String) : void renamed to public setSrcSpaceId(srcSpaceId String) : void in class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDestSpaceId(destSpaceId String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 52,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setSrcSpaceId(srcSpaceId String) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter destContentId : String to srcContentId : String in method public setSrcContentId(srcContentId String) : void from class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destContentId : String"
+}, {
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "srcContentId : String"
+}, {
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter destSpaceId : String to srcSpaceId : String in method public setSrcSpaceId(srcSpaceId String) : void from class org.duracloud.storage.aop.ContentCopyMessage",
+	"leftSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 32,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "destSpaceId : String"
+}, {
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "srcSpaceId : String"
+}, {
+		"filePath": "storageprovider/src/main/java/org/duracloud/storage/aop/ContentCopyMessage.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter storeMgr : ContentStoreManager to storeManager : ContentStoreManager in method public initialize(storeManager ContentStoreManager) : void from class org.duracloud.audit.impl.AuditorImpl",
+	"leftSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 28,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "storeMgr : ContentStoreManager"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 28,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "storeManager : ContentStoreManager"
+}, {
+		"filePath": "auditor/src/main/java/org/duracloud/audit/impl/AuditorImpl.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

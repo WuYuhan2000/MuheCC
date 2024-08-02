@@ -137,7 +137,6 @@ for i in range(0, 21):
                                                 stratify=labels)  # 80% 训练，20%测试结果
     # --------------------------------------数据集读取我的版本end------------------------------------------
 
-
     # ------------------------设置基础模型---------------------------------------
     # model1 = sklearn.svm.SVC(probability=False)  # SVM
     # model2 = KNeighborsClassifier()  # KNN

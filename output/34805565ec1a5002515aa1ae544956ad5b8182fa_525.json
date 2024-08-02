@@ -1,0 +1,213 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "34805565ec1a5002515aa1ae544956ad5b8182fa",
+	"url": "https://github.com/kiegroup/drools/commit/34805565ec1a5002515aa1ae544956ad5b8182fa",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type coreKlazz : Class<K> to klazz : Class<?> in method private buildClassDefinition(klazz Class<?>, wrapperClass Class<?>) : ClassDefinition from class org.drools.core.factmodel.traits.TraitFactory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 334,
+		"endLine": 334,
+		"startColumn": 57,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "coreKlazz : Class<K>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "klazz : Class<?>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type wrapperClass : Class<? extends CoreWrapper<K>> to wrapperClass : Class<?> in method private buildClassDefinition(klazz Class<?>, wrapperClass Class<?>) : ClassDefinition from class org.drools.core.factmodel.traits.TraitFactory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 334,
+		"endLine": 334,
+		"startColumn": 77,
+		"endColumn": 121,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "wrapperClass : Class<? extends CoreWrapper<K>>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 66,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "wrapperClass : Class<?>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private buildWrapperClassDefinition(coreKlazz Class<K>, wrapperClass Class<? extends CoreWrapper<K>>) : ClassDefinition renamed to private buildClassDefinition(klazz Class<?>, wrapperClass Class<?>) : ClassDefinition in class org.drools.core.factmodel.traits.TraitFactory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 334,
+		"endLine": 370,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private buildWrapperClassDefinition(coreKlazz Class<K>, wrapperClass Class<? extends CoreWrapper<K>>) : ClassDefinition"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 356,
+		"endLine": 404,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private buildClassDefinition(klazz Class<?>, wrapperClass Class<?>) : ClassDefinition"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter coreKlazz : Class<K> to klazz : Class<?> in method private buildClassDefinition(klazz Class<?>, wrapperClass Class<?>) : ClassDefinition from class org.drools.core.factmodel.traits.TraitFactory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 334,
+		"endLine": 334,
+		"startColumn": 57,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "coreKlazz : Class<K>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 50,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "klazz : Class<?>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/factmodel/traits/TraitFactory.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

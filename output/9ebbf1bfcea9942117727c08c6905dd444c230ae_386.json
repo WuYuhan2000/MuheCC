@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "9ebbf1bfcea9942117727c08c6905dd444c230ae",
+	"url": "https://github.com/apache/hadoop/commit/9ebbf1bfcea9942117727c08c6905dd444c230ae",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter schedulingMode : SchedulingMode in method public assignContainers(clusterResource Resource, node FiCaSchedulerNode, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueue",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueue.java",
+		"startLine": 188,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 62,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public assignContainers(clusterResource Resource, node FiCaSchedulerNode, resourceLimits ResourceLimits) : CSAssignment"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueue.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "schedulingMode : SchedulingMode"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/CSQueue.java",
+		"startLine": 188,
+		"endLine": 199,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public assignContainers(clusterResource Resource, node FiCaSchedulerNode, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment"
+}]
+}
+]
+}]
+}

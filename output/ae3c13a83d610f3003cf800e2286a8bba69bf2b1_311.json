@@ -1,0 +1,600 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "ae3c13a83d610f3003cf800e2286a8bba69bf2b1",
+	"url": "https://github.com/JetBrains/intellij-community/commit/ae3c13a83d610f3003cf800e2286a8bba69bf2b1",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @NotNull in method package createNewDir(parent File, prefix String, max int) : File from class org.jetbrains.idea.maven.indices.MavenIndices",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 104,
+		"endLine": 117,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package findAvailableDir(parent File, prefix String, max int) : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 105,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "package createNewDir(parent File, prefix String, max int) : File"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private getOrCreate(map Map<String,Set<T>>, key String) : Set<T> from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 396,
+		"endLine": 403,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getOrCreate(map Map<String,Set<T>>, key String) : Set<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 399,
+		"endLine": 406,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private getOrCreate(map Map<String,Set<T>>, key String) : Set<T>"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private normalizePathOrUrl(pathOrUrl String) : String from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 140,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private normalizePathOrUrl(pathOrUrl String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 141,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private normalizePathOrUrl(pathOrUrl String) : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type data : IndexData to myIndexer : MavenIndexerWrapper in method private doUpdateIndexData(data IndexData, progress MavenProgressIndicator) : void from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : IndexData"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 369,
+		"endLine": 386,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 37,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "myIndexer : MavenIndexerWrapper"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 372,
+		"endLine": 389,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private getDataDir(dataDirName String) : File inlined to private doOpen() : void in class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 433,
+		"endLine": 435,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private getDataDir(dataDirName String) : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 417,
+		"endLine": 421,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private openData(dataDir String) : IndexData"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 16,
+		"endColumn": 35,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "getDataDir(dataDir)"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 171,
+		"endLine": 188,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private doOpen() : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private getDataDir(dataDirName String) : File inlined to protected getCurrentDataDir() : File in class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 433,
+		"endLine": 435,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private getDataDir(dataDirName String) : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 428,
+		"endLine": 431,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "protected getCurrentDataDir() : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 12,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "getDataDir(myDataDirName)"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 419,
+		"endLine": 422,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "protected getCurrentDataDir() : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private openData(dataDir String) : IndexData inlined to private doOpen() : void in class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 417,
+		"endLine": 421,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private openData(dataDir String) : IndexData"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 170,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private doOpen() : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 16,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "openData(myDataDirName)"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 171,
+		"endLine": 188,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private doOpen() : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable dir : File in method private openData(dataDir String) : IndexData from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 10,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "dir : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public processArtifacts(processor MavenIndicesProcessor) : void moved from class org.jetbrains.idea.maven.indices.MavenIndex.IndexData to class org.jetbrains.idea.maven.indices.MavenIndex & inlined to private doUpdateIndexData(data IndexData, progress MavenProgressIndicator) : void",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 662,
+		"endLine": 664,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public processArtifacts(processor MavenIndicesProcessor) : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 663,
+		"endLine": 663,
+		"startColumn": 7,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 358,
+		"endLine": 394,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private doUpdateIndexData(data IndexData, progress MavenProgressIndicator) : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 369,
+		"endLine": 386,
+		"startColumn": 7,
+		"endColumn": 9,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "data.processArtifacts(new MavenIndicesProcessor(){\n  @Override public void processArtifacts(  Collection<MavenId> artifacts){\n    for (    MavenId each : artifacts) {\n      String groupId=each.getGroupId();\n      String artifactId=each.getArtifactId();\n      String version=each.getVersion();\n      builder.setLength(0);\n      builder.append(groupId).append(\":\").append(artifactId);\n      String ga=builder.toString();\n      getOrCreate(groupToArtifactMap,groupId).add(artifactId);\n      getOrCreate(groupWithArtifactToVersionMap,ga).add(version);\n    }\n  }\n}\n)"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 361,
+		"endLine": 397,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private doUpdateIndexData(data IndexData, progress MavenProgressIndicator) : void"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 372,
+		"endLine": 389,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package findAvailableDir(parent File, prefix String, max int) : File renamed to package createNewDir(parent File, prefix String, max int) : File in class org.jetbrains.idea.maven.indices.MavenIndices",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 104,
+		"endLine": 117,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package findAvailableDir(parent File, prefix String, max int) : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 105,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package createNewDir(parent File, prefix String, max int) : File"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private getAvailableIndexDir() : File renamed to private createNewIndexDir() : File in class org.jetbrains.idea.maven.indices.MavenIndices",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 100,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getAvailableIndexDir() : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndices.java",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private createNewIndexDir() : File"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable dir : File to dataDir : File in method private doOpen() : void from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 10,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "dir : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dataDir : File"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute data : IndexData to myIndexer : MavenIndexerWrapper in method private doUpdateIndexData(data IndexData, progress MavenProgressIndicator) : void from class org.jetbrains.idea.maven.indices.MavenIndex",
+	"leftSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : IndexData"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 369,
+		"endLine": 386,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 37,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "myIndexer : MavenIndexerWrapper"
+}, {
+		"filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/indices/MavenIndex.java",
+		"startLine": 372,
+		"endLine": 389,
+		"startColumn": 7,
+		"endColumn": 10,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,783 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "3fd458ad88808e542b211461a49728138c1ebe79",
+	"url": "https://github.com/apache/hbase/commit/3fd458ad88808e542b211461a49728138c1ebe79",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @InterfaceAudience.Private in class org.apache.hadoop.hbase.regionserver.ScanType",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 602,
+		"endLine": 609,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreScanner.ScanType"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanType.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 27,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@InterfaceAudience.Private"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanType.java",
+		"startLine": 22,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.ScanType"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter resultFile : StoreFile in method public postFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, resultFile StoreFile) : void from class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public postFlush(c ObserverContext<RegionCoprocessorEnvironment>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 87,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "resultFile : StoreFile"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 141,
+		"endLine": 144,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public postFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, resultFile StoreFile) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter scanInfo : ScanInfo in method public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, columns NavigableSet<byte[]>) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 100,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreScanner(store Store, scan Scan, columns NavigableSet<byte[]>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 36,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "scanInfo : ScanInfo"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 101,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, columns NavigableSet<byte[]>)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter scanInfo : ScanInfo in method public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 151,
+		"endLine": 180,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreScanner(store Store, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 36,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "scanInfo : ScanInfo"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 152,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter scanner : InternalScanner in method public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner from class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 97,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "scanner : InternalScanner"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 128,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter store : Store in method public postFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, resultFile StoreFile) : void from class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public postFlush(c ObserverContext<RegionCoprocessorEnvironment>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 74,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "store : Store"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 141,
+		"endLine": 144,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public postFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, resultFile StoreFile) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter store : Store in method public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner from class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 84,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "store : Store"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 128,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected SLAVES : int from class org.apache.hadoop.hbase.client.TestFromClientSide",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestFromClientSide.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 22,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private SLAVES : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestFromClientSide.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected SLAVES : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected TEST_UTIL : HBaseTestingUtility from class org.apache.hadoop.hbase.client.TestFromClientSide",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestFromClientSide.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 44,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private TEST_UTIL : HBaseTestingUtility"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestFromClientSide.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 46,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected TEST_UTIL : HBaseTestingUtility"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 41,
+		"endLine": 610,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreScanner"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 42,
+		"endLine": 602,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreScanner"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, columns NavigableSet<byte[]>) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 100,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreScanner(store Store, scan Scan, columns NavigableSet<byte[]>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 101,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, columns NavigableSet<byte[]>)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 151,
+		"endLine": 180,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreScanner(store Store, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 152,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public StoreScanner(store Store, scanInfo ScanInfo, scan Scan, scanners List<? extends KeyValueScanner>, scanType ScanType, smallestReadPoint long, earliestPutTs long)"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public compactStores(majorCompaction boolean) : void from class org.apache.hadoop.hbase.regionserver.HRegion",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1212,
+		"endLine": 1225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package compactStores(majorCompaction boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 1212,
+		"endLine": 1225,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public compactStores(majorCompaction boolean) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public getHRegion() : HRegion from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 2068,
+		"endLine": 2070,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getHRegion() : HRegion"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 2087,
+		"endLine": 2089,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getHRegion() : HRegion"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanType : StoreScanner.ScanType to scanType : ScanType in method package StoreScanner(scan Scan, scanInfo Store.ScanInfo, scanType ScanType, columns NavigableSet<byte[]>, scanners List<KeyValueScanner>) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanType : StoreScanner.ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 186,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanType : ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 187,
+		"endLine": 188,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanType : StoreScanner.ScanType to scanType : ScanType in method package StoreScanner(scan Scan, scanInfo Store.ScanInfo, scanType ScanType, columns NavigableSet<byte[]>, scanners List<KeyValueScanner>, earliestPutTs long) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanType : StoreScanner.ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 198,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanType : ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 199,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanType : StoreScanner.ScanType to scanType : ScanType in method public ScanQueryMatcher(scan Scan, scanInfo Store.ScanInfo, columns NavigableSet<byte[]>, scanType ScanType, readPointToUse long, earliestPutTs long, oldestUnexpiredTS long) from class org.apache.hadoop.hbase.regionserver.ScanQueryMatcher",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 37,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanType : StoreScanner.ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanType : ScanType"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanQueryMatcher.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type StoreScanner to KeyValueScanner in method public getScanner(scan Scan, targetCols NavigableSet<byte[]>) : KeyValueScanner from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 1944,
+		"endLine": 1944,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "StoreScanner"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 1939,
+		"endLine": 1952,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getScanner(scan Scan, targetCols NavigableSet<byte[]>) : StoreScanner"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 1956,
+		"endLine": 1956,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "KeyValueScanner"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 1951,
+		"endLine": 1971,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getScanner(scan Scan, targetCols NavigableSet<byte[]>) : KeyValueScanner"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to InternalScanner in method public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner from class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 122,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "InternalScanner"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/coprocessor/SimpleRegionObserver.java",
+		"startLine": 128,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public preFlush(c ObserverContext<RegionCoprocessorEnvironment>, store Store, scanner InternalScanner) : InternalScanner"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scanner : StoreScanner to scanner : KeyValueScanner in method package RegionScannerImpl(scan Scan, additionalScanners List<KeyValueScanner>) from class org.apache.hadoop.hbase.regionserver.HRegion.RegionScannerImpl",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 3472,
+		"endLine": 3472,
+		"startColumn": 22,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scanner : StoreScanner"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 3473,
+		"endLine": 3473,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 3472,
+		"endLine": 3472,
+		"startColumn": 25,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanner : KeyValueScanner"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HRegion.java",
+		"startLine": 3473,
+		"endLine": 3473,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute package scanInfo : ScanInfo from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 25,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package scanInfo : ScanInfo"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 25,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "package scanInfo : ScanInfo"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 2238,
+		"endLine": 2240,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getScanInfo() : ScanInfo"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable memstoreScanner : KeyValueScanner in method private internalFlushCache(set SortedSet<KeyValue>, logCacheFlushId long, snapshotTimeRangeTracker TimeRangeTracker, flushedSize AtomicLong, status MonitoredTask) : Path from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 736,
+		"endLine": 739,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 732,
+		"endLine": 732,
+		"startColumn": 21,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "memstoreScanner : KeyValueScanner"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.apache.hadoop.hbase.regionserver.StoreScanner.ScanType moved to org.apache.hadoop.hbase.regionserver.ScanType",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 602,
+		"endLine": 609,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreScanner.ScanType"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanType.java",
+		"startLine": 22,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.ScanType"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class org.apache.hadoop.hbase.regionserver.StoreScanner.ScanType",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 602,
+		"endLine": 609,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreScanner.ScanType"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/ScanType.java",
+		"startLine": 22,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.ScanType"
+}]
+}
+]
+}]
+}

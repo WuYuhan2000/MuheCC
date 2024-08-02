@@ -1,0 +1,342 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/isa-tools/isacreator",
+	"sha1": "9e2aef2de9b70ecee09cc8e9425483bf1603b9cb",
+	"url": "https://github.com/isa-tools/isacreator/commit/9e2aef2de9b70ecee09cc8e9425483bf1603b9cb",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter listTitle : String in method private createListPanel(list ExtendedJList, listTitle String) : JPanel from class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 174,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createListPanel(list ExtendedJList) : JPanel"
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 56,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "listTitle : String"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 178,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private createListPanel(list ExtendedJList, listTitle String) : JPanel"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private setAnnotation(selectedAnnnotationItem SuggestedAnnotationListItem, ontologisedResult OntologisedResult) : void extracted from private createListPanels() : void in class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 124,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createListPanels() : void"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 281,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private setAnnotation(selectedAnnnotationItem SuggestedAnnotationListItem, ontologisedResult OntologisedResult) : void"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 128,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createListPanels() : void"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 17,
+		"endColumn": 75,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "setAnnotation(selectedItem,currentlySelectedOntologyTerm)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable ontologisedResult : OntologisedResult in method private initiateFreeTextListContents() : void from class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 31,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "ontologisedResult : OntologisedResult"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable suggestedTermListContainer : JPanel in method private createListPanels() : void from class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 16,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "suggestedTermListContainer : JPanel"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Attribute",
+	"description": "Parameterize Attribute currentlySelectedOntologyTerm : OntologisedResult to ontologisedResult : OntologisedResult in method private setAnnotation(selectedAnnnotationItem SuggestedAnnotationListItem, ontologisedResult OntologisedResult) : void from class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 31,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "currentlySelectedOntologyTerm : OntologisedResult"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 85,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "ontologisedResult : OntologisedResult"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable selectedItem : SuggestedAnnotationListItem to selectedAnnnotationItem : SuggestedAnnotationListItem in method private setAnnotation(selectedAnnnotationItem SuggestedAnnotationListItem, ontologisedResult OntologisedResult) : void from class org.isatools.isacreator.ontologiser.ui.OntologiserAnnotationPane",
+	"leftSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 45,
+		"endColumn": 127,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "selectedItem : SuggestedAnnotationListItem"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 32,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "selectedAnnnotationItem : SuggestedAnnotationListItem"
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "trunk/src/main/java/org/isatools/isacreator/ontologiser/ui/OntologiserAnnotationPane.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

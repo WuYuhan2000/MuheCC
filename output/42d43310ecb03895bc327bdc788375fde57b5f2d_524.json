@@ -1,0 +1,414 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "42d43310ecb03895bc327bdc788375fde57b5f2d",
+	"url": "https://github.com/kiegroup/drools/commit/42d43310ecb03895bc327bdc788375fde57b5f2d",
+	"refactorings": [{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(Arrays.binarySearch(array,value) == -1) to return Arrays.binarySearch(array,value) != -1; in method public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 173,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 167,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 190,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(Arrays.binarySearch(array,value) == -1) to return Arrays.binarySearch(array,value) != -1; in method public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 195,
+		"endLine": 198,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 191,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 211,
+		"endLine": 212,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 207,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(Arrays.binarySearch(array,value) == -1) to return Arrays.binarySearch(array,value) != -1; in method public evaluateCachedRight(context VariableContextEntry, left Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 184,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 180,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 203,
+		"endLine": 204,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 199,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition return ((ObjectVariableContextEntry)context).right == null; to return ((ObjectVariableContextEntry)context).right != null; in method public evaluateCachedRight(context VariableContextEntry, left Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayNotEqualEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return ((ObjectVariableContextEntry)context).right == null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 132,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return ((ObjectVariableContextEntry)context).right != null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 144,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition return value == null; to return value != null; in method public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayNotEqualEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return value == null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 141,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return value != null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 153,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition return value2 == null; to return value2 != null; in method public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayNotEqualEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return value2 == null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 121,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "return value2 != null;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 133,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return true;, if(Arrays.binarySearch(array,value) == -1)] to return Arrays.binarySearch(array,value) != -1; in method public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return true;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 173,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 167,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 195,
+		"endLine": 196,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 190,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public evaluate(extractor Extractor, object1 Object, object2 FieldValue) : boolean"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return true;, if(Arrays.binarySearch(array,value) == -1)] to return Arrays.binarySearch(array,value) != -1; in method public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return true;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 195,
+		"endLine": 198,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 191,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 211,
+		"endLine": 212,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 207,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public evaluateCachedLeft(context VariableContextEntry, right Object) : boolean"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return true;, if(Arrays.binarySearch(array,value) == -1)] to return Arrays.binarySearch(array,value) != -1; in method public evaluateCachedRight(context VariableContextEntry, left Object) : boolean from class org.drools.base.evaluators.ArrayFactory.ArrayContainsEvaluator",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return true;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 184,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(Arrays.binarySearch(array,value) == -1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 180,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 203,
+		"endLine": 204,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return Arrays.binarySearch(array,value) != -1;\n"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/base/evaluators/ArrayFactory.java",
+		"startLine": 199,
+		"endLine": 205,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public evaluateCachedRight(context VariableContextEntry, left Object) : boolean"
+}]
+}
+]
+}]
+}

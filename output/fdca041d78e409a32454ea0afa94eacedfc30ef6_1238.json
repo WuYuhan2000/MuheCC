@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "fdca041d78e409a32454ea0afa94eacedfc30ef6",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/fdca041d78e409a32454ea0afa94eacedfc30ef6",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable result : ReviewResult in method public getReviewSubTasksFor(taskContainer ITaskContainer, taskDataManager ITaskDataManager, repositoryModel IRepositoryModel, monitor IProgressMonitor) : List<ReviewSubTask> from class org.eclipse.mylyn.reviews.core.ReviewsUtil",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewsUtil.java",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 8,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewsUtil.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 20,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.core/src/org/eclipse/mylyn/reviews/core/ReviewsUtil.java",
+		"startLine": 74,
+		"endLine": 79,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

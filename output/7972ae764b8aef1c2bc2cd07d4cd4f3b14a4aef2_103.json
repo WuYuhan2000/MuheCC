@@ -1,0 +1,87 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "7972ae764b8aef1c2bc2cd07d4cd4f3b14a4aef2",
+	"url": "https://github.com/apache/hbase/commit/7972ae764b8aef1c2bc2cd07d4cd4f3b14a4aef2",
+	"refactorings": [{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter column : HColumnDescriptor to columnDescriptor : HColumnDescriptor in method public addColumn(tableName TableName, columnDescriptor HColumnDescriptor) : void from class org.apache.hadoop.hbase.master.HMaster",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1379,
+		"endLine": 1379,
+		"startColumn": 52,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "column : HColumnDescriptor"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1388,
+		"endLine": 1388,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1390,
+		"endLine": 1390,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1383,
+		"endLine": 1385,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1379,
+		"endLine": 1379,
+		"startColumn": 52,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "columnDescriptor : HColumnDescriptor"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1389,
+		"endLine": 1389,
+		"startColumn": 5,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1391,
+		"endLine": 1391,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/HMaster.java",
+		"startLine": 1384,
+		"endLine": 1386,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

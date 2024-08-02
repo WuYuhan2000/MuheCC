@@ -1,0 +1,129 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "615fc435cc88c2c4fe66e9359f1d69e5eb134d18",
+	"url": "https://github.com/elastic/elasticsearch/commit/615fc435cc88c2c4fe66e9359f1d69e5eb134d18",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package compression : boolean from class org.elasticsearch.http.netty.NettyHttpServerTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 27,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private compression : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 19,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package compression : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package maxContentLength : ByteSizeValue from class org.elasticsearch.http.netty.NettyHttpServerTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private maxContentLength : ByteSizeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package maxContentLength : ByteSizeValue"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package serverOpenChannels : OpenChannelsHandler from class org.elasticsearch.http.netty.NettyHttpServerTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 42,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private serverOpenChannels : OpenChannelsHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package serverOpenChannels : OpenChannelsHandler"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier volatile in attribute private serverOpenChannels : OpenChannelsHandler from class org.elasticsearch.http.netty.NettyHttpServerTransport",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 42,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private serverOpenChannels : OpenChannelsHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "package serverOpenChannels : OpenChannelsHandler"
+}]
+},
+{
+	"type": "Replace Anonymous With Class",
+	"description": "Replace Anonymous With Class org.elasticsearch.http.netty.NettyHttpServerTransport.doStart.pipelineFactory.new ChannelPipelineFactory with org.elasticsearch.http.netty.NettyHttpServerTransport.MyChannelPipelineFactory",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 168,
+		"endLine": 184,
+		"startColumn": 79,
+		"endColumn": 10,
+		"codeElementType": "ANONYMOUS_CLASS_DECLARATION",
+		"description": "anonymous class declaration",
+		"codeElement": "org.elasticsearch.http.netty.NettyHttpServerTransport.2"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/http/netty/NettyHttpServerTransport.java",
+		"startLine": 280,
+		"endLine": 310,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "added type declaration",
+		"codeElement": "org.elasticsearch.http.netty.NettyHttpServerTransport.MyChannelPipelineFactory"
+}]
+}
+]
+}]
+}

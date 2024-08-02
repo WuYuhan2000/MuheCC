@@ -1,0 +1,66 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "32b5ef9df68ad121ed7bb3f790a36b074d103117",
+	"url": "https://github.com/apache/deltaspike/commit/32b5ef9df68ad121ed7bb3f790a36b074d103117",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type windowContext : DefaultWindowContext to windowContext : WindowContextImpl in class org.apache.deltaspike.core.impl.scope.window.DeltaSpikeContextExtension",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/DeltaSpikeContextExtension.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "windowContext : DefaultWindowContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/DeltaSpikeContextExtension.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "windowContext : WindowContextImpl"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private windowContext : WindowContextImpl from class org.apache.deltaspike.core.impl.scope.window.DeltaSpikeContextExtension",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/DeltaSpikeContextExtension.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private windowContext : DefaultWindowContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/DeltaSpikeContextExtension.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private windowContext : WindowContextImpl"
+}, {
+		"filePath": "deltaspike/core/impl/src/main/java/org/apache/deltaspike/core/impl/scope/window/DeltaSpikeContextExtension.java",
+		"startLine": 59,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getWindowContext() : WindowContextImpl"
+}]
+}
+]
+}]
+}

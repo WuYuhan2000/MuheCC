@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/hector-client/hector",
+	"sha1": "79e6a0ae50cae9718a66f3d07c70852e8ff1806a",
+	"url": "https://github.com/hector-client/hector/commit/79e6a0ae50cae9718a66f3d07c70852e8ff1806a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type cassandraCluster : CassandraCluster to cluster : Cluster in class me.prettyprint.cassandra.service.CassandraClientImpl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cassandraCluster : CassandraCluster"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "cluster : Cluster"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type cassandraCluster : CassandraCluster to cassandraCluster : Cluster in method public CassandraClientImpl(cassandraThriftClient Cassandra.Client, keyspaceFactory KeyspaceFactory, cassandraHost CassandraHost, clientPools CassandraClientPool, cassandraCluster Cluster, timestampResolution TimestampResolution) from class me.prettyprint.cassandra.service.CassandraClientImpl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cassandraCluster : CassandraCluster"
+}, {
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "cassandraCluster : Cluster"
+}, {
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute cassandraCluster : CassandraCluster to cluster : Cluster in class me.prettyprint.cassandra.service.CassandraClientImpl",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 34,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "cassandraCluster : CassandraCluster"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/me/prettyprint/cassandra/service/CassandraClientImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "cluster : Cluster"
+}]
+}
+]
+}]
+}

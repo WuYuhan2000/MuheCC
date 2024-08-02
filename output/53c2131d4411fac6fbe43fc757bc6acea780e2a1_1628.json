@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/crashub/crash",
+	"sha1": "53c2131d4411fac6fbe43fc757bc6acea780e2a1",
+	"url": "https://github.com/crashub/crash/commit/53c2131d4411fac6fbe43fc757bc6acea780e2a1",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method protected getResource(name String) : Resource from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type commandManager : ClassManager<? extends ShellCommand> to commandManager : AbstractClassManager<? extends ShellCommand> in class org.crsh.shell.impl.command.CRaSH",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 46,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "commandManager : ClassManager<? extends ShellCommand>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 54,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "commandManager : AbstractClassManager<? extends ShellCommand>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type scriptManager : ClassManager<? extends GroovyScript> to scriptManager : AbstractClassManager<? extends GroovyScript> in class org.crsh.shell.impl.command.CRaSH",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 46,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "scriptManager : ClassManager<? extends GroovyScript>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 54,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "scriptManager : AbstractClassManager<? extends GroovyScript>"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 40,
+		"endLine": 148,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.crsh.shell.impl.command.ClassManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 31,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.crsh.shell.impl.command.ClassManager"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected getResource(name String) : Resource from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to public in method public ClassManager(context PluginContext, kind ResourceKind, baseClass Class<T>, baseScriptClass Class<? extends Script>) from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 57,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClassManager(context PluginContext, kind ResourceKind, baseClass Class<T>, baseScriptClass Class<? extends Script>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 42,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public ClassManager(context PluginContext, kind ResourceKind, baseClass Class<T>, baseScriptClass Class<? extends Script>)"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type commandManager : ClassManager<ShellCommand> to commandManager : AbstractClassManager<ShellCommand> in method public CRaSH(context PluginContext, commandManager AbstractClassManager<ShellCommand>, scriptManager AbstractClassManager<? extends GroovyScript>) from class org.crsh.shell.impl.command.CRaSH",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 39,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "commandManager : ClassManager<ShellCommand>"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "commandManager : AbstractClassManager<ShellCommand>"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scriptManager : ClassManager<? extends GroovyScript> to scriptManager : AbstractClassManager<? extends GroovyScript> in method public CRaSH(context PluginContext, commandManager AbstractClassManager<ShellCommand>, scriptManager AbstractClassManager<? extends GroovyScript>) from class org.crsh.shell.impl.command.CRaSH",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 82,
+		"endColumn": 132,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scriptManager : ClassManager<? extends GroovyScript>"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 90,
+		"endColumn": 148,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scriptManager : AbstractClassManager<? extends GroovyScript>"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/CRaSH.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Class<? extends T> to Resource in method protected getResource(name String) : Resource from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Class<? extends T>"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Resource"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.crsh.shell.impl.command.AbstractClassManager from classes [org.crsh.shell.impl.command.ClassManager]",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 40,
+		"endLine": 148,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.crsh.shell.impl.command.ClassManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 31,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.crsh.shell.impl.command.ClassManager"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/AbstractClassManager.java",
+		"startLine": 36,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.crsh.shell.impl.command.AbstractClassManager"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private baseClass : Class<T> from class org.crsh.shell.impl.command.ClassManager to private baseClass : Class<T> from class org.crsh.shell.impl.command.AbstractClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private baseClass : Class<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/AbstractClassManager.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private baseClass : Class<T>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private config : CompilerConfiguration from class org.crsh.shell.impl.command.ClassManager to private config : CompilerConfiguration from class org.crsh.shell.impl.command.AbstractClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 39,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private config : CompilerConfiguration"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/AbstractClassManager.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 39,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private config : CompilerConfiguration"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method package getInstance(name String) : T from class org.crsh.shell.impl.command.ClassManager to package getInstance(name String) : T from class org.crsh.shell.impl.command.AbstractClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 134,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInstance(name String) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/AbstractClassManager.java",
+		"startLine": 129,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "package getInstance(name String) : T"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type NoSuchCommandException in method package getClass(name String) : Class<? extends T> from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 51,
+		"endColumn": 73,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "NoSuchCommandException"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type NullPointerException in method package getClass(name String) : Class<? extends T> from class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 75,
+		"endColumn": 95,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "NullPointerException"
+}, {
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method package getClass(name String) : Class<? extends T> renamed to protected getResource(name String) : Resource in class org.crsh.shell.impl.command.ClassManager",
+	"leftSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 69,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getClass(name String) : Class<? extends T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "shell/core/src/main/java/org/crsh/shell/impl/command/ClassManager.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected getResource(name String) : Resource"
+}]
+}
+]
+}]
+}

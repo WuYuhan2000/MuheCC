@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/tapiji/tapiji",
+	"sha1": "05f4312a0fd7a993277c47362726bb027282a198",
+	"url": "https://github.com/tapiji/tapiji/commit/05f4312a0fd7a993277c47362726bb027282a198",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type data : Object to data : Serializable in class auditor.model.SLLocation",
+	"leftSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "data : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "data : Serializable"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type data : Object to data : Serializable in method public setData(data Serializable) : void from class auditor.model.SLLocation",
+	"leftSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "data : Object"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "data : Serializable"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Object to Serializable in method public getData() : Serializable from class auditor.model.SLLocation",
+	"leftSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getData() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Serializable"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/model/SLLocation.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getData() : Serializable"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter cause : int to cause : int in method public getMarkerResolutions(marker IMarker) : List<IMarkerResolution> from class auditor.JSFResourceAuditor",
+	"leftSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/JSFResourceAuditor.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 4,
+		"endColumn": 13,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cause : int"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/JSFResourceAuditor.java",
+		"startLine": 64,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/JSFResourceAuditor.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "cause : int"
+}, {
+		"filePath": "at.ac.tuwien.inso.eclipse.i18n.jsf/src/auditor/JSFResourceAuditor.java",
+		"startLine": 62,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

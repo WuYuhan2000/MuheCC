@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "28725723398943b2b51cb38d6fe92a3aadf4dee6",
+	"url": "https://github.com/kiegroup/drools/commit/28725723398943b2b51cb38d6fe92a3aadf4dee6",
+	"refactorings": [{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public setRuleBase(ruleBase InternalRuleBase) : void moved from class org.drools.reteoo.Rete to class org.drools.common.AbstractRuleBase & inlined to public doReadExternal(stream ObjectInput, objects Object[]) : void",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/reteoo/Rete.java",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public setRuleBase(ruleBase InternalRuleBase) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/reteoo/Rete.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 167,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public doReadExternal(stream ObjectInput, objects Object[]) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "parentStream.setRuleBase(this)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "childStream.setRuleBase(this)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 167,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public doReadExternal(stream ObjectInput, objects Object[]) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public setRuleBase(ruleBase InternalRuleBase) : void moved from class org.drools.reteoo.Rete to class org.drools.common.AbstractRuleBase & inlined to public doReadExternal(stream ObjectInput, objects Object[]) : void",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/reteoo/Rete.java",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public setRuleBase(ruleBase InternalRuleBase) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/reteoo/Rete.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 167,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public doReadExternal(stream ObjectInput, objects Object[]) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "parentStream.setRuleBase(this)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "childStream.setRuleBase(this)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 167,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public doReadExternal(stream ObjectInput, objects Object[]) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractRuleBase.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,198 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "8933947b9549f6bbf4dd81034a6d47a22acdf895",
+	"url": "https://github.com/elastic/elasticsearch/commit/8933947b9549f6bbf4dd81034a6d47a22acdf895",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable fields : Fields in method public completionStats(indexReader IndexReader, fieldNamePatterns String...) : CompletionStats from class org.elasticsearch.search.suggest.completion.CompletionFieldStats",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 44,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "fields : Fields"
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 53,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter fields : String... to fieldNamePatterns : String... in method public completionStats(indexReader IndexReader, fieldNamePatterns String...) : CompletionStats from class org.elasticsearch.search.suggest.completion.CompletionFieldStats",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 76,
+		"endColumn": 93,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fields : String..."
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 38,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 76,
+		"endColumn": 104,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fieldNamePatterns : String..."
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 58,
+		"endLine": 60,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 13,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ignored : IOException to ioe : IOException in method public completionStats(indexReader IndexReader, fieldNamePatterns String...) : CompletionStats from class org.elasticsearch.search.suggest.completion.CompletionFieldStats",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 22,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ignored : IOException"
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 22,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "ioe : IOException"
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/elasticsearch/search/suggest/completion/CompletionFieldStats.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

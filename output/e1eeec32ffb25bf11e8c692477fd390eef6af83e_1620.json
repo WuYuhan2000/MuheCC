@@ -1,0 +1,405 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hama",
+	"sha1": "e1eeec32ffb25bf11e8c692477fd390eef6af83e",
+	"url": "https://github.com/apache/hama/commit/e1eeec32ffb25bf11e8c692477fd390eef6af83e",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public getOutput(instance DoubleVector) : DoubleVector from class org.apache.hama.ml.ann.SmallLayeredNeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 255,
+		"endLine": 277,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOutput(instance DoubleVector) : DoubleVector"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 255,
+		"endLine": 281,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getOutput(instance DoubleVector) : DoubleVector"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public readFields(input DataInput) : void from class org.apache.hama.ml.ann.NeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 182,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public readFields(input DataInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 191,
+		"endLine": 231,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public readFields(input DataInput) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public write(output DataOutput) : void from class org.apache.hama.ml.ann.NeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 194,
+		"endLine": 205,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(output DataOutput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 233,
+		"endLine": 253,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public write(output DataOutput) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings({\"rawtypes\",\"unchecked\"}) in method public readFields(input DataInput) : void from class org.apache.hama.ml.ann.NeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 182,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public readFields(input DataInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings({\"rawtypes\",\"unchecked\"})"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/NeuralNetwork.java",
+		"startLine": 191,
+		"endLine": 231,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public readFields(input DataInput) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable transformedInstance : DoubleVector in method public getOutput(instance DoubleVector) : DoubleVector from class org.apache.hama.ml.ann.SmallLayeredNeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 264,
+		"endLine": 265,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 7,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 265,
+		"endLine": 266,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "transformedInstance : DoubleVector"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 268,
+		"endLine": 269,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore in method public testAutoEncoderSwissRollDataset() : void from class org.apache.hama.ml.ann.TestAutoEncoder",
+	"leftSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestAutoEncoder.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore"
+}, {
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestAutoEncoder.java",
+		"startLine": 80,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testAutoEncoderSwissRollDataset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestAutoEncoder.java",
+		"startLine": 79,
+		"endLine": 129,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testAutoEncoderSwissRollDataset() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Test in method public testLogisticRegressionDistributedVersion() : void from class org.apache.hama.ml.ann.TestSmallLayeredNeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestSmallLayeredNeuralNetwork.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 3,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Test"
+}, {
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestSmallLayeredNeuralNetwork.java",
+		"startLine": 412,
+		"endLine": 516,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testLogisticRegressionDistributedVersion() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/ann/TestSmallLayeredNeuralNetwork.java",
+		"startLine": 427,
+		"endLine": 530,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testLogisticRegressionDistributedVersion() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Test in method public testTrainingByXOR() : void from class org.apache.hama.ml.perception.TestSmallMultiLayerPerceptron",
+	"leftSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/perception/TestSmallMultiLayerPerceptron.java",
+		"startLine": 359,
+		"endLine": 359,
+		"startColumn": 3,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Test"
+}, {
+		"filePath": "ml/src/test/java/org/apache/hama/ml/perception/TestSmallMultiLayerPerceptron.java",
+		"startLine": 356,
+		"endLine": 431,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testTrainingByXOR() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/test/java/org/apache/hama/ml/perception/TestSmallMultiLayerPerceptron.java",
+		"startLine": 376,
+		"endLine": 450,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testTrainingByXOR() : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract output(featureVector DoubleVector) : DoubleVector from class org.apache.hama.ml.perception.MultiLayerPerceptron",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/MultiLayerPerceptron.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract output(featureVector DoubleVector) : DoubleVector"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/MultiLayerPerceptron.java",
+		"startLine": 122,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public output(featureVector DoubleVector) : DoubleVector"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public abstract output(featureVector DoubleVector) : DoubleVector renamed to public abstract outputWrapper(featureVector DoubleVector) : DoubleVector in class org.apache.hama.ml.perception.MultiLayerPerceptron",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/MultiLayerPerceptron.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract output(featureVector DoubleVector) : DoubleVector"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/MultiLayerPerceptron.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public abstract outputWrapper(featureVector DoubleVector) : DoubleVector"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public output(featureVector DoubleVector) : DoubleVector renamed to public outputWrapper(featureVector DoubleVector) : DoubleVector in class org.apache.hama.ml.perception.SmallMultiLayerPerceptron",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/SmallMultiLayerPerceptron.java",
+		"startLine": 150,
+		"endLine": 159,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public output(featureVector DoubleVector) : DoubleVector"
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/perception/SmallMultiLayerPerceptron.java",
+		"startLine": 154,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public outputWrapper(featureVector DoubleVector) : DoubleVector"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter instance : DoubleVector to instanceWithBias : DoubleVector in method public getOutputInternal(instanceWithBias DoubleVector) : List<DoubleVector> from class org.apache.hama.ml.ann.SmallLayeredNeuralNetwork",
+	"leftSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 47,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "instance : DoubleVector"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 47,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "instanceWithBias : DoubleVector"
+}, {
+		"filePath": "ml/src/main/java/org/apache/hama/ml/ann/SmallLayeredNeuralNetwork.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

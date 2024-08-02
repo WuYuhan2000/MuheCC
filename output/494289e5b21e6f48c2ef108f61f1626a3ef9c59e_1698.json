@@ -1,0 +1,2463 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/csemike/oneswarm",
+	"sha1": "494289e5b21e6f48c2ef108f61f1626a3ef9c59e",
+	"url": "https://github.com/csemike/oneswarm/commit/494289e5b21e6f48c2ef108f61f1626a3ef9c59e",
+	"refactorings": [{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier static in class edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 54,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 552,
+		"endLine": 587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter listener : ConnectionListener in method public createConnection(listener ConnectionListener) : NetworkConnection from class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.SharedService",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 46,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createConnection() : NetworkConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 51,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "listener : ConnectionListener"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 93,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createConnection(listener ConnectionListener) : NetworkConnection"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected bytesIn : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private bytesIn : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected bytesIn : long"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected bytesOut : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 18,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private bytesOut : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected bytesOut : long"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected channelId : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private channelId : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected channelId : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected closeReason : String from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 20,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private closeReason : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 22,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected closeReason : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected downloadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private downloadRateAverage : Average"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected downloadRateAverage : Average"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected lastMsgTime : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lastMsgTime : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected lastMsgTime : long"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected pathID : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pathID : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected pathID : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected started : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private started : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected started : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected uploadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private uploadRateAverage : Average"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected uploadRateAverage : Average"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type overlayTransports : ConcurrentHashMap<Integer,OverlayTransport> to overlayTransports : ConcurrentHashMap<Integer,OverlayEndpoint> in class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 64,
+		"endColumn": 134,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "overlayTransports : ConcurrentHashMap<Integer,OverlayTransport>"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 63,
+		"endColumn": 132,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "overlayTransports : ConcurrentHashMap<Integer,OverlayEndpoint>"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to private in class edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 54,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 552,
+		"endLine": 587,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport.OverlayProtocolEndpoint"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 20,
+		"endLine": 173,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 21,
+		"endLine": 200,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.SharedService",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 36,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.Service"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 71,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.SharedService"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected handleDelayedOverlayMessage(msg OSF2FChannelDataMsg) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 332,
+		"endLine": 344,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private handleDelayedOverlayMessage(msg OSF2FChannelDataMsg) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 185,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected handleDelayedOverlayMessage(msg OSF2FChannelDataMsg) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private sendReset() : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 587,
+		"endLine": 591,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sendReset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 206,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private sendReset() : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type transport : OverlayTransport to transport : OverlayEndpoint in method package deregisterOverlayTransport(transport OverlayEndpoint) : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 542,
+		"endLine": 542,
+		"startColumn": 37,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "transport : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 545,
+		"endLine": 545,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 542,
+		"endLine": 542,
+		"startColumn": 37,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "transport : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 545,
+		"endLine": 545,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type transport : OverlayTransport to transport : OverlayEndpoint in method package registerOverlayTransport(transport OverlayEndpoint) : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1238,
+		"endLine": 1238,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "transport : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1241,
+		"endLine": 1241,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1242,
+		"endLine": 1242,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1257,
+		"endLine": 1257,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1238,
+		"endLine": 1238,
+		"startColumn": 35,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "transport : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1241,
+		"endLine": 1241,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1242,
+		"endLine": 1242,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 1257,
+		"endLine": 1257,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<Integer,OverlayTransport> to Map<Integer,OverlayEndpoint> in method public getOverlayTransports() : Map<Integer,OverlayEndpoint> from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 12,
+		"endColumn": 42,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<Integer,OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 646,
+		"endLine": 648,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOverlayTransports() : Map<Integer,OverlayTransport>"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 646,
+		"endLine": 646,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<Integer,OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 646,
+		"endLine": 648,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getOverlayTransports() : Map<Integer,OverlayEndpoint>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Service to SharedService in method public handleSearch(search OSF2FHashSearch) : SharedService from class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Service"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public handleSearch(search OSF2FHashSearch) : Service"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 12,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "SharedService"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 56,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public handleSearch(search OSF2FHashSearch) : SharedService"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type exists : OverlayTransport to exists : OverlayEndpoint in method package deregisterOverlayTransport(transport OverlayEndpoint) : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 547,
+		"endLine": 547,
+		"startColumn": 30,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "exists : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 556,
+		"endLine": 560,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 551,
+		"endLine": 553,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 547,
+		"endLine": 547,
+		"startColumn": 29,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "exists : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 556,
+		"endLine": 560,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 551,
+		"endLine": 553,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type f : OverlayTransport to f : OverlayEndpoint in method private addOverlays(sel FriendConnection) : void from class edu.washington.cs.oneswarm.f2f.OSF2FAzSwtUi.ViewListener",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 555,
+		"endLine": 555,
+		"startColumn": 22,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "f : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 557,
+		"endLine": 557,
+		"startColumn": 5,
+		"endColumn": 393,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 556,
+		"endLine": 556,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "f : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 558,
+		"endLine": 558,
+		"startColumn": 5,
+		"endColumn": 393,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type o : OverlayTransport to o : OverlayEndpoint in method public getTransportDownloadKBps() : double from class edu.washington.cs.oneswarm.f2f.network.OverlayManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type o : OverlayTransport to o : OverlayEndpoint in method public getTransportSendRate(includeLan boolean) : long from class edu.washington.cs.oneswarm.f2f.network.OverlayManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 6,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 395,
+		"endLine": 399,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 18,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 428,
+		"endLine": 432,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ot : Map<Integer,OverlayTransport> to ot : Map<Integer,OverlayEndpoint> in method public getTransportDownloadKBps() : double from class edu.washington.cs.oneswarm.f2f.network.OverlayManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 41,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ot : Map<Integer,OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 377,
+		"endLine": 379,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 49,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ot : Map<Integer,OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 410,
+		"endLine": 412,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ot : Map<Integer,OverlayTransport> to ot : Map<Integer,OverlayEndpoint> in method public getTransportSendRate(includeLan boolean) : long from class edu.washington.cs.oneswarm.f2f.network.OverlayManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 41,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ot : Map<Integer,OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 394,
+		"endLine": 400,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 49,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ot : Map<Integer,OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayManager.java",
+		"startLine": 427,
+		"endLine": 433,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ot : OverlayTransport to ot : OverlayEndpoint in method public getDebugInfo() : String from class edu.washington.cs.oneswarm.f2f.OSF2FPlugin",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 612,
+		"endLine": 612,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ot : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 613,
+		"endLine": 613,
+		"startColumn": 5,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 613,
+		"endLine": 613,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ot : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 614,
+		"endLine": 614,
+		"startColumn": 5,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type overlayTransport : OverlayTransport to overlayTransport : OverlayEndpoint in method public close() : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 14,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "overlayTransport : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 14,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "overlayTransport : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type service : Service to service : SharedService in method public handleSearch(search OSF2FHashSearch) : SharedService from class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 17,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "service : Service"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "service : SharedService"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type t : OverlayTransport to t : OverlayEndpoint in method private handleChannelMsg(message Message) : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 688,
+		"endLine": 688,
+		"startColumn": 34,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "t : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 694,
+		"endLine": 694,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 697,
+		"endLine": 697,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 693,
+		"endLine": 695,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 688,
+		"endLine": 688,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "t : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 694,
+		"endLine": 694,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 697,
+		"endLine": 697,
+		"startColumn": 17,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 693,
+		"endLine": 695,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type tr : OverlayTransport to tr : OverlayEndpoint in method public refresh(cell TableCell) : void from class edu.washington.cs.oneswarm.f2f.OSF2FAzSwtUi.addArtificialDelayColumn.addCellRefreshListener.new TableCellRefreshListener",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 22,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tr : OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 224,
+		"endLine": 227,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 21,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "tr : OverlayEndpoint"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 225,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 230,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type transports : Collection<OverlayTransport> to transports : Collection<OverlayEndpoint> in method public getDebugInfo() : String from class edu.washington.cs.oneswarm.f2f.OSF2FPlugin",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 608,
+		"endLine": 608,
+		"startColumn": 33,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transports : Collection<OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 609,
+		"endLine": 611,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 612,
+		"endLine": 614,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 609,
+		"endLine": 609,
+		"startColumn": 32,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "transports : Collection<OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 610,
+		"endLine": 612,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FPlugin.java",
+		"startLine": 613,
+		"endLine": 615,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type transports : List<OverlayTransport> to transports : List<OverlayEndpoint> in method public close() : void from class edu.washington.cs.oneswarm.f2f.network.FriendConnection",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 450,
+		"endLine": 451,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transports : List<OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 452,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 450,
+		"endLine": 451,
+		"startColumn": 31,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "transports : List<OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/FriendConnection.java",
+		"startLine": 452,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type transports : Map<Integer,OverlayTransport> to transports : Map<Integer,OverlayEndpoint> in method private addOverlays(sel FriendConnection) : void from class edu.washington.cs.oneswarm.f2f.OSF2FAzSwtUi.ViewListener",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 553,
+		"endLine": 553,
+		"startColumn": 35,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "transports : Map<Integer,OverlayTransport>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 555,
+		"endLine": 555,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 554,
+		"endLine": 558,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 554,
+		"endLine": 554,
+		"startColumn": 34,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "transports : Map<Integer,OverlayEndpoint>"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 556,
+		"endLine": 556,
+		"startColumn": 8,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/OSF2FAzSwtUi.java",
+		"startLine": 555,
+		"endLine": 559,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint from classes [edu.washington.cs.oneswarm.f2f.network.OverlayTransport, edu.washington.cs.oneswarm.f2f.network.ServiceConnection]",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 50,
+		"endLine": 772,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/ServiceConnection.java",
+		"startLine": 3,
+		"endLine": 10,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.ServiceConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 44,
+		"endLine": 592,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayTransport"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/ServiceConnection.java",
+		"startLine": 18,
+		"endLine": 188,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.ServiceConnection"
+}, {
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 17,
+		"endLine": 222,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute protected connection : FriendConnection renamed to protected friendConnection : FriendConnection and moved from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 38,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected connection : FriendConnection"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 38,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "protected friendConnection : FriendConnection"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private SS : byte from class edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage.RawMessageDecoder to private SS : byte from class edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 35,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private SS : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private SS : byte"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private INCOMING_MESSAGE_DELAY_SLACK : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private INCOMING_MESSAGE_DELAY_SLACK : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 30,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private INCOMING_MESSAGE_DELAY_SLACK : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 30,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private INCOMING_MESSAGE_DELAY_SLACK : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private TIMEOUT : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private TIMEOUT : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private TIMEOUT : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private TIMEOUT : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private bytesIn : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected bytesIn : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private bytesIn : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected bytesIn : long"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private bytesOut : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected bytesOut : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 18,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private bytesOut : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected bytesOut : long"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private channelId : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected channelId : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private channelId : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected channelId : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private closeReason : String from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected closeReason : String from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 20,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private closeReason : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 22,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected closeReason : String"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private delayedOverlayMessageTimer : DelayedExecutor from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private delayedOverlayMessageTimer : DelayedExecutor from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private delayedOverlayMessageTimer : DelayedExecutor"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private delayedOverlayMessageTimer : DelayedExecutor"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private desc : String from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private desc : String from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private desc : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private desc : String"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private downloadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected downloadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private downloadRateAverage : Average"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 23,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected downloadRateAverage : Average"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private lastMsgTime : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected lastMsgTime : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lastMsgTime : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected lastMsgTime : long"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private overlayDelayMs : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private overlayDelayMs : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private overlayDelayMs : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private overlayDelayMs : long"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private pathID : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected pathID : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pathID : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected pathID : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private sentReset : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private sentReset : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private sentReset : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 21,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private sentReset : boolean"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private startTime : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private startTime : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private startTime : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 24,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private startTime : long"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private started : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected started : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 21,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private started : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected started : boolean"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private uploadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected uploadRateAverage : Average from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 21,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private uploadRateAverage : Average"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 23,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected uploadRateAverage : Average"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected closed : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected closed : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected closed : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected closed : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected writeMessage(msgBuffer DirectByteBuffer) : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to protected writeMessageToFriendConnection(msgBuffer DirectByteBuffer) : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 727,
+		"endLine": 734,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected writeMessage(msgBuffer DirectByteBuffer) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 214,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected writeMessageToFriendConnection(msgBuffer DirectByteBuffer) : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public close(reason String) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public close(reason String) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 190,
+		"endLine": 211,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public close(reason String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 71,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public close(reason String) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public closeChannelReset() : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public closeChannelReset() : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 213,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public closeChannelReset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 89,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public closeChannelReset() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public closeConnectionClosed(reason String) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public closeConnectionClosed(reason String) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 235,
+		"endLine": 246,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public closeConnectionClosed(reason String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 110,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public closeConnectionClosed(reason String) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getAge() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getAge() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 744,
+		"endLine": 746,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAge() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 125,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getAge() : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getArtificialDelay() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getArtificialDelay() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 634,
+		"endLine": 636,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getArtificialDelay() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 129,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getArtificialDelay() : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getBytesIn() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getBytesIn() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 752,
+		"endLine": 754,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBytesIn() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 133,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getBytesIn() : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getBytesOut() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getBytesOut() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 756,
+		"endLine": 758,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBytesOut() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 137,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getBytesOut() : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getChannelId() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getChannelId() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 275,
+		"endLine": 277,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getChannelId() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 141,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getChannelId() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getDescription() : String from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getDescription() : String from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 281,
+		"endLine": 287,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDescription() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 145,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getDescription() : String"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getDownloadRate() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getDownloadRate() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 764,
+		"endLine": 766,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDownloadRate() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 154,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getDownloadRate() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getLastMsgTime() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getLastMsgTime() : long from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 748,
+		"endLine": 750,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLastMsgTime() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 158,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getLastMsgTime() : long"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getPathID() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getPathID() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 297,
+		"endLine": 299,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPathID() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 162,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getPathID() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getRemoteFriend() : Friend from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getRemoteFriend() : Friend from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 740,
+		"endLine": 742,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRemoteFriend() : Friend"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 166,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getRemoteFriend() : Friend"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getRemoteIP() : String from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getRemoteIP() : String from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 736,
+		"endLine": 738,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getRemoteIP() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 170,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getRemoteIP() : String"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getUploadRate() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public getUploadRate() : int from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 760,
+		"endLine": 762,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getUploadRate() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getUploadRate() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public incomingOverlayMsg(msg OSF2FChannelDataMsg) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public incomingOverlayMsg(msg OSF2FChannelDataMsg) : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 318,
+		"endLine": 330,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public incomingOverlayMsg(msg OSF2FChannelDataMsg) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 180,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public incomingOverlayMsg(msg OSF2FChannelDataMsg) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isLANLocal() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public isLANLocal() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 768,
+		"endLine": 770,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isLANLocal() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 194,
+		"endLine": 196,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isLANLocal() : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isStarted() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public isStarted() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 399,
+		"endLine": 401,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isStarted() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 198,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isStarted() : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public isTimedOut() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to public isTimedOut() : boolean from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 407,
+		"endLine": 409,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isTimedOut() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 202,
+		"endLine": 204,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public isTimedOut() : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public sendReset() : void from class edu.washington.cs.oneswarm.f2f.network.OverlayTransport to private sendReset() : void from class edu.washington.cs.oneswarm.f2f.network.OverlayEndpoint",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayTransport.java",
+		"startLine": 587,
+		"endLine": 591,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public sendReset() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/network/OverlayEndpoint.java",
+		"startLine": 206,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private sendReset() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute DESC : String to desc : String in class edu.washington.cs.oneswarm.f2f.servicesharing.DataMessage",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 26,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DESC : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/DataMessage.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 26,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "desc : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute instace : ServiceSharingManager to instance : ServiceSharingManager in class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 48,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "instace : ServiceSharingManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 48,
+		"endColumn": 86,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "instance : ServiceSharingManager"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.Service renamed to edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.SharedService",
+	"leftSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 36,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.Service"
+}],
+	"rightSideLocations": [{
+		"filePath": "oneswarm_f2f/src/edu/washington/cs/oneswarm/f2f/servicesharing/ServiceSharingManager.java",
+		"startLine": 71,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "edu.washington.cs.oneswarm.f2f.servicesharing.ServiceSharingManager.SharedService"
+}]
+}
+]
+}]
+}

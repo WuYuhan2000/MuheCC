@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "42fa86735cb89bdde76545946d154c045513c12b",
+	"url": "https://github.com/apache/deltaspike/commit/42fa86735cb89bdde76545946d154c045513c12b",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type JsfMessage<?> to JsfMessage in method private createJsfMessageFor(injectionPoint InjectionPoint, rawType Class<Object>) : JsfMessage from class org.apache.deltaspike.jsf.impl.message.JsfMessageProducer",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "JsfMessage<?>"
+}, {
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createJsfMessageFor(injectionPoint InjectionPoint, rawType Class<Object>) : JsfMessage<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "JsfMessage"
+}, {
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private createJsfMessageFor(injectionPoint InjectionPoint, rawType Class<Object>) : JsfMessage"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type JsfMessage<?> to JsfMessage in method public createJsfMessage(injectionPoint InjectionPoint) : JsfMessage from class org.apache.deltaspike.jsf.impl.message.JsfMessageProducer",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 12,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "JsfMessage<?>"
+}, {
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createJsfMessage(injectionPoint InjectionPoint) : JsfMessage<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 12,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "JsfMessage"
+}, {
+		"filePath": "deltaspike/modules/jsf/impl/src/main/java/org/apache/deltaspike/jsf/impl/message/JsfMessageProducer.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createJsfMessage(injectionPoint InjectionPoint) : JsfMessage"
+}]
+}
+]
+}]
+}

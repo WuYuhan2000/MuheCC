@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "e477c143bca83b8ec8e10c65a0e8ef526e24482e",
+	"url": "https://github.com/apache/hbase/commit/e477c143bca83b8ec8e10c65a0e8ef526e24482e",
+	"refactorings": [{
+	"type": "Move Code",
+	"description": "Move Code from public setUpBeforeClass() : void to public setup() : void in class org.apache.hadoop.hbase.client.TestMetaCache",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestMetaCache.java",
+		"startLine": 60,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public setUpBeforeClass() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestMetaCache.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestMetaCache.java",
+		"startLine": 82,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public setup() : void"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/client/TestMetaCache.java",
+		"startLine": 89,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

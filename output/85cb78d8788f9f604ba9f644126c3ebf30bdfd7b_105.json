@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "85cb78d8788f9f604ba9f644126c3ebf30bdfd7b",
+	"url": "https://github.com/apache/hbase/commit/85cb78d8788f9f604ba9f644126c3ebf30bdfd7b",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable isRIT : boolean in method public process() : void from class org.apache.hadoop.hbase.master.handler.DispatchMergingRegionHandler",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/handler/DispatchMergingRegionHandler.java",
+		"startLine": 127,
+		"endLine": 131,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/handler/DispatchMergingRegionHandler.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 19,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "isRIT : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/handler/DispatchMergingRegionHandler.java",
+		"startLine": 131,
+		"endLine": 135,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

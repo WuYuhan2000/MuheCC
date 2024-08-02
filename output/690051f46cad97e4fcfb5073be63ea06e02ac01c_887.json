@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "690051f46cad97e4fcfb5073be63ea06e02ac01c",
+	"url": "https://github.com/spring-projects/spring-framework/commit/690051f46cad97e4fcfb5073be63ea06e02ac01c",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable channel : ExecutorSubscribableChannel in method public brokerChannel() : AbstractSubscribableChannel from class org.springframework.messaging.simp.config.AbstractMessageBrokerConfiguration",
+	"leftSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "channel : ExecutorSubscribableChannel"
+}, {
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable channel : ExecutorSubscribableChannel in method public clientInboundChannel() : AbstractSubscribableChannel from class org.springframework.messaging.simp.config.AbstractMessageBrokerConfiguration",
+	"leftSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 31,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "channel : ExecutorSubscribableChannel"
+}, {
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable channel : ExecutorSubscribableChannel in method public clientOutboundChannel() : AbstractSubscribableChannel from class org.springframework.messaging.simp.config.AbstractMessageBrokerConfiguration",
+	"leftSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 31,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "channel : ExecutorSubscribableChannel"
+}, {
+		"filePath": "spring-messaging/src/main/java/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter configurer : MessageBrokerRegistry to registry : MessageBrokerRegistry in method public configureMessageBroker(registry MessageBrokerRegistry) : void from class org.springframework.web.socket.messaging.config.WebSocketMessageBrokerConfigurationSupportTests.TestSimpleMessageBrokerConfig",
+	"leftSideLocations": [{
+		"filePath": "spring-websocket/src/test/java/org/springframework/web/socket/messaging/config/WebSocketMessageBrokerConfigurationSupportTests.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 38,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "configurer : MessageBrokerRegistry"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-websocket/src/test/java/org/springframework/web/socket/messaging/config/WebSocketMessageBrokerConfigurationSupportTests.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 38,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "registry : MessageBrokerRegistry"
+}]
+}
+]
+}]
+}

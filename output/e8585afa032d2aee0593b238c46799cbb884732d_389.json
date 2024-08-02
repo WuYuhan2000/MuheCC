@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "e8585afa032d2aee0593b238c46799cbb884732d",
+	"url": "https://github.com/apache/hadoop/commit/e8585afa032d2aee0593b238c46799cbb884732d",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter preempt : PreemptionMessage in method public newAllocateResponse(responseId int, completedContainers List<ContainerStatus>, allocatedContainers List<Container>, updatedNodes List<NodeReport>, availResources Resource, reboot boolean, numClusterNodes int, preempt PreemptionMessage) : AllocateResponse from class org.apache.hadoop.yarn.util.BuilderUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/BuilderUtils.java",
+		"startLine": 404,
+		"endLine": 419,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public newAllocateResponse(responseId int, completedContainers List<ContainerStatus>, allocatedContainers List<Container>, updatedNodes List<NodeReport>, availResources Resource, reboot boolean, numClusterNodes int) : AllocateResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/BuilderUtils.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 7,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "preempt : PreemptionMessage"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/BuilderUtils.java",
+		"startLine": 405,
+		"endLine": 422,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public newAllocateResponse(responseId int, completedContainers List<ContainerStatus>, allocatedContainers List<Container>, updatedNodes List<NodeReport>, availResources Resource, reboot boolean, numClusterNodes int, preempt PreemptionMessage) : AllocateResponse"
+}]
+}
+]
+}]
+}

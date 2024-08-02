@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "bc6ad67d673dfdebd216b021193f736dcf5a76f8",
+	"url": "https://github.com/apache/hbase/commit/bc6ad67d673dfdebd216b021193f736dcf5a76f8",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier volatile in attribute protected tries : int from class org.apache.hadoop.hbase.regionserver.HRegionServer.ToDoEntry",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1303,
+		"endLine": 1303,
+		"startColumn": 19,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected tries : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1308,
+		"endLine": 1308,
+		"startColumn": 28,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "protected tries : int"
+}]
+},
+{
+	"type": "Add Class Modifier",
+	"description": "Add Class Modifier final in class org.apache.hadoop.hbase.regionserver.HRegionServer.ToDoEntry",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1302,
+		"endLine": 1309,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.HRegionServer.ToDoEntry"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1307,
+		"endLine": 1315,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added modifier",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.HRegionServer.ToDoEntry"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter msg : HMsg in method package ToDoEntry(msg HMsg) from class org.apache.hadoop.hbase.regionserver.HRegionServer.ToDoEntry",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1305,
+		"endLine": 1305,
+		"startColumn": 15,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "msg : HMsg"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1305,
+		"endLine": 1308,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ToDoEntry(msg HMsg)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1311,
+		"endLine": 1311,
+		"startColumn": 15,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "msg : HMsg"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/HRegionServer.java",
+		"startLine": 1311,
+		"endLine": 1314,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "package ToDoEntry(msg HMsg)"
+}]
+}
+]
+}]
+}

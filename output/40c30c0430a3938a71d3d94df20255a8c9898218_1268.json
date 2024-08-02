@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "40c30c0430a3938a71d3d94df20255a8c9898218",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/40c30c0430a3938a71d3d94df20255a8c9898218",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter review : IReview in method public ReviewCompareAnnotationModel(crucibleFile IFileItem, review IReview, commentToFocus ITopic) from class org.eclipse.mylyn.internal.reviews.ui.annotations.ReviewCompareAnnotationModel",
+	"leftSideLocations": [{
+		"filePath": "framework/org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/internal/reviews/ui/annotations/ReviewCompareAnnotationModel.java",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 62,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "review : IReview"
+}, {
+		"filePath": "framework/org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/internal/reviews/ui/annotations/ReviewCompareAnnotationModel.java",
+		"startLine": 461,
+		"endLine": 469,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ReviewCompareAnnotationModel(crucibleFile IFileItem, review IReview, commentToFocus ITopic)"
+}],
+	"rightSideLocations": [{
+		"filePath": "framework/org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/internal/reviews/ui/annotations/ReviewCompareAnnotationModel.java",
+		"startLine": 458,
+		"endLine": 463,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ReviewCompareAnnotationModel(crucibleFile IFileItem, commentToFocus ITopic)"
+}]
+}
+]
+}]
+}

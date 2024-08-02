@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "9214f95cf4e5d19f5d226245043ea0669d276e59",
+	"url": "https://github.com/apache/hbase/commit/9214f95cf4e5d19f5d226245043ea0669d276e59",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter leaseTimeoutPeriod : int in method package Lease(leaseName String, leaseTimeoutPeriod int, listener LeaseListener) from class org.apache.hadoop.hbase.regionserver.Leases.Lease",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 250,
+		"endLine": 254,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Lease(leaseName String, listener LeaseListener, expirationTime long)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 35,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "leaseTimeoutPeriod : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 245,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package Lease(leaseName String, leaseTimeoutPeriod int, listener LeaseListener)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter leaseTimeoutPeriod : int in method public createLease(leaseName String, leaseTimeoutPeriod int, listener LeaseListener) : void from class org.apache.hadoop.hbase.regionserver.Leases",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 137,
+		"endLine": 147,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createLease(leaseName String, listener LeaseListener) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 45,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "leaseTimeoutPeriod : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 134,
+		"endLine": 145,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createLease(leaseName String, leaseTimeoutPeriod int, listener LeaseListener) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter expirationTime : long in method package Lease(leaseName String, listener LeaseListener, expirationTime long) from class org.apache.hadoop.hbase.regionserver.Leases.Lease",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 59,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "expirationTime : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 250,
+		"endLine": 254,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package Lease(leaseName String, listener LeaseListener, expirationTime long)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 245,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package Lease(leaseName String, leaseTimeoutPeriod int, listener LeaseListener)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter leasePeriod : int in method public Leases(leasePeriod int, leaseCheckFrequency int) from class org.apache.hadoop.hbase.regionserver.Leases",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "leasePeriod : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 64,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Leases(leasePeriod int, leaseCheckFrequency int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/Leases.java",
+		"startLine": 63,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public Leases(leaseCheckFrequency int)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute HBASE_REGIONSERVER_LEASE_PERIOD_KEY : String to HBASE_CLIENT_SCANNER_TIMEOUT_PERIOD : String in class org.apache.hadoop.hbase.HConstants",
+	"leftSideLocations": [{
+		"filePath": "hbase-common/src/main/java/org/apache/hadoop/hbase/HConstants.java",
+		"startLine": 542,
+		"endLine": 543,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "HBASE_REGIONSERVER_LEASE_PERIOD_KEY : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-common/src/main/java/org/apache/hadoop/hbase/HConstants.java",
+		"startLine": 552,
+		"endLine": 552,
+		"startColumn": 24,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "HBASE_CLIENT_SCANNER_TIMEOUT_PERIOD : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute HBASE_REGIONSERVER_LEASE_PERIOD_KEY : String to HBASE_REGIONSERVER_ROWLOCK_TIMEOUT_PERIOD : String in class org.apache.hadoop.hbase.HConstants",
+	"leftSideLocations": [{
+		"filePath": "hbase-common/src/main/java/org/apache/hadoop/hbase/HConstants.java",
+		"startLine": 542,
+		"endLine": 543,
+		"startColumn": 24,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "HBASE_REGIONSERVER_LEASE_PERIOD_KEY : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-common/src/main/java/org/apache/hadoop/hbase/HConstants.java",
+		"startLine": 541,
+		"endLine": 542,
+		"startColumn": 24,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "HBASE_REGIONSERVER_ROWLOCK_TIMEOUT_PERIOD : String"
+}]
+}
+]
+}]
+}

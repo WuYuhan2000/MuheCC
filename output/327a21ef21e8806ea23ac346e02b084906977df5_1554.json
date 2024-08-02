@@ -1,0 +1,171 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "327a21ef21e8806ea23ac346e02b084906977df5",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/327a21ef21e8806ea23ac346e02b084906977df5",
+	"refactorings": [{
+	"type": "Rename Class",
+	"description": "Rename Class org.jboss.arquillian.graphene.enricher.TestFactoryClass renamed to org.jboss.arquillian.graphene.enricher.TestInitializePageFragment",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/enricher/TestFactoryClass.java",
+		"startLine": 14,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.enricher.TestFactoryClass"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/enricher/TestInitializePageFragment.java",
+		"startLine": 15,
+		"endLine": 60,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.enricher.TestInitializePageFragment"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter clazz : Class<T> to clazzOfPageFragment : Class<T> in method public initializePageFragment(clazzOfPageFragment Class<T>, rootOfPageFragment WebElement) : T from class org.jboss.arquillian.graphene.enricher.Factory",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "clazz : Class<T>"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 48,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "clazzOfPageFragment : Class<T>"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter root : WebElement to rootOfPageFragment : WebElement in method public initializePageFragment(clazzOfPageFragment Class<T>, rootOfPageFragment WebElement) : T from class org.jboss.arquillian.graphene.enricher.Factory",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 64,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "root : WebElement"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 78,
+		"endColumn": 113,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "rootOfPageFragment : WebElement"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/Factory.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

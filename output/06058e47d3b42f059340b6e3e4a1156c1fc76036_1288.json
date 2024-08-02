@@ -1,0 +1,225 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "06058e47d3b42f059340b6e3e4a1156c1fc76036",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/06058e47d3b42f059340b6e3e4a1156c1fc76036",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @SuppressWarnings(\"restriction\") in class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 40,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.ChangesetPart"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"restriction\")"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 39,
+		"endLine": 165,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.eclipse.mylyn.versions.tasks.ui.ChangesetPart"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter task : ITask in method private changeSetMatches(cs ChangeSet, task ITask) : boolean from class org.eclipse.mylyn.versions.tasks.mapper.generic.GenericTaskChangesetMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 164,
+		"endLine": 167,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private changeSetMatches(cs ChangeSet) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/generic/GenericTaskChangesetMapper.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 49,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "task : ITask"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/generic/GenericTaskChangesetMapper.java",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private changeSetMatches(cs ChangeSet, task ITask) : boolean"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable changesets : List<TaskChangeSet> in method private getInput() : List<TaskChangeSet> from class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "changes : List<TaskChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 135,
+		"endLine": 162,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getInput() : List<TaskChangeSet>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "changesets : List<TaskChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 129,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private getInput() : List<TaskChangeSet>"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable task : ITask in method private getInput() : List<TaskChangeSet> from class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "task : ITask"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 135,
+		"endLine": 162,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getInput() : List<TaskChangeSet>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 15,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "task : ITask"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 129,
+		"endLine": 163,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private getInput() : List<TaskChangeSet>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private changeSetMatches(cs ChangeSet) : boolean from class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart to private changeSetMatches(cs ChangeSet, task ITask) : boolean from class org.eclipse.mylyn.versions.tasks.mapper.generic.GenericTaskChangesetMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 164,
+		"endLine": 167,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private changeSetMatches(cs ChangeSet) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/generic/GenericTaskChangesetMapper.java",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private changeSetMatches(cs ChangeSet, task ITask) : boolean"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable changes : List<TaskChangeSet> to changesets : List<TaskChangeSet> in method private getInput() : List<TaskChangeSet> from class org.eclipse.mylyn.versions.tasks.ui.ChangesetPart",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "changes : List<TaskChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 6,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 29,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "changesets : List<TaskChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.ui/src/org/eclipse/mylyn/versions/tasks/ui/ChangesetPart.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

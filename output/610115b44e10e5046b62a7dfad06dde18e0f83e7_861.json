@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "610115b44e10e5046b62a7dfad06dde18e0f83e7",
+	"url": "https://github.com/apache/camel/commit/610115b44e10e5046b62a7dfad06dde18e0f83e7",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type outputs : List<ProcessorType> to outputs : List<ProcessorType<?>> in class org.apache.camel.model.ThreadType",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 33,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "outputs : List<ProcessorType>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 36,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "outputs : List<ProcessorType<?>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List to List<ProcessorType<?>> in method public getOutputs() : List<ProcessorType<?>> from class org.apache.camel.model.ThreadType",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 86,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOutputs() : List"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<ProcessorType<?>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ThreadType.java",
+		"startLine": 86,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getOutputs() : List<ProcessorType<?>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<ProcessorType> to List<ProcessorType<?>> in method public getOutputs() : List<ProcessorType<?>> from class org.apache.camel.model.ToType",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ToType.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<ProcessorType>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ToType.java",
+		"startLine": 124,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getOutputs() : List<ProcessorType>"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ToType.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<ProcessorType<?>>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/model/ToType.java",
+		"startLine": 124,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getOutputs() : List<ProcessorType<?>>"
+}]
+}
+]
+}]
+}

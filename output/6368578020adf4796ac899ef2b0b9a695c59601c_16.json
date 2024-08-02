@@ -1,0 +1,573 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "6368578020adf4796ac899ef2b0b9a695c59601c",
+	"url": "https://github.com/ReactiveX/RxJava/commit/6368578020adf4796ac899ef2b0b9a695c59601c",
+	"refactorings": [{
+	"type": "Extract Class",
+	"description": "Extract Class rx.CombineLatestTests from class rx.CovarianceTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 15,
+		"endLine": 234,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rx.CovarianceTest"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 59,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCovarianceOfCombineLatest() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 193,
+		"endLine": 198,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combine : Func2<Media,Rating,ExtendedResult>"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package action : Action1<Result>"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 207,
+		"endLine": 212,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package extendedAction : Action1<ExtendedResult>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 7,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "rx.CovarianceTest"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 15,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "rx.CombineLatestTests"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 16,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testCovarianceOfCombineLatest() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 33,
+		"endLine": 38,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package combine : Func2<Media,Rating,ExtendedResult>"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package action : Action1<Result>"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "package extendedAction : Action1<ExtendedResult>"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class rx.MergeTests from class rx.CovarianceTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 15,
+		"endLine": 234,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rx.CovarianceTest"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCovarianceOfMerge() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 135,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 145,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance2() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 155,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance3() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 168,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance4() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 7,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "rx.CovarianceTest"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 15,
+		"endLine": 86,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "rx.MergeTests"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 17,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testCovarianceOfMerge() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 27,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testMergeCovariance() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 37,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testMergeCovariance2() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 47,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testMergeCovariance3() : void"
+}, {
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 60,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public testMergeCovariance4() : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package action : Action1<Result> from class rx.CovarianceTest to package action : Action1<Result> from class rx.CombineLatestTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 200,
+		"endLine": 205,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package action : Action1<Result>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 21,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package action : Action1<Result>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package combine : Func2<Media,Rating,ExtendedResult> from class rx.CovarianceTest to package combine : Func2<Media,Rating,ExtendedResult> from class rx.CombineLatestTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 193,
+		"endLine": 198,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package combine : Func2<Media,Rating,ExtendedResult>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 33,
+		"endLine": 38,
+		"startColumn": 42,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package combine : Func2<Media,Rating,ExtendedResult>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute package extendedAction : Action1<ExtendedResult> from class rx.CovarianceTest to package extendedAction : Action1<ExtendedResult> from class rx.CombineLatestTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 207,
+		"endLine": 212,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package extendedAction : Action1<ExtendedResult>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 47,
+		"endLine": 52,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "package extendedAction : Action1<ExtendedResult>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testConcatCovariance() : void from class rx.CovarianceTest to public testConcatCovariance() : void from class rx.ConcatTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 76,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testConcatCovariance() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/ConcatTests.java",
+		"startLine": 64,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testConcatCovariance() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testConcatCovariance2() : void from class rx.CovarianceTest to public testConcatCovariance2() : void from class rx.ConcatTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 86,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testConcatCovariance2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/ConcatTests.java",
+		"startLine": 74,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testConcatCovariance2() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testConcatCovariance3() : void from class rx.CovarianceTest to public testConcatCovariance3() : void from class rx.ConcatTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 96,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testConcatCovariance3() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/ConcatTests.java",
+		"startLine": 84,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testConcatCovariance3() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testConcatCovariance4() : void from class rx.CovarianceTest to public testConcatCovariance4() : void from class rx.ConcatTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 109,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testConcatCovariance4() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/ConcatTests.java",
+		"startLine": 97,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testConcatCovariance4() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCovarianceOfCombineLatest() : void from class rx.CovarianceTest to public testCovarianceOfCombineLatest() : void from class rx.CombineLatestTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 59,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCovarianceOfCombineLatest() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CombineLatestTests.java",
+		"startLine": 16,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCovarianceOfCombineLatest() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCovarianceOfMerge() : void from class rx.CovarianceTest to public testCovarianceOfMerge() : void from class rx.MergeTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCovarianceOfMerge() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 17,
+		"endLine": 25,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCovarianceOfMerge() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testCovarianceOfZip() : void from class rx.CovarianceTest to public testCovarianceOfZip() : void from class rx.ZipTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 42,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCovarianceOfZip() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/ZipTests.java",
+		"startLine": 17,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testCovarianceOfZip() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testMergeCovariance() : void from class rx.CovarianceTest to public testMergeCovariance() : void from class rx.MergeTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 135,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 27,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testMergeCovariance() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testMergeCovariance2() : void from class rx.CovarianceTest to public testMergeCovariance2() : void from class rx.MergeTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 145,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance2() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 37,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testMergeCovariance2() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testMergeCovariance3() : void from class rx.CovarianceTest to public testMergeCovariance3() : void from class rx.MergeTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 155,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance3() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 47,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testMergeCovariance3() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public testMergeCovariance4() : void from class rx.CovarianceTest to public testMergeCovariance4() : void from class rx.MergeTests",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/CovarianceTest.java",
+		"startLine": 168,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMergeCovariance4() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/test/java/rx/MergeTests.java",
+		"startLine": 60,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testMergeCovariance4() : void"
+}]
+}
+]
+}]
+}

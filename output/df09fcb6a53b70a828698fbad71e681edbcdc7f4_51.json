@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "df09fcb6a53b70a828698fbad71e681edbcdc7f4",
+	"url": "https://github.com/ReactiveX/RxJava/commit/df09fcb6a53b70a828698fbad71e681edbcdc7f4",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter args : T in method public onNext(args T) : void from class rx.operators.OperationObserveOn.ScheduledObserver",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "args : T"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 76,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onNext(args T) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 28,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "args : T"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 82,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public onNext(args T) : void"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter e : Exception in method public onError(e Exception) : void from class rx.operators.OperationObserveOn.ScheduledObserver",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 29,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 66,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onError(e Exception) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationObserveOn.java",
+		"startLine": 72,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public onError(e Exception) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable discardableAction : DiscardableAction in method public schedule(action Func0<Subscription>) : Subscription from class rx.concurrency.ImmediateScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/ImmediateScheduler.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/ImmediateScheduler.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 27,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "discardableAction : DiscardableAction"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/ImmediateScheduler.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

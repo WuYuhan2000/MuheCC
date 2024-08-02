@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "c689af142aefea121ae87e32fe775f9859b7344a",
+	"url": "https://github.com/JetBrains/kotlin/commit/c689af142aefea121ae87e32fe775f9859b7344a",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type declaration : JetObjectDeclaration to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R from class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 37,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "declaration : JetObjectDeclaration"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type declaration : JetObjectDeclarationName to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject) : void from class org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor",
+	"leftSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 44,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "declaration : JetObjectDeclarationName"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 36,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type klass : JetClass to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R from class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "klass : JetClass"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R extracted from public visitClass(klass JetClass, data D) : R in class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public visitClass(klass JetClass, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public visitClassOrObject(classOrObject JetClassOrObject, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public visitClass(klass JetClass, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 16,
+		"endColumn": 47,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "visitClassOrObject(klass,data)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R extracted from public visitObjectDeclaration(declaration JetObjectDeclaration, data D) : R in class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 405,
+		"endLine": 407,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public visitObjectDeclaration(declaration JetObjectDeclaration, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public visitClassOrObject(classOrObject JetClassOrObject, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public visitObjectDeclaration(declaration JetObjectDeclaration, data D) : R"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 16,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "visitClassOrObject(declaration,data)"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public visitObjectDeclarationName(declaration JetObjectDeclarationName) : void renamed to public visitClassOrObject(classOrObject JetClassOrObject) : void in class org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor",
+	"leftSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 65,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public visitObjectDeclarationName(declaration JetObjectDeclarationName) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 74,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public visitClassOrObject(classOrObject JetClassOrObject) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter declaration : JetObjectDeclaration to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R from class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 405,
+		"endLine": 405,
+		"startColumn": 37,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "declaration : JetObjectDeclaration"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter declaration : JetObjectDeclarationName to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject) : void from class org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor",
+	"leftSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 44,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "declaration : JetObjectDeclarationName"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 36,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter klass : JetClass to classOrObject : JetClassOrObject in method public visitClassOrObject(classOrObject JetClassOrObject, data D) : R from class org.jetbrains.kotlin.psi.JetVisitor",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "klass : JetClass"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "classOrObject : JetClassOrObject"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/psi/JetVisitor.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable nameIdentifier : PsiElement to identifier : PsiElement in method public visitClassOrObject(classOrObject JetClassOrObject) : void from class org.jetbrains.kotlin.idea.highlighter.TypeKindHighlightingVisitor",
+	"leftSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 20,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "nameIdentifier : PsiElement"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 20,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "identifier : PsiElement"
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "idea/idea-analysis/src/org/jetbrains/kotlin/idea/highlighter/TypeKindHighlightingVisitor.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

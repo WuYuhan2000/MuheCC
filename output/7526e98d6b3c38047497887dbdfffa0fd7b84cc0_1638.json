@@ -1,0 +1,312 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/rackerlabs/atom-hopper",
+	"sha1": "7526e98d6b3c38047497887dbdfffa0fd7b84cc0",
+	"url": "https://github.com/rackerlabs/atom-hopper/commit/7526e98d6b3c38047497887dbdfffa0fd7b84cc0",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter adapter : FeedSourceAdapter in method public archiveFeed(adapter FeedSourceAdapter, archiveTime Calendar) : void from class net.jps.atom.hopper.adapter.archive.FeedArchiveAdapter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/archive/FeedArchiveAdapter.java",
+		"startLine": 53,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public archiveFeed(archiveTime Calendar) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/archive/FeedArchiveAdapter.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 22,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "adapter : FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/archive/FeedArchiveAdapter.java",
+		"startLine": 44,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 105,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public archiveFeed(adapter FeedSourceAdapter, archiveTime Calendar) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter feedSource : FeedSourceAdapter in method public FeedArchivalTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) from class net.jps.atom.hopper.archive.impl.FeedArchivalTask",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FeedArchivalTask(archiver FeedArchiveAdapter)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "feedSource : FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 25,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FeedArchivalTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter feedSource : FeedSourceAdapter in method public FeedArchivalTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter, timeZone TimeZone) from class net.jps.atom.hopper.archive.impl.FeedArchivalTask",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FeedArchivalTask(archiver FeedArchiveAdapter, timeZone TimeZone)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "feedSource : FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/FeedArchivalTask.java",
+		"startLine": 29,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public FeedArchivalTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter, timeZone TimeZone)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter feedSource : FeedSourceAdapter in method public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void from class net.jps.atom.hopper.archive.FeedArchivalService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/FeedArchivalService.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerArchiver(archiver FeedArchiveAdapter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/FeedArchivalService.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 30,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "feedSource : FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/FeedArchivalService.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter feedSource : FeedSourceAdapter in method public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void from class net.jps.atom.hopper.archive.impl.QueuedFeedArchivalService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/QueuedFeedArchivalService.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerArchiver(archiver FeedArchiveAdapter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/QueuedFeedArchivalService.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 50,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "feedSource : FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/QueuedFeedArchivalService.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface net.jps.atom.hopper.adapter.AdapterToolsAware from classes [net.jps.atom.hopper.adapter.FeedSourceAdapter]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/FeedSourceAdapter.java",
+		"startLine": 10,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "net.jps.atom.hopper.adapter.FeedSourceAdapter"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/FeedSourceAdapter.java",
+		"startLine": 10,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "net.jps.atom.hopper.adapter.FeedSourceAdapter"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/AdapterToolsAware.java",
+		"startLine": 7,
+		"endLine": 20,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "net.jps.atom.hopper.adapter.AdapterToolsAware"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setAdapterTools(tools AdapterTools) : void from class net.jps.atom.hopper.adapter.FeedSourceAdapter to public setAdapterTools(tools AdapterTools) : void from class net.jps.atom.hopper.adapter.AdapterToolsAware",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/FeedSourceAdapter.java",
+		"startLine": 18,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setAdapterTools(tools AdapterTools) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/adapter/AdapterToolsAware.java",
+		"startLine": 13,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setAdapterTools(tools AdapterTools) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter namespace : String in method private assembleFeedAdapters(workspaceTarget TargetRegexBuilder, feeds List<FeedConfiguration>, namespace String, regexTargetResolver RegexTargetResolver) : List<FeedAdapter> from class net.jps.atom.hopper.config.WorkspaceConfigProcessor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/config/WorkspaceConfigProcessor.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 119,
+		"endColumn": 135,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "namespace : String"
+}, {
+		"filePath": "src/main/java/net/jps/atom/hopper/config/WorkspaceConfigProcessor.java",
+		"startLine": 131,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private assembleFeedAdapters(workspaceTarget TargetRegexBuilder, feeds List<FeedConfiguration>, namespace String, regexTargetResolver RegexTargetResolver) : List<FeedAdapter>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/config/WorkspaceConfigProcessor.java",
+		"startLine": 133,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private assembleFeedAdapters(workspaceTarget TargetRegexBuilder, feeds List<FeedConfiguration>, regexTargetResolver RegexTargetResolver) : List<FeedAdapter>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerArchiver(archiver FeedArchiveAdapter) : void renamed to public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void in class net.jps.atom.hopper.archive.FeedArchivalService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/FeedArchivalService.java",
+		"startLine": 19,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerArchiver(archiver FeedArchiveAdapter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/FeedArchivalService.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerArchiver(archiver FeedArchiveAdapter) : void renamed to public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void in class net.jps.atom.hopper.archive.impl.QueuedFeedArchivalService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/QueuedFeedArchivalService.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerArchiver(archiver FeedArchiveAdapter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/jps/atom/hopper/archive/impl/QueuedFeedArchivalService.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerArchiveTask(feedSource FeedSourceAdapter, archiver FeedArchiveAdapter) : void"
+}]
+}
+]
+}]
+}

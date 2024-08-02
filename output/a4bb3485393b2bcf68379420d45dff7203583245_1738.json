@@ -1,0 +1,996 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/genericworkflownodes/genericknimenodes",
+	"sha1": "a4bb3485393b2bcf68379420d45dff7203583245",
+	"url": "https://github.com/genericworkflownodes/genericknimenodes/commit/a4bb3485393b2bcf68379420d45dff7203583245",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter pluginMeta : KNIMEPluginMeta in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 216,
+		"endLine": 232,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 38,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "pluginMeta : KNIMEPluginMeta"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 217,
+		"endLine": 231,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to public in attribute public logger : Logger from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 65,
+		"endLine": 66,
+		"startColumn": 16,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package logger : Logger"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 64,
+		"endLine": 65,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public logger : Logger"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private registerPathPrefix(path String) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 352,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 77,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private registerPathPrefix(path String) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type descriptorDirectory : File to descriptorDirectory : DescriptorsDirectory in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 4,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "descriptorDirectory : File"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 224,
+		"endLine": 231,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "descriptorDirectory : DescriptorsDirectory"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 226,
+		"endLine": 230,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pluginXML : Document to pluginXML : PluginXmlTemplate in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 27,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pluginXML : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 227,
+		"endLine": 229,
+		"startColumn": 5,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 27,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pluginXML : PluginXmlTemplate"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 228,
+		"endLine": 229,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pluginXML : Document to pluginXML : PluginXmlTemplate in method public processNode(pluginMeta KNIMEPluginMeta, pluginXML PluginXmlTemplate, ctdFile File, node_names Set<String>, ext_tools Set<String>, destinationFQNNodeDirectory File, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pluginXML : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 312,
+		"endLine": 313,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pluginXML : PluginXmlTemplate"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 313,
+		"endLine": 314,
+		"startColumn": 3,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type FileNotFoundException to IOException in method public DescriptorsDirectory(sourcesDirectory File) from class org.ballproject.knime.nodegeneration.model.directories.source.DescriptorsDirectory",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/source/DescriptorsDirectory.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 60,
+		"endColumn": 81,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "FileNotFoundException"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/source/DescriptorsDirectory.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DescriptorsDirectory(sourcesDirectory File)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/source/DescriptorsDirectory.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 60,
+		"endColumn": 71,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/source/DescriptorsDirectory.java",
+		"startLine": 20,
+		"endLine": 39,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public DescriptorsDirectory(sourcesDirectory File)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type pluginXML : Document to pluginXML : PluginXmlTemplate in method public NodeGenerator(pluginDir File) from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 12,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pluginXML : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 93,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "pluginXML : PluginXmlTemplate"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 94,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Parameter",
+	"description": "Merge Parameter [nodeRepositoryRoot : String, pluginName : String, packageName : String] to pluginMeta : KNIMEPluginMeta in method public processNode(pluginMeta KNIMEPluginMeta, pluginXML PluginXmlTemplate, ctdFile File, node_names Set<String>, ext_tools Set<String>, destinationFQNNodeDirectory File, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "nodeRepositoryRoot : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "pluginName : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "packageName : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 234,
+		"endLine": 315,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public processNode(pluginXML Document, ctdFile File, node_names Set<String>, ext_tools Set<String>, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, categories Set<String>, packageName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "pluginMeta : KNIMEPluginMeta"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 233,
+		"endLine": 316,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public processNode(pluginMeta KNIMEPluginMeta, pluginXML PluginXmlTemplate, ctdFile File, node_names Set<String>, ext_tools Set<String>, destinationFQNNodeDirectory File, categories Set<String>) : void"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private mimeTypesFile : MimeTypesFile from class org.ballproject.knime.nodegeneration.model.directories.NodesSourceDirectory to private mimeTypesFile : MimeTypesFile from class org.ballproject.knime.nodegeneration.model.directories.source.DescriptorsDirectory",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/NodesSourceDirectory.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private mimeTypesFile : MimeTypesFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/directories/source/DescriptorsDirectory.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private mimeTypesFile : MimeTypesFile"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator to public registerNode(clazz String, path String) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 584,
+		"endLine": 595,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 107,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public registerNode(clazz String, path String) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator to private registerPathPrefix(path String) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 352,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 77,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private registerPathPrefix(path String) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public getFromTemplate() : Document from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 18,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFromTemplate() : Document"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 33,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public PluginXmlTemplate()"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 584,
+		"endLine": 595,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 107,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public registerNode(clazz String, path String) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 352,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 77,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private registerPathPrefix(path String) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public saveTo(pluginXml Document, dest File) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 39,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public saveTo(pluginXml Document, dest File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 53,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public saveTo(dest File) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter categories : Set<String> in method public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 24,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "categories : Set<String>"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 584,
+		"endLine": 595,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 107,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public registerNode(clazz String, path String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter categories : Set<String> in method public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 4,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "categories : Set<String>"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 352,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 77,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private registerPathPrefix(path String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter nodeRepositoryRoot : String in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 30,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "nodeRepositoryRoot : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 216,
+		"endLine": 232,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 217,
+		"endLine": 231,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter packageName : String in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "packageName : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 216,
+		"endLine": 232,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 217,
+		"endLine": 231,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter pluginName : String in method private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "pluginName : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 216,
+		"endLine": 232,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML Document, descriptorDirectory File, nodeRepositoryRoot String, pluginName String, destinationFQNNodeDirectory File, packageName String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 217,
+		"endLine": 231,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private processDescriptors(node_names Set<String>, ext_tools Set<String>, pluginXML PluginXmlTemplate, descriptorDirectory DescriptorsDirectory, destinationFQNNodeDirectory File, pluginMeta KNIMEPluginMeta) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter pluginXML : Document in method public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "pluginXML : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 584,
+		"endLine": 595,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerNode(clazz String, path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 107,
+		"endLine": 117,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public registerNode(clazz String, path String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter pluginXML : Document in method public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void from class org.ballproject.knime.nodegeneration.NodeGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 53,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "pluginXML : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 325,
+		"endLine": 352,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPathPrefix(path String, pluginXML Document, categories Set<String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 77,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private registerPathPrefix(path String) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter pluginXml : Document in method public saveTo(pluginXml Document, dest File) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "pluginXml : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 39,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public saveTo(pluginXml Document, dest File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 53,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public saveTo(dest File) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getFromTemplate() : Document renamed to public PluginXmlTemplate() in class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 18,
+		"endLine": 37,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getFromTemplate() : Document"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 33,
+		"endLine": 51,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public PluginXmlTemplate()"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable cat_name : String to categoryName : String in method private registerPathPrefix(path String) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 10,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cat_name : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 3,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 3,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 347,
+		"endLine": 351,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "categoryName : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable path_prefix : String to categoryPath : String in method private registerPathPrefix(path String) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 10,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "path_prefix : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 339,
+		"endLine": 339,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/NodeGenerator.java",
+		"startLine": 347,
+		"endLine": 351,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "categoryPath : String"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute pluginXml : Document to doc : Document in method public saveTo(dest File) : void from class org.ballproject.knime.nodegeneration.model.PluginXmlTemplate",
+	"leftSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pluginXml : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 19,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "doc : Document"
+}, {
+		"filePath": "src/org/ballproject/knime/nodegeneration/model/PluginXmlTemplate.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

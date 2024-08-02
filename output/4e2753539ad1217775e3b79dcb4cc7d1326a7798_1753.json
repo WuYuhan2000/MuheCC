@@ -1,0 +1,2565 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/hunterhacker/jdom",
+	"sha1": "4e2753539ad1217775e3b79dcb4cc7d1326a7798",
+	"url": "https://github.com/hunterhacker/jdom/commit/4e2753539ad1217775e3b79dcb4cc7d1326a7798",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2147,
+		"endLine": 2184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAttribute(attribute Attribute) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 197,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public canAdd(parent Element, text Text) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter c : Collection in method public retainAll(c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 817,
+		"endLine": 852,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hasMixedContent() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 546,
+		"endLine": 546,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "c : Collection"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 534,
+		"endLine": 564,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public retainAll(c Collection) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter parent : Element in method public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2147,
+		"endLine": 2184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAttribute(attribute Attribute) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "parent : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 197,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public canAdd(parent Element, text Text) : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected iterator : ListIterator from class org.jdom.FilterList.FilterListIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package iterator : ListIterator"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 1050,
+		"endLine": 1050,
+		"startColumn": 32,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected iterator : ListIterator"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier package to public in class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 61,
+		"endLine": 472,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jdom.PartialList"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 70,
+		"endLine": 1449,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.jdom.FilterList"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to package in method package isAncestor(e Element) : boolean from class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1246,
+		"endLine": 1255,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private isAncestor(e Element) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1218,
+		"endLine": 1227,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package isAncestor(e Element) : boolean"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public listIterator() : ListIterator from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 401,
+		"endLine": 403,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private superListIterator(index int) : ListIterator"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 883,
+		"endLine": 892,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public listIterator() : ListIterator"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public normalizeString(str String) : String from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 647,
+		"endLine": 668,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private normalizeString(value String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 141,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public normalizeString(str String) : String"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to package in method package getContentBackingList() : List from class org.jdom.Document",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Document.java",
+		"startLine": 330,
+		"endLine": 342,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContent() : List"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Document.java",
+		"startLine": 344,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "package getContentBackingList() : List"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type attribute : Attribute to text : Text in method public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2161,
+		"endLine": 2161,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "attribute : Attribute"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2169,
+		"endLine": 2171,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2182,
+		"endLine": 2182,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2168,
+		"endLine": 2172,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 50,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "text : Text"
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 208,
+		"endLine": 210,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 207,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Element to boolean in method public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2161,
+		"endLine": 2161,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2147,
+		"endLine": 2184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAttribute(attribute Attribute) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 197,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public canAdd(parent Element, text Text) : boolean"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private checkAdd(c Collection) : boolean extracted from public addAll(c Collection) : boolean in class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 226,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addAll(c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 245,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 245,
+		"endLine": 247,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 369,
+		"endLine": 390,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkAdd(c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 392,
+		"endLine": 405,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addAll(c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 402,
+		"endLine": 402,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkAdd(c)"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 379,
+		"endLine": 381,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 379,
+		"endLine": 381,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private checkAdd(c Collection) : boolean extracted from public addAll(index int, c Collection) : boolean in class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 252,
+		"endLine": 283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addAll(index int, c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "FOR_STATEMENT_INITIALIZER",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 369,
+		"endLine": 390,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private checkAdd(c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 407,
+		"endLine": 450,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addAll(index int, c Collection) : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "checkAdd(c)"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 379,
+		"endLine": 381,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 379,
+		"endLine": 381,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 32,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createAttributeList() : List extracted from public setAttribute(attribute Attribute) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1658,
+		"endLine": 1742,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setAttribute(attribute Attribute) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1732,
+		"endLine": 1732,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1470,
+		"endLine": 1479,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createAttributeList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1477,
+		"endLine": 1477,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1653,
+		"endLine": 1737,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setAttribute(attribute Attribute) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1727,
+		"endLine": 1727,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createAttributeList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1478,
+		"endLine": 1478,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public addContent(cdata CDATA) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1313,
+		"endLine": 1328,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addContent(cdata CDATA) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1323,
+		"endLine": 1323,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1285,
+		"endLine": 1301,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addContent(cdata CDATA) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1295,
+		"endLine": 1295,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public addContent(comment Comment) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1330,
+		"endLine": 1358,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addContent(comment Comment) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1352,
+		"endLine": 1352,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1303,
+		"endLine": 1331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addContent(comment Comment) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1325,
+		"endLine": 1325,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public addContent(element Element) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1207,
+		"endLine": 1243,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addContent(element Element) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1237,
+		"endLine": 1237,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1179,
+		"endLine": 1215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addContent(element Element) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1209,
+		"endLine": 1209,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public addContent(entity EntityRef) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1287,
+		"endLine": 1311,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addContent(entity EntityRef) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1305,
+		"endLine": 1305,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1259,
+		"endLine": 1283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addContent(entity EntityRef) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1277,
+		"endLine": 1277,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public addContent(pi ProcessingInstruction) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1257,
+		"endLine": 1285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public addContent(pi ProcessingInstruction) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1279,
+		"endLine": 1279,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1229,
+		"endLine": 1257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public addContent(pi ProcessingInstruction) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1251,
+		"endLine": 1251,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public setContent(newContent List) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 882,
+		"endLine": 995,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setContent(newContent List) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 905,
+		"endLine": 905,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 838,
+		"endLine": 967,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setContent(newContent List) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 862,
+		"endLine": 862,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createContentList() : List extracted from public setText(text String) : Element in class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 790,
+		"endLine": 815,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setText(text String) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 807,
+		"endLine": 807,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 819,
+		"endLine": 828,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createContentList() : List"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 826,
+		"endLine": 826,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 770,
+		"endLine": 795,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setText(text String) : Element"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 787,
+		"endLine": 787,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createContentList()"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 827,
+		"endLine": 827,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public iterator() : Iterator extracted from public clear() : void in class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 285,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public clear() : void"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 14,
+		"endColumn": 37,
+		"codeElementType": "FOR_STATEMENT_INITIALIZER",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 228,
+		"endLine": 237,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public iterator() : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 566,
+		"endLine": 593,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public clear() : void"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 25,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "list.iterator()"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable d : CDATA in method public clone() : Object from class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1948,
+		"endLine": 1948,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1913,
+		"endLine": 1913,
+		"startColumn": 27,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "d : CDATA"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1915,
+		"endLine": 1915,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable obj : Object in method public setAttributes(attributes List) : Element from class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1598,
+		"endLine": 1598,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1611,
+		"endLine": 1611,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1584,
+		"endLine": 1584,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "obj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1586,
+		"endLine": 1586,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1605,
+		"endLine": 1605,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable obj : Object in method public setAttributes(attributes List) : Element from class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1611,
+		"endLine": 1611,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1598,
+		"endLine": 1598,
+		"startColumn": 17,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1603,
+		"endLine": 1603,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "obj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1605,
+		"endLine": 1605,
+		"startColumn": 25,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1586,
+		"endLine": 1586,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable removed : boolean in method public retainAll(c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 851,
+		"endLine": 851,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 548,
+		"endLine": 548,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "removed : boolean"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 563,
+		"endLine": 563,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable t : Text in method public clone() : Object from class org.jdom.Element",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1958,
+		"endLine": 1958,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1905,
+		"endLine": 1905,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "t : Text"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 1907,
+		"endLine": 1907,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable o : Object in method public remove(index int) : Object from class org.jdom.PartialList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 364,
+		"endLine": 364,
+		"startColumn": 16,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 504,
+		"endLine": 504,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.jdom.PartialList.PartialItr moved and renamed to org.jdom.FilterList.FilterListIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 412,
+		"endLine": 471,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jdom.PartialList.PartialItr"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 1016,
+		"endLine": 1448,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.jdom.FilterList.FilterListIterator"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public addAttribute(attribute Attribute) : Element from class org.jdom.Element to public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2147,
+		"endLine": 2184,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAttribute(attribute Attribute) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 197,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public canAdd(parent Element, text Text) : boolean"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public hasMixedContent() : boolean from class org.jdom.Element to public retainAll(c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 817,
+		"endLine": 852,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hasMixedContent() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 534,
+		"endLine": 564,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public retainAll(c Collection) : boolean"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private CVS_ID : String from class org.jdom.PartialList to private CVS_ID : String from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 76,
+		"endLine": 77,
+		"startColumn": 33,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private CVS_ID : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 75,
+		"endLine": 76,
+		"startColumn": 33,
+		"endColumn": 93,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private CVS_ID : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private normalizeString(value String) : String from class org.jdom.Element to public normalizeString(str String) : String from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 647,
+		"endLine": 668,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private normalizeString(value String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 141,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public normalizeString(str String) : String"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter index : int in method private superListIterator(index int) : ListIterator from class org.jdom.PartialList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 43,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "index : int"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 401,
+		"endLine": 403,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private superListIterator(index int) : ListIterator"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 883,
+		"endLine": 892,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public listIterator() : ListIterator"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter stringValue : String in method public Text(stringValue String) from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "stringValue : String"
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 90,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Text(stringValue String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 116,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public getTextTrim() : String"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.jdom.PartialList renamed to org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 61,
+		"endLine": 472,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jdom.PartialList"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 70,
+		"endLine": 1449,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.jdom.FilterList"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private superListIterator(index int) : ListIterator renamed to public listIterator() : ListIterator in class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 401,
+		"endLine": 403,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private superListIterator(index int) : ListIterator"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 883,
+		"endLine": 892,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public listIterator() : ListIterator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public Text(stringValue String) renamed to public getTextTrim() : String in class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 90,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Text(stringValue String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 116,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getTextTrim() : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getContent() : List renamed to package getContentBackingList() : List in class org.jdom.Document",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Document.java",
+		"startLine": 330,
+		"endLine": 342,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getContent() : List"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Document.java",
+		"startLine": 344,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "package getContentBackingList() : List"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getValue() : String renamed to public getText() : String in class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 100,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getValue() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 106,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getText() : String"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter attribute : Attribute to text : Text in method public canAdd(parent Element, text Text) : boolean from class org.jdom.ElementContentFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2161,
+		"endLine": 2161,
+		"startColumn": 33,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "attribute : Attribute"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2169,
+		"endLine": 2171,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2182,
+		"endLine": 2182,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 2168,
+		"endLine": 2172,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 50,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "text : Text"
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 208,
+		"endLine": 210,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/ElementContentFilter.java",
+		"startLine": 207,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter current : Object to newobj : Object in method public add(index int, newobj Object) : void from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "current : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 775,
+		"endLine": 775,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "newobj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 780,
+		"endLine": 780,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter current : Object to newobj : Object in method public set(index int, newobj Object) : Object from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "current : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 723,
+		"endLine": 723,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "newobj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 731,
+		"endLine": 731,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to obj : Object in method public add(obj Object) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to obj : Object in method public remove(obj Object) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 27,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 27,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter stringValue : String to str : String in method public append(str String) : void from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "stringValue : String"
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 131,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "str : String"
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 202,
+		"endLine": 204,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter text : String to str : String in method public cdata(str String) : CDATA from class org.jdom.input.JDOMFactory",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/input/JDOMFactory.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 24,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "text : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/input/JDOMFactory.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "str : String"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter value : String to str : String in method public normalizeString(str String) : String from class org.jdom.Text",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 647,
+		"endLine": 647,
+		"startColumn": 43,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "value : String"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 648,
+		"endLine": 648,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 42,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "str : String"
+}, {
+		"filePath": "core/src/java/org/jdom/Text.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable i : Iterator to iter : Iterator in method private checkAdd(c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "i : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 245,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 18,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "iter : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable i : Iterator to iter : Iterator in method public clear() : void from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 23,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 14,
+		"endColumn": 37,
+		"codeElementType": "FOR_STATEMENT_INITIALIZER",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "iter : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable i : Iterator to iter : Iterator in method public retainAll(c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 838,
+		"endLine": 838,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "i : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 838,
+		"endLine": 838,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 840,
+		"endLine": 840,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Element.java",
+		"startLine": 839,
+		"endLine": 849,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 551,
+		"endLine": 551,
+		"startColumn": 18,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "iter : Iterator"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 551,
+		"endLine": 551,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 553,
+		"endLine": 553,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 552,
+		"endLine": 561,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable o : Object to obj : Object in method public addAll(index int, c Collection) : boolean from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 430,
+		"endLine": 430,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable o : Object to obj : Object in method public clear() : void from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 20,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "obj : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable old : Object to ret : Object in method public set(index int, newobj Object) : Object from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "old : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 727,
+		"endLine": 727,
+		"startColumn": 20,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "ret : Object"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 727,
+		"endLine": 727,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable backingList : List to list : List in method public add(index int, newobj Object) : void from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "backingList : List"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 13,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 777,
+		"endLine": 777,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "list : List"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 780,
+		"endLine": 780,
+		"startColumn": 13,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable backingList : List to list : List in method public remove(index int) : Object from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "backingList : List"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "list : List"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 504,
+		"endLine": 504,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable backingList : List to list : List in method public set(index int, newobj Object) : Object from class org.jdom.FilterList",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "backingList : List"
+}, {
+		"filePath": "core/src/java/org/jdom/PartialList.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 724,
+		"endLine": 724,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "list : List"
+}, {
+		"filePath": "core/src/java/org/jdom/FilterList.java",
+		"startLine": 731,
+		"endLine": 731,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

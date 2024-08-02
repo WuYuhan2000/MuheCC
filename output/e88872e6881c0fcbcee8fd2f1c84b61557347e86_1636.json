@@ -1,0 +1,363 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/WillyWildbad/Open-MCT",
+	"sha1": "e88872e6881c0fcbcee8fd2f1c84b61557347e86",
+	"url": "https://github.com/WillyWildbad/Open-MCT/commit/e88872e6881c0fcbcee8fd2f1c84b61557347e86",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter isObjectManager : boolean in method private generateComponent(good boolean, dirty boolean, isObjectManager boolean, child AbstractComponent) : AbstractComponent from class gov.nasa.arc.mct.gui.actions.TestSaveAll",
+	"leftSideLocations": [{
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 185,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private generateComponent(good boolean, dirty boolean, child AbstractComponent) : AbstractComponent"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 78,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "isObjectManager : boolean"
+}, {
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 191,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private generateComponent(good boolean, dirty boolean, isObjectManager boolean, child AbstractComponent) : AbstractComponent"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : Object to answer : String in method private commitOrAbortPendingChanges() : boolean from class gov.nasa.arc.mct.gui.housing.Inspector",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 244,
+		"endLine": 249,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : Object"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 253,
+		"endLine": 260,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 251,
+		"endLine": 260,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 250,
+		"endLine": 255,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : String"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 259,
+		"endLine": 271,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/housing/Inspector.java",
+		"startLine": 257,
+		"endLine": 271,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type answer : int to answer : String in method private commitOrAbortPendingChanges() : void from class gov.nasa.arc.mct.gui.actions.ChangeHousingViewAction.ChangeSpecificViewAction",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 156,
+		"endLine": 162,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "answer : int"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 166,
+		"endLine": 173,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 164,
+		"endLine": 173,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 165,
+		"endLine": 170,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "answer : String"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 174,
+		"endLine": 186,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 172,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type options : Object[] to options : String[] in method private commitOrAbortPendingChanges() : void from class gov.nasa.arc.mct.gui.actions.ChangeHousingViewAction.ChangeSpecificViewAction",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 145,
+		"endLine": 154,
+		"startColumn": 22,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "options : Object[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 22,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "options : String[]"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable abort : String in method private commitOrAbortPendingChanges() : void from class gov.nasa.arc.mct.gui.actions.ChangeHousingViewAction.ChangeSpecificViewAction",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 145,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 20,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "abort : String"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable save : String in method private commitOrAbortPendingChanges() : void from class gov.nasa.arc.mct.gui.actions.ChangeHousingViewAction.ChangeSpecificViewAction",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 145,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 20,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "save : String"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable saveAll : String in method private commitOrAbortPendingChanges() : void from class gov.nasa.arc.mct.gui.actions.ChangeHousingViewAction.ChangeSpecificViewAction",
+	"leftSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 145,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 20,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "saveAll : String"
+}, {
+		"filePath": "platform/src/main/java/gov/nasa/arc/mct/gui/actions/ChangeHousingViewAction.java",
+		"startLine": 156,
+		"endLine": 158,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public getAllModifiedObjects() : Set<AbstractComponent> moved from class gov.nasa.arc.mct.components.AbstractComponent to class gov.nasa.arc.mct.gui.actions.TestSaveAll & inlined to private generateComponent(good boolean, dirty boolean, isObjectManager boolean, child AbstractComponent) : AbstractComponent",
+	"leftSideLocations": [{
+		"filePath": "mctcore/src/main/java/gov/nasa/arc/mct/components/AbstractComponent.java",
+		"startLine": 1220,
+		"endLine": 1230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public getAllModifiedObjects() : Set<AbstractComponent>"
+}, {
+		"filePath": "mctcore/src/main/java/gov/nasa/arc/mct/components/AbstractComponent.java",
+		"startLine": 1229,
+		"endLine": 1229,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "mctcore/src/main/java/gov/nasa/arc/mct/components/AbstractComponent.java",
+		"startLine": 1229,
+		"endLine": 1229,
+		"startColumn": 16,
+		"endColumn": 38,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 185,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private generateComponent(good boolean, dirty boolean, child AbstractComponent) : AbstractComponent"
+}, {
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 26,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "mockComponent.getAllModifiedObjects()"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 191,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private generateComponent(good boolean, dirty boolean, isObjectManager boolean, child AbstractComponent) : AbstractComponent"
+}, {
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 13,
+		"endColumn": 123,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/src/test/java/gov/nasa/arc/mct/gui/actions/TestSaveAll.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 80,
+		"endColumn": 121,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "8800bab8a660f5ab9e2b100cee51af8a462d220c",
+	"url": "https://github.com/spring-projects/spring-framework/commit/8800bab8a660f5ab9e2b100cee51af8a462d220c",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ex : SQLException to ex : Exception in method protected doBegin(transaction Object, definition TransactionDefinition) : void from class org.springframework.jdbc.datasource.DataSourceTransactionManager",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceTransactionManager.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ex : SQLException"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceTransactionManager.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 4,
+		"endColumn": 101,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceTransactionManager.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ex : Exception"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceTransactionManager.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 4,
+		"endColumn": 101,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ex : Throwable to ex : SQLException in method public prepareConnectionForTransaction(con Connection, definition TransactionDefinition) : Integer from class org.springframework.jdbc.datasource.DataSourceUtils",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ex : Throwable"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 6,
+		"endColumn": 30,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 11,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "ex : SQLException"
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "org.springframework.jdbc/src/main/java/org/springframework/jdbc/datasource/DataSourceUtils.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 7,
+		"endColumn": 16,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

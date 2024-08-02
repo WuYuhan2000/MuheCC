@@ -1,0 +1,570 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/crosswire/jsword",
+	"sha1": "52ebe9ed4e45755f54da430b92d194774b161aa8",
+	"url": "https://github.com/crosswire/jsword/commit/52ebe9ed4e45755f54da430b92d194774b161aa8",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter policy : IndexPolicy in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 367,
+		"endLine": 468,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 114,
+		"endColumn": 132,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "policy : IndexPolicy"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 366,
+		"endLine": 476,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private book : Book from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected book : Book"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 507,
+		"endLine": 507,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private book : Book"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private directory : Directory from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 508,
+		"endLine": 508,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected directory : Directory"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private directory : Directory"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private searcher : Searcher from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 24,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected searcher : Searcher"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 22,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private searcher : Searcher"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type create : boolean to policy : IndexPolicy in method public LuceneIndex(book Book, storage URI, policy IndexPolicy) from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "create : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 48,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "policy : IndexPolicy"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable mutex : Object in method public LuceneIndex(book Book, storage URI, policy IndexPolicy) from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 170,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SYNCHRONIZED_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 20,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "mutex : Object"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 186,
+		"endLine": 228,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SYNCHRONIZED_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable theCause : Throwable in method public find(search String) : Key from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 23,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "theCause : Throwable"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 325,
+		"endLine": 325,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter create : boolean to policy : IndexPolicy in method public LuceneIndex(book Book, storage URI, policy IndexPolicy) from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 48,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "create : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 48,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "policy : IndexPolicy"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hasHeadings : boolean to includeHeadings : boolean in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 17,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hasHeadings : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 433,
+		"endLine": 435,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 17,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "includeHeadings : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 118,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 439,
+		"endLine": 441,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hasMorphology : boolean to includeMorphology : boolean in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hasMorphology : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 437,
+		"endLine": 439,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "includeMorphology : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 122,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 443,
+		"endLine": 445,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hasNotes : boolean to includeNotes : boolean in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hasNotes : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 9,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 429,
+		"endLine": 431,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 17,
+		"endColumn": 114,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "includeNotes : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 9,
+		"endColumn": 115,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 435,
+		"endLine": 437,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hasStrongs : boolean to includeStrongs : boolean in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 17,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hasStrongs : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 421,
+		"endLine": 423,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 17,
+		"endColumn": 125,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "includeStrongs : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 427,
+		"endLine": 429,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable hasXRefs : boolean to includeXrefs : boolean in method private generateSearchIndexImpl(job Progress, errors List<Key>, writer IndexWriter, key Key, count int, policy IndexPolicy) : void from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "hasXRefs : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 425,
+		"endLine": 427,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 17,
+		"endColumn": 125,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "includeXrefs : boolean"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 431,
+		"endLine": 433,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(cause instanceof NoSuchVerseException) to theCause=cause instanceof NoSuchVerseException ? cause : e; in method public find(search String) : Key from class org.crosswire.jsword.index.lucene.LuceneIndex",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 315,
+		"endLine": 318,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(cause instanceof NoSuchVerseException)"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 257,
+		"endLine": 339,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public find(search String) : Key"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "theCause=cause instanceof NoSuchVerseException ? cause : e;\n"
+}, {
+		"filePath": "src/main/java/org/crosswire/jsword/index/lucene/LuceneIndex.java",
+		"startLine": 258,
+		"endLine": 337,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public find(search String) : Key"
+}]
+}
+]
+}]
+}

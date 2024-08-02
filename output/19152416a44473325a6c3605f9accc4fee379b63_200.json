@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "19152416a44473325a6c3605f9accc4fee379b63",
+	"url": "https://github.com/elastic/elasticsearch/commit/19152416a44473325a6c3605f9accc4fee379b63",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter clusterService : ClusterService in method public IndicesTTLService(settings Settings, clusterService ClusterService, indicesService IndicesService, nodeSettingsService NodeSettingsService, client Client) from class org.elasticsearch.indices.ttl.IndicesTTLService",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/ttl/IndicesTTLService.java",
+		"startLine": 77,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public IndicesTTLService(settings Settings, indicesService IndicesService, nodeSettingsService NodeSettingsService, client Client)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/indices/ttl/IndicesTTLService.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 49,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "clusterService : ClusterService"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/indices/ttl/IndicesTTLService.java",
+		"startLine": 84,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public IndicesTTLService(settings Settings, clusterService ClusterService, indicesService IndicesService, nodeSettingsService NodeSettingsService, client Client)"
+}]
+}
+]
+}]
+}

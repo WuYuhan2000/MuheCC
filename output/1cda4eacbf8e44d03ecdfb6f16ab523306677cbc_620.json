@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "1cda4eacbf8e44d03ecdfb6f16ab523306677cbc",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/1cda4eacbf8e44d03ecdfb6f16ab523306677cbc",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public isConfidential() : boolean from class org.restlet.data.Request",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 389,
+		"endLine": 397,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isConfidential() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 385,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public isConfidential() : boolean"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public isConfidential() : boolean extracted from public isConfidential() : boolean in class org.restlet.data.Request & moved to class org.restlet.data.Protocol",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 389,
+		"endLine": 397,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public isConfidential() : boolean"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 290,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public isConfidential() : boolean"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 385,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public isConfidential() : boolean"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 50,
+		"endColumn": 80,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getProtocol().isConfidential()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public Protocol(schemeName String, name String, description String, defaultPort int, confidential boolean) extracted from public Protocol(schemeName String, name String, description String, defaultPort int) in class org.restlet.data.Protocol",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 215,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Protocol(schemeName String, name String, description String, defaultPort int)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 236,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public Protocol(schemeName String, name String, description String, defaultPort int, confidential boolean)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 219,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Protocol(schemeName String, name String, description String, defaultPort int)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(schemeName,name,description,defaultPort,false)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private confidential : boolean from class org.restlet.data.Request to private confidential : boolean from class org.restlet.data.Protocol",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Request.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private confidential : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/Protocol.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private confidential : boolean"
+}]
+}
+]
+}]
+}

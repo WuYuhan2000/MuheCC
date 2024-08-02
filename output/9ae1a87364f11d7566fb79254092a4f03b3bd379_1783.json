@@ -1,0 +1,309 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/oozie",
+	"sha1": "9ae1a87364f11d7566fb79254092a4f03b3bd379",
+	"url": "https://github.com/apache/oozie/commit/9ae1a87364f11d7566fb79254092a4f03b3bd379",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter limit : int in method public PurgeCommand(olderThan int, limit int) from class org.apache.oozie.command.wf.PurgeCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 27,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PurgeCommand(olderThan int)"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 40,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "limit : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 27,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PurgeCommand(olderThan int, limit int)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter limit : int in method public purge(olderThanDays long, limit int) : void from class org.apache.oozie.store.WorkflowStore",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/WorkflowStore.java",
+		"startLine": 770,
+		"endLine": 796,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public purge(olderThanDays long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/WorkflowStore.java",
+		"startLine": 776,
+		"endLine": 776,
+		"startColumn": 49,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "limit : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/store/WorkflowStore.java",
+		"startLine": 770,
+		"endLine": 800,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public purge(olderThanDays long, limit int) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type limit : long to limit : int in method public purge(olderThanDays long, limit int) : void from class org.apache.oozie.store.CoordinatorStore",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 52,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "limit : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 49,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "limit : int"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type int to void in method public purge(olderThanDays long, limit int) : void from class org.apache.oozie.store.CoordinatorStore",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 12,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "int"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 520,
+		"endLine": 551,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public purgeJobs(olderThanDays long, limit long) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 499,
+		"endLine": 499,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 492,
+		"endLine": 523,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public purge(olderThanDays long, limit int) : void"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private LOG : XLog in class org.apache.oozie.command.coord.CoordPurgeCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordPurgeCommand.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordPurgeCommand.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 123,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordPurgeCommand.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private LOG : XLog"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordPurgeCommand.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/coord/CoordPurgeCommand.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private LOG : XLog in class org.apache.oozie.command.wf.PurgeCommand",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 25,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private LOG : XLog"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/command/wf/PurgeCommand.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @NamedQueries({@NamedQuery(name=\"UPDATE_COORD_ACTION\",query=\"update CoordinatorActionBean w set w.actionNumber = :actionNumber, w.actionXml = :actionXml, w.consoleUrl = :consoleUrl, w.createdConf = :createdConf, w.errorCode = :errorCode, w.errorMessage = :errorMessage, w.externalStatus = :externalStatus, w.missingDependencies = :missingDependencies, w.runConf = :runConf, w.timeOut = :timeOut, w.trackerUri = :trackerUri, w.type = :type, w.createdTimestamp = :createdTime, w.externalId = :externalId, w.jobId = :jobId, w.lastModifiedTimestamp = :lastModifiedTime, w.nominalTimestamp = :nominalTime, w.slaXml = :slaXml, w.status = :status where w.id = :id\"),@NamedQuery(name=\"UPDATE_COORD_ACTION_MIN\",query=\"update CoordinatorActionBean w set w.actionXml = :actionXml, w.missingDependencies = :missingDependencies, w.lastModifiedTimestamp = :lastModifiedTime, w.status = :status where w.id = :id\"),@NamedQuery(name=\"DELETE_COMPLETED_COORD_ACTIONS\",query=\"delete from CoordinatorActionBean a where a.id = :id and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS\",query=\"select OBJECT(w) from CoordinatorActionBean w\"),@NamedQuery(name=\"GET_COMPLETED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.createdTimestamp < :createdTime and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTION\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.id = :id\"),@NamedQuery(name=\"GET_COORD_ACTION_FOR_EXTERNALID\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.externalId = :externalId\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_FIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_LIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp desc\"),@NamedQuery(name=\"GET_COORD_RUNNING_ACTIONS_COUNT\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'RUNNING' OR a.status='SUBMITTED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT_BY_JOBID\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'RUNNING'\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.status = 'RUNNING' AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_WAITING_SUBMITTED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where (a.status = 'WAITING' OR a.status = 'SUBMITTED') AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_ACTIONS_FOR_DATES\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'TIMEDOUT' OR a.status = 'SUCCEEDED' OR a.status = 'KILLED' OR a.status = 'FAILED') AND a.nominalTimestamp >= :startTime AND a.nominalTimestamp <= :endTime\"),@NamedQuery(name=\"GET_ACTION_FOR_NOMINALTIME\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.nominalTimestamp = :nominalTime\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT\",query=\"select count(w) from CoordinatorActionBean w\")}) to @NamedQueries({@NamedQuery(name=\"UPDATE_COORD_ACTION\",query=\"update CoordinatorActionBean w set w.actionNumber = :actionNumber, w.actionXml = :actionXml, w.consoleUrl = :consoleUrl, w.createdConf = :createdConf, w.errorCode = :errorCode, w.errorMessage = :errorMessage, w.externalStatus = :externalStatus, w.missingDependencies = :missingDependencies, w.runConf = :runConf, w.timeOut = :timeOut, w.trackerUri = :trackerUri, w.type = :type, w.createdTimestamp = :createdTime, w.externalId = :externalId, w.jobId = :jobId, w.lastModifiedTimestamp = :lastModifiedTime, w.nominalTimestamp = :nominalTime, w.slaXml = :slaXml, w.status = :status where w.id = :id\"),@NamedQuery(name=\"UPDATE_COORD_ACTION_MIN\",query=\"update CoordinatorActionBean w set w.actionXml = :actionXml, w.missingDependencies = :missingDependencies, w.lastModifiedTimestamp = :lastModifiedTime, w.status = :status where w.id = :id\"),@NamedQuery(name=\"DELETE_COMPLETED_ACTIONS_FOR_COORDINATOR\",query=\"delete from CoordinatorActionBean a where a.jobId = :jobId and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status= 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS\",query=\"select OBJECT(w) from CoordinatorActionBean w\"),@NamedQuery(name=\"GET_COMPLETED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.createdTimestamp < :createdTime and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTION\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.id = :id\"),@NamedQuery(name=\"GET_COORD_ACTION_FOR_EXTERNALID\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.externalId = :externalId\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_FIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_LIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp desc\"),@NamedQuery(name=\"GET_COORD_RUNNING_ACTIONS_COUNT\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'RUNNING' OR a.status='SUBMITTED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT_BY_JOBID\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'RUNNING'\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.status = 'RUNNING' AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_WAITING_SUBMITTED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where (a.status = 'WAITING' OR a.status = 'SUBMITTED') AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_ACTIONS_FOR_DATES\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'TIMEDOUT' OR a.status = 'SUCCEEDED' OR a.status = 'KILLED' OR a.status = 'FAILED') AND a.nominalTimestamp >= :startTime AND a.nominalTimestamp <= :endTime\"),@NamedQuery(name=\"GET_ACTION_FOR_NOMINALTIME\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.nominalTimestamp = :nominalTime\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT\",query=\"select count(w) from CoordinatorActionBean w\")}) in class org.apache.oozie.CoordinatorActionBean",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/CoordinatorActionBean.java",
+		"startLine": 47,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 108,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@NamedQueries({@NamedQuery(name=\"UPDATE_COORD_ACTION\",query=\"update CoordinatorActionBean w set w.actionNumber = :actionNumber, w.actionXml = :actionXml, w.consoleUrl = :consoleUrl, w.createdConf = :createdConf, w.errorCode = :errorCode, w.errorMessage = :errorMessage, w.externalStatus = :externalStatus, w.missingDependencies = :missingDependencies, w.runConf = :runConf, w.timeOut = :timeOut, w.trackerUri = :trackerUri, w.type = :type, w.createdTimestamp = :createdTime, w.externalId = :externalId, w.jobId = :jobId, w.lastModifiedTimestamp = :lastModifiedTime, w.nominalTimestamp = :nominalTime, w.slaXml = :slaXml, w.status = :status where w.id = :id\"),@NamedQuery(name=\"UPDATE_COORD_ACTION_MIN\",query=\"update CoordinatorActionBean w set w.actionXml = :actionXml, w.missingDependencies = :missingDependencies, w.lastModifiedTimestamp = :lastModifiedTime, w.status = :status where w.id = :id\"),@NamedQuery(name=\"DELETE_COMPLETED_COORD_ACTIONS\",query=\"delete from CoordinatorActionBean a where a.id = :id and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS\",query=\"select OBJECT(w) from CoordinatorActionBean w\"),@NamedQuery(name=\"GET_COMPLETED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.createdTimestamp < :createdTime and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTION\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.id = :id\"),@NamedQuery(name=\"GET_COORD_ACTION_FOR_EXTERNALID\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.externalId = :externalId\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_FIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_LIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp desc\"),@NamedQuery(name=\"GET_COORD_RUNNING_ACTIONS_COUNT\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'RUNNING' OR a.status='SUBMITTED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT_BY_JOBID\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'RUNNING'\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.status = 'RUNNING' AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_WAITING_SUBMITTED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where (a.status = 'WAITING' OR a.status = 'SUBMITTED') AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_ACTIONS_FOR_DATES\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'TIMEDOUT' OR a.status = 'SUCCEEDED' OR a.status = 'KILLED' OR a.status = 'FAILED') AND a.nominalTimestamp >= :startTime AND a.nominalTimestamp <= :endTime\"),@NamedQuery(name=\"GET_ACTION_FOR_NOMINALTIME\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.nominalTimestamp = :nominalTime\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT\",query=\"select count(w) from CoordinatorActionBean w\")})"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/CoordinatorActionBean.java",
+		"startLine": 41,
+		"endLine": 298,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.oozie.CoordinatorActionBean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/CoordinatorActionBean.java",
+		"startLine": 47,
+		"endLine": 83,
+		"startColumn": 0,
+		"endColumn": 108,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@NamedQueries({@NamedQuery(name=\"UPDATE_COORD_ACTION\",query=\"update CoordinatorActionBean w set w.actionNumber = :actionNumber, w.actionXml = :actionXml, w.consoleUrl = :consoleUrl, w.createdConf = :createdConf, w.errorCode = :errorCode, w.errorMessage = :errorMessage, w.externalStatus = :externalStatus, w.missingDependencies = :missingDependencies, w.runConf = :runConf, w.timeOut = :timeOut, w.trackerUri = :trackerUri, w.type = :type, w.createdTimestamp = :createdTime, w.externalId = :externalId, w.jobId = :jobId, w.lastModifiedTimestamp = :lastModifiedTime, w.nominalTimestamp = :nominalTime, w.slaXml = :slaXml, w.status = :status where w.id = :id\"),@NamedQuery(name=\"UPDATE_COORD_ACTION_MIN\",query=\"update CoordinatorActionBean w set w.actionXml = :actionXml, w.missingDependencies = :missingDependencies, w.lastModifiedTimestamp = :lastModifiedTime, w.status = :status where w.id = :id\"),@NamedQuery(name=\"DELETE_COMPLETED_ACTIONS_FOR_COORDINATOR\",query=\"delete from CoordinatorActionBean a where a.jobId = :jobId and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status= 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS\",query=\"select OBJECT(w) from CoordinatorActionBean w\"),@NamedQuery(name=\"GET_COMPLETED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.createdTimestamp < :createdTime and (a.status = 'SUCCEEDED' OR a.status = 'FAILED' OR a.status = 'KILLED')\"),@NamedQuery(name=\"GET_COORD_ACTION\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.id = :id\"),@NamedQuery(name=\"GET_COORD_ACTION_FOR_EXTERNALID\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.externalId = :externalId\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_FIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp\"),@NamedQuery(name=\"GET_COORD_ACTIONS_FOR_JOB_LIFO\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'READY' order by a.nominalTimestamp desc\"),@NamedQuery(name=\"GET_COORD_RUNNING_ACTIONS_COUNT\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'RUNNING' OR a.status='SUBMITTED')\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT_BY_JOBID\",query=\"select count(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_FOR_COORD_JOB\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.status = 'RUNNING'\"),@NamedQuery(name=\"GET_RUNNING_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.status = 'RUNNING' AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_WAITING_SUBMITTED_ACTIONS_OLDER_THAN\",query=\"select OBJECT(a) from CoordinatorActionBean a where (a.status = 'WAITING' OR a.status = 'SUBMITTED') AND a.lastModifiedTimestamp <= :lastModifiedTime\"),@NamedQuery(name=\"GET_ACTIONS_FOR_DATES\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND (a.status = 'TIMEDOUT' OR a.status = 'SUCCEEDED' OR a.status = 'KILLED' OR a.status = 'FAILED') AND a.nominalTimestamp >= :startTime AND a.nominalTimestamp <= :endTime\"),@NamedQuery(name=\"GET_ACTION_FOR_NOMINALTIME\",query=\"select OBJECT(a) from CoordinatorActionBean a where a.jobId = :jobId AND a.nominalTimestamp = :nominalTime\"),@NamedQuery(name=\"GET_COORD_ACTIONS_COUNT\",query=\"select count(w) from CoordinatorActionBean w\")})"
+}, {
+		"filePath": "core/src/main/java/org/apache/oozie/CoordinatorActionBean.java",
+		"startLine": 41,
+		"endLine": 298,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.apache.oozie.CoordinatorActionBean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public purgeJobs(olderThanDays long, limit long) : int renamed to public purge(olderThanDays long, limit int) : void in class org.apache.oozie.store.CoordinatorStore",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 520,
+		"endLine": 551,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public purgeJobs(olderThanDays long, limit long) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/oozie/store/CoordinatorStore.java",
+		"startLine": 492,
+		"endLine": 523,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public purge(olderThanDays long, limit int) : void"
+}]
+}
+]
+}]
+}

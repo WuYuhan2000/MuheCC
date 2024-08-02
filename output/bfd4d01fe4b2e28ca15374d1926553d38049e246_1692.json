@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/clafonta/mockey",
+	"sha1": "bfd4d01fe4b2e28ca15374d1926553d38049e246",
+	"url": "https://github.com/clafonta/mockey/commit/bfd4d01fe4b2e28ca15374d1926553d38049e246",
+	"refactorings": [{
+	"type": "Inline Variable",
+	"description": "Inline Variable servicePlans : List in method public getElement(document Document, store IMockeyStorage) : Element from class com.mockey.storage.xml.MockeyXmlFileConfigurationGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 8,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "servicePlans : List"
+}, {
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 146,
+		"endLine": 170,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 151,
+		"endLine": 170,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @SuppressWarnings(\"unchecked\") in method public getElement(document Document, store IMockeyStorage) : Element from class com.mockey.storage.xml.MockeyXmlFileConfigurationGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 2,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 54,
+		"endLine": 173,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getElement(document Document, store IMockeyStorage) : Element"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/com/mockey/storage/xml/MockeyXmlFileConfigurationGenerator.java",
+		"startLine": 58,
+		"endLine": 190,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getElement(document Document, store IMockeyStorage) : Element"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.mockey.ui.ProxyInfoAJAXServlet renamed to com.mockey.ui.ConfigurationInfoAJAXServlet",
+	"leftSideLocations": [{
+		"filePath": "src/java/com/mockey/ui/ProxyInfoAJAXServlet.java",
+		"startLine": 45,
+		"endLine": 82,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.mockey.ui.ProxyInfoAJAXServlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/com/mockey/ui/ConfigurationInfoAJAXServlet.java",
+		"startLine": 46,
+		"endLine": 92,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.mockey.ui.ConfigurationInfoAJAXServlet"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable resultingJSON : String to result : String in method public getJSON(objectMap Map<String,String>) : String from class com.mockey.ui.Util",
+	"leftSideLocations": [{
+		"filePath": "src/java/com/mockey/ui/Util.java",
+		"startLine": 191,
+		"endLine": 192,
+		"startColumn": 10,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "resultingJSON : String"
+}, {
+		"filePath": "src/java/com/mockey/ui/Util.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/com/mockey/ui/Util.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 10,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "result : String"
+}, {
+		"filePath": "src/java/com/mockey/ui/Util.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

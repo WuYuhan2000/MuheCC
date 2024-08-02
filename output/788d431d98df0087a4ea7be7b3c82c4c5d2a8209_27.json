@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "788d431d98df0087a4ea7be7b3c82c4c5d2a8209",
+	"url": "https://github.com/ReactiveX/RxJava/commit/788d431d98df0087a4ea7be7b3c82c4c5d2a8209",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private assertThatTheDelayIsValidForTheSwingTimer(delay long) : void extracted from public schedule(state T, action Func2<Scheduler,T,Subscription>, dueTime long, unit TimeUnit) : Subscription in class rx.concurrency.SwingScheduler",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 72,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public schedule(state T, action Func2<Scheduler,T,Subscription>, dueTime long, unit TimeUnit) : Subscription"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 78,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 151,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private assertThatTheDelayIsValidForTheSwingTimer(delay long) : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 13,
+		"endColumn": 144,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 152,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 152,
+		"endLine": 154,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 73,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public schedule(state T, action Func2<Scheduler,T,Subscription>, dueTime long, unit TimeUnit) : Subscription"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/concurrency/SwingScheduler.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "assertThatTheDelayIsValidForTheSwingTimer(delay)"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,429 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "233a1b898725fc39f3f14346c716b5f52b3f0e0a",
+	"url": "https://github.com/apache/camel/commit/233a1b898725fc39f3f14346c716b5f52b3f0e0a",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Id in method public getCorrelationKey() : String from class org.apache.camel.bam.model.ProcessInstance",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 83,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCorrelationKey() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Id"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getCorrelationKey() : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : Exception to e : JpaSystemException in method public doInTransaction(status TransactionStatus) : Object from class org.apache.camel.bam.processor.BamProcessorSupport.process.execute.new TransactionCallback",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 28,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : JpaSystemException"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 29,
+		"endColumn": 114,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/BamProcessorSupport.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 25,
+		"endColumn": 113,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected findEntityByCorrelationKey(key Object) : T extracted from protected loadEntity(exchange Exchange, key Object) : T in class org.apache.camel.bam.processor.JpaBamProcessorSupport",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 93,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected loadEntity(exchange Exchange, key Object) : T"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 122,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected findEntityByCorrelationKey(key Object) : T"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 128,
+		"endLine": 133,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 131,
+		"endLine": 133,
+		"startColumn": 18,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 105,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected loadEntity(exchange Exchange, key Object) : T"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 20,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "findEntityByCorrelationKey(key)"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 42,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 126,
+		"endLine": 134,
+		"startColumn": 14,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/processor/JpaBamProcessorSupport.java",
+		"startLine": 123,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public testSendingToFirstActivityOnlyResultsInOverdueMessage() : void to protected setUp() : void in class org.apache.camel.bam.BamRouteTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public testSendingToFirstActivityOnlyResultsInOverdueMessage() : void"
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 46,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "protected setUp() : void"
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @UniqueConstraint(columnNames = {\"correlationKey\"}) in class org.apache.camel.bam.model.ProcessInstance",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@UniqueConstraint(columnNames = {\"correlationKey\"})"
+}, {
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 36,
+		"endLine": 126,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.camel.bam.model.ProcessInstance"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/main/java/org/apache/camel/bam/model/ProcessInstance.java",
+		"startLine": 28,
+		"endLine": 139,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.apache.camel.bam.model.ProcessInstance"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testSendingToFirstActivityOnlyResultsInOverdueMessage() : void renamed to public testBam() : void in class org.apache.camel.bam.BamRouteTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 35,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSendingToFirstActivityOnlyResultsInOverdueMessage() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 34,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testBam() : void"
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute overdueEndpoint : MockEndpoint to overdueEndpoint : MockEndpoint in method public testBam() : void from class org.apache.camel.bam.BamRouteTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 22,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "overdueEndpoint : MockEndpoint"
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 28,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "overdueEndpoint : MockEndpoint"
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-bam/src/test/java/org/apache/camel/bam/BamRouteTest.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

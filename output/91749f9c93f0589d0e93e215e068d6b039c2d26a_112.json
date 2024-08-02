@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "91749f9c93f0589d0e93e215e068d6b039c2d26a",
+	"url": "https://github.com/apache/hbase/commit/91749f9c93f0589d0e93e215e068d6b039c2d26a",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable tpe : ThreadPoolExecutor in method private getBatchPool() : ExecutorService from class org.apache.hadoop.hbase.client.HConnectionManager.HConnectionImplementation",
+	"leftSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 778,
+		"endLine": 784,
+		"startColumn": 13,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 781,
+		"endLine": 787,
+		"startColumn": 32,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "tpe : ThreadPoolExecutor"
+}, {
+		"filePath": "hbase-client/src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 789,
+		"endLine": 789,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

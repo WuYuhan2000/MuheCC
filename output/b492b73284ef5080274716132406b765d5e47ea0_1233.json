@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "b492b73284ef5080274716132406b765d5e47ea0",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/b492b73284ef5080274716132406b765d5e47ea0",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter toolkit : FormToolkit in method private createResultsTableViewer(reviewResultsComposite Composite, toolkit FormToolkit) : TableViewer from class org.eclipse.mylyn.reviews.ui.editors.ReviewSummaryTaskEditorPart",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 79,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createResultsTableViewer(reviewResultsComposite Composite) : TableViewer"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "toolkit : FormToolkit"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 84,
+		"endLine": 191,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private createResultsTableViewer(reviewResultsComposite Composite, toolkit FormToolkit) : TableViewer"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable table : Table in method private createResultsTableViewer(reviewResultsComposite Composite, toolkit FormToolkit) : TableViewer from class org.eclipse.mylyn.reviews.ui.editors.ReviewSummaryTaskEditorPart",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 3,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 86,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "table : Table"
+}, {
+		"filePath": "org.eclipse.mylyn.reviews.ui/src/org/eclipse/mylyn/reviews/ui/editors/ReviewSummaryTaskEditorPart.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

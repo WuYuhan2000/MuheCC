@@ -1,0 +1,372 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "9eb049791037ecb65da18b562ff57804fbd6e942",
+	"url": "https://github.com/ReactiveX/RxJava/commit/9eb049791037ecb65da18b562ff57804fbd6e942",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to protected in method protected Observable(onSubscribe Func1<Observer<T>,Subscription>) from class rx.observables.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/Observable.java",
+		"startLine": 77,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public Observable(onSubscribe Func1<Observer<T>,Subscription>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/Observable.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected Observable(onSubscribe Func1<Observer<T>,Subscription>)"
+}]
+},
+{
+	"type": "Extract Interface",
+	"description": "Extract Interface rx.observables.operations.OperatorSubscribeFunction from classes [rx.observables.operations.OperationCombineLatest.Aggregator, rx.observables.operations.OperationFilter.Filter, rx.observables.operations.OperationLast.Last, rx.observables.operations.OperationMap.MapObservable, rx.observables.operations.OperationMaterialize.MaterializeObservable, rx.observables.operations.OperationMerge.MergeObservable, rx.observables.operations.OperationMergeDelayError.MergeDelayErrorObservable, rx.observables.operations.OperationOnErrorResumeNextViaFunction.OnErrorResumeNextViaFunction, rx.observables.operations.OperationOnErrorResumeNextViaObservable.OnErrorResumeNextViaObservable, rx.observables.operations.OperationOnErrorReturn.OnErrorReturn, rx.observables.operations.OperationScan.Accumulator, rx.observables.operations.OperationSkip.Skip, rx.observables.operations.OperationSynchronize.Synchronize, rx.observables.operations.OperationTake.Take, rx.observables.operations.OperationToObservableIterable.ToObservableIterable, rx.observables.operations.OperationToObservableList.ToObservableList, rx.observables.operations.OperationToObservableSortedList.ToObservableSortedList, rx.observables.operations.OperationZip.Aggregator]",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationCombineLatest.java",
+		"startLine": 101,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationCombineLatest.Aggregator"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationFilter.java",
+		"startLine": 35,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationFilter.Filter"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationLast.java",
+		"startLine": 43,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationLast.Last"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMap.java",
+		"startLine": 74,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationMap.MapObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMaterialize.java",
+		"startLine": 52,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationMaterialize.MaterializeObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMerge.java",
+		"startLine": 118,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationMerge.MergeObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMergeDelayError.java",
+		"startLine": 130,
+		"endLine": 336,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationMergeDelayError.MergeDelayErrorObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorResumeNextViaFunction.java",
+		"startLine": 41,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationOnErrorResumeNextViaFunction.OnErrorResumeNextViaFunction"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorResumeNextViaObservable.java",
+		"startLine": 39,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationOnErrorResumeNextViaObservable.OnErrorResumeNextViaObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorReturn.java",
+		"startLine": 44,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationOnErrorReturn.OnErrorReturn"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationScan.java",
+		"startLine": 64,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationScan.Accumulator"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationSkip.java",
+		"startLine": 58,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationSkip.Skip"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationSynchronize.java",
+		"startLine": 61,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationSynchronize.Synchronize"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationTake.java",
+		"startLine": 57,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationTake.Take"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableIterable.java",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationToObservableIterable.ToObservableIterable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableList.java",
+		"startLine": 40,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationToObservableList.ToObservableList"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableSortedList.java",
+		"startLine": 67,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationToObservableSortedList.ToObservableSortedList"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationZip.java",
+		"startLine": 109,
+		"endLine": 270,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "rx.observables.operations.OperationZip.Aggregator"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationCombineLatest.java",
+		"startLine": 101,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationCombineLatest.Aggregator"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationFilter.java",
+		"startLine": 36,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationFilter.Filter"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationLast.java",
+		"startLine": 43,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationLast.Last"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMap.java",
+		"startLine": 74,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationMap.MapObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMaterialize.java",
+		"startLine": 52,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationMaterialize.MaterializeObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMerge.java",
+		"startLine": 118,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationMerge.MergeObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationMergeDelayError.java",
+		"startLine": 130,
+		"endLine": 336,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationMergeDelayError.MergeDelayErrorObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorResumeNextViaFunction.java",
+		"startLine": 41,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationOnErrorResumeNextViaFunction.OnErrorResumeNextViaFunction"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorResumeNextViaObservable.java",
+		"startLine": 39,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationOnErrorResumeNextViaObservable.OnErrorResumeNextViaObservable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationOnErrorReturn.java",
+		"startLine": 44,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationOnErrorReturn.OnErrorReturn"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationScan.java",
+		"startLine": 65,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationScan.Accumulator"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationSkip.java",
+		"startLine": 58,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationSkip.Skip"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationSynchronize.java",
+		"startLine": 61,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationSynchronize.Synchronize"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationTake.java",
+		"startLine": 58,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationTake.Take"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableIterable.java",
+		"startLine": 43,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationToObservableIterable.ToObservableIterable"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableList.java",
+		"startLine": 40,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationToObservableList.ToObservableList"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationToObservableSortedList.java",
+		"startLine": 67,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationToObservableSortedList.ToObservableSortedList"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperationZip.java",
+		"startLine": 109,
+		"endLine": 270,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "rx.observables.operations.OperationZip.Aggregator"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/observables/operations/OperatorSubscribeFunction.java",
+		"startLine": 9,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "rx.observables.operations.OperatorSubscribeFunction"
+}]
+}
+]
+}]
+}

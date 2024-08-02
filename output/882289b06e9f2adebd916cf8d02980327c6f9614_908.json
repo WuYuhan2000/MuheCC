@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "882289b06e9f2adebd916cf8d02980327c6f9614",
+	"url": "https://github.com/spring-projects/spring-framework/commit/882289b06e9f2adebd916cf8d02980327c6f9614",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type ifcs : Class<?>[] to ifcs : Set<Class> in method public getAllInterfacesForClass(clazz Class<?>, classLoader ClassLoader) : Class<?>[] from class org.springframework.util.ClassUtils",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/util/ClassUtils.java",
+		"startLine": 980,
+		"endLine": 980,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ifcs : Class<?>[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/util/ClassUtils.java",
+		"startLine": 972,
+		"endLine": 972,
+		"startColumn": 14,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "ifcs : Set<Class>"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable ifcs : Class<?>[] in method public getAllInterfacesForClassAsSet(clazz Class, classLoader ClassLoader) : Set<Class> from class org.springframework.util.ClassUtils",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/util/ClassUtils.java",
+		"startLine": 1031,
+		"endLine": 1031,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.core/src/main/java/org/springframework/util/ClassUtils.java",
+		"startLine": 1014,
+		"endLine": 1014,
+		"startColumn": 15,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "ifcs : Class<?>[]"
+}]
+}
+]
+}]
+}

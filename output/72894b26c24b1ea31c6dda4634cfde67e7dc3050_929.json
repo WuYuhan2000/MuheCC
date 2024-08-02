@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "72894b26c24b1ea31c6dda4634cfde67e7dc3050",
+	"url": "https://github.com/spring-projects/spring-framework/commit/72894b26c24b1ea31c6dda4634cfde67e7dc3050",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected createMessageForPayload(payload Object, session Session) : Message extracted from public toMessage(object Object, session Session) : Message in class org.springframework.jms.support.converter.MessagingMessageConverter",
+	"leftSideLocations": [{
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 89,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public toMessage(object Object, session Session) : Message"
+}, {
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 122,
+		"endLine": 128,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createMessageForPayload(payload Object, session Session) : Message"
+}, {
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 3,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 89,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public toMessage(object Object, session Session) : Message"
+}, {
+		"filePath": "spring-jms/src/main/java/org/springframework/jms/support/converter/MessagingMessageConverter.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 29,
+		"endColumn": 81,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createMessageForPayload(input.getPayload(),session)"
+}]
+}
+]
+}]
+}

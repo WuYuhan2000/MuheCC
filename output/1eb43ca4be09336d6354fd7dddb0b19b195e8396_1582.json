@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "1eb43ca4be09336d6354fd7dddb0b19b195e8396",
+	"url": "https://github.com/aeshell/aesh/commit/1eb43ca4be09336d6354fd7dddb0b19b195e8396",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter resultHandler : ResultHandler in method public ProcessedCommand(name String, description String, validator CommandValidator, resultHandler ResultHandler) from class org.jboss.aesh.cl.internal.ProcessedCommand",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/internal/ProcessedCommand.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ProcessedCommand(name String, description String, validator CommandValidator)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/internal/ProcessedCommand.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 29,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "resultHandler : ResultHandler"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/internal/ProcessedCommand.java",
+		"startLine": 41,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public ProcessedCommand(name String, description String, validator CommandValidator, resultHandler ResultHandler)"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,384 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "06b1f1ec2fc0bca8f4d6d5345cbf42777b4d89ff",
+	"url": "https://github.com/JetBrains/kotlin/commit/06b1f1ec2fc0bca8f4d6d5345cbf42777b4d89ff",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type elements : Iterable<LookupElement> to elements : Collection<LookupElement> in method public completeSmart() : void from class org.jetbrains.jet.plugin.completion.CompletionSession",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 41,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "elements : Iterable<LookupElement>"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 269,
+		"endLine": 271,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 146,
+		"endLine": 147,
+		"startColumn": 35,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "elements : Collection<LookupElement>"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private addReferenceVariants(filter Function1<DeclarationDescriptor,Iterable<LookupElement>>) : void inlined to private addReferenceVariants(filterCondition Condition<DeclarationDescriptor>) : void in class org.jetbrains.jet.plugin.completion.CompletionSession",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 262,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private addReferenceVariants(filter Function1<DeclarationDescriptor,Iterable<LookupElement>>) : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 263,
+		"endLine": 264,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 250,
+		"endLine": 260,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private addReferenceVariants(filterCondition Condition<DeclarationDescriptor>) : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 251,
+		"endLine": 259,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "addReferenceVariants(new Function1<DeclarationDescriptor,Iterable<LookupElement>>(){\n  @Override public Iterable<LookupElement> invoke(  DeclarationDescriptor descriptor){\n    return filterCondition.value(descriptor) ? Collections.singletonList(DescriptorLookupConverter.createLookupElement(getResolveSession(),getExpressionBindingContext(),descriptor)) : Collections.<LookupElement>emptyList();\n  }\n}\n)"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 269,
+		"endLine": 271,
+		"startColumn": 56,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 269,
+		"endLine": 271,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 267,
+		"endLine": 272,
+		"startColumn": 75,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 267,
+		"endLine": 272,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 266,
+		"endLine": 273,
+		"startColumn": 62,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 266,
+		"endLine": 273,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 249,
+		"endLine": 261,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private addReferenceVariants(filterCondition Condition<DeclarationDescriptor>) : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 250,
+		"endLine": 251,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private addReferenceVariants(filter Function1<DeclarationDescriptor,Iterable<LookupElement>>) : void inlined to public completeSmart() : void in class org.jetbrains.jet.plugin.completion.CompletionSession",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 262,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private addReferenceVariants(filter Function1<DeclarationDescriptor,Iterable<LookupElement>>) : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 263,
+		"endLine": 264,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 269,
+		"endLine": 271,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 269,
+		"endLine": 271,
+		"startColumn": 56,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 134,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public completeSmart() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 144,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 15,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "addReferenceVariants(new Function1<DeclarationDescriptor,Iterable<LookupElement>>(){\n  @Override public Iterable<LookupElement> invoke(  DeclarationDescriptor descriptor){\n    return data.toElements(descriptor);\n  }\n}\n)"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 17,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 267,
+		"endLine": 272,
+		"startColumn": 75,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 267,
+		"endLine": 272,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 266,
+		"endLine": 273,
+		"startColumn": 62,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 266,
+		"endLine": 273,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 135,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public completeSmart() : void"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 138,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 52,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable descriptorFilter : Condition<DeclarationDescriptor> to descriptorFilter : Condition<DeclarationDescriptor> in method public CompletionSession(parameters CompletionParameters, result CompletionResultSet, jetReference JetSimpleNameReference, position PsiElement) from class org.jetbrains.jet.plugin.completion.CompletionSession",
+	"leftSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 55,
+		"endLine": 60,
+		"startColumn": 52,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "descriptorFilter : Condition<DeclarationDescriptor>"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 78,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 72,
+		"endLine": 77,
+		"startColumn": 42,
+		"endColumn": 10,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "descriptorFilter : Condition<DeclarationDescriptor>"
+}, {
+		"filePath": "idea/src/org/jetbrains/jet/plugin/completion/CompletionSession.java",
+		"startLine": 78,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

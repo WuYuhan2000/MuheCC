@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/constretto/constretto-core",
+	"sha1": "9c4dbe7edf5eb277d91c04ae77e6c5e87721d3d3",
+	"url": "https://github.com/constretto/constretto-core/commit/9c4dbe7edf5eb277d91c04ae77e6c5e87721d3d3",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type ConfigurationProvider to void in method public setConfigurationContextResolver(configurationContextResolver ConfigurationContextResolver) : void from class org.constretto.internal.provider.ConfigurationProvider",
+	"leftSideLocations": [{
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ConfigurationProvider"
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setConfigurationContextResolver(configurationContextResolver ConfigurationContextResolver) : ConfigurationProvider"
+}],
+	"rightSideLocations": [{
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public setConfigurationContextResolver(configurationContextResolver ConfigurationContextResolver) : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public ConfigurationProvider(configurationContextResolver ConfigurationContextResolver) inlined to public ConfigurationProvider(resolver ConfigurationContextResolver, configurationStores List<ConfigurationStore>) in class org.constretto.internal.provider.ConfigurationProvider",
+	"leftSideLocations": [{
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public ConfigurationProvider(configurationContextResolver ConfigurationContextResolver)"
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public ConfigurationProvider(resolver ConfigurationContextResolver, configurationStores List<ConfigurationStore>)"
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "this(configurationStores.toArray(new ConfigurationStore[configurationStores.size()]))"
+}],
+	"rightSideLocations": [{
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 41,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public ConfigurationProvider(resolver ConfigurationContextResolver, configurationStores List<ConfigurationStore>)"
+}, {
+		"filePath": "constretto-core/src/main/java/org/constretto/internal/provider/ConfigurationProvider.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

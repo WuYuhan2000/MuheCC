@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "f0a32dff9b9cf53707758226f6598ab32cca6b06",
+	"url": "https://github.com/apache/hbase/commit/f0a32dff9b9cf53707758226f6598ab32cca6b06",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @VisibleForTesting in method public deleteRegion(hri HRegionInfo) : void from class org.apache.hadoop.hbase.master.RegionStates",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 863,
+		"endLine": 876,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private deleteRegion(hri HRegionInfo) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 620,
+		"endLine": 620,
+		"startColumn": 3,
+		"endColumn": 21,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@VisibleForTesting"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 617,
+		"endLine": 631,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public deleteRegion(hri HRegionInfo) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter lastHost : ServerName in method public createRegionState(hri HRegionInfo, newState State, serverName ServerName, lastHost ServerName) : RegionState from class org.apache.hadoop.hbase.master.RegionStates",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 254,
+		"endLine": 290,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createRegionState(hri HRegionInfo, newState State, serverName ServerName) : RegionState"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 46,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "lastHost : ServerName"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 255,
+		"endLine": 305,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createRegionState(hri HRegionInfo, newState State, serverName ServerName, lastHost ServerName) : RegionState"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public deleteRegion(hri HRegionInfo) : void from class org.apache.hadoop.hbase.master.RegionStates",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 863,
+		"endLine": 876,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private deleteRegion(hri HRegionInfo) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 617,
+		"endLine": 631,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public deleteRegion(hri HRegionInfo) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type deadServers : Map<ServerName,List<HRegionInfo>> to deadServers : Set<ServerName> in method package processDeadServersAndRegionsInTransition(deadServers Set<ServerName>) : boolean from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "deadServers : Map<ServerName,List<HRegionInfo>>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 595,
+		"endLine": 595,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "deadServers : Set<ServerName>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 595,
+		"endLine": 595,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type deadServers : Map<ServerName,List<HRegionInfo>> to deadServers : Set<ServerName> in method private processDeadServersAndRecoverLostRegions(deadServers Set<ServerName>) : void from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2841,
+		"endLine": 2841,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "deadServers : Map<ServerName,List<HRegionInfo>>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2844,
+		"endLine": 2851,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2843,
+		"endLine": 2852,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2837,
+		"endLine": 2837,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "deadServers : Set<ServerName>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2839,
+		"endLine": 2843,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2838,
+		"endLine": 2844,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<ServerName,List<HRegionInfo>> to Set<ServerName> in method package rebuildUserRegions() : Set<ServerName> from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2711,
+		"endLine": 2711,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<ServerName,List<HRegionInfo>>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2702,
+		"endLine": 2766,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package rebuildUserRegions() : Map<ServerName,List<HRegionInfo>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2710,
+		"endLine": 2710,
+		"startColumn": 3,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Set<ServerName>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2702,
+		"endLine": 2762,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package rebuildUserRegions() : Set<ServerName>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deadServers : Map<ServerName,List<HRegionInfo>> to deadServers : Set<ServerName> in method package joinCluster() : void from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 462,
+		"endLine": 462,
+		"startColumn": 40,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deadServers : Map<ServerName,List<HRegionInfo>>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 463,
+		"endLine": 463,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "deadServers : Set<ServerName>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type offlineServers : Map<ServerName,List<HRegionInfo>> to offlineServers : Set<ServerName> in method package rebuildUserRegions() : Set<ServerName> from class org.apache.hadoop.hbase.master.AssignmentManager",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2726,
+		"endLine": 2727,
+		"startColumn": 40,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "offlineServers : Map<ServerName,List<HRegionInfo>>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2765,
+		"endLine": 2765,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2742,
+		"endLine": 2742,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2725,
+		"endLine": 2725,
+		"startColumn": 21,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "offlineServers : Set<ServerName>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2761,
+		"endLine": 2761,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/AssignmentManager.java",
+		"startLine": 2741,
+		"endLine": 2741,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable lastHost : ServerName in method public createRegionState(hri HRegionInfo, newState State, serverName ServerName, lastHost ServerName) : RegionState from class org.apache.hadoop.hbase.master.RegionStates",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 11,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 46,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "extracted variable declaration",
+		"codeElement": "lastHost : ServerName"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 11,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(!TableName.META_TABLE_NAME.equals(tableName) && !hri.isSplit() && (noExcludeTables || !excludedTables.contains(tableName))) to [if(state.isSplit() || hri.isSplit()), if(!TableName.META_TABLE_NAME.equals(tableName) && (noExcludeTables || !excludedTables.contains(tableName)))] in method package closeAllUserRegions(excludedTables Set<TableName>) : Map<HRegionInfo,ServerName> from class org.apache.hadoop.hbase.master.RegionStates",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 665,
+		"endLine": 668,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!TableName.META_TABLE_NAME.equals(tableName) && !hri.isSplit() && (noExcludeTables || !excludedTables.contains(tableName)))"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 654,
+		"endLine": 677,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package closeAllUserRegions(excludedTables Set<TableName>) : Map<HRegionInfo,ServerName>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 736,
+		"endLine": 738,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(state.isSplit() || hri.isSplit())"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 740,
+		"endLine": 743,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(!TableName.META_TABLE_NAME.equals(tableName) && (noExcludeTables || !excludedTables.contains(tableName)))"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/master/RegionStates.java",
+		"startLine": 726,
+		"endLine": 752,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "package closeAllUserRegions(excludedTables Set<TableName>) : Map<HRegionInfo,ServerName>"
+}]
+}
+]
+}]
+}

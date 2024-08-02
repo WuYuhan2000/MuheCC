@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "02ffd6ae37a11cb0acc920bada87c994559d396b",
+	"url": "https://github.com/kiegroup/drools/commit/02ffd6ae37a11cb0acc920bada87c994559d396b",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private getMethodInfos(methodName String, methods List<MethodInfo>) : ArrayList<MethodInfo> extracted from private getMethodInfo() : MethodInfo in class org.drools.workbench.models.commons.backend.rule.ActionCallMethodBuilder",
+	"leftSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 118,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private getMethodInfo() : MethodInfo"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 125,
+		"endLine": 129,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 66,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 125,
+		"endLine": 129,
+		"startColumn": 53,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 147,
+		"endLine": 155,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getMethodInfos(methodName String, methods List<MethodInfo>) : ArrayList<MethodInfo>"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 150,
+		"endLine": 152,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 150,
+		"endLine": 152,
+		"startColumn": 54,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 43,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 118,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getMethodInfo() : MethodInfo"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 53,
+		"endColumn": 88,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getMethodInfos(methodName,methods)"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/main/java/org/drools/workbench/models/commons/backend/rule/ActionCallMethodBuilder.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore(\" Still does not know the difference between indexOf(int) and indexOf(String) \") in method public testFunctionCalls() : void from class org.drools.workbench.models.commons.backend.rule.RuleModelDRLPersistenceUnmarshallingTest",
+	"leftSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3276,
+		"endLine": 3276,
+		"startColumn": 5,
+		"endColumn": 93,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore(\" Still does not know the difference between indexOf(int) and indexOf(String) \")"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3275,
+		"endLine": 3338,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testFunctionCalls() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3275,
+		"endLine": 3335,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testFunctionCalls() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mapMethodInformation1 : List<MethodInfo> to mapMethodInformation : List<MethodInfo> in method public testFunctionCalls() : void from class org.drools.workbench.models.commons.backend.rule.RuleModelDRLPersistenceUnmarshallingTest",
+	"leftSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3292,
+		"endLine": 3292,
+		"startColumn": 26,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mapMethodInformation1 : List<MethodInfo>"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3292,
+		"endLine": 3292,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3293,
+		"endLine": 3297,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3291,
+		"endLine": 3291,
+		"startColumn": 26,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "mapMethodInformation : List<MethodInfo>"
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3291,
+		"endLine": 3291,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-workbench-models/drools-workbench-models-commons/src/test/java/org/drools/workbench/models/commons/backend/rule/RuleModelDRLPersistenceUnmarshallingTest.java",
+		"startLine": 3292,
+		"endLine": 3296,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

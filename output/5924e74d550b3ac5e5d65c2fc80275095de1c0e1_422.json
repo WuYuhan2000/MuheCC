@@ -1,0 +1,1044 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "5924e74d550b3ac5e5d65c2fc80275095de1c0e1",
+	"url": "https://github.com/apache/hadoop/commit/5924e74d550b3ac5e5d65c2fc80275095de1c0e1",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type addresses : List<List<String>> to addresses : List<Map<String,String>> in class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 29,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "addresses : List<List<String>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 36,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "addresses : List<Map<String,String>>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public clone() : Object from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 181,
+		"endLine": 189,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected clone() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 226,
+		"endLine": 234,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public clone() : Object"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type address : List<String> to address : InetSocketAddress in method public ipcEndpoint(api String, address InetSocketAddress) : Endpoint from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 25,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 50,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "address : InetSocketAddress"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type addrs : List<List<String>> to addrs : List<Map<String,String>> in method public Endpoint(api String, addressType String, protocolType String, addrs List<Map<String,String>>) from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "addrs : List<List<String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 109,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "addrs : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type t1 : Object... to uri : String in method public uri(uri String) : Map<String,String> from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "t1 : Object..."
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "uri : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<String> to Map<String,String> in method public uri(uri String) : Map<String,String> from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 147,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tuple(t1 Object...) : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 129,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public uri(uri String) : Map<String,String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type a : List<String> to address : Map<String,String> in method public resolve(args String[]) : int from class org.apache.hadoop.registry.cli.RegistryCli",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "a : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 190,
+		"endLine": 192,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 16,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "address : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 184,
+		"endLine": 191,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type addr2 : List<String> to addr2 : Map<String,String> in method public Endpoint(that Endpoint) from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 20,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "addr2 : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 27,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "addr2 : Map<String,String>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type address : List<String> to address : Map<String,String> in method public Endpoint(that Endpoint) from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 10,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "address : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type address : List<String> to address : Map<String,String> in method public retrieveAddressesUriType(epr Endpoint) : List<String> from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 10,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "address : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type address : List<String> to address : Map<String,String> in method public validate() : void from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "address : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 10,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "address : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type addressList : List<List<String>> to addressList : List<Map<String,String>> in method public validateEntry(record ServiceRecord) : void from class org.apache.hadoop.registry.RegistryTestHelper",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 24,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "addressList : List<List<String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 31,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "addressList : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type addresses : List<List<String>> to addresses : List<Map<String,String>> in method public retrieveAddressesUriType(epr Endpoint) : List<String> from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 24,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "addresses : List<List<String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 204,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 209,
+		"endLine": 216,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 31,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "addresses : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 5,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 193,
+		"endLine": 196,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 198,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type addrs : List<List<String>> to addrs : List<Map<String,String>> in method public Endpoint(api String, protocolType String, uris URI...) from class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 24,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "addrs : List<List<String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 31,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "addrs : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type url : List<String> to url : Map<String,String> in method public validateEntry(record ServiceRecord) : void from class org.apache.hadoop.registry.RegistryTestHelper",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 18,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "url : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 25,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "url : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/test/java/org/apache/hadoop/registry/RegistryTestHelper.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private newAddresses(size int) : List<Map<String,String>> extracted from public Endpoint(api String, protocolType String, uris URI...) in class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 114,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Endpoint(api String, protocolType String, uris URI...)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 174,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private newAddresses(size int) : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 183,
+		"endLine": 202,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Endpoint(api String, protocolType String, uris URI...)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 39,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "newAddresses(uris.length)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private newAddresses(size int) : List<Map<String,String>> extracted from public Endpoint(that Endpoint) in class org.apache.hadoop.registry.client.types.Endpoint",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 78,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public Endpoint(that Endpoint)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 174,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private newAddresses(size int) : List<Map<String,String>>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 80,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public Endpoint(that Endpoint)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/types/Endpoint.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 22,
+		"endColumn": 57,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "newAddresses(that.addresses.size())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public getAddressField(address Map<String,String>, field String) : String extracted from public retrieveAddressesUriType(epr Endpoint) : List<String> in class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 189,
+		"endLine": 218,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public retrieveAddressesUriType(epr Endpoint) : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 211,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 210,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 210,
+		"endLine": 214,
+		"startColumn": 32,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 204,
+		"endLine": 219,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getAddressField(address Map<String,String>, field String) : String"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 215,
+		"endLine": 217,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 215,
+		"endLine": 217,
+		"startColumn": 22,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 178,
+		"endLine": 202,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public retrieveAddressesUriType(epr Endpoint) : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 19,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getAddressField(address,ADDRESS_URI)"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter header : byte[] in method public JsonSerDeser(classType Class<T>, header byte[]) from class org.apache.hadoop.registry.client.binding.JsonSerDeser",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 43,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "header : byte[]"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 71,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonSerDeser(classType Class<T>, header byte[])"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 72,
+		"endLine": 82,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public JsonSerDeser(classType Class<T>)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter offset : int in method public fromBytes(path String, bytes byte[], offset int) : T from class org.apache.hadoop.registry.client.binding.JsonSerDeser",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 49,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 245,
+		"endLine": 266,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fromBytes(path String, bytes byte[], offset int) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/JsonSerDeser.java",
+		"startLine": 228,
+		"endLine": 239,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public fromBytes(path String, bytes byte[]) : T"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter protobuf : boolean in method public ipcEndpoint(api String, protobuf boolean, address List<String>) : Endpoint from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 7,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "protobuf : boolean"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 102,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ipcEndpoint(api String, protobuf boolean, address List<String>) : Endpoint"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 104,
+		"endLine": 115,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public ipcEndpoint(api String, address InetSocketAddress) : Endpoint"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public tuple(t1 Object...) : List<String> renamed to public uri(uri String) : Map<String,String> in class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 147,
+		"endLine": 160,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public tuple(t1 Object...) : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 129,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public uri(uri String) : Map<String,String>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter t1 : Object... to uri : String in method public uri(uri String) : Map<String,String> from class org.apache.hadoop.registry.client.binding.RegistryTypeUtils",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "t1 : Object..."
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/client/binding/RegistryTypeUtils.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "uri : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable a : List<String> to address : Map<String,String> in method public resolve(args String[]) : int from class org.apache.hadoop.registry.cli.RegistryCli",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 11,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "a : List<String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 190,
+		"endLine": 192,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 16,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "address : Map<String,String>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-registry/src/main/java/org/apache/hadoop/registry/cli/RegistryCli.java",
+		"startLine": 184,
+		"endLine": 191,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

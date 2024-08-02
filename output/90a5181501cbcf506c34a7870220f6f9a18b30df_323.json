@@ -1,0 +1,831 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "90a5181501cbcf506c34a7870220f6f9a18b30df",
+	"url": "https://github.com/apache/hadoop/commit/90a5181501cbcf506c34a7870220f6f9a18b30df",
+	"refactorings": [{
+	"type": "Add Attribute Annotation",
+	"description": "Add Attribute Annotation @SuppressWarnings(\"rawtypes\") in attribute private eventHandler : EventHandler from class org.apache.hadoop.yarn.server.resourcemanager.rmapp.attempt.RMAppAttemptImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/RMAppAttemptImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private eventHandler : EventHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/RMAppAttemptImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/attempt/RMAppAttemptImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added annotation",
+		"codeElement": "private eventHandler : EventHandler"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Private in class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 48,
+		"endLine": 235,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.mapreduce.v2.util.MRApps"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 0,
+		"endColumn": 9,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Private"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 58,
+		"endLine": 364,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.hadoop.mapreduce.v2.util.MRApps"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Unstable in class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 48,
+		"endLine": 235,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.mapreduce.v2.util.MRApps"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 0,
+		"endColumn": 10,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Unstable"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 58,
+		"endLine": 364,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.apache.hadoop.mapreduce.v2.util.MRApps"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method private createNewAttempt() : void from class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 383,
+		"endLine": 396,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createNewAttempt() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 381,
+		"endLine": 381,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 381,
+		"endLine": 395,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private createNewAttempt() : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method protected submitApplication(submissionContext ApplicationSubmissionContext) : void from class org.apache.hadoop.yarn.server.resourcemanager.RMAppManager",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/RMAppManager.java",
+		"startLine": 213,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected submitApplication(submissionContext ApplicationSubmissionContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/RMAppManager.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/RMAppManager.java",
+		"startLine": 213,
+		"endLine": 271,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected submitApplication(submissionContext ApplicationSubmissionContext) : void"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method public finishApplication(request FinishApplicationRequest) : FinishApplicationResponse from class org.apache.hadoop.yarn.server.resourcemanager.ClientRMService",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/ClientRMService.java",
+		"startLine": 229,
+		"endLine": 267,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public finishApplication(request FinishApplicationRequest) : FinishApplicationResponse"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/ClientRMService.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/ClientRMService.java",
+		"startLine": 229,
+		"endLine": 268,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public finishApplication(request FinishApplicationRequest) : FinishApplicationResponse"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method public transition(app RMAppImpl, event RMAppEvent) : void from class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl.FinalTransition",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 437,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public transition(app RMAppImpl, event RMAppEvent) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 436,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public transition(app RMAppImpl, event RMAppEvent) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 699,
+		"endLine": 754,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseDistributedCacheArtifacts(remoteFS FileSystem, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 290,
+		"endLine": 347,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 670,
+		"endLine": 694,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 261,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter conf : Configuration in method private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 699,
+		"endLine": 754,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseDistributedCacheArtifacts(remoteFS FileSystem, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 290,
+		"endLine": 347,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 670,
+		"endLine": 694,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 261,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type p : LocalResourceProto to p : ContainerLaunchContextProto in method private convertFromProtoFormat(p ContainerLaunchContextProto) : ContainerLaunchContextPBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 652,
+		"endLine": 652,
+		"startColumn": 54,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "p : LocalResourceProto"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 653,
+		"endLine": 653,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "p : ContainerLaunchContextProto"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type t : LocalResource to t : ContainerLaunchContext in method private convertToProtoFormat(t ContainerLaunchContext) : ContainerLaunchContextProto from class org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 656,
+		"endLine": 656,
+		"startColumn": 51,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "t : LocalResource"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 657,
+		"endLine": 657,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 60,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "t : ContainerLaunchContext"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type LocalResourcePBImpl to ContainerLaunchContextPBImpl in method private convertFromProtoFormat(p ContainerLaunchContextProto) : ContainerLaunchContextPBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 652,
+		"endLine": 652,
+		"startColumn": 11,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "LocalResourcePBImpl"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 652,
+		"endLine": 654,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private convertFromProtoFormat(p LocalResourceProto) : LocalResourcePBImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 11,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ContainerLaunchContextPBImpl"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 226,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private convertFromProtoFormat(p ContainerLaunchContextProto) : ContainerLaunchContextPBImpl"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type LocalResourceProto to ContainerLaunchContextProto in method private convertToProtoFormat(t ContainerLaunchContext) : ContainerLaunchContextProto from class org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 656,
+		"endLine": 656,
+		"startColumn": 11,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "LocalResourceProto"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 656,
+		"endLine": 658,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private convertToProtoFormat(t LocalResource) : LocalResourceProto"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 11,
+		"endColumn": 38,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ContainerLaunchContextProto"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 231,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private convertToProtoFormat(t ContainerLaunchContext) : ContainerLaunchContextProto"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter remoteFS : FileSystem to remoteFS : FileSystem in method private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 700,
+		"endLine": 700,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "remoteFS : FileSystem"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 722,
+		"endLine": 723,
+		"startColumn": 11,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 22,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "remoteFS : FileSystem"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 314,
+		"endLine": 315,
+		"startColumn": 11,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter remoteFS : FileSystem to remoteFS : FileSystem in method private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 700,
+		"endLine": 700,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "remoteFS : FileSystem"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 730,
+		"endLine": 731,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "remoteFS : FileSystem"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 323,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private environment : Map<String,String> from class org.apache.hadoop.yarn.api.records.impl.pb.ApplicationSubmissionContextPBImpl to private environment : Map<String,String> from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerLaunchContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ApplicationSubmissionContextPBImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private environment : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ContainerLaunchContextPBImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private environment : Map<String,String>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private getFileSizes(conf Configuration, key String) : long[] from class org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl to private getFileSizes(conf Configuration, key String) : long[] from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 757,
+		"endLine": 767,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getFileSizes(conf Configuration, key String) : long[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 350,
+		"endLine": 360,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private getFileSizes(conf Configuration, key String) : long[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private parseDistributedCacheArtifacts(remoteFS FileSystem, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl to private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 699,
+		"endLine": 754,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseDistributedCacheArtifacts(remoteFS FileSystem, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 290,
+		"endLine": 347,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private parseDistributedCacheArtifacts(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>, type LocalResourceType, uris URI[], timestamps long[], sizes long[], visibilities boolean[], pathsToPutOnClasspath Path[]) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private parseTimeStamps(strs String[]) : long[] from class org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl to private parseTimeStamps(strs String[]) : long[] from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 659,
+		"endLine": 668,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private parseTimeStamps(strs String[]) : long[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 250,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private parseTimeStamps(strs String[]) : long[]"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void from class org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl to public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void from class org.apache.hadoop.mapreduce.v2.util.MRApps",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 670,
+		"endLine": 694,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 261,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter amLivelinessMonitor : AMLivelinessMonitor in method public RMAppImpl(applicationId ApplicationId, rmContext RMContext, config Configuration, name String, user String, queue String, submissionContext ApplicationSubmissionContext, clientTokenStr String, appStore ApplicationStore, amLivelinessMonitor AMLivelinessMonitor, scheduler YarnScheduler, masterService ApplicationMasterService) from class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 34,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "amLivelinessMonitor : AMLivelinessMonitor"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 163,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RMAppImpl(applicationId ApplicationId, rmContext RMContext, config Configuration, name String, user String, queue String, submissionContext ApplicationSubmissionContext, clientTokenStr String, appStore ApplicationStore, amLivelinessMonitor AMLivelinessMonitor, scheduler YarnScheduler, masterService ApplicationMasterService)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/rmapp/RMAppImpl.java",
+		"startLine": 162,
+		"endLine": 190,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RMAppImpl(applicationId ApplicationId, rmContext RMContext, config Configuration, name String, user String, queue String, submissionContext ApplicationSubmissionContext, clientTokenStr String, appStore ApplicationStore, scheduler YarnScheduler, masterService ApplicationMasterService)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter remoteFS : FileSystem in method private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void from class org.apache.hadoop.mapreduce.v2.app.job.impl.TaskAttemptImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 670,
+		"endLine": 670,
+		"startColumn": 38,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "remoteFS : FileSystem"
+}, {
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-app/src/main/java/org/apache/hadoop/mapreduce/v2/app/job/impl/TaskAttemptImpl.java",
+		"startLine": 670,
+		"endLine": 694,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setupDistributedCache(remoteFS FileSystem, conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-common/src/main/java/org/apache/hadoop/mapreduce/v2/util/MRApps.java",
+		"startLine": 261,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public setupDistributedCache(conf Configuration, localResources Map<String,LocalResource>, env Map<String,String>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getEnv() : Map<String,String> renamed to public getEnvironment() : Map<String,String> in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerLaunchContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ContainerLaunchContextPBImpl.java",
+		"startLine": 366,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getEnv() : Map<String,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ContainerLaunchContextPBImpl.java",
+		"startLine": 363,
+		"endLine": 367,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getEnvironment() : Map<String,String>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setEnv(env Map<String,String>) : void renamed to public setEnvironment(env Map<String,String>) : void in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerLaunchContextPBImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ContainerLaunchContextPBImpl.java",
+		"startLine": 385,
+		"endLine": 392,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setEnv(env Map<String,String>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-mapreduce-project/hadoop-yarn/hadoop-yarn-api/src/main/java/org/apache/hadoop/yarn/api/records/impl/pb/ContainerLaunchContextPBImpl.java",
+		"startLine": 382,
+		"endLine": 389,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setEnvironment(env Map<String,String>) : void"
+}]
+}
+]
+}]
+}

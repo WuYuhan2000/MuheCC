@@ -1,0 +1,138 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/d3scomp/jdeeco",
+	"sha1": "4ae79b6666c22898decaee37c3e33e209ff23b30",
+	"url": "https://github.com/d3scomp/jdeeco/commit/4ae79b6666c22898decaee37c3e33e209ff23b30",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable hostId : String in method public notifyAt(time long, listener TimerEventListener, node DEECoContainer) : void from class cz.cuni.mff.d3s.jdeeco.matsim.MATSimSimulation.TimerProvider",
+	"leftSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/MATSimSimulation.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/MATSimSimulation.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "hostId : String"
+}, {
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/MATSimSimulation.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 4,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class cz.cuni.mff.d3s.deeco.simulation.matsim.DefaultMATSimExtractor moved to cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.DefaultMATSimExtractor",
+	"leftSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/deeco/simulation/matsim/DefaultMATSimExtractor.java",
+		"startLine": 10,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "cz.cuni.mff.d3s.deeco.simulation.matsim.DefaultMATSimExtractor"
+}],
+	"rightSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/old/simulation/DefaultMATSimExtractor.java",
+		"startLine": 10,
+		"endLine": 25,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.DefaultMATSimExtractor"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class cz.cuni.mff.d3s.deeco.simulation.matsim.JDEECoWithinDayMobsimListener moved to cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.JDEECoWithinDayMobsimListener",
+	"leftSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/deeco/simulation/matsim/JDEECoWithinDayMobsimListener.java",
+		"startLine": 13,
+		"endLine": 95,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "cz.cuni.mff.d3s.deeco.simulation.matsim.JDEECoWithinDayMobsimListener"
+}],
+	"rightSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/old/simulation/JDEECoWithinDayMobsimListener.java",
+		"startLine": 13,
+		"endLine": 95,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.JDEECoWithinDayMobsimListener"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class cz.cuni.mff.d3s.deeco.simulation.matsim.MATSimInput moved to cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.MATSimInput",
+	"leftSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/deeco/simulation/matsim/MATSimInput.java",
+		"startLine": 8,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "cz.cuni.mff.d3s.deeco.simulation.matsim.MATSimInput"
+}],
+	"rightSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/old/simulation/MATSimInput.java",
+		"startLine": 8,
+		"endLine": 28,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.MATSimInput"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class cz.cuni.mff.d3s.deeco.simulation.matsim.MATSimPreloadingControler moved to cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.MATSimPreloadingControler",
+	"leftSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/deeco/simulation/matsim/MATSimPreloadingControler.java",
+		"startLine": 7,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "cz.cuni.mff.d3s.deeco.simulation.matsim.MATSimPreloadingControler"
+}],
+	"rightSideLocations": [{
+		"filePath": "jdeeco-matsim-plugin/src/cz/cuni/mff/d3s/jdeeco/matsim/old/simulation/MATSimPreloadingControler.java",
+		"startLine": 7,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "cz.cuni.mff.d3s.jdeeco.matsim.old.simulation.MATSimPreloadingControler"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,546 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "804bf3ad226dca85c9fa66791bb63b794ab66b73",
+	"url": "https://github.com/JetBrains/kotlin/commit/804bf3ad226dca85c9fa66791bb63b794ab66b73",
+	"refactorings": [{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @NotNull in parameter annotationDescriptor : AnnotationDescriptor in method private resolveAnnotationArguments(annotationDescriptor AnnotationDescriptor) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 30,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "annotationDescriptor : AnnotationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 223,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveAnnotationArguments(annotationEntry JetAnnotationEntry, trace BindingTrace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 52,
+		"endColumn": 60,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 52,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "annotationDescriptor : AnnotationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "private resolveAnnotationArguments(annotationDescriptor AnnotationDescriptor) : void"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void inlined to private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void in class org.jetbrains.kotlin.resolve.BodyResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 781,
+		"endLine": 783,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 782,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 535,
+		"endLine": 594,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 562,
+		"endLine": 562,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(propertyScope,property)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(propertyScope,property)"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 535,
+		"endLine": 594,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 562,
+		"endLine": 562,
+		"startColumn": 17,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void inlined to private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void in class org.jetbrains.kotlin.resolve.BodyResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 781,
+		"endLine": 783,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 782,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 535,
+		"endLine": 594,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 562,
+		"endLine": 562,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(propertyScope,property)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(propertyScope,property)"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 535,
+		"endLine": 594,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private resolvePropertyDeclarationBodies(c BodiesResolveContext) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void inlined to public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void in class org.jetbrains.kotlin.resolve.BodyResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 781,
+		"endLine": 783,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 782,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 602,
+		"endLine": 624,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 613,
+		"endLine": 613,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(accessorScope,getter)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 621,
+		"endLine": 621,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(accessorScope,setter)"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 602,
+		"endLine": 624,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 613,
+		"endLine": 613,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void inlined to public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void in class org.jetbrains.kotlin.resolve.BodyResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 781,
+		"endLine": 783,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private resolveAnnotationArguments(scope JetScope, owner JetModifierListOwner) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 782,
+		"endLine": 782,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 602,
+		"endLine": 624,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 613,
+		"endLine": 613,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(accessorScope,getter)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 621,
+		"endLine": 621,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "resolveAnnotationArguments(accessorScope,setter)"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 602,
+		"endLine": 624,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public resolvePropertyAccessors(c BodiesResolveContext, property JetProperty, propertyDescriptor PropertyDescriptor) : void"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/BodyResolver.java",
+		"startLine": 621,
+		"endLine": 621,
+		"startColumn": 13,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Variable",
+	"description": "Merge Variable [annotationEntry : JetAnnotationEntry, trace : BindingTrace] to annotationDescriptor : AnnotationDescriptor in method public resolveAnnotationsArguments(annotations Annotations) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 32,
+		"endColumn": 139,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged variable declaration",
+		"codeElement": "annotationEntry : JetAnnotationEntry"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 86,
+		"endColumn": 113,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "merged variable declaration",
+		"codeElement": "trace : BindingTrace"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 215,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveAnnotationsArguments(annotations Annotations, trace BindingTrace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 14,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "annotationDescriptor : AnnotationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 205,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public resolveAnnotationsArguments(annotations Annotations) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable annotationDescriptor : AnnotationDescriptor to annotationDescriptor : AnnotationDescriptor in method private resolveAnnotationArguments(annotationDescriptor AnnotationDescriptor) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 30,
+		"endColumn": 126,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "annotationDescriptor : AnnotationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 229,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 52,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "annotationDescriptor : AnnotationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 212,
+		"endLine": 214,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter annotationEntry : JetAnnotationEntry in method private resolveAnnotationArguments(annotationEntry JetAnnotationEntry, trace BindingTrace) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "annotationEntry : JetAnnotationEntry"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 223,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveAnnotationArguments(annotationEntry JetAnnotationEntry, trace BindingTrace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private resolveAnnotationArguments(annotationDescriptor AnnotationDescriptor) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter trace : BindingTrace in method private resolveAnnotationArguments(annotationEntry JetAnnotationEntry, trace BindingTrace) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 13,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "trace : BindingTrace"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 223,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private resolveAnnotationArguments(annotationEntry JetAnnotationEntry, trace BindingTrace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 211,
+		"endLine": 215,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private resolveAnnotationArguments(annotationDescriptor AnnotationDescriptor) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter trace : BindingTrace in method public resolveAnnotationsArguments(annotations Annotations, trace BindingTrace) : void from class org.jetbrains.kotlin.resolve.AnnotationResolver",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 86,
+		"endColumn": 113,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "trace : BindingTrace"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 215,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resolveAnnotationsArguments(annotations Annotations, trace BindingTrace) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/kotlin/resolve/AnnotationResolver.java",
+		"startLine": 205,
+		"endLine": 209,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public resolveAnnotationsArguments(annotations Annotations) : void"
+}]
+}
+]
+}]
+}

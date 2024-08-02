@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cyberfox/jbidwatcher",
+	"sha1": "c0425336ce948f9cedf3915bc0336fbd726cf070",
+	"url": "https://github.com/cyberfox/jbidwatcher/commit/c0425336ce948f9cedf3915bc0336fbd726cf070",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inBid : com.jbidwatcher.util.Currency to inBid : Currency in method public bid(inEntry AuctionEntry, inBid Currency, inQuantity int) : int from class com.jbidwatcher.auction.server.ebay.ebayServer",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 778,
+		"endLine": 778,
+		"startColumn": 40,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inBid : Currency"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 40,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inBid : Currency"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inBid : com.jbidwatcher.util.Currency to inBid : Currency in method public placeFinalBid(cj CookieJar, bidForm JHTML.Form, inEntry AuctionEntry, inBid Currency, inQuantity int) : int from class com.jbidwatcher.auction.server.ebay.ebayServer",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 84,
+		"endColumn": 119,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inBid : Currency"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 812,
+		"endLine": 814,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 601,
+		"endLine": 601,
+		"startColumn": 84,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inBid : Currency"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 602,
+		"endLine": 602,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type inCurr : com.jbidwatcher.util.Currency to inCurr : Currency in method public getBidForm(cj CookieJar, inEntry AuctionEntry, inCurr Currency, inQuant int) : JHTML.Form from class com.jbidwatcher.auction.server.ebay.ebayServer",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 638,
+		"endLine": 638,
+		"startColumn": 68,
+		"endColumn": 104,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "inCurr : Currency"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 597,
+		"endLine": 597,
+		"startColumn": 68,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "inCurr : Currency"
+}]
+},
+{
+	"type": "Split Attribute",
+	"description": "Split Attribute mResultHash : HashMap<String,Integer> to [mBidder : ebayBidder, mLogin : ebayLoginManager] in class com.jbidwatcher.auction.server.ebay.ebayServer",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 36,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "mResultHash : HashMap<String,Integer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "split attribute declaration",
+		"codeElement": "mBidder : ebayBidder"
+}, {
+		"filePath": "src/com/jbidwatcher/auction/server/ebay/ebayServer.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 28,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "split attribute declaration",
+		"codeElement": "mLogin : ebayLoginManager"
+}]
+}
+]
+}]
+}

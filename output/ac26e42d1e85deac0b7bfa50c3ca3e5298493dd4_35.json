@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "ac26e42d1e85deac0b7bfa50c3ca3e5298493dd4",
+	"url": "https://github.com/ReactiveX/RxJava/commit/ac26e42d1e85deac0b7bfa50c3ca3e5298493dd4",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type subject : Subject<T,R> to subject : Subject<? super T,? extends R> in class rx.operators.OperationMulticast.MulticastConnectableObservable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 37,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "subject : Subject<T,R>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 55,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "subject : Subject<? super T,? extends R>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type subject : Subject<T,R> to subject : Subject<? super T,? extends R> in method public MulticastConnectableObservable(source Observable<? extends T>, subject Subject<? super T,? extends R>) from class rx.operators.OperationMulticast.MulticastConnectableObservable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 79,
+		"endColumn": 106,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "subject : Subject<T,R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 79,
+		"endColumn": 124,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "subject : Subject<? super T,? extends R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type subject : Subject<T,R> to subject : Subject<? super T,? extends R> in method public multicast(source Observable<? extends T>, subject Subject<? super T,? extends R>) : ConnectableObservable<R> from class rx.operators.OperationMulticast",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 93,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "subject : Subject<T,R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 93,
+		"endColumn": 138,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "subject : Subject<? super T,? extends R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationMulticast.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type subject : Subject<T,R> to subject : Subject<? super T,? extends R> in method public multicast(subject Subject<? super T,? extends R>) : ConnectableObservable<R> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 51,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "subject : Subject<T,R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 51,
+		"endColumn": 90,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "subject : Subject<? super T,? extends R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

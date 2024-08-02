@@ -1,0 +1,483 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "fd86b5d80c25c8a6e4ac6d2aa7c7db0c758c2cef",
+	"url": "https://github.com/kiegroup/drools/commit/fd86b5d80c25c8a6e4ac6d2aa7c7db0c758c2cef",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private processDeletesFromModify(modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, workingMemory InternalWorkingMemory, otnId Id) : LeftTuple extracted from public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, workingMemory InternalWorkingMemory) : void in class org.drools.core.reteoo.LeftInputAdapterNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 399,
+		"endLine": 432,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, workingMemory InternalWorkingMemory) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 407,
+		"endLine": 407,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 410,
+		"endLine": 410,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 411,
+		"endLine": 411,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 406,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 406,
+		"endLine": 415,
+		"startColumn": 105,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 451,
+		"endLine": 464,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private processDeletesFromModify(modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, workingMemory InternalWorkingMemory, otnId Id) : LeftTuple"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 13,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 13,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 461,
+		"endLine": 461,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 453,
+		"endLine": 462,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 453,
+		"endLine": 462,
+		"startColumn": 105,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 418,
+		"endLine": 449,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, workingMemory InternalWorkingMemory) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 31,
+		"endColumn": 108,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "processDeletesFromModify(modifyPreviousTuples,context,workingMemory,otnId)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 463,
+		"endLine": 463,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.AccumulateNode to public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.BetaNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/AccumulateNode.java",
+		"startLine": 392,
+		"endLine": 427,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.ExistsNode to public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.BetaNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/ExistsNode.java",
+		"startLine": 178,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.JoinNode to public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.BetaNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/JoinNode.java",
+		"startLine": 159,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.NotNode to public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.BetaNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/NotNode.java",
+		"startLine": 234,
+		"endLine": 269,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.AccumulateNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/AccumulateNode.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/AccumulateNode.java",
+		"startLine": 392,
+		"endLine": 427,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.ExistsNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/ExistsNode.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/ExistsNode.java",
+		"startLine": 178,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.JoinNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/JoinNode.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/JoinNode.java",
+		"startLine": 159,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void from class org.drools.core.reteoo.NotNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/NotNode.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/NotNode.java",
+		"startLine": 234,
+		"endLine": 269,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/BetaNode.java",
+		"startLine": 322,
+		"endLine": 356,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public modifyObject(factHandle InternalFactHandle, modifyPreviousTuples ModifyPreviousTuples, context PropagationContext, wm InternalWorkingMemory) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter mask : long in method private doInsertSegmentMemory(pctx PropagationContext, wm InternalWorkingMemory, linkOrNotify boolean, lm LiaNodeMemory, sm SegmentMemory, leftTuple LeftTuple, liaNode LeftInputAdapterNode, mask long) : void from class org.drools.core.reteoo.LeftInputAdapterNode",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 116,
+		"endColumn": 125,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "mask : long"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 233,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doInsertSegmentMemory(pctx PropagationContext, wm InternalWorkingMemory, linkOrNotify boolean, lm LiaNodeMemory, sm SegmentMemory, leftTuple LeftTuple, liaNode LeftInputAdapterNode, mask long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/reteoo/LeftInputAdapterNode.java",
+		"startLine": 262,
+		"endLine": 282,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private doInsertSegmentMemory(pctx PropagationContext, wm InternalWorkingMemory, linkOrNotify boolean, lm LiaNodeMemory, sm SegmentMemory, leftTuple LeftTuple, liaNode LeftInputAdapterNode) : void"
+}]
+}
+]
+}]
+}

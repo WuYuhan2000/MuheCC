@@ -1,0 +1,171 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/chrisvest/stormpot",
+	"sha1": "8c8ed120a0468c9fcb83930672bd04999bf5b45b",
+	"url": "https://github.com/chrisvest/stormpot/commit/8c8ed120a0468c9fcb83930672bd04999bf5b45b",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type maxAge : long to deallocRule : DeallocationRule in class stormpot.qpool.QueuePool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/qpool/QueuePool.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "maxAge : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/qpool/QueuePool.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "deallocRule : DeallocationRule"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ttlMillis : long to deallocRule : DeallocationRule in class stormpot.basicpool.BasicPool",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ttlMillis : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "deallocRule : DeallocationRule"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable rule : DeallocationRule in method protected setUp() : void from class stormpot.benchmark.PoolSpin",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/benchmark/PoolSpin.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/benchmark/PoolSpin.java",
+		"startLine": 80,
+		"endLine": 81,
+		"startColumn": 22,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "rule : DeallocationRule"
+}, {
+		"filePath": "src/test/java/stormpot/benchmark/PoolSpin.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore in method public mustUseProvidedDeallocationRule(fixture PoolFixture) : void from class stormpot.PoolTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 3,
+		"endColumn": 10,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore"
+}, {
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 250,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mustUseProvidedDeallocationRule(fixture PoolFixture) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 254,
+		"endLine": 262,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public mustUseProvidedDeallocationRule(fixture PoolFixture) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute maxAge : long to deallocRule : DeallocationRule in class stormpot.qpool.QueuePool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/qpool/QueuePool.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 22,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "maxAge : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/qpool/QueuePool.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deallocRule : DeallocationRule"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute ttlMillis : long to deallocRule : DeallocationRule in class stormpot.basicpool.BasicPool",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ttlMillis : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "deallocRule : DeallocationRule"
+}]
+}
+]
+}]
+}

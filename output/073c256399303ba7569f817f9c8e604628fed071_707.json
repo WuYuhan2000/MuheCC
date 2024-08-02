@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "073c256399303ba7569f817f9c8e604628fed071",
+	"url": "https://github.com/orientechnologies/orientdb/commit/073c256399303ba7569f817f9c8e604628fed071",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Test(dependsOnMethods = \"validationEmbeddedType\") to @Test(dependsOnMethods = \"validationStrictClass\") in method public closeDb() : void from class com.orientechnologies.orient.test.database.auto.CRUDDocumentValidationTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/CRUDDocumentValidationTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 2,
+		"endColumn": 52,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Test(dependsOnMethods = \"validationEmbeddedType\")"
+}, {
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/CRUDDocumentValidationTest.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public closeDb() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/CRUDDocumentValidationTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 51,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Test(dependsOnMethods = \"validationStrictClass\")"
+}, {
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/CRUDDocumentValidationTest.java",
+		"startLine": 103,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public closeDb() : void"
+}]
+}
+]
+}]
+}

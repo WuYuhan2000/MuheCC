@@ -1,0 +1,201 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "fbe88fe1a56907fae90cdf3ebf8c9fb1e12c7d09",
+	"url": "https://github.com/JetBrains/intellij-community/commit/fbe88fe1a56907fae90cdf3ebf8c9fb1e12c7d09",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @NotNull in method public getVariants(context ConvertContext) : Collection<Boolean> from class com.intellij.util.xml.ResolvingConverter.BOOLEAN_CONVERTER.new ResolvingConverter<Boolean>",
+	"leftSideLocations": [{
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getVariants(context ConvertContext) : Collection<Boolean>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 13,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 58,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getVariants(context ConvertContext) : Collection<Boolean>"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @NotNull in method public getVariants(context ConvertContext) : Collection<T> from class com.intellij.util.xml.ResolvingConverter",
+	"leftSideLocations": [{
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 3,
+		"endColumn": 59,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getVariants(context ConvertContext) : Collection<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "dom/openapi/src/com/intellij/util/xml/ResolvingConverter.java",
+		"startLine": 64,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 59,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public getVariants(context ConvertContext) : Collection<T>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type strings : Collection<String> to result : ArrayList<Object> in method public getVariants() : Object[] from class com.intellij.util.xml.impl.GenericDomValueReference",
+	"leftSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 155,
+		"endLine": 163,
+		"startColumn": 34,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "strings : Collection<String>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 11,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 25,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ArrayList<Object>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable strings : Collection<String> in method public getVariants() : Object[] from class com.intellij.util.xml.impl.GenericDomValueReference",
+	"leftSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 155,
+		"endLine": 163,
+		"startColumn": 34,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "strings : Collection<String>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 148,
+		"endLine": 170,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getVariants() : Object[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 25,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "result : ArrayList<Object>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 148,
+		"endLine": 166,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public getVariants() : Object[]"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable strings : Collection<String> to result : ArrayList<Object> in method public getVariants() : Object[] from class com.intellij.util.xml.impl.GenericDomValueReference",
+	"leftSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 155,
+		"endLine": 163,
+		"startColumn": 34,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "strings : Collection<String>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 11,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 25,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "result : ArrayList<Object>"
+}, {
+		"filePath": "dom/impl/src/com/intellij/util/xml/impl/GenericDomValueReference.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

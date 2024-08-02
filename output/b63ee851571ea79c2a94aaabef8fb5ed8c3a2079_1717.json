@@ -1,0 +1,156 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/echo3/echo3",
+	"sha1": "b63ee851571ea79c2a94aaabef8fb5ed8c3a2079",
+	"url": "https://github.com/echo3/echo3/commit/b63ee851571ea79c2a94aaabef8fb5ed8c3a2079",
+	"refactorings": [{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer from classes [nextapp.echo.webcontainer.sync.component.ColumnPeer, nextapp.echo.webcontainer.sync.component.RowPeer]",
+	"leftSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/ColumnPeer.java",
+		"startLine": 40,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "nextapp.echo.webcontainer.sync.component.ColumnPeer"
+}, {
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/RowPeer.java",
+		"startLine": 40,
+		"endLine": 74,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "nextapp.echo.webcontainer.sync.component.RowPeer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/ColumnPeer.java",
+		"startLine": 34,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "nextapp.echo.webcontainer.sync.component.ColumnPeer"
+}, {
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/RowPeer.java",
+		"startLine": 34,
+		"endLine": 52,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "nextapp.echo.webcontainer.sync.component.RowPeer"
+}, {
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/AbstractArrayContainerSynchronizePeer.java",
+		"startLine": 39,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private COLUMN_SERVICE : Service renamed to private ARRAY_CONTAINER_SERVICE : Service and moved from class nextapp.echo.webcontainer.sync.component.ColumnPeer to class nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer",
+	"leftSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/ColumnPeer.java",
+		"startLine": 45,
+		"endLine": 46,
+		"startColumn": 34,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private COLUMN_SERVICE : Service"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/AbstractArrayContainerSynchronizePeer.java",
+		"startLine": 44,
+		"endLine": 45,
+		"startColumn": 34,
+		"endColumn": 76,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private ARRAY_CONTAINER_SERVICE : Service"
+}]
+},
+{
+	"type": "Move And Rename Attribute",
+	"description": "Move And Rename Attribute private ROW_SERVICE : Service renamed to private ARRAY_CONTAINER_SERVICE : Service and moved from class nextapp.echo.webcontainer.sync.component.RowPeer to class nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer",
+	"leftSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/RowPeer.java",
+		"startLine": 45,
+		"endLine": 46,
+		"startColumn": 34,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private ROW_SERVICE : Service"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/AbstractArrayContainerSynchronizePeer.java",
+		"startLine": 44,
+		"endLine": 45,
+		"startColumn": 34,
+		"endColumn": 76,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved and renamed attribute declaration",
+		"codeElement": "private ARRAY_CONTAINER_SERVICE : Service"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public init(context Context) : void from class nextapp.echo.webcontainer.sync.component.ColumnPeer to public init(context Context) : void from class nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer",
+	"leftSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/ColumnPeer.java",
+		"startLine": 66,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(context Context) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/AbstractArrayContainerSynchronizePeer.java",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public init(context Context) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public init(context Context) : void from class nextapp.echo.webcontainer.sync.component.RowPeer to public init(context Context) : void from class nextapp.echo.webcontainer.sync.component.AbstractArrayContainerSynchronizePeer",
+	"leftSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/RowPeer.java",
+		"startLine": 66,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(context Context) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/server-java/webcontainer/nextapp/echo/webcontainer/sync/component/AbstractArrayContainerSynchronizePeer.java",
+		"startLine": 51,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public init(context Context) : void"
+}]
+}
+]
+}]
+}

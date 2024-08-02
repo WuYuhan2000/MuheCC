@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "311520d14682a1f3096dc9307da3e5fcb82936ab",
+	"url": "https://github.com/elastic/elasticsearch/commit/311520d14682a1f3096dc9307da3e5fcb82936ab",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute took : long to time : long in class org.elasticsearch.action.admin.indices.status.ShardStatus.PeerRecoveryStatus",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "took : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "time : long"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public took() : TimeValue renamed to public time() : TimeValue in class org.elasticsearch.action.admin.indices.status.ShardStatus.PeerRecoveryStatus",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 151,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public took() : TimeValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 151,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public time() : TimeValue"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter took : long to time : long in method public PeerRecoveryStatus(stage Stage, startTime long, time long, retryTime long, indexSize long, reusedIndexSize long, recoveredIndexSize long, recoveredTranslogOperations long) from class org.elasticsearch.action.admin.indices.status.ShardStatus.PeerRecoveryStatus",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "took : long"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 64,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "time : long"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/action/admin/indices/status/ShardStatus.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

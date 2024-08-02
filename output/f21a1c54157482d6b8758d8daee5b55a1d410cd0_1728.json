@@ -1,0 +1,1347 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/evllabs/jgaap",
+	"sha1": "f21a1c54157482d6b8758d8daee5b55a1d410cd0",
+	"url": "https://github.com/evllabs/jgaap/commit/f21a1c54157482d6b8758d8daee5b55a1d410cd0",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method private initComponents() : void from class com.jgaap.ui.JGAAP_UI_ResultsDialog",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 33,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initComponents() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 33,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "private initComponents() : void"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type jScrollPane1 : JScrollPane to Results_TabbedPane : JTabbedPane in class com.jgaap.ui.JGAAP_UI_ResultsDialog",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 37,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jScrollPane1 : JScrollPane"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "Results_TabbedPane : JTabbedPane"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private AddAnalysisMethodSelection() : void extracted from private AnalysisMethodPanel_AddAnalysisMethodButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1395,
+		"endLine": 1402,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private AnalysisMethodPanel_AddAnalysisMethodButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1398,
+		"endLine": 1398,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1400,
+		"endLine": 1400,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1397,
+		"endLine": 1397,
+		"startColumn": 13,
+		"endColumn": 115,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1396,
+		"endLine": 1401,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1399,
+		"endLine": 1401,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1608,
+		"endLine": 1619,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private AddAnalysisMethodSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1615,
+		"endLine": 1615,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1617,
+		"endLine": 1617,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1610,
+		"endLine": 1610,
+		"startColumn": 13,
+		"endColumn": 137,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1609,
+		"endLine": 1618,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1616,
+		"endLine": 1618,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1604,
+		"endLine": 1606,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private AnalysisMethodPanel_AddAnalysisMethodButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1605,
+		"endLine": 1605,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "AddAnalysisMethodSelection()"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1613,
+		"endLine": 1613,
+		"startColumn": 17,
+		"endColumn": 129,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1612,
+		"endLine": 1614,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1611,
+		"endLine": 1614,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private AddCanonicizerSelection() : void extracted from private CanonicizersPanel_AddCanonicizerButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1555,
+		"endLine": 1567,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private CanonicizersPanel_AddCanonicizerButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1559,
+		"endLine": 1559,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1560,
+		"endLine": 1560,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1561,
+		"endLine": 1561,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1565,
+		"endLine": 1565,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1556,
+		"endLine": 1566,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1557,
+		"endLine": 1563,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1558,
+		"endLine": 1562,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1564,
+		"endLine": 1566,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1557,
+		"endLine": 1563,
+		"startColumn": 67,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1558,
+		"endLine": 1562,
+		"startColumn": 139,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1821,
+		"endLine": 1834,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private AddCanonicizerSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1826,
+		"endLine": 1826,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1827,
+		"endLine": 1827,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1828,
+		"endLine": 1828,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1832,
+		"endLine": 1832,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1823,
+		"endLine": 1833,
+		"startColumn": 12,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1824,
+		"endLine": 1830,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1825,
+		"endLine": 1829,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1831,
+		"endLine": 1833,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1824,
+		"endLine": 1830,
+		"startColumn": 67,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1825,
+		"endLine": 1829,
+		"startColumn": 139,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1817,
+		"endLine": 1819,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private CanonicizersPanel_AddCanonicizerButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1818,
+		"endLine": 1818,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "AddCanonicizerSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private AddEventCullerSelection() : void extracted from private EventCullingPanel_AddEventCullingButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1452,
+		"endLine": 1459,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private EventCullingPanel_AddEventCullingButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1454,
+		"endLine": 1454,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1455,
+		"endLine": 1455,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1457,
+		"endLine": 1457,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1453,
+		"endLine": 1458,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1456,
+		"endLine": 1458,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1687,
+		"endLine": 1694,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private AddEventCullerSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1689,
+		"endLine": 1689,
+		"startColumn": 13,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1690,
+		"endLine": 1690,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1692,
+		"endLine": 1692,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1688,
+		"endLine": 1693,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1691,
+		"endLine": 1693,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1683,
+		"endLine": 1685,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private EventCullingPanel_AddEventCullingButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1684,
+		"endLine": 1684,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "AddEventCullerSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private AddEventSetSelection() : void extracted from private EventSetsPanel_AddEventSetButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1496,
+		"endLine": 1503,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private EventSetsPanel_AddEventSetButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1498,
+		"endLine": 1498,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1499,
+		"endLine": 1499,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1501,
+		"endLine": 1501,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1497,
+		"endLine": 1502,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1500,
+		"endLine": 1502,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1745,
+		"endLine": 1753,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private AddEventSetSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1748,
+		"endLine": 1748,
+		"startColumn": 13,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1749,
+		"endLine": 1749,
+		"startColumn": 13,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1751,
+		"endLine": 1751,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1747,
+		"endLine": 1752,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1750,
+		"endLine": 1752,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1741,
+		"endLine": 1743,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private EventSetsPanel_AddEventSetButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1742,
+		"endLine": 1742,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "AddEventSetSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private RemoveAnalysisMethodSelection() : void extracted from private AnalysisMethodPanel_RemoveAnalysisMethodsButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1389,
+		"endLine": 1393,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private AnalysisMethodPanel_RemoveAnalysisMethodsButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1390,
+		"endLine": 1390,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1391,
+		"endLine": 1391,
+		"startColumn": 9,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1392,
+		"endLine": 1392,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1598,
+		"endLine": 1602,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveAnalysisMethodSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1599,
+		"endLine": 1599,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1600,
+		"endLine": 1600,
+		"startColumn": 9,
+		"endColumn": 143,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1601,
+		"endLine": 1601,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1594,
+		"endLine": 1596,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private AnalysisMethodPanel_RemoveAnalysisMethodsButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1595,
+		"endLine": 1595,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "RemoveAnalysisMethodSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private RemoveCanonicizerSelection() : void extracted from private CanonicizersPanel_RemoveCanonicizerButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1550,
+		"endLine": 1553,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private CanonicizersPanel_RemoveCanonicizerButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1551,
+		"endLine": 1551,
+		"startColumn": 9,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1552,
+		"endLine": 1552,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1812,
+		"endLine": 1815,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveCanonicizerSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1813,
+		"endLine": 1813,
+		"startColumn": 9,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1814,
+		"endLine": 1814,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1808,
+		"endLine": 1810,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private CanonicizersPanel_RemoveCanonicizerButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1809,
+		"endLine": 1809,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "RemoveCanonicizerSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private RemoveEventCullerSelection() : void extracted from private EventCullingPanel_RemoveEventCullingButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1446,
+		"endLine": 1450,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private EventCullingPanel_RemoveEventCullingButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1447,
+		"endLine": 1447,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1448,
+		"endLine": 1448,
+		"startColumn": 9,
+		"endColumn": 133,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1449,
+		"endLine": 1449,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1677,
+		"endLine": 1681,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveEventCullerSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1678,
+		"endLine": 1678,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1679,
+		"endLine": 1679,
+		"startColumn": 9,
+		"endColumn": 133,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1680,
+		"endLine": 1680,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1673,
+		"endLine": 1675,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private EventCullingPanel_RemoveEventCullingButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1674,
+		"endLine": 1674,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "RemoveEventCullerSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private RemoveEventSetSelection() : void extracted from private EventSetsPanel_RemoveEventSetButtonActionPerformed(evt ActionEvent) : void in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1490,
+		"endLine": 1494,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private EventSetsPanel_RemoveEventSetButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1491,
+		"endLine": 1491,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1492,
+		"endLine": 1492,
+		"startColumn": 9,
+		"endColumn": 125,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1493,
+		"endLine": 1493,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1734,
+		"endLine": 1739,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private RemoveEventSetSelection() : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1736,
+		"endLine": 1736,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1737,
+		"endLine": 1737,
+		"startColumn": 9,
+		"endColumn": 125,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1738,
+		"endLine": 1738,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1730,
+		"endLine": 1732,
+		"startColumn": 5,
+		"endColumn": 2,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private EventSetsPanel_RemoveEventSetButtonActionPerformed(evt ActionEvent) : void"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1731,
+		"endLine": 1731,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "RemoveEventSetSelection()"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute AnalysisMethodPanel_ParametersPanel : JPanel to AnalysisMethodPanel_AMParametersPanel : JPanel in class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 2048,
+		"endLine": 2048,
+		"startColumn": 32,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "AnalysisMethodPanel_ParametersPanel : JPanel"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 2391,
+		"endLine": 2391,
+		"startColumn": 32,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "AnalysisMethodPanel_AMParametersPanel : JPanel"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute jScrollPane1 : JScrollPane to Results_TabbedPane : JTabbedPane in class com.jgaap.ui.JGAAP_UI_ResultsDialog",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 37,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jScrollPane1 : JScrollPane"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 37,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "Results_TabbedPane : JTabbedPane"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public DisplayResults(results String) : void renamed to public AddResults(note String) : void in class com.jgaap.ui.JGAAP_UI_ResultsDialog",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public DisplayResults(results String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 104,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public AddResults(note String) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter results : String to note : String in method public AddResults(note String) : void from class com.jgaap.ui.JGAAP_UI_ResultsDialog",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "results : String"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 28,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "note : String"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_ResultsDialog.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable AnalysisMethodPanel_ParametersPanelLayout : GroupLayout to AnalysisMethodPanel_AMParametersPanelLayout : GroupLayout in method private initComponents() : void from class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1048,
+		"endLine": 1048,
+		"startColumn": 33,
+		"endColumn": 141,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "AnalysisMethodPanel_ParametersPanelLayout : GroupLayout"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1049,
+		"endLine": 1049,
+		"startColumn": 9,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1050,
+		"endLine": 1053,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1054,
+		"endLine": 1057,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1048,
+		"endLine": 1048,
+		"startColumn": 9,
+		"endColumn": 142,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1105,
+		"endLine": 1105,
+		"startColumn": 33,
+		"endColumn": 145,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "AnalysisMethodPanel_AMParametersPanelLayout : GroupLayout"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1106,
+		"endLine": 1106,
+		"startColumn": 9,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1107,
+		"endLine": 1110,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1111,
+		"endLine": 1114,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1105,
+		"endLine": 1105,
+		"startColumn": 9,
+		"endColumn": 146,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute ResultsPage : JGAAP_UI_ResultsDialog to ResultsPage : JGAAP_UI_ResultsDialog in method private Process_ButtonActionPerformed(evt ActionEvent) : void from class com.jgaap.ui.JGAAP_UI_MainForm",
+	"leftSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1260,
+		"endLine": 1260,
+		"startColumn": 36,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "ResultsPage : JGAAP_UI_ResultsDialog"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1262,
+		"endLine": 1262,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1261,
+		"endLine": 1261,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 28,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "ResultsPage : JGAAP_UI_ResultsDialog"
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1466,
+		"endLine": 1466,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/com/jgaap/ui/JGAAP_UI_MainForm.java",
+		"startLine": 1465,
+		"endLine": 1465,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

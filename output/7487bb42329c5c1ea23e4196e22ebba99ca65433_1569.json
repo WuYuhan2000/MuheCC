@@ -1,0 +1,270 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/bendisposto/prob",
+	"sha1": "7487bb42329c5c1ea23e4196e22ebba99ca65433",
+	"url": "https://github.com/bendisposto/prob/commit/7487bb42329c5c1ea23e4196e22ebba99ca65433",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public run() : void from class de.bmotionstudio.gef.editor.action.ObserverAction",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/action/ObserverAction.java",
+		"startLine": 47,
+		"endLine": 135,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/action/ObserverAction.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 2,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/action/ObserverAction.java",
+		"startLine": 48,
+		"endLine": 139,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public run() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter observer : Observer in method public createObserverWizardTableViewer(parent Composite, itemClass Class<?>, observer Observer) : TableViewer from class de.bmotionstudio.gef.editor.util.WizardObserverUtil",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/util/WizardObserverUtil.java",
+		"startLine": 36,
+		"endLine": 95,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createObserverWizardTableViewer(parent Composite, itemClass Class<?>) : TableViewer"
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/util/WizardObserverUtil.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 24,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "observer : Observer"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/util/WizardObserverUtil.java",
+		"startLine": 37,
+		"endLine": 100,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createObserverWizardTableViewer(parent Composite, itemClass Class<?>, observer Observer) : TableViewer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter observerName : String in method public WizardObserverDropListener(viewer Viewer, observerName String) from class de.bmotionstudio.gef.editor.observer.wizard.WizardObserverDropListener",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 16,
+		"endLine": 18,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public WizardObserverDropListener(viewer Viewer)"
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 51,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "observerName : String"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public WizardObserverDropListener(viewer Viewer, observerName String)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type sourceSetAttributeObject : Object to newElement : ObserverEvalObject in method public drop(event DropTargetEvent) : void from class de.bmotionstudio.gef.editor.observer.wizard.WizardObserverDropListener",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sourceSetAttributeObject : Object"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newElement : ObserverEvalObject"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(indexOf != -1) to if(indexOf == -1) in method public drop(event DropTargetEvent) : void from class de.bmotionstudio.gef.editor.observer.wizard.WizardObserverDropListener",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 28,
+		"endLine": 31,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(indexOf != -1)"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 20,
+		"endLine": 34,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public drop(event DropTargetEvent) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 47,
+		"endLine": 48,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(indexOf == -1)"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 27,
+		"endLine": 80,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public drop(event DropTargetEvent) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable sourceSetAttributeObject : Object to newElement : ObserverEvalObject in method public drop(event DropTargetEvent) : void from class de.bmotionstudio.gef.editor.observer.wizard.WizardObserverDropListener",
+	"leftSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sourceSetAttributeObject : Object"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "newElement : ObserverEvalObject"
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "de.bmotionstudio.gef.editor/src/de/bmotionstudio/gef/editor/observer/wizard/WizardObserverDropListener.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

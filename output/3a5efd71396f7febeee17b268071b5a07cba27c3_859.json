@@ -1,0 +1,603 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "3a5efd71396f7febeee17b268071b5a07cba27c3",
+	"url": "https://github.com/apache/camel/commit/3a5efd71396f7febeee17b268071b5a07cba27c3",
+	"refactorings": [{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.camel.itest.osgi.aws.AwsTestSupport from classes [org.apache.camel.itest.osgi.aws.AwsS3IntegrationTest, org.apache.camel.itest.osgi.aws.AwsSnsTest]",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsS3IntegrationTest.java",
+		"startLine": 44,
+		"endLine": 130,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.itest.osgi.aws.AwsS3IntegrationTest"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsSnsTest.java",
+		"startLine": 38,
+		"endLine": 87,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.itest.osgi.aws.AwsSnsTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsS3IntegrationTest.java",
+		"startLine": 34,
+		"endLine": 102,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.itest.osgi.aws.AwsS3IntegrationTest"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsSnsTest.java",
+		"startLine": 38,
+		"endLine": 70,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.itest.osgi.aws.AwsSnsTest"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsTestSupport.java",
+		"startLine": 29,
+		"endLine": 42,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.itest.osgi.aws.AwsTestSupport"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public configure() : Option[] from class org.apache.camel.itest.osgi.aws.AwsS3IntegrationTest to public configure() : Option[] from class org.apache.camel.itest.osgi.aws.AwsTestSupport",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsS3IntegrationTest.java",
+		"startLine": 113,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsTestSupport.java",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public configure() : Option[] from class org.apache.camel.itest.osgi.aws.AwsSnsTest to public configure() : Option[] from class org.apache.camel.itest.osgi.aws.AwsTestSupport",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsSnsTest.java",
+		"startLine": 70,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/aws/AwsTestSupport.java",
+		"startLine": 32,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @Ignore(\"TODO: fix me\") in class org.apache.camel.itest.osgi.jetty.OSGiMulitJettyCamelContextsTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 24,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore(\"TODO: fix me\")"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 39,
+		"endLine": 103,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.camel.itest.osgi.jetty.OSGiMulitJettyCamelContextsTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 35,
+		"endLine": 92,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.apache.camel.itest.osgi.jetty.OSGiMulitJettyCamelContextsTest"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.cache.CacheManagerFactoryRefTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheManagerFactoryRefTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheManagerFactoryRefTest.java",
+		"startLine": 82,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheManagerFactoryRefTest.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.cache.CacheTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheTest.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheTest.java",
+		"startLine": 68,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/cache/CacheTest.java",
+		"startLine": 64,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.dozer.DozerTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/dozer/DozerTest.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/dozer/DozerTest.java",
+		"startLine": 70,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/dozer/DozerTest.java",
+		"startLine": 69,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.exec.ExecTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/exec/ExecTest.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/exec/ExecTest.java",
+		"startLine": 56,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/exec/ExecTest.java",
+		"startLine": 51,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.hl7.HL7DataFormatTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7DataFormatTest.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7DataFormatTest.java",
+		"startLine": 109,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7DataFormatTest.java",
+		"startLine": 106,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.hl7.HL7MLLPCodecTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7MLLPCodecTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7MLLPCodecTest.java",
+		"startLine": 67,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/hl7/HL7MLLPCodecTest.java",
+		"startLine": 62,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.http.HttpTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/http/HttpTest.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/http/HttpTest.java",
+		"startLine": 70,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/http/HttpTest.java",
+		"startLine": 66,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.jetty.OSGiMulitJettyCamelContextsTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 69,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/jetty/OSGiMulitJettyCamelContextsTest.java",
+		"startLine": 66,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.mina.MinaTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/mina/MinaTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/mina/MinaTest.java",
+		"startLine": 57,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/mina/MinaTest.java",
+		"startLine": 53,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.protobuf.ProtobufRouteTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/protobuf/ProtobufRouteTest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/protobuf/ProtobufRouteTest.java",
+		"startLine": 111,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/protobuf/ProtobufRouteTest.java",
+		"startLine": 107,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.restlet.example.RestletDomainServiceTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/restlet/example/RestletDomainServiceTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/restlet/example/RestletDomainServiceTest.java",
+		"startLine": 69,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/restlet/example/RestletDomainServiceTest.java",
+		"startLine": 65,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.script.GroovyScriptOsgiTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/script/GroovyScriptOsgiTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/script/GroovyScriptOsgiTest.java",
+		"startLine": 58,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/script/GroovyScriptOsgiTest.java",
+		"startLine": 55,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.syslog.SyslogTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/syslog/SyslogTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/syslog/SyslogTest.java",
+		"startLine": 102,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/syslog/SyslogTest.java",
+		"startLine": 99,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public configure() : Option[] from class org.apache.camel.itest.osgi.velocity.VelocityTest",
+	"leftSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/velocity/VelocityTest.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 47,
+		"endColumn": 56,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/velocity/VelocityTest.java",
+		"startLine": 67,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configure() : Option[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/camel-itest-osgi/src/test/java/org/apache/camel/itest/osgi/velocity/VelocityTest.java",
+		"startLine": 63,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public configure() : Option[]"
+}]
+}
+]
+}]
+}

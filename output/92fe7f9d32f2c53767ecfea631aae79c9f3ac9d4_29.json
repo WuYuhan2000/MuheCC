@@ -1,0 +1,1227 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "92fe7f9d32f2c53767ecfea631aae79c9f3ac9d4",
+	"url": "https://github.com/ReactiveX/RxJava/commit/92fe7f9d32f2c53767ecfea631aae79c9f3ac9d4",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type bufferClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>> to bufferClosingSelector : Func1<Opening,? extends Observable<? extends Closing>> in method public buffer(bufferOpenings Observable<? extends Opening>, bufferClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) : Observable<List<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1340,
+		"endLine": 1340,
+		"startColumn": 85,
+		"endColumn": 170,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bufferClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1341,
+		"endLine": 1341,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1340,
+		"endLine": 1340,
+		"startColumn": 85,
+		"endColumn": 162,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bufferClosingSelector : Func1<Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1341,
+		"endLine": 1341,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type bufferClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>> to bufferClosingSelector : Func1<Opening,? extends Observable<? extends Closing>> in method public buffer(source Observable<T>, bufferOpenings Observable<? extends Opening>, bufferClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) : OnSubscribeFunc<List<T>> from class rx.operators.OperationBuffer",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationBuffer.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 135,
+		"endColumn": 226,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bufferClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationBuffer.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 17,
+		"endColumn": 137,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationBuffer.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 135,
+		"endColumn": 218,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bufferClosingSelector : Func1<Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationBuffer.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 17,
+		"endColumn": 137,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type chunkClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>> to chunkClosingSelector : Func1<Opening,? extends Observable<? extends Closing>> in method public ObservableBasedMultiChunkCreator(chunks OverlappingChunks<T,C>, openings Observable<? extends Opening>, chunkClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) from class rx.operators.ChunkedOperation.ObservableBasedMultiChunkCreator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/ChunkedOperation.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 127,
+		"endColumn": 217,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "chunkClosingSelector : Func1<? super Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/ChunkedOperation.java",
+		"startLine": 503,
+		"endLine": 503,
+		"startColumn": 21,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/ChunkedOperation.java",
+		"startLine": 498,
+		"endLine": 498,
+		"startColumn": 127,
+		"endColumn": 209,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "chunkClosingSelector : Func1<Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/ChunkedOperation.java",
+		"startLine": 503,
+		"endLine": 503,
+		"startColumn": 21,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type closingSelector : Func0<Observable<Closing>> to closingSelector : Func0<? extends Observable<? extends Closing>> in method public window(source Observable<? extends T>, closingSelector Func0<? extends Observable<? extends Closing>>) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1523,
+		"endLine": 1523,
+		"startColumn": 67,
+		"endColumn": 109,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "closingSelector : Func0<Observable<Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1524,
+		"endLine": 1524,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1523,
+		"endLine": 1523,
+		"startColumn": 77,
+		"endColumn": 139,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "closingSelector : Func0<? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1524,
+		"endLine": 1524,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type closingSelector : Func1<Opening,Observable<Closing>> to closingSelector : Func1<Opening,? extends Observable<? extends Closing>> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, closingSelector Func1<Opening,? extends Observable<? extends Closing>>) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 103,
+		"endColumn": 154,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "closingSelector : Func1<Opening,Observable<Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 123,
+		"endColumn": 194,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "closingSelector : Func1<Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, closingSelector Func0<? extends Observable<? extends Closing>>) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1523,
+		"endLine": 1523,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1524,
+		"endLine": 1524,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1523,
+		"endLine": 1523,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1524,
+		"endLine": 1524,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, count int) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1562,
+		"endLine": 1562,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1563,
+		"endLine": 1563,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1562,
+		"endLine": 1562,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1563,
+		"endLine": 1563,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, count int) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 61,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 61,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, count int, skip int) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1582,
+		"endLine": 1582,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1583,
+		"endLine": 1583,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1582,
+		"endLine": 1582,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1583,
+		"endLine": 1583,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, count int, skip int) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 105,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 17,
+		"endColumn": 105,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, timeshift long, unit TimeUnit) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1692,
+		"endLine": 1692,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1693,
+		"endLine": 1693,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1692,
+		"endLine": 1692,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1693,
+		"endLine": 1693,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, timeshift long, unit TimeUnit) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 61,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 9,
+		"endColumn": 97,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 61,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 9,
+		"endColumn": 97,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, timeshift long, unit TimeUnit, scheduler Scheduler) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1716,
+		"endLine": 1716,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1717,
+		"endLine": 1717,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1716,
+		"endLine": 1716,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1717,
+		"endLine": 1717,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, timeshift long, unit TimeUnit, scheduler Scheduler) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1601,
+		"endLine": 1601,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1602,
+		"endLine": 1602,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1601,
+		"endLine": 1601,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1602,
+		"endLine": 1602,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 61,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 61,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, count int) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1645,
+		"endLine": 1645,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1646,
+		"endLine": 1646,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1645,
+		"endLine": 1645,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1646,
+		"endLine": 1646,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, count int) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 61,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 61,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, count int, scheduler Scheduler) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1670,
+		"endLine": 1670,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1671,
+		"endLine": 1671,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1670,
+		"endLine": 1670,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1671,
+		"endLine": 1671,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, count int, scheduler Scheduler) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 17,
+		"endColumn": 105,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 17,
+		"endColumn": 105,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, scheduler Scheduler) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1622,
+		"endLine": 1622,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1623,
+		"endLine": 1623,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1622,
+		"endLine": 1622,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1623,
+		"endLine": 1623,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, timespan long, unit TimeUnit, scheduler Scheduler) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, windowClosingSelector Func0<? extends Observable<? extends Closing>>) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, closingSelector Func1<Opening,? extends Observable<? extends Closing>>) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 45,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 45,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type source : Observable<T> to source : Observable<? extends T> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, windowClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 61,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "source : Observable<T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 61,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "source : Observable<? extends T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 17,
+		"endColumn": 106,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type windowClosingSelector : Func0<Observable<Closing>> to windowClosingSelector : Func0<? extends Observable<? extends Closing>> in method public window(source Observable<? extends T>, windowClosingSelector Func0<? extends Observable<? extends Closing>>) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 89,
+		"endColumn": 143,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "windowClosingSelector : Func0<Observable<Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 128,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 99,
+		"endColumn": 173,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "windowClosingSelector : Func0<? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 128,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type windowClosingSelector : Func1<Opening,Observable<Closing>> to windowClosingSelector : Func1<Opening,? extends Observable<? extends Closing>> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, windowClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 131,
+		"endColumn": 194,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "windowClosingSelector : Func1<Opening,Observable<Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 17,
+		"endColumn": 143,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 151,
+		"endColumn": 234,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "windowClosingSelector : Func1<Opening,? extends Observable<? extends Closing>>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 17,
+		"endColumn": 143,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type windowOpenings : Observable<Opening> to windowOpenings : Observable<? extends Opening> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, closingSelector Func1<Opening,? extends Observable<? extends Closing>>) : Observable<Observable<T>> from class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 67,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "windowOpenings : Observable<Opening>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1545,
+		"endLine": 1545,
+		"startColumn": 77,
+		"endColumn": 121,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "windowOpenings : Observable<? extends Opening>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1546,
+		"endLine": 1546,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type windowOpenings : Observable<Opening> to windowOpenings : Observable<? extends Opening> in method public window(source Observable<? extends T>, windowOpenings Observable<? extends Opening>, windowClosingSelector Func1<Opening,? extends Observable<? extends Closing>>) : OnSubscribeFunc<Observable<T>> from class rx.operators.OperationWindow",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 89,
+		"endColumn": 129,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "windowOpenings : Observable<Opening>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 17,
+		"endColumn": 143,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 99,
+		"endColumn": 149,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "windowOpenings : Observable<? extends Opening>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationWindow.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 17,
+		"endColumn": 143,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

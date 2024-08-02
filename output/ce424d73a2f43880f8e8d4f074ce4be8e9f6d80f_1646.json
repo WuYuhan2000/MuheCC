@@ -1,0 +1,240 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/adangel/pmd",
+	"sha1": "ce424d73a2f43880f8e8d4f074ce4be8e9f6d80f",
+	"url": "https://github.com/adangel/pmd/commit/ce424d73a2f43880f8e8d4f074ce4be8e9f6d80f",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type primitiveTypesByName : Map to primitiveTypesByName : TypeMap in class net.sourceforge.pmd.util.ClassUtil",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 16,
+		"endLine": 25,
+		"startColumn": 27,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "primitiveTypesByName : Map"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 15,
+		"endLine": 24,
+		"startColumn": 31,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "primitiveTypesByName : TypeMap"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable typeName : String in method public visit(node ASTClassOrInterfaceType, data Object) : Object from class net.sourceforge.pmd.rules.design.LooseCoupling",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/design/LooseCoupling.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 13,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/design/LooseCoupling.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/design/LooseCoupling.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 16,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "typeName : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/design/LooseCoupling.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/rules/design/LooseCoupling.java",
+		"startLine": 31,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter name : String to shortName : String in method public getCollectionTypeFor(shortName String) : Class from class net.sourceforge.pmd.util.CollectionUtil",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/CollectionUtil.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 43,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/CollectionUtil.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/CollectionUtil.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "shortName : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/CollectionUtil.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable cls : Class to type : Class in method public getTypeFor(shortName String) : Class from class net.sourceforge.pmd.util.ClassUtil",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cls : Class"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 31,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 31,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "type : Class"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 21,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/ClassUtil.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 33,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

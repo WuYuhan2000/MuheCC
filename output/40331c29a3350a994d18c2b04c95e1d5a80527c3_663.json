@@ -1,0 +1,435 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "40331c29a3350a994d18c2b04c95e1d5a80527c3",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/40331c29a3350a994d18c2b04c95e1d5a80527c3",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unused\") in method package getInjectObject(declaringClass Class<?>, genericType Type, tlContext ThreadLocalizedContext, providers Providers, extensionBackwardMapping ExtensionBackwardMapping) : Object from class org.restlet.ext.jaxrs.internal.wrappers.params.ContextInjector",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ContextInjector.java",
+		"startLine": 249,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package getInjectObject(declaringClass Class<?>, genericType Type, tlContext ThreadLocalizedContext, providers Providers, extensionBackwardMapping ExtensionBackwardMapping) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ContextInjector.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ContextInjector.java",
+		"startLine": 249,
+		"endLine": 298,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "package getInjectObject(declaringClass Class<?>, genericType Type, tlContext ThreadLocalizedContext, providers Providers, extensionBackwardMapping ExtensionBackwardMapping) : Object"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method package getParamValue(form Form, paramName String) : Object extracted from public getParamValue() : Object in class org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.QueryParamGetter & moved to class org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.FormOrQueryParamGetter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 640,
+		"endLine": 662,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getParamValue() : Object"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 648,
+		"endLine": 648,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 654,
+		"endLine": 654,
+		"startColumn": 21,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 656,
+		"endLine": 656,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 657,
+		"endLine": 657,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 658,
+		"endLine": 658,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 660,
+		"endLine": 660,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 652,
+		"endLine": 653,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 650,
+		"endLine": 655,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 649,
+		"endLine": 661,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 659,
+		"endLine": 661,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 650,
+		"endLine": 655,
+		"startColumn": 44,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 659,
+		"endLine": 681,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package getParamValue(form Form, paramName String) : Object"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 667,
+		"endLine": 667,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 673,
+		"endLine": 673,
+		"startColumn": 21,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 676,
+		"endLine": 676,
+		"startColumn": 17,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 677,
+		"endLine": 677,
+		"startColumn": 17,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 670,
+		"endLine": 670,
+		"startColumn": 21,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 671,
+		"endLine": 672,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 669,
+		"endLine": 674,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 668,
+		"endLine": 680,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 678,
+		"endLine": 680,
+		"startColumn": 15,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 669,
+		"endLine": 674,
+		"startColumn": 44,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 640,
+		"endLine": 648,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getParamValue() : Object"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 647,
+		"endLine": 647,
+		"startColumn": 20,
+		"endColumn": 56,
+		"codeElementType": "SUPER_METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "super.getParamValue(form,paramName)"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.FormOrQueryParamGetter from classes [org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.QueryParamGetter]",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 629,
+		"endLine": 663,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.QueryParamGetter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 629,
+		"endLine": 649,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.QueryParamGetter"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 651,
+		"endLine": 682,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.FormOrQueryParamGetter"
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Path(\"ancestorTest\") to @Path(\"formTest\") in class org.restlet.test.jaxrs.services.resources.FormTestResource",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/FormTestResource.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 0,
+		"endColumn": 22,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Path(\"ancestorTest\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/FormTestResource.java",
+		"startLine": 25,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.restlet.test.jaxrs.services.resources.FormTestResource"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/FormTestResource.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 18,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Path(\"formTest\")"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/jaxrs/services/resources/FormTestResource.java",
+		"startLine": 34,
+		"endLine": 122,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.restlet.test.jaxrs.services.resources.FormTestResource"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable firstQueryParam : Parameter to firstFormParam : Parameter in method package getParamValue(form Form, paramName String) : Object from class org.restlet.ext.jaxrs.internal.wrappers.params.ParameterList.FormOrQueryParamGetter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 37,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "firstQueryParam : Parameter"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 21,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 652,
+		"endLine": 653,
+		"startColumn": 21,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 670,
+		"endLine": 670,
+		"startColumn": 37,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "firstFormParam : Parameter"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 670,
+		"endLine": 670,
+		"startColumn": 21,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/wrappers/params/ParameterList.java",
+		"startLine": 671,
+		"endLine": 672,
+		"startColumn": 21,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

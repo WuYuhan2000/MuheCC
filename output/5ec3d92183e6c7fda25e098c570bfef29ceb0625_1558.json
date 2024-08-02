@@ -1,0 +1,738 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "5ec3d92183e6c7fda25e098c570bfef29ceb0625",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/5ec3d92183e6c7fda25e098c570bfef29ceb0625",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package imposterise(callback Callback, mockedType Class<T>, ancillaryTypes Class<?>...) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier package to protected in method protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package imposterise(callback Callback, mockedType Class<T>, ancillaryTypes Class<?>...) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected ClassImposterizer() from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ClassImposterizer()"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected ClassImposterizer()"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : Callback to interceptor : MethodInterceptor in method protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : Callback"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 38,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "interceptor : MethodInterceptor"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type mockedType : Class<T> to mockedType : Class<?> in method protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 42,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mockedType : Class<T>"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 69,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "mockedType : Class<?>"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.jboss.arquillian.graphene.cglib.ClassImposterizer from classes [org.jboss.arquillian.graphene.proxy.ClassImposterizer]",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 49,
+		"endLine": 144,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 5,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 61,
+		"endLine": 177,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.cglib.ClassImposterizer"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method package imposterise(callback Callback, mockedType Class<T>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package imposterise(callback Callback, mockedType Class<T>, ancillaryTypes Class<?>...) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.arquillian.graphene.proxy.ClassImposterizer.ClassEnhancer moved to org.jboss.arquillian.graphene.cglib.ClassImposterizer.ClassEnhancer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 126,
+		"endLine": 132,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer.ClassEnhancer"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 159,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.cglib.ClassImposterizer.ClassEnhancer"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.arquillian.graphene.proxy.ClassImposterizer.ClassWithSuperclassToWorkAroundCglibBug moved to org.jboss.arquillian.graphene.cglib.ClassImposterizer.ClassWithSuperclassToWorkAroundCglibBug",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 140,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer.ClassWithSuperclassToWorkAroundCglibBug"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 173,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.arquillian.graphene.cglib.ClassImposterizer.ClassWithSuperclassToWorkAroundCglibBug"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private DEFAULT_POLICY : NamingPolicy from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private DEFAULT_POLICY : NamingPolicy from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 65,
+		"endLine": 73,
+		"startColumn": 39,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DEFAULT_POLICY : NamingPolicy"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 75,
+		"endLine": 83,
+		"startColumn": 39,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private DEFAULT_POLICY : NamingPolicy"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private IGNORE_BRIDGE_METHODS : CallbackFilter from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private IGNORE_BRIDGE_METHODS : CallbackFilter from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 93,
+		"endLine": 97,
+		"startColumn": 41,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private IGNORE_BRIDGE_METHODS : CallbackFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 41,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private IGNORE_BRIDGE_METHODS : CallbackFilter"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private SIGNED_CLASSES_POLICY : NamingPolicy from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private SIGNED_CLASSES_POLICY : NamingPolicy from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 75,
+		"endLine": 91,
+		"startColumn": 39,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private SIGNED_CLASSES_POLICY : NamingPolicy"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 85,
+		"endLine": 101,
+		"startColumn": 39,
+		"endColumn": 6,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private SIGNED_CLASSES_POLICY : NamingPolicy"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private objenesis : Objenesis from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private objenesis : Objenesis from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 29,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private objenesis : Objenesis"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 29,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private objenesis : Objenesis"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private ClassImposterizer() from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to protected ClassImposterizer() from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private ClassImposterizer()"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected ClassImposterizer()"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private createProxy(proxyClass Class<?>, callback Callback) : Object from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private createProxy(proxyClass Class<?>, callback Callback) : Object from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 134,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createProxy(proxyClass Class<?>, callback Callback) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private createProxy(proxyClass Class<?>, callback Callback) : Object"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private createProxyClass(mockedType Class<?>, interfaces Class<?>...) : Class<?> from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private createProxyClass(mockedType Class<?>, interfaces Class<?>...) : Class<?> from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 111,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createProxyClass(mockedType Class<?>, interfaces Class<?>...) : Class<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 144,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private createProxyClass(mockedType Class<?>, interfaces Class<?>...) : Class<?>"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private setConstructorsAccessible(mockedType Class<?>, accessible boolean) : void from class org.jboss.arquillian.graphene.proxy.ClassImposterizer to private setConstructorsAccessible(mockedType Class<?>, accessible boolean) : void from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 105,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setConstructorsAccessible(mockedType Class<?>, accessible boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 138,
+		"endLine": 142,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private setConstructorsAccessible(mockedType Class<?>, accessible boolean) : void"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @SuppressWarnings(\"rawtypes\") in class org.jboss.arquillian.graphene.proxy.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 0,
+		"endColumn": 30,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"rawtypes\")"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 49,
+		"endLine": 144,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 5,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier final in class org.jboss.arquillian.graphene.proxy.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 49,
+		"endLine": 144,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 5,
+		"endLine": 12,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.jboss.arquillian.graphene.proxy.ClassImposterizer"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter callback : Callback to interceptor : MethodInterceptor in method protected imposteriseClass(interceptor MethodInterceptor, mockedType Class<?>, ancillaryTypes Class<?>...) : T from class org.jboss.arquillian.graphene.cglib.ClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 23,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : Callback"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/proxy/ClassImposterizer.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 38,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "interceptor : MethodInterceptor"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/cglib/ClassImposterizer.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 74,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method public test() : void to [public testAbstractClass() : void, public testClassAndInterface() : void] in class org.jboss.arquillian.graphene.proxy.TestClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public test() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 53,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testAbstractClass() : void"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testClassAndInterface() : void"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method public test() : void to [public testClass() : void, public testClassAndInterface() : void] in class org.jboss.arquillian.graphene.proxy.TestClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public test() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 41,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testClass() : void"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testClassAndInterface() : void"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method public test() : void to [public testInterface() : void, public testClassAndInterface() : void] in class org.jboss.arquillian.graphene.proxy.TestClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public test() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 47,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testInterface() : void"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testClassAndInterface() : void"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method public test() : void to [public testPrivateInterface() : void, public testClassAndInterface() : void] in class org.jboss.arquillian.graphene.proxy.TestClassImposterizer",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 42,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public test() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 66,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testPrivateInterface() : void"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/test/java/org/jboss/arquillian/graphene/proxy/TestClassImposterizer.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "public testClassAndInterface() : void"
+}]
+}
+]
+}]
+}

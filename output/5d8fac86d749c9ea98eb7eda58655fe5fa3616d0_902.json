@@ -1,0 +1,339 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "5d8fac86d749c9ea98eb7eda58655fe5fa3616d0",
+	"url": "https://github.com/spring-projects/spring-framework/commit/5d8fac86d749c9ea98eb7eda58655fe5fa3616d0",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to package in class org.springframework.orm.hibernate3.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 327,
+		"endLine": 354,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.SessionBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/AsyncRequestInterceptor.java",
+		"startLine": 32,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.springframework.orm.hibernate3.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to public in class org.springframework.orm.jpa.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 249,
+		"endLine": 277,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.EntityManagerBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/AsyncRequestInterceptor.java",
+		"startLine": 33,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.springframework.orm.jpa.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public bindSession() : void from class org.springframework.orm.hibernate3.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initializeThread() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/AsyncRequestInterceptor.java",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public bindSession() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public bindSession() : void from class org.springframework.orm.jpa.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 274,
+		"endLine": 276,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initializeThread() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/AsyncRequestInterceptor.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public bindSession() : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptor : AsyncRequestInterceptor in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.orm.hibernate3.support.OpenSessionInViewFilter",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 215,
+		"endLine": 216,
+		"startColumn": 6,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 30,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptor : AsyncRequestInterceptor"
+}, {
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 6,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptor : AsyncRequestInterceptor in method protected doFilterInternal(request HttpServletRequest, response HttpServletResponse, filterChain FilterChain) : void from class org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 6,
+		"endColumn": 112,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 30,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptor : AsyncRequestInterceptor"
+}, {
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 6,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.SessionBindingCallableInterceptor moved and renamed to org.springframework.orm.hibernate3.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 327,
+		"endLine": 354,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.SessionBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/AsyncRequestInterceptor.java",
+		"startLine": 32,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.springframework.orm.hibernate3.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.EntityManagerBindingCallableInterceptor moved and renamed to org.springframework.orm.jpa.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 249,
+		"endLine": 277,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.EntityManagerBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/AsyncRequestInterceptor.java",
+		"startLine": 33,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.springframework.orm.jpa.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public postProcess(request NativeWebRequest, task Callable<T>, concurrentResult Object) : void from class org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor.SessionBindingCallableInterceptor to public postProcess(request NativeWebRequest, task Callable<T>, concurrentResult Object) : void from class org.springframework.orm.hibernate4.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm-hibernate4/src/main/java/org/springframework/orm/hibernate4/support/OpenSessionInViewInterceptor.java",
+		"startLine": 224,
+		"endLine": 227,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public postProcess(request NativeWebRequest, task Callable<T>, concurrentResult Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm-hibernate4/src/main/java/org/springframework/orm/hibernate4/support/AsyncRequestInterceptor.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public postProcess(request NativeWebRequest, task Callable<T>, concurrentResult Object) : void"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.SessionBindingCallableInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 327,
+		"endLine": 354,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.orm.hibernate3.support.OpenSessionInViewFilter.SessionBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/AsyncRequestInterceptor.java",
+		"startLine": 32,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.springframework.orm.hibernate3.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Remove Class Modifier",
+	"description": "Remove Class Modifier static in class org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.EntityManagerBindingCallableInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 249,
+		"endLine": 277,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter.EntityManagerBindingCallableInterceptor"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/AsyncRequestInterceptor.java",
+		"startLine": 33,
+		"endLine": 110,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed modifier",
+		"codeElement": "org.springframework.orm.jpa.support.AsyncRequestInterceptor"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private initializeThread() : void renamed to public bindSession() : void in class org.springframework.orm.hibernate3.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/OpenSessionInViewFilter.java",
+		"startLine": 351,
+		"endLine": 353,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initializeThread() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/hibernate3/support/AsyncRequestInterceptor.java",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public bindSession() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private initializeThread() : void renamed to public bindSession() : void in class org.springframework.orm.jpa.support.AsyncRequestInterceptor",
+	"leftSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/OpenEntityManagerInViewFilter.java",
+		"startLine": 274,
+		"endLine": 276,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initializeThread() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-orm/src/main/java/org/springframework/orm/jpa/support/AsyncRequestInterceptor.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public bindSession() : void"
+}]
+}
+]
+}]
+}

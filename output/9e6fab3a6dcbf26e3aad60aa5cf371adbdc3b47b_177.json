@@ -1,0 +1,159 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "9e6fab3a6dcbf26e3aad60aa5cf371adbdc3b47b",
+	"url": "https://github.com/elastic/elasticsearch/commit/9e6fab3a6dcbf26e3aad60aa5cf371adbdc3b47b",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method public persistentSettings(source Map) : ClusterUpdateSettingsRequest from class org.elasticsearch.action.admin.cluster.settings.ClusterUpdateSettingsRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 109,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public persistentSettings(source Map) : ClusterUpdateSettingsRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 133,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public persistentSettings(source Map) : ClusterUpdateSettingsRequest"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @SuppressWarnings(\"unchecked\") in method public transientSettings(source Map) : ClusterUpdateSettingsRequest from class org.elasticsearch.action.admin.cluster.settings.ClusterUpdateSettingsRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 83,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public transientSettings(source Map) : ClusterUpdateSettingsRequest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsRequest.java",
+		"startLine": 94,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public transientSettings(source Map) : ClusterUpdateSettingsRequest"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter acknowledged : boolean in method package ClusterUpdateSettingsResponse(acknowledged boolean, transientSettings Settings, persistentSettings Settings) from class org.elasticsearch.action.admin.cluster.settings.ClusterUpdateSettingsResponse",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsResponse.java",
+		"startLine": 43,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package ClusterUpdateSettingsResponse(transientSettings Settings, persistentSettings Settings)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsResponse.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 35,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "acknowledged : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/ClusterUpdateSettingsResponse.java",
+		"startLine": 44,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package ClusterUpdateSettingsResponse(acknowledged boolean, transientSettings Settings, persistentSettings Settings)"
+}]
+},
+{
+	"type": "Add Parameter Annotation",
+	"description": "Add Parameter Annotation @Nullable in parameter t : Throwable in method protected masterOperation(request ClusterUpdateSettingsRequest, state ClusterState, listener ActionListener<ClusterUpdateSettingsResponse>) : void from class org.elasticsearch.action.admin.cluster.settings.TransportClusterUpdateSettingsAction",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 58,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "t : Throwable"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java",
+		"startLine": 84,
+		"endLine": 189,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected masterOperation(request ClusterUpdateSettingsRequest, state ClusterState, listener ActionListener<ClusterUpdateSettingsResponse>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 49,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 49,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added annotation",
+		"codeElement": "t : Throwable"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/action/admin/cluster/settings/TransportClusterUpdateSettingsAction.java",
+		"startLine": 86,
+		"endLine": 248,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable annotation",
+		"codeElement": "protected masterOperation(request ClusterUpdateSettingsRequest, state ClusterState, listener ActionListener<ClusterUpdateSettingsResponse>) : void"
+}]
+}
+]
+}]
+}

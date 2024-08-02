@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "d47f33629bcc15db2d0f9d75289b0d0da4850799",
+	"url": "https://github.com/kiegroup/drools/commit/d47f33629bcc15db2d0f9d75289b0d0da4850799",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type kieModules : Map<GAV,KieModule> to kieModuleRepo : KieModuleRepo in class org.kie.builder.impl.KieRepositoryImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "kieModules : Map<GAV,KieModule>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 40,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "kieModuleRepo : KieModuleRepo"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type kieModules : Map<GAV,KieModule> to kieModules : Map<String,TreeMap<ComparableVersion,KieModule>> in class org.kie.builder.impl.KieRepositoryImpl.KieModuleRepo",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "kieModules : Map<GAV,KieModule>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 74,
+		"endColumn": 147,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "kieModules : Map<String,TreeMap<ComparableVersion,KieModule>>"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.kie.builder.impl.KieRepositoryImpl.KieModuleRepo from class org.kie.builder.impl.KieRepositoryImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 22,
+		"endLine": 168,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.kie.builder.impl.KieRepositoryImpl"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private kieModules : Map<GAV,KieModule>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 32,
+		"endLine": 614,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.kie.builder.impl.KieRepositoryImpl"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 179,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.kie.builder.impl.KieRepositoryImpl.KieModuleRepo"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 74,
+		"endColumn": 147,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private kieModules : Map<String,TreeMap<ComparableVersion,KieModule>>"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable kieModule : InternalKieModule in method public getKieContainer(gav GAV) : KieContainer from class org.kie.builder.impl.KieServicesImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieServicesImpl.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 138,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieServicesImpl.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 27,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "kieModule : InternalKieModule"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieServicesImpl.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private kieModules : Map<GAV,KieModule> from class org.kie.builder.impl.KieRepositoryImpl to private kieModules : Map<String,TreeMap<ComparableVersion,KieModule>> from class org.kie.builder.impl.KieRepositoryImpl.KieModuleRepo",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private kieModules : Map<GAV,KieModule>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 74,
+		"endColumn": 147,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private kieModules : Map<String,TreeMap<ComparableVersion,KieModule>>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute kieModules : Map<GAV,KieModule> to kieModuleRepo : KieModuleRepo in class org.kie.builder.impl.KieRepositoryImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 39,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "kieModules : Map<GAV,KieModule>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieRepositoryImpl.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 40,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "kieModuleRepo : KieModuleRepo"
+}]
+}
+]
+}]
+}

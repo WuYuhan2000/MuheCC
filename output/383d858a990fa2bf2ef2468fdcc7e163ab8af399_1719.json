@@ -1,0 +1,1260 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/fanta-mnix/bpmn2-modeler",
+	"sha1": "383d858a990fa2bf2ef2468fdcc7e163ab8af399",
+	"url": "https://github.com/fanta-mnix/bpmn2-modeler/commit/383d858a990fa2bf2ef2468fdcc7e163ab8af399",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private modelHandler : ModelHandler from class org.eclipse.bpmn2.modeler.ui.editor.BPMN2Editor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/editor/BPMN2Editor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private modelHandler : ModelHandler"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/editor/BPMN2Editor.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 23,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private modelHandler : ModelHandler"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/editor/BPMN2Editor.java",
+		"startLine": 454,
+		"endLine": 456,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getModelHandler() : ModelHandler"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private updateEObject(refs List<EObject>, result EList<EObject>) : void extracted from public createControl(composite Composite, label String, style int) : Control in class org.eclipse.bpmn2.modeler.ui.property.editors.FeatureListObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 67,
+		"endLine": 134,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 113,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 8,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 8,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 8,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 8,
+		"endColumn": 9,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 122,
+		"endLine": 126,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 27,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 123,
+		"endLine": 125,
+		"startColumn": 32,
+		"endColumn": 9,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 122,
+		"endLine": 126,
+		"startColumn": 33,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 115,
+		"endLine": 127,
+		"startColumn": 33,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 137,
+		"endLine": 155,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private updateEObject(refs List<EObject>, result EList<EObject>) : void"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 139,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 6,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 6,
+		"endColumn": 13,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 143,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 148,
+		"endLine": 152,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 143,
+		"endLine": 146,
+		"startColumn": 25,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 30,
+		"endColumn": 7,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 148,
+		"endLine": 152,
+		"startColumn": 31,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 141,
+		"endLine": 153,
+		"startColumn": 31,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 69,
+		"endLine": 135,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 8,
+		"endColumn": 77,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "updateEObject(refs,(EList<EObject>)featureEditorDialog.getResult())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected fillCombo() : void extracted from public createControl(composite Composite, label String, style int) : Control in class org.eclipse.bpmn2.modeler.ui.property.editors.ComboObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 67,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 4,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 6,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 85,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 72,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 83,
+		"endLine": 87,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 83,
+		"endLine": 87,
+		"startColumn": 24,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 80,
+		"endLine": 88,
+		"startColumn": 58,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 181,
+		"endLine": 204,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected fillCombo() : void"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 4,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 6,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 7,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 199,
+		"endLine": 200,
+		"startColumn": 6,
+		"endColumn": 73,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 197,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 194,
+		"endLine": 202,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 197,
+		"endLine": 201,
+		"startColumn": 25,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 194,
+		"endLine": 202,
+		"startColumn": 59,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 91,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 8,
+		"endColumn": 19,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fillCombo()"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 10,
+		"endColumn": 21,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fillCombo()"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fillCombo()"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 185,
+		"endLine": 186,
+		"startColumn": 4,
+		"endColumn": 53,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 189,
+		"endLine": 192,
+		"startColumn": 22,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 189,
+		"endLine": 192,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 182,
+		"endLine": 203,
+		"startColumn": 26,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 182,
+		"endLine": 203,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public getDescription(object EObject) : String extracted from protected bindDescription(be EObject) : void in class org.eclipse.bpmn2.modeler.ui.property.DescriptionPropertySection.DescriptionPropertyComposite",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 97,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected bindDescription(be EObject) : void"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 4,
+		"endColumn": 104,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 4,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 110,
+		"endLine": 113,
+		"startColumn": 11,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 107,
+		"endLine": 113,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 110,
+		"endLine": 113,
+		"startColumn": 57,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 107,
+		"endLine": 110,
+		"startColumn": 60,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 99,
+		"endLine": 124,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getDescription(object EObject) : String"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 105,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 6,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 6,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 6,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 6,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 4,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 12,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 58,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 115,
+		"endLine": 118,
+		"startColumn": 61,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 91,
+		"endLine": 97,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected bindDescription(be EObject) : void"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 25,
+		"endColumn": 43,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDescription(be)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 4,
+		"endColumn": 142,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 4,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 23,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 107,
+		"endLine": 122,
+		"startColumn": 27,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/DescriptionPropertySection.java",
+		"startLine": 107,
+		"endLine": 122,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable buttons : Composite in method public createControl(composite Composite, label String, style int) : Control from class org.eclipse.bpmn2.modeler.ui.property.editors.FeatureListObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 14,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "buttons : Composite"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/FeatureListObjectEditor.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional Hashtable<String,Object> choices=getChoiceOfValues(object,feature); to [combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));, if(canCreateNew), if(canEdit || canCreateNew)] in method public createControl(composite Composite, label String, style int) : Control from class org.eclipse.bpmn2.modeler.ui.property.editors.ComboObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "Hashtable<String,Object> choices=getChoiceOfValues(object,feature);\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 67,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 112,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canEdit || canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 91,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional Object oldValue=object.eGet(feature); to [combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));, if(canCreateNew), if(canEdit || canCreateNew)] in method public createControl(composite Composite, label String, style int) : Control from class org.eclipse.bpmn2.modeler.ui.property.editors.ComboObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "Object oldValue=object.eGet(feature);\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 67,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 112,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canEdit || canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 91,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional comboViewer.add(entry.getKey()); to [combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));, if(canCreateNew), if(canEdit || canCreateNew)] in method public createControl(composite Composite, label String, style int) : Control from class org.eclipse.bpmn2.modeler.ui.property.editors.ComboObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "comboViewer.add(entry.getKey());\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 67,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 112,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canEdit || canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 91,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional comboViewer.setData(entry.getKey(),newValue); to [combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));, if(canCreateNew), if(canEdit || canCreateNew)] in method public createControl(composite Composite, label String, style int) : Control from class org.eclipse.bpmn2.modeler.ui.property.editors.ComboObjectEditor",
+	"leftSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "comboViewer.setData(entry.getKey(),newValue);\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 67,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "combo.setLayoutData(new GridData(SWT.FILL,SWT.CENTER,true,false,(canEdit || canCreateNew) ? 1 : 2,1));\n"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 117,
+		"endLine": 130,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 112,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(canEdit || canCreateNew)"
+}, {
+		"filePath": "org.eclipse.bpmn2.modeler.ui/src/org/eclipse/bpmn2/modeler/ui/property/editors/ComboObjectEditor.java",
+		"startLine": 91,
+		"endLine": 179,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public createControl(composite Composite, label String, style int) : Control"
+}]
+}
+]
+}]
+}

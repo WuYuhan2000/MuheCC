@@ -1,0 +1,459 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/chrisvest/stormpot",
+	"sha1": "d2931d33147aeb6c1e96d55a8fd1b252ff66b7f2",
+	"url": "https://github.com/chrisvest/stormpot/commit/d2931d33147aeb6c1e96d55a8fd1b252ff66b7f2",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Test(timeout = 300) in method public mustNotDeallocateTheSameObjectMoreThanOnce(fixture PoolFixture) : void from class stormpot.PoolTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 425,
+		"endLine": 444,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mustNotDeallocateTheSameObjectMoreThanOnce(fixture PoolFixture) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Test(timeout = 300)"
+}, {
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 431,
+		"endLine": 459,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public mustNotDeallocateTheSameObjectMoreThanOnce(fixture PoolFixture) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : Config to config : Config<T> in method public BasicPool(config Config<T>) from class stormpot.basicpool.BasicPool",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 20,
+		"endColumn": 33,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : Config"
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 39,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "SYNCHRONIZED_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 20,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : Config<T>"
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 7,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 7,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 39,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "SYNCHRONIZED_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Config to Config<T> in method package goInsane() : Config<T> from class stormpot.Config",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 16,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Config"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 31,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package goInsane() : Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Config<T>"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package goInsane() : Config<T>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Config to Config<T> in method public copy() : Config<T> from class stormpot.Config",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Config"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 12,
+		"endLine": 16,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public copy() : Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Config<T>"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 13,
+		"endLine": 19,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public copy() : Config<T>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Config to Config<T> in method public setSize(size int) : Config<T> from class stormpot.Config",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Config"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 18,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setSize(size int) : Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 21,
+		"endLine": 21,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Config<T>"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 21,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public setSize(size int) : Config<T>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Config to Config<T> in method public setTTL(ttl long, unit TimeUnit) : Config<T> from class stormpot.Config",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 23,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Config"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 36,
+		"endLine": 43,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setTTL(ttl long, unit TimeUnit) : Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Config<T>"
+}, {
+		"filePath": "src/main/java/stormpot/Config.java",
+		"startLine": 39,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public setTTL(ttl long, unit TimeUnit) : Config<T>"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter objectSource : Allocator<T> in method public BasicPool(config Config, objectSource Allocator<T>) from class stormpot.basicpool.BasicPool",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 35,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "objectSource : Allocator<T>"
+}, {
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 38,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public BasicPool(config Config, objectSource Allocator<T>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/basicpool/BasicPool.java",
+		"startLine": 38,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public BasicPool(config Config<T>)"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class stormpot.CountingAllocatorWrapper renamed to stormpot.CountingAllocator",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocatorWrapper.java",
+		"startLine": 5,
+		"endLine": 34,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "stormpot.CountingAllocatorWrapper"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocator.java",
+		"startLine": 5,
+		"endLine": 30,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "stormpot.CountingAllocator"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public countAllocations() : int renamed to public allocations() : int in class stormpot.CountingAllocator",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocatorWrapper.java",
+		"startLine": 22,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public countAllocations() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocator.java",
+		"startLine": 23,
+		"endLine": 25,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public allocations() : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public countDeallocations() : int renamed to public deallocations() : int in class stormpot.CountingAllocator",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocatorWrapper.java",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public countDeallocations() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocator.java",
+		"startLine": 27,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public deallocations() : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter lease : Slot to slot : Slot in method public allocate(slot Slot) : Poolable from class stormpot.CountingAllocator",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocatorWrapper.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 28,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "lease : Slot"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/CountingAllocator.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 28,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "slot : Slot"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable e : Exception to _ : Exception in method public mustNotDeallocateTheSameObjectMoreThanOnce(fixture PoolFixture) : void from class stormpot.PoolTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 439,
+		"endLine": 441,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "_ : Exception"
+}, {
+		"filePath": "src/test/java/stormpot/PoolTest.java",
+		"startLine": 453,
+		"endLine": 456,
+		"startColumn": 7,
+		"endColumn": 6,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

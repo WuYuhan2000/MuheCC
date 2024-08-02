@@ -1,0 +1,354 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "8ccfca3a2f0193f0a4da38e206c35cf08402218f",
+	"url": "https://github.com/elastic/elasticsearch/commit/8ccfca3a2f0193f0a4da38e206c35cf08402218f",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable id : BytesRef in method package createShortCircuitFilter(nonNestedDocsFilter Filter, searchContext SearchContext, parentType String, globalValues BytesValues.WithOrdinals, parentIdxs LongHash, numFoundParents long) : Filter from class org.elasticsearch.index.search.child.ParentIdsFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ParentIdsFilter.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ParentIdsFilter.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 22,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "id : BytesRef"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable id : BytesRef in method package createShortCircuitFilter(nonNestedDocsFilter Filter, searchContext SearchContext, parentType String, globalValues BytesValues.WithOrdinals, parentOrds LongBitSet, numFoundParents long) : Filter from class org.elasticsearch.index.search.child.ParentIdsFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ParentIdsFilter.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/search/child/ParentIdsFilter.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 22,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "id : BytesRef"
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public copyShared() : BytesRef moved from class org.elasticsearch.index.fielddata.BytesValues to class org.elasticsearch.percolator.QueryCollector.Match & inlined to public collect(doc int) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 63,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public copyShared() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 193,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public collect(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "values.copyShared()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 193,
+		"endLine": 227,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public collect(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public copyShared() : BytesRef moved from class org.elasticsearch.index.fielddata.BytesValues to class org.elasticsearch.percolator.QueryCollector.MatchAndScore & inlined to public collect(doc int) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 63,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public copyShared() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 316,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public collect(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 37,
+		"endColumn": 56,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "values.copyShared()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 316,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public collect(doc int) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/percolator/QueryCollector.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 25,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public copyShared() : BytesRef moved from class org.elasticsearch.index.fielddata.BytesValues to class org.elasticsearch.search.aggregations.support.FieldDataSourceTests & inlined to private assertSortedAndUnique(values BytesValues) : void",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 63,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public copyShared() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/elasticsearch/search/aggregations/support/FieldDataSourceTests.java",
+		"startLine": 152,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private assertSortedAndUnique(values BytesValues) : void"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/search/aggregations/support/FieldDataSourceTests.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 25,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "values.copyShared()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/elasticsearch/search/aggregations/support/FieldDataSourceTests.java",
+		"startLine": 120,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private assertSortedAndUnique(values BytesValues) : void"
+}, {
+		"filePath": "src/test/java/org/elasticsearch/search/aggregations/support/FieldDataSourceTests.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Inline Method",
+	"description": "Move And Inline Method public copyShared() : BytesRef moved from class org.elasticsearch.index.fielddata.BytesValues to class org.elasticsearch.search.facet.terms.strings.TermsStringOrdinalsFacetExecutor.ReaderAggregator & inlined to public copyCurrent() : BytesRef",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 63,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public copyShared() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/facet/terms/strings/TermsStringOrdinalsFacetExecutor.java",
+		"startLine": 282,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public copyCurrent() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/facet/terms/strings/TermsStringOrdinalsFacetExecutor.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 20,
+		"endColumn": 39,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "values.copyShared()"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/facet/terms/strings/TermsStringOrdinalsFacetExecutor.java",
+		"startLine": 282,
+		"endLine": 284,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public copyCurrent() : BytesRef"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/facet/terms/strings/TermsStringOrdinalsFacetExecutor.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 13,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getTermsEnum() : TermsEnum from class org.elasticsearch.index.fielddata.plain.IndexIndexFieldData.IndexAtomicFieldData to public getTermsEnum() : TermsEnum from class org.elasticsearch.index.fielddata.BytesValues.WithOrdinals",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/plain/IndexIndexFieldData.java",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTermsEnum() : TermsEnum"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 148,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getTermsEnum() : TermsEnum"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public getTermsEnum() : TermsEnum from class org.elasticsearch.index.fielddata.plain.IndexIndexFieldData.IndexAtomicFieldData",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/plain/IndexIndexFieldData.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/plain/IndexIndexFieldData.java",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getTermsEnum() : TermsEnum"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/index/fielddata/BytesValues.java",
+		"startLine": 148,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public getTermsEnum() : TermsEnum"
+}]
+}
+]
+}]
+}

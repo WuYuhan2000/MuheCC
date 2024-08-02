@@ -1,0 +1,144 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "48701edad8513b27acec7216581e64637157c86a",
+	"url": "https://github.com/kiegroup/drools/commit/48701edad8513b27acec7216581e64637157c86a",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable array : String[] in method public marshal(object Object, writer HierarchicalStreamWriter, context MarshallingContext) : void from class org.drools.core.runtime.help.impl.XStreamJSon.JSonBatchExecutionResultConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 680,
+		"endLine": 680,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 684,
+		"endLine": 684,
+		"startColumn": 30,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "array : String[]"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 718,
+		"endLine": 718,
+		"startColumn": 17,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 685,
+		"endLine": 685,
+		"startColumn": 21,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable col : Collection<String> to handles : Collection<String> in method public marshal(object Object, writer HierarchicalStreamWriter, context MarshallingContext) : void from class org.drools.core.runtime.help.impl.XStreamJSon.JSonBatchExecutionResultConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 36,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "col : Collection<String>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 680,
+		"endLine": 680,
+		"startColumn": 17,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 715,
+		"endLine": 715,
+		"startColumn": 32,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "handles : Collection<String>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 718,
+		"endLine": 718,
+		"startColumn": 17,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 715,
+		"endLine": 715,
+		"startColumn": 13,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable identifiers : String[] to array : String[] in method public marshal(object Object, writer HierarchicalStreamWriter, context MarshallingContext) : void from class org.drools.core.runtime.help.impl.XStreamJSon.JSonBatchExecutionResultConverter",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 680,
+		"endLine": 680,
+		"startColumn": 26,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "identifiers : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/runtime/help/impl/XStreamJSon.java",
+		"startLine": 718,
+		"endLine": 718,
+		"startColumn": 26,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "array : String[]"
+}]
+}
+]
+}]
+}

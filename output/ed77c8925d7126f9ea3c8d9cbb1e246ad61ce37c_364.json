@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "ed77c8925d7126f9ea3c8d9cbb1e246ad61ce37c",
+	"url": "https://github.com/apache/hadoop/commit/ed77c8925d7126f9ea3c8d9cbb1e246ad61ce37c",
+	"refactorings": [{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter scheds : Collection<FSLeafQueue> in method protected preemptResources(scheds Collection<FSLeafQueue>, toPreempt Resource) : void from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.fair.TestFairSchedulerPreemption.StubbedFairScheduler",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/TestFairSchedulerPreemption.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "scheds : Collection<FSLeafQueue>"
+}, {
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/TestFairSchedulerPreemption.java",
+		"startLine": 53,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected preemptResources(scheds Collection<FSLeafQueue>, toPreempt Resource) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/fair/TestFairSchedulerPreemption.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected preemptResources(toPreempt Resource) : void"
+}]
+}
+]
+}]
+}

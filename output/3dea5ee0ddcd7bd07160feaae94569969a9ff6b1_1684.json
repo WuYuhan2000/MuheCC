@@ -1,0 +1,555 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/brandonborkholder/glg2d",
+	"sha1": "3dea5ee0ddcd7bd07160feaae94569969a9ff6b1",
+	"url": "https://github.com/brandonborkholder/glg2d/commit/3dea5ee0ddcd7bd07160feaae94569969a9ff6b1",
+	"refactorings": [{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass glg2d.impl.AbstractColorHelper from classes [glg2d.impl.gl2.GL2ColorHelper]",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 35,
+		"endLine": 240,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "glg2d.impl.gl2.GL2ColorHelper"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 30,
+		"endLine": 101,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "glg2d.impl.gl2.GL2ColorHelper"
+}, {
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 32,
+		"endLine": 181,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "glg2d.impl.AbstractColorHelper"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable matrixBuf : FloatBuffer in method protected begin(texture Texture, xform AffineTransform, bgcolor Color) : void from class glg2d.impl.shader.GL2ES2ImageDrawer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2ImageDrawer.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2ImageDrawer.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 17,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "matrixBuf : FloatBuffer"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2ImageDrawer.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class glg2d.impl.gl2.GL2ColorHelper.ColorState moved to glg2d.impl.AbstractColorHelper.ColorState",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 226,
+		"endLine": 239,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "glg2d.impl.gl2.GL2ColorHelper.ColorState"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 165,
+		"endLine": 180,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "glg2d.impl.AbstractColorHelper.ColorState"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected g2d : GLGraphics2D from class glg2d.impl.gl2.GL2ColorHelper to protected g2d : GLGraphics2D from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 26,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected g2d : GLGraphics2D"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 26,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected g2d : GLGraphics2D"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected stack : Deque<ColorState> from class glg2d.impl.gl2.GL2ColorHelper to protected stack : Deque<ColorState> from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 31,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected stack : Deque<ColorState>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 31,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected stack : Deque<ColorState>"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public dispose() : void from class glg2d.impl.gl2.GL2ColorHelper to public dispose() : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public dispose() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 70,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public dispose() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getBackground() : Color from class glg2d.impl.gl2.GL2ColorHelper to public getBackground() : Color from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 199,
+		"endLine": 202,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getBackground() : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 150,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getBackground() : Color"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getColor() : Color from class glg2d.impl.gl2.GL2ColorHelper to public getColor() : Color from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 151,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getColor() : Color"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 140,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getColor() : Color"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getComposite() : Composite from class glg2d.impl.gl2.GL2ColorHelper to public getComposite() : Composite from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 130,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getComposite() : Composite"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 125,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getComposite() : Composite"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public pop(parentG2d GLGraphics2D) : void from class glg2d.impl.gl2.GL2ColorHelper to public pop(parentG2d GLGraphics2D) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 56,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public pop(parentG2d GLGraphics2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 50,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public pop(parentG2d GLGraphics2D) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public push(newG2d GLGraphics2D) : void from class glg2d.impl.gl2.GL2ColorHelper to public push(newG2d GLGraphics2D) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 51,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public push(newG2d GLGraphics2D) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public push(newG2d GLGraphics2D) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public resetHints() : void from class glg2d.impl.gl2.GL2ColorHelper to public resetHints() : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public resetHints() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 65,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public resetHints() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setBackground(color Color) : void from class glg2d.impl.gl2.GL2ColorHelper to public setBackground(color Color) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 192,
+		"endLine": 197,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBackground(color Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 145,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setBackground(color Color) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setColor(c Color) : void from class glg2d.impl.gl2.GL2ColorHelper to public setColor(c Color) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 161,
+		"endLine": 169,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setColor(c Color) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 130,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setColor(c Color) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setComposite(comp Composite) : void from class glg2d.impl.gl2.GL2ColorHelper to public setComposite(comp Composite) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 80,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setComposite(comp Composite) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 74,
+		"endLine": 123,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setComposite(comp Composite) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setHint(key Key, value Object) : void from class glg2d.impl.gl2.GL2ColorHelper to public setHint(key Key, value Object) : void from class glg2d.impl.AbstractColorHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/gl2/GL2ColorHelper.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setHint(key Key, value Object) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/AbstractColorHelper.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setHint(key Key, value Object) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable canvasHeight : int to y2 : int in method protected updateMatrix(xform AffineTransform, buffer FloatBuffer) : void from class glg2d.impl.shader.GL2ES2TransformHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "canvasHeight : int"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "y2 : int"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable canvasWidth : int to x2 : int in method protected updateMatrix(xform AffineTransform, buffer FloatBuffer) : void from class glg2d.impl.shader.GL2ES2TransformHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "canvasWidth : int"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "x2 : int"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute viewportDimensions : int[] to viewportDimensions : int[] in method protected updateMatrix(xform AffineTransform, buffer FloatBuffer) : void from class glg2d.impl.shader.GL2ES2TransformHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 11,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "viewportDimensions : int[]"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 19,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "viewportDimensions : int[]"
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/glg2d/impl/shader/GL2ES2TransformHelper.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

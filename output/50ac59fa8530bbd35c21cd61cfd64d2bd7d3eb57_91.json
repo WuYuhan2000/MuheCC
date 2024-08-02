@@ -1,0 +1,162 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "50ac59fa8530bbd35c21cd61cfd64d2bd7d3eb57",
+	"url": "https://github.com/apache/hbase/commit/50ac59fa8530bbd35c21cd61cfd64d2bd7d3eb57",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scan : Scan to actualProto : ClientProtos.Scan in method public testScan() : void from class org.apache.hadoop.hbase.protobuf.TestProtobufUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scan : Scan"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "actualProto : ClientProtos.Scan"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable expectedProto : ClientProtos.Scan in method public testScan() : void from class org.apache.hadoop.hbase.protobuf.TestProtobufUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 23,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "expectedProto : ClientProtos.Scan"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable scan : Scan to actualProto : ClientProtos.Scan in method public testScan() : void from class org.apache.hadoop.hbase.protobuf.TestProtobufUtil",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scan : Scan"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "actualProto : ClientProtos.Scan"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 307,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/protobuf/TestProtobufUtil.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

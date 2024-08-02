@@ -1,0 +1,99 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/square/retrofit",
+	"sha1": "6a12880afc3fb8497578b4646e6e4f28571d267f",
+	"url": "https://github.com/square/retrofit/commit/6a12880afc3fb8497578b4646e6e4f28571d267f",
+	"refactorings": [{
+	"type": "Move Class",
+	"description": "Move Class retrofit2.RetrofitTest.stringConverterNotCalledForString.MyConverterFactory moved to retrofit2.RetrofitTest.stringConverterCalledForString.MyConverterFactory",
+	"leftSideLocations": [{
+		"filePath": "retrofit/src/test/java/retrofit2/RetrofitTest.java",
+		"startLine": 403,
+		"endLine": 408,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "retrofit2.RetrofitTest.stringConverterNotCalledForString.MyConverterFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "retrofit/src/test/java/retrofit2/RetrofitTest.java",
+		"startLine": 404,
+		"endLine": 410,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "retrofit2.RetrofitTest.stringConverterCalledForString.MyConverterFactory"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public stringConverterNotCalledForString() : void renamed to public stringConverterCalledForString() : void in class retrofit2.RetrofitTest",
+	"leftSideLocations": [{
+		"filePath": "retrofit/src/test/java/retrofit2/RetrofitTest.java",
+		"startLine": 402,
+		"endLine": 417,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public stringConverterNotCalledForString() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "retrofit/src/test/java/retrofit2/RetrofitTest.java",
+		"startLine": 402,
+		"endLine": 419,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public stringConverterCalledForString() : void"
+}]
+},
+{
+	"type": "Replace Conditional With Ternary",
+	"description": "Replace Conditional With Ternary if(Utils.isAnnotationPresent(annotations,Streaming.class)) to return Utils.isAnnotationPresent(annotations,Streaming.class) ? StreamingResponseBodyConverter.INSTANCE : BufferingResponseBodyConverter.INSTANCE; in method public responseBodyConverter(type Type, annotations Annotation[], retrofit Retrofit) : Converter<ResponseBody,?> from class retrofit2.BuiltInConverters",
+	"leftSideLocations": [{
+		"filePath": "retrofit/src/main/java/retrofit2/BuiltInConverters.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(Utils.isAnnotationPresent(annotations,Streaming.class))"
+}, {
+		"filePath": "retrofit/src/main/java/retrofit2/BuiltInConverters.java",
+		"startLine": 26,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public responseBodyConverter(type Type, annotations Annotation[], retrofit Retrofit) : Converter<ResponseBody,?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "retrofit/src/main/java/retrofit2/BuiltInConverters.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "ternary conditional",
+		"codeElement": "return Utils.isAnnotationPresent(annotations,Streaming.class) ? StreamingResponseBodyConverter.INSTANCE : BufferingResponseBodyConverter.INSTANCE;\n"
+}, {
+		"filePath": "retrofit/src/main/java/retrofit2/BuiltInConverters.java",
+		"startLine": 26,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with ternary conditional",
+		"codeElement": "public responseBodyConverter(type Type, annotations Annotation[], retrofit Retrofit) : Converter<ResponseBody,?>"
+}]
+}
+]
+}]
+}

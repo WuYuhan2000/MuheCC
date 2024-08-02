@@ -1,0 +1,3546 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/duracloud/duracloud",
+	"sha1": "8dbd55da75fb5a06077011cdec31749fe27f03dd",
+	"url": "https://github.com/duracloud/duracloud/commit/8dbd55da75fb5a06077011cdec31749fe27f03dd",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected DEFAULT_INSTANCE_TYPE : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 33,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DEFAULT_INSTANCE_TYPE : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 35,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected DEFAULT_INSTANCE_TYPE : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected DEFAULT_NUM_INSTANCES : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 33,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DEFAULT_NUM_INSTANCES : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 35,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected DEFAULT_NUM_INSTANCES : String"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method private getDefaultUserConfigs() : List<UserConfig> extracted from private getMode(modeType ModeType) : UserConfigMode in class org.duracloud.duraservice.config.AmazonFixityServiceInfo & moved to class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 89,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private getMode(modeType ModeType) : UserConfigMode"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 119,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 63,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getMode(modeType ModeType) : UserConfigMode"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDefaultUserConfigs()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 133,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 147,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getDefaultUserConfigs() : List<UserConfig> extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 45,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 55,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 90,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 96,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 120,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 127,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 161,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 172,
+		"endLine": 175,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 178,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 185,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDefaultUserConfigs()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getDefaultUserConfigs() : List<UserConfig> extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 120,
+		"endLine": 200,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDefaultUserConfigs()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 132,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 161,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 178,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 185,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 192,
+		"endLine": 192,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 127,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 172,
+		"endLine": 175,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getDefaultUserConfigs() : List<UserConfig> extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 54,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 58,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 63,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 68,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 119,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 133,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 147,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDefaultUserConfigs()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getDefaultUserConfigs() : List<UserConfig> extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 119,
+		"endLine": 156,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 40,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getDefaultUserConfigs()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 133,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 142,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 147,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 137,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 126,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getListModeSets() : List<UserConfigModeSet> extracted from private getMode(modeType ModeType) : UserConfigMode in class org.duracloud.duraservice.config.AmazonFixityServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 89,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private getMode(modeType ModeType) : UserConfigMode"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 178,
+		"endLine": 192,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getListModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 63,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getMode(modeType ModeType) : UserConfigMode"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 36,
+		"endColumn": 53,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getListModeSets()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getNumberOfInstancesSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 115,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 111,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 111,
+		"endLine": 114,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 202,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getNumberOfInstancesSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 210,
+		"endLine": 213,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 205,
+		"endLine": 208,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 33,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getNumberOfInstancesSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getNumberOfInstancesSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 77,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 35,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 158,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getNumberOfInstancesSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 166,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 161,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 161,
+		"endLine": 164,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 33,
+		"endColumn": 64,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getNumberOfInstancesSelection()"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getOptimizationSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 216,
+		"endLine": 229,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getOptimizationSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 221,
+		"endLine": 223,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getOptimizationSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 225,
+		"endLine": 228,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 218,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getOptimizationSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 216,
+		"endLine": 229,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getOptimizationSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 221,
+		"endLine": 223,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getOptimizationSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 218,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 225,
+		"endLine": 228,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getOptimizationSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 172,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getOptimizationSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 177,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getOptimizationSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 181,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getOptimizationSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 86,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 172,
+		"endLine": 185,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getOptimizationSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 177,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 33,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getOptimizationSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 181,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getTypeOfInstanceListingSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.BulkImageConversionServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 19,
+		"endLine": 177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 231,
+		"endLine": 251,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getTypeOfInstanceListingSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 234,
+		"endLine": 237,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 247,
+		"endLine": 250,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 82,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 33,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getTypeOfInstanceListingSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 238,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/BulkImageConversionServiceInfo.java",
+		"startLine": 242,
+		"endLine": 245,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getTypeOfInstanceListingSelection() : SingleSelectUserConfig extracted from public getServiceXml(index int, version String) : ServiceInfo in class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 19,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getServiceXml(index int, version String) : ServiceInfo"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 89,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 187,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getTypeOfInstanceListingSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 203,
+		"endLine": 206,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 81,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private getModeSets() : List<UserConfigModeSet>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 33,
+		"endColumn": 68,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getTypeOfInstanceListingSelection()"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 194,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 198,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private instanceType : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private instanceType : String from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private instanceType : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private instanceType : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private instanceType : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private instanceType : String from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private instanceType : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private instanceType : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private instanceType : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private instanceType : String from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private instanceType : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private instanceType : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private numInstances : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private numInstances : String from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numInstances : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private numInstances : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private numInstances : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private numInstances : String from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numInstances : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private numInstances : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute private numInstances : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to private numInstances : String from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numInstances : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "private numInstances : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getInstanceType() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getInstanceType() : String from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 310,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getInstanceType() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 230,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getInstanceType() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getInstanceType() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getInstanceType() : String from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 310,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getInstanceType() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 243,
+		"endLine": 245,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getInstanceType() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getInstanceType() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getInstanceType() : String from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 310,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getInstanceType() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 205,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getInstanceType() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getNumInstances() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getNumInstances() : String from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 287,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumInstances() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 206,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getNumInstances() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getNumInstances() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getNumInstances() : String from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 287,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumInstances() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 219,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getNumInstances() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getNumInstances() : String from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public getNumInstances() : String from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 287,
+		"endLine": 289,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumInstances() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 181,
+		"endLine": 183,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getNumInstances() : String"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setInstanceType(instanceType String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setInstanceType(instanceType String) : void from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 314,
+		"endLine": 324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 234,
+		"endLine": 244,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setInstanceType(instanceType String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setInstanceType(instanceType String) : void from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 314,
+		"endLine": 324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 247,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setInstanceType(instanceType String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setInstanceType(instanceType String) : void from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 314,
+		"endLine": 324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 209,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setInstanceType(instanceType String) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setNumInstances(numInstances String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setNumInstances(numInstances String) : void from class org.duracloud.services.amazonfixity.AmazonFixityService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 291,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/amazonfixityservice/src/main/java/org/duracloud/services/amazonfixity/AmazonFixityService.java",
+		"startLine": 210,
+		"endLine": 228,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setNumInstances(numInstances String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setNumInstances(numInstances String) : void from class org.duracloud.services.bulkimageconversion.BulkImageConversionService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 291,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/bulkimageconversionservice/src/main/java/org/duracloud/services/bulkimageconversion/BulkImageConversionService.java",
+		"startLine": 223,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public setNumInstances(numInstances String) : void from class org.duracloud.services.amazonmapreduce.BaseAmazonMapReduceService to public setNumInstances(numInstances String) : void from class org.duracloud.services.replicationod.ReplicationOnDemandService",
+	"leftSideLocations": [{
+		"filePath": "services/amazonmapreduce-servicescommon/src/main/java/org/duracloud/services/amazonmapreduce/BaseAmazonMapReduceService.java",
+		"startLine": 291,
+		"endLine": 308,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "services/replication-on-demand-service/src/main/java/org/duracloud/services/replicationod/ReplicationOnDemandService.java",
+		"startLine": 185,
+		"endLine": 203,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public setNumInstances(numInstances String) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable userConfigs : List<UserConfig> to repServiceUserConfig : List<UserConfig> in method private getDefaultUserConfigs() : List<UserConfig> from class org.duracloud.duraservice.config.ReplicationOnDemandServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 26,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "userConfigs : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 26,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "repServiceUserConfig : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/ReplicationOnDemandServiceInfo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable userConfigs : List<UserConfig> to userConfig : List<UserConfig> in method private getDefaultUserConfigs() : List<UserConfig> from class org.duracloud.duraservice.config.AmazonFixityServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 26,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "userConfigs : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 26,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "userConfig : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method private getHadoopConfigs() : List<UserConfig> to [private getDefaultUserConfigs() : List<UserConfig>, private getTypeOfInstanceListingSelection() : SingleSelectUserConfig] in class org.duracloud.duraservice.config.AmazonFixityServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 114,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHadoopConfigs() : List<UserConfig>"
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 85,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getDefaultUserConfigs() : List<UserConfig>"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 125,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getTypeOfInstanceListingSelection() : SingleSelectUserConfig"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method private getHadoopConfigs() : List<UserConfig> to [private getNumberOfInstancesSelection() : SingleSelectUserConfig, private getTypeOfInstanceListingSelection() : SingleSelectUserConfig] in class org.duracloud.duraservice.config.AmazonFixityServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 114,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHadoopConfigs() : List<UserConfig>"
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 96,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getNumberOfInstancesSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 125,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getTypeOfInstanceListingSelection() : SingleSelectUserConfig"
+}]
+},
+{
+	"type": "Split Method",
+	"description": "Split Method private getHadoopConfigs() : List<UserConfig> to [private getOptimizationSelection() : SingleSelectUserConfig, private getTypeOfInstanceListingSelection() : SingleSelectUserConfig] in class org.duracloud.duraservice.config.AmazonFixityServiceInfo",
+	"leftSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 114,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHadoopConfigs() : List<UserConfig>"
+}],
+	"rightSideLocations": [{
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 110,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getOptimizationSelection() : SingleSelectUserConfig"
+}, {
+		"filePath": "duraservice/src/main/java/org/duracloud/duraservice/config/AmazonFixityServiceInfo.java",
+		"startLine": 125,
+		"endLine": 145,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "split method declaration",
+		"codeElement": "private getTypeOfInstanceListingSelection() : SingleSelectUserConfig"
+}]
+}
+]
+}]
+}

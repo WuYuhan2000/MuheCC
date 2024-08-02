@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "82bd585bb78ab580d1bd16e0e9ae7402c5348579",
+	"url": "https://github.com/kiegroup/drools/commit/82bd585bb78ab580d1bd16e0e9ae7402c5348579",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public isConflicting() : boolean extracted from public isUndecided() : boolean in class org.drools.core.beliefsystem.jtms.JTMSBeliefSetImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public isUndecided() : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 96,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public isConflicting() : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public isUndecided() : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSetImpl.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 16,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "isConflicting()"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable wasConflicting : boolean to wasUndecided : boolean in method public delete(node LogicalDependency<T>, beliefSet BeliefSet, context PropagationContext) : void from class org.drools.core.beliefsystem.jtms.JTMSBeliefSystem",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "wasConflicting : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 176,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 175,
+		"endLine": 235,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "wasUndecided : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 176,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/beliefsystem/jtms/JTMSBeliefSystem.java",
+		"startLine": 175,
+		"endLine": 235,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

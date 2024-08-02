@@ -1,0 +1,723 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/mina",
+	"sha1": "f1d1b3440b46c48146fde6b3b1c2cd65b51bdbfe",
+	"url": "https://github.com/apache/mina/commit/f1d1b3440b46c48146fde6b3b1c2cd65b51bdbfe",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type config : IoAcceptorConfig to config : IoServiceConfig in class org.apache.mina.transport.socket.nio.support.DatagramAcceptorDelegate.RegistrationRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 618,
+		"endLine": 618,
+		"startColumn": 40,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 617,
+		"endLine": 617,
+		"startColumn": 39,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "config : IoServiceConfig"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type config : IoAcceptorConfig to config : IoServiceConfig in class org.apache.mina.transport.vmpipe.support.VmPipe",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 36,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 35,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "config : IoServiceConfig"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoAcceptorConfig to config : IoServiceConfig in method private RegistrationRequest(address SocketAddress, handler IoHandler, config IoServiceConfig) from class org.apache.mina.transport.socket.nio.support.DatagramAcceptorDelegate.RegistrationRequest",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 623,
+		"endLine": 623,
+		"startColumn": 80,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 627,
+		"endLine": 627,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 622,
+		"endLine": 622,
+		"startColumn": 80,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 626,
+		"endLine": 626,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoAcceptorConfig to config : IoServiceConfig in method public VmPipe(acceptor VmPipeAcceptor, address VmPipeAddress, handler IoHandler, config IoServiceConfig) from class org.apache.mina.transport.vmpipe.support.VmPipe",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 27,
+		"endLine": 27,
+		"startColumn": 20,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoAcceptorConfig to config : IoServiceConfig in method public bind(address SocketAddress, handler IoHandler, config IoServiceConfig) : void from class org.apache.mina.common.IoAcceptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoAcceptor.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 58,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoAcceptor.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 58,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoAcceptorConfig to config : IoServiceConfig in method public bind(address SocketAddress, handler IoHandler, config IoServiceConfig) : void from class org.apache.mina.transport.socket.nio.support.DatagramAcceptorDelegate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 65,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoAcceptorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 80,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 65,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/DatagramAcceptorDelegate.java",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 28,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 28,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.common.support.DelegatedIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 77,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 77,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.transport.vmpipe.VmPipeConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 77,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 77,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, localAddress SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.common.IoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 47,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/IoConnector.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 47,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, localAddress SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.common.support.DelegatedIoConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 54,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 54,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/common/support/DelegatedIoConnector.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : IoConnectorConfig to config : IoServiceConfig in method public connect(address SocketAddress, localAddress SocketAddress, handler IoHandler, config IoServiceConfig) : ConnectFuture from class org.apache.mina.transport.vmpipe.VmPipeConnector",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 105,
+		"endColumn": 129,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : IoConnectorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 68,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 105,
+		"endColumn": 127,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 67,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 13,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/VmPipeConnector.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type IoAcceptorConfig to IoServiceConfig in method public getConfig() : IoServiceConfig from class org.apache.mina.transport.vmpipe.support.VmPipe",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 12,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "IoAcceptorConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getConfig() : IoAcceptorConfig"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IoServiceConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/vmpipe/support/VmPipe.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getConfig() : IoServiceConfig"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter config : SocketSessionConfig to cfg : SocketSessionConfig in method public SocketSessionImpl(manager IoService, managedSessions Set, config IoSessionConfig, ch SocketChannel, defaultHandler IoHandler) from class org.apache.mina.transport.socket.nio.support.SocketSessionImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : SocketSessionConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "cfg : SocketSessionConfig"
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/mina/transport/socket/nio/support/SocketSessionImpl.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

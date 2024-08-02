@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "0efa78710b4ff36dcf50457a4ec16090bc96787b",
+	"url": "https://github.com/elastic/elasticsearch/commit/0efa78710b4ff36dcf50457a4ec16090bc96787b",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type request : SearchRequest to request : TransportRequest in method package SearchFreeContextRequest(request TransportRequest, id long) from class org.elasticsearch.search.action.SearchServiceTransportAction.SearchFreeContextRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/action/SearchServiceTransportAction.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 34,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "request : SearchRequest"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/action/SearchServiceTransportAction.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/search/action/SearchServiceTransportAction.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : TransportRequest"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/search/action/SearchServiceTransportAction.java",
+		"startLine": 513,
+		"endLine": 513,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

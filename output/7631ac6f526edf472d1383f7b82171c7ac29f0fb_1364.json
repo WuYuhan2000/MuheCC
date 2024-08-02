@@ -1,0 +1,150 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "7631ac6f526edf472d1383f7b82171c7ac29f0fb",
+	"url": "https://github.com/apache/deltaspike/commit/7631ac6f526edf472d1383f7b82171c7ac29f0fb",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public getProjectStageAwarePropertyValue(key String) : String extracted from public getProjectStageAwarePropertyValue(key String, defaultValue String) : String in class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 153,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getProjectStageAwarePropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 174,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 175,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 153,
+		"endLine": 179,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getProjectStageAwarePropertyValue(key String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 173,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 174,
+		"endLine": 176,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getProjectStageAwarePropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 24,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getProjectStageAwarePropertyValue(key)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

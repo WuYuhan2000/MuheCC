@@ -1,0 +1,867 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arrayexpress/annotare2",
+	"sha1": "adbc3b32e7e7546c573e5144c4379f1a3924ca9f",
+	"url": "https://github.com/arrayexpress/annotare2/commit/adbc3b32e7e7546c573e5144c4379f1a3924ca9f",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter emailer : EmailSender in method public AccountServiceImpl(accountManager AccountManager, emailer EmailSender) from class uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AuthServiceImpl.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AuthServiceImpl(accountManager AccountManager)"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 62,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "emailer : EmailSender"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 50,
+		"endLine": 54,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public AccountServiceImpl(accountManager AccountManager, emailer EmailSender)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.ExportServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/ExportServlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/ExportServlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.login.LoginServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.rpc.AuthBasedRemoteService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type signUpService : SignUpService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "signUpService : SignUpService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type authService : AuthService to accountService : AccountService in method public AuthBasedRemoteService(accountService AccountService) from class uk.ac.ebi.fg.annotare2.web.server.rpc.AuthBasedRemoteService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type authService : AuthService to accountService : AccountService in method public SubmissionListServiceImpl(accountService AccountService, submissionManager SubmissionManager) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionListServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type authService : AuthService to accountService : AccountService in method public SubmissionServiceImpl(accountService AccountService, submissionManager SubmissionManager, dataFileManager DataFileManager, properties AnnotareProperties, userDao UserDao) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 34,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 34,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type authService : AuthService to accountService : AccountService in method public SubmissionValidationServiceImpl(accountService AccountService, submissionManager SubmissionManager, validator SubmissionValidator) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionValidationServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 44,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 44,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type Exception to AccountServiceException in method public signUp(request HttpServletRequest) : ValidationErrors from class uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 71,
+		"endColumn": 80,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 41,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public signUp(request HttpServletRequest) : ValidationErrors"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 71,
+		"endColumn": 94,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "AccountServiceException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 60,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public signUp(request HttpServletRequest) : ValidationErrors"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type LoginException to AccountServiceException in method public login(request HttpServletRequest) : ValidationErrors from class uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AuthServiceImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 70,
+		"endColumn": 84,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "LoginException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AuthServiceImpl.java",
+		"startLine": 55,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public login(request HttpServletRequest) : ValidationErrors"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 70,
+		"endColumn": 93,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "AccountServiceException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 87,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public login(request HttpServletRequest) : ValidationErrors"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : Exception to e : AccountServiceException in method protected doPost(request HttpServletRequest, response HttpServletResponse) : void from class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 18,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : AccountServiceException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : LoginException to e : AccountServiceException in method protected doPost(request HttpServletRequest, response HttpServletResponse) : void from class uk.ac.ebi.fg.annotare2.web.server.login.LoginServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 18,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : LoginException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 18,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : AccountServiceException"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private emailer : EmailSender from class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServiceImpl to private emailer : EmailSender from class uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private emailer : EmailSender"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private emailer : EmailSender"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServiceImpl.SignUpParams moved to uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl.SignUpParams",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 64,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.server.login.SignUpServiceImpl.SignUpParams"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 146,
+		"endLine": 188,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl.SignUpParams"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public signUp(request HttpServletRequest) : ValidationErrors from class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServiceImpl to public signUp(request HttpServletRequest) : ValidationErrors from class uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 41,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public signUp(request HttpServletRequest) : ValidationErrors"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 60,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public signUp(request HttpServletRequest) : ValidationErrors"
+}]
+},
+{
+	"type": "Remove Attribute Annotation",
+	"description": "Remove Attribute Annotation @Inject in attribute private emailer : EmailSender from class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Inject"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServiceImpl.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private emailer : EmailSender"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed annotation",
+		"codeElement": "private emailer : EmailSender"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.ExportServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/ExportServlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/ExportServlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.login.LoginServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/LoginServlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute authService : AuthService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.rpc.AuthBasedRemoteService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "authService : AuthService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute signUpService : SignUpService to accountService : AccountService in class uk.ac.ebi.fg.annotare2.web.server.login.SignUpServlet",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "signUpService : SignUpService"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/SignUpServlet.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "accountService : AccountService"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class uk.ac.ebi.fg.annotare2.web.server.login.AuthServiceImpl renamed to uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AuthServiceImpl.java",
+		"startLine": 35,
+		"endLine": 113,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.server.login.AuthServiceImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/login/AccountServiceImpl.java",
+		"startLine": 38,
+		"endLine": 189,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.server.login.AccountServiceImpl"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter authService : AuthService to accountService : AccountService in method public AuthBasedRemoteService(accountService AccountService) from class uk.ac.ebi.fg.annotare2.web.server.rpc.AuthBasedRemoteService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 35,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/AuthBasedRemoteService.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter authService : AuthService to accountService : AccountService in method public SubmissionListServiceImpl(accountService AccountService, submissionManager SubmissionManager) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionListServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 38,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionListServiceImpl.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter authService : AuthService to accountService : AccountService in method public SubmissionServiceImpl(accountService AccountService, submissionManager SubmissionManager, dataFileManager DataFileManager, properties AnnotareProperties, userDao UserDao) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 34,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 34,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionServiceImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter authService : AuthService to accountService : AccountService in method public SubmissionValidationServiceImpl(accountService AccountService, submissionManager SubmissionManager, validator SubmissionValidator) from class uk.ac.ebi.fg.annotare2.web.server.rpc.SubmissionValidationServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 44,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "authService : AuthService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 44,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "accountService : AccountService"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/SubmissionValidationServiceImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

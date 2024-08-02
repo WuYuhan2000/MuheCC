@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "e517f55833c7ec02676bd850e9cd8f302a8a713f",
+	"url": "https://github.com/ReactiveX/RxJava/commit/e517f55833c7ec02676bd850e9cd8f302a8a713f",
+	"refactorings": [{
+	"type": "Remove Variable Annotation",
+	"description": "Remove Variable Annotation @SuppressWarnings(\"unchecked\") in variable fin : Observable<String> in method public testFinally() : void from class rx.operators.OperationFinally.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 13,
+		"endColumn": 43,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unchecked\")"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 32,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fin : Observable<String>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 125,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testFinally() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 32,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "fin : Observable<String>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 122,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public testFinally() : void"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,627 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arrayexpress/annotare2",
+	"sha1": "471adaa458ed6768d199dab17d07a013bf65e693",
+	"url": "https://github.com/arrayexpress/annotare2/commit/471adaa458ed6768d199dab17d07a013bf65e693",
+	"refactorings": [{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter file : ResumableFile in method public onFileSuccess(uploader ResumableUploader, file ResumableFile) : void from class uk.ac.ebi.fg.annotare2.web.gwt.common.client.view.UploadProgressPopupPanel.UploaderFileCallback",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/view/UploadProgressPopupPanel.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 63,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "file : ResumableFile"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/view/UploadProgressPopupPanel.java",
+		"startLine": 189,
+		"endLine": 192,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onFileSuccess(uploader ResumableUploader, file ResumableFile) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/view/UploadProgressPopupPanel.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 63,
+		"endColumn": 87,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "file : ResumableFile"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/view/UploadProgressPopupPanel.java",
+		"startLine": 203,
+		"endLine": 211,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public onFileSuccess(uploader ResumableUploader, file ResumableFile) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : AsyncCallback<Map<Integer,String>> to callback : AsyncCallback<String> in method public registerHttpFile(submissionId long, fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.common.client.proxy.DataFilesProxy",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/proxy/DataFilesProxy.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 84,
+		"endColumn": 134,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : AsyncCallback<Map<Integer,String>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/proxy/DataFilesProxy.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 80,
+		"endColumn": 116,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : AsyncCallback<String>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : AsyncCallback<Map<Integer,String>> to callback : AsyncCallback<String> in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.activity.experiment.DataUploadAndAssignmentActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 59,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : AsyncCallback<Map<Integer,String>>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 55,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : AsyncCallback<String>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type callback : AsyncCallback<Map<Integer,String>> to callback : AsyncCallback<String> in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.user.client.activity.ImportSubmissionActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 59,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "callback : AsyncCallback<Map<Integer,String>>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 55,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "callback : AsyncCallback<String>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.gwt.common.client.DataFilesService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 63,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 52,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.server.rpc.DataFilesServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 70,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 59,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.activity.experiment.DataUploadAndAssignmentActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.user.client.activity.ImportSubmissionActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<Integer,String> to String in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.gwt.common.client.DataFilesService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<Integer,String>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 149,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 11,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 135,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Map<Integer,String> to String in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.server.rpc.DataFilesServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Map<Integer,String>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 12,
+		"endColumn": 18,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String> renamed to public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String in class uk.ac.ebi.fg.annotare2.web.gwt.common.client.DataFilesService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 149,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 135,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String> renamed to public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String in class uk.ac.ebi.fg.annotare2.web.server.rpc.DataFilesServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>) : Map<Integer,String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 122,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void renamed to public registerHttpFile(submissionId long, fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void in class uk.ac.ebi.fg.annotare2.web.gwt.common.client.proxy.DataFilesProxy",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/proxy/DataFilesProxy.java",
+		"startLine": 77,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerHttpFiles(submissionId long, filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/proxy/DataFilesProxy.java",
+		"startLine": 76,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerHttpFile(submissionId long, fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public uploadFiles(filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void renamed to public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void in class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.activity.experiment.DataUploadAndAssignmentActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 199,
+		"endLine": 202,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public uploadFiles(filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 198,
+		"endLine": 201,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public uploadFiles(filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void renamed to public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void in class uk.ac.ebi.fg.annotare2.web.gwt.user.client.activity.ImportSubmissionActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 168,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public uploadFiles(filesInfo List<HttpFileInfo>, callback AsyncCallback<Map<Integer,String>>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 167,
+		"endLine": 170,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.gwt.common.client.DataFilesService",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 63,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/common/client/DataFilesService.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 52,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public registerUploadedFile(submissionId long, fileInfo UploadedFileInfo) : String from class uk.ac.ebi.fg.annotare2.web.server.rpc.DataFilesServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 70,
+		"endColumn": 98,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/rpc/DataFilesServiceImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 59,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.activity.experiment.DataUploadAndAssignmentActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/experiment/DataUploadAndAssignmentActivity.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter filesInfo : List<HttpFileInfo> to fileInfo : UploadedFileInfo in method public uploadFile(fileInfo UploadedFileInfo, callback AsyncCallback<String>) : void from class uk.ac.ebi.fg.annotare2.web.gwt.user.client.activity.ImportSubmissionActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 29,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filesInfo : List<HttpFileInfo>"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 28,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileInfo : UploadedFileInfo"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/user/client/activity/ImportSubmissionActivity.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

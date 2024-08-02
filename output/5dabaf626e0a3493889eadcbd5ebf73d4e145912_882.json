@@ -1,0 +1,117 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "5dabaf626e0a3493889eadcbd5ebf73d4e145912",
+	"url": "https://github.com/apache/camel/commit/5dabaf626e0a3493889eadcbd5ebf73d4e145912",
+	"refactorings": [{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type SocketException to IOException in method public InterfacesTest() from class org.apache.camel.component.jetty.InterfacesTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "SocketException"
+}, {
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 18,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public InterfacesTest()"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 36,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 18,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public InterfacesTest()"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable expectedMessages : int in method public testLocalInterfaceHandled() : void from class org.apache.camel.component.jetty.InterfacesTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "expectedMessages : int"
+}, {
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable nextAddress : InetAddress in method public InterfacesTest() from class org.apache.camel.component.jetty.InterfacesTest",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 29,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "nextAddress : InetAddress"
+}, {
+		"filePath": "components/camel-jetty/src/test/java/org/apache/camel/component/jetty/InterfacesTest.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 17,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

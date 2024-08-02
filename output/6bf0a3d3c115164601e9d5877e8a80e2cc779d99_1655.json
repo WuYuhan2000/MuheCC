@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven-plugins",
+	"sha1": "6bf0a3d3c115164601e9d5877e8a80e2cc779d99",
+	"url": "https://github.com/apache/maven-plugins/commit/6bf0a3d3c115164601e9d5877e8a80e2cc779d99",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable archiveBaseDir : File in method private processFileSets(archiver Archiver, fileSets List, includeBaseDirecetory boolean) : void from class org.apache.maven.plugin.assembly.AssemblyMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-assembly-plugin/src/main/java/org/apache/maven/plugin/assembly/AssemblyMojo.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 13,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-assembly-plugin/src/main/java/org/apache/maven/plugin/assembly/AssemblyMojo.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 18,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "archiveBaseDir : File"
+}, {
+		"filePath": "maven-assembly-plugin/src/main/java/org/apache/maven/plugin/assembly/AssemblyMojo.java",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

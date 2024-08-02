@@ -1,0 +1,240 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "100f571c9a2835d5a30a55374b9be74c147e031f",
+	"url": "https://github.com/ReactiveX/RxJava/commit/100f571c9a2835d5a30a55374b9be74c147e031f",
+	"refactorings": [{
+	"type": "Inline Method",
+	"description": "Inline Method public forEach(observer Observer<T>) : void inlined to public forEach(onNext Action1<T>) : void in class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 336,
+		"endLine": 372,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public forEach(observer Observer<T>) : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 345,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 367,
+		"endLine": 371,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 369,
+		"endLine": 371,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 346,
+		"endLine": 352,
+		"startColumn": 39,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 438,
+		"endLine": 459,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public forEach(onNext Action1<T>) : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 440,
+		"endLine": 458,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "forEach(new Observer<T>(){\n  public void onCompleted(){\n  }\n  public void onError(  Exception e){\n    handleError(e);\n  }\n  public void onNext(  T args){\n    if (onNext == null) {\n      throw new RuntimeException(\"onNext must be implemented\");\n    }\n    onNext.call(args);\n  }\n}\n)"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 21,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 347,
+		"endLine": 351,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 349,
+		"endLine": 351,
+		"startColumn": 27,
+		"endColumn": 18,
+		"codeElementType": "FINALLY_BLOCK",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 337,
+		"endLine": 387,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public forEach(onNext Action1<T>) : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 17,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 353,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 374,
+		"endLine": 378,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 376,
+		"endLine": 378,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 354,
+		"endLine": 356,
+		"startColumn": 39,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

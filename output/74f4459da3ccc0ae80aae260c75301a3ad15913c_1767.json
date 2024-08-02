@@ -1,0 +1,168 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/isa-tools/isacreator",
+	"sha1": "74f4459da3ccc0ae80aae260c75301a3ad15913c",
+	"url": "https://github.com/isa-tools/isacreator/commit/74f4459da3ccc0ae80aae260c75301a3ad15913c",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public ValidateUI(isacreatorEnvironment ISAcreator, mode OperatingMode) extracted from public ValidateUI(isacreatorEnvironment ISAcreator) in class org.isatools.isacreator.externalutils.convertvalidate.ValidateUI",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/validate/ui/ValidateUI.java",
+		"startLine": 82,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public ValidateUI(isacreatorEnvironment ISAcreator)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/validate/ui/ValidateUI.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/validate/ui/ValidateUI.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 78,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public ValidateUI(isacreatorEnvironment ISAcreator, mode OperatingMode)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 73,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public ValidateUI(isacreatorEnvironment ISAcreator)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(isacreatorEnvironment,OperatingMode.VALIDATE)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.isatools.isacreator.mgrast.model.ConfidenceLevel moved and renamed to org.isatools.isacreator.externalutils.convertvalidate.OperatingMode",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/mgrast/model/ConfidenceLevel.java",
+		"startLine": 40,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.isatools.isacreator.mgrast.model.ConfidenceLevel"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/OperatingMode.java",
+		"startLine": 3,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ENUM_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.isatools.isacreator.externalutils.convertvalidate.OperatingMode"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.isatools.isacreator.validate.ui.ValidateUI moved to org.isatools.isacreator.externalutils.convertvalidate.ValidateUI",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/validate/ui/ValidateUI.java",
+		"startLine": 37,
+		"endLine": 200,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.isatools.isacreator.validate.ui.ValidateUI"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidateUI.java",
+		"startLine": 41,
+		"endLine": 302,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.isatools.isacreator.externalutils.convertvalidate.ValidateUI"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.isatools.isacreator.validate.ui.ValidationUtils moved to org.isatools.isacreator.externalutils.convertvalidate.ValidationUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/validate/ui/ValidationUtils.java",
+		"startLine": 9,
+		"endLine": 66,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.isatools.isacreator.validate.ui.ValidationUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/externalutils/convertvalidate/ValidationUtils.java",
+		"startLine": 9,
+		"endLine": 66,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.isatools.isacreator.externalutils.convertvalidate.ValidationUtils"
+}]
+}
+]
+}]
+}

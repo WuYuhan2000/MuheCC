@@ -1,0 +1,2562 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hama",
+	"sha1": "1f363c2f0b1d5ee8cb7501a2a7a8994349724cc6",
+	"url": "https://github.com/apache/hama/commit/1f363c2f0b1d5ee8cb7501a2a7a8994349724cc6",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public clearOutgoingQueues() : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 97,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public clearOutgoingQueues() : void"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public getCurrentMessage() : M from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public getCurrentMessage() : M"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public getNumCurrentMessages() : int from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public getNumCurrentMessages() : int"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter attemptId : TaskAttemptID in method public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, addr InetSocketAddress) : void from class org.apache.hama.bsp.message.AvroMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 62,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(peer BSPPeer<?,?,?,?,M>, conf Configuration, addr InetSocketAddress) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "attemptId : TaskAttemptID"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 50,
+		"endLine": 56,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, addr InetSocketAddress) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter attemptId : TaskAttemptID in method public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void from class org.apache.hama.bsp.LocalBSPRunner.LocalMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 341,
+		"endLine": 345,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 344,
+		"endLine": 344,
+		"startColumn": 22,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "attemptId : TaskAttemptID"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 343,
+		"endLine": 348,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter attemptId : TaskAttemptID in method public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void from class org.apache.hama.bsp.message.HadoopMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 64,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "attemptId : TaskAttemptID"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 51,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter attemptId : TaskAttemptID in method public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void from class org.apache.hama.bsp.message.MessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 38,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 20,
+		"endColumn": 43,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "attemptId : TaskAttemptID"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 40,
+		"endLine": 46,
+		"startColumn": 3,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected conf : Configuration from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 25,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private conf : Configuration"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected conf : Configuration"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected localQueue : MessageQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected localQueue : MessageQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected localQueueForNextIteration : SynchronizedQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected localQueueForNextIteration : SynchronizedQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type localOutgoingMessages : HashMap<InetSocketAddress,LinkedList<M>> to localOutgoingMessages : HashMap<InetSocketAddress,MessageQueue<M>> in class org.apache.hama.bsp.LocalBSPRunner.LocalMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 61,
+		"endColumn": 132,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localOutgoingMessages : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 63,
+		"endColumn": 136,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "localOutgoingMessages : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type localQueue : Deque<M> to localQueue : MessageQueue<M> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type localQueue : Deque<M> to localQueue : MessageQueue<M> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type localQueueForNextIteration : ConcurrentLinkedQueue<M> to localQueueForNextIteration : SynchronizedQueue<M> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type localQueueForNextIteration : ConcurrentLinkedQueue<M> to localQueueForNextIteration : SynchronizedQueue<M> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>> to outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>> to outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> in class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private messagingInternal(conf Configuration) : void from class org.apache.hama.bsp.message.TestHadoopMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 39,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMessaging() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 58,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private messagingInternal(conf Configuration) : void"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Iterator<Entry<InetSocketAddress,LinkedList<M>>> to Iterator<Entry<InetSocketAddress,MessageQueue<M>>> in method public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.LocalBSPRunner.LocalMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 12,
+		"endColumn": 61,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 387,
+		"endLine": 390,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 12,
+		"endColumn": 63,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 391,
+		"endLine": 394,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Iterator<Entry<InetSocketAddress,LinkedList<M>>> to Iterator<Entry<InetSocketAddress,MessageQueue<M>>> in method public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 10,
+		"endColumn": 59,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 16,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Iterator<Entry<InetSocketAddress,LinkedList<M>>> to Iterator<Entry<InetSocketAddress,MessageQueue<M>>> in method public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 16,
+		"endColumn": 65,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 16,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Iterator<Entry<InetSocketAddress,LinkedList<M>>> to Iterator<Entry<InetSocketAddress,MessageQueue<M>>> in method public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.MessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 10,
+		"endColumn": 59,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 70,
+		"endLine": 75,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 10,
+		"endColumn": 61,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/MessageManager.java",
+		"startLine": 75,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 83,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type entry : Entry<InetSocketAddress,LinkedList<IntWritable>> to entry : Entry<InetSocketAddress,MessageQueue<IntWritable>> in method private messagingInternal(conf Configuration) : void from class org.apache.hama.bsp.message.TestHadoopMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 60,
+		"endLine": 61,
+		"startColumn": 55,
+		"endColumn": 16,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "entry : Entry<InetSocketAddress,LinkedList<IntWritable>>"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 68,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 80,
+		"endLine": 81,
+		"startColumn": 57,
+		"endColumn": 16,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "entry : Entry<InetSocketAddress,MessageQueue<IntWritable>>"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type entry : Entry<InetSocketAddress,LinkedList<M>> to entry : Entry<InetSocketAddress,MessageQueue<M>> in method public sync() : void from class org.apache.hama.bsp.BSPPeerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 47,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "entry : Entry<InetSocketAddress,LinkedList<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 49,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "entry : Entry<InetSocketAddress,MessageQueue<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type it : Iterator<Entry<InetSocketAddress,LinkedList<M>>> to it : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> in method public sync() : void from class org.apache.hama.bsp.BSPPeerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 297,
+		"endLine": 298,
+		"startColumn": 55,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "it : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 306,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 299,
+		"endLine": 300,
+		"startColumn": 57,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "it : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 7,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/BSPPeerImpl.java",
+		"startLine": 308,
+		"endLine": 323,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type messageIterator : Iterator<Entry<InetSocketAddress,LinkedList<IntWritable>>> to messageIterator : Iterator<Entry<InetSocketAddress,MessageQueue<IntWritable>>> in method private messagingInternal(conf Configuration) : void from class org.apache.hama.bsp.message.TestHadoopMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 65,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "messageIterator : Iterator<Entry<InetSocketAddress,LinkedList<IntWritable>>>"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 60,
+		"endLine": 61,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 77,
+		"endLine": 78,
+		"startColumn": 67,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "messageIterator : Iterator<Entry<InetSocketAddress,MessageQueue<IntWritable>>>"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 80,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type msgs : LinkedList<M> to msgs : MessageQueue<M> in method public send(peerName String, msg M) : void from class org.apache.hama.bsp.LocalBSPRunner.LocalMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 21,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "msgs : LinkedList<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 374,
+		"endLine": 374,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 369,
+		"endLine": 371,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 371,
+		"endLine": 371,
+		"startColumn": 23,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "msgs : MessageQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/LocalBSPRunner.java",
+		"startLine": 372,
+		"endLine": 374,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type queue : LinkedList<M> to queue : MessageQueue<M> in method public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 19,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "queue : LinkedList<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 144,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "queue : MessageQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 119,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type queue : LinkedList<M> to queue : MessageQueue<M> in method public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 19,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "queue : LinkedList<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 110,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "queue : MessageQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 119,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.hama.bsp.message.AbstractMessageManager from class org.apache.hama.bsp.message.AvroMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 47,
+		"endLine": 194,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hama.bsp.message.AvroMessageManagerImpl"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 133,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 43,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.hama.bsp.message.AvroMessageManagerImpl"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 38,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.hama.bsp.message.AbstractMessageManager"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 97,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 107,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.hama.bsp.message.AbstractMessageManager from class org.apache.hama.bsp.message.HadoopMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 42,
+		"endLine": 198,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hama.bsp.message.HadoopMessageManagerImpl"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 98,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 158,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 187,
+		"endLine": 190,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 64,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 25,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private conf : Configuration"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 37,
+		"endLine": 143,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.hama.bsp.message.HadoopMessageManagerImpl"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 38,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.hama.bsp.message.AbstractMessageManager"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 107,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 97,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 57,
+		"endLine": 68,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public init(attemptId TaskAttemptID, peer BSPPeer<?,?,?,?,M>, conf Configuration, peerAddress InetSocketAddress) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected conf : Configuration"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.hama.bsp.message.AbstractMessageManager from classes [org.apache.hama.bsp.message.CompressableMessageManager]",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/CompressableMessageManager.java",
+		"startLine": 25,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.hama.bsp.message.CompressableMessageManager"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/CompressableMessageManager.java",
+		"startLine": 25,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.hama.bsp.message.CompressableMessageManager"
+}, {
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 38,
+		"endLine": 160,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.hama.bsp.message.AbstractMessageManager"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private conf : Configuration from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected conf : Configuration from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 25,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private conf : Configuration"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 27,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected conf : Configuration"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private localQueue : Deque<M> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to protected localQueue : MessageQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private localQueue : Deque<M> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected localQueue : MessageQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 20,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueue : Deque<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 29,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected localQueue : MessageQueue<M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private localQueueForNextIteration : ConcurrentLinkedQueue<M> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to protected localQueueForNextIteration : SynchronizedQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private localQueueForNextIteration : ConcurrentLinkedQueue<M> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected localQueueForNextIteration : SynchronizedQueue<M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 59,
+		"endColumn": 123,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private outgoingQueues : HashMap<InetSocketAddress,LinkedList<M>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 63,
+		"endColumn": 129,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected outgoingQueues : HashMap<InetSocketAddress,MessageQueue<M>>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to protected peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected peer : BSPPeer<?,?,?,?,M> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 34,
+		"endColumn": 38,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peer : BSPPeer<?,?,?,?,M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 36,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected peer : BSPPeer<?,?,?,?,M>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to protected peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to protected peerSocketCache : HashMap<String,InetSocketAddress> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 52,
+		"endColumn": 110,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private peerSocketCache : HashMap<String,InetSocketAddress>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 54,
+		"endColumn": 112,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected peerSocketCache : HashMap<String,InetSocketAddress>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public clearOutgoingQueues() : void from class org.apache.hama.bsp.message.AvroMessageManagerImpl to public clearOutgoingQueues() : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 75,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 97,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public clearOutgoingQueues() : void from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to public clearOutgoingQueues() : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 158,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 97,
+		"endLine": 105,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public clearOutgoingQueues() : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getCurrentMessage() : M from class org.apache.hama.bsp.message.AvroMessageManagerImpl to public getCurrentMessage() : M from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getCurrentMessage() : M from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to public getCurrentMessage() : M from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getCurrentMessage() : M"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>> from class org.apache.hama.bsp.message.AvroMessageManagerImpl to public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>> from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,LinkedList<M>>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 127,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getMessageIterator() : Iterator<Entry<InetSocketAddress,MessageQueue<M>>>"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getNumCurrentMessages() : int from class org.apache.hama.bsp.message.AvroMessageManagerImpl to public getNumCurrentMessages() : int from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 93,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getNumCurrentMessages() : int from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to public getNumCurrentMessages() : int from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 187,
+		"endLine": 190,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getNumCurrentMessages() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.AvroMessageManagerImpl to public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 133,
+		"endLine": 149,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 107,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.HadoopMessageManagerImpl to public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.AbstractMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 98,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 107,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable conf : Configuration to conf : Configuration in method private messagingInternal(conf Configuration) : void from class org.apache.hama.bsp.message.TestHadoopMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 19,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 41,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 43,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 50,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 34,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 59,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 61,
+		"endLine": 62,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 69,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private localQueueForNextIteration : ConcurrentLinkedQueue<M> from class org.apache.hama.bsp.message.AvroMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AvroMessageManagerImpl.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private localQueueForNextIteration : ConcurrentLinkedQueue<M> from class org.apache.hama.bsp.message.HadoopMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 42,
+		"endColumn": 101,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private localQueueForNextIteration : ConcurrentLinkedQueue<M>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 34,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "protected localQueueForNextIteration : SynchronizedQueue<M>"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier final in method public send(peerName String, msg M) : void from class org.apache.hama.bsp.message.HadoopMessageManagerImpl",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/HadoopMessageManagerImpl.java",
+		"startLine": 98,
+		"endLine": 116,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public send(peerName String, msg M) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hama/bsp/message/AbstractMessageManager.java",
+		"startLine": 107,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public send(peerName String, msg M) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testMessaging() : void renamed to private messagingInternal(conf Configuration) : void in class org.apache.hama.bsp.message.TestHadoopMessageManager",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 39,
+		"endLine": 80,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMessaging() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hama/bsp/message/TestHadoopMessageManager.java",
+		"startLine": 58,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private messagingInternal(conf Configuration) : void"
+}]
+}
+]
+}]
+}

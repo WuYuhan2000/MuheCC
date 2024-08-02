@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/agorava/agorava-core",
+	"sha1": "9cf7838196de04939db4a066fe3f271409df4bb9",
+	"url": "https://github.com/agorava/agorava-core/commit/9cf7838196de04939db4a066fe3f271409df4bb9",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public startDanceFor(providerName String, internalCallBack String) : String extracted from public startDanceFor(providerName String) : String in class org.agorava.cdi.OAuthLifeCycleServiceImpl",
+	"leftSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 154,
+		"endLine": 158,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public startDanceFor(providerName String) : String"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 160,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public startDanceFor(providerName String, internalCallBack String) : String"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public startDanceFor(providerName String) : String"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 16,
+		"endColumn": 49,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startDanceFor(providerName,null)"
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 13,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "agorava-core-impl-cdi/src/main/java/org/agorava/cdi/OAuthLifeCycleServiceImpl.java",
+		"startLine": 163,
+		"endLine": 164,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

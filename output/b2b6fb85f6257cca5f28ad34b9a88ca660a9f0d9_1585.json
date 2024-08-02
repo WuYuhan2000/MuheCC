@@ -1,0 +1,492 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "b2b6fb85f6257cca5f28ad34b9a88ca660a9f0d9",
+	"url": "https://github.com/aeshell/aesh/commit/b2b6fb85f6257cca5f28ad34b9a88ca660a9f0d9",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getHeight() : int from class org.jboss.aesh.terminal.api.Size",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 134,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHeight() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getHeight() : int"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getWidth() : int from class org.jboss.aesh.terminal.api.Size",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 150,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWidth() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getWidth() : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.jboss.aesh.terminal.api.Size from class org.jboss.aesh.terminal.POSIXTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 35,
+		"endLine": 325,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.POSIXTerminal"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 134,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHeight() : int"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 150,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWidth() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/ShellWrapper.java",
+		"startLine": 39,
+		"endLine": 211,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.jboss.aesh.terminal.ShellWrapper"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 11,
+		"endLine": 71,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.jboss.aesh.terminal.api.Size"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getHeight() : int"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public getWidth() : int"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.jboss.aesh.terminal.impl.CygwinPty from class org.jboss.aesh.terminal.POSIXTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 35,
+		"endLine": 325,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.POSIXTerminal"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 252,
+		"endLine": 262,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private exec(cmd String) : String"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 264,
+		"endLine": 313,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private exec(cmd String[]) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/ShellWrapper.java",
+		"startLine": 39,
+		"endLine": 211,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.jboss.aesh.terminal.ShellWrapper"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/impl/CygwinPty.java",
+		"startLine": 38,
+		"endLine": 288,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.jboss.aesh.terminal.impl.CygwinPty"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/impl/CygwinPty.java",
+		"startLine": 272,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private exec(cmd String...) : String"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/impl/CygwinPty.java",
+		"startLine": 272,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private exec(cmd String...) : String"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.console.terminal.CursesTest moved to org.jboss.aesh.console.terminal.utils.CursesTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/console/terminal/CursesTest.java",
+		"startLine": 18,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.console.terminal.CursesTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/console/terminal/utils/CursesTest.java",
+		"startLine": 18,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.console.terminal.utils.CursesTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.console.terminal.InfoCmpTest moved to org.jboss.aesh.console.terminal.utils.InfoCmpTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/console/terminal/InfoCmpTest.java",
+		"startLine": 23,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.console.terminal.InfoCmpTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/console/terminal/utils/InfoCmpTest.java",
+		"startLine": 23,
+		"endLine": 39,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.console.terminal.utils.InfoCmpTest"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.terminal.Curses moved to org.jboss.aesh.terminal.utils.Curses",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/Curses.java",
+		"startLine": 15,
+		"endLine": 354,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.Curses"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/utils/Curses.java",
+		"startLine": 15,
+		"endLine": 354,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.terminal.utils.Curses"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.terminal.ExecHelper moved to org.jboss.aesh.terminal.utils.ExecHelper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/ExecHelper.java",
+		"startLine": 17,
+		"endLine": 69,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.ExecHelper"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/utils/ExecHelper.java",
+		"startLine": 17,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.terminal.utils.ExecHelper"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.terminal.InfoCmp moved to org.jboss.aesh.terminal.utils.InfoCmp",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/InfoCmp.java",
+		"startLine": 18,
+		"endLine": 740,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.InfoCmp"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/utils/InfoCmp.java",
+		"startLine": 18,
+		"endLine": 740,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.terminal.utils.InfoCmp"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class org.jboss.aesh.terminal.OSUtils moved to org.jboss.aesh.terminal.utils.OSUtils",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/OSUtils.java",
+		"startLine": 5,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.OSUtils"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/utils/OSUtils.java",
+		"startLine": 13,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.jboss.aesh.terminal.utils.OSUtils"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private exec(cmd String[]) : String from class org.jboss.aesh.terminal.POSIXTerminal to private exec(cmd String...) : String from class org.jboss.aesh.terminal.impl.CygwinPty",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 264,
+		"endLine": 313,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private exec(cmd String[]) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/impl/CygwinPty.java",
+		"startLine": 272,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private exec(cmd String...) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private getHeight() : int from class org.jboss.aesh.terminal.POSIXTerminal to public getHeight() : int from class org.jboss.aesh.terminal.api.Size",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 134,
+		"endLine": 148,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getHeight() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 32,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getHeight() : int"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private getWidth() : int from class org.jboss.aesh.terminal.POSIXTerminal to public getWidth() : int from class org.jboss.aesh.terminal.api.Size",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 150,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWidth() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/api/Size.java",
+		"startLine": 24,
+		"endLine": 26,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getWidth() : int"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type InterruptedException in method private exec(cmd String[]) : String from class org.jboss.aesh.terminal.POSIXTerminal",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 72,
+		"endColumn": 92,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 264,
+		"endLine": 313,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private exec(cmd String[]) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/impl/CygwinPty.java",
+		"startLine": 272,
+		"endLine": 286,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "private exec(cmd String...) : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute stdErr : PrintStream to err : PrintStream in class org.jboss.aesh.terminal.ShellWrapper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 25,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "stdErr : PrintStream"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/ShellWrapper.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 25,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "err : PrintStream"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.jboss.aesh.terminal.POSIXTerminal renamed to org.jboss.aesh.terminal.ShellWrapper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/POSIXTerminal.java",
+		"startLine": 35,
+		"endLine": 325,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.terminal.POSIXTerminal"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/terminal/ShellWrapper.java",
+		"startLine": 39,
+		"endLine": 211,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.jboss.aesh.terminal.ShellWrapper"
+}]
+}
+]
+}]
+}

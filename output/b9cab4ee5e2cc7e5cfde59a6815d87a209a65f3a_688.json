@@ -1,0 +1,2661 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "b9cab4ee5e2cc7e5cfde59a6815d87a209a65f3a",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/b9cab4ee5e2cc7e5cfde59a6815d87a209a65f3a",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type delegate : RestletContainer to delegate : Maplet in class org.restlet.component.DefaultRestletContainer",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/component/DefaultRestletContainer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 31,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "delegate : RestletContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/component/DefaultRestletContainer.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "delegate : Maplet"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public AbstractChainlet(parent Component) from class org.restlet.AbstractChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public ChainletImpl(parent Component) from class com.noelios.restlet.impl.ChainletImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public DefaultMaplet(parent Component) from class org.restlet.DefaultMaplet",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public DirectoryRestlet(parent Component, rootPath String, deeply boolean, indexName String) from class com.noelios.restlet.DirectoryRestlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public FileRestlet(parent Component, filePath String, mediaType MediaType) from class com.noelios.restlet.FileRestlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public GuardChainlet(parent Component, logName String, authentication boolean, scheme ChallengeScheme, realm String, authorization boolean) from class com.noelios.restlet.GuardChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public LogChainlet(parent Component, logName String) from class com.noelios.restlet.LogChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public LogChainlet(parent Component, logName String, logFormat String) from class com.noelios.restlet.LogChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public StatusChainlet(parent Component, overwrite boolean, email String, homeURI String) from class com.noelios.restlet.StatusChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 26,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 42,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 50,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 39,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 39,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 38,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 46,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method private testCall(myContainer DefaultRestletContainer, method Method, uri String) : void from class com.noelios.restlet.test.RedirectTest",
+	"leftSideLocations": [{
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 26,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 10,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 26,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 10,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public main(args String[]) : void from class com.noelios.restlet.tutorial.Tutorial05",
+	"leftSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 10,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 10,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial05.java",
+		"startLine": 54,
+		"endLine": 65,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public main(args String[]) : void from class com.noelios.restlet.tutorial.Tutorial06",
+	"leftSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial06.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public main(args String[]) : void from class com.noelios.restlet.tutorial.Tutorial08",
+	"leftSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 10,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 10,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 10,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 10,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 10,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 10,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial08.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public main(args String[]) : void from class com.noelios.restlet.tutorial.Tutorial09a",
+	"leftSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 10,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 10,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 65,
+		"endLine": 72,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 10,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 10,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 10,
+		"endColumn": 121,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 64,
+		"endLine": 71,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 10,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial09a.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public main(args String[]) : void from class com.noelios.restlet.tutorial.Tutorial10",
+	"leftSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 10,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 10,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 10,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/tutorial/com/noelios/restlet/tutorial/Tutorial10.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type myContainer : RestletContainer to myContainer : DefaultRestletContainer in method public testRedirect() : void from class com.noelios.restlet.test.RedirectTest",
+	"leftSideLocations": [{
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 27,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "myContainer : RestletContainer"
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 10,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 10,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 10,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 10,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 10,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 10,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 10,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 10,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 10,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 10,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 68,
+		"endLine": 80,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 32,
+		"endColumn": 89,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "myContainer : DefaultRestletContainer"
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 10,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 10,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 10,
+		"endColumn": 107,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 10,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 10,
+		"endColumn": 106,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 10,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 10,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 10,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 10,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 10,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "source/test/com/noelios/restlet/test/RedirectTest.java",
+		"startLine": 67,
+		"endLine": 79,
+		"startColumn": 10,
+		"endColumn": 15,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class com.noelios.restlet.impl.ComponentImpl moved and renamed to org.restlet.component.AbstractComponent",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/ComponentImpl.java",
+		"startLine": 37,
+		"endLine": 173,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.noelios.restlet.impl.ComponentImpl"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/component/AbstractComponent.java",
+		"startLine": 39,
+		"endLine": 189,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.restlet.component.AbstractComponent"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public RestletContainerImpl(parent Component, name String) from class com.noelios.restlet.impl.RestletContainerImpl to public DefaultRestletContainer(parent Component, name String) from class org.restlet.component.DefaultRestletContainer",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletContainerImpl.java",
+		"startLine": 44,
+		"endLine": 54,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RestletContainerImpl(parent Component, name String)"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/component/DefaultRestletContainer.java",
+		"startLine": 55,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public DefaultRestletContainer(parent Component, name String)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute handlerMatches : List<String> to restletMatches : List<String> in class com.noelios.restlet.impl.RestletCallImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handlerMatches : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 27,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "restletMatches : List<String>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute handlerPath : String to restletPath : String in class com.noelios.restlet.impl.RestletCallImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "handlerPath : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 21,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "restletPath : String"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute setContainer : boolean to setParent : boolean in class com.noelios.restlet.impl.RestletTarget",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletTarget.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 22,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "setContainer : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletTarget.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "setParent : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createChainlet(container RestletContainer) : Chainlet renamed to public createDelegateChainlet(parent Component) : Chainlet in class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 212,
+		"endLine": 220,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createChainlet(container RestletContainer) : Chainlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 302,
+		"endLine": 311,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateChainlet(parent Component) : Chainlet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createChainlet(container RestletContainer) : Chainlet renamed to public createDelegateChainlet(parent Component) : Chainlet in class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 43,
+		"endLine": 48,
+		"startColumn": 4,
+		"endColumn": 63,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createChainlet(container RestletContainer) : Chainlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 81,
+		"endLine": 87,
+		"startColumn": 4,
+		"endColumn": 61,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateChainlet(parent Component) : Chainlet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createChainlet(container RestletContainer) : Chainlet renamed to public createDelegateChainlet(parent Component) : Chainlet in class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 76,
+		"endLine": 84,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createChainlet(container RestletContainer) : Chainlet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 115,
+		"endLine": 124,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateChainlet(parent Component) : Chainlet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createMaplet(container RestletContainer) : Maplet renamed to public createDelegateMaplet(parent Component) : Maplet in class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 171,
+		"endLine": 179,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createMaplet(container RestletContainer) : Maplet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 126,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateMaplet(parent Component) : Maplet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createRestlet(container RestletContainer) : Maplet renamed to public createDelegateMaplet(parent Component) : Maplet in class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 343,
+		"endLine": 351,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createRestlet(container RestletContainer) : Maplet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 313,
+		"endLine": 322,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateMaplet(parent Component) : Maplet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public createRestlet(container RestletContainer) : Maplet renamed to public createDelegateMaplet(parent Component) : Maplet in class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 110,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createRestlet(container RestletContainer) : Maplet"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 89,
+		"endLine": 95,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createDelegateMaplet(parent Component) : Maplet"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getHandlerMatches() : List<String> renamed to public getRestletMatches() : List<String> in class com.noelios.restlet.impl.RestletCallImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 455,
+		"endLine": 464,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHandlerMatches() : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 563,
+		"endLine": 572,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getRestletMatches() : List<String>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getHandlerPath() : String renamed to public getRestletPath() : String in class com.noelios.restlet.impl.RestletCallImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 466,
+		"endLine": 473,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHandlerPath() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletCallImpl.java",
+		"startLine": 574,
+		"endLine": 581,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getRestletPath() : String"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public isSetContainer() : boolean renamed to public isSetParent() : boolean in class com.noelios.restlet.impl.RestletTarget",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletTarget.java",
+		"startLine": 214,
+		"endLine": 221,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isSetContainer() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/RestletTarget.java",
+		"startLine": 213,
+		"endLine": 220,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public isSetParent() : boolean"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public AbstractChainlet(parent Component) from class org.restlet.AbstractChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/AbstractChainlet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public ChainletImpl(parent Component) from class com.noelios.restlet.impl.ChainletImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 24,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 24,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/ChainletImpl.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public DefaultMaplet(parent Component) from class org.restlet.DefaultMaplet",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "source/main/org/restlet/DefaultMaplet.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public DirectoryRestlet(parent Component, rootPath String, deeply boolean, indexName String) from class com.noelios.restlet.DirectoryRestlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 28,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/DirectoryRestlet.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public FileRestlet(parent Component, filePath String, mediaType MediaType) from class com.noelios.restlet.FileRestlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/FileRestlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public GuardChainlet(parent Component, logName String, authentication boolean, scheme ChallengeScheme, realm String, authorization boolean) from class com.noelios.restlet.GuardChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 25,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 25,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/GuardChainlet.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public LogChainlet(parent Component, logName String) from class com.noelios.restlet.LogChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public LogChainlet(parent Component, logName String, logFormat String) from class com.noelios.restlet.LogChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 23,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/LogChainlet.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public StatusChainlet(parent Component, overwrite boolean, email String, homeURI String) from class com.noelios.restlet.StatusChainlet",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 26,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 24,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 26,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/StatusChainlet.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 35,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 43,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateChainlet(parent Component) : Chainlet from class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 42,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 50,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class com.noelios.restlet.impl.FactoryImpl",
+	"leftSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 7,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 39,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/com/noelios/restlet/impl/FactoryImpl.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class org.restlet.Factory",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Factory.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 39,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter container : RestletContainer to parent : Component in method public createDelegateMaplet(parent Component) : Maplet from class org.restlet.Manager",
+	"leftSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 38,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "container : RestletContainer"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 46,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "parent : Component"
+}, {
+		"filePath": "source/main/org/restlet/Manager.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

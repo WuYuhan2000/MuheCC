@@ -1,0 +1,1089 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ismavatar/lateralgm",
+	"sha1": "a46fd1eeab3746ce993bb67780ea0b0784467816",
+	"url": "https://github.com/ismavatar/lateralgm/commit/a46fd1eeab3746ce993bb67780ea0b0784467816",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter libraryId : int in method public getLibAction(libraryId int, libActionId int) : LibAction from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLibAction(LibraryId int, LibActionId int) : LibAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 39,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "libraryId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 36,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getLibAction(libraryId int, libActionId int) : LibAction"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public libs : ArrayList<Library> from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 36,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private libs : ArrayList<Library>"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 35,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public libs : ArrayList<Library>"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getLibAction(id int) : LibAction from class org.lateralgm.resources.library.Library",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/Library.java",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLibAction(id int) : LibAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/Library.java",
+		"startLine": 27,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getLibAction(id int) : LibAction"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getLibAction(libraryId int, libActionId int) : LibAction from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLibAction(LibraryId int, LibActionId int) : LibAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 36,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getLibAction(libraryId int, libActionId int) : LibAction"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Library to Action in method public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Library"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 71,
+		"endLine": 75,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLibraryList(ListIndex int) : Library"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Action"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.lateralgm.resources.sub.ActionContainer from classes [org.lateralgm.resources.sub.Event, org.lateralgm.resources.sub.Moment]",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 17,
+		"endLine": 182,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.lateralgm.resources.sub.Event"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 16,
+		"endLine": 91,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.lateralgm.resources.sub.Moment"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 13,
+		"endLine": 106,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.lateralgm.resources.sub.Event"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 11,
+		"endLine": 14,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.lateralgm.resources.sub.Moment"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 15,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.lateralgm.resources.sub.ActionContainer"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable actid : int in method public readGm6File(fileName String, root ResNode) : void from class org.lateralgm.file.Gm6File",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 728,
+		"endLine": 728,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 741,
+		"endLine": 741,
+		"startColumn": 14,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "actid : int"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable appliesTo : int in method public readGm6File(fileName String, root ResNode) : void from class org.lateralgm.file.Gm6File",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 728,
+		"endLine": 728,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 616,
+		"endLine": 616,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "appliesTo : int"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable libid : int in method public readGm6File(fileName String, root ResNode) : void from class org.lateralgm.file.Gm6File",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 728,
+		"endLine": 728,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 589,
+		"endLine": 589,
+		"startColumn": 12,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "libid : int"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable libid : int in method public readGm6File(fileName String, root ResNode) : void from class org.lateralgm.file.Gm6File",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 728,
+		"endLine": 728,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/file/Gm6File.java",
+		"startLine": 740,
+		"endLine": 740,
+		"startColumn": 14,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "libid : int"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public NoLibs() : int from class org.lateralgm.resources.library.LibManager to public NoActions() : int from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NoLibs() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public NoActions() : int"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public getLibraryList(ListIndex int) : Library from class org.lateralgm.resources.library.LibManager to public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 71,
+		"endLine": 75,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLibraryList(ListIndex int) : Library"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable lact : LibAction to libAction : LibAction in method public addAction(libAction LibAction) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "lact : LibAction"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 141,
+		"endLine": 161,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 26,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "libAction : LibAction"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 35,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable lact : LibAction to libAction : LibAction in method public addAction(libAction LibAction) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "lact : LibAction"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 50,
+		"endLine": 70,
+		"startColumn": 4,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 26,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "libAction : LibAction"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 35,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private actions : ArrayList<Action> from class org.lateralgm.resources.sub.Event to private actions : ArrayList<Action> from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private actions : ArrayList<Action>"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private actions : ArrayList<Action>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private actions : ArrayList<Action> from class org.lateralgm.resources.sub.Moment to private actions : ArrayList<Action> from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private actions : ArrayList<Action>"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private actions : ArrayList<Action>"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public NoActions() : int from class org.lateralgm.resources.sub.Event to public NoActions() : int from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 112,
+		"endLine": 115,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NoActions() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public NoActions() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public NoActions() : int from class org.lateralgm.resources.sub.Moment to public NoActions() : int from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 21,
+		"endLine": 24,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NoActions() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public NoActions() : int"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public addAction() : Action from class org.lateralgm.resources.sub.Event to public addAction() : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction() : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public addAction() : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public addAction() : Action from class org.lateralgm.resources.sub.Moment to public addAction() : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 26,
+		"endLine": 31,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction() : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 24,
+		"endLine": 29,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public addAction() : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public addAction(LibId int, LibActionId int) : Action from class org.lateralgm.resources.sub.Moment to public addAction(libAction LibAction) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 34,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction(LibId int, LibActionId int) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public addAction(libAction LibAction) : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public addAction(LibId int, lact LibAction) : Action from class org.lateralgm.resources.sub.Event to public addAction(libAction LibAction) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 125,
+		"endLine": 165,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction(LibId int, lact LibAction) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public addAction(libAction LibAction) : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public clearActions() : void from class org.lateralgm.resources.sub.Event to public clearActions() : void from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 178,
+		"endLine": 181,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public clearActions() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public clearActions() : void from class org.lateralgm.resources.sub.Moment to public clearActions() : void from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clearActions() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 71,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public clearActions() : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.Event to public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 167,
+		"endLine": 171,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.Moment to public getAction(ListIndex int) : Action from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 76,
+		"endLine": 80,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public removeAction(ListIndex int) : void from class org.lateralgm.resources.sub.Event to public removeAction(ListIndex int) : void from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 173,
+		"endLine": 176,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeAction(ListIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public removeAction(ListIndex int) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public removeAction(ListIndex int) : void from class org.lateralgm.resources.sub.Moment to public removeAction(ListIndex int) : void from class org.lateralgm.resources.sub.ActionContainer",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeAction(ListIndex int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public removeAction(ListIndex int) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public NoLibs() : int from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 37,
+		"endLine": 40,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public NoLibs() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 19,
+		"endLine": 22,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public NoActions() : int"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public getLibraryList(ListIndex int) : Library from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 71,
+		"endLine": 75,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getLibraryList(ListIndex int) : Library"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 60,
+		"endLine": 64,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public getAction(ListIndex int) : Action"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter LibActionId : int in method public addAction(LibId int, LibActionId int) : Action from class org.lateralgm.resources.sub.Moment",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 37,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "LibActionId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 34,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction(LibId int, LibActionId int) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public addAction(libAction LibAction) : Action"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter LibId : int in method public addAction(LibId int, LibActionId int) : Action from class org.lateralgm.resources.sub.Moment",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "LibId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Moment.java",
+		"startLine": 34,
+		"endLine": 74,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction(LibId int, LibActionId int) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public addAction(libAction LibAction) : Action"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter LibId : int in method public addAction(LibId int, lact LibAction) : Action from class org.lateralgm.resources.sub.Event",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 26,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "LibId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/sub/Event.java",
+		"startLine": 125,
+		"endLine": 165,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addAction(LibId int, lact LibAction) : Action"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/sub/ActionContainer.java",
+		"startLine": 32,
+		"endLine": 58,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public addAction(libAction LibAction) : Action"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter LibraryId : int in method private getLibAction(LibraryId int, LibActionId int) : LibAction from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 40,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "LibraryId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 55,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLibAction(LibraryId int, LibActionId int) : LibAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 36,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public getLibAction(libraryId int, libActionId int) : LibAction"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private addLibAction2() : LibAction renamed to private addLibAction() : LibAction in class org.lateralgm.resources.library.Library",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/Library.java",
+		"startLine": 20,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private addLibAction2() : LibAction"
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/Library.java",
+		"startLine": 20,
+		"endLine": 25,
+		"startColumn": 2,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private addLibAction() : LibAction"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter LibActionId : int to libActionId : int in method public getLibAction(libraryId int, libActionId int) : LibAction from class org.lateralgm.resources.library.LibManager",
+	"leftSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 55,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "LibActionId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 4,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 54,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "libActionId : int"
+}, {
+		"filePath": "LateralGM/org/lateralgm/resources/library/LibManager.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

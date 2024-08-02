@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "232612c800c2583da61b95397141040d3106efda",
+	"url": "https://github.com/ReactiveX/RxJava/commit/232612c800c2583da61b95397141040d3106efda",
+	"refactorings": [{
+	"type": "Move Code",
+	"description": "Move Code from public testFinally() : void to public before() : void in class rx.operators.OperationFinally.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 122,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public testFinally() : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 129,
+		"endLine": 130,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 114,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public before() : void"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testFinally() : void renamed to public testFinallyCalledOnComplete() : void in class rx.operators.OperationFinally.UnitTest",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 122,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testFinally() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 123,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testFinallyCalledOnComplete() : void"
+}]
+}
+]
+}]
+}

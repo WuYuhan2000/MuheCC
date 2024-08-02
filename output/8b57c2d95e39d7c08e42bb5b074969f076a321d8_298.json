@@ -1,0 +1,282 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "8b57c2d95e39d7c08e42bb5b074969f076a321d8",
+	"url": "https://github.com/JetBrains/intellij-community/commit/8b57c2d95e39d7c08e42bb5b074969f076a321d8",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to void in method public checkLinearGraph(linearGraph LinearGraph) : void from class com.intellij.vcs.log.graph.impl.facade.bek.BekChecker",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 28,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public checkLinearGraph(linearGraph LinearGraph) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public checkLinearGraph(linearGraph LinearGraph) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public findReversedEdge(linearGraph LinearGraph) : Pair<Integer,Integer> extracted from public checkLinearGraph(linearGraph LinearGraph) : boolean in class com.intellij.vcs.log.graph.impl.facade.bek.BekChecker",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 28,
+		"endLine": 39,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public checkLinearGraph(linearGraph LinearGraph) : boolean"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 57,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 34,
+		"endLine": 36,
+		"startColumn": 53,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 29,
+		"endLine": 37,
+		"startColumn": 56,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 37,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public findReversedEdge(linearGraph LinearGraph) : Pair<Integer,Integer>"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 40,
+		"endLine": 44,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 39,
+		"endLine": 51,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 40,
+		"endLine": 44,
+		"startColumn": 57,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 53,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 39,
+		"endLine": 51,
+		"startColumn": 56,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 30,
+		"endLine": 35,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public checkLinearGraph(linearGraph LinearGraph) : void"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 43,
+		"endColumn": 72,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "findReversedEdge(linearGraph)"
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 11,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 11,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 28,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "platform/vcs-log/graph/src/com/intellij/vcs/log/graph/impl/facade/bek/BekChecker.java",
+		"startLine": 47,
+		"endLine": 49,
+		"startColumn": 26,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

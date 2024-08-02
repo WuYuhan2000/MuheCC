@@ -1,0 +1,555 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "01ff1c8a77ed63405af637be35318ee693dcd1c5",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/01ff1c8a77ed63405af637be35318ee693dcd1c5",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @Deprecated in class org.restlet.ext.servlet.ServletConverter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.servlet/src/org/restlet/ext/servlet/ServletConverter.java",
+		"startLine": 50,
+		"endLine": 243,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.restlet.ext.servlet.ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.servlet/src/org/restlet/ext/servlet/ServletConverter.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 0,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "modules/org.restlet.ext.servlet/src/org/restlet/ext/servlet/ServletConverter.java",
+		"startLine": 50,
+		"endLine": 245,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.restlet.ext.servlet.ServletConverter"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Deprecated in method protected getConverter() : ServletAdapter from class org.restlet.ext.spring.RestletFrameworkServlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 132,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getConverter() : ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 16,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 135,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected getConverter() : ServletAdapter"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type converter : HttpClientConverter to converter : HttpClientAdapter in class org.restlet.engine.http.HttpClientHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 42,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "converter : HttpClientConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 40,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "converter : HttpClientAdapter"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type converter : HttpServerConverter to converter : HttpServerAdapter in class org.restlet.engine.http.HttpServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 42,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "converter : HttpServerConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 40,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "converter : HttpServerAdapter"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type converter : ServletConverter to adapter : ServletAdapter in class org.restlet.ext.spring.RestletFrameworkServlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 39,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "converter : ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 37,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "adapter : ServletAdapter"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type converter : HttpClientConverter to converter : HttpClientAdapter in method public setConverter(converter HttpClientAdapter) : void from class org.restlet.engine.http.HttpClientHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 30,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "converter : HttpClientConverter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "converter : HttpClientAdapter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type converter : HttpServerConverter to converter : HttpServerAdapter in method public setConverter(converter HttpServerAdapter) : void from class org.restlet.engine.http.HttpServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 30,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "converter : HttpServerConverter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 30,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "converter : HttpServerAdapter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HttpClientConverter to HttpClientAdapter in method public getConverter() : HttpClientAdapter from class org.restlet.engine.http.HttpClientHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HttpClientConverter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 87,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getConverter() : HttpClientConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "HttpClientAdapter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientHelper.java",
+		"startLine": 87,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getConverter() : HttpClientAdapter"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HttpServerConverter to HttpServerAdapter in method public getConverter() : HttpServerAdapter from class org.restlet.engine.http.HttpServerHelper",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HttpServerConverter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 96,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getConverter() : HttpServerConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "HttpServerAdapter"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerHelper.java",
+		"startLine": 96,
+		"endLine": 135,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getConverter() : HttpServerAdapter"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ServletConverter to ServletAdapter in method protected getConverter() : ServletAdapter from class org.restlet.ext.spring.RestletFrameworkServlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ServletConverter"
+}, {
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 132,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getConverter() : ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 15,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ServletAdapter"
+}, {
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 135,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected getConverter() : ServletAdapter"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private adapter : ServletAdapter from class org.restlet.ext.spring.RestletFrameworkServlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 39,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private converter : ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 37,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private adapter : ServletAdapter"
+}, {
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 124,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "protected getAdapter() : ServletAdapter"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.restlet.engine.Helper from classes [org.restlet.engine.RestletHelper, org.restlet.engine.converter.ConverterHelper, org.restlet.engine.security.AuthenticatorHelper]",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/RestletHelper.java",
+		"startLine": 45,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.restlet.engine.RestletHelper"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/converter/ConverterHelper.java",
+		"startLine": 41,
+		"endLine": 135,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.restlet.engine.converter.ConverterHelper"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/security/AuthenticatorHelper.java",
+		"startLine": 46,
+		"endLine": 290,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.restlet.engine.security.AuthenticatorHelper"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/RestletHelper.java",
+		"startLine": 45,
+		"endLine": 169,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.restlet.engine.RestletHelper"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/converter/ConverterHelper.java",
+		"startLine": 42,
+		"endLine": 136,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.restlet.engine.converter.ConverterHelper"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/security/AuthenticatorHelper.java",
+		"startLine": 47,
+		"endLine": 291,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.restlet.engine.security.AuthenticatorHelper"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/engine/Helper.java",
+		"startLine": 33,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.restlet.engine.Helper"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute converter : ServletConverter to adapter : ServletAdapter in class org.restlet.ext.spring.RestletFrameworkServlet",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 39,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "converter : ServletConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.spring/src/org/restlet/ext/spring/RestletFrameworkServlet.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 37,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "adapter : ServletAdapter"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.restlet.engine.http.HttpClientConverter renamed to org.restlet.engine.http.HttpClientAdapter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientConverter.java",
+		"startLine": 58,
+		"endLine": 512,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.restlet.engine.http.HttpClientConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpClientAdapter.java",
+		"startLine": 58,
+		"endLine": 512,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.restlet.engine.http.HttpClientAdapter"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.restlet.engine.http.HttpConverter renamed to org.restlet.engine.http.HttpAdapter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpConverter.java",
+		"startLine": 39,
+		"endLine": 212,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.restlet.engine.http.HttpConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpAdapter.java",
+		"startLine": 39,
+		"endLine": 212,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.restlet.engine.http.HttpAdapter"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.restlet.engine.http.HttpServerConverter renamed to org.restlet.engine.http.HttpServerAdapter",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerConverter.java",
+		"startLine": 57,
+		"endLine": 487,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.restlet.engine.http.HttpServerConverter"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/engine/http/HttpServerAdapter.java",
+		"startLine": 57,
+		"endLine": 487,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.restlet.engine.http.HttpServerAdapter"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,393 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/hunterhacker/jdom",
+	"sha1": "69a34741cea3bbca8a92f77e00ed6955c52b428a",
+	"url": "https://github.com/hunterhacker/jdom/commit/69a34741cea3bbca8a92f77e00ed6955c52b428a",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier abstract in method public abstract getValue() : String from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 104,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 23,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getValue() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 131,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public abstract getValue() : String"
+}]
+},
+{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind interface to class in type org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 61,
+		"endLine": 118,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jdom.Child"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 61,
+		"endLine": 155,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "org.jdom.Child"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type entity : EntityRef to c : Child in method public clone() : Object from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "entity : EntityRef"
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "c : Child"
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(parent != null) to if(parent == null) in method public getDocument() : Document from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 189,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(parent != null)"
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 181,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDocument() : Document"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(parent == null)"
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 119,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public getDocument() : Document"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public clone() : Object from class org.jdom.EntityRef to public clone() : Object from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 132,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public clone() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 138,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public clone() : Object"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public detach() : Child from class org.jdom.EntityRef to public detach() : Child from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 156,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public detach() : Child"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 83,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public detach() : Child"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getDocument() : Document from class org.jdom.EntityRef to public getDocument() : Document from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 181,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getDocument() : Document"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 119,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getDocument() : Document"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public getParent() : Parent from class org.jdom.EntityRef to public getParent() : Parent from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 205,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getParent() : Parent"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 96,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public getParent() : Parent"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable ce : CloneNotSupportedException to e : CloneNotSupportedException in method public clone() : Object from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 18,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ce : CloneNotSupportedException"
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 142,
+		"endLine": 144,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "e : CloneNotSupportedException"
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 149,
+		"endLine": 153,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable entity : EntityRef to c : Child in method public clone() : Object from class org.jdom.Child",
+	"leftSideLocations": [{
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 19,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "entity : EntityRef"
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/EntityRef.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 19,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "c : Child"
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 13,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/java/org/jdom/Child.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 13,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

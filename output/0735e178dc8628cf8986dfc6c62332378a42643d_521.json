@@ -1,0 +1,681 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "0735e178dc8628cf8986dfc6c62332378a42643d",
+	"url": "https://github.com/kiegroup/drools/commit/0735e178dc8628cf8986dfc6c62332378a42643d",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public newKieSession(environment Environment) : KieSession extracted from public newKieSession() : KieSession in class org.kie.builder.impl.KieContainerImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 86,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public newKieSession() : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 45,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 91,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public newKieSession(environment Environment) : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 93,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 93,
+		"endLine": 95,
+		"startColumn": 45,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 87,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public newKieSession() : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 16,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "newKieSession((Environment)null)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public newKieSession(kSessionName String, environment Environment) : KieSession extracted from public newKieSession(kSessionName String) : KieSession in class org.kie.builder.impl.KieContainerImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 102,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public newKieSession(kSessionName String) : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 13,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 106,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 104,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 109,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 104,
+		"endLine": 107,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 109,
+		"endLine": 112,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 111,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public newKieSession(kSessionName String, environment Environment) : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 13,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 13,
+		"endColumn": 93,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 113,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 113,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 113,
+		"endLine": 116,
+		"startColumn": 38,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 107,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public newKieSession(kSessionName String) : KieSession"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/kie/builder/impl/KieContainerImpl.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 16,
+		"endColumn": 49,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "newKieSession(kSessionName,null)"
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter existingEntry : KieCDIEntry to existingEntry : KieCDIEntry in method public addKBaseInjectionPoint(ip InjectionPoint, kBase KBase, namedStr String, scope Class<? extends Annotation>, gav GAV) : void from class org.drools.cdi.KieCDIExtension",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 134,
+		"endColumn": 159,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "existingEntry : KieCDIEntry"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 150,
+		"endLine": 153,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 135,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 144,
+		"endLine": 154,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "existingEntry : KieCDIEntry"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 145,
+		"endLine": 148,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 130,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 139,
+		"endLine": 149,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter existingEntry : KieCDIEntry to existingEntry : KieCDIEntry in method public addKSessionInjectionPoint(ip InjectionPoint, kSession KSession, namedStr String, scope Class<? extends Annotation>, gav GAV) : void from class org.drools.cdi.KieCDIExtension",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 143,
+		"endColumn": 168,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "existingEntry : KieCDIEntry"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 188,
+		"endLine": 191,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 173,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 182,
+		"endLine": 192,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 21,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "existingEntry : KieCDIEntry"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 13,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 13,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 183,
+		"endLine": 186,
+		"startColumn": 17,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 168,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/cdi/KieCDIExtension.java",
+		"startLine": 177,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

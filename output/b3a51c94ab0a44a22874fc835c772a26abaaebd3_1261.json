@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "b3a51c94ab0a44a22874fc835c772a26abaaebd3",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/b3a51c94ab0a44a22874fc835c772a26abaaebd3",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable keyListener : KeyListener in method public createControl(parent Composite) : void from class org.eclipse.mylyn.internal.gerrit.ui.wizards.GerritCustomQueryPage",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 68,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 6,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 67,
+		"endLine": 75,
+		"startColumn": 15,
+		"endColumn": 4,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "keyListener : KeyListener"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable ret : boolean in method public isPageComplete() : boolean from class org.eclipse.mylyn.internal.gerrit.ui.wizards.GerritCustomQueryPage",
+	"leftSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 11,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "ret : boolean"
+}, {
+		"filePath": "gerrit/org.eclipse.mylyn.gerrit.ui/src/org/eclipse/mylyn/internal/gerrit/ui/wizards/GerritCustomQueryPage.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

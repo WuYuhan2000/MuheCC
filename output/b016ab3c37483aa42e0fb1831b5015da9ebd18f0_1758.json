@@ -1,0 +1,162 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/incf/eeg-database",
+	"sha1": "b016ab3c37483aa42e0fb1831b5015da9ebd18f0",
+	"url": "https://github.com/incf/eeg-database/commit/b016ab3c37483aa42e0fb1831b5015da9ebd18f0",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable group : ResearchGroup in method public save() : void from class cz.zcu.kiv.eegdatabase.wui.ui.experiments.AddExperimentScenarioForm",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 13,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 27,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "group : ResearchGroup"
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 13,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute isDefaultGroup : CheckBox to isDefaultGroup : CheckBox in method private addResearchGroup() : void from class cz.zcu.kiv.eegdatabase.wui.ui.experiments.AddExperimentScenarioForm",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 18,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "isDefaultGroup : CheckBox"
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 22,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "isDefaultGroup : CheckBox"
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentScenarioForm.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute repeatable : RepeatableInputPanel<Disease> to repeatableD : RepeatableInputPanel<Disease> in method private addDisease() : void from class cz.zcu.kiv.eegdatabase.wui.ui.experiments.AddExperimentEnvironmentForm",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 39,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "repeatable : RepeatableInputPanel<Disease>"
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 171,
+		"endLine": 173,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "repeatableD : RepeatableInputPanel<Disease>"
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 176,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/cz/zcu/kiv/eegdatabase/wui/ui/experiments/AddExperimentEnvironmentForm.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

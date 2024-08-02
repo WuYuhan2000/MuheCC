@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "6ceadd85dc54ab7e5a58cf51d50289055f3d6bb9",
+	"url": "https://github.com/apache/hbase/commit/6ceadd85dc54ab7e5a58cf51d50289055f3d6bb9",
+	"refactorings": [{
+	"type": "Split Conditional",
+	"description": "Split Conditional return (x == null && y == null) || (x != null && x.equals(y)); to [return false;, if(x == null && y == null)] in method private equals(x Object, y Object) : boolean from class org.apache.hadoop.hbase.util.Pair",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/Pair.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 6,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "return (x == null && y == null) || (x != null && x.equals(y));\n"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/Pair.java",
+		"startLine": 90,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private equals(x Object, y Object) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/Pair.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "return false;\n"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/Pair.java",
+		"startLine": 92,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(x == null && y == null)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/util/Pair.java",
+		"startLine": 91,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private equals(x Object, y Object) : boolean"
+}]
+}
+]
+}]
+}

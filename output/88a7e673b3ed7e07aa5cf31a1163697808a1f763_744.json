@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "88a7e673b3ed7e07aa5cf31a1163697808a1f763",
+	"url": "https://github.com/orientechnologies/orientdb/commit/88a7e673b3ed7e07aa5cf31a1163697808a1f763",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable k : String in method public parse(iRequest OCommandRequestText) : OCommandExecutorSQLCreateClass from class com.orientechnologies.orient.core.sql.OCommandExecutorSQLCreateClass",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OCommandExecutorSQLCreateClass.java",
+		"startLine": 73,
+		"endLine": 87,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OCommandExecutorSQLCreateClass.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "k : String"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OCommandExecutorSQLCreateClass.java",
+		"startLine": 75,
+		"endLine": 108,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "1fa7b71cf82cc30757ecf5d2a8e0cfba654ed469",
+	"url": "https://github.com/apache/hbase/commit/1fa7b71cf82cc30757ecf5d2a8e0cfba654ed469",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Test(timeout = 30000) to @Test(timeout = 15000) in method public testLockupWhenSyncInMiddleOfZigZagSetup() : void from class org.apache.hadoop.hbase.regionserver.TestWALLockup",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/TestWALLockup.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Test(timeout = 30000)"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/TestWALLockup.java",
+		"startLine": 99,
+		"endLine": 266,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testLockupWhenSyncInMiddleOfZigZagSetup() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/TestWALLockup.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Test(timeout = 15000)"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/TestWALLockup.java",
+		"startLine": 99,
+		"endLine": 277,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public testLockupWhenSyncInMiddleOfZigZagSetup() : void"
+}]
+}
+]
+}]
+}

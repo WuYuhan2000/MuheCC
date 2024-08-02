@@ -1,0 +1,735 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/belaban/jgroups",
+	"sha1": "cce7c99e27eee6682ca2bdbd410d375a5898fa60",
+	"url": "https://github.com/belaban/jgroups/commit/cce7c99e27eee6682ca2bdbd410d375a5898fa60",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private _findAndNotify() : void extracted from public findAndNotify() : void in class org.jgroups.protocols.MERGE2.FindSubgroupsTask",
+	"leftSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 207,
+		"endLine": 259,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public findAndNotify() : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 13,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 231,
+		"endLine": 233,
+		"startColumn": 25,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 245,
+		"endLine": 246,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 210,
+		"endLine": 216,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 213,
+		"endLine": 214,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 223,
+		"endLine": 226,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 228,
+		"endLine": 241,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 229,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 230,
+		"endLine": 233,
+		"startColumn": 21,
+		"endColumn": 96,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 243,
+		"endLine": 251,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 248,
+		"endLine": 249,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 253,
+		"endLine": 258,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 256,
+		"endLine": 258,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 210,
+		"endLine": 216,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 223,
+		"endLine": 226,
+		"startColumn": 45,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 228,
+		"endLine": 239,
+		"startColumn": 48,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 229,
+		"endLine": 236,
+		"startColumn": 74,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 243,
+		"endLine": 251,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 256,
+		"endLine": 308,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private _findAndNotify() : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 13,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 280,
+		"endLine": 282,
+		"startColumn": 25,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 21,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 17,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 294,
+		"endLine": 295,
+		"startColumn": 17,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 17,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 17,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 259,
+		"endLine": 265,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 262,
+		"endLine": 263,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 272,
+		"endLine": 275,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 277,
+		"endLine": 290,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 278,
+		"endLine": 287,
+		"startColumn": 17,
+		"endColumn": 46,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 279,
+		"endLine": 282,
+		"startColumn": 21,
+		"endColumn": 96,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 292,
+		"endLine": 300,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 297,
+		"endLine": 298,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 302,
+		"endLine": 307,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 305,
+		"endLine": 307,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 259,
+		"endLine": 265,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 272,
+		"endLine": 275,
+		"startColumn": 45,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 277,
+		"endLine": 288,
+		"startColumn": 48,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 278,
+		"endLine": 285,
+		"startColumn": 74,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 292,
+		"endLine": 300,
+		"startColumn": 38,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 245,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public findAndNotify() : void"
+}, {
+		"filePath": "src/org/jgroups/protocols/MERGE2.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 21,
+		"endColumn": 37,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "_findAndNotify()"
+}]
+}
+]
+}]
+}

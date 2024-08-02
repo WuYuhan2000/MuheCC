@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "8c3a7e4a7dc3a575720b6e812fc91b38cdd211c5",
+	"url": "https://github.com/apache/hbase/commit/8c3a7e4a7dc3a575720b6e812fc91b38cdd211c5",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter expectedStatus : HealthCheckerExitStatus in method public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void from class org.apache.hadoop.hbase.TestNodeHealthCheckChore",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 57,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testHealthChecker() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 48,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "expectedStatus : HealthCheckerExitStatus"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 76,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable errorScript : String to script : String in method public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void from class org.apache.hadoop.hbase.TestNodeHealthCheckChore",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 12,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "errorScript : String"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "script : String"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Test in method public testHealthChecker() : void from class org.apache.hadoop.hbase.TestNodeHealthCheckChore",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 8,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Test"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 57,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testHealthChecker() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 76,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testHealthChecker() : void renamed to public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void in class org.apache.hadoop.hbase.TestNodeHealthCheckChore",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 57,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testHealthChecker() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/TestNodeHealthCheckChore.java",
+		"startLine": 76,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public healthCheckerTest(script String, expectedStatus HealthCheckerExitStatus) : void"
+}]
+}
+]
+}]
+}

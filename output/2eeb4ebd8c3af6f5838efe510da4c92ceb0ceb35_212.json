@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "2eeb4ebd8c3af6f5838efe510da4c92ceb0ceb35",
+	"url": "https://github.com/elastic/elasticsearch/commit/2eeb4ebd8c3af6f5838efe510da4c92ceb0ceb35",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type deleteResult : Future to deleteResult : Future<Boolean> in method public testSimpleOperations() : void from class org.elasticsearch.memcached.test.AbstractMemcachedActionsTests",
+	"leftSideLocations": [{
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 16,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "deleteResult : Future"
+}, {
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 25,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "deleteResult : Future<Boolean>"
+}, {
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type setResult : Future to setResult : Future<Boolean> in method public testSimpleOperations() : void from class org.elasticsearch.memcached.test.AbstractMemcachedActionsTests",
+	"leftSideLocations": [{
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 16,
+		"endColumn": 146,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "setResult : Future"
+}, {
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 25,
+		"endColumn": 155,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "setResult : Future<Boolean>"
+}, {
+		"filePath": "plugins/transport/memcached/src/test/java/org/elasticsearch/memcached/test/AbstractMemcachedActionsTests.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

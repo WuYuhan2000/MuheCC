@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "d52a7d799c2ab73dbc38de272d173bbe9cf08797",
+	"url": "https://github.com/orientechnologies/orientdb/commit/d52a7d799c2ab73dbc38de272d173bbe9cf08797",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to boolean in method protected deleteRecord(iTxId int, iClusterSegment OCluster, iPosition long, iVersion int) : boolean from class com.orientechnologies.orient.core.storage.impl.local.OStorageLocalTxExecuter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 111,
+		"endLine": 129,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected deleteRecord(iTxId int, iClusterSegment OCluster, iPosition long, iVersion int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 112,
+		"endLine": 131,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "protected deleteRecord(iTxId int, iClusterSegment OCluster, iPosition long, iVersion int) : boolean"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type IOException in method protected createRecord(iTxId int, iClusterSegment OCluster, iRid ORecordId, iContent byte[], iRecordType byte) : long from class com.orientechnologies.orient.core.storage.impl.local.OStorageLocalTxExecuter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 35,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 61,
+		"endLine": 77,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createRecord(iTxId int, iClusterSegment OCluster, iRid ORecordId, iContent byte[], iRecordType byte) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocalTxExecuter.java",
+		"startLine": 62,
+		"endLine": 78,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "protected createRecord(iTxId int, iClusterSegment OCluster, iRid ORecordId, iContent byte[], iRecordType byte) : long"
+}]
+}
+]
+}]
+}

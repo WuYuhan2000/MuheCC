@@ -1,0 +1,351 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "54965e1da7b84207c5ab8613594ee73940e2bde2",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/54965e1da7b84207c5ab8613594ee73940e2bde2",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier static in method public setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P from class org.jboss.arquillian.graphene.enricher.PageObjectEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageObjectEnricher.java",
+		"startLine": 92,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageObjectEnricher.java",
+		"startLine": 92,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter root : WebElement in method public createPageFragment(clazz Class<T>, root WebElement) : T from class org.jboss.arquillian.graphene.enricher.PageFragmentEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageFragmentEnricher.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 60,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "root : WebElement"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageFragmentEnricher.java",
+		"startLine": 128,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createPageFragment(clazz Class<T>, root WebElement) : T"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageFragmentEnricher.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 60,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "root : WebElement"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageFragmentEnricher.java",
+		"startLine": 133,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public createPageFragment(clazz Class<T>, root WebElement) : T"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P from class org.jboss.arquillian.graphene.enricher.PageObjectEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageObjectEnricher.java",
+		"startLine": 92,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P"
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/PageObjectEnricher.java",
+		"startLine": 92,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setupPage(context GrapheneContext, searchContext SearchContext, pageClass Class<?>) : P"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable grapheneContext : GrapheneContext in method public goTo(pageObject Class<T>, browserQualifier Class<?>) : T from class org.jboss.arquillian.graphene.enricher.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 25,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "grapheneContext : GrapheneContext"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public goTo(pageObject Class<T>, browser WebDriver) : T inlined to public goTo(pageObject Class<T>, browserQualifier Class<?>) : T in class org.jboss.arquillian.graphene.enricher.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 57,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public goTo(pageObject Class<T>, browser WebDriver) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 13,
+		"endColumn": 99,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 70,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public goTo(pageObject Class<T>, browserQualifier Class<?>) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 16,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "goTo(pageObject,browser)"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 55,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public goTo(pageObject Class<T>, browserQualifier Class<?>) : T"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 13,
+		"endColumn": 99,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 13,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 59,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 61,
+		"endLine": 63,
+		"startColumn": 11,
+		"endColumn": 10,
+		"codeElementType": "CATCH_CLAUSE",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable browser : WebDriver in method public resolve(method Method) : Object[] from class org.jboss.arquillian.graphene.enricher.LocationEnricher",
+	"leftSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 19,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "browser : WebDriver"
+}, {
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "graphene-webdriver/graphene-webdriver-impl/src/main/java/org/jboss/arquillian/graphene/enricher/LocationEnricher.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

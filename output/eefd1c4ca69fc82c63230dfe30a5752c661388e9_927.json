@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "eefd1c4ca69fc82c63230dfe30a5752c661388e9",
+	"url": "https://github.com/spring-projects/spring-framework/commit/eefd1c4ca69fc82c63230dfe30a5752c661388e9",
+	"refactorings": [{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @ContextHierarchy({@ContextConfiguration(\"root-context.xml\"),@ContextConfiguration(\"servlet-context.xml\")}) in class org.springframework.test.web.servlet.samples.context.WebAppResourceTests",
+	"leftSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 38,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.WebAppResourceTests"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 46,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@ContextHierarchy({@ContextConfiguration(\"root-context.xml\"),@ContextConfiguration(\"servlet-context.xml\")})"
+}, {
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 39,
+		"endLine": 88,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.WebAppResourceTests"
+}]
+},
+{
+	"type": "Add Class Annotation",
+	"description": "Add Class Annotation @ContextHierarchy({@ContextConfiguration(classes=RootConfig.class),@ContextConfiguration(classes=WebConfig.class)}) in class org.springframework.test.web.servlet.samples.context.JavaConfigTests",
+	"leftSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 45,
+		"endLine": 109,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.JavaConfigTests"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 0,
+		"endColumn": 3,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@ContextHierarchy({@ContextConfiguration(classes=RootConfig.class),@ContextConfiguration(classes=WebConfig.class)})"
+}, {
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 53,
+		"endLine": 149,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with added annotation",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.JavaConfigTests"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @ContextConfiguration(\"servlet-context.xml\") in class org.springframework.test.web.servlet.samples.context.WebAppResourceTests",
+	"leftSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 0,
+		"endColumn": 45,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@ContextConfiguration(\"servlet-context.xml\")"
+}, {
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 38,
+		"endLine": 84,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.WebAppResourceTests"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/WebAppResourceTests.java",
+		"startLine": 39,
+		"endLine": 88,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.WebAppResourceTests"
+}]
+},
+{
+	"type": "Remove Class Annotation",
+	"description": "Remove Class Annotation @ContextConfiguration(classes = WebConfig.class) in class org.springframework.test.web.servlet.samples.context.JavaConfigTests",
+	"leftSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 0,
+		"endColumn": 49,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@ContextConfiguration(classes = WebConfig.class)"
+}, {
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 45,
+		"endLine": 109,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.JavaConfigTests"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-test-mvc/src/test/java/org/springframework/test/web/servlet/samples/context/JavaConfigTests.java",
+		"startLine": 53,
+		"endLine": 149,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with removed annotation",
+		"codeElement": "org.springframework.test.web.servlet.samples.context.JavaConfigTests"
+}]
+}
+]
+}]
+}

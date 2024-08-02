@@ -33,5 +33,5 @@ python EnsembleLearning/BERT+lightGBM.py
 ```
 2. Train and test MuheCC
 ```
-python EnsembleLearning/.stacking_model_choose.py
+python EnsembleLearning/stacking_model_choose.py
 ```

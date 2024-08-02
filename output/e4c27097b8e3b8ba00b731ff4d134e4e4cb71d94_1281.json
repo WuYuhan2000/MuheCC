@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "e4c27097b8e3b8ba00b731ff4d134e4e4cb71d94",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/e4c27097b8e3b8ba00b731ff4d134e4e4cb71d94",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : RecognitionException to e : Exception in method public parseReviewResult(text String) : ReviewDslResult from class org.eclipse.mylyn.reviews.tasks.dsl.internal.ReviewDslMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : RecognitionException"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 4,
+		"endColumn": 45,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 12,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : Exception"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 4,
+		"endColumn": 45,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter treeAdaptor : TreeAdaptor in method private mapResult(reviewResult reviewResult_return, treeAdaptor TreeAdaptor) : ReviewDslResult from class org.eclipse.mylyn.reviews.tasks.dsl.internal.ReviewDslMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 4,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "treeAdaptor : TreeAdaptor"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 62,
+		"endLine": 76,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mapResult(reviewResult reviewResult_return, treeAdaptor TreeAdaptor) : ReviewDslResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.dsl/src/org/eclipse/mylyn/reviews/tasks/dsl/internal/ReviewDslMapper.java",
+		"startLine": 64,
+		"endLine": 83,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private mapResult(reviewResult reviewResult_return) : ReviewDslResult"
+}]
+}
+]
+}]
+}

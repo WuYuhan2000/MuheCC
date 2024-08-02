@@ -1,0 +1,147 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "5f2ee6ded78a158ec352a376b7d6ee5381e70599",
+	"url": "https://github.com/kiegroup/drools/commit/5f2ee6ded78a158ec352a376b7d6ee5381e70599",
+	"refactorings": [{
+	"type": "Remove Attribute Modifier",
+	"description": "Remove Attribute Modifier final in attribute private tuples : LinkedList from class org.drools.leaps.FactTable",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/FactTable.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private tuples : LinkedList"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/FactTable.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with removed modifier",
+		"codeElement": "private tuples : LinkedList"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable rule : LeapsRule to leapsRule : LeapsRule in method protected removeRule(rules List) : void from class org.drools.leaps.WorkingMemoryImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 781,
+		"endLine": 781,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rule : LeapsRule"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 781,
+		"endLine": 781,
+		"startColumn": 13,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 784,
+		"endLine": 784,
+		"startColumn": 17,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 792,
+		"endLine": 793,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 787,
+		"endLine": 795,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 788,
+		"endLine": 788,
+		"startColumn": 21,
+		"endColumn": 94,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "leapsRule : LeapsRule"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 810,
+		"endLine": 810,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 813,
+		"endLine": 813,
+		"startColumn": 17,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 821,
+		"endLine": 822,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 816,
+		"endLine": 824,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/WorkingMemoryImpl.java",
+		"startLine": 817,
+		"endLine": 817,
+		"startColumn": 21,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

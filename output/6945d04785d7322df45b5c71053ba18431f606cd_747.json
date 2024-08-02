@@ -1,0 +1,1140 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "6945d04785d7322df45b5c71053ba18431f606cd",
+	"url": "https://github.com/orientechnologies/orientdb/commit/6945d04785d7322df45b5c71053ba18431f606cd",
+	"refactorings": [{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable cls : OClass in method private extractTargets() : boolean from class com.orientechnologies.orient.core.sql.filter.OSQLFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 18,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cls : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 116,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractTargets() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 24,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "cls : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 107,
+		"endLine": 214,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private extractTargets() : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected context : OCommandContext from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 47,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private context : OCommandContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 43,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected context : OCommandContext"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iQueryCompiled : OSQLFilter to iQueryCompiled : OSQLPredicate in method public OSQLFilterItemFieldAll(iQueryCompiled OSQLPredicate, iName String) from class com.orientechnologies.orient.core.sql.filter.OSQLFilterItemFieldAll",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAll.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iQueryCompiled : OSQLFilter"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAll.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAll.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 33,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iQueryCompiled : OSQLPredicate"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAll.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iQueryCompiled : OSQLFilter to iQueryCompiled : OSQLPredicate in method public OSQLFilterItemFieldAny(iQueryCompiled OSQLPredicate, iName String) from class com.orientechnologies.orient.core.sql.filter.OSQLFilterItemFieldAny",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAny.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 32,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iQueryCompiled : OSQLFilter"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAny.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAny.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 33,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iQueryCompiled : OSQLPredicate"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldAny.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iQueryCompiled : OSQLFilter to iQueryCompiled : OSQLPredicate in method public OSQLFilterItemFieldMultiAbstract(iQueryCompiled OSQLPredicate, iName String, iNames List<String>) from class com.orientechnologies.orient.core.sql.filter.OSQLFilterItemFieldMultiAbstract",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldMultiAbstract.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 42,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iQueryCompiled : OSQLFilter"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldMultiAbstract.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldMultiAbstract.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 43,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iQueryCompiled : OSQLPredicate"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilterItemFieldMultiAbstract.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iSQLFilter : OSQLFilter to iSQLFilter : OSQLPredicate in method public parseValue(iSQLFilter OSQLPredicate, iCommand OCommandToParse, iWord String, iContext OCommandContext) : Object from class com.orientechnologies.orient.core.sql.OSQLHelper",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 34,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iSQLFilter : OSQLFilter"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 189,
+		"endLine": 192,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 34,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iSQLFilter : OSQLPredicate"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/OSQLHelper.java",
+		"startLine": 190,
+		"endLine": 193,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Object to List<OIdentifiable> in method public execute() : List<OIdentifiable> from class com.orientechnologies.orient.core.command.traverse.OTraverse",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverse.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 10,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Object"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverse.java",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public execute() : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverse.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 10,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<OIdentifiable>"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverse.java",
+		"startLine": 48,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public execute() : List<OIdentifiable>"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass com.orientechnologies.orient.core.sql.filter.OSQLPredicate from classes [com.orientechnologies.orient.core.sql.filter.OSQLFilter]",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 55,
+		"endLine": 586,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "com.orientechnologies.orient.core.sql.filter.OSQLFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 44,
+		"endLine": 243,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "com.orientechnologies.orient.core.sql.filter.OSQLFilter"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 42,
+		"endLine": 435,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "com.orientechnologies.orient.core.sql.filter.OSQLPredicate"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable lastPos : int in method public OSQLFilter(iText String, iContext OCommandContext) from class com.orientechnologies.orient.core.sql.filter.OSQLFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 23,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "lastPos : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 15,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Attribute",
+	"description": "Inline Attribute protected database : ODatabaseRecord in class com.orientechnologies.orient.core.sql.filter.OSQLFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 47,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "inlined attribute declaration",
+		"codeElement": "protected database : ODatabaseRecord"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 11,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the inlined attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 11,
+		"endColumn": 120,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the inlined attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private jumpWhiteSpaces() : boolean inlined to private extractTargets() : boolean in class com.orientechnologies.orient.core.sql.filter.OSQLFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 526,
+		"endLine": 529,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private jumpWhiteSpaces() : boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 116,
+		"endLine": 223,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private extractTargets() : boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "jumpWhiteSpaces()"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 528,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 107,
+		"endLine": 214,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private extractTargets() : boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private jumpWhiteSpaces() : boolean inlined to public OSQLFilter(iText String, iContext OCommandContext) in class com.orientechnologies.orient.core.sql.filter.OSQLFilter",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 526,
+		"endLine": 529,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private jumpWhiteSpaces() : boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 528,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 225,
+		"endLine": 263,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private extractConditions(iParentCondition OSQLFilterCondition) : Object"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "jumpWhiteSpaces()"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 56,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public OSQLFilter(iText String, iContext OCommandContext)"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 32,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private context : OCommandContext from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected context : OCommandContext from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 47,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private context : OCommandContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 43,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected context : OCommandContext"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected braces : int from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected braces : int from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 47,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected braces : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 43,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected braces : int"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected parameterItems : List<OSQLFilterItemParameter> from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected parameterItems : List<OSQLFilterItemParameter> from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 47,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected parameterItems : List<OSQLFilterItemParameter>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 43,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected parameterItems : List<OSQLFilterItemParameter>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected properties : Set<OProperty> from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected properties : Set<OProperty> from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 47,
+		"endColumn": 84,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected properties : Set<OProperty>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 43,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected properties : Set<OProperty>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected recordTransformed : List<String> from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected recordTransformed : List<String> from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 47,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected recordTransformed : List<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 43,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected recordTransformed : List<String>"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute protected rootCondition : OSQLFilterCondition from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected rootCondition : OSQLFilterCondition from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 47,
+		"endColumn": 60,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected rootCondition : OSQLFilterCondition"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 43,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected rootCondition : OSQLFilterCondition"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private convertCollectionItems(stringItems List<String>) : List<Object> from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to private convertCollectionItems(stringItems List<String>) : List<Object> from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 424,
+		"endLine": 430,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private convertCollectionItems(stringItems List<String>) : List<Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 289,
+		"endLine": 295,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private convertCollectionItems(stringItems List<String>) : List<Object>"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private extractConditionItem(iAllowOperator boolean, iExpectedWords int) : Object from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to private extractConditionItem(iAllowOperator boolean, iExpectedWords int) : Object from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 338,
+		"endLine": 422,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractConditionItem(iAllowOperator boolean, iExpectedWords int) : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 203,
+		"endLine": 287,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private extractConditionItem(iAllowOperator boolean, iExpectedWords int) : Object"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private extractConditionOperator() : OQueryOperator from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to private extractConditionOperator() : OQueryOperator from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 302,
+		"endLine": 336,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private extractConditionOperator() : OQueryOperator"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 167,
+		"endLine": 201,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private extractConditionOperator() : OQueryOperator"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private nextValue(iAdvanceWhenNotFound boolean) : String[] from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to private nextValue(iAdvanceWhenNotFound boolean) : String[] from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 452,
+		"endLine": 518,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private nextValue(iAdvanceWhenNotFound boolean) : String[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 301,
+		"endLine": 367,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private nextValue(iAdvanceWhenNotFound boolean) : String[]"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private nextWord(iForceUpperCase boolean, iSeparators String) : String from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to private nextWord(iForceUpperCase boolean, iSeparators String) : String from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 520,
+		"endLine": 524,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private nextWord(iForceUpperCase boolean, iSeparators String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 369,
+		"endLine": 373,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private nextWord(iForceUpperCase boolean, iSeparators String) : String"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected checkForEnd(iWord String) : boolean from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected checkForEnd(iWord String) : boolean from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 292,
+		"endLine": 300,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected checkForEnd(iWord String) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 157,
+		"endLine": 165,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected checkForEnd(iWord String) : boolean"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method protected extractCondition() : OSQLFilterCondition from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to protected extractCondition() : OSQLFilterCondition from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 265,
+		"endLine": 290,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected extractCondition() : OSQLFilterCondition"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 130,
+		"endLine": 155,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected extractCondition() : OSQLFilterCondition"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public addParameter(iName String) : OSQLFilterItemParameter from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to public addParameter(iName String) : OSQLFilterItemParameter from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 562,
+		"endLine": 581,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addParameter(iName String) : OSQLFilterItemParameter"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 411,
+		"endLine": 430,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public addParameter(iName String) : OSQLFilterItemParameter"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public bindParameters(iArgs Map<Object,Object>) : void from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to public bindParameters(iArgs Map<Object,Object>) : void from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 538,
+		"endLine": 560,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public bindParameters(iArgs Map<Object,Object>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 387,
+		"endLine": 409,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public bindParameters(iArgs Map<Object,Object>) : void"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public setRootCondition(iCondition OSQLFilterCondition) : void from class com.orientechnologies.orient.core.sql.filter.OSQLFilter to public setRootCondition(iCondition OSQLFilterCondition) : void from class com.orientechnologies.orient.core.sql.filter.OSQLPredicate",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLFilter.java",
+		"startLine": 583,
+		"endLine": 585,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setRootCondition(iCondition OSQLFilterCondition) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/sql/filter/OSQLPredicate.java",
+		"startLine": 432,
+		"endLine": 434,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public setRootCondition(iCondition OSQLFilterCondition) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute allTraversed : Set<ORID> to history : Set<ORID> in class com.orientechnologies.orient.core.command.traverse.OTraverseContext",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverseContext.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 45,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "allTraversed : Set<ORID>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/traverse/OTraverseContext.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 45,
+		"endColumn": 74,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "history : Set<ORID>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseAllFromActorNoWhere() : void renamed to public traverseSQLAllFromActorNoWhere() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 92,
+		"endLine": 96,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseAllFromActorNoWhere() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 97,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLAllFromActorNoWhere() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseDept02() : void renamed to public traverseSQLDept02() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 113,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseDept02() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 127,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLDept02() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseIterating() : void renamed to public traverseSQLIterating() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 180,
+		"endLine": 187,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseIterating() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 202,
+		"endLine": 209,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLIterating() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseMoviesOnly() : void renamed to public traverseSQLMoviesOnly() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 120,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseMoviesOnly() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 134,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLMoviesOnly() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseMoviesOnlyDepth() : void renamed to public traverseSQLMoviesOnlyDepth() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 141,
+		"endLine": 164,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseMoviesOnlyDepth() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 155,
+		"endLine": 178,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLMoviesOnlyDepth() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseOutFromActor1Depth() : void renamed to public traverseSQLOutFromActor1Depth() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 102,
+		"endLine": 111,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseOutFromActor1Depth() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 116,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLOutFromActor1Depth() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traverseOutFromOneActorNoWhere() : void renamed to public traverseSQLOutFromOneActorNoWhere() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 98,
+		"endLine": 100,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traverseOutFromOneActorNoWhere() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 108,
+		"endLine": 110,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLOutFromOneActorNoWhere() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public traversePerClassFields() : void renamed to public traverseSQLPerClassFields() : void in class com.orientechnologies.orient.test.database.auto.TraverseTest",
+	"leftSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 130,
+		"endLine": 139,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public traversePerClassFields() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "tests/src/test/java/com/orientechnologies/orient/test/database/auto/TraverseTest.java",
+		"startLine": 144,
+		"endLine": 153,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public traverseSQLPerClassFields() : void"
+}]
+}
+]
+}]
+}

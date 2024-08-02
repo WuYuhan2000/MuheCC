@@ -1,0 +1,390 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "5148146dafe9a89c5d21af420a179603399e9c40",
+	"url": "https://github.com/apache/hbase/commit/5148146dafe9a89c5d21af420a179603399e9c40",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package kvsetIt : Iterator<KeyValue> from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 649,
+		"endLine": 649,
+		"startColumn": 32,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private kvsetIt : Iterator<KeyValue>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 649,
+		"endLine": 649,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package kvsetIt : Iterator<KeyValue>"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package numIterReseek : int from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 653,
+		"endLine": 653,
+		"startColumn": 17,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numIterReseek : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 653,
+		"endLine": 653,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package numIterReseek : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package snapshotIt : Iterator<KeyValue> from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private snapshotIt : Iterator<KeyValue>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 650,
+		"endLine": 650,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package snapshotIt : Iterator<KeyValue>"
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable ret : KeyValue in method public next() : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 781,
+		"endLine": 781,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "ret : KeyValue"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 797,
+		"endLine": 797,
+		"startColumn": 7,
+		"endColumn": 18,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 780,
+		"endLine": 780,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Localize Parameter",
+	"description": "Localize Parameter readPoint : long to readPoint : long in method protected getNext(it Iterator<KeyValue>) : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 683,
+		"endLine": 683,
+		"startColumn": 55,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "readPoint : long"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 690,
+		"endLine": 693,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 681,
+		"endLine": 681,
+		"startColumn": 12,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "readPoint : long"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 686,
+		"endLine": 689,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [if(first == null), if(second == null)] to if(first == null && second == null) in method protected getLower(first KeyValue, second KeyValue) : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 810,
+		"endLine": 812,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(first == null)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 813,
+		"endLine": 815,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(second == null)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 809,
+		"endLine": 819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getLower(first KeyValue, second KeyValue) : KeyValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 794,
+		"endLine": 796,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "if(first == null && second == null)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 793,
+		"endLine": 802,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "protected getLower(first KeyValue, second KeyValue) : KeyValue"
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return second;, if(first == null)] to return (first != null ? first : second); in method protected getLower(first KeyValue, second KeyValue) : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 811,
+		"endLine": 811,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return second;\n"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 810,
+		"endLine": 812,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(first == null)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 809,
+		"endLine": 819,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getLower(first KeyValue, second KeyValue) : KeyValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 801,
+		"endLine": 801,
+		"startColumn": 7,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return (first != null ? first : second);\n"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 793,
+		"endLine": 802,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "protected getLower(first KeyValue, second KeyValue) : KeyValue"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public next() : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 774,
+		"endLine": 774,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 774,
+		"endLine": 798,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public next() : KeyValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 763,
+		"endLine": 781,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public next() : KeyValue"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public peek() : KeyValue from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 767,
+		"endLine": 767,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 767,
+		"endLine": 771,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public peek() : KeyValue"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 757,
+		"endLine": 760,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public peek() : KeyValue"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method public reseek(key KeyValue) : boolean from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 733,
+		"endLine": 765,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public reseek(key KeyValue) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 730,
+		"endLine": 755,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public reseek(key KeyValue) : boolean"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable theNext : KeyValue to lowest : KeyValue in method public seek(key KeyValue) : boolean from class org.apache.hadoop.hbase.regionserver.MemStore.MemStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 657,
+		"endLine": 657,
+		"startColumn": 22,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "theNext : KeyValue"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 721,
+		"endLine": 721,
+		"startColumn": 7,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 724,
+		"endLine": 724,
+		"startColumn": 16,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "lowest : KeyValue"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/regionserver/MemStore.java",
+		"startLine": 724,
+		"endLine": 724,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

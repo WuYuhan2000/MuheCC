@@ -1,0 +1,231 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/maven-plugins",
+	"sha1": "2ca004c0298cd87c9a946843ab905154d4d1df65",
+	"url": "https://github.com/apache/maven-plugins/commit/2ca004c0298cd87c9a946843ab905154d4d1df65",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private installer : ArtifactInstaller from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected installer : ArtifactInstaller"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private installer : ArtifactInstaller"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type attachedArtifacts : List to attachedArtifacts : Collection in method private installProjectArtifacts(testRepository ArtifactRepository) : void from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 593,
+		"endLine": 593,
+		"startColumn": 18,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "attachedArtifacts : List"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 24,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "attachedArtifacts : Collection"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private artifactFactory : ArtifactFactory from class org.apache.maven.plugin.invoker.InvokerMojo to private artifactFactory : ArtifactFactory from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 29,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private artifactFactory : ArtifactFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 29,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private artifactFactory : ArtifactFactory"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected installer : ArtifactInstaller from class org.apache.maven.plugin.invoker.InvokerMojo to private installer : ArtifactInstaller from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 33,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected installer : ArtifactInstaller"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private installer : ArtifactInstaller"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute protected localRepository : ArtifactRepository from class org.apache.maven.plugin.invoker.InvokerMojo to protected localRepository : ArtifactRepository from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected localRepository : ArtifactRepository"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 34,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "protected localRepository : ArtifactRepository"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private installProjectArtifacts() : void from class org.apache.maven.plugin.invoker.InvokerMojo to private installProjectArtifacts(testRepository ArtifactRepository) : void from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 558,
+		"endLine": 610,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private installProjectArtifacts() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 107,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private installProjectArtifacts(testRepository ArtifactRepository) : void"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable integrationTestRepository : ArtifactRepository to testRepository : ArtifactRepository in method private installProjectArtifacts(testRepository ArtifactRepository) : void from class org.apache.maven.plugin.invoker.InstallMojo",
+	"leftSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 566,
+		"endLine": 566,
+		"startColumn": 28,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "integrationTestRepository : ArtifactRepository"
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 587,
+		"endLine": 587,
+		"startColumn": 13,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 13,
+		"endColumn": 116,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InvokerMojo.java",
+		"startLine": 598,
+		"endLine": 598,
+		"startColumn": 17,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 43,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "testRepository : ArtifactRepository"
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 13,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 13,
+		"endColumn": 105,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "maven-invoker-plugin/src/main/java/org/apache/maven/plugin/invoker/InstallMojo.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 17,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

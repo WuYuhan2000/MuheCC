@@ -1,0 +1,78 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "079039e5531a152388776c637884c891974008e5",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/079039e5531a152388776c637884c891974008e5",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public CacheDirective(name String, value String, digit boolean) extracted from public CacheDirective(name String, value String) in class org.restlet.data.CacheDirective",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 382,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public CacheDirective(name String, value String)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 397,
+		"endLine": 410,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public CacheDirective(name String, value String, digit boolean)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 408,
+		"endLine": 408,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 385,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public CacheDirective(name String, value String)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(name,value,false)"
+}, {
+		"filePath": "modules/org.restlet/src/org/restlet/data/CacheDirective.java",
+		"startLine": 409,
+		"endLine": 409,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

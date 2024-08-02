@@ -1,0 +1,285 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "a8dbce159679cd031f60e6151399fa2cd5ac9374",
+	"url": "https://github.com/apache/hadoop/commit/a8dbce159679cd031f60e6151399fa2cd5ac9374",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private writeData(fc FileContext, p Path, out FSDataOutputStream, data byte[], expectedLen long) : void extracted from public testOverwrite() : void in class org.apache.hadoop.fs.FileContextMainOperationsBaseTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 673,
+		"endLine": 698,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public testOverwrite() : void"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 692,
+		"endLine": 692,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 693,
+		"endLine": 693,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 681,
+		"endLine": 681,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 5,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 755,
+		"endLine": 761,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private writeData(fc FileContext, p Path, out FSDataOutputStream, data byte[], expectedLen long) : void"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 757,
+		"endLine": 757,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 758,
+		"endLine": 758,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 759,
+		"endLine": 759,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 760,
+		"endLine": 760,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 703,
+		"endLine": 709,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public testCreateFlagOverwriteExistingFile() : void"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 708,
+		"endLine": 708,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "writeData(fc,p,out,data,data.length)"
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable path : Path to p : Path in method private writeData(fc FileContext, p Path, out FSDataOutputStream, data byte[], expectedLen long) : void from class org.apache.hadoop.fs.FileContextMainOperationsBaseTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 10,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "path : Path"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 681,
+		"endLine": 681,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 682,
+		"endLine": 682,
+		"startColumn": 5,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 755,
+		"endLine": 755,
+		"startColumn": 49,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "p : Path"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 759,
+		"endLine": 759,
+		"startColumn": 5,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 760,
+		"endLine": 760,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public testOverwrite() : void renamed to public testCreateFlagOverwriteExistingFile() : void in class org.apache.hadoop.fs.FileContextMainOperationsBaseTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 673,
+		"endLine": 698,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testOverwrite() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 703,
+		"endLine": 709,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public testCreateFlagOverwriteExistingFile() : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable path : Path to p : Path in method public testCreateFlagOverwriteExistingFile() : void from class org.apache.hadoop.fs.FileContextMainOperationsBaseTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 10,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "path : Path"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 675,
+		"endLine": 675,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 679,
+		"endLine": 679,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 691,
+		"endLine": 691,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 705,
+		"endLine": 705,
+		"startColumn": 10,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "p : Path"
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 705,
+		"endLine": 705,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 706,
+		"endLine": 706,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/core/org/apache/hadoop/fs/FileContextMainOperationsBaseTest.java",
+		"startLine": 707,
+		"endLine": 707,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

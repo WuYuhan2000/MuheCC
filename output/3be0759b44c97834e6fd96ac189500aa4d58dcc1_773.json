@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "3be0759b44c97834e6fd96ac189500aa4d58dcc1",
+	"url": "https://github.com/orientechnologies/orientdb/commit/3be0759b44c97834e6fd96ac189500aa4d58dcc1",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iText : String to iRequest : OCommandRequestText in method public init(iRequest OCommandRequestText) : OCommandExecutorAbstract from class com.orientechnologies.orient.core.command.OCommandExecutorAbstract",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 40,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iText : String"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 40,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iRequest : OCommandRequestText"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter iText : String to iRequest : OCommandRequestText in method public init(iRequest OCommandRequestText) : OCommandExecutorAbstract from class com.orientechnologies.orient.core.command.OCommandExecutorAbstract",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 40,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iText : String"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 40,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "iRequest : OCommandRequestText"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/command/OCommandExecutorAbstract.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

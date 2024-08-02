@@ -1,0 +1,1710 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/hdiv/hdiv",
+	"sha1": "19b650c78a1c76f4fd90274d7f163f863c0d39e4",
+	"url": "https://github.com/hdiv/hdiv/commit/19b650c78a1c76f4fd90274d7f163f863c0d39e4",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter actionParamValues : String[] in method private validateParameterValues(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 687,
+		"endLine": 742,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private validateParameterValues(request HttpServletRequest, target String, state IState, stateParameter IParameter, parameter String, values String[]) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 723,
+		"endLine": 723,
+		"startColumn": 31,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "actionParamValues : String[]"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 702,
+		"endLine": 764,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private validateParameterValues(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter actionParamValues : String[] in method private validateReceivedValuesInState(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 885,
+		"endLine": 926,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, state IState, parameter String, values String[]) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 923,
+		"endLine": 923,
+		"startColumn": 31,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "actionParamValues : String[]"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 907,
+		"endLine": 946,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter actionParamValues : String[] in method protected validateParameter(request HttpServletRequest, stateParameter IParameter, actionParamValues String[], unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 488,
+		"endLine": 563,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected validateParameter(request HttpServletRequest, state IState, unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 523,
+		"endLine": 523,
+		"startColumn": 4,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "actionParamValues : String[]"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 501,
+		"endLine": 578,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected validateParameter(request HttpServletRequest, stateParameter IParameter, actionParamValues String[], unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter actionParamValues : String[] in method public validate(value String, target String, parameter String, stateParameter IParameter, actionParamValues String[]) : IValidationResult from class org.hdiv.dataValidator.DataValidator",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 57,
+		"endLine": 120,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public validate(value String, target String, parameter String) : IValidationResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 4,
+		"endColumn": 30,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "actionParamValues : String[]"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 52,
+		"endLine": 126,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public validate(value String, target String, parameter String, stateParameter IParameter, actionParamValues String[]) : IValidationResult"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter stateParameter : IParameter in method private validateReceivedValuesInState(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 885,
+		"endLine": 926,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, state IState, parameter String, values String[]) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 923,
+		"endLine": 923,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "stateParameter : IParameter"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 907,
+		"endLine": 946,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected dataComposerFactory : DataComposerFactory from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private dataComposerFactory : DataComposerFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 32,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected dataComposerFactory : DataComposerFactory"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected dataValidator : IDataValidator from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private dataValidatorFactory : DataValidatorFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected dataValidator : IDataValidator"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected numberPattern : Pattern from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 18,
+		"endColumn": 59,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private numberPattern : Pattern"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 20,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected numberPattern : Pattern"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected session : ISession from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 19,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private session : ISession"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 21,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected session : ISession"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected stateUtil : StateUtil from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 20,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private stateUtil : StateUtil"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 22,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected stateUtil : StateUtil"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in class org.hdiv.dataValidator.DataValidatorTest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 33,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type name : String to id : int in class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "name : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 14,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "id : int"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type states : Map<Integer,Object> to states : List<IState> in class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 33,
+		"endColumn": 72,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "states : Map<Integer,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 25,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "states : List<IState>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in method public setDataValidator(dataValidator IDataValidator) : void from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1129,
+		"endLine": 1129,
+		"startColumn": 38,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1130,
+		"endLine": 1130,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1149,
+		"endLine": 1149,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1150,
+		"endLine": 1150,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type pageId : String to pageId : int in method public setPageId(pageId int) : void from class org.hdiv.state.IState",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 24,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "pageId : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 24,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "pageId : int"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to int in method public getNextPageId() : int from class org.hdiv.idGenerator.PageIdGenerator",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/idGenerator/PageIdGenerator.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 8,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/idGenerator/PageIdGenerator.java",
+		"startLine": 28,
+		"endLine": 33,
+		"startColumn": 2,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getNextPageId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/idGenerator/PageIdGenerator.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 5,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "int"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/idGenerator/PageIdGenerator.java",
+		"startLine": 28,
+		"endLine": 38,
+		"startColumn": 2,
+		"endColumn": 22,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getNextPageId() : int"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type String to int in method public getPageId() : int from class org.hdiv.state.IState",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 28,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getPageId() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "int"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/IState.java",
+		"startLine": 60,
+		"endLine": 63,
+		"startColumn": 2,
+		"endColumn": 25,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getPageId() : int"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type param1 : Parameter to param1 : IParameter in method public testValidateCorrectData() : void from class org.hdiv.dataValidator.DataValidatorTest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "param1 : Parameter"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "param1 : IParameter"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type param1 : Parameter to param1 : IParameter in method public testValidateDataIsNotInt() : void from class org.hdiv.dataValidator.DataValidatorTest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "param1 : Parameter"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "param1 : IParameter"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type param1 : Parameter to param1 : IParameter in method public testValidatePositionDoesNotExist() : void from class org.hdiv.dataValidator.DataValidatorTest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 13,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "param1 : Parameter"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 14,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "param1 : IParameter"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type params : Map<String,String[]> to processedParams : String in method public processUrl(request HttpServletRequest, url String, method String) : String from class org.hdiv.urlProcessor.FormUrlProcessor",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 26,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "params : Map<String,String[]>"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 89,
+		"endLine": 90,
+		"startColumn": 11,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "processedParams : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type state : Object to state : IState in method public toString() : String from class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 8,
+		"endColumn": 20,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "state : Object"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 8,
+		"endColumn": 20,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "state : IState"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private id : int from class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private name : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 14,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private id : int"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 146,
+		"endLine": 151,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getId() : int"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public setUrlParams(urlParams String) : void extracted from public processUrl(request HttpServletRequest, url String, method String) : String in class org.hdiv.urlProcessor.FormUrlProcessor & moved to class org.hdiv.urlProcessor.UrlData",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 56,
+		"endLine": 113,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public processUrl(request HttpServletRequest, url String, method String) : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/UrlData.java",
+		"startLine": 273,
+		"endLine": 279,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public setUrlParams(urlParams String) : void"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/UrlData.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 54,
+		"endLine": 99,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public processUrl(request HttpServletRequest, url String, method String) : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "urlData.setUrlParams(processedParams)"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable count : int in method public getStatesCount() : int from class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "count : int"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable id : int in method public addState(state IState) : void from class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 7,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "id : int"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable stateParamValues : List<String> in method private validateParameterValues(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 727,
+		"endLine": 728,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 742,
+		"endLine": 742,
+		"startColumn": 17,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "stateParamValues : List<String>"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 749,
+		"endLine": 749,
+		"startColumn": 4,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable ulrParamsMap : Map<String,String[]> in method public createUrlData(url String, method String, request HttpServletRequest) : UrlData from class org.hdiv.urlProcessor.AbstractUrlProcessor",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 26,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "ulrParamsMap : Map<String,String[]>"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable stateParameter : IParameter to stateParameter : IParameter in method protected validateParameter(request HttpServletRequest, stateParameter IParameter, actionParamValues String[], unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 524,
+		"endLine": 524,
+		"startColumn": 14,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "stateParameter : IParameter"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 549,
+		"endLine": 550,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 556,
+		"endLine": 557,
+		"startColumn": 4,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 548,
+		"endLine": 551,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 525,
+		"endLine": 537,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 543,
+		"endLine": 553,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 80,
+		"endColumn": 105,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "stateParameter : IParameter"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 564,
+		"endLine": 565,
+		"startColumn": 5,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 571,
+		"endLine": 572,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 563,
+		"endLine": 566,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 540,
+		"endLine": 552,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 558,
+		"endLine": 568,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Parameterize Variable",
+	"description": "Parameterize Variable stateParameter : IParameter to stateParameter : IParameter in method public validate(value String, target String, parameter String, stateParameter IParameter, actionParamValues String[]) : IValidationResult from class org.hdiv.dataValidator.DataValidator",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 14,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "stateParameter : IParameter"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 88,
+		"endLine": 93,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 107,
+		"endLine": 118,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 83,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "stateParameter : IParameter"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 69,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 101,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter state : IState in method private validateParameterValues(request HttpServletRequest, target String, state IState, stateParameter IParameter, parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 707,
+		"endLine": 707,
+		"startColumn": 99,
+		"endColumn": 111,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "state : IState"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 687,
+		"endLine": 742,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private validateParameterValues(request HttpServletRequest, target String, state IState, stateParameter IParameter, parameter String, values String[]) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 702,
+		"endLine": 764,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private validateParameterValues(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter state : IState in method private validateReceivedValuesInState(request HttpServletRequest, target String, state IState, parameter String, values String[]) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 901,
+		"endLine": 901,
+		"startColumn": 4,
+		"endColumn": 16,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "state : IState"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 885,
+		"endLine": 926,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, state IState, parameter String, values String[]) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 907,
+		"endLine": 946,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private validateReceivedValuesInState(request HttpServletRequest, target String, stateParameter IParameter, actionParamValues String[], parameter String, values String[]) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter state : IState in method protected validateParameter(request HttpServletRequest, state IState, unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 507,
+		"endLine": 507,
+		"startColumn": 80,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "state : IState"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 488,
+		"endLine": 563,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected validateParameter(request HttpServletRequest, state IState, unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 501,
+		"endLine": 578,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "protected validateParameter(request HttpServletRequest, stateParameter IParameter, actionParamValues String[], unauthorizedEditableParameters Map<String,String[]>, hdivParameter String, target String, parameter String) : ValidatorHelperResult"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in class org.hdiv.dataValidator.DataValidatorTest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 33,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/test/java/org/hdiv/dataValidator/DataValidatorTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 27,
+		"endColumn": 40,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute dataValidatorFactoryRef : RuntimeBeanReference to dataValidatorRef : RuntimeBeanReference in class org.hdiv.config.xml.ConfigBeanDefinitionParser",
+	"leftSideLocations": [{
+		"filePath": "hdiv-config/src/main/java/org/hdiv/config/xml/ConfigBeanDefinitionParser.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 33,
+		"endColumn": 56,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "dataValidatorFactoryRef : RuntimeBeanReference"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-config/src/main/java/org/hdiv/config/xml/ConfigBeanDefinitionParser.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 33,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "dataValidatorRef : RuntimeBeanReference"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute name : String to id : int in class org.hdiv.state.Page",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "name : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/state/Page.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 14,
+		"endColumn": 16,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "id : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected createDataValidatorFactory(element Element, source Object, parserContext ParserContext) : RuntimeBeanReference renamed to protected createDataValidator(element Element, source Object, parserContext ParserContext) : RuntimeBeanReference in class org.hdiv.config.xml.ConfigBeanDefinitionParser",
+	"leftSideLocations": [{
+		"filePath": "hdiv-config/src/main/java/org/hdiv/config/xml/ConfigBeanDefinitionParser.java",
+		"startLine": 354,
+		"endLine": 362,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createDataValidatorFactory(element Element, source Object, parserContext ParserContext) : RuntimeBeanReference"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-config/src/main/java/org/hdiv/config/xml/ConfigBeanDefinitionParser.java",
+		"startLine": 358,
+		"endLine": 366,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected createDataValidator(element Element, source Object, parserContext ParserContext) : RuntimeBeanReference"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setDataValidatorFactory(dataValidatorFactory DataValidatorFactory) : void renamed to public setDataValidator(dataValidator IDataValidator) : void in class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1125,
+		"endLine": 1131,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setDataValidatorFactory(dataValidatorFactory DataValidatorFactory) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1145,
+		"endLine": 1151,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setDataValidator(dataValidator IDataValidator) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter dataValidatorFactory : DataValidatorFactory to dataValidator : IDataValidator in method public setDataValidator(dataValidator IDataValidator) : void from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1129,
+		"endLine": 1129,
+		"startColumn": 38,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "dataValidatorFactory : DataValidatorFactory"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1130,
+		"endLine": 1130,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1149,
+		"endLine": 1149,
+		"startColumn": 31,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "dataValidator : IDataValidator"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 1150,
+		"endLine": 1150,
+		"startColumn": 3,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter targetWithoutContextPath : String to target : String in method private isUserDefinedNonValidationParameter(target String, parameter String) : boolean from class org.hdiv.filter.ValidatorHelperRequest",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 575,
+		"endLine": 575,
+		"startColumn": 54,
+		"endColumn": 85,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "targetWithoutContextPath : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 577,
+		"endLine": 583,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 590,
+		"endLine": 590,
+		"startColumn": 54,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "target : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/filter/ValidatorHelperRequest.java",
+		"startLine": 592,
+		"endLine": 598,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable params : Map<String,String[]> to processedParams : String in method public processUrl(request HttpServletRequest, url String, method String) : String from class org.hdiv.urlProcessor.FormUrlProcessor",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 26,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "params : Map<String,String[]>"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 89,
+		"endLine": 90,
+		"startColumn": 11,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "processedParams : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/FormUrlProcessor.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 4,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable separator : String to queryString : String in method protected getParamsQueryString(urlData UrlData) : String from class org.hdiv.urlProcessor.AbstractUrlProcessor",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "separator : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "queryString : String"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/urlProcessor/AbstractUrlProcessor.java",
+		"startLine": 232,
+		"endLine": 232,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable validationResult : IValidationResult to result : IValidationResult in method public validate(value String, target String, parameter String, stateParameter IParameter, actionParamValues String[]) : IValidationResult from class org.hdiv.dataValidator.DataValidator",
+	"leftSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "validationResult : IValidationResult"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 21,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "result : IValidationResult"
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 6,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 6,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 6,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 6,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 6,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hdiv-core/src/main/java/org/hdiv/dataValidator/DataValidator.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 6,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

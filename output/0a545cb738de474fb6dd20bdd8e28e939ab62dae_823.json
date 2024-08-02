@@ -1,0 +1,606 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "0a545cb738de474fb6dd20bdd8e28e939ab62dae",
+	"url": "https://github.com/apache/camel/commit/0a545cb738de474fb6dd20bdd8e28e939ab62dae",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter processor : Processor in method public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean from class org.apache.camel.processor.interceptor.DebugTest.setUp.new ConditionSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 55,
+		"endLine": 57,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public match(exchange Exchange, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 60,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter processor : Processor in method public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean from class org.apache.camel.processor.interceptor.DebugTest.setUp.new ConditionSupport",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 61,
+		"endLine": 68,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public match(exchange Exchange, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 60,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/test/java/org/apache/camel/processor/interceptor/DebugTest.java",
+		"startLine": 70,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter processor : Processor in method public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean from class org.apache.camel.spi.Condition",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Condition.java",
+		"startLine": 32,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public match(exchange Exchange, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Condition.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 45,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "processor : Processor"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Condition.java",
+		"startLine": 35,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.camel.management.event.AbstractExchangeEvent from classes [org.apache.camel.management.event.ExchangeCompletedEvent, org.apache.camel.management.event.ExchangeCreatedEvent, org.apache.camel.management.event.ExchangeFailureEvent, org.apache.camel.management.event.ExchangeFailureHandledEvent, org.apache.camel.management.event.ExchangeSentEvent]",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCompletedEvent.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.management.event.ExchangeCompletedEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCreatedEvent.java",
+		"startLine": 23,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.management.event.ExchangeCreatedEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureEvent.java",
+		"startLine": 23,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.management.event.ExchangeFailureEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 24,
+		"endLine": 67,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.management.event.ExchangeFailureHandledEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeSentEvent.java",
+		"startLine": 24,
+		"endLine": 58,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.camel.management.event.ExchangeSentEvent"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCompletedEvent.java",
+		"startLine": 21,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.management.event.ExchangeCompletedEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCreatedEvent.java",
+		"startLine": 21,
+		"endLine": 35,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.management.event.ExchangeCreatedEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureEvent.java",
+		"startLine": 21,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.management.event.ExchangeFailureEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 22,
+		"endLine": 59,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.management.event.ExchangeFailureHandledEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeSentEvent.java",
+		"startLine": 22,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.camel.management.event.ExchangeSentEvent"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 23,
+		"endLine": 40,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.camel.management.event.AbstractExchangeEvent"
+}]
+},
+{
+	"type": "Inline Attribute",
+	"description": "Inline Attribute private exchange : Exchange in class org.apache.camel.management.event.ExchangeFailureHandledEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "inlined attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private exchange : Exchange from class org.apache.camel.management.event.ExchangeCompletedEvent to private exchange : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCompletedEvent.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private exchange : Exchange from class org.apache.camel.management.event.ExchangeCreatedEvent to private exchange : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCreatedEvent.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private exchange : Exchange from class org.apache.camel.management.event.ExchangeFailureEvent to private exchange : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureEvent.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private exchange : Exchange from class org.apache.camel.management.event.ExchangeFailureHandledEvent to private exchange : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private exchange : Exchange from class org.apache.camel.management.event.ExchangeSentEvent to private exchange : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeSentEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 28,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "private exchange : Exchange"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getExchange() : Exchange from class org.apache.camel.management.event.ExchangeCompletedEvent to public getExchange() : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCompletedEvent.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getExchange() : Exchange from class org.apache.camel.management.event.ExchangeCreatedEvent to public getExchange() : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeCreatedEvent.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getExchange() : Exchange from class org.apache.camel.management.event.ExchangeFailureEvent to public getExchange() : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureEvent.java",
+		"startLine": 36,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getExchange() : Exchange from class org.apache.camel.management.event.ExchangeFailureHandledEvent to public getExchange() : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeFailureHandledEvent.java",
+		"startLine": 43,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public getExchange() : Exchange from class org.apache.camel.management.event.ExchangeSentEvent to public getExchange() : Exchange from class org.apache.camel.management.event.AbstractExchangeEvent",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/ExchangeSentEvent.java",
+		"startLine": 41,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/event/AbstractExchangeEvent.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public getExchange() : Exchange"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method protected onBreakpoint(exchange Exchange, processor Processor, definition ProcessorDefinition, breakpoint Breakpoint) : void renamed to protected onAfterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition, breakpoint Breakpoint) : void in class org.apache.camel.impl.DefaultDebugger",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultDebugger.java",
+		"startLine": 129,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected onBreakpoint(exchange Exchange, processor Processor, definition ProcessorDefinition, breakpoint Breakpoint) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultDebugger.java",
+		"startLine": 184,
+		"endLine": 190,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected onAfterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition, breakpoint Breakpoint) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public match(exchange Exchange, definition ProcessorDefinition) : boolean renamed to public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean in class org.apache.camel.spi.Condition",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Condition.java",
+		"startLine": 32,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 70,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public match(exchange Exchange, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Condition.java",
+		"startLine": 35,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public matchProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean renamed to public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean in class org.apache.camel.impl.DefaultDebugger",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultDebugger.java",
+		"startLine": 100,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultDebugger.java",
+		"startLine": 142,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean renamed to public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean in class org.apache.camel.spi.Debugger",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Debugger.java",
+		"startLine": 73,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 96,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Debugger.java",
+		"startLine": 86,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : boolean"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : void renamed to public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : void in class org.apache.camel.spi.Breakpoint",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Breakpoint.java",
+		"startLine": 61,
+		"endLine": 68,
+		"startColumn": 5,
+		"endColumn": 93,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public onExchange(exchange Exchange, processor Processor, definition ProcessorDefinition) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/spi/Breakpoint.java",
+		"startLine": 71,
+		"endLine": 78,
+		"startColumn": 5,
+		"endColumn": 95,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public afterProcess(exchange Exchange, processor Processor, definition ProcessorDefinition) : void"
+}]
+}
+]
+}]
+}

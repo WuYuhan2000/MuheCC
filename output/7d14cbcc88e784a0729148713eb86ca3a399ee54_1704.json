@@ -1,0 +1,621 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/d2rq/d2rq",
+	"sha1": "7d14cbcc88e784a0729148713eb86ca3a399ee54",
+	"url": "https://github.com/d2rq/d2rq/commit/7d14cbcc88e784a0729148713eb86ca3a399ee54",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type queries : List to group : CompatibleRelationGroup in method private addRelation(tripleRelation TripleRelation) : void from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "queries : List"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "group : CompatibleRelationGroup"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type tripleRelations : List to group : CompatibleRelationGroup in method public iterator() : ExtendedIterator from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tripleRelations : List"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 28,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "group : CompatibleRelationGroup"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private createPlan() : ExecutionPlanElement inlined to public iterator() : ExtendedIterator in class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 71,
+		"endLine": 79,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private createPlan() : ExecutionPlanElement"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 3,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 74,
+		"endLine": 77,
+		"startColumn": 24,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 88,
+		"endLine": 92,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public iterator() : ExtendedIterator"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "createPlan()"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 3,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 61,
+		"endLine": 72,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public iterator() : ExtendedIterator"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 64,
+		"endLine": 70,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 64,
+		"endLine": 70,
+		"startColumn": 24,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class de.fuberlin.wiwiss.d2rq.plan.ExecuteCompatibleTripleRelationsTest moved and renamed to de.fuberlin.wiwiss.d2rq.find.CompatibleRelationGroupTest",
+	"leftSideLocations": [{
+		"filePath": "test/de/fuberlin/wiwiss/d2rq/plan/ExecuteCompatibleTripleRelationsTest.java",
+		"startLine": 13,
+		"endLine": 27,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.fuberlin.wiwiss.d2rq.plan.ExecuteCompatibleTripleRelationsTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "test/de/fuberlin/wiwiss/d2rq/find/CompatibleRelationGroupTest.java",
+		"startLine": 14,
+		"endLine": 29,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "de.fuberlin.wiwiss.d2rq.find.CompatibleRelationGroupTest"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter relation : TripleRelation to tripleRelation : TripleRelation in method private addRelation(tripleRelation TripleRelation) : void from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 27,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "relation : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 27,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "tripleRelation : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable bridge : TripleRelation to tripleRelation : TripleRelation in method public FindQuery(triplePattern Triple, propertyBridges Collection) from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 19,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bridge : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 4,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 45,
+		"endLine": 51,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 19,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "tripleRelation : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 4,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable queries : List to group : CompatibleRelationGroup in method private addRelation(tripleRelation TripleRelation) : void from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "queries : List"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 59,
+		"endLine": 64,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 28,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "group : CompatibleRelationGroup"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable selectionBridge : TripleRelation to selectedTripleRelation : TripleRelation in method public FindQuery(triplePattern Triple, propertyBridges Collection) from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 19,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "selectionBridge : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 45,
+		"endLine": 51,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 19,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "selectedTripleRelation : TripleRelation"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 39,
+		"endLine": 45,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable tripleRelations : List to group : CompatibleRelationGroup in method public iterator() : ExtendedIterator from class de.fuberlin.wiwiss.d2rq.find.FindQuery",
+	"leftSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "tripleRelations : List"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 28,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "group : CompatibleRelationGroup"
+}, {
+		"filePath": "src/de/fuberlin/wiwiss/d2rq/find/FindQuery.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

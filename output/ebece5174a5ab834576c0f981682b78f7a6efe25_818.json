@@ -1,0 +1,531 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "ebece5174a5ab834576c0f981682b78f7a6efe25",
+	"url": "https://github.com/apache/camel/commit/ebece5174a5ab834576c0f981682b78f7a6efe25",
+	"refactorings": [{
+	"type": "Move Code",
+	"description": "Move Code from public FileIdempotentRepository(store File, set Map<String,Object>) to public add(messageId String) : boolean in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public FileIdempotentRepository(store File, set Map<String,Object>)"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 107,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public add(messageId String) : boolean"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from public FileIdempotentRepository(store File, set Map<String,Object>) to public contains(key String) : boolean in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "public FileIdempotentRepository(store File, set Map<String,Object>)"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 131,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "public contains(key String) : boolean"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter set : Map<String,Object> in method public FileIdempotentRepository(store File, set Map<String,Object>) from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 55,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "set : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FileIdempotentRepository(store File, set Map<String,Object>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 53,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "set : Map<String,Object>"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public FileIdempotentRepository(fileStore File, set Map<String,Object>)"
+}]
+},
+{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter store : File in method public FileIdempotentRepository(store File, set Map<String,Object>) from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 37,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "store : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 50,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public FileIdempotentRepository(store File, set Map<String,Object>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 37,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "fileStore : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 53,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public FileIdempotentRepository(fileStore File, set Map<String,Object>)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute maxStoreSize : long to maxFileStoreSize : long in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 18,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "maxStoreSize : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 18,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "maxFileStoreSize : long"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute store : File to fileStore : File in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "store : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 18,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "fileStore : File"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getMaxStoreSize() : long renamed to public getMaxFileStoreSize() : long in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 128,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMaxStoreSize() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 157,
+		"endLine": 159,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getMaxFileStoreSize() : long"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getStore() : File renamed to public getFileStore() : File in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 112,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getStore() : File"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 141,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getFileStore() : File"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setMaxStoreSize(maxStoreSize long) : void renamed to public setMaxFileStoreSize(maxFileStoreSize long) : void in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 132,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setMaxStoreSize(maxStoreSize long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 161,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setMaxFileStoreSize(maxFileStoreSize long) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setStore(store File) : void renamed to public setFileStore(fileStore File) : void in class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 116,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setStore(store File) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 145,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setFileStore(fileStore File) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter maxStoreSize : long to maxFileStoreSize : long in method public setMaxFileStoreSize(maxFileStoreSize long) : void from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 33,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "maxStoreSize : long"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 37,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "maxFileStoreSize : long"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter store : File to fileStore : File in method public FileIdempotentRepository(fileStore File, set Map<String,Object>) from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 37,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "store : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 37,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileStore : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter store : File to fileStore : File in method public fileIdempotentRepository(fileStore File) : IdempotentRepository from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 65,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "store : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 65,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileStore : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter store : File to fileStore : File in method public fileIdempotentRepository(fileStore File, cacheSize int) : IdempotentRepository from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 65,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "store : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 65,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileStore : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 93,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter store : File to fileStore : File in method public setFileStore(fileStore File) : void from class org.apache.camel.processor.idempotent.FileIdempotentRepository",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 26,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "store : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 30,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "fileStore : File"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/processor/idempotent/FileIdempotentRepository.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

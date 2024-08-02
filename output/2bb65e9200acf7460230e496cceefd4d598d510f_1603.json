@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/internetarchive/heritrix3",
+	"sha1": "2bb65e9200acf7460230e496cceefd4d598d510f",
+	"url": "https://github.com/internetarchive/heritrix3/commit/2bb65e9200acf7460230e496cceefd4d598d510f",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type numberOfFormsProcessed : long to numberOfFormsProcessed : AtomicLong in class org.archive.modules.extractor.JerichoExtractorHTML",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/extractor/JerichoExtractorHTML.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 20,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "numberOfFormsProcessed : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/extractor/JerichoExtractorHTML.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 26,
+		"endColumn": 68,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "numberOfFormsProcessed : AtomicLong"
+}]
+},
+{
+	"type": "Replace Attribute",
+	"description": "Replace Attribute package linksExtracted : AtomicLong from class org.archive.modules.extractor.ExtractorImpliedURI with protected numberOfLinksExtracted : long from class org.archive.modules.extractor.ExtractorJS",
+	"leftSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/extractor/ExtractorImpliedURI.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 22,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package linksExtracted : AtomicLong"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/src/main/java/org/archive/modules/extractor/ExtractorJS.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 27,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "replaced attribute declaration",
+		"codeElement": "protected numberOfLinksExtracted : long"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,5163 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/dozermapper/dozer",
+	"sha1": "2e16bba9234ca33b0c408d79ea5511760bb8174e",
+	"url": "https://github.com/dozermapper/dozer/commit/2e16bba9234ca33b0c408d79ea5511760bb8174e",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type fieldBuilders : List<FieldContainerBuider> to fieldBuilders : List<FieldBuider> in class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 46,
+		"endColumn": 99,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "fieldBuilders : List<FieldContainerBuider>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 37,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "fieldBuilders : List<FieldBuider>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type mappingBuilders : List<MappingDefinitionBuilder> to mappingBuilders : List<MappingBuilder> in class org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 48,
+		"endColumn": 107,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "mappingBuilders : List<MappingDefinitionBuilder>"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 38,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "mappingBuilders : List<MappingBuilder>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type parser : XMLParser to parser : MappingsSource in class org.dozer.loader.xml.XMLParserTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/xml/XMLParserTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 21,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "parser : XMLParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/xml/XMLParserTest.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 26,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parser : MappingsSource"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type builder : MappingBuilder to builder : DozerBuilder in method private parseConfiguration(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 48,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 5,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 48,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type builder : MappingBuilder to builder : DozerBuilder in method private parseMapping(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 42,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 42,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type classBuilder : MappingBuilder.ClassDefinitionBuilder to classBuilder : DozerBuilder.ClassDefinitionBuilder in method private parseClass(element Element, classBuilder DozerBuilder.ClassDefinitionBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 44,
+		"endColumn": 94,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "classBuilder : MappingBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 7,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 44,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "classBuilder : DozerBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 7,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 202,
+		"endLine": 202,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 7,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 7,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : MappingBuilder.MappingConfigurationBuilder to config : DozerBuilder.ConfigurationBuilder in method private parseAllowedExceptions(ele Element, config DozerBuilder.ConfigurationBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 458,
+		"endLine": 458,
+		"startColumn": 52,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : MappingBuilder.MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 11,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 466,
+		"endLine": 466,
+		"startColumn": 52,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : DozerBuilder.ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 11,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : MappingBuilder.MappingConfigurationBuilder to config : DozerBuilder.ConfigurationBuilder in method private parseCopyByReferences(ele Element, config DozerBuilder.ConfigurationBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 51,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : MappingBuilder.MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 452,
+		"endLine": 452,
+		"startColumn": 11,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 449,
+		"endLine": 449,
+		"startColumn": 51,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : DozerBuilder.ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 11,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type config : MappingBuilder.MappingConfigurationBuilder to config : DozerBuilder.ConfigurationBuilder in method private parseCustomConverters(ele Element, config DozerBuilder.ConfigurationBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 51,
+		"endColumn": 100,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "config : MappingBuilder.MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 11,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 51,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "config : DozerBuilder.ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 11,
+		"endColumn": 110,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type definitionBuilder : MappingBuilder.FieldMapBuilder to definitionBuilder : DozerBuilder.FieldMappingBuilder in method private setRelationshipType(ele Element, definitionBuilder DozerBuilder.FieldMappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 49,
+		"endColumn": 97,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "definitionBuilder : MappingBuilder.FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 49,
+		"endColumn": 99,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "definitionBuilder : DozerBuilder.FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 5,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type definitionBuilder : MappingBuilder.MappingDefinitionBuilder to definitionBuilder : DozerBuilder.MappingBuilder in method private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 60,
+		"endColumn": 117,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "definitionBuilder : MappingBuilder.MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 62,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "definitionBuilder : DozerBuilder.MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type definitionBuilder : MappingBuilder.MappingDefinitionBuilder to definitionBuilder : DozerBuilder.MappingBuilder in method private parseFieldExcludeMap(ele Element, definitionBuilder DozerBuilder.MappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 50,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "definitionBuilder : MappingBuilder.MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 50,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "definitionBuilder : DozerBuilder.MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 91,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type definitionBuilder : MappingBuilder.MappingDefinitionBuilder to definitionBuilder : DozerBuilder.MappingBuilder in method private parseGenericFieldMap(ele Element, definitionBuilder DozerBuilder.MappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 50,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "definitionBuilder : MappingBuilder.MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 5,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 50,
+		"endColumn": 95,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "definitionBuilder : DozerBuilder.MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 5,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fieldBuilder : MappingBuilder.FieldBuilder to fieldBuilder : DozerBuilder.FieldDefinitionBuilder in method private parseField(ele Element, fieldBuilder DozerBuilder.FieldDefinitionBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 338,
+		"endLine": 338,
+		"startColumn": 40,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fieldBuilder : MappingBuilder.FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 340,
+		"endLine": 340,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 358,
+		"endLine": 358,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 7,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 40,
+		"endColumn": 88,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldBuilder : DozerBuilder.FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 354,
+		"endLine": 354,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 360,
+		"endLine": 360,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 363,
+		"endLine": 363,
+		"startColumn": 7,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 7,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 7,
+		"endColumn": 98,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fieldMapBuilder : MappingBuilder.FieldContainerBuider to fieldMapBuilder : DozerBuilder.FieldBuider in method private parseFieldElements(element Element, fieldMapBuilder DozerBuilder.FieldBuider) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 225,
+		"endLine": 225,
+		"startColumn": 52,
+		"endColumn": 103,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fieldMapBuilder : MappingBuilder.FieldContainerBuider"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 7,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 52,
+		"endColumn": 92,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldMapBuilder : DozerBuilder.FieldBuider"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 7,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fieldMapBuilder : MappingBuilder.FieldMapBuilder to fieldMapBuilder : DozerBuilder.FieldMappingBuilder in method private parseFieldMap(ele Element, fieldMapBuilder DozerBuilder.FieldMappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 43,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fieldMapBuilder : MappingBuilder.FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 11,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 11,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 11,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 305,
+		"endLine": 305,
+		"startColumn": 43,
+		"endColumn": 91,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldMapBuilder : DozerBuilder.FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 322,
+		"endLine": 322,
+		"startColumn": 11,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 11,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 11,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 334,
+		"endLine": 334,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ExcludeFieldBuilder to FieldExclusionBuilder in method public fieldExclude() : FieldExclusionBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ExcludeFieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 162,
+		"endLine": 167,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fieldExclude() : ExcludeFieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 12,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldExclusionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 169,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public fieldExclude() : FieldExclusionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public a(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldBuider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public a(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public a(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public a(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldExclusionBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 203,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public a(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 210,
+		"endLine": 214,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public a(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public a(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 246,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public a(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 253,
+		"endLine": 257,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public a(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public b(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldBuider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public b(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 5,
+		"endColumn": 56,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public b(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public b(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldExclusionBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 209,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public b(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 216,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public b(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldBuilder to FieldDefinitionBuilder in method public b(name String, type String) : FieldDefinitionBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 12,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 252,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public b(name String, type String) : FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 259,
+		"endLine": 263,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public b(name String, type String) : FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public copyByReference(value boolean) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 301,
+		"endLine": 305,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public copyByReference(value boolean) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 308,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public copyByReference(value boolean) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public customConverter(type Class<? extends CustomConverter>) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 312,
+		"endLine": 314,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public customConverter(type Class<? extends CustomConverter>) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 319,
+		"endLine": 321,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public customConverter(type Class<? extends CustomConverter>) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public customConverter(typeName String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 316,
+		"endLine": 319,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public customConverter(typeName String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 323,
+		"endLine": 326,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public customConverter(typeName String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public customConverterId(attribute String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 321,
+		"endLine": 324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public customConverterId(attribute String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 328,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public customConverterId(attribute String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public customConverterParam(attribute String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 326,
+		"endLine": 326,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 326,
+		"endLine": 329,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public customConverterParam(attribute String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 333,
+		"endLine": 336,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public customConverterParam(attribute String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public destDeepIndexHintContainer(hint String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 294,
+		"endLine": 299,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destDeepIndexHintContainer(hint String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 301,
+		"endLine": 301,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 301,
+		"endLine": 306,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public destDeepIndexHintContainer(hint String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public destHintContainer(hint String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 280,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public destHintContainer(hint String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 287,
+		"endLine": 292,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public destHintContainer(hint String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public field() : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 169,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public field() : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 176,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public field() : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public mapId(attribute String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 307,
+		"endLine": 310,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapId(attribute String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 314,
+		"endLine": 317,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapId(attribute String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public relationshipType(relationshipType RelationshipType) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 263,
+		"endLine": 266,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public relationshipType(relationshipType RelationshipType) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 270,
+		"endLine": 273,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public relationshipType(relationshipType RelationshipType) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public removeOrphans(value boolean) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 268,
+		"endLine": 271,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public removeOrphans(value boolean) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 275,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public removeOrphans(value boolean) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public srcDeepIndexHintContainer(hint String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 287,
+		"endLine": 292,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public srcDeepIndexHintContainer(hint String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 294,
+		"endLine": 294,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 294,
+		"endLine": 299,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public srcDeepIndexHintContainer(hint String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public srcHintContainer(hint String) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 273,
+		"endLine": 278,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public srcHintContainer(hint String) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 280,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public srcHintContainer(hint String) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type FieldMapBuilder to FieldMappingBuilder in method public type(type MappingDirection) : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 12,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 258,
+		"endLine": 261,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public type(type MappingDirection) : FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 265,
+		"endLine": 268,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public type(type MappingDirection) : FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingBuilder.FieldMapBuilder to DozerBuilder.FieldMappingBuilder in method private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 267,
+		"endLine": 267,
+		"startColumn": 11,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingBuilder.FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 267,
+		"endLine": 292,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private determineFieldMap(definitionBuilder MappingBuilder.MappingDefinitionBuilder, ele Element) : MappingBuilder.FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 11,
+		"endColumn": 43,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "DozerBuilder.FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 278,
+		"endLine": 303,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public allowedException(type Class) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 555,
+		"endLine": 555,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 555,
+		"endLine": 562,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public allowedException(type Class) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 566,
+		"endLine": 566,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 566,
+		"endLine": 573,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public allowedException(type Class) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public allowedException(type String) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 549,
+		"endLine": 552,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public allowedException(type String) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 560,
+		"endLine": 560,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 560,
+		"endLine": 563,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public allowedException(type String) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public beanFactory(name String) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 525,
+		"endLine": 525,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 525,
+		"endLine": 528,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public beanFactory(name String) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 536,
+		"endLine": 536,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 536,
+		"endLine": 539,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public beanFactory(name String) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public configuration() : ConfigurationBuilder from class org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 10,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 60,
+		"endLine": 67,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public configuration() : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 10,
+		"endColumn": 30,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 67,
+		"endLine": 74,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public configuration() : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public copyByReference(typeMask String) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 543,
+		"endLine": 543,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 543,
+		"endLine": 547,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public copyByReference(typeMask String) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 554,
+		"endLine": 554,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 554,
+		"endLine": 558,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public copyByReference(typeMask String) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public dateFormat(format String) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 505,
+		"endLine": 505,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 505,
+		"endLine": 508,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public dateFormat(format String) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 512,
+		"endLine": 512,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 512,
+		"endLine": 515,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public dateFormat(format String) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public relationshipType(value RelationshipType) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 520,
+		"endLine": 520,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 520,
+		"endLine": 523,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public relationshipType(value RelationshipType) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 527,
+		"endLine": 527,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 527,
+		"endLine": 534,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public relationshipType(value RelationshipType) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public stopOnErrors(value Boolean) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 500,
+		"endLine": 500,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 500,
+		"endLine": 503,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public stopOnErrors(value Boolean) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 507,
+		"endLine": 507,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 507,
+		"endLine": 510,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public stopOnErrors(value Boolean) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public trimStrings(value Boolean) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 515,
+		"endLine": 515,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 515,
+		"endLine": 518,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public trimStrings(value Boolean) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 522,
+		"endLine": 522,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 522,
+		"endLine": 525,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public trimStrings(value Boolean) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingConfigurationBuilder to ConfigurationBuilder in method public wildcard(value Boolean) : ConfigurationBuilder from class org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 510,
+		"endLine": 510,
+		"startColumn": 12,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 510,
+		"endLine": 513,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public wildcard(value Boolean) : MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 517,
+		"endLine": 517,
+		"startColumn": 12,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 517,
+		"endLine": 520,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public wildcard(value Boolean) : ConfigurationBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public beanFactory(typeName String) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 103,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public beanFactory(typeName String) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 110,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public beanFactory(typeName String) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public dateFormat(dateFormat String) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 87,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public dateFormat(dateFormat String) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 94,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public dateFormat(dateFormat String) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public mapEmptyString(value boolean) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 97,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapEmptyString(value boolean) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 104,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapEmptyString(value boolean) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public mapId(id String) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 128,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapId(id String) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 135,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapId(id String) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public mapNull(value boolean) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 92,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapNull(value boolean) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapNull(value boolean) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public mapping() : MappingBuilder from class org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 69,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapping() : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 76,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapping() : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public relationshipType(type RelationshipType) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 108,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public relationshipType(type RelationshipType) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 115,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public relationshipType(type RelationshipType) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public stopOnErrors(value Boolean) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 123,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public stopOnErrors(value Boolean) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 130,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public stopOnErrors(value Boolean) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public trimStrings(value Boolean) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 118,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public trimStrings(value Boolean) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 125,
+		"endLine": 128,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public trimStrings(value Boolean) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public type(type MappingDirection) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public type(type MappingDirection) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 140,
+		"endLine": 143,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public type(type MappingDirection) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MappingDefinitionBuilder to MappingBuilder in method public wildcard(value Boolean) : MappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 12,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 113,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public wildcard(value Boolean) : MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 120,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public wildcard(value Boolean) : MappingBuilder"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : ExcludeFieldBuilder to builder : FieldExclusionBuilder in method public fieldExclude() : FieldExclusionBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 27,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : ExcludeFieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 29,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : FieldExclusionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : FieldContainerBuider to builder : FieldBuider in method public build() : void from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 12,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "builder : FieldContainerBuider"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 12,
+		"endColumn": 31,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : FieldBuider"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : FieldMapBuilder to builder : FieldMappingBuilder in method public field() : FieldMappingBuilder from class org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 170,
+		"endLine": 170,
+		"startColumn": 23,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 27,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 7,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : MappingBuilder to builder : DozerBuilder in method public load() : MappingFileData from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 20,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 11,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 11,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 11,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 11,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : MappingBuilder to builder : DozerBuilder in method public testBuild() : void from class org.dozer.loader.MappingsBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/MappingBuilderTest.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 20,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder"
+}, {
+		"filePath": "src/test/java/org/dozer/loader/MappingBuilderTest.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/MappingsBuilderTest.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 18,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder"
+}, {
+		"filePath": "src/test/java/org/dozer/loader/MappingsBuilderTest.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : MappingBuilder.FieldBuilder to builder : DozerBuilder.FieldDefinitionBuilder in method private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder.FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 11,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 47,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder.FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 11,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : MappingBuilder.FieldBuilder to builder : DozerBuilder.FieldDefinitionBuilder in method private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingBuilder.FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 11,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 47,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : DozerBuilder.FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 11,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type builder : MappingDefinitionBuilder to builder : MappingBuilder in method public build() : MappingFileData from class org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 10,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "builder : MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 7,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 10,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "builder : MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 7,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type classBuilder : MappingBuilder.ClassDefinitionBuilder to classBuilder : DozerBuilder.ClassDefinitionBuilder in method private parseMapping(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 49,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "classBuilder : MappingBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 47,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "classBuilder : DozerBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type classBuilder : MappingBuilder.ClassDefinitionBuilder to classBuilder : DozerBuilder.ClassDefinitionBuilder in method private parseMapping(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 49,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "classBuilder : MappingBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 47,
+		"endColumn": 96,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "classBuilder : DozerBuilder.ClassDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type configBuilder : MappingBuilder.MappingConfigurationBuilder to configBuilder : DozerBuilder.ConfigurationBuilder in method private parseConfiguration(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 48,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "configBuilder : MappingBuilder.MappingConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 11,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 11,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 11,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 11,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 11,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 39,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "configBuilder : DozerBuilder.ConfigurationBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 389,
+		"endLine": 389,
+		"startColumn": 11,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 11,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 395,
+		"endLine": 395,
+		"startColumn": 11,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 11,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 402,
+		"endLine": 402,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 11,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type customConverterBuilder : MappingBuilder.CustomConverterBuilder to customConverterBuilder : DozerBuilder.CustomConverterBuilder in method private parseCustomConverters(ele Element, config DozerBuilder.ConfigurationBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 49,
+		"endColumn": 111,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "customConverterBuilder : MappingBuilder.CustomConverterBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 47,
+		"endColumn": 109,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "customConverterBuilder : DozerBuilder.CustomConverterBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 17,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type definitionBuilder : MappingBuilder.MappingDefinitionBuilder to definitionBuilder : DozerBuilder.MappingBuilder in method private parseMapping(ele Element, builder DozerBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 45,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "definitionBuilder : MappingBuilder.MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 7,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 7,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 7,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 7,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 175,
+		"endLine": 175,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 11,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 11,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 33,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "definitionBuilder : DozerBuilder.MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 7,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 7,
+		"endColumn": 95,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 7,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 7,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 7,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 7,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 167,
+		"endLine": 167,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 11,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 11,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 11,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fieldBuilder : MappingBuilder.FieldBuilder to fieldBuilder : DozerBuilder.FieldDefinitionBuilder in method private parseFieldElements(element Element, fieldMapBuilder DozerBuilder.FieldBuider) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 35,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fieldBuilder : MappingBuilder.FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 43,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldBuilder : DozerBuilder.FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fieldBuilder : MappingBuilder.FieldBuilder to fieldBuilder : DozerBuilder.FieldDefinitionBuilder in method private parseFieldElements(element Element, fieldMapBuilder DozerBuilder.FieldBuider) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 35,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fieldBuilder : MappingBuilder.FieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 43,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldBuilder : DozerBuilder.FieldDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 7,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fieldMapBuilder : MappingBuilder.ExcludeFieldBuilder to fieldMapBuilder : DozerBuilder.FieldExclusionBuilder in method private parseFieldExcludeMap(ele Element, definitionBuilder DozerBuilder.MappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 40,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fieldMapBuilder : MappingBuilder.ExcludeFieldBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 40,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldMapBuilder : DozerBuilder.FieldExclusionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fieldMapBuilder : MappingBuilder.FieldMapBuilder to fieldMapBuilder : DozerBuilder.FieldMappingBuilder in method private determineFieldMap(definitionBuilder DozerBuilder.MappingBuilder, ele Element) : DozerBuilder.FieldMappingBuilder from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 36,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fieldMapBuilder : MappingBuilder.FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 11,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 11,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 38,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldMapBuilder : DozerBuilder.FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 11,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 11,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fieldMapBuilder : MappingBuilder.FieldMapBuilder to fieldMapBuilder : DozerBuilder.FieldMappingBuilder in method private parseGenericFieldMap(ele Element, definitionBuilder DozerBuilder.MappingBuilder) : void from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 36,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "fieldMapBuilder : MappingBuilder.FieldMapBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 7,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 7,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 261,
+		"endLine": 261,
+		"startColumn": 7,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 264,
+		"endLine": 264,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 38,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "fieldMapBuilder : DozerBuilder.FieldMappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 7,
+		"endColumn": 110,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 263,
+		"endLine": 263,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 266,
+		"endLine": 266,
+		"startColumn": 7,
+		"endColumn": 85,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 269,
+		"endLine": 269,
+		"startColumn": 7,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 272,
+		"endLine": 272,
+		"startColumn": 7,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 275,
+		"endLine": 275,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mappingDefinitionBuilder : MappingDefinitionBuilder to mappingDefinitionBuilder : MappingBuilder in method public mapping() : MappingBuilder from class org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 30,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mappingDefinitionBuilder : MappingDefinitionBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 20,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "mappingDefinitionBuilder : MappingBuilder"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 37,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type parser : XMLParser to parser : MappingsSource in method public read(url URL) : MappingFileData from class org.dozer.loader.xml.MappingFileReader",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/MappingFileReader.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parser : XMLParser"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/MappingFileReader.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/MappingFileReader.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 22,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "parser : MappingsSource"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/MappingFileReader.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 7,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private findConfiguration(mappingFileDataList List<MappingFileData>) : Configuration extracted from public load(mappingFiles List<String>) : LoadMappingsResult in class org.dozer.loader.CustomMappingsLoader",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 55,
+		"endLine": 115,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public load(mappingFiles List<String>) : LoadMappingsResult"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 72,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 11,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 69,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 89,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 44,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 69,
+		"endLine": 78,
+		"startColumn": 57,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 89,
+		"endLine": 91,
+		"startColumn": 65,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 111,
+		"endLine": 132,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private findConfiguration(mappingFileDataList List<MappingFileData>) : Configuration"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 117,
+		"endLine": 120,
+		"startColumn": 11,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 116,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 114,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 127,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 113,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 116,
+		"endLine": 121,
+		"startColumn": 42,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 114,
+		"endLine": 123,
+		"startColumn": 55,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 127,
+		"endLine": 129,
+		"startColumn": 38,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 113,
+		"endLine": 124,
+		"startColumn": 65,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 54,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public load(mappingFiles List<String>) : LoadMappingsResult"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 41,
+		"endColumn": 79,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "findConfiguration(mappingFileDataList)"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private loadFromFiles(mappingFiles List<String>) : List<MappingFileData> extracted from public load(mappingFiles List<String>) : LoadMappingsResult in class org.dozer.loader.CustomMappingsLoader",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 55,
+		"endLine": 115,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public load(mappingFiles List<String>) : LoadMappingsResult"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 7,
+		"endColumn": 130,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 9,
+		"endColumn": 100,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 62,
+		"endLine": 80,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 60,
+		"endLine": 81,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 62,
+		"endLine": 80,
+		"startColumn": 51,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 60,
+		"endLine": 81,
+		"startColumn": 58,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 94,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private loadFromFiles(mappingFiles List<String>) : List<MappingFileData>"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 5,
+		"endColumn": 82,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 7,
+		"endColumn": 130,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 98,
+		"endLine": 106,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 96,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 98,
+		"endLine": 106,
+		"startColumn": 51,
+		"endColumn": 8,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 96,
+		"endLine": 107,
+		"startColumn": 58,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 54,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public load(mappingFiles List<String>) : LoadMappingsResult"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 49,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "loadFromFiles(mappingFiles)"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/CustomMappingsLoader.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.ExcludeFieldBuilder moved and renamed to org.dozer.loader.DozerBuilder.FieldExclusionBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 191,
+		"endLine": 221,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.ExcludeFieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 198,
+		"endLine": 228,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.FieldExclusionBuilder"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.FieldBuilder moved and renamed to org.dozer.loader.DozerBuilder.FieldDefinitionBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 368,
+		"endLine": 411,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.FieldBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 375,
+		"endLine": 418,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.FieldDefinitionBuilder"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.FieldContainerBuider moved and renamed to org.dozer.loader.DozerBuilder.FieldBuider",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 183,
+		"endLine": 189,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.FieldContainerBuider"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 190,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.FieldBuider"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.FieldMapBuilder moved and renamed to org.dozer.loader.DozerBuilder.FieldMappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 223,
+		"endLine": 366,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.FieldMapBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 230,
+		"endLine": 373,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.FieldMappingBuilder"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.MappingConfigurationBuilder moved and renamed to org.dozer.loader.DozerBuilder.ConfigurationBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 490,
+		"endLine": 564,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.MappingConfigurationBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 497,
+		"endLine": 575,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.ConfigurationBuilder"
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.dozer.loader.MappingBuilder.MappingDefinitionBuilder moved and renamed to org.dozer.loader.DozerBuilder.MappingBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 78,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder.MappingDefinitionBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 85,
+		"endLine": 188,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder.MappingBuilder"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore(\"org.dozer.vo.jaxb child packages missed\") in method public testCreateBeanForInnerJaxbClass() : void from class org.dozer.factory.JAXBBeanFactoryTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore(\"org.dozer.vo.jaxb child packages missed\")"
+}, {
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 36,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCreateBeanForInnerJaxbClass() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 33,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testCreateBeanForInnerJaxbClass() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore(\"org.dozer.vo.jaxb child packages missed\") in method public testCreateBeanForNestedInnerJaxbClass() : void from class org.dozer.factory.JAXBBeanFactoryTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore(\"org.dozer.vo.jaxb child packages missed\")"
+}, {
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 44,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCreateBeanForNestedInnerJaxbClass() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 40,
+		"endLine": 45,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testCreateBeanForNestedInnerJaxbClass() : void"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore(\"org.dozer.vo.jaxb child packages missed\") in method public testCreateBeanForSimpleJaxbClass() : void from class org.dozer.factory.JAXBBeanFactoryTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore(\"org.dozer.vo.jaxb child packages missed\")"
+}, {
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 23,
+		"endLine": 29,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testCreateBeanForSimpleJaxbClass() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/factory/JAXBBeanFactoryTest.java",
+		"startLine": 21,
+		"endLine": 26,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testCreateBeanForSimpleJaxbClass() : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter document : Document in method public parse(document Document) : MappingFileData from class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 32,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "document : Document"
+}, {
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 92,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public parse(document Document) : MappingFileData"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 104,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public load() : MappingFileData"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.dozer.loader.MappingBuilder renamed to org.dozer.loader.DozerBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/MappingBuilder.java",
+		"startLine": 43,
+		"endLine": 595,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/DozerBuilder.java",
+		"startLine": 44,
+		"endLine": 606,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.dozer.loader.DozerBuilder"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.dozer.loader.MappingBuilderTest renamed to org.dozer.loader.MappingsBuilderTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/MappingBuilderTest.java",
+		"startLine": 23,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.dozer.loader.MappingBuilderTest"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/dozer/loader/MappingsBuilderTest.java",
+		"startLine": 23,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.dozer.loader.MappingsBuilderTest"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public parse(document Document) : MappingFileData renamed to public load() : MappingFileData in class org.dozer.loader.xml.XMLParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 92,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public parse(document Document) : MappingFileData"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/dozer/loader/xml/XMLParser.java",
+		"startLine": 104,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public load() : MappingFileData"
+}]
+}
+]
+}]
+}

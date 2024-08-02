@@ -1,0 +1,2877 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "a8806266b898ee71376ce9722de407ece9ed359a",
+	"url": "https://github.com/apache/hbase/commit/a8806266b898ee71376ce9722de407ece9ed359a",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter algorithm : Compression.Algorithm in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 28,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "algorithm : Compression.Algorithm"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter blocksize : int in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "blocksize : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter bloomType : BloomType in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "bloomType : BloomType"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter bt : BloomType in method package StoreFile(fs FileSystem, p Path, blockcache boolean, conf Configuration, bt BloomType, inMemory boolean) from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 107,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package StoreFile(fs FileSystem, p Path, blockcache boolean, conf Configuration, inMemory boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 33,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "bt : BloomType"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 126,
+		"endLine": 157,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "package StoreFile(fs FileSystem, p Path, blockcache boolean, conf Configuration, bt BloomType, inMemory boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter c : KeyValue.KVComparator in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "c : KeyValue.KVComparator"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter cacheBlock : boolean in method public getMetaBlock(metaBlockName String, cacheBlock boolean) : ByteBuffer from class org.apache.hadoop.hbase.io.hfile.HFile.Reader",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 890,
+		"endLine": 926,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getMetaBlock(metaBlockName String) : ByteBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 898,
+		"endLine": 898,
+		"startColumn": 58,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "cacheBlock : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 892,
+		"endLine": 957,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getMetaBlock(metaBlockName String, cacheBlock boolean) : ByteBuffer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter conf : Configuration in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 38,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter maxKeyCount : int in method private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 593,
+		"endLine": 596,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWriter(basedir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 61,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "maxKeyCount : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 585,
+		"endLine": 590,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter maxKeySize : int in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 28,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "maxKeySize : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter off : int in method public hash(key byte[], off int, nbytes int, initval int) : int from class org.apache.hadoop.hbase.util.JenkinsHash",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/JenkinsHash.java",
+		"startLine": 56,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hash(key byte[], nbytes int, initval int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/JenkinsHash.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 31,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "off : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/JenkinsHash.java",
+		"startLine": 56,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public hash(key byte[], off int, nbytes int, initval int) : int"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter offset : int in method public abstract hash(bytes byte[], offset int, length int, initval int) : int from class org.apache.hadoop.hbase.util.Hash",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/Hash.java",
+		"startLine": 112,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract hash(bytes byte[], length int, initval int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/Hash.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 42,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/Hash.java",
+		"startLine": 124,
+		"endLine": 133,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public abstract hash(bytes byte[], offset int, length int, initval int) : int"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter offset : int in method public hash(data byte[], offset int, length int, seed int) : int from class org.apache.hadoop.hbase.util.MurmurHash",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 37,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public hash(data byte[], length int, seed int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "offset : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 37,
+		"endLine": 87,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public hash(data byte[], offset int, length int, seed int) : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package conf : Configuration from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 31,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private conf : Configuration"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 23,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package conf : Configuration"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected name : String from class org.apache.hadoop.hbase.io.hfile.HFile.Reader",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 720,
+		"endLine": 720,
+		"startColumn": 20,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private name : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 729,
+		"endLine": 729,
+		"startColumn": 22,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected name : String"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public DEFAULT_BLOCKSIZE_SMALL : int from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 28,
+		"endColumn": 62,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DEFAULT_BLOCKSIZE_SMALL : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 27,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public DEFAULT_BLOCKSIZE_SMALL : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public MAJOR_COMPACTION_KEY : byte[] from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 87,
+		"endLine": 88,
+		"startColumn": 32,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAJOR_COMPACTION_KEY : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 100,
+		"endLine": 101,
+		"startColumn": 31,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public MAJOR_COMPACTION_KEY : byte[]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to public in attribute public MAX_SEQ_ID_KEY : byte[] from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 32,
+		"endColumn": 80,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private MAX_SEQ_ID_KEY : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 31,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "public MAX_SEQ_ID_KEY : byte[]"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type BLOOMFILTER : boolean to BLOOMFILTER : String in class org.apache.hadoop.hbase.rest.model.TestColumnSchemaModel",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 34,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "BLOOMFILTER : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/rest/model/TestColumnSchemaModel.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 33,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "BLOOMFILTER : String"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type DEFAULT_BLOOMFILTER : boolean to DEFAULT_BLOOMFILTER : String in class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 31,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "DEFAULT_BLOOMFILTER : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 30,
+		"endColumn": 87,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "DEFAULT_BLOOMFILTER : String"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type metaData : ArrayList<byte[]> to metaData : ArrayList<Writable> in class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 32,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "metaData : ArrayList<byte[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "metaData : ArrayList<Writable>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type reader : HFile.Reader to reader : StoreFile.Reader in class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 33,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "reader : HFile.Reader"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 37,
+		"endColumn": 43,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "reader : StoreFile.Reader"
+}]
+},
+{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to protected in class org.apache.hadoop.hbase.io.hfile.HFile.Reader.Scanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 1102,
+		"endLine": 1324,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.io.hfile.HFile.Reader.Scanner"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 1144,
+		"endLine": 1371,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "org.apache.hadoop.hbase.io.hfile.HFile.Reader.Scanner"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to private in method private open() : StoreFile.Reader from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 254,
+		"endLine": 303,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected open() : HFile.Reader"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 281,
+		"endLine": 332,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private open() : StoreFile.Reader"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private append(key byte[], koffset int, klength int, value byte[], voffset int, vlength int) : void from class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 499,
+		"endLine": 536,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public append(key byte[], koffset int, klength int, value byte[], voffset int, vlength int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 512,
+		"endLine": 549,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private append(key byte[], koffset int, klength int, value byte[], voffset int, vlength int) : void"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type bloomFilter : boolean to bloomFilter : String in method public HColumnDescriptor(familyName byte[], maxVersions int, compression String, inMemory boolean, blockCacheEnabled boolean, blocksize int, timeToLive int, bloomFilter String, scope int) from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bloomFilter : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bloomFilter : String"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type bloomFilter : boolean to bloomFilter : String in method public HColumnDescriptor(familyName byte[], maxVersions int, compression String, inMemory boolean, blockCacheEnabled boolean, timeToLive int, bloomFilter String) from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 208,
+		"endLine": 208,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bloomFilter : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 209,
+		"endLine": 210,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 211,
+		"endLine": 211,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bloomFilter : String"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 212,
+		"endLine": 213,
+		"startColumn": 5,
+		"endColumn": 78,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type c : RawComparator<byte[]> to c : KeyComparator in method public Writer(ostream FSDataOutputStream, blocksize int, compress Compression.Algorithm, c KeyComparator) from class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 327,
+		"endLine": 327,
+		"startColumn": 46,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "c : RawComparator<byte[]>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 332,
+		"endLine": 332,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 330,
+		"endLine": 330,
+		"startColumn": 46,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "c : KeyComparator"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 7,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type c : RawComparator<byte[]> to c : KeyComparator in method public Writer(ostream FSDataOutputStream, blocksize int, compress String, c KeyComparator) from class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "c : RawComparator<byte[]>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 314,
+		"endLine": 315,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 315,
+		"endLine": 315,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "c : KeyComparator"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 317,
+		"endLine": 318,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type comparator : RawComparator<byte[]> to comparator : KeyComparator in method public Writer(fs FileSystem, path Path, blocksize int, compress Compression.Algorithm, comparator KeyComparator) from class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "comparator : RawComparator<byte[]>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 298,
+		"endLine": 298,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "comparator : KeyComparator"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 300,
+		"endLine": 300,
+		"startColumn": 7,
+		"endColumn": 62,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type comparator : RawComparator<byte[]> to comparator : KeyComparator in method public Writer(fs FileSystem, path Path, blocksize int, compress String, comparator KeyComparator) from class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 24,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "comparator : RawComparator<byte[]>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 278,
+		"endLine": 281,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "comparator : KeyComparator"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 281,
+		"endLine": 284,
+		"startColumn": 7,
+		"endColumn": 21,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type onOff : boolean to bt : StoreFile.BloomType in method public setBloomFilterType(bt StoreFile.BloomType) : void from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 479,
+		"endLine": 479,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onOff : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 34,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bt : StoreFile.BloomType"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanners : List<KeyValueScanner> to scanners : List<? extends KeyValueScanner> in method package MinorCompactingStoreScanner(cfName String, comparator KeyValue.KVComparator, scanners List<? extends KeyValueScanner>) from class org.apache.hadoop.hbase.regionserver.MinorCompactingStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 56,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 31,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<? extends KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanners : List<KeyValueScanner> to scanners : List<? extends KeyValueScanner> in method package MinorCompactingStoreScanner(store Store, scanners List<? extends KeyValueScanner>) from class org.apache.hadoop.hbase.regionserver.MinorCompactingStoreScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 44,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 44,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<? extends KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/MinorCompactingStoreScanner.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanners : List<KeyValueScanner> to scanners : List<? extends KeyValueScanner> in method package StoreScanner(store Store, scan Scan, scanners List<? extends KeyValueScanner>) from class org.apache.hadoop.hbase.regionserver.StoreScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 40,
+		"endColumn": 70,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 40,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<? extends KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreScanner.java",
+		"startLine": 95,
+		"endLine": 97,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scanners : List<KeyValueScanner> to scanners : List<? extends KeyValueScanner> in method public KeyValueHeap(scanners List<? extends KeyValueScanner>, comparator KVComparator) from class org.apache.hadoop.hbase.regionserver.KeyValueHeap",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 23,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 56,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 23,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<? extends KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 56,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/KeyValueHeap.java",
+		"startLine": 58,
+		"endLine": 64,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type value : boolean to value : String in method public __setBloomfilter(value String) : void from class org.apache.hadoop.hbase.rest.model.ColumnSchemaModel",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "value : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "value : String"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 206,
+		"endLine": 206,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HFile.Reader to StoreFile.Reader in method private open() : StoreFile.Reader from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HFile.Reader"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 254,
+		"endLine": 303,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected open() : HFile.Reader"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 287,
+		"endLine": 287,
+		"startColumn": 11,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "StoreFile.Reader"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 281,
+		"endLine": 332,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private open() : StoreFile.Reader"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HFile.Reader to StoreFile.Reader in method public getReader() : StoreFile.Reader from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HFile.Reader"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 305,
+		"endLine": 310,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getReader() : HFile.Reader"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "StoreFile.Reader"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 345,
+		"endLine": 352,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getReader() : StoreFile.Reader"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HFile.Writer to StoreFile.Writer in method private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 593,
+		"endLine": 593,
+		"startColumn": 11,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 593,
+		"endLine": 596,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWriter(basedir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 585,
+		"endLine": 585,
+		"startColumn": 11,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 585,
+		"endLine": 590,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type HFile.Writer to StoreFile.Writer in method public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 367,
+		"endLine": 367,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<KeyValueScanner> to List<StoreFileScanner> in method public getScannersForStoreFiles(filesToCompact Collection<StoreFile>, cacheBlocks boolean, usePread boolean) : List<StoreFileScanner> from class org.apache.hadoop.hbase.regionserver.StoreFileScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 17,
+		"endColumn": 38,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 52,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getScannersForStoreFiles(filesToCompact Collection<StoreFile>, cacheBlocks boolean, usePread boolean) : List<KeyValueScanner>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<StoreFileScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 52,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getScannersForStoreFiles(filesToCompact Collection<StoreFile>, cacheBlocks boolean, usePread boolean) : List<StoreFileScanner>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to StoreFile.BloomType in method public getBloomFilterType() : StoreFile.BloomType from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 469,
+		"endLine": 469,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 466,
+		"endLine": 474,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isBloomfilter() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 473,
+		"endLine": 473,
+		"startColumn": 10,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "StoreFile.BloomType"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 470,
+		"endLine": 479,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getBloomFilterType() : StoreFile.BloomType"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to String in method public __getBloomfilter() : String from class org.apache.hadoop.hbase.rest.model.ColumnSchemaModel",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 10,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 148,
+		"endLine": 155,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public __getBloomfilter() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 10,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "String"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/rest/model/ColumnSchemaModel.java",
+		"startLine": 148,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public __getBloomfilter() : String"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scanners : List<KeyValueScanner> to scanners : List<StoreFileScanner> in method private compact(filesToCompact List<StoreFile>, majorCompaction boolean, maxId long) : HFile.Writer from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 884,
+		"endLine": 885,
+		"startColumn": 27,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 896,
+		"endLine": 896,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 918,
+		"endLine": 918,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 890,
+		"endLine": 891,
+		"startColumn": 28,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<StoreFileScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 902,
+		"endLine": 902,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 924,
+		"endLine": 924,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scanners : List<KeyValueScanner> to scanners : List<StoreFileScanner> in method public getScannersForStoreFiles(filesToCompact Collection<StoreFile>, cacheBlocks boolean, usePread boolean) : List<StoreFileScanner> from class org.apache.hadoop.hbase.regionserver.StoreFileScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 60,
+		"endLine": 61,
+		"startColumn": 27,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scanners : List<KeyValueScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 60,
+		"endLine": 61,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scanners : List<StoreFileScanner>"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 7,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type w : Writer to w : StoreFile.Writer in method public testEmptyStoreFile() : void from class org.apache.hadoop.hbase.regionserver.TestStore",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/regionserver/TestStore.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 12,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "w : Writer"
+}, {
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/regionserver/TestStore.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/regionserver/TestStore.java",
+		"startLine": 137,
+		"endLine": 138,
+		"startColumn": 22,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "w : StoreFile.Writer"
+}, {
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/regionserver/TestStore.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 5,
+		"endColumn": 15,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type writer : HFile.Writer to writer : StoreFile.Writer in method private compact(filesToCompact List<StoreFile>, majorCompaction boolean, maxId long) : HFile.Writer from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 889,
+		"endLine": 889,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "writer : HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 906,
+		"endLine": 906,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 931,
+		"endLine": 931,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 934,
+		"endLine": 934,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 904,
+		"endLine": 904,
+		"startColumn": 15,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 919,
+		"endLine": 919,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 903,
+		"endLine": 905,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 920,
+		"endLine": 922,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 929,
+		"endLine": 932,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 895,
+		"endLine": 895,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "writer : StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 912,
+		"endLine": 912,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 937,
+		"endLine": 937,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 940,
+		"endLine": 940,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 910,
+		"endLine": 910,
+		"startColumn": 15,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 925,
+		"endLine": 925,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 909,
+		"endLine": 911,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 926,
+		"endLine": 928,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 935,
+		"endLine": 938,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type writer : HFile.Writer to writer : StoreFile.Writer in method private internalFlushCache(set SortedSet<KeyValue>, logCacheFlushId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 537,
+		"endLine": 537,
+		"startColumn": 18,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "writer : HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 554,
+		"endLine": 554,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 563,
+		"endLine": 563,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 7,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 566,
+		"endLine": 567,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 537,
+		"endLine": 537,
+		"startColumn": 22,
+		"endColumn": 35,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "writer : StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 554,
+		"endLine": 554,
+		"startColumn": 13,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 563,
+		"endLine": 563,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 549,
+		"endLine": 549,
+		"startColumn": 7,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 566,
+		"endLine": 567,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private hfs : HFileScanner from class org.apache.hadoop.hbase.regionserver.StoreFileScanner",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hfs : HFileScanner"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 24,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private hfs : HFileScanner"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFileScanner.java",
+		"startLine": 75,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getHFileScanner() : HFileScanner"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.apache.hadoop.hbase.regionserver.StoreFile.Writer from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 49,
+		"endLine": 500,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreFile"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 445,
+		"endLine": 457,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package appendMetadata(w HFile.Writer, maxSequenceId long) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 60,
+		"endLine": 816,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreFile"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 671,
+		"endLine": 815,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 715,
+		"endLine": 727,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public appendMetadata(maxSequenceId long, majorCompaction boolean) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable i_m : int in method public hash(data byte[], offset int, length int, seed int) : int from class org.apache.hadoop.hbase.util.MurmurHash",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "i_m : int"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/MurmurHash.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private writeMetaBlock(b byte[]) : void inlined to public close() : void in class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 639,
+		"endLine": 644,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private writeMetaBlock(b byte[]) : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 640,
+		"endLine": 640,
+		"startColumn": 7,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 641,
+		"endLine": 641,
+		"startColumn": 7,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 642,
+		"endLine": 642,
+		"startColumn": 7,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 643,
+		"endLine": 643,
+		"startColumn": 7,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 580,
+		"endLine": 633,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public close() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 601,
+		"endLine": 601,
+		"startColumn": 11,
+		"endColumn": 42,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "writeMetaBlock(metaData.get(i))"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 593,
+		"endLine": 652,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public close() : void"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 615,
+		"endLine": 615,
+		"startColumn": 11,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 616,
+		"endLine": 616,
+		"startColumn": 11,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 617,
+		"endLine": 617,
+		"startColumn": 11,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 618,
+		"endLine": 618,
+		"startColumn": 11,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method public getWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KeyComparator) : HFile.Writer inlined to public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer in class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 372,
+		"endLine": 396,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KeyComparator) : HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 389,
+		"endLine": 391,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 389,
+		"endLine": 391,
+		"startColumn": 26,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 12,
+		"endColumn": 67,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "getWriter(fs,dir,DEFAULT_BLOCKSIZE_SMALL,null,null)"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 393,
+		"endLine": 395,
+		"startColumn": 5,
+		"endColumn": 46,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "deleted statement in inlined method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 437,
+		"endLine": 437,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 5,
+		"endColumn": 40,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 436,
+		"endLine": 438,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 436,
+		"endLine": 438,
+		"startColumn": 26,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable compare : int in method public matchingRows(left KeyValue, lrowlength short, right KeyValue, rrowlength short) : boolean from class org.apache.hadoop.hbase.KeyValue.KVComparator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1418,
+		"endLine": 1418,
+		"startColumn": 11,
+		"endColumn": 69,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "compare : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1419,
+		"endLine": 1420,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Conditional",
+	"description": "Merge Conditional [return compareColumns(left,lrowlength,right,rrowlength) == 0;, if(!matchingRows(left,lrowlength,right,rrowlength))] to return left.getTimestampOffset() == right.getTimestampOffset() && matchingRows(left,lrowlength,right,rrowlength) && compareColumns(left,lrowlength,right,rrowlength) == 0; in method public matchingRowColumn(left KeyValue, right KeyValue) : boolean from class org.apache.hadoop.hbase.KeyValue.KVComparator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1386,
+		"endLine": 1386,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "return compareColumns(left,lrowlength,right,rrowlength) == 0;\n"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1383,
+		"endLine": 1385,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "merged conditional",
+		"codeElement": "if(!matchingRows(left,lrowlength,right,rrowlength))"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1373,
+		"endLine": 1387,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public matchingRowColumn(left KeyValue, right KeyValue) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1384,
+		"endLine": 1386,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "new conditional",
+		"codeElement": "return left.getTimestampOffset() == right.getTimestampOffset() && matchingRows(left,lrowlength,right,rrowlength) && compareColumns(left,lrowlength,right,rrowlength) == 0;\n"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/KeyValue.java",
+		"startLine": 1373,
+		"endLine": 1387,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged conditional",
+		"codeElement": "public matchingRowColumn(left KeyValue, right KeyValue) : boolean"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public appendMetadata(maxSequenceId long, majorCompaction boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 459,
+		"endLine": 472,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 715,
+		"endLine": 727,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public appendMetadata(maxSequenceId long, majorCompaction boolean) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier abstract in method public abstract hash(bytes byte[], length int, initval int) : int from class org.apache.hadoop.hbase.util.Hash",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/Hash.java",
+		"startLine": 112,
+		"endLine": 120,
+		"startColumn": 3,
+		"endColumn": 67,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public abstract hash(bytes byte[], length int, initval int) : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/util/Hash.java",
+		"startLine": 112,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public hash(bytes byte[], length int, initval int) : int"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 459,
+		"endLine": 472,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 715,
+		"endLine": 727,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "public appendMetadata(maxSequenceId long, majorCompaction boolean) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter w : HFile.Writer in method public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 467,
+		"endLine": 467,
+		"startColumn": 37,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "w : HFile.Writer"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 459,
+		"endLine": 472,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public appendMetadata(w HFile.Writer, maxSequenceId long, mc boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 715,
+		"endLine": 727,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public appendMetadata(maxSequenceId long, majorCompaction boolean) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute comparator : RawComparator<byte[]> to rawComparator : RawComparator<byte[]> in class org.apache.hadoop.hbase.io.hfile.HFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 42,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "comparator : RawComparator<byte[]>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/io/hfile/HFile.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 42,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "rawComparator : RawComparator<byte[]>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private getWriter(basedir Path) : HFile.Writer renamed to private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer in class org.apache.hadoop.hbase.regionserver.Store",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 593,
+		"endLine": 596,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getWriter(basedir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/Store.java",
+		"startLine": 585,
+		"endLine": 590,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private createWriter(basedir Path, maxKeyCount int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public close() : void renamed to public closeReader() : void in class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 312,
+		"endLine": 320,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public close() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 354,
+		"endLine": 362,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public closeReader() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public delete() : void renamed to public deleteReader() : void in class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 328,
+		"endLine": 335,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public delete() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 364,
+		"endLine": 371,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public deleteReader() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getWriter(fs FileSystem, dir Path) : HFile.Writer renamed to public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer in class org.apache.hadoop.hbase.regionserver.StoreFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 357,
+		"endLine": 370,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getWriter(fs FileSystem, dir Path) : HFile.Writer"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 416,
+		"endLine": 447,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public createWriter(fs FileSystem, dir Path, blocksize int, algorithm Compression.Algorithm, c KeyValue.KVComparator, conf Configuration, bloomType BloomType, maxKeySize int) : StoreFile.Writer"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public isBloomfilter() : boolean renamed to public getBloomFilterType() : StoreFile.BloomType in class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 466,
+		"endLine": 474,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isBloomfilter() : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 470,
+		"endLine": 479,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getBloomFilterType() : StoreFile.BloomType"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setBloomfilter(onOff boolean) : void renamed to public setBloomFilterType(bt StoreFile.BloomType) : void in class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 476,
+		"endLine": 481,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBloomfilter(onOff boolean) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 481,
+		"endLine": 486,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setBloomFilterType(bt StoreFile.BloomType) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter mc : boolean to majorCompaction : boolean in method public appendMetadata(maxSequenceId long, majorCompaction boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile.Writer",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 5,
+		"endColumn": 21,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mc : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 471,
+		"endLine": 471,
+		"startColumn": 5,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 723,
+		"endLine": 723,
+		"startColumn": 7,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "majorCompaction : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/regionserver/StoreFile.java",
+		"startLine": 726,
+		"endLine": 726,
+		"startColumn": 7,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter onOff : boolean to bt : StoreFile.BloomType in method public setBloomFilterType(bt StoreFile.BloomType) : void from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 479,
+		"endLine": 479,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "onOff : boolean"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 484,
+		"endLine": 484,
+		"startColumn": 34,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "bt : StoreFile.BloomType"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable b : ByteBuffer to actual : ByteBuffer in method private readNumMetablocks(reader Reader, n int) : void from class org.apache.hadoop.hbase.io.hfile.TestHFile",
+	"leftSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/io/hfile/TestHFile.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 18,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "b : ByteBuffer"
+}, {
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/io/hfile/TestHFile.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/io/hfile/TestHFile.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 18,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "actual : ByteBuffer"
+}, {
+		"filePath": "core/src/test/java/org/apache/hadoop/hbase/io/hfile/TestHFile.java",
+		"startLine": 198,
+		"endLine": 198,
+		"startColumn": 7,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable value : String to n : String in method public getBloomFilterType() : StoreFile.BloomType from class org.apache.hadoop.hbase.HColumnDescriptor",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 12,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "value : String"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 5,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 12,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "n : String"
+}, {
+		"filePath": "core/src/main/java/org/apache/hadoop/hbase/HColumnDescriptor.java",
+		"startLine": 474,
+		"endLine": 474,
+		"startColumn": 5,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,3027 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ning/compress",
+	"sha1": "6d7a01a1ea85e77f7f323604ea7ba104dc0944f3",
+	"url": "https://github.com/ning/compress/commit/6d7a01a1ea85e77f7f323604ea7ba104dc0944f3",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type fdObj : FileDescriptor to file : File in method public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler) from class com.ning.compress.lzf.util.LZFFileInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fdObj : FileDescriptor"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "file : File"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute protected _recycler : BufferRecycler from class com.ning.compress.lzf.ChunkEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 36,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected _recycler : BufferRecycler"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 36,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "protected _recycler : BufferRecycler"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 322,
+		"endLine": 324,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getBufferRecycler() : BufferRecycler"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected ChunkEncoder(totalLength int, bufferRecycler BufferRecycler) extracted from protected ChunkEncoder(totalLength int) in class com.ning.compress.lzf.ChunkEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 77,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected ChunkEncoder(totalLength int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 88,
+		"endLine": 107,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected ChunkEncoder(totalLength int, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 77,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected ChunkEncoder(totalLength int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(totalLength,BufferRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected ChunkEncoder(totalLength int, bufferRecycler BufferRecycler, bogus boolean) extracted from protected ChunkEncoder(totalLength int, bogus boolean) in class com.ning.compress.lzf.ChunkEncoder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 96,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected ChunkEncoder(totalLength int, bogus boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 118,
+		"endLine": 130,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected ChunkEncoder(totalLength int, bufferRecycler BufferRecycler, bogus boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 109,
+		"endLine": 116,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected ChunkEncoder(totalLength int, bogus boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/ChunkEncoder.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(totalLength,BufferRecycler.instance(),bogus)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected PLZFOutputStream(outputStream OutputStream, bufferSize int, nThreads int) extracted from protected PLZFOutputStream(outputStream OutputStream, nThreads int) in class com.ning.compress.lzf.parallel.PLZFOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 71,
+		"endLine": 79,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected PLZFOutputStream(outputStream OutputStream, nThreads int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 9,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 75,
+		"endLine": 83,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected PLZFOutputStream(outputStream OutputStream, bufferSize int, nThreads int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 131,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected PLZFOutputStream(outputStream OutputStream, nThreads int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(outputStream,DEFAULT_OUTPUT_BUFFER_SIZE,nThreads)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public GZIPUncompressor(h DataHandler, inputChunkLength int, bufferRecycler BufferRecycler, gzipRecycler GZIPRecycler) extracted from public GZIPUncompressor(h DataHandler, inputChunkLength int) in class com.ning.compress.gzip.GZIPUncompressor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 177,
+		"endLine": 186,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public GZIPUncompressor(h DataHandler, inputChunkLength int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 182,
+		"endLine": 191,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public GZIPUncompressor(h DataHandler, inputChunkLength int, bufferRecycler BufferRecycler, gzipRecycler GZIPRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 177,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public GZIPUncompressor(h DataHandler, inputChunkLength int)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/GZIPUncompressor.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 87,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(h,inputChunkLength,BufferRecycler.instance(),GZIPRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFCompressingInputStream(encoder ChunkEncoder, in InputStream, bufferRecycler BufferRecycler) extracted from public LZFCompressingInputStream(encoder ChunkEncoder, in InputStream) in class com.ning.compress.lzf.LZFCompressingInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 82,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFCompressingInputStream(encoder ChunkEncoder, in InputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 87,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFCompressingInputStream(encoder ChunkEncoder, in InputStream, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 82,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFCompressingInputStream(encoder ChunkEncoder, in InputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,in,null)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 4,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 29,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFCompressingInputStream.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler) extracted from public LZFFileInputStream(fdObj FileDescriptor, decompressor ChunkDecoder) in class com.ning.compress.lzf.util.LZFFileInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 102,
+		"endLine": 111,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileInputStream(fdObj FileDescriptor, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 106,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 96,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileInputStream(fdObj FileDescriptor, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(fdObj,decompressor,BufferRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler) extracted from public LZFFileInputStream(file File, decompressor ChunkDecoder) in class com.ning.compress.lzf.util.LZFFileInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 91,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileInputStream(file File, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 106,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileInputStream(file File, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(file,decompressor,BufferRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileInputStream(name String, decompressor ChunkDecoder, bufferRecycler BufferRecycler) extracted from public LZFFileInputStream(name String, decompressor ChunkDecoder) in class com.ning.compress.lzf.util.LZFFileInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 113,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileInputStream(name String, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 128,
+		"endLine": 137,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileInputStream(name String, decompressor ChunkDecoder, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 101,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileInputStream(name String, decompressor ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(name,decompressor,BufferRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 104,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 127,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,fdObj,encoder.getBufferRecycler())"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, file File, append boolean, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, file File, append boolean) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 96,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File, append boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 119,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File, append boolean, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File, append boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,file,append,encoder.getBufferRecycler())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, file File, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 104,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 108,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, fdObj FileDescriptor)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,fdObj,encoder.getBufferRecycler())"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 29,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, file File, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, file File) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 88,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 108,
+		"endLine": 117,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, file File)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,file,encoder.getBufferRecycler())"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 29,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, name String, append boolean, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, name String, append boolean) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 120,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String, append boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 143,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String, append boolean, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 145,
+		"endLine": 145,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 104,
+		"endLine": 106,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String, append boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,name,append,encoder.getBufferRecycler())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFFileOutputStream(encoder ChunkEncoder, name String, bufferRecycler BufferRecycler) extracted from public LZFFileOutputStream(encoder ChunkEncoder, name String) in class com.ning.compress.lzf.util.LZFFileOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 112,
+		"endLine": 118,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 135,
+		"endLine": 141,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 100,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFFileOutputStream(encoder ChunkEncoder, name String)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileOutputStream.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,name,encoder.getBufferRecycler())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFInputStream(decoder ChunkDecoder, in InputStream, bufferRecycler BufferRecycler, fullReads boolean) extracted from public LZFInputStream(decoder ChunkDecoder, in InputStream, fullReads boolean) in class com.ning.compress.lzf.LZFInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 100,
+		"endLine": 112,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFInputStream(decoder ChunkDecoder, in InputStream, fullReads boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 124,
+		"endLine": 136,
+		"startColumn": 2,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFInputStream(decoder ChunkDecoder, in InputStream, bufferRecycler BufferRecycler, fullReads boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 9,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 100,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFInputStream(decoder ChunkDecoder, in InputStream, fullReads boolean)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFInputStream.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(decoder,in,BufferRecycler.instance(),fullReads)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFOutputStream(encoder ChunkEncoder, outputStream OutputStream, bufferSize int, bufferRecycler BufferRecycler) extracted from public LZFOutputStream(encoder ChunkEncoder, outputStream OutputStream) in class com.ning.compress.lzf.LZFOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 64,
+		"endLine": 71,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFOutputStream(encoder ChunkEncoder, outputStream OutputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 79,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFOutputStream(encoder ChunkEncoder, outputStream OutputStream, bufferSize int, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 64,
+		"endLine": 67,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFOutputStream(encoder ChunkEncoder, outputStream OutputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 9,
+		"endColumn": 84,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(encoder,outputStream,DEFAULT_OUTPUT_BUFFER_SIZE,encoder._recycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 29,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public LZFUncompressor(handler DataHandler, dec ChunkDecoder, bufferRecycler BufferRecycler) extracted from public LZFUncompressor(handler DataHandler, dec ChunkDecoder) in class com.ning.compress.lzf.LZFUncompressor",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 115,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public LZFUncompressor(handler DataHandler, dec ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 124,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public LZFUncompressor(handler DataHandler, dec ChunkDecoder, bufferRecycler BufferRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 119,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public LZFUncompressor(handler DataHandler, dec ChunkDecoder)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFUncompressor.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(handler,dec,BufferRecycler.instance())"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public OptimizedGZIPInputStream(in InputStream, bufferRecycler BufferRecycler, gzipRecycler GZIPRecycler) extracted from public OptimizedGZIPInputStream(in InputStream) in class com.ning.compress.gzip.OptimizedGZIPInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 79,
+		"endLine": 100,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public OptimizedGZIPInputStream(in InputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 84,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public OptimizedGZIPInputStream(in InputStream, bufferRecycler BufferRecycler, gzipRecycler GZIPRecycler)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 9,
+		"endColumn": 17,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 79,
+		"endLine": 82,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public OptimizedGZIPInputStream(in InputStream)"
+}, {
+		"filePath": "src/main/java/com/ning/compress/gzip/OptimizedGZIPInputStream.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this(in,BufferRecycler.instance(),GZIPRecycler.instance())"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute OUTPUT_BUFFER_SIZE : int to DEFAULT_OUTPUT_BUFFER_SIZE : int in class com.ning.compress.lzf.LZFOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "OUTPUT_BUFFER_SIZE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/LZFOutputStream.java",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 30,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "DEFAULT_OUTPUT_BUFFER_SIZE : int"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute OUTPUT_BUFFER_SIZE : int to DEFAULT_OUTPUT_BUFFER_SIZE : int in class com.ning.compress.lzf.parallel.PLZFOutputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 30,
+		"endColumn": 73,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "OUTPUT_BUFFER_SIZE : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/parallel/PLZFOutputStream.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 30,
+		"endColumn": 81,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "DEFAULT_OUTPUT_BUFFER_SIZE : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter fdObj : FileDescriptor to file : File in method public LZFFileInputStream(file File, decompressor ChunkDecoder, bufferRecycler BufferRecycler) from class com.ning.compress.lzf.util.LZFFileInputStream",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 31,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fdObj : FileDescriptor"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 31,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "file : File"
+}, {
+		"filePath": "src/main/java/com/ning/compress/lzf/util/LZFFileInputStream.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

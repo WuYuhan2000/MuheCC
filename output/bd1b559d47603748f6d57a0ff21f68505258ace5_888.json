@@ -1,0 +1,114 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "bd1b559d47603748f6d57a0ff21f68505258ace5",
+	"url": "https://github.com/spring-projects/spring-framework/commit/bd1b559d47603748f6d57a0ff21f68505258ace5",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private includedUrls : List<String> from class org.springframework.mock.web.MockHttpServletResponse",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private includedUrl : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private includedUrls : List<String>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type includedUrl : String to includedUrls : List<String> in class org.springframework.mock.web.MockHttpServletResponse",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "includedUrl : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "includedUrls : List<String>"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private includedUrls : List<String> from class org.springframework.mock.web.MockHttpServletResponse",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private includedUrl : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private includedUrls : List<String>"
+}, {
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 466,
+		"endLine": 468,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getIncludedUrls() : List<String>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute includedUrl : String to includedUrls : List<String> in class org.springframework.mock.web.MockHttpServletResponse",
+	"leftSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 17,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "includedUrl : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "org.springframework.test/src/main/java/org/springframework/mock/web/MockHttpServletResponse.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 29,
+		"endColumn": 67,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "includedUrls : List<String>"
+}]
+}
+]
+}]
+}

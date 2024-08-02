@@ -1,0 +1,348 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "e449fb139b70db15ffae182355d5306d90389adb",
+	"url": "https://github.com/ReactiveX/RxJava/commit/e449fb139b70db15ffae182355d5306d90389adb",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private completed : Set<CombineObserver<R,?>> from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 44,
+		"endColumn": 92,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private completed : Set<CombineObserver<R,?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 50,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private completed : Set<CombineObserver<R,?>>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private hasLatestValue : Set<CombineObserver<R,?>> from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 44,
+		"endColumn": 95,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private hasLastValue : Set<CombineObserver<R,?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 50,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private hasLatestValue : Set<CombineObserver<R,?>>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private latestValue : Map<CombineObserver<R,?>,Object> from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private lastValue : Map<CombineObserver<R,?>,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 58,
+		"endColumn": 116,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private latestValue : Map<CombineObserver<R,?>,Object>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private observers : List<CombineObserver<R,?>> from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 45,
+		"endColumn": 96,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private observers : List<CombineObserver<R,?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 51,
+		"endColumn": 102,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private observers : List<CombineObserver<R,?>>"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private running : AtomicBoolean from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 112,
+		"endLine": 112,
+		"startColumn": 31,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private running : AtomicBoolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 37,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private running : AtomicBoolean"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method package addObserver(w CombineObserver<R,T>) : void from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 135,
+		"endLine": 142,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package addObserver(w CombineObserver<R,T>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 163,
+		"endLine": 170,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package addObserver(w CombineObserver<R,T>) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method package complete(w CombineObserver<R,T>) : void from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 144,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package complete(w CombineObserver<R,T>) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 172,
+		"endLine": 191,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package complete(w CombineObserver<R,T>) : void"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier synchronized in method package error(w CombineObserver<R,T>, e Exception) : void from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 163,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package error(w CombineObserver<R,T>, e Exception) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 193,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "package error(e Exception) : void"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter w : CombineObserver<R,T> in method package error(w CombineObserver<R,T>, e Exception) : void from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 37,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "w : CombineObserver<R,T>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 163,
+		"endLine": 174,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package error(w CombineObserver<R,T>, e Exception) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 193,
+		"endLine": 200,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "package error(e Exception) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute Observer : Observer<R> to observer : Observer<R> in class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "Observer : Observer<R>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 29,
+		"endColumn": 37,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "observer : Observer<R>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute hasLastValue : Set<CombineObserver<R,?>> to hasLatestValue : Set<CombineObserver<R,?>> in class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 128,
+		"endLine": 128,
+		"startColumn": 44,
+		"endColumn": 95,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "hasLastValue : Set<CombineObserver<R,?>>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 50,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "hasLatestValue : Set<CombineObserver<R,?>>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute lastValue : Map<CombineObserver<R,?>,Object> to latestValue : Map<CombineObserver<R,?>,Object> in class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "lastValue : Map<CombineObserver<R,?>,Object>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 58,
+		"endColumn": 116,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "latestValue : Map<CombineObserver<R,?>,Object>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter Observer : Observer<R> to observer : Observer<R> in method public call(observer Observer<R>) : Subscription from class rx.operators.OperationCombineLatest.Aggregator",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "Observer : Observer<R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 34,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "observer : Observer<R>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationCombineLatest.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 13,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "af936076fdb57ab158ce924fe5d9bbb4f2dd1846",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/af936076fdb57ab158ce924fe5d9bbb4f2dd1846",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type calls : List<OAuthRequest> to calls : List<Callable<Boolean>> in method public testMultipleServerRequests() : void from class org.restlet.test.ext.oauth.MultipleUserAuthorizationServerTestCase",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 28,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "calls : List<OAuthRequest>"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 71,
+		"endLine": 72,
+		"startColumn": 33,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "calls : List<Callable<Boolean>>"
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "modules/org.restlet.test/src/org/restlet/test/ext/oauth/MultipleUserAuthorizationServerTestCase.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 9,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public write(appendable Appendable) : void renamed to public append(appendable Appendable) : void in class org.restlet.representation.Representation",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/representation/Representation.java",
+		"startLine": 597,
+		"endLine": 610,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(appendable Appendable) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet/src/org/restlet/representation/Representation.java",
+		"startLine": 220,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public append(appendable Appendable) : void"
+}]
+}
+]
+}]
+}

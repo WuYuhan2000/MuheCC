@@ -1,0 +1,456 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "67e2a30687c80776e00b36c94b79589be95a6d06",
+	"url": "https://github.com/kiegroup/drools/commit/67e2a30687c80776e00b36c94b79589be95a6d06",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type eager : LinkedList<RuleAgendaItem> to eager : org.drools.core.util.LinkedList<RuleAgendaItem> in class org.drools.core.common.DefaultAgenda",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 66,
+		"endColumn": 106,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "eager : LinkedList<RuleAgendaItem>"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 67,
+		"endColumn": 128,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "eager : LinkedList<RuleAgendaItem>"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement extracted from public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement in class org.drools.compiler.rule.builder.PatternBuilder",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 345,
+		"endLine": 350,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 23,
+		"endColumn": 102,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)context.getRule())"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 27,
+		"endColumn": 93,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 39,
+		"endColumn": 105,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement extracted from public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement in class org.drools.compiler.rule.builder.PatternBuilder",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 21,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 345,
+		"endLine": 350,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 23,
+		"endColumn": 102,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)context.getRule())"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 27,
+		"endColumn": 93,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 39,
+		"endColumn": 105,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement extracted from public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement in class org.drools.compiler.rule.builder.PatternBuilder",
+	"leftSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 355,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 33,
+		"endColumn": 99,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 345,
+		"endLine": 350,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private buildQueryElement(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern, rule QueryImpl) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 95,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 146,
+		"endLine": 343,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public build(context RuleBuildContext, descr BaseDescr, prefixPattern Pattern) : RuleConditionElement"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 23,
+		"endColumn": 102,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)context.getRule())"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 27,
+		"endColumn": 93,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 226,
+		"endLine": 226,
+		"startColumn": 39,
+		"endColumn": 105,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "buildQueryElement(context,descr,prefixPattern,(QueryImpl)rule)"
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 40,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-compiler/src/main/java/org/drools/compiler/rule/builder/PatternBuilder.java",
+		"startLine": 346,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable item : RuleAgendaItem in method public evaluateEagerList() : void from class org.drools.core.common.DefaultAgenda",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 988,
+		"endLine": 988,
+		"startColumn": 17,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 1010,
+		"endLine": 1010,
+		"startColumn": 32,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "item : RuleAgendaItem"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 1012,
+		"endLine": 1012,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter ruleAgendaItem : RuleAgendaItem in method public AgendaItemImpl(activationNumber long, tuple LeftTuple, salience int, context PropagationContext, rtn TerminalNode, ruleAgendaItem RuleAgendaItem, agendaGroup InternalAgendaGroup) from class org.drools.core.common.AgendaItemImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/AgendaItemImpl.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 27,
+		"endColumn": 62,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "ruleAgendaItem : RuleAgendaItem"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/common/AgendaItemImpl.java",
+		"startLine": 91,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public AgendaItemImpl(activationNumber long, tuple LeftTuple, salience int, context PropagationContext, rtn TerminalNode, ruleAgendaItem RuleAgendaItem, agendaGroup InternalAgendaGroup)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/AgendaItemImpl.java",
+		"startLine": 90,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public AgendaItemImpl(activationNumber long, tuple LeftTuple, salience int, context PropagationContext, rtn TerminalNode, agendaGroup InternalAgendaGroup)"
+}]
+},
+{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter item : RuleAgendaItem in method public addEagerRuleAgendaItem(item RuleAgendaItem) : void from class org.drools.core.common.DefaultAgenda",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 40,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "item : RuleAgendaItem"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 267,
+		"endLine": 285,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addEagerRuleAgendaItem(item RuleAgendaItem) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 273,
+		"endLine": 273,
+		"startColumn": 40,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "item : RuleAgendaItem"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/common/DefaultAgenda.java",
+		"startLine": 272,
+		"endLine": 290,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public addEagerRuleAgendaItem(item RuleAgendaItem) : void"
+}]
+}
+]
+}]
+}

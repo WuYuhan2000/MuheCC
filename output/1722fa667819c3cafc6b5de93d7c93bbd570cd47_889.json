@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "1722fa667819c3cafc6b5de93d7c93bbd570cd47",
+	"url": "https://github.com/spring-projects/spring-framework/commit/1722fa667819c3cafc6b5de93d7c93bbd570cd47",
+	"refactorings": [{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Ignore in method public testResourceScriptFromTag() : void from class org.springframework.scripting.groovy.GroovyScriptFactoryTests",
+	"leftSideLocations": [{
+		"filePath": "spring-context/src/test/java/org/springframework/scripting/groovy/GroovyScriptFactoryTests.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 2,
+		"endColumn": 9,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Ignore"
+}, {
+		"filePath": "spring-context/src/test/java/org/springframework/scripting/groovy/GroovyScriptFactoryTests.java",
+		"startLine": 314,
+		"endLine": 330,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testResourceScriptFromTag() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context/src/test/java/org/springframework/scripting/groovy/GroovyScriptFactoryTests.java",
+		"startLine": 390,
+		"endLine": 404,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public testResourceScriptFromTag() : void"
+}]
+}
+]
+}]
+}

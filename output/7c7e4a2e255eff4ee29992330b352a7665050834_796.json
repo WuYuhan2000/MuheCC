@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "7c7e4a2e255eff4ee29992330b352a7665050834",
+	"url": "https://github.com/apache/camel/commit/7c7e4a2e255eff4ee29992330b352a7665050834",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private servletContext : ServletContext from class org.apache.camel.component.servletlistener.ServletCamelContext",
+	"leftSideLocations": [{
+		"filePath": "components/camel-servletlistener/src/main/java/org/apache/camel/component/servletlistener/ServletCamelContext.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private servletContext : ServletContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-servletlistener/src/main/java/org/apache/camel/component/servletlistener/ServletCamelContext.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private servletContext : ServletContext"
+}, {
+		"filePath": "components/camel-servletlistener/src/main/java/org/apache/camel/component/servletlistener/ServletCamelContext.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getServletContext() : ServletContext"
+}]
+}
+]
+}]
+}

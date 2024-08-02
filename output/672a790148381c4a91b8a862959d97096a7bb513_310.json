@@ -1,0 +1,69 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "672a790148381c4a91b8a862959d97096a7bb513",
+	"url": "https://github.com/JetBrains/intellij-community/commit/672a790148381c4a91b8a862959d97096a7bb513",
+	"refactorings": [{
+	"type": "Rename Variable",
+	"description": "Rename Variable _scope : GlobalSearchScope to globalScope : GlobalSearchScope in method public isInScope(scope SearchScope, element PsiElement) : boolean from class com.intellij.psi.search.PsiSearchScopeUtil",
+	"leftSideLocations": [{
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 25,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "_scope : GlobalSearchScope"
+}, {
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 7,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 25,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "globalScope : GlobalSearchScope"
+}, {
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "lang-api/src/com/intellij/psi/search/PsiSearchScopeUtil.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

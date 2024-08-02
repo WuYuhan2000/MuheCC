@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "058d4d4b5ffe40b8e93c7593f0b5346373455480",
+	"url": "https://github.com/apache/camel/commit/058d4d4b5ffe40b8e93c7593f0b5346373455480",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable response : Object in method protected populateResponse(exchange Exchange, httpRequest HttpRequestBase, httpResponse HttpResponse, in Message, strategy HeaderFilterStrategy, responseCode int) : void from class org.apache.camel.component.http4.HttpProducer",
+	"leftSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpProducer.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpProducer.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 16,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "response : Object"
+}, {
+		"filePath": "components/camel-http4/src/main/java/org/apache/camel/component/http4/HttpProducer.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

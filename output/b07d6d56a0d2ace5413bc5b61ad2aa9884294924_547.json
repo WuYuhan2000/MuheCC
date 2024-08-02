@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/kotlin",
+	"sha1": "b07d6d56a0d2ace5413bc5b61ad2aa9884294924",
+	"url": "https://github.com/JetBrains/kotlin/commit/b07d6d56a0d2ace5413bc5b61ad2aa9884294924",
+	"refactorings": [{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String from class org.jetbrains.jet.resolve.DescriptorRenderer",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 194,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable parent : DeclarationDescriptor to current : DeclarationDescriptor in method private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String from class org.jetbrains.jet.resolve.DescriptorRenderer",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 39,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parent : DeclarationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 39,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "current : DeclarationDescriptor"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 21,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(cd == null || cd instanceof TypeParameterDescriptor) to [if(cd instanceof TypeParameterDescriptor), if(cd == null)] in method private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String from class org.jetbrains.jet.resolve.DescriptorRenderer",
+	"leftSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 161,
+		"endLine": 179,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(cd == null || cd instanceof TypeParameterDescriptor)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 159,
+		"endLine": 180,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 199,
+		"endLine": 221,
+		"startColumn": 14,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(cd instanceof TypeParameterDescriptor)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 196,
+		"endLine": 221,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(cd == null)"
+}, {
+		"filePath": "compiler/frontend/src/org/jetbrains/jet/resolve/DescriptorRenderer.java",
+		"startLine": 194,
+		"endLine": 222,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "private renderTypeName(typeConstructor TypeConstructor, shortNamesOnly boolean) : String"
+}]
+}
+]
+}]
+}

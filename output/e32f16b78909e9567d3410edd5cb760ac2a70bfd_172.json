@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "e32f16b78909e9567d3410edd5cb760ac2a70bfd",
+	"url": "https://github.com/elastic/elasticsearch/commit/e32f16b78909e9567d3410edd5cb760ac2a70bfd",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type e : FileNotFoundException to e : Throwable in method public run() : void from class org.elasticsearch.common.blobstore.fs.AbstractFsBlobContainer.readBlob.execute.new Runnable",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/common/blobstore/fs/AbstractFsBlobContainer.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "e : FileNotFoundException"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/common/blobstore/fs/AbstractFsBlobContainer.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/common/blobstore/fs/AbstractFsBlobContainer.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 26,
+		"endColumn": 37,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "e : Throwable"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/common/blobstore/fs/AbstractFsBlobContainer.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 21,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

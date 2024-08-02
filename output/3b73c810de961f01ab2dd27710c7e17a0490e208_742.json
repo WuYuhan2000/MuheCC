@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "3b73c810de961f01ab2dd27710c7e17a0490e208",
+	"url": "https://github.com/orientechnologies/orientdb/commit/3b73c810de961f01ab2dd27710c7e17a0490e208",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter iBuffer : byte[] in method public fill(iDatabase ODatabaseRecord, iClassId int, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordSchemaAwareAbstract<T> from class com.orientechnologies.orient.core.record.ORecordSchemaAwareAbstract",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordSchemaAwareAbstract.java",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClassId int, iClusterId int, iPosition long, iVersion int) : ORecordSchemaAwareAbstract<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordSchemaAwareAbstract.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 46,
+		"endColumn": 66,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "iBuffer : byte[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordSchemaAwareAbstract.java",
+		"startLine": 42,
+		"endLine": 47,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClassId int, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordSchemaAwareAbstract<T>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter iBuffer : byte[] in method public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordAbstract<?> from class com.orientechnologies.orient.core.record.ORecordInternal",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordInternal.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 106,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int) : ORecordAbstract<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordInternal.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 106,
+		"endColumn": 120,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "iBuffer : byte[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/record/ORecordInternal.java",
+		"startLine": 26,
+		"endLine": 26,
+		"startColumn": 2,
+		"endColumn": 122,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordAbstract<?>"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter iBuffer : byte[] in method public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordAbstract<?> from class com.orientechnologies.orient.server.tx.OTransactionRecordProxy",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/tx/OTransactionRecordProxy.java",
+		"startLine": 169,
+		"endLine": 172,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int) : ORecordAbstract<?>"
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/tx/OTransactionRecordProxy.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "iBuffer : byte[]"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/tx/OTransactionRecordProxy.java",
+		"startLine": 169,
+		"endLine": 173,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public fill(iDatabase ODatabaseRecord, iClusterId int, iPosition long, iVersion int, iBuffer byte[]) : ORecordAbstract<?>"
+}]
+}
+]
+}]
+}

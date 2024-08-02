@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "935b63527dacf2c380a53ce83ca5b1d06aadca75",
+	"url": "https://github.com/ReactiveX/RxJava/commit/935b63527dacf2c380a53ce83ca5b1d06aadca75",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public flatMapTransforms(input UseCaseInput) : void renamed to public flatMapInt(input UseCaseInput) : void in class rx.usecases.PerfTransforms",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfTransforms.java",
+		"startLine": 46,
+		"endLine": 57,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public flatMapTransforms(input UseCaseInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfTransforms.java",
+		"startLine": 58,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public flatMapInt(input UseCaseInput) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public mapTransformation(input UseCaseInput) : void renamed to public mapIntStringInt(input UseCaseInput) : void in class rx.usecases.PerfTransforms",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfTransforms.java",
+		"startLine": 26,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapTransformation(input UseCaseInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfTransforms.java",
+		"startLine": 38,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public mapIntStringInt(input UseCaseInput) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public observeOn(input UseCaseInput) : void renamed to public observeOnComputation(input UseCaseInput) : void in class rx.usecases.PerfObserveOn",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfObserveOn.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public observeOn(input UseCaseInput) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/perf/java/rx/usecases/PerfObserveOn.java",
+		"startLine": 24,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public observeOnComputation(input UseCaseInput) : void"
+}]
+}
+]
+}]
+}

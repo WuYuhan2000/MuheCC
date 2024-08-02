@@ -1,0 +1,33 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hadoop",
+	"sha1": "65a5e2cc46b2c04591aa59b7a85751479a7dbd0b",
+	"url": "https://github.com/apache/hadoop/commit/65a5e2cc46b2c04591aa59b7a85751479a7dbd0b",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier protected to private in attribute private historyClient : AHSClient from class org.apache.hadoop.yarn.client.api.impl.YarnClientImpl",
+	"leftSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/java/org/apache/hadoop/yarn/client/api/impl/YarnClientImpl.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 23,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected historyClient : AHSClient"
+}],
+	"rightSideLocations": [{
+		"filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-client/src/main/java/org/apache/hadoop/yarn/client/api/impl/YarnClientImpl.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 21,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private historyClient : AHSClient"
+}]
+}
+]
+}]
+}

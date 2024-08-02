@@ -1,0 +1,195 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "16cb7d8d59add7b3ef513bba0de6a4fc07e3bc52",
+	"url": "https://github.com/aeshell/aesh/commit/16cb7d8d59add7b3ef513bba0de6a4fc07e3bc52",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private searchForward(search String) : StringBuilder from class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 75,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchNext(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 94,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private searchForward(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private searchReverse(search String) : StringBuilder from class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 86,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchPrevious(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 104,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private searchReverse(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public searchNext(search String) : StringBuilder from class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 75,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchNext(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 94,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private searchForward(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @Override in method public searchPrevious(search String) : StringBuilder from class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 86,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchPrevious(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 104,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "private searchReverse(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public searchNext(search String) : StringBuilder renamed to private searchForward(search String) : StringBuilder in class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 75,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchNext(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 94,
+		"endLine": 102,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private searchForward(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public searchPrevious(search String) : StringBuilder renamed to private searchReverse(search String) : StringBuilder in class org.jboss.jreadline.history.InMemoryHistory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 86,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchPrevious(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/InMemoryHistory.java",
+		"startLine": 104,
+		"endLine": 113,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private searchReverse(search String) : StringBuilder"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public searchPrevious(search String) : StringBuilder renamed to public search(search String) : StringBuilder in class org.jboss.jreadline.history.History",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/History.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public searchPrevious(search String) : StringBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/jreadline/history/History.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public search(search String) : StringBuilder"
+}]
+}
+]
+}]
+}

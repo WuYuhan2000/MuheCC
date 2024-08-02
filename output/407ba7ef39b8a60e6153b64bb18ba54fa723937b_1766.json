@@ -1,0 +1,1797 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/isa-tools/isacreator",
+	"sha1": "407ba7ef39b8a60e6153b64bb18ba54fa723937b",
+	"url": "https://github.com/isa-tools/isacreator/commit/407ba7ef39b8a60e6153b64bb18ba54fa723937b",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type browser : JPanel to browser : Container in class org.isatools.isacreator.ontologybrowsingutils.WSOntologyTreeCreator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "browser : JPanel"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "browser : Container"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type browser : JPanel to browser : Container in method public WSOntologyTreeCreator(browser Container, tree JTree) from class org.isatools.isacreator.ontologybrowsingutils.WSOntologyTreeCreator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 34,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "browser : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 34,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "browser : Container"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologybrowsingutils/WSOntologyTreeCreator.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createBrowseUI() : void extracted from private createSearchPanel() : JPanel in class org.isatools.isacreator.ontologyselectiontool.OntologySelectionTool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 222,
+		"endLine": 411,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 360,
+		"endLine": 362,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 364,
+		"endLine": 366,
+		"startColumn": 43,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 464,
+		"endLine": 491,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createBrowseUI() : void"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 486,
+		"endLine": 486,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 488,
+		"endLine": 488,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 471,
+		"endLine": 473,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 475,
+		"endLine": 477,
+		"startColumn": 43,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 235,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 318,
+		"endLine": 318,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createBrowseUI()"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 480,
+		"endLine": 480,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 490,
+		"endLine": 490,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 465,
+		"endLine": 465,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 482,
+		"endLine": 484,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 485,
+		"endLine": 485,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 487,
+		"endLine": 487,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 468,
+		"endLine": 468,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 466,
+		"endLine": 466,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 470,
+		"endLine": 478,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 467,
+		"endLine": 467,
+		"startColumn": 9,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createSearchResultsTree(ui BasicTreeUI) : void extracted from private createSearchPanel() : JPanel in class org.isatools.isacreator.ontologyselectiontool.OntologySelectionTool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 222,
+		"endLine": 411,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 347,
+		"endLine": 347,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 349,
+		"endLine": 349,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 350,
+		"endLine": 350,
+		"startColumn": 9,
+		"endColumn": 119,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 447,
+		"endLine": 462,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createSearchResultsTree(ui BasicTreeUI) : void"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 448,
+		"endLine": 448,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 450,
+		"endLine": 450,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 9,
+		"endColumn": 123,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 453,
+		"endLine": 453,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 454,
+		"endLine": 454,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 457,
+		"endLine": 457,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 333,
+		"endLine": 445,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createSearchUI(recommendedOntologiesAvailable boolean) : void"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createSearchResultsTree(ui)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 455,
+		"endLine": 455,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 456,
+		"endLine": 456,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createSearchUI(recommendedOntologiesAvailable boolean) : void extracted from private createSearchPanel() : JPanel in class org.isatools.isacreator.ontologyselectiontool.OntologySelectionTool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 222,
+		"endLine": 411,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 9,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 282,
+		"endLine": 282,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 292,
+		"endLine": 292,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 296,
+		"endLine": 296,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 297,
+		"endLine": 297,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 302,
+		"endLine": 302,
+		"startColumn": 9,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 303,
+		"endLine": 303,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 306,
+		"endLine": 306,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 307,
+		"endLine": 307,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 310,
+		"endLine": 314,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 316,
+		"endLine": 316,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 317,
+		"endLine": 317,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 319,
+		"endLine": 319,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 320,
+		"endLine": 320,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 321,
+		"endLine": 321,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 323,
+		"endLine": 323,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 325,
+		"endLine": 339,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 328,
+		"endLine": 328,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 329,
+		"endLine": 329,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 333,
+		"endLine": 333,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 341,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 343,
+		"endLine": 343,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 359,
+		"endLine": 367,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 375,
+		"endLine": 375,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 376,
+		"endLine": 376,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 383,
+		"endLine": 383,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 384,
+		"endLine": 384,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 385,
+		"endLine": 385,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 387,
+		"endLine": 387,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 388,
+		"endLine": 388,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 391,
+		"endLine": 391,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 393,
+		"endLine": 393,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 395,
+		"endLine": 395,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 400,
+		"endLine": 400,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 401,
+		"endLine": 401,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 372,
+		"endLine": 374,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 380,
+		"endLine": 380,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 397,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 9,
+		"endColumn": 130,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 402,
+		"endLine": 402,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 311,
+		"endLine": 313,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 327,
+		"endLine": 330,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 332,
+		"endLine": 334,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 336,
+		"endLine": 338,
+		"startColumn": 55,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 360,
+		"endLine": 362,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 364,
+		"endLine": 366,
+		"startColumn": 43,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 333,
+		"endLine": 445,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createSearchUI(recommendedOntologiesAvailable boolean) : void"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 335,
+		"endLine": 335,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 336,
+		"endLine": 336,
+		"startColumn": 9,
+		"endColumn": 109,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 337,
+		"endLine": 337,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 341,
+		"endLine": 341,
+		"startColumn": 9,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 345,
+		"endLine": 345,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 346,
+		"endLine": 346,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 348,
+		"endLine": 348,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 351,
+		"endLine": 351,
+		"startColumn": 9,
+		"endColumn": 107,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 352,
+		"endLine": 352,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 353,
+		"endLine": 353,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 355,
+		"endLine": 355,
+		"startColumn": 9,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 356,
+		"endLine": 356,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 357,
+		"endLine": 357,
+		"startColumn": 9,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 359,
+		"endLine": 363,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 361,
+		"endLine": 361,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 365,
+		"endLine": 365,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 366,
+		"endLine": 366,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 368,
+		"endLine": 368,
+		"startColumn": 9,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 369,
+		"endLine": 369,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 370,
+		"endLine": 370,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 372,
+		"endLine": 372,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 373,
+		"endLine": 373,
+		"startColumn": 9,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 374,
+		"endLine": 388,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 377,
+		"endLine": 377,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 378,
+		"endLine": 378,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 382,
+		"endLine": 382,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 386,
+		"endLine": 386,
+		"startColumn": 17,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 390,
+		"endLine": 390,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 392,
+		"endLine": 392,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 394,
+		"endLine": 394,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 396,
+		"endLine": 404,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 398,
+		"endLine": 398,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 402,
+		"endLine": 402,
+		"startColumn": 17,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 412,
+		"endLine": 412,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 413,
+		"endLine": 413,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 414,
+		"endLine": 414,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 420,
+		"endLine": 420,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 421,
+		"endLine": 421,
+		"startColumn": 9,
+		"endColumn": 82,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 9,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 425,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 428,
+		"endLine": 428,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 429,
+		"endLine": 429,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 9,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 438,
+		"endLine": 438,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 444,
+		"endLine": 444,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 334,
+		"endLine": 334,
+		"startColumn": 9,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 409,
+		"endLine": 411,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 417,
+		"endLine": 417,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 9,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 9,
+		"endColumn": 134,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 9,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 9,
+		"endColumn": 92,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 360,
+		"endLine": 362,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 376,
+		"endLine": 379,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 381,
+		"endLine": 383,
+		"startColumn": 56,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 385,
+		"endLine": 387,
+		"startColumn": 55,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 397,
+		"endLine": 399,
+		"startColumn": 44,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 401,
+		"endLine": 403,
+		"startColumn": 43,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 235,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 324,
+		"endLine": 324,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createSearchUI(recommendedOntologiesAvailable)"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 406,
+		"endLine": 406,
+		"startColumn": 9,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 426,
+		"endLine": 426,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private resetButtons() : void extracted from private createSearchPanel() : JPanel in class org.isatools.isacreator.ontologyselectiontool.OntologySelectionTool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 222,
+		"endLine": 411,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 1273,
+		"endLine": 1276,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private resetButtons() : void"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 1274,
+		"endLine": 1274,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 235,
+		"endLine": 331,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private createSearchPanel() : JPanel"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 251,
+		"endLine": 251,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "resetButtons()"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 283,
+		"endLine": 283,
+		"startColumn": 17,
+		"endColumn": 31,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "resetButtons()"
+}, {
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 1275,
+		"endLine": 1275,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute ontologySearchResults : FilterableJTree to ontologySearchResultsTree : FilterableJTree in class org.isatools.isacreator.ontologyselectiontool.OntologySelectionTool",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 29,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ontologySearchResults : FilterableJTree"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/isatools/isacreator/ontologyselectiontool/OntologySelectionTool.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "ontologySearchResultsTree : FilterableJTree"
+}]
+}
+]
+}]
+}

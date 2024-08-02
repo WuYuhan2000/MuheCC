@@ -1,0 +1,474 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "d703ec89cf73fa94cbd8993b05c5f46ec7bd84ff",
+	"url": "https://github.com/orientechnologies/orientdb/commit/d703ec89cf73fa94cbd8993b05c5f46ec7bd84ff",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type changesBuckets : ChangesBucket[] to changeUnits : List<ChangeUnit> in class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 31,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "changesBuckets : ChangesBucket[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "changeUnits : List<ChangeUnit>"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type bucket : ChangesBucket to changeUnit : ChangeUnit in method public revertChanges(pointer long) : void from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bucket : ChangesBucket"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "changeUnit : ChangeUnit"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 117,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable initialOffset : int in method public toStream(content byte[], offset int) : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "initialOffset : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 5,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute changesBuckets : ChangesBucket[] to changeUnits : List<ChangeUnit> in class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 31,
+		"endColumn": 79,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "changesBuckets : ChangesBucket[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "changeUnits : List<ChangeUnit>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable bucket : ChangesBucket to changeUnit : ChangeUnit in method public revertChanges(pointer long) : void from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 21,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bucket : ChangesBucket"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 7,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "changeUnit : ChangeUnit"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 13,
+		"endColumn": 117,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable changesSize : int to pageOffset : int in method public fromStream(content byte[], offset int) : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 11,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "changesSize : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "pageOffset : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable decompressionResult : int[] to decompressResult : int[] in method public fromStream(content byte[], offset int) : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 207,
+		"endLine": 207,
+		"startColumn": 11,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "decompressionResult : int[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 7,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 7,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 7,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 15,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "decompressResult : int[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable startPosition : int to dataLength : int in method public fromStream(content byte[], offset int) : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 11,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "startPosition : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 7,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "dataLength : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable size : int to changesSize : int in method public fromStream(content byte[], offset int) : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 31,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "size : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 213,
+		"endLine": 233,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 19,
+		"endColumn": 95,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "changesSize : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 71,
+		"endLine": 90,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute serializedSize : int to serializedSize : int in method public serializedSize() : int from class com.orientechnologies.orient.core.storage.impl.local.paginated.wal.OPageChanges",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 160,
+		"endLine": 160,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "serializedSize : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 17,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "serializedSize : int"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/paginated/wal/OPageChanges.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,576 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/getrailo/railo",
+	"sha1": "c30c9f9f4d9f9bd9a76593ac0053e43bbb5e9cb3",
+	"url": "https://github.com/getrailo/railo/commit/c30c9f9f4d9f9bd9a76593ac0053e43bbb5e9cb3",
+	"refactorings": [{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type PageException in method public toPoint(value Object, argName String) : Point from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 168,
+		"endLine": 171,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toPoint(o Object, string String) : Point"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 67,
+		"endColumn": 80,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "PageException"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 91,
+		"endLine": 106,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public toPoint(value Object, argName String) : Point"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type borderPaint : Paint to borderColor : Color in method public setBorderColor(borderColor Color) : void from class railo.runtime.img.filter.BorderFilter",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "borderPaint : Paint"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "borderColor : Color"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type FunctionException to PageException in method public toACurvesFilter$Curve(value Object, argName String) : CurvesFilter.Curve[] from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 96,
+		"endColumn": 113,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "FunctionException"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 127,
+		"endLine": 129,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toACurvesFilter$Curve(value Object, argName String) : CurvesFilter.Curve[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 96,
+		"endColumn": 109,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "PageException"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 153,
+		"endLine": 161,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public toACurvesFilter$Curve(value Object, argName String) : CurvesFilter.Curve[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mat : LightFilter.Material to material : Material in method public toLightFilter$Material(value Object, argName String) : LightFilter.Material from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mat : LightFilter.Material"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "material : Material"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type o : Object to str : String in method public toLightFilter$Material(value Object, argName String) : LightFilter.Material from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 100,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 161,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "str : String"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 124,
+		"endLine": 134,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private centreX : float from class railo.runtime.img.filter.FlareFilter",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centreX : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 16,
+		"endColumn": 30,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private centreX : float"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 100,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setCentreX(centreX float) : void"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private centreY : float from class railo.runtime.img.filter.FlareFilter",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private centreY : float"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 32,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private centreY : float"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/FlareFilter.java",
+		"startLine": 96,
+		"endLine": 98,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setCentreY(centreY float) : void"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(sct == null) to if(sct != null) in method public toLightFilter$Material(value Object, argName String) : LightFilter.Material from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 94,
+		"endLine": 95,
+		"startColumn": 3,
+		"endColumn": 123,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(sct == null)"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public toLightFilter$Material(value Object, argName String) : LightFilter.Material"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 117,
+		"endLine": 122,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(sct != null)"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 112,
+		"endLine": 138,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "public toLightFilter$Material(value Object, argName String) : LightFilter.Material"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class railo.runtime.functions.image.ImageColorMap renamed to railo.runtime.functions.image.ImageFilterColorMap",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/functions/image/ImageColorMap.java",
+		"startLine": 14,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "railo.runtime.functions.image.ImageColorMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/functions/image/ImageFilterColorMap.java",
+		"startLine": 14,
+		"endLine": 47,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "railo.runtime.functions.image.ImageFilterColorMap"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public setBorderPaint(borderPaint Paint) : void renamed to public setBorderColor(borderColor Color) : void in class railo.runtime.img.filter.BorderFilter",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 137,
+		"endLine": 144,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public setBorderPaint(borderPaint Paint) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 138,
+		"endLine": 144,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public setBorderColor(borderColor Color) : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter borderPaint : Paint to borderColor : Color in method public setBorderColor(borderColor Color) : void from class railo.runtime.img.filter.BorderFilter",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "borderPaint : Paint"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 30,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "borderColor : Color"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/BorderFilter.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 3,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter o : Object to value : Object in method public toPoint(value Object, argName String) : Point from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 30,
+		"endColumn": 38,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 30,
+		"endColumn": 42,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "value : Object"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter string : String to argName : String in method public toPoint(value Object, argName String) : Point from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 40,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "string : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 44,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "argName : String"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable mat : LightFilter.Material to material : Material in method public toLightFilter$Material(value Object, argName String) : LightFilter.Material from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 24,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mat : LightFilter.Material"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 13,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "material : Material"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 4,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable o : Object to str : String in method public toLightFilter$Material(value Object, argName String) : LightFilter.Material from class railo.runtime.img.filter.ImageFilterUtil",
+	"leftSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "o : Object"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 100,
+		"endLine": 101,
+		"startColumn": 3,
+		"endColumn": 161,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 10,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "str : String"
+}, {
+		"filePath": "railo-java/railo-core/src/railo/runtime/img/filter/ImageFilterUtil.java",
+		"startLine": 124,
+		"endLine": 134,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

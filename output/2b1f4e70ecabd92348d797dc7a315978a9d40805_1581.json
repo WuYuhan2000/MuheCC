@@ -1,0 +1,237 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/aeshell/aesh",
+	"sha1": "2b1f4e70ecabd92348d797dc7a315978a9d40805",
+	"url": "https://github.com/aeshell/aesh/commit/2b1f4e70ecabd92348d797dc7a315978a9d40805",
+	"refactorings": [{
+	"type": "Extract Class",
+	"description": "Extract Class org.jboss.aesh.cl.CommandLineCompletionParser from class org.jboss.aesh.cl.CommandLineParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 17,
+		"endLine": 324,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.jboss.aesh.cl.CommandLineParser"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 228,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public findCompleteObject(line String) : ParsedCompleteObject"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 252,
+		"endLine": 267,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private findCompleteObjectValue(line String) : ParsedCompleteObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 17,
+		"endLine": 283,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.jboss.aesh.cl.CommandLineParser"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineCompletionParser.java",
+		"startLine": 11,
+		"endLine": 77,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.jboss.aesh.cl.CommandLineCompletionParser"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineCompletionParser.java",
+		"startLine": 23,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public findCompleteObject(line String) : ParsedCompleteObject"
+}, {
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineCompletionParser.java",
+		"startLine": 60,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private findCompleteObjectValue(line String) : ParsedCompleteObject"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable completeParser : CommandLineCompletionParser in method public testParseCompleteObject() : void from class org.jboss.aesh.cl.ParseCompleteObjectTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 37,
+		"endColumn": 90,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "completeParser : CommandLineCompletionParser"
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 18,
+		"endLine": 18,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 23,
+		"endLine": 23,
+		"startColumn": 9,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/test/java/org/jboss/aesh/cl/ParseCompleteObjectTest.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private findCompleteObjectValue(line String) : ParsedCompleteObject from class org.jboss.aesh.cl.CommandLineParser to private findCompleteObjectValue(line String) : ParsedCompleteObject from class org.jboss.aesh.cl.CommandLineCompletionParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 252,
+		"endLine": 267,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private findCompleteObjectValue(line String) : ParsedCompleteObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineCompletionParser.java",
+		"startLine": 60,
+		"endLine": 75,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private findCompleteObjectValue(line String) : ParsedCompleteObject"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method public findCompleteObject(line String) : ParsedCompleteObject from class org.jboss.aesh.cl.CommandLineParser to public findCompleteObject(line String) : ParsedCompleteObject from class org.jboss.aesh.cl.CommandLineCompletionParser",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineParser.java",
+		"startLine": 228,
+		"endLine": 250,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public findCompleteObject(line String) : ParsedCompleteObject"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/CommandLineCompletionParser.java",
+		"startLine": 23,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public findCompleteObject(line String) : ParsedCompleteObject"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute isOption : boolean to option : boolean in class org.jboss.aesh.cl.ParsedCompleteObject",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/ParsedCompleteObject.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "isOption : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/jboss/aesh/cl/ParsedCompleteObject.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 21,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "option : boolean"
+}]
+}
+]
+}]
+}

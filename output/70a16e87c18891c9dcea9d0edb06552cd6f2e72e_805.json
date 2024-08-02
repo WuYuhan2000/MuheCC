@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "70a16e87c18891c9dcea9d0edb06552cd6f2e72e",
+	"url": "https://github.com/apache/camel/commit/70a16e87c18891c9dcea9d0edb06552cd6f2e72e",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter routeContext : RouteContext in method public InstrumentationErrorHandlerWrappingStrategy(routeContext RouteContext, counterMap Map<ProcessorType,PerformanceCounter>) from class org.apache.camel.management.InstrumentationErrorHandlerWrappingStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 33,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public InstrumentationErrorHandlerWrappingStrategy(counterMap Map<ProcessorType,PerformanceCounter>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 56,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "routeContext : RouteContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 34,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public InstrumentationErrorHandlerWrappingStrategy(routeContext RouteContext, counterMap Map<ProcessorType,PerformanceCounter>)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter routeContext : RouteContext in method public wrapProcessorInErrorHandler(routeContext RouteContext, processorType ProcessorType, target Processor) : Processor from class org.apache.camel.management.InstrumentationErrorHandlerWrappingStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 50,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "routeContext : RouteContext"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 37,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public wrapProcessorInErrorHandler(routeContext RouteContext, processorType ProcessorType, target Processor) : Processor"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/InstrumentationErrorHandlerWrappingStrategy.java",
+		"startLine": 39,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public wrapProcessorInErrorHandler(processorType ProcessorType, target Processor) : Processor"
+}]
+}
+]
+}]
+}

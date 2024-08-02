@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cyberfox/jbidwatcher",
+	"sha1": "1bacaac77d55c6bc522ec1ec03e155b1c44981e0",
+	"url": "https://github.com/cyberfox/jbidwatcher/commit/1bacaac77d55c6bc522ec1ec03e155b1c44981e0",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String from class com.cyberfox.util.platform.Path",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/app/JBidWatch.java",
+		"startLine": 117,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/cyberfox/util/platform/Path.java",
+		"startLine": 96,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String from class com.jbidwatcher.app.JBidWatch to public makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String from class com.cyberfox.util.platform.Path",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/app/JBidWatch.java",
+		"startLine": 117,
+		"endLine": 142,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/cyberfox/util/platform/Path.java",
+		"startLine": 96,
+		"endLine": 121,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public makeStandardDirectory(inPath String, defaultSubdir String, defaultDirectory String) : String"
+}]
+}
+]
+}]
+}

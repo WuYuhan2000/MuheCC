@@ -1,0 +1,282 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/internetarchive/heritrix3",
+	"sha1": "e4acb6c5129fcb2c7494bc206a82734c37383c1f",
+	"url": "https://github.com/internetarchive/heritrix3/commit/e4acb6c5129fcb2c7494bc206a82734c37383c1f",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier transient in attribute private consumerTag : String from class org.archive.crawler.frontier.AMQPUrlReceiver",
+	"leftSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private consumerTag : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private consumerTag : String"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier transient in attribute private pauseConsumer : boolean from class org.archive.crawler.frontier.AMQPUrlReceiver",
+	"leftSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private pauseConsumer : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 31,
+		"endColumn": 52,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private pauseConsumer : boolean"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public startConsumer() : void extracted from public run() : void in class org.archive.crawler.frontier.AMQPUrlReceiver.StarterRestarter",
+	"leftSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 141,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 33,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 33,
+		"endColumn": 90,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 153,
+		"endLine": 154,
+		"startColumn": 33,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 33,
+		"endColumn": 100,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 33,
+		"endColumn": 103,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 33,
+		"endColumn": 186,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 180,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public startConsumer() : void"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 181,
+		"endLine": 181,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 13,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 183,
+		"endLine": 184,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 13,
+		"endColumn": 80,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 13,
+		"endColumn": 83,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 13,
+		"endColumn": 166,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 139,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public run() : void"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 33,
+		"endColumn": 48,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "startConsumer()"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute private consumerTag : String from class org.archive.crawler.frontier.AMQPUrlReceiver.StarterRestarter to private consumerTag : String from class org.archive.crawler.frontier.AMQPUrlReceiver",
+	"leftSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 24,
+		"endColumn": 42,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private consumerTag : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 30,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "private consumerTag : String"
+}]
+},
+{
+	"type": "Split Conditional",
+	"description": "Split Conditional if(!isConsuming && !pauseConsumer) to [if(consumerTag != null && pauseConsumer), if(consumerTag == null && !pauseConsumer)] in method public run() : void from class org.archive.crawler.frontier.AMQPUrlReceiver.StarterRestarter",
+	"leftSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 148,
+		"endLine": 162,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(!isConsuming && !pauseConsumer)"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 141,
+		"endLine": 187,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public run() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 155,
+		"endLine": 166,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(consumerTag != null && pauseConsumer)"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 146,
+		"endLine": 153,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(consumerTag == null && !pauseConsumer)"
+}, {
+		"filePath": "contrib/src/main/java/org/archive/crawler/frontier/AMQPUrlReceiver.java",
+		"startLine": 139,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public run() : void"
+}]
+}
+]
+}]
+}

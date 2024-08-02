@@ -1,0 +1,1509 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "35c49ea2db324c527a45be9a219cc05f2a718950",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/35c49ea2db324c527a45be9a219cc05f2a718950",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type parser : ReviewDslParser to parser : IReviewDslMapper in class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 26,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "parser : ReviewDslParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 27,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "parser : IReviewDslMapper"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type serializer : Serializer to serializer : IReviewDslSerializer in class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "serializer : Serializer"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 31,
+		"endColumn": 41,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "serializer : IReviewDslSerializer"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type cs : ChangesetDef to cs : ReviewDslChangesetScopeItem in method private mapChangesetDef(properties ITaskProperties, cs ReviewDslChangesetScopeItem) : ChangesetScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 4,
+		"endColumn": 19,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cs : ChangesetDef"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 64,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "cs : ReviewDslChangesetScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 3,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parsed : ReviewResult to parsed : ReviewDslResult in method private mapResult(parsed ReviewDslResult, comment TaskComment) : ReviewResult from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parsed : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 58,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 33,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parsed : ReviewDslResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 211,
+		"endLine": 212,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type parser : ReviewDslParser to parser : IReviewDslMapper in method public ReviewTaskMapper(parser IReviewDslMapper, serializer IReviewDslSerializer) from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 26,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "parser : ReviewDslParser"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "parser : IReviewDslMapper"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type result : ResultEnum to result : ReviewDslResult.Rating in method private mapRating(result ReviewDslResult.Rating) : Rating from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 27,
+		"endColumn": 44,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "result : ResultEnum"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 70,
+		"endLine": 79,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 27,
+		"endColumn": 56,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ReviewDslResult.Rating"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 223,
+		"endLine": 232,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "SWITCH_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type s : ReviewScopeItem to s : ReviewDslScopeItem in method private mapReviewScopeItem(properties ITaskProperties, s ReviewDslScopeItem) : IReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "s : ReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 141,
+		"endLine": 144,
+		"startColumn": 10,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 138,
+		"endLine": 144,
+		"startColumn": 10,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "s : ReviewDslScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 186,
+		"endLine": 188,
+		"startColumn": 10,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 184,
+		"endLine": 188,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type scope : ReviewScope to scope : ReviewDslScope in method private mapReviewScope(properties ITaskProperties, scope ReviewDslScope) : ReviewScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 4,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "scope : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 117,
+		"endLine": 118,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 122,
+		"endLine": 128,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "scope : ReviewDslScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 167,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 172,
+		"endLine": 177,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type serializer : Serializer to serializer : IReviewDslSerializer in method public ReviewTaskMapper(parser IReviewDslMapper, serializer IReviewDslSerializer) from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 50,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "serializer : Serializer"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "serializer : IReviewDslSerializer"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type List<org.eclipse.mylyn.reviews.tasks.core.ReviewResult> to List<ReviewResult> in method public mapTaskToResults(taskProperties ITaskProperties) : List<ReviewResult> from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 289,
+		"endLine": 289,
+		"startColumn": 9,
+		"endColumn": 64,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "List<org.eclipse.mylyn.reviews.tasks.core.ReviewResult>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 288,
+		"endLine": 301,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public mapTaskToResults(taskProperties ITaskProperties) : List<org.eclipse.mylyn.reviews.tasks.core.ReviewResult>"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<ReviewResult>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 138,
+		"endLine": 153,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public mapTaskToResults(taskProperties ITaskProperties) : List<ReviewResult>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ReviewScope to ReviewDslScope in method private mapScope(scope ReviewScope) : ReviewDslScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 10,
+		"endColumn": 67,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 190,
+		"endLine": 198,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mapScope(scope ReviewScope) : ReviewScope"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ReviewDslScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 236,
+		"endLine": 243,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private mapScope(scope ReviewScope) : ReviewDslScope"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ReviewScopeItem to ReviewDslScopeItem in method private mapScopeItem(item IReviewScopeItem) : ReviewDslScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 10,
+		"endColumn": 71,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 200,
+		"endLine": 227,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mapScopeItem(item IReviewScopeItem) : ReviewScopeItem"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 10,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ReviewDslScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 245,
+		"endLine": 262,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private mapScopeItem(item IReviewScopeItem) : ReviewDslScopeItem"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type ReviewTaskMapper to IReviewMapper in method public createMapper() : IReviewMapper from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewsUtil",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewsUtil.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 16,
+		"endColumn": 32,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ReviewTaskMapper"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewsUtil.java",
+		"startLine": 94,
+		"endLine": 102,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createMapper() : ReviewTaskMapper"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewsUtil.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "IReviewMapper"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewsUtil.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createMapper() : IReviewMapper"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type org.eclipse.mylyn.reviews.tasks.core.ReviewResult to ReviewResult in method private mapResult(parsed ReviewDslResult, comment TaskComment) : ReviewResult from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 10,
+		"endColumn": 59,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 55,
+		"endLine": 67,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mapResult(parsed ReviewResult, comment TaskComment) : ReviewResult"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 210,
+		"endLine": 210,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 210,
+		"endLine": 220,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private mapResult(parsed ReviewDslResult, comment TaskComment) : ReviewResult"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type changeset : ChangesetDef to changeset : ReviewDslChangesetScopeItem in method private mapScopeItem(item IReviewScopeItem) : ReviewDslScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 220,
+		"endLine": 221,
+		"startColumn": 17,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "changeset : ChangesetDef"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 222,
+		"endLine": 222,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 4,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 32,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "changeset : ReviewDslChangesetScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 257,
+		"endLine": 257,
+		"startColumn": 4,
+		"endColumn": 57,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 4,
+		"endColumn": 21,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 4,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type parsed : IParseResult to parsed : ReviewDslResult in method public mapTaskToResults(taskProperties ITaskProperties) : List<ReviewResult> from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 293,
+		"endLine": 293,
+		"startColumn": 17,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "parsed : IParseResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 295,
+		"endLine": 297,
+		"startColumn": 5,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 294,
+		"endLine": 298,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 143,
+		"endLine": 144,
+		"startColumn": 21,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "parsed : ReviewDslResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 6,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 145,
+		"endLine": 147,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type rating : ResultEnum to rating : ReviewDslResult.Rating in method public mapResultToTask(res ReviewResult, taskProperties ITaskProperties) : void from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 244,
+		"endLine": 244,
+		"startColumn": 14,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "rating : ResultEnum"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 4,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 4,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 26,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "rating : ReviewDslResult.Rating"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 4,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 4,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 4,
+		"endColumn": 41,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type res : ReviewResult to res : ReviewDslResult in method public mapCurrentReviewResult(taskProperties ITaskProperties) : ReviewResult from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 275,
+		"endLine": 276,
+		"startColumn": 62,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "res : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 278,
+		"endLine": 279,
+		"startColumn": 3,
+		"endColumn": 16,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 121,
+		"endLine": 122,
+		"startColumn": 20,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "res : ReviewDslResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 124,
+		"endLine": 125,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type result : ReviewResult to result : ReviewDslResult in method public mapResultToTask(res ReviewResult, taskProperties ITaskProperties) : void from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 16,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 262,
+		"endLine": 262,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 259,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 90,
+		"endLine": 90,
+		"startColumn": 19,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ReviewDslResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type result : org.eclipse.mylyn.reviews.tasks.core.ReviewResult to result : ReviewResult in method private mapResult(parsed ReviewDslResult, comment TaskComment) : ReviewResult from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 53,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 16,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 3,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 216,
+		"endLine": 216,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 218,
+		"endLine": 218,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 217,
+		"endLine": 217,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type result : org.eclipse.mylyn.reviews.tasks.core.ReviewResult to result : ReviewResult in method public mapCurrentReviewResult(taskProperties ITaskProperties) : org.eclipse.mylyn.reviews.tasks.core.ReviewResult from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 277,
+		"endLine": 277,
+		"startColumn": 53,
+		"endColumn": 117,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 285,
+		"endLine": 285,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 3,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 3,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 16,
+		"endColumn": 29,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "result : ReviewResult"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 127,
+		"endLine": 127,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type s : ReviewScopeItem to s : ReviewDslScopeItem in method private mapReviewScope(properties ITaskProperties, scope ReviewDslScope) : ReviewScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 8,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "s : ReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 4,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 8,
+		"endColumn": 28,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "s : ReviewDslScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 4,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scope2 : ReviewScope to scope2 : ReviewDslScope in method private mapScope(scope ReviewScope) : ReviewDslScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 192,
+		"endLine": 193,
+		"startColumn": 61,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scope2 : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 4,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 18,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scope2 : ReviewDslScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 242,
+		"endLine": 242,
+		"startColumn": 3,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 4,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scope2 : ReviewScope to scope2 : ReviewDslScope in method public mapScopeToTask(scope ReviewScope, taskProperties ITaskProperties) : void from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 61,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scope2 : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 18,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "scope2 : ReviewDslScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable attachment : Attachment in method private mapScopeItem(item IReviewScopeItem) : ReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 205,
+		"endLine": 205,
+		"startColumn": 15,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "attachment : Attachment"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 248,
+		"endLine": 249,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable attachment : Attachment in method private mapScopeItem(item IReviewScopeItem) : ReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 15,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "attachment : Attachment"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 252,
+		"endLine": 253,
+		"startColumn": 4,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable res : ChangesetDef in method private mapReviewScopeItem(properties ITaskProperties, s ReviewScopeItem) : IReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "res : ChangesetDef"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable res : ResourceDef in method private mapReviewScopeItem(properties ITaskProperties, s ReviewScopeItem) : IReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 16,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "res : ResourceDef"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 4,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 187,
+		"endLine": 187,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

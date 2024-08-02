@@ -1,0 +1,390 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/fenix-framework/fenix-framework",
+	"sha1": "503476bdcbe037c72860b8d932ce74db766b4028",
+	"url": "https://github.com/fenix-framework/fenix-framework/commit/503476bdcbe037c72860b8d932ce74db766b4028",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected obtainNewServerId() : int from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private obtainServerId() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 135,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected obtainNewServerId() : int"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type jvstmConfig : JVSTMConfig to thisConfig : JvstmIspnConfig in method protected initializeGroupCommunication(thisConfig JvstmIspnConfig) : void from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 49,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jvstmConfig : JVSTMConfig"
+}, {
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 49,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "thisConfig : JvstmIspnConfig"
+}, {
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute protected HAZELCAST_FF_GROUP_NAME : String from class pt.ist.fenixframework.backend.jvstm.JVSTMConfig to protected HAZELCAST_FF_GROUP_NAME : String from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnConfig",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMConfig.java",
+		"startLine": 29,
+		"endLine": 29,
+		"startColumn": 35,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected HAZELCAST_FF_GROUP_NAME : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnConfig.java",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 35,
+		"endColumn": 82,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "protected HAZELCAST_FF_GROUP_NAME : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute protected hazelcastConfigFile : String from class pt.ist.fenixframework.backend.jvstm.JVSTMConfig to protected hazelcastConfigFile : String from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnConfig",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMConfig.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 22,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected hazelcastConfigFile : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnConfig.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 22,
+		"endColumn": 83,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "protected hazelcastConfigFile : String"
+}]
+},
+{
+	"type": "Push Down Attribute",
+	"description": "Push Down Attribute protected hazelcastInstance : HazelcastInstance from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd to protected hazelcastInstance : HazelcastInstance from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 33,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "protected hazelcastInstance : HazelcastInstance"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 28,
+		"endLine": 28,
+		"startColumn": 33,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pushed down attribute declaration",
+		"codeElement": "protected hazelcastInstance : HazelcastInstance"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private notifyStartupComplete() : void from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd to private notifyStartupComplete() : void from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 131,
+		"endLine": 136,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private notifyStartupComplete() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private notifyStartupComplete() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method private waitForStartupFromFirstNode() : void from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd to private waitForStartupFromFirstNode() : void from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 138,
+		"endLine": 153,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private waitForStartupFromFirstNode() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 78,
+		"endLine": 93,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "private waitForStartupFromFirstNode() : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected getHazelCastInstance() : HazelcastInstance from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd to protected getHazelCastInstance() : HazelcastInstance from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 260,
+		"endLine": 262,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getHazelCastInstance() : HazelcastInstance"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 131,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected getHazelCastInstance() : HazelcastInstance"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method protected initializeGroupCommunication(jvstmConfig JVSTMConfig) : void from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd to protected initializeGroupCommunication(thisConfig JvstmIspnConfig) : void from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 200,
+		"endLine": 203,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected initializeGroupCommunication(jvstmConfig JVSTMConfig) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 66,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "protected initializeGroupCommunication(thisConfig JvstmIspnConfig) : void"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getHazecastConfig() : Config from class pt.ist.fenixframework.backend.jvstm.JVSTMConfig to public getHazelcastConfig() : Config from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnConfig",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMConfig.java",
+		"startLine": 82,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHazecastConfig() : Config"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnConfig.java",
+		"startLine": 71,
+		"endLine": 76,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getHazelcastConfig() : Config"
+}]
+},
+{
+	"type": "Push Down Method",
+	"description": "Push Down Method public getHazelcastConfigFile() : String from class pt.ist.fenixframework.backend.jvstm.JVSTMConfig to public getHazelcastConfigFile() : String from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnConfig",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMConfig.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getHazelcastConfigFile() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnConfig.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pushed down method declaration",
+		"codeElement": "public getHazelcastConfigFile() : String"
+}]
+},
+{
+	"type": "Remove Thrown Exception Type",
+	"description": "Remove Thrown Exception Type Exception in method public init(jvstmConfig JVSTMConfig) : void from class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 54,
+		"endColumn": 63,
+		"codeElementType": "TYPE",
+		"description": "removed thrown exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 105,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public init(jvstmConfig JVSTMConfig) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 99,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed thrown exception type",
+		"codeElement": "public init(jvstmConfig JVSTMConfig) : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private obtainServerId() : int renamed to protected obtainNewServerId() : int in class pt.ist.fenixframework.backend.jvstm.JVSTMBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private obtainServerId() : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 135,
+		"endLine": 146,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "protected obtainNewServerId() : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter jvstmConfig : JVSTMConfig to thisConfig : JvstmIspnConfig in method protected initializeGroupCommunication(thisConfig JvstmIspnConfig) : void from class pt.ist.fenixframework.backend.jvstm.infinispan.JvstmIspnBackEnd",
+	"leftSideLocations": [{
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 200,
+		"endLine": 200,
+		"startColumn": 49,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jvstmConfig : JVSTMConfig"
+}, {
+		"filePath": "backend/jvstm-common/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/JVSTMBackEnd.java",
+		"startLine": 201,
+		"endLine": 201,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 49,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "thisConfig : JvstmIspnConfig"
+}, {
+		"filePath": "backend/jvstm-infinispan/runtime/src/main/java/pt/ist/fenixframework/backend/jvstm/infinispan/JvstmIspnBackEnd.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

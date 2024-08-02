@@ -1,0 +1,228 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "3980e032581824d7241748c7ec56a916fdce6261",
+	"url": "https://github.com/orientechnologies/orientdb/commit/3980e032581824d7241748c7ec56a916fdce6261",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter iHardMode : boolean in method private optimize(iHardMode boolean) : void from class com.orientechnologies.orient.core.index.OIndexMVRBTreeAbstract.OIndexMVRBTreeAbstract.new Listener",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/index/OIndexMVRBTreeAbstract.java",
+		"startLine": 115,
+		"endLine": 122,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private optimize() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/index/OIndexMVRBTreeAbstract.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 26,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "iHardMode : boolean"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/index/OIndexMVRBTreeAbstract.java",
+		"startLine": 115,
+		"endLine": 124,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private optimize(iHardMode boolean) : void"
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable newEntryPoints : List<OMVRBTreeEntryPersistent<K,V>> to newEntryPoints : List<OMVRBTreeEntryPersistent<K,V>> in method public optimize(iForce boolean) : void from class com.orientechnologies.orient.core.type.tree.OMVRBTreePersistent",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 72,
+		"endLine": 73,
+		"startColumn": 53,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "newEntryPoints : List<OMVRBTreeEntryPersistent<K,V>>"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 265,
+		"endLine": 265,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 5,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 281,
+		"endLine": 281,
+		"startColumn": 6,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 291,
+		"endLine": 291,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 256,
+		"endLine": 260,
+		"startColumn": 7,
+		"endColumn": 9,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 255,
+		"endLine": 266,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 272,
+		"endLine": 274,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 278,
+		"endLine": 286,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 230,
+		"endLine": 230,
+		"startColumn": 47,
+		"endColumn": 130,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "newEntryPoints : List<OMVRBTreeEntryPersistent<K,V>>"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 270,
+		"endLine": 270,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 279,
+		"endLine": 279,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 284,
+		"endLine": 284,
+		"startColumn": 5,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 286,
+		"endLine": 286,
+		"startColumn": 6,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 295,
+		"endLine": 295,
+		"startColumn": 4,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 261,
+		"endLine": 265,
+		"startColumn": 7,
+		"endColumn": 9,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 260,
+		"endLine": 271,
+		"startColumn": 6,
+		"endColumn": 7,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 277,
+		"endLine": 279,
+		"startColumn": 4,
+		"endColumn": 34,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/type/tree/OMVRBTreePersistent.java",
+		"startLine": 283,
+		"endLine": 291,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

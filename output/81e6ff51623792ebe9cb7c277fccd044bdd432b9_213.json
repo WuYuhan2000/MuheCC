@@ -1,0 +1,603 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "81e6ff51623792ebe9cb7c277fccd044bdd432b9",
+	"url": "https://github.com/elastic/elasticsearch/commit/81e6ff51623792ebe9cb7c277fccd044bdd432b9",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type preProcessors : RestPreProcessor[] to filters : RestFilter[] in class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "preProcessors : RestPreProcessor[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 26,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "filters : RestFilter[]"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type o1 : RestPreProcessor to o1 : RestFilter in method public compare(o1 RestFilter, o2 RestFilter) : int from class org.elasticsearch.rest.RestController.registerFilter.sort.new Comparator<RestFilter>",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 32,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o1 : RestPreProcessor"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 32,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o1 : RestFilter"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type o2 : RestPreProcessor to o2 : RestFilter in method public compare(o1 RestFilter, o2 RestFilter) : int from class org.elasticsearch.rest.RestController.registerFilter.sort.new Comparator<RestFilter>",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 53,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "o2 : RestPreProcessor"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 47,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "o2 : RestFilter"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type preProcessor : RestPreProcessor to preProcessor : RestFilter in method public registerFilter(preProcessor RestFilter) : void from class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 51,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "preProcessor : RestPreProcessor"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 45,
+		"endColumn": 68,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "preProcessor : RestFilter"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type boolean to void in method public dispatchRequest(request RestRequest, channel RestChannel) : void from class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 114,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public dispatchRequest(request RestRequest, channel RestChannel) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 12,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 139,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public dispatchRequest(request RestRequest, channel RestChannel) : void"
+}]
+},
+{
+	"type": "Change Type Declaration Kind",
+	"description": "Change Type Declaration Kind interface to class in type org.elasticsearch.rest.RestFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestPreProcessor.java",
+		"startLine": 22,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.elasticsearch.rest.RestPreProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestFilter.java",
+		"startLine": 25,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed type declaration kind",
+		"codeElement": "org.elasticsearch.rest.RestFilter"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type copy : RestPreProcessor[] to copy : RestFilter[] in method public registerFilter(preProcessor RestFilter) : void from class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 28,
+		"endColumn": 81,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "copy : RestPreProcessor[]"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 75,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 73,
+		"endLine": 78,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 22,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "copy : RestFilter[]"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 83,
+		"endLine": 88,
+		"startColumn": 9,
+		"endColumn": 12,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method package executeHandler(request RestRequest, channel RestChannel) : void extracted from public dispatchRequest(request RestRequest, channel RestChannel) : boolean in class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 114,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public dispatchRequest(request RestRequest, channel RestChannel) : boolean"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 13,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 156,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "package executeHandler(request RestRequest, channel RestChannel) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 13,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 158,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 139,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public dispatchRequest(request RestRequest, channel RestChannel) : void"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 49,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "executeHandler(request,channel)"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 17,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 166,
+		"endLine": 166,
+		"startColumn": 17,
+		"endColumn": 165,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 158,
+		"endLine": 160,
+		"startColumn": 30,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 161,
+		"endLine": 165,
+		"startColumn": 65,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 165,
+		"endLine": 167,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 161,
+		"endLine": 167,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 160,
+		"endLine": 168,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(handler == null) to if(handler != null) in method package executeHandler(request RestRequest, channel RestChannel) : void from class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(handler == null)"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 114,
+		"endLine": 134,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public dispatchRequest(request RestRequest, channel RestChannel) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 158,
+		"endLine": 168,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(handler != null)"
+}, {
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 156,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "package executeHandler(request RestRequest, channel RestChannel) : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute preProcessors : RestPreProcessor[] to filters : RestFilter[] in class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 32,
+		"endColumn": 71,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "preProcessors : RestPreProcessor[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 26,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "filters : RestFilter[]"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class org.elasticsearch.rest.RestPreProcessor renamed to org.elasticsearch.rest.RestFilter",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestPreProcessor.java",
+		"startLine": 22,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.elasticsearch.rest.RestPreProcessor"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestFilter.java",
+		"startLine": 25,
+		"endLine": 48,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "org.elasticsearch.rest.RestFilter"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public registerPreProcessor(preProcessor RestPreProcessor) : void renamed to public registerFilter(preProcessor RestFilter) : void in class org.elasticsearch.rest.RestController",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 66,
+		"endLine": 80,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public registerPreProcessor(preProcessor RestPreProcessor) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/elasticsearch/rest/RestController.java",
+		"startLine": 76,
+		"endLine": 90,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public registerFilter(preProcessor RestFilter) : void"
+}]
+}
+]
+}]
+}

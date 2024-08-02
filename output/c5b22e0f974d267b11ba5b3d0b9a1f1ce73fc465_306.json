@@ -1,0 +1,108 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "c5b22e0f974d267b11ba5b3d0b9a1f1ce73fc465",
+	"url": "https://github.com/JetBrains/intellij-community/commit/c5b22e0f974d267b11ba5b3d0b9a1f1ce73fc465",
+	"refactorings": [{
+	"type": "Change Class Access Modifier",
+	"description": "Change Class Access Modifier private to public in class com.intellij.formatting.alignment.AlignmentStrategy.AlignmentPerTypeStrategy",
+	"leftSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 101,
+		"endLine": 119,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "com.intellij.formatting.alignment.AlignmentStrategy.AlignmentPerTypeStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 101,
+		"endLine": 125,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with changed access modifier",
+		"codeElement": "com.intellij.formatting.alignment.AlignmentStrategy.AlignmentPerTypeStrategy"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type AlignmentStrategy to AlignmentPerTypeStrategy in method public createAlignmentPerTypeStrategy(targetTypes Collection<IElementType>, allowBackwardShift boolean) : AlignmentPerTypeStrategy from class com.intellij.formatting.alignment.AlignmentStrategy",
+	"leftSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "AlignmentStrategy"
+}, {
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 53,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createAlignmentPerTypeStrategy(targetTypes Collection<IElementType>, allowBackwardShift boolean) : AlignmentStrategy"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 17,
+		"endColumn": 41,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "AlignmentPerTypeStrategy"
+}, {
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 53,
+		"endLine": 76,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public createAlignmentPerTypeStrategy(targetTypes Collection<IElementType>, allowBackwardShift boolean) : AlignmentPerTypeStrategy"
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private myAllowBackwardShift : boolean in class com.intellij.formatting.alignment.AlignmentStrategy.AlignmentPerTypeStrategy",
+	"leftSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private myAllowBackwardShift : boolean"
+}, {
+		"filePath": "platform/lang-impl/src/com/intellij/formatting/alignment/AlignmentStrategy.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+}
+]
+}]
+}

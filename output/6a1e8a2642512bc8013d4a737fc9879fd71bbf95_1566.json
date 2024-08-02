@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arquillian/arquillian-graphene",
+	"sha1": "6a1e8a2642512bc8013d4a737fc9879fd71bbf95",
+	"url": "https://github.com/arquillian/arquillian-graphene/commit/6a1e8a2642512bc8013d4a737fc9879fd71bbf95",
+	"refactorings": [{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Target(ElementType.FIELD) to @Target({ElementType.FIELD,ElementType.PARAMETER}) in class org.jboss.arquillian.graphene.page.Page",
+	"leftSideLocations": [{
+		"filePath": "api/src/main/java/org/jboss/arquillian/graphene/page/Page.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 0,
+		"endColumn": 27,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Target(ElementType.FIELD)"
+}, {
+		"filePath": "api/src/main/java/org/jboss/arquillian/graphene/page/Page.java",
+		"startLine": 29,
+		"endLine": 68,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.jboss.arquillian.graphene.page.Page"
+}],
+	"rightSideLocations": [{
+		"filePath": "api/src/main/java/org/jboss/arquillian/graphene/page/Page.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 0,
+		"endColumn": 52,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Target({ElementType.FIELD,ElementType.PARAMETER})"
+}, {
+		"filePath": "api/src/main/java/org/jboss/arquillian/graphene/page/Page.java",
+		"startLine": 29,
+		"endLine": 75,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "ANNOTATION_TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.jboss.arquillian.graphene.page.Page"
+}]
+}
+]
+}]
+}

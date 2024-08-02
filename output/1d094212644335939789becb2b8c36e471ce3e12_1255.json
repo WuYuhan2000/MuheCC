@@ -1,0 +1,336 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "1d094212644335939789becb2b8c36e471ce3e12",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/1d094212644335939789becb2b8c36e471ce3e12",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type item : PatchScopeItem to item : IReviewScopeItem in method private mapReviewScope(properties ITaskProperties, scope ReviewScope) : ReviewScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 20,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "item : PatchScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 21,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : IReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 121,
+		"endLine": 121,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type item : ResourceScopeItem to item : IReviewScopeItem in method private mapReviewScopeItem(properties ITaskProperties, s ReviewScopeItem) : IReviewScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 23,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "item : ResourceScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 20,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "item : IReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private mapReviewScopeItem(properties ITaskProperties, s ReviewScopeItem) : IReviewScopeItem extracted from private mapReviewScope(properties ITaskProperties, scope ReviewScope) : ReviewScope in class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 89,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private mapReviewScope(properties ITaskProperties, scope ReviewScope) : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 5,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 102,
+		"endLine": 106,
+		"startColumn": 11,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 99,
+		"endLine": 106,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 102,
+		"endLine": 106,
+		"startColumn": 41,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 127,
+		"endLine": 138,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private mapReviewScopeItem(properties ITaskProperties, s ReviewScopeItem) : IReviewScopeItem"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 4,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 43,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 3,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 10,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 131,
+		"endLine": 136,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 133,
+		"endLine": 136,
+		"startColumn": 40,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 109,
+		"endLine": 125,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private mapReviewScope(properties ITaskProperties, scope ReviewScope) : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "mapReviewScopeItem(properties,s)"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 132,
+		"endLine": 132,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 131,
+		"endLine": 133,
+		"startColumn": 30,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable originalScope : ReviewScope in method public mapTaskToScope(properties ITaskProperties) : ReviewScope from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 15,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "originalScope : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter mappedScope : ReviewScope in method private mapPatchDef(properties ITaskProperties, mappedScope ReviewScope, patch PatchDef) : PatchScopeItem from class org.eclipse.mylyn.reviews.tasks.core.internal.ReviewTaskMapper",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 4,
+		"endColumn": 27,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "mappedScope : ReviewScope"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 121,
+		"endLine": 129,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private mapPatchDef(properties ITaskProperties, mappedScope ReviewScope, patch PatchDef) : PatchScopeItem"
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.reviews.tasks.core/src/org/eclipse/mylyn/reviews/tasks/core/internal/ReviewTaskMapper.java",
+		"startLine": 150,
+		"endLine": 157,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "private mapPatchDef(properties ITaskProperties, patch PatchDef) : PatchScopeItem"
+}]
+}
+]
+}]
+}

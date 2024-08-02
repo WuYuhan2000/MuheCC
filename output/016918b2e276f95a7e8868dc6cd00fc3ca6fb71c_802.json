@@ -1,0 +1,444 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "016918b2e276f95a7e8868dc6cd00fc3ca6fb71c",
+	"url": "https://github.com/apache/camel/commit/016918b2e276f95a7e8868dc6cd00fc3ca6fb71c",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter exchange : Exchange in method protected createJmsMessage(exchange Exchange, body Object, headers Map<String,Object>, session Session, context CamelContext) : Message from class org.apache.camel.component.jms.JmsBinding",
+	"leftSideLocations": [{
+		"filePath": "components/camel-jms/src/main/java/org/apache/camel/component/jms/JmsBinding.java",
+		"startLine": 291,
+		"endLine": 357,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createJmsMessage(body Object, headers Map<String,Object>, session Session, context CamelContext) : Message"
+}],
+	"rightSideLocations": [{
+		"filePath": "components/camel-jms/src/main/java/org/apache/camel/component/jms/JmsBinding.java",
+		"startLine": 299,
+		"endLine": 299,
+		"startColumn": 40,
+		"endColumn": 57,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "exchange : Exchange"
+}, {
+		"filePath": "components/camel-jms/src/main/java/org/apache/camel/component/jms/JmsBinding.java",
+		"startLine": 299,
+		"endLine": 374,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected createJmsMessage(exchange Exchange, body Object, headers Map<String,Object>, session Session, context CamelContext) : Message"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type payload : MinaPayloadHolder to payload : DefaultExchangeHolder in method public unmarshal(exchange Exchange, payload DefaultExchangeHolder) : void from class org.apache.camel.impl.DefaultExchangeHolder",
+	"leftSideLocations": [{
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 53,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "payload : MinaPayloadHolder"
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 100,
+		"endLine": 100,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 95,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 103,
+		"endLine": 105,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 53,
+		"endColumn": 82,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "payload : DefaultExchangeHolder"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 101,
+		"endLine": 101,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 13,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 68,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 107,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 96,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 100,
+		"endLine": 103,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 104,
+		"endLine": 106,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type MinaPayloadHolder to DefaultExchangeHolder in method public marshal(exchange Exchange) : DefaultExchangeHolder from class org.apache.camel.impl.DefaultExchangeHolder",
+	"leftSideLocations": [{
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 19,
+		"endColumn": 36,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "MinaPayloadHolder"
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 60,
+		"endLine": 84,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public marshal(exchange Exchange) : MinaPayloadHolder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 19,
+		"endColumn": 40,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "DefaultExchangeHolder"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 61,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public marshal(exchange Exchange) : DefaultExchangeHolder"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type payload : MinaPayloadHolder to payload : DefaultExchangeHolder in method public marshal(exchange Exchange) : DefaultExchangeHolder from class org.apache.camel.impl.DefaultExchangeHolder",
+	"leftSideLocations": [{
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 27,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "payload : MinaPayloadHolder"
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 31,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "payload : DefaultExchangeHolder"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 89,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 96,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 13,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move And Rename Class",
+	"description": "Move And Rename Class org.apache.camel.component.mina.MinaPayloadHolder moved and renamed to org.apache.camel.impl.DefaultExchangeHolder",
+	"leftSideLocations": [{
+		"filePath": "components/camel-mina/src/main/java/org/apache/camel/component/mina/MinaPayloadHolder.java",
+		"startLine": 27,
+		"endLine": 142,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.apache.camel.component.mina.MinaPayloadHolder"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/impl/DefaultExchangeHolder.java",
+		"startLine": 27,
+		"endLine": 146,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved and renamed type declaration",
+		"codeElement": "org.apache.camel.impl.DefaultExchangeHolder"
+}]
+}
+]
+}]
+}

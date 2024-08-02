@@ -1,0 +1,303 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "6b3023c2aa76386a0d3b437d593bfd65697dc169",
+	"url": "https://github.com/spring-projects/spring-framework/commit/6b3023c2aa76386a0d3b437d593bfd65697dc169",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type interceptors : HandlerInterceptor[] to interceptors : HandlerInterceptor... in method public HandlerExecutionChain(handler Object, interceptors HandlerInterceptor...) from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 47,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 4,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 4,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 47,
+		"endColumn": 81,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor..."
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 4,
+		"endColumn": 81,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 4,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type interceptors : HandlerInterceptor[] to interceptors : HandlerInterceptor... in method public addInterceptors(interceptors HandlerInterceptor...) : void from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 30,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 30,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor..."
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type void to List<HandlerInterceptor> in method private initInterceptorList() : List<HandlerInterceptor> from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "void"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 99,
+		"endLine": 107,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private initInterceptorList() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 10,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "List<HandlerInterceptor>"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 99,
+		"endLine": 109,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private initInterceptorList() : List<HandlerInterceptor>"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptors : HandlerInterceptor[] in method package applyAfterConcurrentHandlingStarted(request HttpServletRequest, response HttpServletResponse) : void from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 182,
+		"endLine": 192,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 185,
+		"endLine": 195,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptors : HandlerInterceptor[] in method package applyPostHandle(request HttpServletRequest, response HttpServletResponse, mv ModelAndView) : void from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 147,
+		"endLine": 150,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 150,
+		"endLine": 153,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptors : HandlerInterceptor[] in method package applyPreHandle(request HttpServletRequest, response HttpServletResponse) : boolean from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 128,
+		"endLine": 135,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 130,
+		"endLine": 130,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 133,
+		"endLine": 133,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 132,
+		"endLine": 139,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable interceptors : HandlerInterceptor[] in method package triggerAfterCompletion(request HttpServletRequest, response HttpServletResponse, ex Exception) : void from class org.springframework.web.servlet.HandlerExecutionChain",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 4,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 24,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "interceptors : HandlerInterceptor[]"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/HandlerExecutionChain.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,93 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/elastic/elasticsearch",
+	"sha1": "296b6b2f5757d2f8100daef0d2507183deeca77a",
+	"url": "https://github.com/elastic/elasticsearch/commit/296b6b2f5757d2f8100daef0d2507183deeca77a",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type r : IndexReader to searcher : Engine.Searcher in method public ContextIndexSearcher(searchContext SearchContext, searcher Engine.Searcher) from class org.elasticsearch.search.internal.ContextIndexSearcher",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 62,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "r : IndexReader"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 62,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "searcher : Engine.Searcher"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter r : IndexReader to searcher : Engine.Searcher in method public ContextIndexSearcher(searchContext SearchContext, searcher Engine.Searcher) from class org.elasticsearch.search.internal.ContextIndexSearcher",
+	"leftSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 62,
+		"endColumn": 75,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "r : IndexReader"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 18,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 62,
+		"endColumn": 86,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "searcher : Engine.Searcher"
+}, {
+		"filePath": "modules/elasticsearch/src/main/java/org/elasticsearch/search/internal/ContextIndexSearcher.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 9,
+		"endColumn": 36,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

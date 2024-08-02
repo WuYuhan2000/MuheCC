@@ -1,0 +1,81 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "be560b58da1c89e56091cd109f620d7eda3a24fb",
+	"url": "https://github.com/ReactiveX/RxJava/commit/be560b58da1c89e56091cd109f620d7eda3a24fb",
+	"refactorings": [{
+	"type": "Rename Method",
+	"description": "Rename Method public finally0(action Action0) : Observable<T> renamed to public finallyDo(action Action0) : Observable<T> in class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 2459,
+		"endLine": 2468,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public finally0(action Action0) : Observable<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 2459,
+		"endLine": 2468,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public finallyDo(action Action0) : Observable<T>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public finally0(sequence Observable<T>, action Action0) : Func1<Observer<T>,Subscription> renamed to public finallyDo(sequence Observable<T>, action Action0) : Func1<Observer<T>,Subscription> in class rx.operators.OperationFinally",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 33,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public finally0(sequence Observable<T>, action Action0) : Func1<Observer<T>,Subscription>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/operators/OperationFinally.java",
+		"startLine": 33,
+		"endLine": 56,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public finallyDo(sequence Observable<T>, action Action0) : Func1<Observer<T>,Subscription>"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public finally0(source Observable, action Action0) : Observable<T> renamed to public finallyDo(source Observable, action Action0) : Observable<T> in class rx.Observable",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1187,
+		"endLine": 1197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public finally0(source Observable, action Action0) : Observable<T>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/Observable.java",
+		"startLine": 1187,
+		"endLine": 1197,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public finallyDo(source Observable, action Action0) : Observable<T>"
+}]
+}
+]
+}]
+}

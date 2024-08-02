@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "d51eaf7a642b4b4572aa9628e66b760e5c3ee2d5",
+	"url": "https://github.com/kiegroup/drools/commit/d51eaf7a642b4b4572aa9628e66b760e5c3ee2d5",
+	"refactorings": [{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private index : Index from class org.drools.util.TupleIndexHashTable",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/util/TupleIndexHashTable.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 45,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private index : Index"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/util/TupleIndexHashTable.java",
+		"startLine": 25,
+		"endLine": 25,
+		"startColumn": 45,
+		"endColumn": 50,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private index : Index"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/util/TupleIndexHashTable.java",
+		"startLine": 85,
+		"endLine": 87,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getIndex() : Index"
+}]
+}
+]
+}]
+}

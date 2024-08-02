@@ -1,0 +1,453 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "f83662f51e2bbcb77a760d23695dda66fdfb6a11",
+	"url": "https://github.com/apache/deltaspike/commit/f83662f51e2bbcb77a760d23695dda66fdfb6a11",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String extracted from public getProjectStageAwarePropertyValue(key String, defaultValue String) : String in class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 180,
+		"endLine": 198,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getProjectStageAwarePropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 197,
+		"endLine": 197,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 192,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 193,
+		"endLine": 195,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 389,
+		"endLine": 400,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 392,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 174,
+		"endLine": 187,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getProjectStageAwarePropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 186,
+		"endLine": 186,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fallbackToDefaultIfEmpty(key,value,defaultValue)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 393,
+		"endLine": 394,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String extracted from public getPropertyAwarePropertyValue(key String, property String, defaultValue String) : String in class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 262,
+		"endLine": 272,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPropertyAwarePropertyValue(key String, property String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 271,
+		"endLine": 271,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 268,
+		"endLine": 268,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 266,
+		"endLine": 269,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 267,
+		"endLine": 269,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 389,
+		"endLine": 400,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 392,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 251,
+		"endLine": 256,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPropertyAwarePropertyValue(key String, property String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 255,
+		"endLine": 255,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fallbackToDefaultIfEmpty(key,value,defaultValue)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 393,
+		"endLine": 394,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String extracted from public getPropertyValue(key String, defaultValue String) : String in class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 99,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public getPropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 114,
+		"endLine": 115,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 112,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 113,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 389,
+		"endLine": 400,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private fallbackToDefaultIfEmpty(key String, value String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 393,
+		"endLine": 394,
+		"startColumn": 13,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 391,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 392,
+		"endLine": 397,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 99,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public getPropertyValue(key String, defaultValue String) : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 16,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fallbackToDefaultIfEmpty(key,value,defaultValue)"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 399,
+		"endLine": 399,
+		"startColumn": 9,
+		"endColumn": 22,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable configuredValue : String in method public getPropertyValue(key String, defaultValue String) : String from class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 16,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "configuredValue : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 119,
+		"endLine": 119,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 396,
+		"endLine": 396,
+		"startColumn": 13,
+		"endColumn": 33,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable configuredValue : String to value : String in method public getPropertyValue(key String, defaultValue String) : String from class org.apache.deltaspike.core.api.config.ConfigResolver",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 16,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "configuredValue : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 56,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 16,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "value : String"
+}, {
+		"filePath": "deltaspike/core/api/src/main/java/org/apache/deltaspike/core/api/config/ConfigResolver.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

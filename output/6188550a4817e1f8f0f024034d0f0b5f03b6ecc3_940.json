@@ -1,0 +1,126 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "6188550a4817e1f8f0f024034d0f0b5f03b6ecc3",
+	"url": "https://github.com/spring-projects/spring-framework/commit/6188550a4817e1f8f0f024034d0f0b5f03b6ecc3",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type request : MockHttpServletRequest to request : HttpServletRequest in method public updateAccessedAttributes() : void from class org.springframework.web.context.request.ServletRequestAttributesTests",
+	"leftSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 26,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "request : MockHttpServletRequest"
+}, {
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 22,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "request : HttpServletRequest"
+}, {
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 163,
+		"endLine": 163,
+		"startColumn": 3,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type session : MockHttpSession to session : HttpSession in method public updateAccessedAttributes() : void from class org.springframework.web.context.request.ServletRequestAttributesTests",
+	"leftSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 19,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "session : MockHttpSession"
+}, {
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 3,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 159,
+		"endLine": 159,
+		"startColumn": 15,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "session : HttpSession"
+}, {
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable value : Object in method public updateAccessedAttributes() : void from class org.springframework.web.context.request.ServletRequestAttributesTests",
+	"leftSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "value : Object"
+}, {
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-web/src/test/java/org/springframework/web/context/request/ServletRequestAttributesTests.java",
+		"startLine": 164,
+		"endLine": 164,
+		"startColumn": 3,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

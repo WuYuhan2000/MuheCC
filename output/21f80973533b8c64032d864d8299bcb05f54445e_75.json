@@ -1,0 +1,75 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "21f80973533b8c64032d864d8299bcb05f54445e",
+	"url": "https://github.com/apache/hbase/commit/21f80973533b8c64032d864d8299bcb05f54445e",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type optionalFlushInterval : int to optionalFlushInterval : long in class org.apache.hadoop.hbase.regionserver.wal.HLog.LogSyncer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 729,
+		"endLine": 729,
+		"startColumn": 23,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "optionalFlushInterval : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 729,
+		"endLine": 729,
+		"startColumn": 24,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "optionalFlushInterval : long"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type optionalFlushInterval : int to optionalFlushInterval : long in method package LogSyncer(optionalFlushInterval long) from class org.apache.hadoop.hbase.regionserver.wal.HLog.LogSyncer",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 731,
+		"endLine": 731,
+		"startColumn": 15,
+		"endColumn": 40,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "optionalFlushInterval : int"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 732,
+		"endLine": 732,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 731,
+		"endLine": 731,
+		"startColumn": 15,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "optionalFlushInterval : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/regionserver/wal/HLog.java",
+		"startLine": 732,
+		"endLine": 732,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

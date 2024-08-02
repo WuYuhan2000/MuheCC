@@ -1,0 +1,207 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/frontlinesms-credit/plugin-paymentview",
+	"sha1": "738a0163a28eb7559ff9934ce0b15355055fdfc2",
+	"url": "https://github.com/frontlinesms-credit/plugin-paymentview/commit/738a0163a28eb7559ff9934ce0b15355055fdfc2",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type settingsId : long to settings : PersistableSettings in class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settingsId : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "settings : PersistableSettings"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type settingsId : long to settings : PersistableSettings in method public PaymentServiceStartRequest(settings PersistableSettings) from class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "settingsId : long"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 36,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "settings : PersistableSettings"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type long to PersistableSettings in method public getSettings() : PersistableSettings from class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "long"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSettingsId() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "PersistableSettings"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getSettings() : PersistableSettings"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute settingsId : long to settings : PersistableSettings in class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 21,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "settingsId : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 36,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "settings : PersistableSettings"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getSettingsId() : long renamed to public getSettings() : PersistableSettings in class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 12,
+		"endLine": 14,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getSettingsId() : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 13,
+		"endLine": 15,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getSettings() : PersistableSettings"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter settingsId : long to settings : PersistableSettings in method public PaymentServiceStartRequest(settings PersistableSettings) from class net.frontlinesms.plugins.payment.service.PaymentServiceStartRequest",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 8,
+		"endLine": 8,
+		"startColumn": 36,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "settingsId : long"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 3,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 36,
+		"endColumn": 64,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "settings : PersistableSettings"
+}, {
+		"filePath": "src/main/java/net/frontlinesms/plugins/payment/service/PaymentServiceStartRequest.java",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 3,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

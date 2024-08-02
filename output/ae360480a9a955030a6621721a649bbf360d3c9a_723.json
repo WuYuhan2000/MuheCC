@@ -1,0 +1,423 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "ae360480a9a955030a6621721a649bbf360d3c9a",
+	"url": "https://github.com/orientechnologies/orientdb/commit/ae360480a9a955030a6621721a649bbf360d3c9a",
+	"refactorings": [{
+	"type": "Change Return Type",
+	"description": "Change Return Type long to long[] in method public getClusterDataRange(currentClusterId int) : long[] from class com.orientechnologies.orient.core.storage.OStorage",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "long"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 144,
+		"endLine": 150,
+		"startColumn": 2,
+		"endColumn": 64,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(currentClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "long[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 144,
+		"endLine": 150,
+		"startColumn": 2,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getClusterDataRange(currentClusterId int) : long[]"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type long to long[] in method public getClusterDataRange(iClusterId int) : long[] from class com.orientechnologies.orient.client.remote.OStorageRemote",
+	"leftSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "long"
+}, {
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 335,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(iClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 9,
+		"endColumn": 15,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "long[]"
+}, {
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 335,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getClusterDataRange(iClusterId int) : long[]"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type long to long[] in method public getClusterDataRange(iClusterId int) : long[] from class com.orientechnologies.orient.core.storage.impl.local.OStorageLocal",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 418,
+		"endLine": 418,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "long"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 418,
+		"endLine": 441,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(iClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 10,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "long[]"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 423,
+		"endLine": 446,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getClusterDataRange(iClusterId int) : long[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type pos : long to pos : long[] in method protected execute() : void from class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary",
+	"leftSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/network/protocol/binary/ONetworkProtocolBinary.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 10,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "pos : long"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/network/protocol/binary/ONetworkProtocolBinary.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/network/protocol/binary/ONetworkProtocolBinary.java",
+		"startLine": 256,
+		"endLine": 257,
+		"startColumn": 12,
+		"endColumn": 48,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "pos : long[]"
+}, {
+		"filePath": "server/src/main/java/com/orientechnologies/orient/server/network/protocol/binary/ONetworkProtocolBinary.java",
+		"startLine": 260,
+		"endLine": 260,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable doc : ODocument in method public next(iFetchPlan String) : OGraphEdge from class com.orientechnologies.orient.core.iterator.OGraphEdgeIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphEdgeIterator.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 54,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphEdgeIterator.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "doc : ODocument"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphEdgeIterator.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 3,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable doc : ODocument in method public next(iFetchPlan String) : OGraphVertex from class com.orientechnologies.orient.core.iterator.OGraphVertexIterator",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphVertexIterator.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 3,
+		"endColumn": 56,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphVertexIterator.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 19,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "doc : ODocument"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/iterator/OGraphVertexIterator.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable position : long in method public removePhysicalPosition(iPosition long, iPPosition OPhysicalPosition) : void from class com.orientechnologies.orient.core.storage.impl.local.OClusterLocal",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 4,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 16,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "position : long"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 203,
+		"endLine": 203,
+		"startColumn": 7,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable returnedPosition : long in method public addPhysicalPosition(iDataSegmentId int, iPosition long, iRecordType byte) : long from class com.orientechnologies.orient.core.storage.impl.local.OClusterLocal",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 4,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 290,
+		"endLine": 290,
+		"startColumn": 18,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "returnedPosition : long"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OClusterLocal.java",
+		"startLine": 304,
+		"endLine": 304,
+		"startColumn": 7,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute CLUSTER_LASTPOS : byte to CLUSTER_DATARANGE : byte in class com.orientechnologies.orient.enterprise.channel.binary.OChannelBinaryProtocol",
+	"leftSideLocations": [{
+		"filePath": "enterprise/src/main/java/com/orientechnologies/orient/enterprise/channel/binary/OChannelBinaryProtocol.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 27,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "CLUSTER_LASTPOS : byte"
+}],
+	"rightSideLocations": [{
+		"filePath": "enterprise/src/main/java/com/orientechnologies/orient/enterprise/channel/binary/OChannelBinaryProtocol.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 27,
+		"endColumn": 51,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "CLUSTER_DATARANGE : byte"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getClusterLastEntryPosition(currentClusterId int) : long renamed to public getClusterDataRange(currentClusterId int) : long[] in class com.orientechnologies.orient.core.storage.OStorage",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 144,
+		"endLine": 150,
+		"startColumn": 2,
+		"endColumn": 64,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(currentClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/OStorage.java",
+		"startLine": 144,
+		"endLine": 150,
+		"startColumn": 2,
+		"endColumn": 58,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getClusterDataRange(currentClusterId int) : long[]"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getClusterLastEntryPosition(iClusterId int) : long renamed to public getClusterDataRange(iClusterId int) : long[] in class com.orientechnologies.orient.client.remote.OStorageRemote",
+	"leftSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 335,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(iClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "client/src/main/java/com/orientechnologies/orient/client/remote/OStorageRemote.java",
+		"startLine": 313,
+		"endLine": 335,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getClusterDataRange(iClusterId int) : long[]"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getClusterLastEntryPosition(iClusterId int) : long renamed to public getClusterDataRange(iClusterId int) : long[] in class com.orientechnologies.orient.core.storage.impl.local.OStorageLocal",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 418,
+		"endLine": 441,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getClusterLastEntryPosition(iClusterId int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/storage/impl/local/OStorageLocal.java",
+		"startLine": 423,
+		"endLine": 446,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getClusterDataRange(iClusterId int) : long[]"
+}]
+}
+]
+}]
+}

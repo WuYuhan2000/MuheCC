@@ -1,0 +1,612 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "5d29c390bf81bd1c5ec171751d6da9c0f862063c",
+	"url": "https://github.com/kiegroup/drools/commit/5d29c390bf81bd1c5ec171751d6da9c0f862063c",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private builder : Builder from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private builder : Builder"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 24,
+		"endColumn": 31,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private builder : Builder"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type ruleSets : HashMap to ruleSets : Set in class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 18,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "ruleSets : HashMap"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 14,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "ruleSets : Set"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type [DuplicateRuleNameException, InvalidRuleException] to [FactException, RuleIntegrationException] in method public addRule(rule Rule) : void from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 40,
+		"endColumn": 66,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "DuplicateRuleNameException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "InvalidRuleException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 180,
+		"endLine": 197,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public addRule(rule Rule) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 40,
+		"endColumn": 53,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "FactException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 4,
+		"endColumn": 28,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "RuleIntegrationException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 238,
+		"endLine": 256,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public addRule(rule Rule) : void"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type [DuplicateRuleNameException, InvalidRuleException] to [RuleIntegrationException, RuleSetIntegrationException, FactException] in method public RuleBaseImpl() from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 31,
+		"endColumn": 57,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "DuplicateRuleNameException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 68,
+		"endLine": 68,
+		"startColumn": 29,
+		"endColumn": 49,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "InvalidRuleException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 62,
+		"endLine": 73,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RuleBaseImpl()"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "RuleIntegrationException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 4,
+		"endColumn": 31,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "RuleSetIntegrationException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 33,
+		"endColumn": 46,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "FactException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 65,
+		"endLine": 75,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public RuleBaseImpl()"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type [DuplicateRuleNameException, InvalidRuleException] to [RuleIntegrationException, RuleSetIntegrationException, FactException] in method public RuleBaseImpl(factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext) from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 11,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "DuplicateRuleNameException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 4,
+		"endColumn": 24,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "InvalidRuleException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 75,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RuleBaseImpl(conflictResolver ConflictResolver, factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 11,
+		"endColumn": 35,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "RuleIntegrationException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 37,
+		"endColumn": 64,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "RuleSetIntegrationException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "FactException"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 77,
+		"endLine": 105,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public RuleBaseImpl(factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type workingMemory : WorkingMemory to workingMemory : WorkingMemoryImpl in method public newWorkingMemory(keepReference boolean) : WorkingMemory from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 140,
+		"endLine": 140,
+		"startColumn": 17,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "workingMemory : WorkingMemory"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 4,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 122,
+		"endLine": 122,
+		"startColumn": 21,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "workingMemory : WorkingMemoryImpl"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 131,
+		"endLine": 131,
+		"startColumn": 3,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 129,
+		"endLine": 129,
+		"startColumn": 4,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public addRuleSet(ruleSet RuleSet) : void extracted from public RuleBaseImpl(conflictResolver ConflictResolver, factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext) in class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 75,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public RuleBaseImpl(conflictResolver ConflictResolver, factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 5,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 5,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 6,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 91,
+		"endLine": 98,
+		"startColumn": 63,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 199,
+		"endLine": 236,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public addRuleSet(ruleSet RuleSet) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 3,
+		"endColumn": 37,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 4,
+		"endColumn": 43,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 219,
+		"endLine": 226,
+		"startColumn": 77,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 77,
+		"endLine": 105,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public RuleBaseImpl(factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 4,
+		"endColumn": 40,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this.addRuleSet((RuleSet)it.next())"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 215,
+		"endLine": 215,
+		"startColumn": 3,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 221,
+		"endLine": 221,
+		"startColumn": 4,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 224,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 52,
+		"codeElementType": "THROW_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 3,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 223,
+		"endLine": 225,
+		"startColumn": 61,
+		"endColumn": 5,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 222,
+		"endLine": 225,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 219,
+		"endLine": 226,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 233,
+		"endLine": 235,
+		"startColumn": 42,
+		"endColumn": 4,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter conflictResolver : ConflictResolver in method public RuleBaseImpl(conflictResolver ConflictResolver, factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext) from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 22,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "conflictResolver : ConflictResolver"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 75,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RuleBaseImpl(conflictResolver ConflictResolver, factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 77,
+		"endLine": 105,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RuleBaseImpl(factHandleFactory FactHandleFactory, ruleSets Set, applicationData Map, ruleBaseContext RuleBaseContext)"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable k : int to i : int in method public addRuleSet(ruleSet RuleSet) : void from class org.drools.leaps.RuleBaseImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 14,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "k : int"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 6,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 12,
+		"endColumn": 17,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/leaps/RuleBaseImpl.java",
+		"startLine": 234,
+		"endLine": 234,
+		"startColumn": 4,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

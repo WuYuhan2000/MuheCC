@@ -1,0 +1,720 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/JetBrains/intellij-community",
+	"sha1": "9fcdb59352eb7bae875c460fbe6b50a4fdde3d45",
+	"url": "https://github.com/JetBrains/intellij-community/commit/9fcdb59352eb7bae875c460fbe6b50a4fdde3d45",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Deprecated in method public VcsLogBranchFilterImpl(branches Collection<String>, excludedBranches Collection<String>) from class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public VcsLogBranchFilterImpl(branchNames Collection<String>, excludedBranchNames Collection<String>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Deprecated"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 33,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public VcsLogBranchFilterImpl(branches Collection<String>, excludedBranches Collection<String>)"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Nullable in method protected abstract createFilter(values Collection<String>) : Filter from class com.intellij.vcs.log.ui.filter.MultipleValueFilterPopupComponent",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract createFilter(values Collection<String>) : Filter"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected abstract createFilter(values Collection<String>) : Filter"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Nullable in method protected createFilter(values Collection<String>) : VcsLogBranchFilter from class com.intellij.vcs.log.ui.filter.BranchFilterPopupComponent",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 59,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createFilter(values Collection<String>) : VcsLogBranchFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 12,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Nullable"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 54,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "protected createFilter(values Collection<String>) : VcsLogBranchFilter"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter filter : VcsLogBranchFilter in method private getMatchingHeads(refs VcsLogRefs, filter VcsLogBranchFilter) : Set<Integer> from class com.intellij.vcs.log.data.VisiblePackBuilder",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VisiblePackBuilder.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 67,
+		"endColumn": 101,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "filter : VcsLogBranchFilter"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VisiblePackBuilder.java",
+		"startLine": 146,
+		"endLine": 157,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getMatchingHeads(refs VcsLogRefs, filter VcsLogBranchFilter) : Set<Integer>"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VisiblePackBuilder.java",
+		"startLine": 146,
+		"endLine": 146,
+		"startColumn": 67,
+		"endColumn": 107,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "filter : VcsLogBranchFilter"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VisiblePackBuilder.java",
+		"startLine": 146,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private getMatchingHeads(refs VcsLogRefs, filter VcsLogBranchFilter) : Set<Integer>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type myBranchNames : Collection<String> to myBranches : List<String> in class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 45,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "myBranchNames : Collection<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 39,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "myBranches : List<String>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type myExcludedBranchNames : Collection<String> to myExcludedBranches : List<String> in class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 45,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "myExcludedBranchNames : Collection<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 39,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "myExcludedBranches : List<String>"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fromBranch(branchName String) : VcsLogBranchFilterImpl extracted from public setSelected(e AnActionEvent, selected boolean) : void in class git4idea.branch.DeepCompareAction & moved to class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 56,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setSelected(e AnActionEvent, selected boolean) : void"
+}, {
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 13,
+		"endColumn": 139,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 42,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fromBranch(branchName String) : VcsLogBranchFilterImpl"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 56,
+		"endLine": 83,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setSelected(e AnActionEvent, selected boolean) : void"
+}, {
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 40,
+		"endColumn": 89,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VcsLogBranchFilterImpl.fromBranch(selectedBranch)"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fromBranch(branchName String) : VcsLogBranchFilterImpl extracted from public test_filter_by_branch() : void in class git4idea.log.GitLogProviderTest & moved to class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 167,
+		"endLine": 172,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public test_filter_by_branch() : void"
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 120,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 42,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fromBranch(branchName String) : VcsLogBranchFilterImpl"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 167,
+		"endLine": 172,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public test_filter_by_branch() : void"
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 169,
+		"endLine": 169,
+		"startColumn": 39,
+		"endColumn": 83,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VcsLogBranchFilterImpl.fromBranch(\"feature\")"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public fromBranch(branchName String) : VcsLogBranchFilterImpl extracted from public test_filter_by_branch_and_user() : void in class git4idea.log.GitLogProviderTest & moved to class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 174,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public test_filter_by_branch_and_user() : void"
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 5,
+		"endColumn": 120,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 42,
+		"endLine": 48,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fromBranch(branchName String) : VcsLogBranchFilterImpl"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 5,
+		"endColumn": 73,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 174,
+		"endLine": 181,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public test_filter_by_branch_and_user() : void"
+}, {
+		"filePath": "plugins/git4idea/tests/git4idea/log/GitLogProviderTest.java",
+		"startLine": 176,
+		"endLine": 176,
+		"startColumn": 39,
+		"endColumn": 83,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "VcsLogBranchFilterImpl.fromBranch(\"feature\")"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private branchExists(repository HgRepository, branchName String) : boolean inlined to public getCommitsMatchingFilter(root VirtualFile, filterCollection VcsLogFilterCollection, maxCount int) : List<TimedVcsCommit> in class org.zmlx.hg4idea.log.HgLogProvider",
+	"leftSideLocations": [{
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 291,
+		"endLine": 294,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private branchExists(repository HgRepository, branchName String) : boolean"
+}, {
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 292,
+		"endLine": 293,
+		"startColumn": 5,
+		"endColumn": 89,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 176,
+		"endLine": 248,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "public getCommitsMatchingFilter(root VirtualFile, filterCollection VcsLogFilterCollection, maxCount int) : List<TimedVcsCommit>"
+}, {
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 49,
+		"endColumn": 85,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "branchExists(repository,branchName)"
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 176,
+		"endLine": 255,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "public getCommitsMatchingFilter(root VirtualFile, filterCollection VcsLogFilterCollection, maxCount int) : List<TimedVcsCommit>"
+}, {
+		"filePath": "plugins/hg4idea/src/org/zmlx/hg4idea/log/HgLogProvider.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 98,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @NotNull in method protected abstract createFilter(values Collection<String>) : Filter from class com.intellij.vcs.log.ui.filter.MultipleValueFilterPopupComponent",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected abstract createFilter(values Collection<String>) : Filter"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/MultipleValueFilterPopupComponent.java",
+		"startLine": 57,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 78,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected abstract createFilter(values Collection<String>) : Filter"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @NotNull in method protected createFilter(values Collection<String>) : VcsLogBranchFilter from class com.intellij.vcs.log.ui.filter.BranchFilterPopupComponent",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 59,
+		"endLine": 59,
+		"startColumn": 3,
+		"endColumn": 11,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@NotNull"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 59,
+		"endLine": 73,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected createFilter(values Collection<String>) : VcsLogBranchFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/filter/BranchFilterPopupComponent.java",
+		"startLine": 54,
+		"endLine": 58,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "protected createFilter(values Collection<String>) : VcsLogBranchFilter"
+}]
+},
+{
+	"type": "Remove Parameter Modifier",
+	"description": "Remove Parameter Modifier final in parameter branchNames : Collection<String> in method public VcsLogBranchFilterImpl(branchNames Collection<String>, excludedBranchNames Collection<String>) from class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "branchNames : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 14,
+		"endLine": 17,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public VcsLogBranchFilterImpl(branchNames Collection<String>, excludedBranchNames Collection<String>)"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "branches : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 33,
+		"endLine": 40,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public VcsLogBranchFilterImpl(branches Collection<String>, excludedBranches Collection<String>)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute myBranchNames : Collection<String> to myBranches : List<String> in class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 11,
+		"endLine": 11,
+		"startColumn": 45,
+		"endColumn": 58,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "myBranchNames : Collection<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 17,
+		"endLine": 17,
+		"startColumn": 39,
+		"endColumn": 49,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "myBranches : List<String>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute myExcludedBranchNames : Collection<String> to myExcludedBranches : List<String> in class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 45,
+		"endColumn": 66,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "myExcludedBranchNames : Collection<String>"
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 20,
+		"endLine": 20,
+		"startColumn": 39,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "myExcludedBranches : List<String>"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter branchNames : Collection<String> to branches : Collection<String> in method public VcsLogBranchFilterImpl(branches Collection<String>, excludedBranches Collection<String>) from class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "branchNames : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 33,
+		"endColumn": 69,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "branches : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 5,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter excludedBranchNames : Collection<String> to excludedBranches : Collection<String> in method public VcsLogBranchFilterImpl(branches Collection<String>, excludedBranches Collection<String>) from class com.intellij.vcs.log.data.VcsLogBranchFilterImpl",
+	"leftSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 80,
+		"endColumn": 127,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "excludedBranchNames : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 5,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 34,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "excludedBranches : Collection<String>"
+}, {
+		"filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/data/VcsLogBranchFilterImpl.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 66,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable branchToCompare : String to singleBranchName : String in method public setSelected(e AnActionEvent, selected boolean) : void from class git4idea.branch.DeepCompareAction",
+	"leftSideLocations": [{
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 14,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "branchToCompare : String"
+}, {
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 14,
+		"endColumn": 101,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "singleBranchName : String"
+}, {
+		"filePath": "plugins/git4idea/src/git4idea/branch/DeepCompareAction.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 7,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

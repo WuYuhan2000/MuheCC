@@ -1,0 +1,192 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "d9dbcbd78c093f4d7d326babab7d64262c2e0280",
+	"url": "https://github.com/kiegroup/drools/commit/d9dbcbd78c093f4d7d326babab7d64262c2e0280",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type handle : InternalFactHandle to object : Object in method public isAllowed(object Object, tuple Tuple, workingMemory WorkingMemory) : boolean from class org.drools.rule.LiteralConstraint",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 30,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handle : InternalFactHandle"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 122,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "object : Object"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 102,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter handle : InternalFactHandle in method public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean from class org.drools.rule.LiteralRestriction",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralRestriction.java",
+		"startLine": 67,
+		"endLine": 67,
+		"startColumn": 30,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "handle : InternalFactHandle"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralRestriction.java",
+		"startLine": 66,
+		"endLine": 72,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralRestriction.java",
+		"startLine": 65,
+		"endLine": 70,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public isAllowed(object Object, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter handle : InternalFactHandle in method public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean from class org.drools.rule.VariableRestriction",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/VariableRestriction.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 30,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "handle : InternalFactHandle"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/VariableRestriction.java",
+		"startLine": 59,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/VariableRestriction.java",
+		"startLine": 58,
+		"endLine": 63,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public isAllowed(object Object, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter handle : InternalFactHandle in method public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean from class org.drools.spi.Restriction",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/spi/Restriction.java",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 30,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "handle : InternalFactHandle"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/spi/Restriction.java",
+		"startLine": 12,
+		"endLine": 15,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public isAllowed(object Object, handle InternalFactHandle, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/spi/Restriction.java",
+		"startLine": 11,
+		"endLine": 13,
+		"startColumn": 5,
+		"endColumn": 59,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public isAllowed(object Object, tuple Tuple, workingMemory WorkingMemory) : boolean"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter handle : InternalFactHandle to object : Object in method public isAllowed(object Object, tuple Tuple, workingMemory WorkingMemory) : boolean from class org.drools.rule.LiteralConstraint",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 30,
+		"endColumn": 61,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "handle : InternalFactHandle"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 9,
+		"endColumn": 122,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 30,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "object : Object"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/LiteralConstraint.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 9,
+		"endColumn": 102,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

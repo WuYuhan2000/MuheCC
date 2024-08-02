@@ -1,0 +1,177 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "b079f9911a118b01bbef4515b2cea7fa09fdd5de",
+	"url": "https://github.com/kiegroup/drools/commit/b079f9911a118b01bbef4515b2cea7fa09fdd5de",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type map : Map to map : Map<String,Object> in class org.drools.core.base.MapGlobalResolver",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 17,
+		"endColumn": 20,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "map : Map"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 32,
+		"endColumn": 35,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "map : Map<String,Object>"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type Entry[] to Entry<String,Object>[] in method public getGlobals() : Entry<String,Object>[] from class org.drools.core.base.MapGlobalResolver",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 12,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "Entry[]"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getGlobals() : Entry[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 99,
+		"endLine": 99,
+		"startColumn": 12,
+		"endColumn": 34,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "Entry<String,Object>[]"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 99,
+		"endLine": 110,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getGlobals() : Entry<String,Object>[]"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type clone : Map to clone : Map<String,Object> in method public clone() : GlobalResolver from class org.drools.core.base.MapGlobalResolver",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "clone : Map"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 28,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "clone : Map<String,Object>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 9,
+		"endColumn": 47,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type entry : Entry to entry : Entry<String,Object> in method public clone() : GlobalResolver from class org.drools.core.base.MapGlobalResolver",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 15,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "entry : Entry"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 15,
+		"endColumn": 41,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "entry : Entry<String,Object>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/base/MapGlobalResolver.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+}
+]
+}]
+}

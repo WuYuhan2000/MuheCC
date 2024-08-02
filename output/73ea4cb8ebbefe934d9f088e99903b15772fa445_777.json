@@ -1,0 +1,636 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "73ea4cb8ebbefe934d9f088e99903b15772fa445",
+	"url": "https://github.com/orientechnologies/orientdb/commit/73ea4cb8ebbefe934d9f088e99903b15772fa445",
+	"refactorings": [{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type iDelegate : OSecurityShared to iDelegate : OSecurity in method public OSecurityProxy(iDelegate OSecurity, iDatabase ODatabaseRecord) from class com.orientechnologies.orient.core.metadata.security.OSecurityProxy",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityProxy.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 24,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "iDelegate : OSecurityShared"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityProxy.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityProxy.java",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 24,
+		"endColumn": 49,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "iDelegate : OSecurity"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityProxy.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 3,
+		"endColumn": 31,
+		"codeElementType": "SUPER_CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method protected createMetadata() : OUser extracted from public create() : OUser in class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 223,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public create() : OUser"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 4,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 179,
+		"endLine": 179,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 183,
+		"endLine": 183,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 184,
+		"endLine": 184,
+		"startColumn": 4,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 185,
+		"endLine": 185,
+		"startColumn": 4,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 4,
+		"endColumn": 85,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 4,
+		"endColumn": 103,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 173,
+		"endLine": 173,
+		"startColumn": 8,
+		"endColumn": 66,
+		"codeElementType": "IF_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 226,
+		"endLine": 259,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected createMetadata() : OUser"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 3,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 233,
+		"endLine": 233,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 235,
+		"endLine": 235,
+		"startColumn": 4,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 237,
+		"endLine": 237,
+		"startColumn": 4,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 243,
+		"endLine": 243,
+		"startColumn": 4,
+		"endColumn": 87,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 245,
+		"endLine": 245,
+		"startColumn": 4,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 4,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 3,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 3,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 252,
+		"endLine": 252,
+		"startColumn": 4,
+		"endColumn": 73,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 256,
+		"endLine": 256,
+		"startColumn": 4,
+		"endColumn": 91,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 3,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 208,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public create() : OUser"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 174,
+		"endLine": 174,
+		"startColumn": 28,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createMetadata()"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 231,
+		"endLine": 231,
+		"startColumn": 4,
+		"endColumn": 72,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 258,
+		"endLine": 258,
+		"startColumn": 3,
+		"endColumn": 20,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 230,
+		"endLine": 231,
+		"startColumn": 3,
+		"endColumn": 72,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 232,
+		"endLine": 233,
+		"startColumn": 3,
+		"endColumn": 87,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 234,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 49,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 236,
+		"endLine": 237,
+		"startColumn": 3,
+		"endColumn": 69,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 240,
+		"endLine": 241,
+		"startColumn": 3,
+		"endColumn": 72,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 242,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 87,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 244,
+		"endLine": 245,
+		"startColumn": 3,
+		"endColumn": 91,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 246,
+		"endLine": 247,
+		"startColumn": 3,
+		"endColumn": 64,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 251,
+		"endLine": 252,
+		"startColumn": 3,
+		"endColumn": 73,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 255,
+		"endLine": 256,
+		"startColumn": 3,
+		"endColumn": 91,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Inline Variable",
+	"description": "Inline Variable database : ODatabaseRecord in method public create() : OUser from class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined variable declaration",
+		"codeElement": "database : ODatabaseRecord"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 173,
+		"endLine": 174,
+		"startColumn": 4,
+		"endColumn": 79,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the name of the inlined variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 171,
+		"endLine": 172,
+		"startColumn": 4,
+		"endColumn": 79,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement with the initializer of the inlined variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable adminRole : ORole in method public create() : OUser from class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 16,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "adminRole : ORole"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 223,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public create() : OUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "adminRole : ORole"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 226,
+		"endLine": 259,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected createMetadata() : OUser"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable adminUser : OUser in method public create() : OUser from class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 16,
+		"endColumn": 102,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "adminUser : OUser"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 223,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public create() : OUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 254,
+		"endLine": 254,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "adminUser : OUser"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 226,
+		"endLine": 259,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected createMetadata() : OUser"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable roleClass : OClass in method public create() : OUser from class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "roleClass : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 223,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public create() : OUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 229,
+		"endLine": 229,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "roleClass : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 226,
+		"endLine": 259,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected createMetadata() : OUser"
+}]
+},
+{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable userClass : OClass in method public create() : OUser from class com.orientechnologies.orient.core.metadata.security.OSecurityShared",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "userClass : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 167,
+		"endLine": 223,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public create() : OUser"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 10,
+		"endColumn": 74,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "userClass : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/metadata/security/OSecurityShared.java",
+		"startLine": 226,
+		"endLine": 259,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "protected createMetadata() : OUser"
+}]
+}
+]
+}]
+}

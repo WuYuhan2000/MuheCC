@@ -1,0 +1,57 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "c94e990f4670af28bc87528c1874946e920eabab",
+	"url": "https://github.com/orientechnologies/orientdb/commit/c94e990f4670af28bc87528c1874946e920eabab",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type threadCountersHashTable : OThreadCountersHashTable to distributedCounter : ODistributedCounter in class com.orientechnologies.common.concur.lock.OReadersWriterSpinLock",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/common/concur/lock/OReadersWriterSpinLock.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "threadCountersHashTable : OThreadCountersHashTable"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/common/concur/lock/OReadersWriterSpinLock.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 52,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "distributedCounter : ODistributedCounter"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute threadCountersHashTable : OThreadCountersHashTable to distributedCounter : ODistributedCounter in class com.orientechnologies.common.concur.lock.OReadersWriterSpinLock",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/common/concur/lock/OReadersWriterSpinLock.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 52,
+		"endColumn": 108,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "threadCountersHashTable : OThreadCountersHashTable"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/common/concur/lock/OReadersWriterSpinLock.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 52,
+		"endColumn": 98,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "distributedCounter : ODistributedCounter"
+}]
+}
+]
+}]
+}

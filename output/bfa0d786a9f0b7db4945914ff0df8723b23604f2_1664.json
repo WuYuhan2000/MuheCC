@@ -1,0 +1,243 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/arrayexpress/annotare2",
+	"sha1": "bfa0d786a9f0b7db4945914ff0df8723b23604f2",
+	"url": "https://github.com/arrayexpress/annotare2/commit/bfa0d786a9f0b7db4945914ff0df8723b23604f2",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private waitingPopup : WaitingPopup from class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.EditorTitleBarViewImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/EditorTitleBarViewImpl.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private waiting : WaitingPopup"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/EditorTitleBarViewImpl.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private waitingPopup : WaitingPopup"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter feedbackSerivce : FeedbackServiceAsync in method public EditorTitleBarActivity(view EditorTitleBarView, placeController PlaceController, submissionService SubmissionServiceAsync, validationService SubmissionValidationServiceAsync, dataService DataServiceAsync, adfService AdfServiceAsync, feedbackSerivce FeedbackServiceAsync) from class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.activity.EditorTitleBarActivity",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/EditorTitleBarActivity.java",
+		"startLine": 60,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public EditorTitleBarActivity(view EditorTitleBarView, placeController PlaceController, submissionService SubmissionServiceAsync, validationService SubmissionValidationServiceAsync, dataService DataServiceAsync, adfService AdfServiceAsync)"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/EditorTitleBarActivity.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 35,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "feedbackSerivce : FeedbackServiceAsync"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/activity/EditorTitleBarActivity.java",
+		"startLine": 58,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public EditorTitleBarActivity(view EditorTitleBarView, placeController PlaceController, submissionService SubmissionServiceAsync, validationService SubmissionValidationServiceAsync, dataService DataServiceAsync, adfService AdfServiceAsync, feedbackSerivce FeedbackServiceAsync)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter templateName : String in method public getEmailFromAddress(templateName String) : String from class uk.ac.ebi.fg.annotare2.web.server.properties.AnnotareProperties",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/properties/AnnotareProperties.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getEmailFromAddress() : String"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/properties/AnnotareProperties.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 39,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "templateName : String"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/properties/AnnotareProperties.java",
+		"startLine": 120,
+		"endLine": 126,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public getEmailFromAddress(templateName String) : String"
+}]
+},
+{
+	"type": "Move Class",
+	"description": "Move Class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.widget.FtpFileDetails.Binder moved to uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.widget.FeedbackDialog.Binder",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/widget/FtpFileDetails.java",
+		"startLine": 37,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.widget.FtpFileDetails.Binder"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/widget/FeedbackDialog.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.widget.FeedbackDialog.Binder"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute waiting : WaitingPopup to waitingPopup : WaitingPopup in class uk.ac.ebi.fg.annotare2.web.gwt.editor.client.view.EditorTitleBarViewImpl",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/EditorTitleBarViewImpl.java",
+		"startLine": 71,
+		"endLine": 71,
+		"startColumn": 26,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "waiting : WaitingPopup"
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/gwt/editor/client/view/EditorTitleBarViewImpl.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 32,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "waitingPopup : WaitingPopup"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable recips : InternetAddress[] to recipients : InternetAddress[] in method package parseAddresses(addresses String) : InternetAddress[] from class uk.ac.ebi.fg.annotare2.web.server.services.EmailSender",
+	"leftSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 27,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "recips : InternetAddress[]"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 17,
+		"endColumn": 104,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 144,
+		"endLine": 144,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 137,
+		"endLine": 143,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 27,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "recipients : InternetAddress[]"
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 139,
+		"endLine": 139,
+		"startColumn": 9,
+		"endColumn": 80,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 142,
+		"endLine": 142,
+		"startColumn": 17,
+		"endColumn": 116,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "app/web/src/main/java/uk/ac/ebi/fg/annotare2/web/server/services/EmailSender.java",
+		"startLine": 140,
+		"endLine": 146,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

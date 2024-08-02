@@ -1,0 +1,1038 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/internetarchive/heritrix3",
+	"sha1": "6be649b286d7b3e2a1193cbe808f8a46fa1ae4c4",
+	"url": "https://github.com/internetarchive/heritrix3/commit/6be649b286d7b3e2a1193cbe808f8a46fa1ae4c4",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter bloom : BloomFilter in method public checkDistribution(bloom BloomFilter) : void from class org.archive.util.BloomFilterTest",
+	"leftSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 38,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testDistributionOfSetBits() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 35,
+		"endColumn": 52,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "bloom : BloomFilter"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 146,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public checkDistribution(bloom BloomFilter) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter contains : int in method private testBloom(note String, bloom BloomFilter, adds int, contains int, prefix String) : void from class org.archive.util.BenchmarkBlooms",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 84,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private testBloom(bloom BloomFilter, adds int, prefix String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 67,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "contains : int"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 83,
+		"endLine": 113,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private testBloom(note String, bloom BloomFilter, adds int, contains int, prefix String) : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter note : String in method private testBloom(note String, bloom BloomFilter, adds int, contains int, prefix String) : void from class org.archive.util.BenchmarkBlooms",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 84,
+		"endLine": 104,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private testBloom(bloom BloomFilter, adds int, prefix String) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "note : String"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 83,
+		"endLine": 113,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private testBloom(note String, bloom BloomFilter, adds int, contains int, prefix String) : void"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected bits : long[][] from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package bits : long[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 30,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected bits : long[][]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to protected in attribute protected weight : long[][] from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package weight : long[][]"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 30,
+		"endColumn": 36,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected weight : long[][]"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package DEBUG : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DEBUG : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 26,
+		"endColumn": 39,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package DEBUG : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package NATURAL_LOG_OF_2 : double from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 95,
+		"endLine": 95,
+		"startColumn": 33,
+		"endColumn": 65,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private NATURAL_LOG_OF_2 : double"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 25,
+		"endColumn": 57,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package NATURAL_LOG_OF_2 : double"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to package in attribute package size : int from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 17,
+		"endColumn": 21,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private size : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 9,
+		"endColumn": 13,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package size : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to package in attribute package NUMBER_OF_WEIGHTS : int from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 78,
+		"endLine": 78,
+		"startColumn": 29,
+		"endColumn": 53,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public NUMBER_OF_WEIGHTS : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 22,
+		"endColumn": 46,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "package NUMBER_OF_WEIGHTS : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected d : int from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 22,
+		"endColumn": 23,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public d : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected d : int"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to protected in attribute protected m : long from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 23,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public m : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 26,
+		"endColumn": 27,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected m : long"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type bits : long[] to bits : long[][] in class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 18,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "bits : long[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 94,
+		"endLine": 94,
+		"startColumn": 30,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "bits : long[][]"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected hash(s CharSequence, l int, k int) : long from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 135,
+		"endLine": 149,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private hash(s CharSequence, l int, k int) : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 196,
+		"endLine": 216,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected hash(s CharSequence, l int, k int) : long"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier protected to public in method public getBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 194,
+		"endLine": 207,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected getBit(bitIndex long) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 268,
+		"endLine": 284,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getBit(bitIndex long) : boolean"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type bitIndex : int to bitIndex : long in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bp2Split.java",
+		"startLine": 246,
+		"endLine": 246,
+		"startColumn": 33,
+		"endColumn": 45,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "bitIndex : int"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bp2Split.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 308,
+		"endLine": 308,
+		"startColumn": 34,
+		"endColumn": 47,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bitIndex : long"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type bloom64 : BloomFilter to bloom64 : BloomFilter64bit in method public instanceMain(args String[]) : void from class org.archive.util.BenchmarkBlooms",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 18,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "bloom64 : BloomFilter"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 4,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 4,
+		"endColumn": 17,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 4,
+		"endColumn": 35,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 23,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "bloom64 : BloomFilter64bit"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 13,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 13,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 13,
+		"endColumn": 59,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : long in method public checkDistribution(bloom BloomFilter) : void from class org.archive.util.BloomFilterTest",
+	"leftSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 17,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 46,
+		"endLine": 46,
+		"startColumn": 17,
+		"endColumn": 112,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 45,
+		"endLine": 48,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 158,
+		"endLine": 158,
+		"startColumn": 18,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : long"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 161,
+		"endLine": 161,
+		"startColumn": 17,
+		"endColumn": 102,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 160,
+		"endLine": 163,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type i : int to i : long in method public checkDistribution(bloom BloomFilter) : void from class org.archive.util.BloomFilterTest",
+	"leftSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 50,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 42,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "i : int"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 17,
+		"endColumn": 111,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 52,
+		"endLine": 55,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 18,
+		"endColumn": 33,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "changed-type variable declaration",
+		"codeElement": "i : long"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 17,
+		"endColumn": 101,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 167,
+		"endLine": 170,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mask : int to mask : long in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 239,
+		"endLine": 239,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mask : int"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 14,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "mask : long"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type mask : int to mask : long in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bp2Split.java",
+		"startLine": 250,
+		"endLine": 250,
+		"startColumn": 13,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "mask : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 312,
+		"endLine": 312,
+		"startColumn": 14,
+		"endColumn": 54,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "mask : long"
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute package bloom : BloomFilter from class org.archive.crawler.util.BloomUriUniqFilter",
+	"leftSideLocations": [{
+		"filePath": "engine/src/main/java/org/archive/crawler/util/BloomUriUniqFilter.java",
+		"startLine": 80,
+		"endLine": 80,
+		"startColumn": 17,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package bloom : BloomFilter"
+}],
+	"rightSideLocations": [{
+		"filePath": "engine/src/main/java/org/archive/crawler/util/BloomUriUniqFilter.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 22,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "package bloom : BloomFilter"
+}, {
+		"filePath": "engine/src/main/java/org/archive/crawler/util/BloomUriUniqFilter.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getBloomFilter() : BloomFilter"
+}, {
+		"filePath": "engine/src/main/java/org/archive/crawler/util/BloomUriUniqFilter.java",
+		"startLine": 67,
+		"endLine": 69,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added setter method",
+		"codeElement": "public setBloomFilter(filter BloomFilter) : void"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable longIndex : long in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 236,
+		"endLine": 236,
+		"startColumn": 9,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 14,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "longIndex : long"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable longIndex : long in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bp2Split.java",
+		"startLine": 247,
+		"endLine": 247,
+		"startColumn": 9,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 309,
+		"endLine": 309,
+		"startColumn": 14,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "longIndex : long"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 310,
+		"endLine": 310,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected setGetBit(bitIndex int) : boolean from class org.archive.util.BloomFilter32bp2Split to protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bp2Split.java",
+		"startLine": 238,
+		"endLine": 254,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected setGetBit(bitIndex int) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 300,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setGetBit(bitIndex long) : boolean"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter32bitSplit to protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 227,
+		"endLine": 243,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected setGetBit(bitIndex long) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 300,
+		"endLine": 316,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected setGetBit(bitIndex long) : boolean"
+}]
+},
+{
+	"type": "Move Source Folder",
+	"description": "Move Source Folder commons/src/main to commons/src/test",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 27,
+		"endLine": 105,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.archive.util.BenchmarkBlooms"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 27,
+		"endLine": 114,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "moved type declaration",
+		"codeElement": "org.archive.util.BenchmarkBlooms"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method public testDistributionOfSetBits() : void from class org.archive.util.BloomFilter64bitTest to public checkDistribution(bloom BloomFilter) : void from class org.archive.util.BloomFilterTest",
+	"leftSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilter64bitTest.java",
+		"startLine": 38,
+		"endLine": 58,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testDistributionOfSetBits() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BloomFilterTest.java",
+		"startLine": 146,
+		"endLine": 172,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "public checkDistribution(bloom BloomFilter) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable b : int to subarrayIndex : int in method protected setGetBit(bitIndex long) : boolean from class org.archive.util.BloomFilter64bit",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 238,
+		"endLine": 238,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "b : int"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 240,
+		"endLine": 240,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter32bitSplit.java",
+		"startLine": 241,
+		"endLine": 241,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 311,
+		"endLine": 311,
+		"startColumn": 13,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "subarrayIndex : int"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 313,
+		"endLine": 313,
+		"startColumn": 9,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BloomFilter64bit.java",
+		"startLine": 314,
+		"endLine": 314,
+		"startColumn": 9,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable falsePositives : long to falsePositivesAdds : long in method private testBloom(note String, bloom BloomFilter, adds int, contains int, prefix String) : void from class org.archive.util.BenchmarkBlooms",
+	"leftSideLocations": [{
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 8,
+		"endColumn": 26,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "falsePositives : long"
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 3,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/main/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 100,
+		"endLine": 103,
+		"startColumn": 3,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 8,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "falsePositivesAdds : long"
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 3,
+		"endColumn": 31,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "commons/src/test/java/org/archive/util/BenchmarkBlooms.java",
+		"startLine": 106,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,150 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "d8fdf6abed4031adfa24a35ab23b78185cad6fc1",
+	"url": "https://github.com/kiegroup/drools/commit/d8fdf6abed4031adfa24a35ab23b78185cad6fc1",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method public newFileLogger(session KieRuntimeEventManager, fileName String, maxEventsInMemory int) : KnowledgeRuntimeLogger extracted from public newFileLogger(session KieRuntimeEventManager, fileName String) : KnowledgeRuntimeLogger in class org.drools.core.audit.KnowledgeRuntimeLoggerProviderImpl",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 32,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public newFileLogger(session KieRuntimeEventManager, fileName String) : KnowledgeRuntimeLogger"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 9,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 94,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 35,
+		"endLine": 37,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 37,
+		"endLine": 46,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public newFileLogger(session KieRuntimeEventManager, fileName String, maxEventsInMemory int) : KnowledgeRuntimeLogger"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 112,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 45,
+		"endLine": 45,
+		"startColumn": 9,
+		"endColumn": 94,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 42,
+		"endLine": 44,
+		"startColumn": 33,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 32,
+		"endLine": 35,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public newFileLogger(session KieRuntimeEventManager, fileName String) : KnowledgeRuntimeLogger"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 16,
+		"endColumn": 102,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "newFileLogger(session,fileName,WorkingMemoryFileLogger.DEFAULT_MAX_EVENTS_IN_MEMORY)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/core/audit/KnowledgeRuntimeLoggerProviderImpl.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 9,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "a911e1da33ae86c2b30c34511b97f1a73bd681f8",
+	"url": "https://github.com/kiegroup/drools/commit/a911e1da33ae86c2b30c34511b97f1a73bd681f8",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable declaringClass : Class<?> in method private getMethodFromSuperclass(method Method) : Method from class org.drools.rule.constraint.AnalyzedCondition.MethodInvocation",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 13,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 475,
+		"endLine": 475,
+		"startColumn": 22,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "declaringClass : Class<?>"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 13,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(declaringSuperclass == null) to if(declaringSuperclass != null) in method private getMethodFromSuperclass(method Method) : Method from class org.drools.rule.constraint.AnalyzedCondition.MethodInvocation",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 476,
+		"endLine": 476,
+		"startColumn": 13,
+		"endColumn": 60,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(declaringSuperclass == null)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 473,
+		"endLine": 482,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getMethodFromSuperclass(method Method) : Method"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 477,
+		"endLine": 481,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(declaringSuperclass != null)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/rule/constraint/AnalyzedCondition.java",
+		"startLine": 473,
+		"endLine": 488,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private getMethodFromSuperclass(method Method) : Method"
+}]
+}
+]
+}]
+}

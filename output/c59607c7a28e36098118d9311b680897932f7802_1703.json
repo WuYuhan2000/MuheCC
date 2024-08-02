@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/cyberfox/jbidwatcher",
+	"sha1": "c59607c7a28e36098118d9311b680897932f7802",
+	"url": "https://github.com/cyberfox/jbidwatcher/commit/c59607c7a28e36098118d9311b680897932f7802",
+	"refactorings": [{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass com.jbidwatcher.util.Backupable from classes [com.jbidwatcher.util.ByteBuffer]",
+	"leftSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/ByteBuffer.java",
+		"startLine": 12,
+		"endLine": 50,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "com.jbidwatcher.util.ByteBuffer"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/com/jbidwatcher/util/ByteBuffer.java",
+		"startLine": 13,
+		"endLine": 43,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "com.jbidwatcher.util.ByteBuffer"
+}, {
+		"filePath": "src/com/jbidwatcher/util/Backupable.java",
+		"startLine": 7,
+		"endLine": 24,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "com.jbidwatcher.util.Backupable"
+}]
+}
+]
+}]
+}

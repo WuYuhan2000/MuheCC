@@ -1,0 +1,132 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/deltaspike",
+	"sha1": "eb526e50a1925a11412e256f598ff787c42d2950",
+	"url": "https://github.com/apache/deltaspike/commit/eb526e50a1925a11412e256f598ff787c42d2950",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method protected getBeanManager() : BeanManager extracted from protected fireEvent(event Object, qualifier Annotation...) : void in class org.apache.deltaspike.servlet.impl.event.EventEmitter",
+	"leftSideLocations": [{
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 34,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "protected fireEvent(event Object, qualifier Annotation...) : void"
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 41,
+		"endLine": 55,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getBeanManager() : BeanManager"
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 21,
+		"endColumn": 86,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 36,
+		"endLine": 39,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "protected fireEvent(event Object, qualifier Annotation...) : void"
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 9,
+		"endColumn": 25,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getBeanManager()"
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 9,
+		"endColumn": 28,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 47,
+		"endLine": 50,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 46,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 45,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "SYNCHRONIZED_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 44,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "deltaspike/modules/servlet/impl/src/main/java/org/apache/deltaspike/servlet/impl/event/EventEmitter.java",
+		"startLine": 43,
+		"endLine": 52,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

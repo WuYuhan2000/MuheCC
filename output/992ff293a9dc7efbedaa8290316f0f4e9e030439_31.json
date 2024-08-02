@@ -1,0 +1,759 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/ReactiveX/RxJava",
+	"sha1": "992ff293a9dc7efbedaa8290316f0f4e9e030439",
+	"url": "https://github.com/ReactiveX/RxJava/commit/992ff293a9dc7efbedaa8290316f0f4e9e030439",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type expiringQueue : ConcurrentLinkedQueue<PoolWorker> to expiringWorkerQueue : ConcurrentLinkedQueue<ThreadWorker> in class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 57,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "expiringQueue : ConcurrentLinkedQueue<PoolWorker>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 59,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "expiringWorkerQueue : ConcurrentLinkedQueue<ThreadWorker>"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type poolWorker : PoolWorker to threadWorker : ThreadWorker in class rx.schedulers.CachedThreadScheduler.EventLoopWorker",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type poolWorker : PoolWorker to threadWorker : ThreadWorker in method package EventLoopWorker(threadWorker ThreadWorker) from class rx.schedulers.CachedThreadScheduler.EventLoopWorker",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type PoolWorker to ThreadWorker in method package get() : ThreadWorker from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 19,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 61,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package get() : PoolWorker"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 21,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 61,
+		"endLine": 71,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "package get() : ThreadWorker"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type poolWorker : PoolWorker to threadWorker : ThreadWorker in method package evictExpiredWorkers() : void from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 32,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 87,
+		"endLine": 94,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 34,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 87,
+		"endLine": 94,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type poolWorker : PoolWorker to threadWorker : ThreadWorker in method package get() : ThreadWorker from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 30,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type poolWorkerIterator : Iterator<PoolWorker> to threadWorkerIterator : Iterator<ThreadWorker> in method package evictExpiredWorkers() : void from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 38,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorkerIterator : Iterator<PoolWorker>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 85,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 40,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "threadWorkerIterator : Iterator<ThreadWorker>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 85,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute expiringQueue : ConcurrentLinkedQueue<PoolWorker> to expiringWorkerQueue : ConcurrentLinkedQueue<ThreadWorker> in class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 57,
+		"endColumn": 70,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "expiringQueue : ConcurrentLinkedQueue<PoolWorker>"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 59,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "expiringWorkerQueue : ConcurrentLinkedQueue<ThreadWorker>"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute poolWorker : PoolWorker to threadWorker : ThreadWorker in class rx.schedulers.CachedThreadScheduler.EventLoopWorker",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 34,
+		"endColumn": 44,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 111,
+		"endLine": 111,
+		"startColumn": 36,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class rx.schedulers.CachedThreadScheduler.PoolWorker renamed to rx.schedulers.CachedThreadScheduler.ThreadWorker",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 153,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "rx.schedulers.CachedThreadScheduler.PoolWorker"
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 153,
+		"endLine": 168,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "rx.schedulers.CachedThreadScheduler.ThreadWorker"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter poolWorker : PoolWorker to threadWorker : ThreadWorker in method package EventLoopWorker(threadWorker ThreadWorker) from class rx.schedulers.CachedThreadScheduler.EventLoopWorker",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 25,
+		"endColumn": 46,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 13,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable poolWorker : PoolWorker to threadWorker : ThreadWorker in method package evictExpiredWorkers() : void from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 32,
+		"endColumn": 70,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 25,
+		"endColumn": 50,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 87,
+		"endLine": 94,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 34,
+		"endColumn": 76,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 87,
+		"endLine": 94,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable poolWorker : PoolWorker to threadWorker : ThreadWorker in method package get() : ThreadWorker from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 28,
+		"endColumn": 61,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorker : PoolWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 30,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "threadWorker : ThreadWorker"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 17,
+		"endColumn": 72,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 21,
+		"endColumn": 41,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable poolWorkerIterator : Iterator<PoolWorker> to threadWorkerIterator : Iterator<ThreadWorker> in method package evictExpiredWorkers() : void from class rx.schedulers.CachedThreadScheduler.CachedWorkerPool",
+	"leftSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 38,
+		"endColumn": 83,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "poolWorkerIterator : Iterator<PoolWorker>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 84,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 53,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 85,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 40,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "threadWorkerIterator : Iterator<ThreadWorker>"
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 17,
+		"endColumn": 94,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 21,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "rxjava-core/src/main/java/rx/schedulers/CachedThreadScheduler.java",
+		"startLine": 85,
+		"endLine": 95,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

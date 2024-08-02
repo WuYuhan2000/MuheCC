@@ -1,0 +1,51 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/orientechnologies/orientdb",
+	"sha1": "5122c892b23298f9faa681aa76d0401f7f5ee236",
+	"url": "https://github.com/orientechnologies/orientdb/commit/5122c892b23298f9faa681aa76d0401f7f5ee236",
+	"refactorings": [{
+	"type": "Remove Variable Modifier",
+	"description": "Remove Variable Modifier final in variable cls : OClass in method public newInstance(iClassName String) : OGraphElement from class com.orientechnologies.orient.core.db.graph.ODatabaseGraphTx",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/graph/ODatabaseGraphTx.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 16,
+		"endColumn": 68,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "cls : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/graph/ODatabaseGraphTx.java",
+		"startLine": 144,
+		"endLine": 160,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public newInstance(iClassName String) : OGraphElement"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/graph/ODatabaseGraphTx.java",
+		"startLine": 151,
+		"endLine": 151,
+		"startColumn": 10,
+		"endColumn": 62,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with removed modifier",
+		"codeElement": "cls : OClass"
+}, {
+		"filePath": "core/src/main/java/com/orientechnologies/orient/core/db/graph/ODatabaseGraphTx.java",
+		"startLine": 144,
+		"endLine": 165,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable modifier",
+		"codeElement": "public newInstance(iClassName String) : OGraphElement"
+}]
+}
+]
+}]
+}

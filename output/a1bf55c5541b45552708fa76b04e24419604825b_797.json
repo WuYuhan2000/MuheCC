@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/camel",
+	"sha1": "a1bf55c5541b45552708fa76b04e24419604825b",
+	"url": "https://github.com/apache/camel/commit/a1bf55c5541b45552708fa76b04e24419604825b",
+	"refactorings": [{
+	"type": "Split Conditional",
+	"description": "Split Conditional String ctxid=ep != null ? getContextId(ep.getCamelContext()) : VALUE_UNKNOWN; to [ctxid=getContextId(ep.getCamelContext());, if(ep != null)] in method public getObjectName(routeContext RouteContext, processor ProcessorType) : ObjectName from class org.apache.camel.management.CamelNamingStrategy",
+	"leftSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/CamelNamingStrategy.java",
+		"startLine": 153,
+		"endLine": 153,
+		"startColumn": 9,
+		"endColumn": 88,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "String ctxid=ep != null ? getContextId(ep.getCamelContext()) : VALUE_UNKNOWN;\n"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/CamelNamingStrategy.java",
+		"startLine": 145,
+		"endLine": 166,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getObjectName(routeContext RouteContext, processor ProcessorType) : ObjectName"
+}],
+	"rightSideLocations": [{
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/CamelNamingStrategy.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 13,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "ctxid=getContextId(ep.getCamelContext());\n"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/CamelNamingStrategy.java",
+		"startLine": 155,
+		"endLine": 161,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "split conditional",
+		"codeElement": "if(ep != null)"
+}, {
+		"filePath": "camel-core/src/main/java/org/apache/camel/management/CamelNamingStrategy.java",
+		"startLine": 145,
+		"endLine": 173,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with split conditional",
+		"codeElement": "public getObjectName(routeContext RouteContext, processor ProcessorType) : ObjectName"
+}]
+}
+]
+}]
+}

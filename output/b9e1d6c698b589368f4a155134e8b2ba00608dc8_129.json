@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "b9e1d6c698b589368f4a155134e8b2ba00608dc8",
+	"url": "https://github.com/apache/hbase/commit/b9e1d6c698b589368f4a155134e8b2ba00608dc8",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable rsName : String in method public getHRegionConnection(regionServer HServerAddress, getMaster boolean) : HRegionInterface from class org.apache.hadoop.hbase.client.HConnectionManager.HConnectionImplementation",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 946,
+		"endLine": 946,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 958,
+		"endLine": 958,
+		"startColumn": 11,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 945,
+		"endLine": 945,
+		"startColumn": 14,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "rsName : String"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 954,
+		"endLine": 954,
+		"startColumn": 11,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/client/HConnectionManager.java",
+		"startLine": 962,
+		"endLine": 962,
+		"startColumn": 15,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

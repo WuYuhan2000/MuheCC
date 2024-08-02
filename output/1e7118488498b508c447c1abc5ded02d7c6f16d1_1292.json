@@ -1,0 +1,84 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews",
+	"sha1": "1e7118488498b508c447c1abc5ded02d7c6f16d1",
+	"url": "https://github.com/eclipse-mylyn/org.eclipse.mylyn.reviews/commit/1e7118488498b508c447c1abc5ded02d7c6f16d1",
+	"refactorings": [{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type changesets : List<ChangeSet> to changesets : Iterator<ChangeSet> in method public fetchAllChangesets(monitor IProgressMonitor, indexer IChangeSetIndexer) : void from class org.eclipse.mylyn.versions.tasks.mapper.internal.EclipseWorkspaceRepositorySource",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 20,
+		"endColumn": 30,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "changesets : List<ChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 49,
+		"endLine": 51,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 24,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "changesets : Iterator<ChangeSet>"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable repository : ScmRepository in method public fetchAllChangesets(monitor IProgressMonitor, indexer IChangeSetIndexer) : void from class org.eclipse.mylyn.versions.tasks.mapper.internal.EclipseWorkspaceRepositorySource",
+	"leftSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 65,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 19,
+		"endColumn": 73,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "repository : ScmRepository"
+}, {
+		"filePath": "tbr/org.eclipse.mylyn.versions.tasks.mapper.generic/src/org/eclipse/mylyn/versions/tasks/mapper/internal/EclipseWorkspaceRepositorySource.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 34,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

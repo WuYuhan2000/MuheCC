@@ -1,0 +1,144 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "e3f99578304cb30f1b59c34a4193b9b700f3566a",
+	"url": "https://github.com/apache/hbase/commit/e3f99578304cb30f1b59c34a4193b9b700f3566a",
+	"refactorings": [{
+	"type": "Extract Variable",
+	"description": "Extract Variable tlen : int in method public write(cell Cell) : void from class org.apache.hadoop.hbase.regionserver.wal.SecureWALCellCodec.EncryptedKvEncoder",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 7,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 204,
+		"endLine": 204,
+		"startColumn": 11,
+		"endColumn": 38,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "tlen : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 209,
+		"endLine": 209,
+		"startColumn": 7,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Merge Variable",
+	"description": "Merge Variable [kvBuffer : byte[], remainingLength : int] to cell : Cell in method public write(cell Cell) : void from class org.apache.hadoop.hbase.regionserver.wal.SecureWALCellCodec.EncryptedKvEncoder",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 189,
+		"endLine": 189,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged variable declaration",
+		"codeElement": "kvBuffer : byte[]"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 223,
+		"endLine": 223,
+		"startColumn": 11,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged variable declaration",
+		"codeElement": "remainingLength : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 180,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(cell Cell) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 182,
+		"endLine": 182,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "cell : Cell"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/SecureWALCellCodec.java",
+		"startLine": 181,
+		"endLine": 232,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public write(cell Cell) : void"
+}]
+},
+{
+	"type": "Merge Variable",
+	"description": "Merge Variable [kvBuffer : byte[], tsTypeValLen : int] to cell : Cell in method public write(cell Cell) : void from class org.apache.hadoop.hbase.regionserver.wal.WALCellCodec.CompressedKvEncoder",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/WALCellCodec.java",
+		"startLine": 195,
+		"endLine": 195,
+		"startColumn": 14,
+		"endColumn": 39,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged variable declaration",
+		"codeElement": "kvBuffer : byte[]"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/WALCellCodec.java",
+		"startLine": 213,
+		"endLine": 213,
+		"startColumn": 11,
+		"endColumn": 55,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "merged variable declaration",
+		"codeElement": "tsTypeValLen : int"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/WALCellCodec.java",
+		"startLine": 191,
+		"endLine": 230,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public write(cell Cell) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/WALCellCodec.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 23,
+		"endColumn": 32,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "new variable declaration",
+		"codeElement": "cell : Cell"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/wal/WALCellCodec.java",
+		"startLine": 192,
+		"endLine": 224,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with merged variables",
+		"codeElement": "public write(cell Cell) : void"
+}]
+}
+]
+}]
+}

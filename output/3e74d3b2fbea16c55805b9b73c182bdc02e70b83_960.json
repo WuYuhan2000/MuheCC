@@ -1,0 +1,189 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "3e74d3b2fbea16c55805b9b73c182bdc02e70b83",
+	"url": "https://github.com/spring-projects/spring-framework/commit/3e74d3b2fbea16c55805b9b73c182bdc02e70b83",
+	"refactorings": [{
+	"type": "Extract Method",
+	"description": "Extract Method private toWrapper(element Element) : ValueWrapper extracted from public get(key Object) : ValueWrapper in class org.springframework.cache.ehcache.EhCacheCache",
+	"leftSideLocations": [{
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 62,
+		"endLine": 66,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 3,
+		"endColumn": 86,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 101,
+		"endLine": 103,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private toWrapper(element Element) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 102,
+		"endLine": 102,
+		"startColumn": 3,
+		"endColumn": 86,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 63,
+		"endLine": 67,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/ehcache/EhCacheCache.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 10,
+		"endColumn": 28,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "toWrapper(element)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private toWrapper(value Object) : ValueWrapper extracted from public get(key Object) : ValueWrapper in class org.springframework.cache.concurrent.ConcurrentMapCache",
+	"leftSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 167,
+		"endLine": 169,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private toWrapper(value Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 103,
+		"endLine": 107,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context/src/main/java/org/springframework/cache/concurrent/ConcurrentMapCache.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "toWrapper(value)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private toWrapper(value Object) : ValueWrapper extracted from public get(key Object) : ValueWrapper in class org.springframework.cache.guava.GuavaCache",
+	"leftSideLocations": [{
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 83,
+		"endLine": 87,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 155,
+		"endLine": 157,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private toWrapper(value Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 3,
+		"endColumn": 81,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 86,
+		"endLine": 90,
+		"startColumn": 2,
+		"endColumn": 3,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public get(key Object) : ValueWrapper"
+}, {
+		"filePath": "spring-context-support/src/main/java/org/springframework/cache/guava/GuavaCache.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 10,
+		"endColumn": 26,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "toWrapper(value)"
+}]
+}
+]
+}]
+}

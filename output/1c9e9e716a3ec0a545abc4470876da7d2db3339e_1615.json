@@ -1,0 +1,567 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/robotframework/swinglibrary",
+	"sha1": "1c9e9e716a3ec0a545abc4470876da7d2db3339e",
+	"url": "https://github.com/robotframework/swinglibrary/commit/1c9e9e716a3ec0a545abc4470876da7d2db3339e",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected getLastPathComponent() : DefaultMutableTreeNode from class org.robotframework.swing.testapp.TestTree.ActionCommand",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLastPathComponent() : DefaultMutableTreeNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected getLastPathComponent() : DefaultMutableTreeNode"
+}]
+},
+{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public perform() : void extracted from public actionPerformed(ae ActionEvent) : void in class org.robotframework.swing.testapp.TestTree & moved to class org.robotframework.swing.testapp.TestTree.ActionCommand",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 119,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public actionPerformed(ae ActionEvent) : void"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 137,
+		"endLine": 137,
+		"startColumn": 9,
+		"endColumn": 19,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 138,
+		"endLine": 138,
+		"startColumn": 9,
+		"endColumn": 20,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 102,
+		"endLine": 107,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public perform() : void"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 105,
+		"endLine": 105,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 106,
+		"endLine": 106,
+		"startColumn": 13,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public actionPerformed(ae ActionEvent) : void"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createActionCommand(ae.getActionCommand()).perform()"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 103,
+		"endLine": 103,
+		"startColumn": 13,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 104,
+		"endLine": 104,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class org.robotframework.swing.testapp.TestTree.ActionCommand from class org.robotframework.swing.testapp.TestTree",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 16,
+		"endLine": 174,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "org.robotframework.swing.testapp.TestTree"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLastPathComponent() : DefaultMutableTreeNode"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 162,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private refresh() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 17,
+		"endLine": 228,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "org.robotframework.swing.testapp.TestTree"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 101,
+		"endLine": 122,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "org.robotframework.swing.testapp.TestTree.ActionCommand"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "protected getLastPathComponent() : DefaultMutableTreeNode"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private refresh() : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private createActionCommand(command String) : ActionCommand extracted from public actionPerformed(ae ActionEvent) : void in class org.robotframework.swing.testapp.TestTree",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 119,
+		"endLine": 139,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public actionPerformed(ae ActionEvent) : void"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 122,
+		"endLine": 136,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 120,
+		"endLine": 136,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 60,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 120,
+		"endLine": 122,
+		"startColumn": 53,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 75,
+		"endLine": 99,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private createActionCommand(command String) : ActionCommand"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 78,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 76,
+		"endLine": 98,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 78,
+		"endLine": 80,
+		"startColumn": 46,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 76,
+		"endLine": 78,
+		"startColumn": 39,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 71,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public actionPerformed(ae ActionEvent) : void"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "createActionCommand(ae.getActionCommand())"
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 81,
+		"endLine": 81,
+		"startColumn": 13,
+		"endColumn": 32,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 13,
+		"endColumn": 29,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 13,
+		"endColumn": 30,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 13,
+		"endColumn": 35,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 93,
+		"endLine": 97,
+		"startColumn": 13,
+		"endColumn": 15,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 80,
+		"endLine": 82,
+		"startColumn": 50,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 82,
+		"endLine": 84,
+		"startColumn": 48,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 48,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 86,
+		"endLine": 88,
+		"startColumn": 49,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 88,
+		"endLine": 90,
+		"startColumn": 54,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 90,
+		"endLine": 92,
+		"startColumn": 55,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 92,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 90,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 88,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 86,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 84,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 82,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 80,
+		"endLine": 98,
+		"startColumn": 16,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private getLastPathComponent() : DefaultMutableTreeNode from class org.robotframework.swing.testapp.TestTree to protected getLastPathComponent() : DefaultMutableTreeNode from class org.robotframework.swing.testapp.TestTree.ActionCommand",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 154,
+		"endLine": 160,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getLastPathComponent() : DefaultMutableTreeNode"
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 115,
+		"endLine": 121,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "protected getLastPathComponent() : DefaultMutableTreeNode"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private refresh() : void from class org.robotframework.swing.testapp.TestTree to private refresh() : void from class org.robotframework.swing.testapp.TestTree.ActionCommand",
+	"leftSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 162,
+		"endLine": 164,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private refresh() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "test-application/src/main/java/org/robotframework/swing/testapp/TestTree.java",
+		"startLine": 111,
+		"endLine": 113,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private refresh() : void"
+}]
+}
+]
+}]
+}

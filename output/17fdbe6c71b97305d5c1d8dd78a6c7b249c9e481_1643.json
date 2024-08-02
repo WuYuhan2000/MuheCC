@@ -1,0 +1,807 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/tomakehurst/wiremock",
+	"sha1": "17fdbe6c71b97305d5c1d8dd78a6c7b249c9e481",
+	"url": "https://github.com/tomakehurst/wiremock/commit/17fdbe6c71b97305d5c1d8dd78a6c7b249c9e481",
+	"refactorings": [{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @JsonCreator in method public RequestBodyAutomaticPatternFactory(ignoreArrayOrder Boolean, ignoreExtraElements Boolean, caseInsensitive Boolean) from class com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/JsonMatchingFlags.java",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonMatchingFlags(ignoreArrayOrder Boolean, ignoreExtraElements Boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@JsonCreator"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public RequestBodyAutomaticPatternFactory(ignoreArrayOrder Boolean, ignoreExtraElements Boolean, caseInsensitive Boolean)"
+}]
+},
+{
+	"type": "Add Method Annotation",
+	"description": "Add Method Annotation @Override in method public forRequest(request Request) : StringValuePattern from class com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 72,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private valuePatternForContentType(request Request) : StringValuePattern"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 5,
+		"endColumn": 14,
+		"codeElementType": "ANNOTATION",
+		"description": "added annotation",
+		"codeElement": "@Override"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 61,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added annotation",
+		"codeElement": "public forRequest(request Request) : StringValuePattern"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter caseInsensitive : Boolean in method public RequestBodyAutomaticPatternFactory(ignoreArrayOrder Boolean, ignoreExtraElements Boolean, caseInsensitive Boolean) from class com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/JsonMatchingFlags.java",
+		"startLine": 25,
+		"endLine": 29,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public JsonMatchingFlags(ignoreArrayOrder Boolean, ignoreExtraElements Boolean)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "caseInsensitive : Boolean"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 33,
+		"endLine": 41,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public RequestBodyAutomaticPatternFactory(ignoreArrayOrder Boolean, ignoreExtraElements Boolean, caseInsensitive Boolean)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter requestBodyPatternFactory : RequestBodyPatternFactory in method public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, requestBodyPatternFactory RequestBodyPatternFactory, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters) from class com.github.tomakehurst.wiremock.recording.RecordSpec",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 51,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters, jsonMatchingFlags JsonMatchingFlags)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 9,
+		"endColumn": 96,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "requestBodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 52,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, requestBodyPatternFactory RequestBodyPatternFactory, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters)"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type jsonMatchingFlags : JsonMatchingFlags to bodyPatternFactory : RequestBodyPatternFactory in class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 45,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "bodyPatternFactory : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type jsonMatchingFlags : JsonMatchingFlags to requestBodyPatternFactory : RequestBodyPatternFactory in class com.github.tomakehurst.wiremock.recording.RecordSpecBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 39,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "requestBodyPatternFactory : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public forRequest(request Request) : StringValuePattern from class com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 72,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private valuePatternForContentType(request Request) : StringValuePattern"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 61,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public forRequest(request Request) : StringValuePattern"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type jsonMatchingFlags : JsonMatchingFlags to bodyPatternFactory : RequestBodyPatternFactory in method public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, bodyPatternFactory RequestBodyPatternFactory) from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 38,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "bodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type jsonMatchingFlags : JsonMatchingFlags to requestBodyPatternFactory : RequestBodyPatternFactory in method public SnapshotStubMappingGenerator(captureHeaders Map<String,CaptureHeadersSpec>, requestBodyPatternFactory RequestBodyPatternFactory) from class com.github.tomakehurst.wiremock.recording.SnapshotStubMappingGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 89,
+		"endColumn": 124,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 89,
+		"endColumn": 140,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "requestBodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type JsonMatchingFlags to RequestBodyPatternFactory in method public getRequestBodyPatternFactory() : RequestBodyPatternFactory from class com.github.tomakehurst.wiremock.recording.RecordSpec",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 113,
+		"endLine": 113,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 113,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getJsonMatchingFlags() : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 12,
+		"endColumn": 37,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 106,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "public getRequestBodyPatternFactory() : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private valuePatternForContentType(request Request) : StringValuePattern from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer to public forRequest(request Request) : StringValuePattern from class com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 72,
+		"endLine": 89,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private valuePatternForContentType(request Request) : StringValuePattern"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 61,
+		"endLine": 77,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public forRequest(request Request) : StringValuePattern"
+}]
+},
+{
+	"type": "Remove Method Annotation",
+	"description": "Remove Method Annotation @JsonCreator in method public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags) from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 38,
+		"endLine": 38,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonCreator"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed annotation",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, bodyPatternFactory RequestBodyPatternFactory)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter jsonMatchingFlags : JsonMatchingFlags in method public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters, jsonMatchingFlags JsonMatchingFlags) from class com.github.tomakehurst.wiremock.recording.RecordSpec",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 51,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters, jsonMatchingFlags JsonMatchingFlags)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 52,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public RecordSpec(targetBaseUrl String, filters ProxiedServeEventFilters, captureHeaders Map<String,CaptureHeadersSpec>, requestBodyPatternFactory RequestBodyPatternFactory, extractBodyCriteria ResponseDefinitionBodyMatcher, outputFormat SnapshotOutputFormatter, persist Boolean, repeatsAsScenarios Boolean, transformers List<String>, transformerParameters Parameters)"
+}]
+},
+{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @JsonProperty(\"headers\") in parameter headers : Map<String,CaptureHeadersSpec> in method public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags) from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 38,
+		"endColumn": 62,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonProperty(\"headers\")"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 38,
+		"endColumn": 102,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "headers : Map<String,CaptureHeadersSpec>"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 9,
+		"endColumn": 48,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "headers : Map<String,CaptureHeadersSpec>"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, bodyPatternFactory RequestBodyPatternFactory)"
+}]
+},
+{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @JsonProperty(\"jsonMatchingFlags\") in parameter jsonMatchingFlags : JsonMatchingFlags in method public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags) from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 38,
+		"endColumn": 72,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@JsonProperty(\"jsonMatchingFlags\")"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 38,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 38,
+		"endLine": 43,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, jsonMatchingFlags JsonMatchingFlags)"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "bodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 35,
+		"endLine": 40,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, bodyPatternFactory RequestBodyPatternFactory)"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute jsonMatchingFlags : JsonMatchingFlags to bodyPatternFactory : RequestBodyPatternFactory in class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 37,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 45,
+		"endColumn": 63,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "bodyPatternFactory : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute jsonMatchingFlags : JsonMatchingFlags to requestBodyPatternFactory : RequestBodyPatternFactory in class com.github.tomakehurst.wiremock.recording.RecordSpecBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 31,
+		"endColumn": 48,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 34,
+		"endLine": 34,
+		"startColumn": 39,
+		"endColumn": 64,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "requestBodyPatternFactory : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class com.github.tomakehurst.wiremock.recording.JsonMatchingFlags renamed to com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/JsonMatchingFlags.java",
+		"startLine": 20,
+		"endLine": 38,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "com.github.tomakehurst.wiremock.recording.JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestBodyAutomaticPatternFactory.java",
+		"startLine": 27,
+		"endLine": 78,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "com.github.tomakehurst.wiremock.recording.RequestBodyAutomaticPatternFactory"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public applyWithDefaultsAndNoBody() : void renamed to public applyIncludesMethodAndUrlMatchers() : void in class com.github.tomakehurst.wiremock.recording.RequestPatternTransformerTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformerTest.java",
+		"startLine": 33,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public applyWithDefaultsAndNoBody() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformerTest.java",
+		"startLine": 31,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public applyIncludesMethodAndUrlMatchers() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public defaultsToNoJsonBodyMatchingFlags() : void renamed to public defaultsToAutomaticRequestBodyPattern() : void in class com.github.tomakehurst.wiremock.SnapshotDslAcceptanceTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java",
+		"startLine": 268,
+		"endLine": 277,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public defaultsToNoJsonBodyMatchingFlags() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java",
+		"startLine": 304,
+		"endLine": 312,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public defaultsToAutomaticRequestBodyPattern() : void"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public getJsonMatchingFlags() : JsonMatchingFlags renamed to public getRequestBodyPatternFactory() : RequestBodyPatternFactory in class com.github.tomakehurst.wiremock.recording.RecordSpec",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 113,
+		"endLine": 115,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public getJsonMatchingFlags() : JsonMatchingFlags"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpec.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 5,
+		"endColumn": 106,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public getRequestBodyPatternFactory() : RequestBodyPatternFactory"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public jsonBodyMatchFlags(ignoreArrayOrder boolean, ignoreExtraElements boolean) : RecordSpecBuilder renamed to public requestBodyEqualToJsonPattern(ignoreArrayOrder boolean, ignoreExtraElements boolean) : RecordSpecBuilder in class com.github.tomakehurst.wiremock.recording.RecordSpecBuilder",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 124,
+		"endLine": 127,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public jsonBodyMatchFlags(ignoreArrayOrder boolean, ignoreExtraElements boolean) : RecordSpecBuilder"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RecordSpecBuilder.java",
+		"startLine": 105,
+		"endLine": 108,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public requestBodyEqualToJsonPattern(ignoreArrayOrder boolean, ignoreExtraElements boolean) : RecordSpecBuilder"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public supportsConfigurationOfJsonBodyMatching() : void renamed to public supportsConfigurationOfRequestBodyPatternFactoryWithEqualToJsonPattern() : void in class com.github.tomakehurst.wiremock.SnapshotDslAcceptanceTest",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java",
+		"startLine": 255,
+		"endLine": 266,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public supportsConfigurationOfJsonBodyMatching() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/com/github/tomakehurst/wiremock/SnapshotDslAcceptanceTest.java",
+		"startLine": 274,
+		"endLine": 283,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public supportsConfigurationOfRequestBodyPatternFactoryWithEqualToJsonPattern() : void"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter jsonMatchingFlags : JsonMatchingFlags to bodyPatternFactory : RequestBodyPatternFactory in method public RequestPatternTransformer(headers Map<String,CaptureHeadersSpec>, bodyPatternFactory RequestBodyPatternFactory) from class com.github.tomakehurst.wiremock.recording.RequestPatternTransformer",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 40,
+		"endLine": 40,
+		"startColumn": 38,
+		"endColumn": 108,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 9,
+		"endColumn": 52,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 37,
+		"endLine": 37,
+		"startColumn": 9,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "bodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/RequestPatternTransformer.java",
+		"startLine": 39,
+		"endLine": 39,
+		"startColumn": 9,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter jsonMatchingFlags : JsonMatchingFlags to requestBodyPatternFactory : RequestBodyPatternFactory in method public SnapshotStubMappingGenerator(captureHeaders Map<String,CaptureHeadersSpec>, requestBodyPatternFactory RequestBodyPatternFactory) from class com.github.tomakehurst.wiremock.recording.SnapshotStubMappingGenerator",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 89,
+		"endColumn": 124,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jsonMatchingFlags : JsonMatchingFlags"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 43,
+		"endLine": 43,
+		"startColumn": 89,
+		"endColumn": 140,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "requestBodyPatternFactory : RequestBodyPatternFactory"
+}, {
+		"filePath": "src/main/java/com/github/tomakehurst/wiremock/recording/SnapshotStubMappingGenerator.java",
+		"startLine": 44,
+		"endLine": 47,
+		"startColumn": 9,
+		"endColumn": 11,
+		"codeElementType": "CONSTRUCTOR_INVOCATION",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

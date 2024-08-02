@@ -1,0 +1,141 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "1d24d71821f0163977a4d625263c9dcfaabe7bcb",
+	"url": "https://github.com/apache/hbase/commit/1d24d71821f0163977a4d625263c9dcfaabe7bcb",
+	"refactorings": [{
+	"type": "Modify Method Annotation",
+	"description": "Modify Method Annotation @Test(timeout = 60000) to @Test(timeout = 20000) in method public testMasterZKSessionRecoveryFailure() : void from class org.apache.hadoop.hbase.TestZooKeeper",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestMasterZKSessionRecovery.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Test(timeout = 60000)"
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestMasterZKSessionRecovery.java",
+		"startLine": 79,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMasterZKSessionRecoverySuccess() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/TestZooKeeper.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 3,
+		"endColumn": 23,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Test(timeout = 20000)"
+}, {
+		"filePath": "src/test/java/org/apache/hadoop/hbase/TestZooKeeper.java",
+		"startLine": 183,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with modified annotation",
+		"codeElement": "public testMasterZKSessionRecoveryFailure() : void"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method public testMasterZKSessionRecoverySuccess() : void from class org.apache.hadoop.hbase.master.TestMasterZKSessionRecovery to public testMasterZKSessionRecoveryFailure() : void from class org.apache.hadoop.hbase.TestZooKeeper",
+	"leftSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/master/TestMasterZKSessionRecovery.java",
+		"startLine": 79,
+		"endLine": 94,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testMasterZKSessionRecoverySuccess() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/test/java/org/apache/hadoop/hbase/TestZooKeeper.java",
+		"startLine": 183,
+		"endLine": 196,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public testMasterZKSessionRecoveryFailure() : void"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute retryIntervalMillis : int to sessionTimeout : int in class org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 15,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "retryIntervalMillis : int"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 15,
+		"endColumn": 29,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "sessionTimeout : int"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter seesionTimeout : int to sessionTimeout : int in method public RecoverableZooKeeper(quorumServers String, sessionTimeout int, watcher Watcher, maxRetries int, retryIntervalMillis int) from class org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 83,
+		"endLine": 83,
+		"startColumn": 53,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "seesionTimeout : int"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 53,
+		"endColumn": 71,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sessionTimeout : int"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/RecoverableZooKeeper.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 5,
+		"endColumn": 69,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

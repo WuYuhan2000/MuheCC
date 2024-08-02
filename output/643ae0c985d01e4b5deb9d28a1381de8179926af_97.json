@@ -1,0 +1,114 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "643ae0c985d01e4b5deb9d28a1381de8179926af",
+	"url": "https://github.com/apache/hbase/commit/643ae0c985d01e4b5deb9d28a1381de8179926af",
+	"refactorings": [{
+	"type": "Extract And Move Method",
+	"description": "Extract And Move Method public createOrUpdateUnassignedRegion(regionName String, data byte[]) : void extracted from public setUnassigned(info HRegionInfo, force boolean) : void in class org.apache.hadoop.hbase.master.RegionManager & moved to class org.apache.hadoop.hbase.zookeeper.ZooKeeperWrapper",
+	"leftSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/RegionManager.java",
+		"startLine": 978,
+		"endLine": 1005,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public setUnassigned(info HRegionInfo, force boolean) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/RegionManager.java",
+		"startLine": 996,
+		"endLine": 996,
+		"startColumn": 9,
+		"endColumn": 71,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1162,
+		"endLine": 1178,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public createOrUpdateUnassignedRegion(regionName String, data byte[]) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1176,
+		"endLine": 1176,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/RegionManager.java",
+		"startLine": 978,
+		"endLine": 1006,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public setUnassigned(info HRegionInfo, force boolean) : void"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/master/RegionManager.java",
+		"startLine": 996,
+		"endLine": 996,
+		"startColumn": 9,
+		"endColumn": 78,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "zkWrapper.createOrUpdateUnassignedRegion(info.getEncodedName(),data)"
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1171,
+		"endLine": 1171,
+		"startColumn": 5,
+		"endColumn": 71,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1173,
+		"endLine": 1173,
+		"startColumn": 7,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1172,
+		"endLine": 1174,
+		"startColumn": 29,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1175,
+		"endLine": 1177,
+		"startColumn": 10,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "src/main/java/org/apache/hadoop/hbase/zookeeper/ZooKeeperWrapper.java",
+		"startLine": 1172,
+		"endLine": 1177,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}

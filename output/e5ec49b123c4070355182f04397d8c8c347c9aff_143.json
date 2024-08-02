@@ -1,0 +1,477 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "e5ec49b123c4070355182f04397d8c8c347c9aff",
+	"url": "https://github.com/apache/hbase/commit/e5ec49b123c4070355182f04397d8c8c347c9aff",
+	"refactorings": [{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private CHAIN_FAM : byte[] from class org.apache.hadoop.hbase.mapreduce.IntegrationTestBulkLoad",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 108,
+		"endLine": 108,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private CHAIN_FAM : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private CHAIN_FAM : byte[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private DATA_FAM : byte[] from class org.apache.hadoop.hbase.mapreduce.IntegrationTestBulkLoad",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 110,
+		"endLine": 110,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private DATA_FAM : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private DATA_FAM : byte[]"
+}]
+},
+{
+	"type": "Add Attribute Modifier",
+	"description": "Add Attribute Modifier final in attribute private SORT_FAM : byte[] from class org.apache.hadoop.hbase.mapreduce.IntegrationTestBulkLoad",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 109,
+		"endLine": 109,
+		"startColumn": 25,
+		"endColumn": 55,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private SORT_FAM : byte[]"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 31,
+		"endColumn": 61,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with added modifier",
+		"codeElement": "private SORT_FAM : byte[]"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter numStale : long in method protected updateCounters(scanMetrics ScanMetrics, numScannerRestarts long, getCounter Method, context TaskAttemptContext, numStale long) : void from class org.apache.hadoop.hbase.mapreduce.TableRecordReaderImpl",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/TableRecordReaderImpl.java",
+		"startLine": 276,
+		"endLine": 295,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "protected updateCounters(scanMetrics ScanMetrics, numScannerRestarts long, getCounter Method, context TaskAttemptContext) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/TableRecordReaderImpl.java",
+		"startLine": 280,
+		"endLine": 280,
+		"startColumn": 54,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "numStale : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/mapreduce/TableRecordReaderImpl.java",
+		"startLine": 279,
+		"endLine": 300,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "protected updateCounters(scanMetrics ScanMetrics, numScannerRestarts long, getCounter Method, context TaskAttemptContext, numStale long) : void"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InterruptedException in method private setupTable() : void from class org.apache.hadoop.hbase.mapreduce.IntegrationTestBulkLoad",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 148,
+		"endLine": 158,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setupTable() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 227,
+		"endLine": 227,
+		"startColumn": 49,
+		"endColumn": 69,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 227,
+		"endLine": 243,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "private setupTable() : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 225,
+		"endLine": 247,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1467,
+		"endLine": 1491,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 249,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1493,
+		"endLine": 1503,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type Exception to [IOException, InterruptedException] in method public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 228,
+		"endLine": 228,
+		"startColumn": 87,
+		"endColumn": 96,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 225,
+		"endLine": 247,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1471,
+		"endLine": 1471,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1471,
+		"endLine": 1471,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1467,
+		"endLine": 1491,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}]
+},
+{
+	"type": "Change Thrown Exception Type",
+	"description": "Change Thrown Exception Type Exception to [IOException, InterruptedException] in method public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 14,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original exception type",
+		"codeElement": "Exception"
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 249,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1497,
+		"endLine": 1497,
+		"startColumn": 14,
+		"endColumn": 25,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "IOException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1497,
+		"endLine": 1497,
+		"startColumn": 27,
+		"endColumn": 47,
+		"codeElementType": "TYPE",
+		"description": "changed exception type",
+		"codeElement": "InterruptedException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1493,
+		"endLine": 1503,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed thrown exception type",
+		"codeElement": "public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void from class org.apache.hadoop.hbase.IntegrationTestRegionReplicaPerf to public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 225,
+		"endLine": 247,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1467,
+		"endLine": 1491,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public modifyTableSync(admin HBaseAdmin, desc HTableDescriptor) : void"
+}]
+},
+{
+	"type": "Move Method",
+	"description": "Move Method private setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void from class org.apache.hadoop.hbase.IntegrationTestRegionReplicaPerf to public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void from class org.apache.hadoop.hbase.HBaseTestingUtility",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/IntegrationTestRegionReplicaPerf.java",
+		"startLine": 249,
+		"endLine": 259,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/HBaseTestingUtility.java",
+		"startLine": 1493,
+		"endLine": 1503,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "public setReplicas(admin HBaseAdmin, table TableName, replicaCount int) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable s : Scan to scan : Scan in method private runCheck() : void from class org.apache.hadoop.hbase.mapreduce.IntegrationTestBulkLoad",
+	"leftSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 566,
+		"endLine": 566,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "s : Scan"
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 566,
+		"endLine": 566,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 567,
+		"endLine": 567,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 568,
+		"endLine": 568,
+		"startColumn": 5,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 569,
+		"endLine": 569,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 570,
+		"endLine": 570,
+		"startColumn": 5,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 571,
+		"endLine": 571,
+		"startColumn": 5,
+		"endColumn": 22,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "scan : Scan"
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 651,
+		"endLine": 651,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 652,
+		"endLine": 652,
+		"startColumn": 5,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 653,
+		"endLine": 653,
+		"startColumn": 5,
+		"endColumn": 30,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 654,
+		"endLine": 654,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 655,
+		"endLine": 655,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-it/src/test/java/org/apache/hadoop/hbase/mapreduce/IntegrationTestBulkLoad.java",
+		"startLine": 656,
+		"endLine": 656,
+		"startColumn": 5,
+		"endColumn": 25,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

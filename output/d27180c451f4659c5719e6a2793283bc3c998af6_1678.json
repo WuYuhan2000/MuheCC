@@ -1,0 +1,105 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/betterform/betterform",
+	"sha1": "d27180c451f4659c5719e6a2793283bc3c998af6",
+	"url": "https://github.com/betterform/betterform/commit/d27180c451f4659c5719e6a2793283bc3c998af6",
+	"refactorings": [{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to public in method public getSSLContext() : SSLContext from class de.betterform.connector.http.ssl.KeyStoreSSLContext",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLProtocolSocketFactory.java",
+		"startLine": 220,
+		"endLine": 225,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private getSSLContext() : SSLContext"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLContext.java",
+		"startLine": 217,
+		"endLine": 222,
+		"startColumn": 6,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "public getSSLContext() : SSLContext"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier public to private in method private createKeyStore(url URL, password String) : KeyStore from class de.betterform.connector.http.ssl.KeyStoreSSLContext",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLProtocolSocketFactory.java",
+		"startLine": 140,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createKeyStore(url URL, password String) : KeyStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLContext.java",
+		"startLine": 137,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "private createKeyStore(url URL, password String) : KeyStore"
+}]
+},
+{
+	"type": "Remove Method Modifier",
+	"description": "Remove Method Modifier static in method public createKeyStore(url URL, password String) : KeyStore from class de.betterform.connector.http.ssl.KeyStoreSSLProtocolSocketFactory",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLProtocolSocketFactory.java",
+		"startLine": 140,
+		"endLine": 157,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public createKeyStore(url URL, password String) : KeyStore"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLContext.java",
+		"startLine": 137,
+		"endLine": 154,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed modifier",
+		"codeElement": "private createKeyStore(url URL, password String) : KeyStore"
+}]
+},
+{
+	"type": "Rename Class",
+	"description": "Rename Class de.betterform.connector.http.ssl.KeyStoreSSLProtocolSocketFactory renamed to de.betterform.connector.http.ssl.KeyStoreSSLContext",
+	"leftSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLProtocolSocketFactory.java",
+		"startLine": 91,
+		"endLine": 313,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "de.betterform.connector.http.ssl.KeyStoreSSLProtocolSocketFactory"
+}],
+	"rightSideLocations": [{
+		"filePath": "core/src/main/java/de/betterform/connector/http/ssl/KeyStoreSSLContext.java",
+		"startLine": 88,
+		"endLine": 223,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "renamed type declaration",
+		"codeElement": "de.betterform.connector.http.ssl.KeyStoreSSLContext"
+}]
+}
+]
+}]
+}

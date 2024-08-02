@@ -1,0 +1,111 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/spring-projects/spring-framework",
+	"sha1": "ff7d4eebd8ebbf011656313dca8c6ee1a598c2aa",
+	"url": "https://github.com/spring-projects/spring-framework/commit/ff7d4eebd8ebbf011656313dca8c6ee1a598c2aa",
+	"refactorings": [{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute corsConfigurations : Map<Method,CorsConfiguration> to corsMap : Map<Method,CorsConfiguration> in class org.springframework.web.servlet.handler.AbstractHandlerMethodMapping",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 47,
+		"endColumn": 114,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "corsConfigurations : Map<Method,CorsConfiguration>"
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 86,
+		"endLine": 86,
+		"startColumn": 47,
+		"endColumn": 103,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "corsMap : Map<Method,CorsConfiguration>"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable beanName : String to name : String in method protected initHandlerMethods() : void from class org.springframework.web.servlet.handler.AbstractHandlerMethodMapping",
+	"leftSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 162,
+		"endLine": 162,
+		"startColumn": 8,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "beanName : String"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 165,
+		"endLine": 165,
+		"startColumn": 5,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 163,
+		"endLine": 166,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 162,
+		"endLine": 167,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 148,
+		"endLine": 148,
+		"startColumn": 8,
+		"endColumn": 19,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "name : String"
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 5,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 4,
+		"endColumn": 5,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "spring-webmvc/src/main/java/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java",
+		"startLine": 148,
+		"endLine": 152,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

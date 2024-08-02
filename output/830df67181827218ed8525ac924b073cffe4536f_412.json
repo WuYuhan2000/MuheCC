@@ -1,0 +1,42 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "830df67181827218ed8525ac924b073cffe4536f",
+	"url": "https://github.com/apache/hbase/commit/830df67181827218ed8525ac924b073cffe4536f",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter receiveTime : long in method public call(param Writable, receiveTime long) : Writable from class org.apache.hadoop.hbase.ipc.HbaseRPC.Server",
+	"leftSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HbaseRPC.java",
+		"startLine": 403,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public call(param Writable) : Writable"
+}],
+	"rightSideLocations": [{
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HbaseRPC.java",
+		"startLine": 403,
+		"endLine": 403,
+		"startColumn": 42,
+		"endColumn": 58,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "receiveTime : long"
+}, {
+		"filePath": "src/java/org/apache/hadoop/hbase/ipc/HbaseRPC.java",
+		"startLine": 403,
+		"endLine": 434,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public call(param Writable, receiveTime long) : Writable"
+}]
+}
+]
+}]
+}

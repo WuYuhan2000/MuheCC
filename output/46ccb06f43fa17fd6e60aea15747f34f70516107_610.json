@@ -1,0 +1,60 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/joansmith/restlet-framework-java",
+	"sha1": "46ccb06f43fa17fd6e60aea15747f34f70516107",
+	"url": "https://github.com/joansmith/restlet-framework-java/commit/46ccb06f43fa17fd6e60aea15747f34f70516107",
+	"refactorings": [{
+	"type": "Remove Parameter Annotation",
+	"description": "Remove Parameter Annotation @SuppressWarnings(\"unused\") in parameter annotations : Annotation[] in method public noMessageBodyWriter(entityClass Class<?>, genericType Type, annotations Annotation[]) : WebApplicationException from class org.restlet.ext.jaxrs.internal.util.ExceptionHandler",
+	"leftSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/util/ExceptionHandler.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 31,
+		"endColumn": 58,
+		"codeElementType": "ANNOTATION",
+		"description": "removed annotation",
+		"codeElement": "@SuppressWarnings(\"unused\")"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/util/ExceptionHandler.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 31,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "annotations : Annotation[]"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/util/ExceptionHandler.java",
+		"startLine": 203,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public noMessageBodyWriter(entityClass Class<?>, genericType Type, annotations Annotation[]) : WebApplicationException"
+}],
+	"rightSideLocations": [{
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/util/ExceptionHandler.java",
+		"startLine": 214,
+		"endLine": 214,
+		"startColumn": 31,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with removed annotation",
+		"codeElement": "annotations : Annotation[]"
+}, {
+		"filePath": "modules/org.restlet.ext.jaxrs_0.9/src/org/restlet/ext/jaxrs/internal/util/ExceptionHandler.java",
+		"startLine": 203,
+		"endLine": 221,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed variable annotation",
+		"codeElement": "public noMessageBodyWriter(entityClass Class<?>, genericType Type, annotations Annotation[]) : WebApplicationException"
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1944 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/apache/hbase",
+	"sha1": "b6aa74ef6393229a9d08ace867cdccdc63a91c64",
+	"url": "https://github.com/apache/hbase/commit/b6aa74ef6393229a9d08ace867cdccdc63a91c64",
+	"refactorings": [{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 40,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 54,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}]
+},
+{
+	"type": "Add Method Modifier",
+	"description": "Add Method Modifier final in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 115,
+		"endLine": 170,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public testSelection() : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 150,
+		"endLine": 172,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added modifier",
+		"codeElement": "public testSelection() : void"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter fileGenClass : Class<? extends StoreFileListGenerator> in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 115,
+		"endLine": 115,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "fileGenClass : Class<? extends StoreFileListGenerator>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter inMin : int in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 117,
+		"endLine": 117,
+		"startColumn": 7,
+		"endColumn": 22,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "inMin : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Parameter",
+	"description": "Add Parameter inMmax : int in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 116,
+		"endLine": 116,
+		"startColumn": 7,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "inMmax : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter candidates : ArrayList<StoreFile> in method package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 41,
+		"endLine": 41,
+		"startColumn": 46,
+		"endColumn": 77,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "candidates : ArrayList<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 40,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 55,
+		"endLine": 55,
+		"startColumn": 52,
+		"endColumn": 89,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "candidates : ArrayList<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 54,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter conf : Configuration in method public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation) from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 35,
+		"endLine": 35,
+		"startColumn": 36,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 36,
+		"endColumn": 60,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "conf : Configuration"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 43,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation)"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter cpClass : Class<? extends CompactionPolicy> in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 87,
+		"endLine": 87,
+		"startColumn": 37,
+		"endColumn": 78,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "cpClass : Class<? extends CompactionPolicy>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 114,
+		"endLine": 114,
+		"startColumn": 7,
+		"endColumn": 54,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "cpClass : Class<? extends CompactionPolicy>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter files : List<StoreFile> in method private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 32,
+		"endColumn": 53,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "files : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 79,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 32,
+		"endColumn": 59,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "files : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 128,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter fs : int[] in method protected createStoreFileList(fs int[]) : List<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 199,
+		"endLine": 199,
+		"startColumn": 47,
+		"endColumn": 55,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fs : int[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 199,
+		"endLine": 205,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createStoreFileList(fs int[]) : List<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 48,
+		"endLine": 48,
+		"startColumn": 49,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "fs : int[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 48,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected createStoreFileList(fs int[]) : List<StoreFile>"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter inRatio : float in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ratio : float"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "inRatio : float"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter isOffPeak : boolean in method private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 84,
+		"endLine": 84,
+		"startColumn": 55,
+		"endColumn": 72,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "isOffPeak : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 79,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 61,
+		"endColumn": 84,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "isOffPeak : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 128,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter mayUseOffPeak : boolean in method package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 46,
+		"endColumn": 67,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "mayUseOffPeak : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 40,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 56,
+		"endLine": 56,
+		"startColumn": 46,
+		"endColumn": 73,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "mayUseOffPeak : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 54,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter seqId : long in method protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 53,
+		"endColumn": 63,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "seqId : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createMockStoreFile(sizeMb int, seqId long) : StoreFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 67,
+		"endColumn": 83,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "seqId : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter sizeInBytes : long in method protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sizeMb : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createMockStoreFile(sizeMb int, seqId long) : StoreFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "sizeInBytes : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile"
+}]
+},
+{
+	"type": "Add Parameter Modifier",
+	"description": "Add Parameter Modifier final in parameter storeConfigInfo : StoreConfigInformation in method public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation) from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 36,
+		"endLine": 36,
+		"startColumn": 36,
+		"endColumn": 74,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "storeConfigInfo : StoreConfigInformation"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 35,
+		"endLine": 38,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 36,
+		"endColumn": 80,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "variable declaration with added modifier",
+		"codeElement": "storeConfigInfo : StoreConfigInformation"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 43,
+		"endLine": 52,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "public ExploringCompactionPolicy(conf Configuration, storeConfigInfo StoreConfigInformation)"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type IllegalAccessException in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 35,
+		"endColumn": 57,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "IllegalAccessException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Thrown Exception Type",
+	"description": "Add Thrown Exception Type InstantiationException in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 59,
+		"endColumn": 81,
+		"codeElementType": "TYPE",
+		"description": "added thrown exception type",
+		"codeElement": "InstantiationException"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added thrown exception type",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Add Variable Modifier",
+	"description": "Add Variable Modifier final in variable currentRatio : double in method private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 88,
+		"endLine": 89,
+		"startColumn": 12,
+		"endColumn": 93,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "currentRatio : double"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 79,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 140,
+		"endLine": 141,
+		"startColumn": 18,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "variable declaration with added modifier",
+		"codeElement": "currentRatio : double"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 128,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added variable modifier",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier package to private in attribute private LOG : Log from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 53,
+		"endLine": 53,
+		"startColumn": 20,
+		"endColumn": 77,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "package LOG : Log"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 28,
+		"endColumn": 85,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private LOG : Log"
+}]
+},
+{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier private to protected in attribute protected random : Random from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private random : Random"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "protected random : Random"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createMockStoreFile(sizeMb int, seqId long) : StoreFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile"
+}]
+},
+{
+	"type": "Change Method Access Modifier",
+	"description": "Change Method Access Modifier private to protected in method protected createStoreFileList(fs int[]) : List<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 199,
+		"endLine": 205,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createStoreFileList(fs int[]) : List<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 48,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed access modifier",
+		"codeElement": "protected createStoreFileList(fs int[]) : List<StoreFile>"
+}]
+},
+{
+	"type": "Change Parameter Type",
+	"description": "Change Parameter Type sizeMb : int to sizeInBytes : long in method protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sizeMb : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 227,
+		"endLine": 231,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "sizeInBytes : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type fs : int[] to file : StoreFile in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 10,
+		"endColumn": 18,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fs : int[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 134,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "file : StoreFile"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 155,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type newFileSize : int to newFileSize : long in method private runIteration(startingStoreFiles List<StoreFile>) : List<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 24,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "newFileSize : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 188,
+		"endLine": 188,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 194,
+		"endLine": 194,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 191,
+		"endLine": 191,
+		"startColumn": 7,
+		"endColumn": 56,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 180,
+		"endLine": 180,
+		"startColumn": 10,
+		"endColumn": 25,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "changed-type variable declaration",
+		"codeElement": "newFileSize : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 190,
+		"endLine": 190,
+		"startColumn": 9,
+		"endColumn": 55,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 196,
+		"endLine": 196,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 193,
+		"endLine": 193,
+		"startColumn": 7,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Encapsulate Attribute",
+	"description": "Encapsulate Attribute private blockingFileCount : long from class org.apache.hadoop.hbase.regionserver.HStore",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private blockingFileCount : long"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 16,
+		"endColumn": 33,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "encapsulated attribute declaration",
+		"codeElement": "private blockingFileCount : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/HStore.java",
+		"startLine": 284,
+		"endLine": 286,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "added getter method",
+		"codeElement": "public getBlockingFileCount() : long"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getTotalStoreSize(potentialMatchFiles List<StoreFile>) : long extracted from package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile> in class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 40,
+		"endLine": 77,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 9,
+		"endColumn": 23,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 11,
+		"endColumn": 42,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 63,
+		"endLine": 65,
+		"startColumn": 47,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 114,
+		"endLine": 126,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getTotalStoreSize(potentialMatchFiles List<StoreFile>) : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 43,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 54,
+		"endLine": 112,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getTotalStoreSize(potentialMatchFiles)"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private getTotalStoreSize(potentialMatchFiles List<StoreFile>) : long extracted from private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean in class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 79,
+		"endLine": 107,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 92,
+		"endLine": 94,
+		"startColumn": 44,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 114,
+		"endLine": 126,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private getTotalStoreSize(potentialMatchFiles List<StoreFile>) : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 43,
+		"endColumn": 6,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 128,
+		"endLine": 154,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 143,
+		"endLine": 143,
+		"startColumn": 26,
+		"endColumn": 50,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "getTotalStoreSize(files)"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 125,
+		"endLine": 125,
+		"startColumn": 5,
+		"endColumn": 17,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 122,
+		"endLine": 124,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Superclass",
+	"description": "Extract Superclass org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator from classes [org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies]",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 49,
+		"endLine": 243,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original sub-type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 44,
+		"endLine": 207,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "sub-type declaration after extraction",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 35,
+		"endLine": 90,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted super-type declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator"
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable size : long in method package applyCompactionPolicy(candidates ArrayList<StoreFile>, mayUseOffPeak boolean) : ArrayList<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 26,
+		"endColumn": 45,
+		"codeElementType": "ENHANCED_FOR_STATEMENT_EXPRESSION",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 14,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "size : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 9,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Modify Class Annotation",
+	"description": "Modify Class Annotation @Category(SmallTests.class) to @Category(MediumTests.class) in class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 0,
+		"endColumn": 28,
+		"codeElementType": "ANNOTATION",
+		"description": "original annotation",
+		"codeElement": "@Category(SmallTests.class)"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 49,
+		"endLine": 243,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original class declaration",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 44,
+		"endLine": 44,
+		"startColumn": 0,
+		"endColumn": 29,
+		"codeElementType": "ANNOTATION",
+		"description": "modified annotation",
+		"codeElement": "@Category(MediumTests.class)"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 44,
+		"endLine": 207,
+		"startColumn": 0,
+		"endColumn": 2,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "class declaration with modified annotation",
+		"codeElement": "org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute private random : Random from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies to protected random : Random from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 61,
+		"endLine": 61,
+		"startColumn": 18,
+		"endColumn": 24,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "private random : Random"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 42,
+		"endLine": 42,
+		"startColumn": 20,
+		"endColumn": 26,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "protected random : Random"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private createMockStoreFile(sizeMb int, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies to protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 235,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createMockStoreFile(sizeMb int, seqId long) : StoreFile"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 89,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private createStoreFileList(fs int[]) : List<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies to protected createStoreFileList(fs int[]) : List<StoreFile> from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 199,
+		"endLine": 205,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createStoreFileList(fs int[]) : List<StoreFile>"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 48,
+		"endLine": 54,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "protected createStoreFileList(fs int[]) : List<StoreFile>"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter max : int in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 7,
+		"endColumn": 14,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "max : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Remove Parameter",
+	"description": "Remove Parameter min : int in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "removed parameter",
+		"codeElement": "min : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 80,
+		"endLine": 113,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, max int, min int, ratio float)"
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 106,
+		"endLine": 148,
+		"startColumn": 3,
+		"endColumn": 4,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with removed parameter",
+		"codeElement": "public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter ratio : float to inRatio : float in method public PerfTestCompactionPolicies(cpClass Class<? extends CompactionPolicy>, fileGenClass Class<? extends StoreFileListGenerator>, inMmax int, inMin int, inRatio float) from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 25,
+		"endColumn": 36,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "ratio : float"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 24,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 118,
+		"endLine": 118,
+		"startColumn": 7,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "inRatio : float"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 5,
+		"endColumn": 26,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter sizeMb : int to sizeInBytes : long in method protected createMockStoreFile(sizeInBytes long, seqId long) : StoreFile from class org.apache.hadoop.hbase.regionserver.compactions.MockStoreFileGenerator",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 212,
+		"endLine": 212,
+		"startColumn": 41,
+		"endColumn": 51,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "sizeMb : int"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 5,
+		"endColumn": 79,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 5,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 227,
+		"endLine": 231,
+		"startColumn": 5,
+		"endColumn": 67,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 64,
+		"endLine": 64,
+		"startColumn": 43,
+		"endColumn": 65,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "sizeInBytes : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 73,
+		"endLine": 73,
+		"startColumn": 5,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 74,
+		"endLine": 74,
+		"startColumn": 5,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/MockStoreFileGenerator.java",
+		"startLine": 81,
+		"endLine": 85,
+		"startColumn": 5,
+		"endColumn": 45,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable fs : int[] to file : StoreFile in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 134,
+		"endLine": 134,
+		"startColumn": 10,
+		"endColumn": 18,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fs : int[]"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 134,
+		"endLine": 138,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 12,
+		"endColumn": 26,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "file : StoreFile"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 155,
+		"endLine": 158,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "ENHANCED_FOR_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable storeFiles : List<StoreFile> to currentFiles : List<StoreFile> in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 141,
+		"endLine": 141,
+		"startColumn": 23,
+		"endColumn": 63,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "storeFiles : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 9,
+		"endColumn": 70,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 23,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "currentFiles : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 156,
+		"endLine": 156,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable storeFiles : List<StoreFile> to currentFiles : List<StoreFile> in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 135,
+		"endLine": 135,
+		"startColumn": 23,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "storeFiles : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 136,
+		"endLine": 136,
+		"startColumn": 7,
+		"endColumn": 45,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 154,
+		"endLine": 154,
+		"startColumn": 23,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "currentFiles : List<StoreFile>"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 157,
+		"endLine": 157,
+		"startColumn": 9,
+		"endColumn": 51,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable sumAllOtherFilesize : long to sumAllOtherFileSizes : long in method private filesInRatio(files List<StoreFile>, isOffPeak boolean) : boolean from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 12,
+		"endColumn": 64,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "sumAllOtherFilesize : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 97,
+		"endLine": 97,
+		"startColumn": 7,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 99,
+		"endLine": 102,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 12,
+		"endColumn": 65,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "sumAllOtherFileSizes : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 147,
+		"endLine": 147,
+		"startColumn": 7,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 149,
+		"endLine": 151,
+		"startColumn": 7,
+		"endColumn": 8,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable totalFileSize : long to size : long in method private getTotalStoreSize(potentialMatchFiles List<StoreFile>) : long from class org.apache.hadoop.hbase.regionserver.compactions.ExploringCompactionPolicy",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "totalFileSize : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 91,
+		"endLine": 91,
+		"startColumn": 5,
+		"endColumn": 28,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 7,
+		"endColumn": 58,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 10,
+		"endColumn": 18,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "size : long"
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 120,
+		"endLine": 120,
+		"startColumn": 5,
+		"endColumn": 19,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "hbase-server/src/main/java/org/apache/hadoop/hbase/regionserver/compactions/ExploringCompactionPolicy.java",
+		"startLine": 123,
+		"endLine": 123,
+		"startColumn": 7,
+		"endColumn": 38,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable fileDiff : long to fileDiff : long in method public testSelection() : void from class org.apache.hadoop.hbase.regionserver.compactions.PerfTestCompactionPolicies",
+	"leftSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 16,
+		"endColumn": 28,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "fileDiff : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 162,
+		"endLine": 169,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 152,
+		"endLine": 152,
+		"startColumn": 10,
+		"endColumn": 22,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "fileDiff : long"
+}, {
+		"filePath": "hbase-server/src/test/java/org/apache/hadoop/hbase/regionserver/compactions/PerfTestCompactionPolicies.java",
+		"startLine": 163,
+		"endLine": 171,
+		"startColumn": 5,
+		"endColumn": 7,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

@@ -1,0 +1,1194 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/adangel/pmd",
+	"sha1": "9ee96d6949dd01841bf3a1af91850483a37bbf4c",
+	"url": "https://github.com/adangel/pmd/commit/9ee96d6949dd01841bf3a1af91850483a37bbf4c",
+	"refactorings": [{
+	"type": "Change Attribute Type",
+	"description": "Change Attribute Type astArea : JTextArea to astWidget : ASTTreeWidget in class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "astArea : JTextArea"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type attribute declaration",
+		"codeElement": "astWidget : ASTTreeWidget"
+}]
+},
+{
+	"type": "Change Return Type",
+	"description": "Change Return Type JavaParser to int in method private selectedSourceTypeIndex() : int from class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 13,
+		"endColumn": 23,
+		"codeElementType": "TYPE",
+		"description": "original return type",
+		"codeElement": "JavaParser"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createParser() : JavaParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 126,
+		"endLine": 126,
+		"startColumn": 13,
+		"endColumn": 16,
+		"codeElementType": "TYPE",
+		"description": "changed return type",
+		"codeElement": "int"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 126,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with changed return type",
+		"codeElement": "private selectedSourceTypeIndex() : int"
+}]
+},
+{
+	"type": "Change Variable Type",
+	"description": "Change Variable Type scrollPane : JScrollPane to dfaCanvas : DFACanvas in method public DFAPanel() from class net.sourceforge.pmd.util.designer.DFAPanel",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scrollPane : JScrollPane"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "changed-type variable declaration",
+		"codeElement": "dfaCanvas : DFACanvas"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the variable with changed type",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Attribute",
+	"description": "Extract Attribute private lineSeparator : String in class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 25,
+		"endColumn": 99,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the initializer of the extracted attribute",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 30,
+		"endColumn": 88,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "private lineSeparator : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 404,
+		"endLine": 404,
+		"startColumn": 25,
+		"endColumn": 76,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement with the name of the extracted attribute",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private addAccessLabel(sb StringBuffer, va VariableAccess) : void extracted from public paint(g Graphics) : void in class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 33,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public paint(g Graphics) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 61,
+		"endLine": 66,
+		"startColumn": 32,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 59,
+		"endLine": 66,
+		"startColumn": 32,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 57,
+		"endLine": 66,
+		"startColumn": 25,
+		"endColumn": 26,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 61,
+		"endLine": 64,
+		"startColumn": 57,
+		"endColumn": 26,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 64,
+		"endLine": 66,
+		"startColumn": 32,
+		"endColumn": 26,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 59,
+		"endLine": 61,
+		"startColumn": 54,
+		"endColumn": 26,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 57,
+		"endLine": 59,
+		"startColumn": 48,
+		"endColumn": 26,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 44,
+		"endLine": 58,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private addAccessLabel(sb StringBuffer, va VariableAccess) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 50,
+		"endLine": 55,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 48,
+		"endLine": 55,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 46,
+		"endLine": 55,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 50,
+		"endLine": 53,
+		"startColumn": 45,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 53,
+		"endLine": 55,
+		"startColumn": 20,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 48,
+		"endLine": 50,
+		"startColumn": 42,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 46,
+		"endLine": 48,
+		"startColumn": 33,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 75,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private deriveAccessLabels(flow List) : String[]"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 11,
+		"endColumn": 62,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addAccessLabel(exp,(VariableAccess)access.get(0))"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 12,
+		"endColumn": 63,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "addAccessLabel(exp,(VariableAccess)access.get(k))"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 47,
+		"endLine": 47,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 49,
+		"endLine": 49,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 51,
+		"endLine": 51,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 17,
+		"endColumn": 33,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 57,
+		"endLine": 57,
+		"startColumn": 10,
+		"endColumn": 54,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private childIndicesOf(node IDataFlowNode, separator String) : String extracted from public paint(g Graphics) : void in class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 33,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public paint(g Graphics) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 60,
+		"endLine": 73,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private childIndicesOf(node IDataFlowNode, separator String) : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 115,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public paintComponent(g Graphics) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 39,
+		"endColumn": 66,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "childIndicesOf(inode,\", \")"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 10,
+		"endColumn": 41,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 30,
+		"endColumn": 40,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 66,
+		"endLine": 66,
+		"startColumn": 10,
+		"endColumn": 61,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 70,
+		"endLine": 70,
+		"startColumn": 11,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 72,
+		"endLine": 72,
+		"startColumn": 10,
+		"endColumn": 31,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 63,
+		"endLine": 63,
+		"startColumn": 10,
+		"endColumn": 40,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 68,
+		"endLine": 71,
+		"startColumn": 10,
+		"endColumn": 12,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 68,
+		"endLine": 71,
+		"startColumn": 62,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private deriveAccessLabels(flow List) : String[] extracted from public paint(g Graphics) : void in class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 33,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public paint(g Graphics) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 52,
+		"endLine": 52,
+		"startColumn": 17,
+		"endColumn": 57,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 55,
+		"endLine": 68,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 55,
+		"endLine": 68,
+		"startColumn": 61,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 75,
+		"endLine": 99,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private deriveAccessLabels(flow List) : String[]"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 82,
+		"endLine": 82,
+		"startColumn": 11,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 11,
+		"endColumn": 19,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 91,
+		"endLine": 94,
+		"startColumn": 51,
+		"endColumn": 19,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 115,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public paintComponent(g Graphics) : void"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 124,
+		"endLine": 124,
+		"startColumn": 37,
+		"endColumn": 61,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "deriveAccessLabels(flow)"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 46,
+		"endColumn": 68,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 79,
+		"endLine": 79,
+		"startColumn": 10,
+		"endColumn": 52,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 85,
+		"endLine": 85,
+		"startColumn": 12,
+		"endColumn": 21,
+		"codeElementType": "CONTINUE_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 89,
+		"endLine": 89,
+		"startColumn": 11,
+		"endColumn": 63,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 92,
+		"endLine": 92,
+		"startColumn": 12,
+		"endColumn": 29,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 93,
+		"endLine": 93,
+		"startColumn": 12,
+		"endColumn": 64,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 96,
+		"endLine": 96,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 98,
+		"endLine": 98,
+		"startColumn": 10,
+		"endColumn": 24,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 88,
+		"endLine": 88,
+		"startColumn": 11,
+		"endColumn": 49,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 77,
+		"endLine": 77,
+		"startColumn": 10,
+		"endColumn": 68,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 51,
+		"endColumn": 12,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 84,
+		"endLine": 86,
+		"startColumn": 11,
+		"endColumn": 12,
+		"codeElementType": "IF_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 81,
+		"endLine": 97,
+		"startColumn": 10,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 81,
+		"endLine": 97,
+		"startColumn": 46,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Variable",
+	"description": "Extract Variable screenSize : Dimension in method public Designer() from class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 219,
+		"endLine": 219,
+		"startColumn": 9,
+		"endColumn": 79,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 220,
+		"endLine": 220,
+		"startColumn": 9,
+		"endColumn": 77,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the initializer of the extracted variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 470,
+		"endLine": 470,
+		"startColumn": 19,
+		"endColumn": 75,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted variable declaration",
+		"codeElement": "screenSize : Dimension"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 471,
+		"endLine": 471,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 472,
+		"endLine": 472,
+		"startColumn": 9,
+		"endColumn": 44,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement with the name of the extracted variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute astArea : JTextArea to astWidget : ASTTreeWidget in class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 168,
+		"endLine": 168,
+		"startColumn": 29,
+		"endColumn": 54,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "astArea : JTextArea"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 422,
+		"endLine": 422,
+		"startColumn": 33,
+		"endColumn": 78,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "astWidget : ASTTreeWidget"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private createParser() : JavaParser renamed to private selectedSourceTypeIndex() : int in class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 51,
+		"endLine": 53,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private createParser() : JavaParser"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 126,
+		"endLine": 131,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private selectedSourceTypeIndex() : int"
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method public paint(g Graphics) : void renamed to public paintComponent(g Graphics) : void in class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 33,
+		"endLine": 79,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "public paint(g Graphics) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 115,
+		"endLine": 152,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "public paintComponent(g Graphics) : void"
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable exp : StringBuffer to sb : StringBuffer in method private childIndicesOf(node IDataFlowNode, separator String) : String from class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 34,
+		"endColumn": 58,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "exp : StringBuffer"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 54,
+		"endLine": 54,
+		"startColumn": 21,
+		"endColumn": 59,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 60,
+		"endLine": 60,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 58,
+		"endLine": 58,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 62,
+		"endLine": 62,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 29,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 23,
+		"endColumn": 46,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "sb : StringBuffer"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 65,
+		"endLine": 65,
+		"startColumn": 10,
+		"endColumn": 47,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 69,
+		"endLine": 69,
+		"startColumn": 11,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable output : String to childIndices : String in method public paintComponent(g Graphics) : void from class net.sourceforge.pmd.util.designer.DFAPanel.DFACanvas",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 75,
+		"endLine": 75,
+		"startColumn": 28,
+		"endColumn": 87,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "output : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 76,
+		"endLine": 76,
+		"startColumn": 21,
+		"endColumn": 97,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 149,
+		"endLine": 149,
+		"startColumn": 24,
+		"endColumn": 66,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "childIndices : String"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 150,
+		"endLine": 150,
+		"startColumn": 17,
+		"endColumn": 88,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable jspMenuItem : JRadioButtonMenuItem to button : JRadioButtonMenuItem in method private createMenuBar() : JMenuBar from class net.sourceforge.pmd.util.designer.Designer",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 177,
+		"endLine": 177,
+		"startColumn": 34,
+		"endColumn": 45,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "jspMenuItem : JRadioButtonMenuItem"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 248,
+		"endLine": 248,
+		"startColumn": 9,
+		"endColumn": 32,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 249,
+		"endLine": 249,
+		"startColumn": 9,
+		"endColumn": 31,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 489,
+		"endLine": 489,
+		"startColumn": 31,
+		"endColumn": 97,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "button : JRadioButtonMenuItem"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 491,
+		"endLine": 491,
+		"startColumn": 10,
+		"endColumn": 28,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/Designer.java",
+		"startLine": 492,
+		"endLine": 492,
+		"startColumn": 10,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Attribute With Variable",
+	"description": "Replace Attribute With Variable wrapperPanel : JPanel to scrollPane : JScrollPane in method public DFAPanel() from class net.sourceforge.pmd.util.designer.DFAPanel",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 155,
+		"endLine": 155,
+		"startColumn": 20,
+		"endColumn": 32,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original variable declaration",
+		"codeElement": "wrapperPanel : JPanel"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 178,
+		"endLine": 178,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 276,
+		"endLine": 276,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "renamed variable declaration",
+		"codeElement": "scrollPane : JScrollPane"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 278,
+		"endLine": 278,
+		"startColumn": 9,
+		"endColumn": 46,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Replace Variable With Attribute",
+	"description": "Replace Variable With Attribute scrollPane : JScrollPane to dfaCanvas : DFACanvas in method public DFAPanel() from class net.sourceforge.pmd.util.designer.DFAPanel",
+	"leftSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 171,
+		"endLine": 171,
+		"startColumn": 21,
+		"endColumn": 51,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "original variable declaration",
+		"codeElement": "scrollPane : JScrollPane"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 172,
+		"endLine": 172,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 253,
+		"endLine": 253,
+		"startColumn": 25,
+		"endColumn": 34,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed variable declaration",
+		"codeElement": "dfaCanvas : DFACanvas"
+}, {
+		"filePath": "pmd/src/net/sourceforge/pmd/util/designer/DFAPanel.java",
+		"startLine": 274,
+		"endLine": 274,
+		"startColumn": 9,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+}
+]
+}]
+}

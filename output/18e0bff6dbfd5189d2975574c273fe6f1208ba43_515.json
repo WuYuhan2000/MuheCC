@@ -1,0 +1,717 @@
+{
+"commits": [
+{
+	"repository": "https://github.com/kiegroup/drools",
+	"sha1": "18e0bff6dbfd5189d2975574c273fe6f1208ba43",
+	"url": "https://github.com/kiegroup/drools/commit/18e0bff6dbfd5189d2975574c273fe6f1208ba43",
+	"refactorings": [{
+	"type": "Add Parameter",
+	"description": "Add Parameter fireLimit : int in method private doOtherwise(agendaFilter AgendaFilter, fireLimit int) : void from class org.drools.common.AbstractWorkingMemory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 449,
+		"endLine": 465,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private doOtherwise(agendaFilter AgendaFilter) : void"
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 471,
+		"endLine": 471,
+		"startColumn": 63,
+		"endColumn": 76,
+		"codeElementType": "SINGLE_VARIABLE_DECLARATION",
+		"description": "added parameter",
+		"codeElement": "fireLimit : int"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 466,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with added parameter",
+		"codeElement": "private doOtherwise(agendaFilter AgendaFilter, fireLimit int) : void"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private continueFiring(fireLimit int) : boolean extracted from private doOtherwise(agendaFilter AgendaFilter) : void in class org.drools.common.AbstractWorkingMemory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 449,
+		"endLine": 465,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private doOtherwise(agendaFilter AgendaFilter) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 17,
+		"endColumn": 68,
+		"codeElementType": "WHILE_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 460,
+		"endLine": 460,
+		"startColumn": 17,
+		"endColumn": 24,
+		"codeElementType": "PARENTHESIZED_EXPRESSION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 458,
+		"endLine": 460,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private continueFiring(fireLimit int) : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "PARENTHESIZED_EXPRESSION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 466,
+		"endLine": 482,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private doOtherwise(agendaFilter AgendaFilter, fireLimit int) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 477,
+		"endLine": 477,
+		"startColumn": 17,
+		"endColumn": 44,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "continueFiring(fireLimit)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private continueFiring(fireLimit int) : boolean extracted from public fireAllRules(agendaFilter AgendaFilter) : void in class org.drools.common.AbstractWorkingMemory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 410,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public fireAllRules(agendaFilter AgendaFilter) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 25,
+		"endColumn": 76,
+		"codeElementType": "WHILE_STATEMENT_CONDITION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 25,
+		"endColumn": 32,
+		"codeElementType": "PARENTHESIZED_EXPRESSION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 458,
+		"endLine": 460,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private continueFiring(fireLimit int) : boolean"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 9,
+		"endColumn": 45,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 459,
+		"endLine": 459,
+		"startColumn": 16,
+		"endColumn": 23,
+		"codeElementType": "PARENTHESIZED_EXPRESSION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 418,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public fireAllRules(agendaFilter AgendaFilter, fireLimit int) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 25,
+		"endColumn": 52,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "continueFiring(fireLimit)"
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method public fireAllRules(agendaFilter AgendaFilter, fireLimit int) : void extracted from public fireAllRules(agendaFilter AgendaFilter) : void in class org.drools.common.AbstractWorkingMemory",
+	"leftSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 410,
+		"endLine": 447,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "public fireAllRules(agendaFilter AgendaFilter) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 419,
+		"endLine": 419,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 424,
+		"endLine": 424,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 431,
+		"endLine": 431,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 434,
+		"endLine": 434,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 436,
+		"endLine": 436,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 440,
+		"endLine": 440,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 21,
+		"endColumn": 49,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 418,
+		"endLine": 420,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 417,
+		"endLine": 421,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 423,
+		"endLine": 425,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 435,
+		"endLine": 437,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 430,
+		"endLine": 445,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 443,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 439,
+		"endLine": 445,
+		"startColumn": 23,
+		"endColumn": 14,
+		"codeElementType": "FINALLY_BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 429,
+		"endLine": 446,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 433,
+		"endLine": 438,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 433,
+		"endLine": 433,
+		"startColumn": 36,
+		"endColumn": 76,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 418,
+		"endLine": 420,
+		"startColumn": 82,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 417,
+		"endLine": 421,
+		"startColumn": 31,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 423,
+		"endLine": 425,
+		"startColumn": 44,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 435,
+		"endLine": 437,
+		"startColumn": 56,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 443,
+		"startColumn": 34,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 429,
+		"endLine": 446,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 433,
+		"endLine": 438,
+		"startColumn": 79,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 418,
+		"endLine": 456,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "public fireAllRules(agendaFilter AgendaFilter, fireLimit int) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 423,
+		"endLine": 423,
+		"startColumn": 9,
+		"endColumn": 27,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 427,
+		"endLine": 427,
+		"startColumn": 17,
+		"endColumn": 74,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 432,
+		"endLine": 432,
+		"startColumn": 13,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 435,
+		"endLine": 435,
+		"startColumn": 9,
+		"endColumn": 34,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 439,
+		"endLine": 439,
+		"startColumn": 17,
+		"endColumn": 36,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 443,
+		"endLine": 443,
+		"startColumn": 21,
+		"endColumn": 39,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 445,
+		"endLine": 445,
+		"startColumn": 25,
+		"endColumn": 48,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 449,
+		"endLine": 449,
+		"startColumn": 17,
+		"endColumn": 37,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 451,
+		"endLine": 451,
+		"startColumn": 21,
+		"endColumn": 60,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 426,
+		"endLine": 428,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "FOR_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 425,
+		"endLine": 429,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 431,
+		"endLine": 433,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 444,
+		"endLine": 446,
+		"startColumn": 21,
+		"endColumn": 22,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 438,
+		"endLine": 454,
+		"startColumn": 13,
+		"endColumn": 14,
+		"codeElementType": "TRY_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 450,
+		"endLine": 452,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 448,
+		"endLine": 454,
+		"startColumn": 23,
+		"endColumn": 14,
+		"codeElementType": "FINALLY_BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 437,
+		"endLine": 455,
+		"startColumn": 9,
+		"endColumn": 10,
+		"codeElementType": "IF_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 447,
+		"startColumn": 17,
+		"endColumn": 18,
+		"codeElementType": "WHILE_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 441,
+		"startColumn": 56,
+		"endColumn": 96,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 426,
+		"endLine": 428,
+		"startColumn": 82,
+		"endColumn": 14,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 425,
+		"endLine": 429,
+		"startColumn": 31,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 431,
+		"endLine": 433,
+		"startColumn": 44,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 444,
+		"endLine": 446,
+		"startColumn": 56,
+		"endColumn": 22,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 450,
+		"endLine": 452,
+		"startColumn": 34,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 437,
+		"endLine": 455,
+		"startColumn": 29,
+		"endColumn": 10,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 441,
+		"endLine": 447,
+		"startColumn": 99,
+		"endColumn": 18,
+		"codeElementType": "BLOCK",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 414,
+		"endLine": 416,
+		"startColumn": 5,
+		"endColumn": 6,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "public fireAllRules(agendaFilter AgendaFilter) : void"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 415,
+		"endLine": 415,
+		"startColumn": 9,
+		"endColumn": 41,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "fireAllRules(agendaFilter,-1)"
+}, {
+		"filePath": "drools-core/src/main/java/org/drools/common/AbstractWorkingMemory.java",
+		"startLine": 442,
+		"endLine": 442,
+		"startColumn": 21,
+		"endColumn": 62,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+}
+]
+}]
+}
