@@ -24,7 +24,7 @@ This is a repliacation package for Paper `Boosting Commit Classification Based o
 
   You can see these in ```EnsembleLearning/requirements.txt```.
 ### 1.2 Dataset
-The dataset can be found in ```EnsembleLearning/Commit_dataset_final.xlsx```.
+The dataset can be found in ```MuheCC_Dataset_with_refactoring_final.xlsx```.
 
 ## 2 Run
 1. Train and test three baselines
@@ -33,5 +33,5 @@ python EnsembleLearning/BERT+lightGBM.py
 ```
 2. Train and test MuheCC
 ```
-python EnsembleLearning/stacking_model_choose.py
+python new.py
 ```
